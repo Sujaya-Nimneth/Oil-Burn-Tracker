@@ -65,7 +65,7 @@ export default function SiteAgreement() {
             </svg>
             <div>
               <div className='text-sm font-bold text-zinc-300 group-hover:text-white transition-colors'>
-                Github-Sujaya Nimneth
+                GitHub-Sujaya Nimneth
               </div>
               <div className='text-xs text-zinc-600'>
                 
