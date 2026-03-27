@@ -55,7 +55,7 @@ export default function SiteAgreement() {
 
         <div className='mt-5 pt-4 border-t border-zinc-800'>
           <a
-            href='https://github.com/oilburntracker/oilburntracker'
+            href='https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker.git'
             target='_blank'
             rel='noopener noreferrer'
             className='flex items-center gap-3 rounded-lg border border-zinc-800 hover:border-zinc-600 p-3 transition-colors group'
@@ -65,11 +65,11 @@ export default function SiteAgreement() {
             </svg>
             <div>
               <div className='text-sm font-bold text-zinc-300 group-hover:text-white transition-colors'>
-                This project is open source
+                
               </div>
               <div className='text-xs text-zinc-600'>
-                Fork it, fix something, add a memorial entry, or open an issue
-              </div>
+                
+              </div>Created by Sujaya Nimneth
             </div>
           </a>
           <p className='mt-3 text-xs text-zinc-700'>
