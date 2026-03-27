@@ -73,7 +73,7 @@ export default function SiteAgreement() {
             </div>
           </a>
           <p className='mt-3 text-xs text-zinc-700'>
-            No accounts. No tracking. No cookies except to remember this.
+            No accounts. No tracking. No cookies 
           </p>
         </div>
 
