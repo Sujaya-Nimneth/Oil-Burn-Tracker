@@ -1,6 +1,5 @@
 import AppSidebar from '@/components/layout/app-sidebar';
 import Header from '@/components/layout/header';
-import SiteAgreement from '@/components/layout/site-agreement';
 import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar';
 import type { Metadata } from 'next';
 
@@ -25,7 +24,6 @@ export default function DashboardLayout({
         <Header />
         {children}
       </SidebarInset>
-      <SiteAgreement />
     </SidebarProvider>
   );
 }
