@@ -55,7 +55,7 @@ export default function SiteAgreement() {
 
         <div className='mt-5 pt-4 border-t border-zinc-800'>
           <a
-            href='https://github.com/oilburntracker/oilburntracker'
+            href='https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker.git'
             target='_blank'
             rel='noopener noreferrer'
             className='flex items-center gap-3 rounded-lg border border-zinc-800 hover:border-zinc-600 p-3 transition-colors group'
@@ -72,7 +72,10 @@ export default function SiteAgreement() {
               </div>
             </div>
           </a>
-          <p className='mt-3 text-xs text-zinc-700'>
+          <p className='mt-3 text-xs text-zinc-500'>
+            Made by <span className='text-zinc-300 font-semibold'>Sujaya Nimneth</span>
+          </p>
+          <p className='mt-1 text-xs text-zinc-700'>
             No accounts. No tracking. No cookies except to remember this.
           </p>
         </div>
