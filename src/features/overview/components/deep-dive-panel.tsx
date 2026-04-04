@@ -8,14 +8,15 @@ import { getWarCostUpTo } from '@/features/timeline/data/war-costs';
 import { getSupplyDisruptionUpTo, getInfrastructureDamageByCountry } from '@/features/fires/data/curated-fires';
 import { curatedFires } from '@/features/fires/data/curated-fires';
 import type { CountryDamageEntry, DamageClassification } from '@/features/fires/data/curated-fires';
-import { formatCO2, co2Equivalents } from '@/features/emissions/utils/emissions-model';
+import { formatCO2, co2Equivalents, FACILITY_PARAMS, estimateCO2FromCapacity, capacityBreakdown } from '@/features/emissions/utils/emissions-model';
+import type { FacilityType } from '@/features/fires/data/curated-fires';
 import { computePerilScore, HISTORICAL_ANCHORS } from '@/lib/peril-score';
 import {
   IconGasStation, IconShoppingCart, IconBolt, IconPackage,
   IconRadioactive, IconBomb, IconCloud, IconAlertTriangle,
   IconSkull, IconFlame, IconWorld, IconBuildingSkyscraper,
   IconTrendingUp, IconReceipt, IconShip, IconClock, IconUsers, IconHome,
-  IconInfoCircle
+  IconInfoCircle, IconHeart, IconStethoscope, IconBook, IconCamera, IconSchool, IconFriends
 } from '@tabler/icons-react';
 
 function formatBillions(n: number): string {
@@ -70,6 +71,35 @@ function Bar({ pct, color, height }: { pct: number; color: string; height?: stri
   return (
     <div className={`w-full rounded-full bg-gray-200 dark:bg-zinc-800 overflow-hidden ${height || 'h-2.5'}`}>
       <div className={`h-full rounded-full transition-all duration-300 ${color}`} style={{ width: `${Math.min(100, pct)}%` }} />
+    </div>
+  );
+}
+
+/* ── Collapsible sources/methodology dropdown ── */
+function SourcesDropdown() {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className='mt-2'>
+      <button
+        onClick={() => setOpen(!open)}
+        className='flex items-center gap-1 text-xs font-bold text-gray-500 dark:text-zinc-500 hover:text-gray-700 dark:hover:text-zinc-300 transition-colors cursor-pointer'
+      >
+        <IconInfoCircle className='h-3.5 w-3.5' />
+        <span>Sources &amp; methodology</span>
+        <span className={`transition-transform ${open ? 'rotate-180' : ''}`}>&#9662;</span>
+      </button>
+      {open && (
+        <div className='mt-1.5 px-1 space-y-1 text-xs text-gray-400 dark:text-zinc-600'>
+          <div>Fire detection: <a href='https://firms.modaps.eosdis.nasa.gov/' target='_blank' rel='noopener noreferrer' className='underline hover:text-gray-600'>NASA FIRMS VIIRS</a> (375m resolution, updated every 30 min)</div>
+          <div>CO₂ factors: <a href='https://www.ipcc-nggip.iges.or.jp/public/2006gl/' target='_blank' rel='noopener noreferrer' className='underline hover:text-gray-600'>IPCC 2006 Guidelines</a> Vol 2 · Crude oil NCV 42.3 GJ/t, EF 73,300 kg CO₂/TJ</div>
+          <div>FRP method: Wooster et al. (2005) <a href='https://doi.org/10.1029/2005JD006318' target='_blank' rel='noopener noreferrer' className='underline hover:text-gray-600'>doi:10.1029/2005JD006318</a></div>
+          <div>Petroleum correction: Elvidge et al. (2020) <a href='https://doi.org/10.3390/rs12020238' target='_blank' rel='noopener noreferrer' className='underline hover:text-gray-600'>doi:10.3390/rs12020238</a> — FRP underestimates petroleum fires ~2x</div>
+          <div>EPA factors: <a href='https://www.epa.gov/ghgemissions/emission-factors-hub' target='_blank' rel='noopener noreferrer' className='underline hover:text-gray-600'>EPA GHG Emission Factors Hub (2024)</a></div>
+          <div>Equivalents: 4.6 t CO₂/car/yr (<a href='https://www.epa.gov/greenvehicles' target='_blank' rel='noopener noreferrer' className='underline hover:text-gray-600'>EPA</a>) · 7.5 t CO₂/home/yr (<a href='https://www.eia.gov/consumption/residential/' target='_blank' rel='noopener noreferrer' className='underline hover:text-gray-600'>EIA RECS</a>)</div>
+          <div className='pt-1 text-gray-500 dark:text-zinc-500'>Formula: CO₂ (t/day) = FRP(MW) × 86400 / (f_rad × H_c) × EF / 1000. Hover any row above for the full calculation.</div>
+          <div>Only fires geo-matched within facility radius are counted. These are order-of-magnitude estimates.</div>
+        </div>
+      )}
     </div>
   );
 }
@@ -171,11 +201,11 @@ function FacilityCard({ facility, hit }: { facility: (typeof curatedFires)[numbe
     critical: 'text-red-600 dark:text-red-400', high: 'text-orange-600 dark:text-orange-400',
     elevated: 'text-yellow-600 dark:text-yellow-400', moderate: 'text-blue-600', low: 'text-green-600',
   };
-  const threatBarPct: Record<string, number> = {
-    critical: 90, high: 70, elevated: 50, moderate: 30, low: 15,
-  };
-  const threatBarColor: Record<string, string> = {
-    critical: 'bg-red-500', high: 'bg-orange-500', elevated: 'bg-yellow-500', moderate: 'bg-blue-400', low: 'bg-green-500',
+  // Bar represents % of global supply — scaled so 1% fills ~20%, 5% fills 100%
+  const barPct = Math.min(100, facility.percentGlobalCapacity * 20);
+  const statusBarColor: Record<string, string> = {
+    active_fire: 'bg-red-500', damaged: 'bg-orange-500', offline: 'bg-gray-500',
+    monitoring: 'bg-yellow-500', operational: 'bg-green-500',
   };
   const st = statusCfg[facility.status] || statusCfg.operational;
   const cap = facility.gasCapacityBCFD
@@ -213,7 +243,7 @@ function FacilityCard({ facility, hit }: { facility: (typeof curatedFires)[numbe
             <span className={`font-bold ${threatCls[facility.threatLevel] || ''}`}>{facility.threatLevel.toUpperCase()}</span>
             <span className='font-bold tabular-nums text-gray-700 dark:text-zinc-300'>{cap}</span>
           </div>
-          <Bar pct={threatBarPct[facility.threatLevel] || 15} color={hit ? 'bg-red-500' : (threatBarColor[facility.threatLevel] || 'bg-gray-400')} height='h-2' />
+          <Bar pct={barPct} color={hit ? 'bg-red-500' : (statusBarColor[facility.status] || 'bg-gray-400')} height='h-2' />
           <div className='text-xs text-gray-400 mt-0.5 tabular-nums'>
             {pct}% of global supply{facility.attackDate && hit ? ` · Hit ${facility.attackDate}` : ''}
           </div>
@@ -596,16 +626,111 @@ export default function DeepDivePanel({ onMapMode }: { onMapMode?: () => void } 
 
     const countryDamage = getInfrastructureDamageByCountry(facilityIds, timelineDate, events);
 
-    return { impact, casualties, nuclear, cost, supply, events, stats, peril, gasExtra, oilDelta, perTaxpayer, warDays, recession, predictions, hitFacilityList, threatenedFacilityList, countryDamage, facilityIds };
+    // ── Years of life lost: avg age in memorial data ~29, WHO life expectancy 72 → ~43 years remaining per person ──
+    const yearsOfLifeLost = Math.round(casualties.totalKilled * 43);
+
+    // ── Role-based loss counts — sourced documented numbers, scaled proportionally to timeline ──
+    // Base counts are at ~85,000 total killed (current conflict total)
+    const baseTotal = 85000;
+    const scale = Math.min(1, casualties.totalKilled / baseTotal);
+    const roleCounts = [
+      { icon: 'stethoscope', label: 'Medical professionals', count: Math.round(1722 * scale), source: 'MSF / WHO' },
+      { icon: 'heart', label: 'Children', count: casualties.totalChildren, source: 'UNICEF / MoH' },
+      { icon: 'book', label: 'Teachers & UN staff', count: Math.round(300 * scale), source: 'UNRWA' },
+      { icon: 'camera', label: 'Journalists', count: Math.round(254 * scale), source: 'CPJ' },
+      { icon: 'school', label: 'University students', count: Math.round(4200 * scale), source: 'Al Jazeera / MoE' },
+      { icon: 'friends', label: 'Parents', count: Math.round(casualties.totalKilled * 0.35), source: 'Demographic estimate' },
+    ];
+
+    return { impact, casualties, nuclear, cost, supply, events, stats, peril, gasExtra, oilDelta, perTaxpayer, warDays, recession, predictions, hitFacilityList, threatenedFacilityList, countryDamage, facilityIds, yearsOfLifeLost, roleCounts };
   }, [timelineDate]);
 
-  const { impact, casualties, nuclear, cost, supply, stats, peril, gasExtra, oilDelta, perTaxpayer, warDays, recession, predictions, hitFacilityList, threatenedFacilityList, countryDamage, facilityIds } = data;
-  const totalCO2 = fireData.features.reduce((s, f) => s + f.properties.estimatedCO2TonsDay, 0);
+  const { impact, casualties, nuclear, cost, supply, stats, peril, gasExtra, oilDelta, perTaxpayer, warDays, recession, predictions, hitFacilityList, threatenedFacilityList, countryDamage, facilityIds, yearsOfLifeLost, roleCounts } = data;
+  const facilityFires = fireData.features.filter(f => f.properties.matchedFacility);
+  const satelliteCO2 = facilityFires.reduce((s, f) => s + f.properties.estimatedCO2TonsDay, 0);
+  const totalDetections = fireData.features.length;
+  const facilityFireCount = facilityFires.length;
+
+  // IDs of facilities matched by satellite
+  const satelliteMatchedIds = useMemo(() => new Set(
+    facilityFires.map(f => f.properties.matchedFacility!.id)
+  ), [facilityFires]);
+
+  // Capacity-based CO2 for burning facilities WITHOUT satellite data
+  const capacityEstimates = useMemo(() => {
+    return curatedFires
+      .filter(f => (f.status === 'active_fire' || f.status === 'damaged') && !satelliteMatchedIds.has(f.id))
+      .map(f => ({
+        facility: f,
+        co2: estimateCO2FromCapacity(f.facilityType, f.status, f.capacityBPD, f.gasCapacityBCFD, f.storageMBBL),
+        breakdown: capacityBreakdown(f.facilityType, f.status, f.capacityBPD, f.gasCapacityBCFD, f.storageMBBL),
+      }))
+      .filter(e => e.co2 > 0);
+  }, [satelliteMatchedIds]);
+
+  const capacityCO2 = capacityEstimates.reduce((sum, e) => sum + e.co2, 0);
+  const totalCO2 = satelliteCO2 + capacityCO2;
   const equiv = co2Equivalents(totalCO2);
-  const activeFires = fireData.features.length;
+
+  // Per-facility-type CO2 breakdown for tooltip (satellite-based)
+  const co2ByType = useMemo(() => {
+    const byType: Record<string, { co2: number; frp: number; count: number }> = {};
+    for (const f of facilityFires) {
+      const type = f.properties.matchedFacility?.facilityType || 'unknown';
+      if (!byType[type]) byType[type] = { co2: 0, frp: 0, count: 0 };
+      byType[type].co2 += f.properties.estimatedCO2TonsDay || 0;
+      byType[type].frp += f.properties.frp || 0;
+      byType[type].count++;
+    }
+    return Object.entries(byType)
+      .sort((a, b) => b[1].co2 - a[1].co2)
+      .map(([type, d]) => {
+        const p = FACILITY_PARAMS[type as FacilityType] || FACILITY_PARAMS.unknown;
+        return { type, ...d, params: p };
+      });
+  }, [facilityFires]);
+
+  // Build full calculation tooltip text
+  const calcTooltip = useMemo(() => {
+    const lines: string[] = [];
+    if (co2ByType.length > 0) {
+      lines.push(
+        'CO\u2082 Calculation Breakdown',
+        '\u2500'.repeat(40),
+        'SATELLITE-BASED (FRP):',
+        'Formula: CO\u2082 = FRP \u00d7 86400 / (f_rad \u00d7 H_c) \u00d7 EF / 1000',
+        '',
+      );
+      for (const t of co2ByType) {
+        const label = t.type.replace('_', ' ');
+        lines.push(
+          `\u25cf ${label} (${t.count} detection${t.count > 1 ? 's' : ''})`,
+          `  FRP: ${t.frp.toFixed(1)} MW \u00d7 ${t.params.multiplier} t/MW/day = ${t.co2.toFixed(1)} t/day`,
+          `  f_rad=${t.params.fRad}, H_c=${t.params.hc} MJ/kg (${t.params.fuel}), EF=${t.params.ef}`,
+          '',
+        );
+      }
+      lines.push(`Satellite subtotal: ${satelliteCO2.toFixed(1)} t CO\u2082/day`);
+    }
+    if (capacityEstimates.length > 0) {
+      lines.push('', 'CAPACITY-BASED (no satellite data):');
+      for (const e of capacityEstimates) {
+        lines.push(`\u25cf ${e.facility.name}: ${e.co2.toFixed(0)} t/day`);
+      }
+      lines.push(`Capacity subtotal: ${capacityCO2.toFixed(0)} t CO\u2082/day`);
+    }
+    if (lines.length > 0) {
+      lines.push('', `Total: ${totalCO2.toFixed(1)} t CO\u2082/day`);
+      lines.push('', 'Sources: IPCC 2006, Elvidge et al. 2020, EPA 2024');
+    }
+    return lines.join('\n');
+  }, [co2ByType, satelliteCO2, capacityEstimates, capacityCO2, totalCO2]);
+
+  // Count facilities confirmed burning/damaged from curated data (news-sourced)
+  const curatedBurningCount = curatedFires.filter(f => f.status === 'active_fire' || f.status === 'damaged').length;
+
   const displayDate = new Date(timelineDate + 'T00:00:00');
   const dateFormatted = displayDate.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
-  const populationKilled = casualties.totalKilled >= 50000 ? 'a small city' : casualties.totalKilled >= 10000 ? 'a small town' : 'a neighborhood';
   const annualCostPerHousehold = impact.totalMonthlyExtra * 12;
 
   const disruptionLabels: Record<string, string> = {
@@ -639,64 +764,256 @@ export default function DeepDivePanel({ onMapMode }: { onMapMode?: () => void } 
         </div>
       </div>
 
-      {/* ── HUMAN COST ── */}
+      {/* ── EMISSIONS ── */}
       <div className='px-4 pt-4 pb-3 border-b border-gray-200 dark:border-zinc-700'>
-        <SectionTitle icon={<IconSkull className='h-5 w-5 text-red-600' />} title='Human Cost' />
-        <a href='/dashboard/lost' className='block hover:opacity-80 transition-opacity'>
-          <div className='text-4xl font-black text-red-600 dark:text-red-500 tabular-nums leading-none'>
-            {casualties.totalKilled.toLocaleString()}+
+        <SectionTitle icon={<IconCloud className='h-5 w-5 text-orange-600' />} title='Emissions' />
+
+        {/* Headline CO2 number with calculation tooltip */}
+        {totalCO2 > 0 ? (
+          <div>
+            <div
+              className='text-3xl font-black text-orange-700 dark:text-orange-400 tabular-nums leading-none cursor-help'
+              title={calcTooltip}
+            >
+              {formatCO2(totalCO2)} <span className='text-lg font-bold'>tons/day CO₂</span>
+            </div>
+            {/* Source breakdown label */}
+            {satelliteCO2 > 0 && capacityCO2 > 0 && (
+              <div className='text-sm text-gray-500 dark:text-zinc-400 mt-1'>
+                {formatCO2(satelliteCO2)} t/day satellite + {formatCO2(capacityCO2)} t/day estimated from facility capacity
+              </div>
+            )}
+            {satelliteCO2 === 0 && capacityCO2 > 0 && (
+              <div className='text-sm text-gray-500 dark:text-zinc-400 mt-1'>
+                Estimated from facility capacity (no live satellite data)
+              </div>
+            )}
           </div>
-          <div className='text-base text-red-500 dark:text-red-400 font-bold mt-1 mb-3'>people</div>
-        </a>
-
-        <div className='space-y-1'>
-          <Row label='Injured' value={`${casualties.totalInjured.toLocaleString()}+`} valueColor='text-orange-600 dark:text-orange-400'
-            tip='Includes military and civilian injuries reported by all sides' />
-          {casualties.totalChildren > 0 && (
-            <Row label='Children killed' value={`${casualties.totalChildren.toLocaleString()}+`} valueColor='text-red-500 dark:text-red-300'
-              tip='Children under 18 confirmed killed — likely undercounted' />
-          )}
-          {casualties.totalDisplaced > 0 && (
-            <Row label='Displaced from homes' value={`${(casualties.totalDisplaced / 1_000_000).toFixed(1)}M`} valueColor='text-blue-600 dark:text-blue-400'
-              tip='People forced to leave their homes, many multiple times' />
-          )}
-        </div>
-
-        {Object.keys(casualties.byParty).length > 0 && (
-          <div className='mt-3 pt-2 border-t border-gray-200 dark:border-zinc-800/50 space-y-1.5'>
-            <div className='text-sm text-gray-500 uppercase tracking-wider font-extrabold mb-1.5'>Casualties Attributed to Military Operations</div>
-            {Object.entries(casualties.byParty)
-              .sort((a, b) => b[1].killed - a[1].killed)
-              .map(([party, d]) => {
-                const pct = casualties.totalKilled > 0 ? ((d.killed / casualties.totalKilled) * 100).toFixed(1) : '0';
-                return (
-                  <div key={party}>
-                    <div className='flex items-center justify-between text-base'>
-                      <span className='text-gray-700 dark:text-zinc-300'>{party}</span>
-                      <div className='flex items-center gap-2'>
-                        <span className='font-bold text-gray-900 dark:text-zinc-100 tabular-nums'>{d.killed.toLocaleString()}</span>
-                        <span className='text-xs text-gray-400 tabular-nums w-12 text-right'>({pct}%)</span>
-                      </div>
-                    </div>
-                    {d.injured > 0 && (
-                      <div className='text-sm text-gray-400 tabular-nums ml-0.5'>{d.injured.toLocaleString()} injured · {d.displaced > 0 ? `${(d.displaced / 1_000_000).toFixed(1)}M displaced` : ''}</div>
-                    )}
-                  </div>
-                );
-              })}
+        ) : (
+          <div>
+            <div className='text-lg font-black text-gray-400'>{loading ? '...' : 'Awaiting satellite data'}</div>
+            {curatedBurningCount > 0 && (
+              <div className='text-sm text-gray-500 dark:text-zinc-400 mt-1'>
+                {curatedBurningCount} facilities confirmed burning/damaged per news reports.
+                CO₂ estimates update when NASA FIRMS detects active thermal signatures.
+              </div>
+            )}
           </div>
         )}
 
+        {/* Equivalents */}
+        {totalCO2 > 0 && (
+          <div className='mt-2 space-y-1'>
+            <Row label='Same CO₂ as this many cars (yearly)' value={equiv.carsPerYear.toLocaleString()}
+              tip={`${formatCO2(totalCO2)} t/day × 365 days / 4.6 t/car/yr = ${equiv.carsPerYear.toLocaleString()} cars. Source: EPA (epa.gov/greenvehicles)`} />
+            <Row label='Same as this many homes (yearly)' value={equiv.homesPerYear.toLocaleString()}
+              tip={`${formatCO2(totalCO2)} t/day × 365 days / 7.5 t/home/yr = ${equiv.homesPerYear.toLocaleString()} homes. Source: EIA Residential Energy Consumption Survey`} />
+            <Row label='% of global daily emissions' value={`${equiv.percentGlobalDaily}%`}
+              tip={`${formatCO2(totalCO2)} t/day / 100,000,000 t/day global × 100. Source: IEA (36.8 Gt/yr ÷ 365 = ~100M t/day)`} />
+          </div>
+        )}
+
+        {/* Per-facility-type breakdown with formula (satellite) */}
+        {co2ByType.length > 0 && (
+          <div className='mt-3 space-y-1.5'>
+            {co2ByType.map(t => {
+              const label = t.type.replace('_', ' ');
+              return (
+                <div
+                  key={t.type}
+                  className='flex items-center justify-between text-sm cursor-help rounded px-2 py-1 hover:bg-orange-50 dark:hover:bg-zinc-800/60 transition-colors'
+                  title={[
+                    `${label}: ${t.count} detection${t.count > 1 ? 's' : ''}`,
+                    `Total FRP: ${t.frp.toFixed(1)} MW`,
+                    `Fuel: ${t.params.fuel} (H_c = ${t.params.hc} MJ/kg, EF = ${t.params.ef} kg CO₂/kg)`,
+                    `Radiative fraction: ${t.params.fRad} (${t.params.note})`,
+                    ``,
+                    `Multiplier = 86400 / (${t.params.fRad} × ${t.params.hc}) × ${t.params.ef} / 1000 = ${t.params.multiplier} t/MW/day`,
+                    `CO₂ = ${t.frp.toFixed(1)} MW × ${t.params.multiplier} = ${t.co2.toFixed(1)} t/day`,
+                  ].join('\n')}
+                >
+                  <span className='text-gray-600 dark:text-zinc-300 capitalize'>{label}</span>
+                  <span className='font-bold tabular-nums text-orange-700 dark:text-orange-400'>
+                    {formatCO2(t.co2)} t/day
+                    <span className='text-gray-400 dark:text-zinc-600 font-normal ml-1 text-xs'>({t.frp.toFixed(0)} MW × {t.params.multiplier})</span>
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {/* Capacity-based estimates breakdown */}
+        {capacityEstimates.length > 0 && (
+          <div className='mt-3 space-y-1.5'>
+            {satelliteCO2 > 0 && (
+              <div className='text-xs text-gray-400 dark:text-zinc-500 uppercase tracking-wide font-semibold'>Capacity-based estimates</div>
+            )}
+            {capacityEstimates.map(e => (
+              <div
+                key={e.facility.id}
+                className='flex items-center justify-between text-sm cursor-help rounded px-2 py-1 hover:bg-amber-50 dark:hover:bg-zinc-800/60 transition-colors'
+                title={e.breakdown}
+              >
+                <span className='text-gray-600 dark:text-zinc-300'>{e.facility.name}</span>
+                <span className='font-bold tabular-nums text-amber-700 dark:text-amber-400'>
+                  {formatCO2(e.co2)} t/day
+                  <span className='text-gray-400 dark:text-zinc-600 font-normal ml-1 text-xs'>(capacity est.)</span>
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Detection match info */}
+        <div className='mt-2 text-sm text-gray-500 dark:text-zinc-400'>
+          {facilityFireCount > 0 ? (
+            <>
+              <strong className='text-orange-600'>{facilityFireCount}</strong> of {totalDetections} satellite detections matched to tracked facilities.
+              Unmatched detections (agricultural, wildfire, flaring) excluded.
+              {capacityEstimates.length > 0 && (
+                <> + {capacityEstimates.length} facility estimates from capacity data.</>
+              )}
+            </>
+          ) : loading ? '...' : capacityEstimates.length > 0 ? (
+            <>
+              {totalDetections > 0 ? `${totalDetections} satellite detections in region — none within tracked facility zones. ` : ''}
+              {capacityEstimates.length} burning {capacityEstimates.length === 1 ? 'facility' : 'facilities'} estimated from capacity data (EPA factors).
+            </>
+          ) : totalDetections > 0 ? (
+            <>
+              {totalDetections} satellite detections in region — none currently within tracked facility zones.
+              {curatedBurningCount > 0 && ` ${curatedBurningCount} facilities confirmed burning per news reports.`}
+            </>
+          ) : 'Awaiting satellite data...'}
+        </div>
+
+        {/* Map button */}
+        <div className='mt-3 pt-2 border-t border-gray-200 dark:border-zinc-800/50'>
+          <button
+            onClick={onMapMode}
+            className='w-full flex items-center justify-between rounded-xl bg-white dark:bg-zinc-800/40 border border-gray-200 dark:border-zinc-700/50 p-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer'
+          >
+            <div className='flex items-center gap-4 text-sm'>
+              <span className='flex items-center gap-1.5 text-orange-600'>
+                <IconFlame className='h-4 w-4' />
+                <span className='font-bold tabular-nums'>{loading ? '...' : facilityFireCount > 0 ? `${facilityFireCount} facility fires` : `${totalDetections} detections`}</span>
+              </span>
+              <span className='flex items-center gap-1.5 text-teal-600 dark:text-teal-400'>
+                <IconWorld className='h-4 w-4' />
+                <span className='font-bold tabular-nums'>{curatedFires.length} tracked</span>
+              </span>
+            </div>
+            <span className='text-sm text-blue-600 dark:text-blue-400 font-bold'>View map →</span>
+          </button>
+        </div>
+
+        {/* Sources — collapsible dropdown */}
+        <SourcesDropdown />
+      </div>
+
+      {/* ── FACILITIES DAMAGE REPORT ── (only show after facility events exist) */}
+      {(hitFacilityList.length > 0 || timelineDate >= '2024-01-12') && <div className='px-4 pt-4 pb-3 border-b border-gray-200 dark:border-zinc-700'>
+        <SectionTitle icon={<IconBuildingSkyscraper className='h-5 w-5 text-red-600' />} title='Facilities Damage Report' />
+        <div className='text-base text-gray-500 mb-3'>
+          <strong className='text-red-600'>{hitFacilityList.length}</strong> hit · <strong className='text-yellow-600'>{threatenedFacilityList.length}</strong> threatened · {curatedFires.length} total tracked
+        </div>
+
+        {/* Total damage summary bar */}
+        <StatCard>
+          <div className='flex items-center justify-between mb-1.5'>
+            <span className='text-base font-bold text-gray-800 dark:text-zinc-200'>Total capacity damaged/offline</span>
+            <span className='text-xl font-black text-red-600 tabular-nums'>
+              {(hitFacilityList.reduce((s, f) => s + f.capacityBPD, 0) / 1_000_000).toFixed(1)}M BPD
+            </span>
+          </div>
+          <Bar
+            pct={Math.min(100, (hitFacilityList.reduce((s, f) => s + f.percentGlobalCapacity, 0)) * 4)}
+            color='bg-red-500'
+          />
+          <div className='text-sm text-gray-500 mt-1'>
+            {hitFacilityList.reduce((s, f) => s + f.percentGlobalCapacity, 0).toFixed(1)}% of global capacity affected
+          </div>
+        </StatCard>
+
+        {hitFacilityList.length > 0 && (
+          <>
+            <div className='text-xs uppercase tracking-widest text-red-500 font-extrabold mb-2 mt-4 flex items-center gap-1.5'>
+              <IconFlame className='h-3.5 w-3.5' />
+              Hit / Damaged ({hitFacilityList.length})
+            </div>
+            <div className='space-y-2 mb-4'>
+              {hitFacilityList.map(f => (
+                <FacilityCard key={f.id} facility={f} hit />
+              ))}
+            </div>
+          </>
+        )}
+
+        {threatenedFacilityList.length > 0 && (
+          <>
+            <div className='text-xs uppercase tracking-widest text-yellow-600 font-extrabold mb-2 flex items-center gap-1.5'>
+              <IconAlertTriangle className='h-3.5 w-3.5' />
+              Threatened / Monitoring ({threatenedFacilityList.length})
+            </div>
+            <div className='space-y-2'>
+              {threatenedFacilityList.map(f => (
+                <FacilityCard key={f.id} facility={f} hit={false} />
+              ))}
+            </div>
+          </>
+        )}
+
         <InfoBox>
-          That&apos;s the population of {populationKilled}. Every number is someone&apos;s parent, child, or neighbor.
-          {casualties.totalDisplaced > 0 && ` ${(casualties.totalDisplaced / 1_000_000).toFixed(1)} million people have nowhere to go home to.`}
+          Click any facility for full breakdown — strategic importance, cascade impact, and supply chain role.
         </InfoBox>
+      </div>}
+
+      {/* ── WHAT WE LOST ── */}
+      <div className='px-4 pt-4 pb-3 border-b border-gray-200 dark:border-zinc-700'>
+        <SectionTitle icon={<IconHeart className='h-5 w-5 text-red-600' />} title='What We Lost' />
+
+        {/* Years of life lost — the unifying number */}
+        <a href='/dashboard/lost' className='block hover:opacity-80 transition-opacity'>
+          <div className='text-4xl font-black text-red-600 dark:text-red-500 tabular-nums leading-none'
+            title={`${casualties.totalKilled.toLocaleString()} lives × 43 avg years remaining = ${(yearsOfLifeLost / 1_000_000).toFixed(1)}M years. Based on WHO global life expectancy of 72 and avg victim age of 29 from identified casualty records.`}
+          >
+            {(yearsOfLifeLost / 1_000_000).toFixed(1)}M years
+          </div>
+          <div className='text-base text-gray-500 dark:text-zinc-400 font-bold mt-1'>of human life</div>
+          <div className='text-sm text-gray-400 dark:text-zinc-500 tabular-nums mt-0.5'>
+            {casualties.totalKilled.toLocaleString()}+ killed · {casualties.totalInjured.toLocaleString()}+ injured · {casualties.totalDisplaced > 0 ? `${(casualties.totalDisplaced / 1_000_000).toFixed(1)}M displaced` : ''}
+          </div>
+        </a>
+
+        {/* Role-based loss grid — no sides, just people */}
+        <div className='mt-4 grid grid-cols-2 gap-2'>
+          {roleCounts.map((role) => {
+            const Icon = role.icon === 'stethoscope' ? IconStethoscope
+              : role.icon === 'heart' ? IconHeart
+              : role.icon === 'book' ? IconBook
+              : role.icon === 'camera' ? IconCamera
+              : role.icon === 'school' ? IconSchool
+              : IconFriends;
+            return (
+              <div key={role.label} className='flex items-center gap-2.5 rounded-lg bg-gray-100 dark:bg-zinc-900 px-3 py-2' title={`Source: ${role.source}`}>
+                <Icon className='h-4 w-4 text-gray-400 dark:text-zinc-500 shrink-0' />
+                <div className='min-w-0'>
+                  <div className='text-base font-black text-gray-900 dark:text-zinc-100 tabular-nums leading-tight'>
+                    {role.count.toLocaleString()}+
+                  </div>
+                  <div className='text-xs text-gray-500 dark:text-zinc-400 truncate'>{role.label}</div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
 
         <a
           href='/dashboard/lost'
-          className='mt-3 w-full flex items-center justify-center gap-2 rounded-xl bg-zinc-900 border border-zinc-800 p-3 text-sm font-bold text-zinc-300 hover:bg-zinc-800 hover:text-white transition-colors'
+          className='mt-4 w-full flex items-center justify-center gap-2 rounded-xl bg-zinc-900 border border-zinc-800 p-3 text-sm font-bold text-zinc-300 hover:bg-zinc-800 hover:text-white transition-colors'
         >
-          These are not just numbers — see what we lost →
+          Scroll through every one →
         </a>
       </div>
 
@@ -1030,63 +1347,6 @@ export default function DeepDivePanel({ onMapMode }: { onMapMode?: () => void } 
         </InfoBox>
       </div>
 
-      {/* ── FACILITIES DAMAGE REPORT ── (only show after facility events exist) */}
-      {(hitFacilityList.length > 0 || timelineDate >= '2024-01-12') && <div className='px-4 pt-4 pb-3 border-b border-gray-200 dark:border-zinc-700'>
-        <SectionTitle icon={<IconBuildingSkyscraper className='h-5 w-5 text-red-600' />} title='Facilities Damage Report' />
-        <div className='text-base text-gray-500 mb-3'>
-          <strong className='text-red-600'>{hitFacilityList.length}</strong> hit · <strong className='text-yellow-600'>{threatenedFacilityList.length}</strong> threatened · {curatedFires.length} total tracked
-        </div>
-
-        {/* Total damage summary bar */}
-        <StatCard>
-          <div className='flex items-center justify-between mb-1.5'>
-            <span className='text-base font-bold text-gray-800 dark:text-zinc-200'>Total capacity damaged/offline</span>
-            <span className='text-xl font-black text-red-600 tabular-nums'>
-              {(hitFacilityList.reduce((s, f) => s + f.capacityBPD, 0) / 1_000_000).toFixed(1)}M BPD
-            </span>
-          </div>
-          <Bar
-            pct={Math.min(100, (hitFacilityList.reduce((s, f) => s + f.percentGlobalCapacity, 0)) * 4)}
-            color='bg-red-500'
-          />
-          <div className='text-sm text-gray-500 mt-1'>
-            {hitFacilityList.reduce((s, f) => s + f.percentGlobalCapacity, 0).toFixed(1)}% of global capacity affected
-          </div>
-        </StatCard>
-
-        {hitFacilityList.length > 0 && (
-          <>
-            <div className='text-xs uppercase tracking-widest text-red-500 font-extrabold mb-2 mt-4 flex items-center gap-1.5'>
-              <IconFlame className='h-3.5 w-3.5' />
-              Hit / Damaged ({hitFacilityList.length})
-            </div>
-            <div className='space-y-2 mb-4'>
-              {hitFacilityList.map(f => (
-                <FacilityCard key={f.id} facility={f} hit />
-              ))}
-            </div>
-          </>
-        )}
-
-        {threatenedFacilityList.length > 0 && (
-          <>
-            <div className='text-xs uppercase tracking-widest text-yellow-600 font-extrabold mb-2 flex items-center gap-1.5'>
-              <IconAlertTriangle className='h-3.5 w-3.5' />
-              Threatened / Monitoring ({threatenedFacilityList.length})
-            </div>
-            <div className='space-y-2'>
-              {threatenedFacilityList.map(f => (
-                <FacilityCard key={f.id} facility={f} hit={false} />
-              ))}
-            </div>
-          </>
-        )}
-
-        <InfoBox>
-          Click any facility for full breakdown — strategic importance, cascade impact, and supply chain role.
-        </InfoBox>
-      </div>}
-
       {/* ── COUNTRY DAMAGE REPORT ── */}
       {countryDamage.length > 0 && (
         <div className='px-4 pt-4 pb-3 border-b border-gray-200 dark:border-zinc-700'>
@@ -1108,48 +1368,6 @@ export default function DeepDivePanel({ onMapMode }: { onMapMode?: () => void } 
           </InfoBox>
         </div>
       )}
-
-      {/* ── EMISSIONS ── */}
-      <div className='px-4 pt-4 pb-3 border-b border-gray-200 dark:border-zinc-700'>
-        <SectionTitle icon={<IconCloud className='h-5 w-5 text-orange-600' />} title='Emissions' />
-        {totalCO2 > 0 ? (
-          <div className='text-3xl font-black text-orange-700 dark:text-orange-400 tabular-nums leading-none'>
-            {formatCO2(totalCO2)} <span className='text-lg font-bold'>tons/day</span>
-          </div>
-        ) : (
-          <div className='text-lg font-black text-gray-400'>{loading ? '...' : '—'}</div>
-        )}
-
-        {totalCO2 > 0 && (
-          <div className='mt-2 space-y-1'>
-            <Row label='Same CO2 as this many cars (yearly)' value={equiv.carsPerYear.toLocaleString()}
-              tip='Each car emits ~4.6 tons CO2/year' />
-            <Row label='Same as this many homes (yearly)' value={equiv.homesPerYear.toLocaleString()}
-              tip='Average US home: ~7.5 tons CO2/year' />
-            <Row label='% of global daily emissions' value={`${equiv.percentGlobalDaily}%`}
-              tip='The world emits ~100 million tons of CO2 per day' />
-          </div>
-        )}
-
-        <div className='mt-3 pt-2 border-t border-gray-200 dark:border-zinc-800/50'>
-          <button
-            onClick={onMapMode}
-            className='w-full flex items-center justify-between rounded-xl bg-white dark:bg-zinc-800/40 border border-gray-200 dark:border-zinc-700/50 p-3 shadow-sm hover:shadow-md transition-shadow cursor-pointer'
-          >
-            <div className='flex items-center gap-4 text-sm'>
-              <span className='flex items-center gap-1.5 text-orange-600'>
-                <IconFlame className='h-4 w-4' />
-                <span className='font-bold tabular-nums'>{loading ? '...' : activeFires} active</span>
-              </span>
-              <span className='flex items-center gap-1.5 text-teal-600 dark:text-teal-400'>
-                <IconWorld className='h-4 w-4' />
-                <span className='font-bold tabular-nums'>{curatedFires.length} tracked</span>
-              </span>
-            </div>
-            <span className='text-sm text-blue-600 dark:text-blue-400 font-bold'>View map →</span>
-          </button>
-        </div>
-      </div>
 
       {/* ── PREDICTIONS BY THE NUMBERS ── */}
       <div className='px-4 pt-4 pb-3 border-b border-gray-200 dark:border-zinc-700'>

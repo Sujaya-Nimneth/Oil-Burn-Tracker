@@ -17,6 +17,8 @@
 //   Groceries $1,000/mo — BLS CPI avg family of 4
 //   Utilities ~$120/mo — EIA RECS 2022
 
+import autoConsumerJson from './auto-consumer-impact.json';
+
 export interface ConsumerImpact {
   date: string;
   oilPriceBbl: number;           // Brent $/barrel
@@ -281,15 +283,38 @@ export const consumerImpactData: ConsumerImpact[] = [
     headline: 'Oil drops 13% to $101 — but gas hasn\'t followed yet. Grocery inflation building as trucking costs rise.',
     source: 'AAA: $3.96 Mar 23. Fortune: Brent $101.44. BLS CPI food +3.1% YoY Feb.',
   },
+  {
+    date: '2026-03-27',
+    oilPriceBbl: 105,
+    gasPriceGallon: 4.02,
+    groceryInflationPct: 5.5,
+    monthlyGroceryExtra: 55,
+    natGasMMBtu: 7.0,
+    monthlyUtilityExtra: 68,
+    shippingSurchargePct: 65,
+    deliveryDelayDays: 12,
+    totalMonthlyExtra: 160,
+    headline: 'Brent surges 2.9% to $105 on nuclear/steel strikes. IRGC threatens Gulf industrial targets. Stocks hit worst streak in 4 years.',
+    source: 'Fortune: Brent $104.81. US crude $98.61 (+4.4%). AAA est ~$4.02.',
+  },
 ];
+
+// ═══ MERGE AUTO-GENERATED DAILY DATA ═══
+// Auto data from scripts/daily-stats-update.js fills gaps between curated entries.
+// Curated entries always take precedence over auto entries for the same date.
+const curatedDates = new Set(consumerImpactData.map((e) => e.date));
+const allConsumerData: ConsumerImpact[] = [
+  ...consumerImpactData,
+  ...(autoConsumerJson as ConsumerImpact[]).filter((a) => !curatedDates.has(a.date)),
+].sort((a, b) => a.date.localeCompare(b.date));
 
 /**
  * Returns the latest consumer impact entry on or before the given date.
  * Falls back to the first entry if the date is before all entries.
  */
 export function getConsumerImpactUpTo(date: string): ConsumerImpact {
-  let latest = consumerImpactData[0];
-  for (const entry of consumerImpactData) {
+  let latest = allConsumerData[0];
+  for (const entry of allConsumerData) {
     if (entry.date <= date) {
       latest = entry;
     }
