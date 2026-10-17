@@ -654,8 +654,10 @@ export function getInfrastructureDamageByCountry(
     let worstStatus: FacilityStatus = 'operational';
     let overallThreat: ThreatLevel = 'low';
     for (const f of facilities) {
-      if (STATUS_SEVERITY[f.status] > STATUS_SEVERITY[worstStatus]) worstStatus = f.status;
       if (THREAT_SEVERITY[f.threatLevel] > THREAT_SEVERITY[overallThreat]) overallThreat = f.threatLevel;
+    }
+    for (const f of hit) {
+      if (STATUS_SEVERITY[f.status] > STATUS_SEVERITY[worstStatus]) worstStatus = f.status;
     }
     const ce = countryEvents[country] || { events: 0, killed: 0, injured: 0, displaced: 0 };
     const { classification, severity } = classifyDamage(hit.length, facilities.length, pctGlobalOffline, worstStatus, ce.events);
