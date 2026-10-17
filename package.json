@@ -3,13 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name": "OilBurnTracker Contributors"
+    "name": "Sujaya Nimneth",
+    "url": "https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit && tsc -p functions/tsconfig.json --noEmit",
     "pages:build": "next build",
     "pages:deploy": "npx wrangler pages deploy out"
   },
