@@ -75,7 +75,7 @@ Open http://localhost:3000
 | Layer | Technology | Cost |
 |-------|-----------|------|
 | Framework | Next.js 16 + React 19 + TypeScript | Free |
-| Map | MapLibre GL JS (open source fork of Mapbox) | Free |
+| Map | MapLibre GL JS (open-source 3D WebGL map engine) | Free |
 | Tiles | ESRI satellite + AWS terrain DEM + CARTO labels | Free |
 | Fire Data | NASA FIRMS VIIRS satellite detections | Free |
 | Charts | Recharts | Free |
@@ -136,11 +136,11 @@ This software is released under the **MIT License**. See [LICENSE](LICENSE).
 
 ### Not Affiliated
 
-OilBurnTracker is **not affiliated** with NASA, any government agency, energy company, or news organization. It is an independent open-source project.
+OilBurnTracker is **not affiliated** with NASA, any government agency, energy company, or news organization. It is an independent open-source project created and maintained by **Sujaya Nimneth**.
 
 ### Limitation of Liability
 
-This tool is provided for **informational and educational purposes only**. It should not be used as the sole basis for investment, military, or policy decisions. The authors make no warranty about the accuracy, completeness, or timeliness of any data presented.
+This tool is provided for **informational and educational purposes only**. It should not be used as the sole basis for investment, military, or policy decisions. The author makes no warranty about the accuracy, completeness, or timeliness of any data presented.
 
 ## Contributing
 
@@ -190,6 +190,8 @@ npm run build    # outputs to out/
 npx serve out    # or any static file server
 ```
 
-## Credits
+## Author & Credits
+
+Created and maintained by **[Sujaya Nimneth](https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker)**.
 
 Built with data from NASA FIRMS, ESRI, AWS Open Data, and CARTO. News sourced from Bloomberg, Reuters, Al Jazeera, Washington Post, CNBC, Axios, Euronews, Business Today, and Middle East Eye.
