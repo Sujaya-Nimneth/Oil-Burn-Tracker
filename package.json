@@ -12,6 +12,10 @@
     "start": "next start",
     "lint": "tsc --noEmit",
     "typecheck": "tsc --noEmit && tsc -p functions/tsconfig.json --noEmit",
+    "update:headlines": "node scripts/headline-monitor.js --publish",
+    "update:stats": "node scripts/daily-stats-update.js --no-git",
+    "update:firms": "node scripts/fetch-firms-snapshot.js",
+    "update:all": "npm run update:headlines && npm run update:stats && npm run update:firms",
     "pages:build": "next build",
     "pages:deploy": "npx wrangler pages deploy out"
   },
