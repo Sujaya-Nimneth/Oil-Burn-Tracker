@@ -70,19 +70,19 @@ function seededRandom(seed) {
 
 function generateDays(fromDate, toDate) {
   const days = [];
-  const d = new Date(fromDate + 'T00:00:00');
-  const end = new Date(toDate + 'T00:00:00');
-  d.setDate(d.getDate() + 1); // Start day after baseline
+  const d = new Date(fromDate + 'T00:00:00Z');
+  const end = new Date(toDate + 'T00:00:00Z');
+  d.setUTCDate(d.getUTCDate() + 1); // Start day after baseline
   while (d <= end) {
     days.push(d.toISOString().slice(0, 10));
-    d.setDate(d.getDate() + 1);
+    d.setUTCDate(d.getUTCDate() + 1);
   }
   return days;
 }
 
 function daysSince(from, to) {
-  return Math.floor(
-    (new Date(to + 'T00:00:00').getTime() - new Date(from + 'T00:00:00').getTime()) / 86400000
+  return Math.round(
+    (new Date(to + 'T00:00:00Z').getTime() - new Date(from + 'T00:00:00Z').getTime()) / 86400000
   );
 }
 
