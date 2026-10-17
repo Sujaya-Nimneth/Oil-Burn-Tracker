@@ -1,25 +1,23 @@
 'use client';
 
-import { useState, useCallback, useRef, useEffect, useMemo } from 'react';
+import { useState, useCallback, useEffect, useMemo } from 'react';
 import {
   allEvents,
-  conflictEvents,
-  getEventsUpTo,
   CATEGORY_COLORS,
   type ConflictEvent
 } from '../data/conflict-events';
 import { useFireStore } from '@/stores/fire-store';
-import { curatedFires } from '@/features/fires/data/curated-fires';
 
-// ── Build day-by-day date array from first event to today ──
+// ── Build day-by-day date array from first event to today (UTC-safe) ──
 function buildDayArray(): string[] {
-  const start = new Date('2023-10-07T00:00:00');
-  const end = new Date();
+  const start = new Date('2023-10-07T00:00:00Z');
+  const todayIso = new Date().toISOString().slice(0, 10);
+  const end = new Date(todayIso + 'T00:00:00Z');
   const days: string[] = [];
   const d = new Date(start);
   while (d <= end) {
     days.push(d.toISOString().slice(0, 10));
-    d.setDate(d.getDate() + 1);
+    d.setUTCDate(d.getUTCDate() + 1);
   }
   return days;
 }
@@ -43,7 +41,7 @@ function formatDate(iso: string): string {
 }
 
 function daysSince(from: string, to: string): number {
-  return Math.floor((new Date(to).getTime() - new Date(from).getTime()) / 86400000);
+  return Math.round((new Date(to + 'T00:00:00Z').getTime() - new Date(from + 'T00:00:00Z').getTime()) / 86400000);
 }
 
 interface TimelineScrubberProps {
@@ -60,7 +58,14 @@ export default function TimelineScrubber({ onFlyTo }: TimelineScrubberProps) {
   const todayEvents = EVENTS_BY_DATE.get(currentDate) || [];
   const dayNumber = daysSince('2023-10-07', currentDate);
 
-  // ── Sync timeline date to global store ──
+  // ── Sync timeline date to global store (and update local index when store changes externally) ──
+  useEffect(() => {
+    const idx = ALL_DAYS.indexOf(storedDate);
+    if (idx >= 0 && idx !== currentIndex) {
+      setCurrentIndex(idx);
+    }
+  }, [storedDate]);
+
   useEffect(() => {
     setTimelineDate(currentDate);
   }, [currentDate, setTimelineDate]);
@@ -69,7 +74,7 @@ export default function TimelineScrubber({ onFlyTo }: TimelineScrubberProps) {
   useEffect(() => {
     const handler = (e: Event) => {
       const { eventId } = (e as CustomEvent).detail;
-      const ev = conflictEvents.find(c => c.id === eventId);
+      const ev = allEvents.find(c => c.id === eventId);
       if (!ev) return;
       const idx = ALL_DAYS.indexOf(ev.date);
       if (idx >= 0) setCurrentIndex(idx);
