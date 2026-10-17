@@ -72,11 +72,6 @@ function FeaturedEntry({ entry, number }: { entry: typeof livesLost[0]; number: 
               <div className='text-xl md:text-2xl font-bold text-white leading-snug'>
                 {entry.humanity}
               </div>
-              {false && entry.sourceUrl && (
-                <div className='mt-1.5 text-base md:text-lg text-zinc-400 leading-relaxed'>
-                  {entry.lost}
-                </div>
-              )}
             </div>
           </div>
           <div className='mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-zinc-600 ml-7'>
@@ -185,15 +180,15 @@ export default function WhatWeLostPage() {
     setSubmitEntry(n);
     setSubmitOpen(true);
   }, []);
+  const endIndex = virtualizer.range?.endIndex;
   useEffect(() => {
-    const range = virtualizer.range;
-    if (range) {
-      const last = range.endIndex + 1;
+    if (endIndex !== undefined) {
+      const last = endIndex + 1;
       setCurrentIndex(last);
       const saved = getSavedIndex();
       if (last > saved) saveIndex(last);
     }
-  });
+  }, [endIndex]);
 
   // Restore scroll position on load
   useEffect(() => {
