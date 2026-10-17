@@ -166,6 +166,7 @@ export default function FireMap() {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<maplibregl.Map | null>(null);
   const popup = useRef<maplibregl.Popup | null>(null);
+  const animFrameRef = useRef<number | null>(null);
 
   const fireData = useFireStore((s) => s.fireData);
   const layers = useFireStore((s) => s.layers);
@@ -516,6 +517,7 @@ export default function FireMap() {
       // ── Fire pulse + smoke drift animation ──
       let animFrame = 0;
       const animateFires = () => {
+        if (!map.current) return;
         animFrame++;
         const t = animFrame * 0.03;
         const pulse = 1 + 0.15 * Math.sin(t * 2); // glow breathes
@@ -526,7 +528,7 @@ export default function FireMap() {
           m.setPaintProperty('fires-smoke', 'circle-translate', [Math.sin(t * 0.5) * 2, smokeY]);
           m.setPaintProperty('fires-smoke', 'circle-opacity', smokeOp);
         } catch {}
-        requestAnimationFrame(animateFires);
+        animFrameRef.current = requestAnimationFrame(animateFires);
       };
       animateFires();
 
@@ -723,6 +725,10 @@ export default function FireMap() {
   useEffect(() => {
     initMap();
     return () => {
+      if (animFrameRef.current !== null) {
+        cancelAnimationFrame(animFrameRef.current);
+        animFrameRef.current = null;
+      }
       if (map.current) {
         map.current.remove();
         map.current = null;
