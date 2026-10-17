@@ -15,6 +15,13 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = __dirname;
 const SEEN_FILE = join(DATA_DIR, 'seen-headlines.json');
 const DRAFTS_FILE = join(DATA_DIR, 'draft-events.json');
+const AUTO_EVENTS_FILE = join(DATA_DIR, '..', 'src', 'features', 'timeline', 'data', 'auto-events.json');
+
+const ARGS = new Set(process.argv.slice(2));
+const SHOULD_PUBLISH = ARGS.has('--publish') || !ARGS.has('--drafts-only');
+const PROMOTE_DRAFTS = ARGS.has('--promote-drafts');
+
+const TRUSTED_SOURCE_PATTERN = /reuters|associated press|\bap\b|ap news|bbc|al jazeera|the guardian|guardian|cnn|france 24|bloomberg|cnbc|new york times|washington post|un news|pbs|npr|financial times|economist|times of israel|middle east eye|axios|cbs news|abc news|nbc news|sky news|dw\.com|deutsche welle|euronews/i;
 
 // ── Search queries for Google News RSS ──
 const NEWS_QUERIES = [
@@ -291,14 +298,92 @@ async function findVideoForHeadline(headline) {
 }
 
 // ── Generate event ID from title ──
-function generateEventId(title) {
-  return title
+function generateEventId(title, date = '') {
+  const slug = title
     .toLowerCase()
     .replace(/[^a-z0-9\s]/g, '')
     .trim()
     .split(/\s+/)
     .slice(0, 5)
     .join('-');
+  return date ? `auto-${slug}-${date}` : `auto-${slug}`;
+}
+
+function cleanHeadlineTitle(title, source = '') {
+  let cleaned = title.trim();
+  if (source) {
+    const escaped = source.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    cleaned = cleaned.replace(new RegExp(`\\s*[-–|]\\s*${escaped}$`, 'i'), '');
+  }
+  cleaned = cleaned.replace(/\s*[-–|]\s*[A-Za-z0-9 .,'&]+\.[a-z]{2,4}$/i, '');
+  return cleaned.trim();
+}
+
+function isTrustedSource(source = '', title = '') {
+  return TRUSTED_SOURCE_PATTERN.test(`${source} ${title}`);
+}
+
+function loadAutoEvents() {
+  if (!existsSync(AUTO_EVENTS_FILE)) return [];
+  try {
+    return JSON.parse(readFileSync(AUTO_EVENTS_FILE, 'utf-8'));
+  } catch {
+    return [];
+  }
+}
+
+function saveAutoEvents(events) {
+  writeFileSync(AUTO_EVENTS_FILE, JSON.stringify(events, null, 2) + '\n');
+}
+
+function toPublishedEvent(draft) {
+  const cleanTitle = cleanHeadlineTitle(draft.title, draft.source);
+  const geo = (draft.lat && draft.lng)
+    ? { lat: draft.lat, lng: draft.lng, ...(draft.zoom ? { zoom: draft.zoom } : {}), ...(draft.facilityId ? { facilityId: draft.facilityId } : {}) }
+    : geocodeHeadline(cleanTitle, draft.description);
+  const category = normalizeCategory(draft.category, cleanTitle, draft.description);
+
+  const event = {
+    id: draft.id.startsWith('auto-') ? draft.id : `auto-${draft.id}`,
+    date: draft.date,
+    title: cleanTitle,
+    category,
+    description: draft.description || `Via ${draft.source || 'news'}. Auto-detected by headline monitor.`,
+    lat: geo.lat,
+    lng: geo.lng,
+    ...(geo.facilityId ? { facilityId: geo.facilityId } : {}),
+    ...(draft.sourceUrl ? { sourceUrl: draft.sourceUrl } : {}),
+    ...(Array.isArray(draft.mediaUrls) && draft.mediaUrls.length > 0 ? { mediaUrls: draft.mediaUrls } : {}),
+  };
+  return event;
+}
+
+function mergeIntoAutoEvents(existingAuto, candidateEvents) {
+  const seenKeys = new Set(
+    existingAuto.map((e) => `${e.date}|${e.title.trim().toLowerCase()}`)
+  );
+  const usedIds = new Set(existingAuto.map((e) => e.id));
+  let added = 0;
+
+  for (const candidate of candidateEvents) {
+    const key = `${candidate.date}|${candidate.title.trim().toLowerCase()}`;
+    if (seenKeys.has(key)) continue;
+    seenKeys.add(key);
+
+    let id = candidate.id;
+    let suffix = 2;
+    while (usedIds.has(id)) {
+      id = `${candidate.id}-${candidate.date}-${suffix}`;
+      suffix++;
+    }
+    usedIds.add(id);
+
+    existingAuto.push({ ...candidate, id });
+    added++;
+  }
+
+  existingAuto.sort((a, b) => a.date.localeCompare(b.date));
+  return added;
 }
 
 // ── Main ──
@@ -307,8 +392,18 @@ async function main() {
 
   const seen = loadSeen();
   const drafts = loadDrafts();
+  const autoEvents = loadAutoEvents();
   const newHeadlines = [];
-  const today = new Date().toISOString().slice(0, 10);
+  const candidatesToPublish = [];
+
+  // Optional: promote existing trusted drafts from draft-events.json
+  if (PROMOTE_DRAFTS) {
+    for (const d of drafts) {
+      if (isTrustedSource(d.source, d.title)) {
+        candidatesToPublish.push(toPublishedEvent(d));
+      }
+    }
+  }
 
   // 1. Fetch news from all queries
   console.log('  Fetching news RSS feeds...');
@@ -317,7 +412,7 @@ async function main() {
     const items = await fetchGoogleNewsRSS(query);
     allItems.push(...items);
     // Small delay to be respectful
-    await new Promise(r => setTimeout(r, 500));
+    await new Promise(r => setTimeout(r, 300));
   }
 
   console.log(`  Found ${allItems.length} total items across ${NEWS_QUERIES.length} queries`);
@@ -334,17 +429,20 @@ async function main() {
 
   console.log(`  ${uniqueNew.length} new headlines after dedup`);
 
-  // 3. For each new headline, find a YouTube video and create a draft event
+  // 3. For each new headline, find a YouTube video, geocode, and create event
   for (const item of uniqueNew.slice(0, 15)) { // Cap at 15 per run
     console.log(`  Processing: ${item.title.slice(0, 60)}...`);
 
     const video = await findVideoForHeadline(item.title);
-    const category = detectCategory(item.title);
+    const cleanTitle = cleanHeadlineTitle(item.title, item.source);
+    const category = detectCategory(cleanTitle);
+    const geo = geocodeHeadline(cleanTitle);
+    const dateStr = item.pubDate.slice(0, 10);
 
     const draft = {
-      id: generateEventId(item.title),
-      date: item.pubDate.slice(0, 10),
-      title: item.title,
+      id: generateEventId(cleanTitle, dateStr),
+      date: dateStr,
+      title: cleanTitle,
       description: `Via ${item.source || 'news'}. Auto-detected by headline monitor.`,
       category,
       sourceUrl: item.link,
@@ -352,46 +450,61 @@ async function main() {
       fetchedAt: new Date().toISOString(),
       mediaUrls: video ? [{ type: 'youtube', url: video.url, label: video.title }] : [],
       videoMatch: video ? { videoId: video.videoId, title: video.title, confidence: 'auto' } : null,
-      // Placeholder fields for manual review
-      lat: null,
-      lng: null,
-      zoom: null,
+      lat: geo.lat,
+      lng: geo.lng,
+      zoom: geo.zoom || 7,
+      ...(geo.facilityId ? { facilityId: geo.facilityId } : {}),
       casualties: null,
-      status: 'draft', // needs human review before adding to conflict-events.ts
+      status: isTrustedSource(item.source, item.title) ? 'published' : 'draft',
     };
 
     drafts.push(draft);
     newHeadlines.push({ ...item, video, category });
 
+    if (SHOULD_PUBLISH && isTrustedSource(item.source, item.title)) {
+      candidatesToPublish.push(toPublishedEvent(draft));
+    }
+
     // Rate limit YouTube requests
-    await new Promise(r => setTimeout(r, 1000));
+    await new Promise(r => setTimeout(r, 800));
   }
 
-  // 4. Save state
+  // 4. Save state & publish to auto-events.json
   saveSeen(seen);
   saveDrafts(drafts);
 
-  // 5. Also fetch latest YouTube videos from key channels
-  console.log('  Searching YouTube for latest conflict videos...');
-  const ytResults = [];
-  for (const query of YT_QUERIES) {
-    const videos = await searchYouTube(query);
-    ytResults.push(...videos);
-    await new Promise(r => setTimeout(r, 1000));
-  }
-
-  // Save YouTube results separately
-  const ytFile = join(DATA_DIR, 'youtube-latest.json');
-  const ytUnique = [];
-  const ytSeen = new Set();
-  for (const v of ytResults) {
-    if (!ytSeen.has(v.videoId)) {
-      ytSeen.add(v.videoId);
-      ytUnique.push({ ...v, fetchedAt: new Date().toISOString() });
+  if (SHOULD_PUBLISH && candidatesToPublish.length > 0) {
+    const publishedCount = mergeIntoAutoEvents(autoEvents, candidatesToPublish);
+    if (publishedCount > 0) {
+      saveAutoEvents(autoEvents);
+      console.log(`  Published ${publishedCount} verified event(s) to auto-events.json`);
     }
   }
-  writeFileSync(ytFile, JSON.stringify(ytUnique.slice(0, 30), null, 2));
-  console.log(`  Saved ${ytUnique.length} unique YouTube videos`);
+
+  // 5. Also fetch latest YouTube videos from key channels
+  if (uniqueNew.length > 0) {
+    console.log('  Searching YouTube for latest conflict videos...');
+    const ytResults = [];
+    for (const query of YT_QUERIES) {
+      const videos = await searchYouTube(query);
+      ytResults.push(...videos);
+      await new Promise(r => setTimeout(r, 800));
+    }
+
+    const ytFile = join(DATA_DIR, 'youtube-latest.json');
+    const ytUnique = [];
+    const ytSeen = new Set();
+    for (const v of ytResults) {
+      if (!ytSeen.has(v.videoId)) {
+        ytSeen.add(v.videoId);
+        ytUnique.push({ ...v, fetchedAt: new Date().toISOString() });
+      }
+    }
+    if (ytUnique.length > 0) {
+      writeFileSync(ytFile, JSON.stringify(ytUnique.slice(0, 30), null, 2));
+      console.log(`  Saved ${ytUnique.length} unique YouTube videos`);
+    }
+  }
 
   // 6. Log summary
   if (newHeadlines.length > 0) {
