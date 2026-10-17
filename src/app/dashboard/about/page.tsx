@@ -35,7 +35,7 @@ export default function AboutPage() {
           </CardHeader>
           <CardContent className='text-sm text-muted-foreground space-y-2'>
             <p><strong>Satellite Fire Detection:</strong> NASA FIRMS (Fire Information for Resource Management System) — VIIRS instrument on Suomi NPP satellite, ~375m resolution, updated every ~3 hours.</p>
-            <p><strong>Base Map:</strong> Mapbox satellite imagery with street labels.</p>
+            <p><strong>Base Map:</strong> MapLibre GL with Esri World Imagery satellite tiles, AWS 3D terrain DEM, and CARTO street labels.</p>
             <p><strong>Facility Database:</strong> Curated list of major Middle East oil & gas facilities compiled from public sources.</p>
             <p><strong>Emissions Model:</strong> FRP-to-CO₂ conversion using facility-type-specific multipliers. These are rough estimates, not precise measurements.</p>
           </CardContent>
