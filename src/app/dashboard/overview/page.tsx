@@ -111,13 +111,30 @@ function FloatingStats() {
 
 export default function OverviewPage() {
   const [mapMode, setMapMode] = useState(false);
+  const setMapCenter = useFireStore((s) => s.setMapCenter);
+  const setMapZoom = useFireStore((s) => s.setMapZoom);
   useFireData();
 
-  const handleFlyTo = useCallback((lat: number, lng: number, zoom?: number) => {
-    window.dispatchEvent(
-      new CustomEvent('map-flyto', { detail: { lng, lat, zoom: zoom || 10 } })
-    );
+  useEffect(() => {
+    try {
+      if (sessionStorage.getItem('obt-open-map') === '1') {
+        sessionStorage.removeItem('obt-open-map');
+        setMapMode(true);
+      }
+    } catch {}
   }, []);
+
+  const handleFlyTo = useCallback((lat: number, lng: number, zoom?: number) => {
+    const targetZoom = zoom || 10;
+    setMapCenter([lng, lat]);
+    setMapZoom(targetZoom);
+    setMapMode(true);
+    setTimeout(() => {
+      window.dispatchEvent(
+        new CustomEvent('map-flyto', { detail: { lng, lat, zoom: targetZoom } })
+      );
+    }, 50);
+  }, [setMapCenter, setMapZoom]);
 
   // ── MAP MODE ──
   if (mapMode) {
