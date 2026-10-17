@@ -1,7 +1,7 @@
 'use client';
 
 import { useFireData } from '@/features/map/hooks/use-fire-data';
-import { curatedFires, type FacilityStatus } from '@/features/fires/data/curated-fires';
+import { curatedFires, getEffectiveFacilityStatus, type FacilityStatus } from '@/features/fires/data/curated-fires';
 import { useFireStore } from '@/stores/fire-store';
 import { formatCO2 } from '@/features/emissions/utils/emissions-model';
 import PageContainer from '@/components/layout/page-container';
@@ -21,6 +21,7 @@ const STATUS_CONFIG: Record<FacilityStatus, { label: string; variant: 'destructi
 export default function FiresPage() {
   useFireData();
   const fireData = useFireStore((s) => s.fireData);
+  const timelineDate = useFireStore((s) => s.timelineDate);
   const setMapCenter = useFireStore((s) => s.setMapCenter);
   const setMapZoom = useFireStore((s) => s.setMapZoom);
   const setSelectedFacility = useFireStore((s) => s.setSelectedFacility);
@@ -31,9 +32,7 @@ export default function FiresPage() {
     );
     const maxFRP = nearby.reduce((max, f) => Math.max(max, f.properties.frp), 0);
     const totalCO2 = nearby.reduce((sum, f) => sum + f.properties.estimatedCO2TonsDay, 0);
-    const liveStatus: FacilityStatus = nearby.length > 0
-      ? maxFRP > 50 ? 'active_fire' : 'monitoring'
-      : facility.status;
+    const liveStatus = getEffectiveFacilityStatus(facility, timelineDate, maxFRP);
 
     return { ...facility, liveStatus, fireCount: nearby.length, maxFRP, totalCO2 };
   }).sort((a, b) => {

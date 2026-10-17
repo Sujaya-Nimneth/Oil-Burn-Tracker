@@ -610,6 +610,35 @@ function classifyDamage(facilitiesHit: number, facilitiesTotal: number, pctGloba
 const STATUS_SEVERITY: Record<FacilityStatus, number> = { active_fire: 4, damaged: 3, offline: 2, monitoring: 1, operational: 0 };
 const THREAT_SEVERITY: Record<ThreatLevel, number> = { critical: 4, high: 3, elevated: 2, moderate: 1, low: 0 };
 
+/**
+ * Resolves a facility's effective status at a given timelineDate and optional live satellite FRP.
+ * - Before attackDate: 'monitoring'
+ * - High live FRP (>50 MW): 'active_fire'
+ * - Static 'active_fire' >21 days after attackDate without active high-FRP thermal anomaly: transitions to 'damaged'
+ */
+export function getEffectiveFacilityStatus(
+  facility: CuratedFire,
+  timelineDate: string,
+  maxNearbyFRP = 0
+): FacilityStatus {
+  if (facility.attackDate && timelineDate < facility.attackDate) {
+    return 'monitoring';
+  }
+  if (maxNearbyFRP > 50) {
+    return 'active_fire';
+  }
+  if (facility.status === 'active_fire' && facility.attackDate) {
+    const daysSinceAttack =
+      (new Date(timelineDate + 'T00:00:00Z').getTime() -
+        new Date(facility.attackDate + 'T00:00:00Z').getTime()) /
+      86400000;
+    if (daysSinceAttack > 21 && maxNearbyFRP <= 25) {
+      return 'damaged';
+    }
+  }
+  return facility.status;
+}
+
 export function getInfrastructureDamageByCountry(
   hitFacilityIds: Set<string>,
   timelineDate: string,
@@ -657,7 +686,8 @@ export function getInfrastructureDamageByCountry(
       if (THREAT_SEVERITY[f.threatLevel] > THREAT_SEVERITY[overallThreat]) overallThreat = f.threatLevel;
     }
     for (const f of hit) {
-      if (STATUS_SEVERITY[f.status] > STATUS_SEVERITY[worstStatus]) worstStatus = f.status;
+      const effectiveStatus = getEffectiveFacilityStatus(f, timelineDate);
+      if (STATUS_SEVERITY[effectiveStatus] > STATUS_SEVERITY[worstStatus]) worstStatus = effectiveStatus;
     }
     const ce = countryEvents[country] || { events: 0, killed: 0, injured: 0, displaced: 0 };
     const { classification, severity } = classifyDamage(hit.length, facilities.length, pctGlobalOffline, worstStatus, ce.events);
