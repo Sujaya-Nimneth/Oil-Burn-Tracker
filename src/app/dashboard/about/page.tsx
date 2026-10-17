@@ -64,10 +64,10 @@ export default function AboutPage() {
           </CardHeader>
           <CardContent className='text-sm text-muted-foreground space-y-2'>
             <p>
-              OilBurnTracker is Made by Sujaya Nimneth.
+              OilBurnTracker is created and maintained by Sujaya Nimneth.
             </p>
             <p>
-              <a href='https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker.git' target='_blank' rel='noopener noreferrer' className='text-primary underline'>
+              <a href='https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker' target='_blank' rel='noopener noreferrer' className='text-primary underline'>
                 GitHub Repository
               </a>
             </p>
