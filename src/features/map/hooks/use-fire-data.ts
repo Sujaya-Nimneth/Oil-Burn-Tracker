@@ -20,13 +20,28 @@ export function useFireData() {
     setError(null);
 
     try {
-      const res = await fetch('/api/firms?days=2&source=VIIRS_SNPP_NRT');
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      let data: (FireGeoJSON & { metadata?: { error?: string; fetchedAt?: string } }) | null = null;
 
-      const data: FireGeoJSON & { metadata?: { error?: string } } = await res.json();
+      try {
+        const res = await fetch('/api/firms?days=2&source=VIIRS_SNPP_NRT');
+        if (res.ok) {
+          const apiData = await res.json();
+          if (Array.isArray(apiData?.features) && apiData.features.length > 0) {
+            data = apiData;
+          }
+        }
+      } catch {
+        // Ignore and try static snapshot fallback below
+      }
 
-      if (data.metadata?.error) {
-        console.warn('FIRMS data warning:', data.metadata.error);
+      if (!data) {
+        const fallbackRes = await fetch('/firms-latest.json');
+        if (!fallbackRes.ok) throw new Error(`HTTP ${fallbackRes.status}`);
+        data = await fallbackRes.json();
+      }
+
+      if (!data || !Array.isArray(data.features)) {
+        throw new Error('Invalid fire data response');
       }
 
       // Enrich with facility matching and CO2 recalculation
