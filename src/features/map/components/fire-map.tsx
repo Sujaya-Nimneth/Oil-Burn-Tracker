@@ -5,7 +5,7 @@ import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useFireStore, type FireFeature, type FireGeoJSON } from '@/stores/fire-store';
 import { curatedFires, type FacilityStatus } from '@/features/fires/data/curated-fires';
-import { conflictEvents, CATEGORY_COLORS, type ConflictEvent } from '@/features/timeline/data/conflict-events';
+import { allEvents, conflictEvents, CATEGORY_COLORS, type ConflictEvent } from '@/features/timeline/data/conflict-events';
 
 // Free satellite tiles — no API key needed
 const SATELLITE_STYLE: maplibregl.StyleSpecification = {
@@ -453,7 +453,7 @@ export default function FireMap() {
       // ── Conflict event pins (synced to timeline) ──
       m.addSource('conflict-events', {
         type: 'geojson',
-        data: buildEventsGeoJSON(conflictEvents)
+        data: buildEventsGeoJSON(allEvents)
       });
 
       // Outer glow ring for event pins
@@ -795,7 +795,7 @@ export default function FireMap() {
       const m = map.current;
 
       // Always resolve the full event from source data for rich content
-      const ev = conflictEvents.find(evt => evt.id === eventId);
+      const ev = allEvents.find(evt => evt.id === eventId);
       if (!ev || !ev.lat || !ev.lng) return;
 
       if (popup.current) popup.current.remove();
