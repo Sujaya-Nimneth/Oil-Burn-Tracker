@@ -2,10 +2,9 @@
 /**
  * Headline Monitor — checks news RSS + YouTube every hour
  * Finds conflict-related headlines and matching videos,
- * saves drafts for review, and emails a summary.
+ * and saves draft events for review.
  *
  * Usage: node scripts/headline-monitor.js
- * Cron:  0 * * * * cd /home/agent/repos/oilburntracker && node scripts/headline-monitor.js
  */
 
 import { readFileSync, writeFileSync, existsSync } from 'fs';
@@ -217,40 +216,6 @@ function generateEventId(title) {
     .join('-');
 }
 
-// ── Email summary via Conductor ──
-async function emailSummary(newHeadlines) {
-  if (newHeadlines.length === 0) return;
-
-  const body = newHeadlines.map((h, i) =>
-    `${i + 1}. ${h.title}\n   Source: ${h.source}\n   ${h.link}\n   Video: ${h.video ? h.video.url : 'none found'}\n   Category: ${h.category}\n`
-  ).join('\n');
-
-  const subject = `OBT: ${newHeadlines.length} new headline${newHeadlines.length > 1 ? 's' : ''} found`;
-  const message = `Headline Monitor found ${newHeadlines.length} new stories:\n\n${body}\n\nDraft events saved to scripts/draft-events.json\nReview and add to conflict-events.ts as needed.`;
-
-  try {
-    // Try Conductor email API
-    const res = await fetch('http://localhost:8080/api/google/email/send', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        account: 'oilburntracker',
-        to: 'gabe1044hiddenfarms@gmail.com',
-        subject,
-        body: message,
-      }),
-      signal: AbortSignal.timeout(10000),
-    });
-    if (res.ok) {
-      console.log(`  Emailed summary to Gabe`);
-    } else {
-      console.log(`  Email failed (${res.status}), summary saved to drafts file`);
-    }
-  } catch {
-    console.log(`  Conductor not available, summary saved to drafts file only`);
-  }
-}
-
 // ── Main ──
 async function main() {
   console.log(`[${new Date().toISOString()}] Headline Monitor starting...`);
@@ -343,9 +308,8 @@ async function main() {
   writeFileSync(ytFile, JSON.stringify(ytUnique.slice(0, 30), null, 2));
   console.log(`  Saved ${ytUnique.length} unique YouTube videos`);
 
-  // 6. Email summary
+  // 6. Log summary
   if (newHeadlines.length > 0) {
-    await emailSummary(newHeadlines);
     console.log(`\n  NEW HEADLINES:`);
     newHeadlines.forEach((h, i) => {
       console.log(`  ${i + 1}. [${h.category}] ${h.title}`);
