@@ -21,6 +21,9 @@ const STATUS_CONFIG: Record<FacilityStatus, { label: string; variant: 'destructi
 export default function FiresPage() {
   useFireData();
   const fireData = useFireStore((s) => s.fireData);
+  const setMapCenter = useFireStore((s) => s.setMapCenter);
+  const setMapZoom = useFireStore((s) => s.setMapZoom);
+  const setSelectedFacility = useFireStore((s) => s.setSelectedFacility);
 
   const facilityData = curatedFires.map((facility) => {
     const nearby = fireData.features.filter(
@@ -106,7 +109,13 @@ export default function FiresPage() {
                       </a>
                     )}
                     <Link
-                      href={`/dashboard/overview`}
+                      href='/dashboard/overview'
+                      onClick={() => {
+                        setMapCenter([f.lng, f.lat]);
+                        setMapZoom(11);
+                        setSelectedFacility(f);
+                        try { sessionStorage.setItem('obt-open-map', '1'); } catch {}
+                      }}
                       className='inline-flex items-center gap-1 rounded-full bg-muted/60 px-2.5 py-1 text-[10px] font-medium hover:bg-accent transition-colors'
                     >
                       <IconMapPin className='h-3 w-3 text-green-400' />
