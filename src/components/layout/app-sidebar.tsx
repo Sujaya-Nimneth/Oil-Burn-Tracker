@@ -117,7 +117,7 @@ export default function AppSidebar() {
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip='GitHub'>
               <a
-                href='https://github.com/gabeflowers/oilburntracker'
+                href='https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker.git'
                 target='_blank'
                 rel='noopener noreferrer'
               >
