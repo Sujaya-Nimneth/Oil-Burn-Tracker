@@ -1,0 +1,65 @@
+name: Auto Update Conflict & Satellite Data
+
+on:
+  schedule:
+    # Runs every 6 hours (00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch & publish verified conflict headlines
+        run: node scripts/headline-monitor.js --publish
+
+      - name: Update consumer impact, war costs, and casualty telemetry
+        run: node scripts/daily-stats-update.js --no-git
+
+      - name: Refresh NASA FIRMS VIIRS satellite snapshot
+        env:
+          FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
+        run: node scripts/fetch-firms-snapshot.js
+
+      - name: Validate TypeScript types before committing
+        run: npm run typecheck
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "Sujaya Nimneth"
+          git config user.email "sujayanimneth@outlook.com"
+          git add \
+            src/features/timeline/data/auto-events.json \
+            src/features/impact/data/auto-consumer-impact.json \
+            src/features/timeline/data/auto-war-costs.json \
+            src/features/timeline/data/auto-daily-stats.json \
+            public/firms-latest.json \
+            scripts/draft-events.json \
+            scripts/seen-headlines.json \
+            scripts/youtube-latest.json
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+          TODAY=$(date -u +%Y-%m-%d)
+          git commit -m "data(auto): scheduled conflict, market, and satellite update ($TODAY)"
+          git push origin main
