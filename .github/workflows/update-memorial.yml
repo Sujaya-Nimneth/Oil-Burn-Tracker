@@ -1,0 +1,42 @@
+name: Weekly Memorial Dataset Update
+
+on:
+  schedule:
+    # Runs every Sunday at 04:00 UTC
+    - cron: '0 4 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-memorial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebuild memorial dataset from upstream humanitarian registries
+        run: python3 scripts/build-memorial-data.py
+
+      - name: Commit and push updated memorial data
+        run: |
+          git config user.name "Sujaya Nimneth"
+          git config user.email "sujayanimneth@outlook.com"
+          git add public/memorial-data.json
+          if git diff --cached --quiet; then
+            echo "No changes to memorial-data.json."
+            exit 0
+          fi
+          TODAY=$(date -u +%Y-%m-%d)
+          git commit -m "data(memorial): weekly humanitarian registry sync ($TODAY)"
+          git push origin main
