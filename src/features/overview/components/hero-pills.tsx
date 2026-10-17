@@ -2,7 +2,7 @@
 
 import { useMemo } from 'react';
 import { useFireStore } from '@/stores/fire-store';
-import { getCasualtiesUpTo } from '@/features/timeline/data/conflict-events';
+import { getCasualtiesUpTo, getVisibleFacilityIds } from '@/features/timeline/data/conflict-events';
 import { getConsumerImpactUpTo } from '@/features/impact/data/consumer-impact';
 import { formatCO2, estimateCO2FromCapacity } from '@/features/emissions/utils/emissions-model';
 import { curatedFires } from '@/features/fires/data/curated-fires';
@@ -15,13 +15,18 @@ export default function HeroPills() {
   const facilityFires = fireData.features.filter(f => f.properties.matchedFacility);
   const satelliteCO2 = facilityFires.reduce((s, f) => s + f.properties.estimatedCO2TonsDay, 0);
 
-  // Capacity-based fallback for burning facilities without satellite match
+  // Capacity-based fallback for burning facilities without satellite match (synced to timelineDate)
   const capacityCO2 = useMemo(() => {
     const matchedIds = new Set(facilityFires.map(f => f.properties.matchedFacility!.id));
+    const hitIds = getVisibleFacilityIds(timelineDate);
     return curatedFires
-      .filter(f => (f.status === 'active_fire' || f.status === 'damaged') && !matchedIds.has(f.id))
+      .filter(f =>
+        (f.status === 'active_fire' || f.status === 'damaged') &&
+        !matchedIds.has(f.id) &&
+        (hitIds.has(f.id) || (f.attackDate != null && f.attackDate <= timelineDate))
+      )
       .reduce((sum, f) => sum + estimateCO2FromCapacity(f.facilityType, f.status, f.capacityBPD, f.gasCapacityBCFD, f.storageMBBL), 0);
-  }, [facilityFires]);
+  }, [facilityFires, timelineDate]);
 
   const totalCO2 = satelliteCO2 + capacityCO2;
   const casualties = getCasualtiesUpTo(timelineDate);

@@ -656,17 +656,21 @@ export default function DeepDivePanel({ onMapMode }: { onMapMode?: () => void } 
     facilityFires.map(f => f.properties.matchedFacility!.id)
   ), [facilityFires]);
 
-  // Capacity-based CO2 for burning facilities WITHOUT satellite data
+  // Capacity-based CO2 for burning facilities WITHOUT satellite data (synced to timelineDate)
   const capacityEstimates = useMemo(() => {
     return curatedFires
-      .filter(f => (f.status === 'active_fire' || f.status === 'damaged') && !satelliteMatchedIds.has(f.id))
+      .filter(f =>
+        (f.status === 'active_fire' || f.status === 'damaged') &&
+        !satelliteMatchedIds.has(f.id) &&
+        (facilityIds.has(f.id) || (f.attackDate != null && f.attackDate <= timelineDate))
+      )
       .map(f => ({
         facility: f,
         co2: estimateCO2FromCapacity(f.facilityType, f.status, f.capacityBPD, f.gasCapacityBCFD, f.storageMBBL),
         breakdown: capacityBreakdown(f.facilityType, f.status, f.capacityBPD, f.gasCapacityBCFD, f.storageMBBL),
       }))
       .filter(e => e.co2 > 0);
-  }, [satelliteMatchedIds]);
+  }, [satelliteMatchedIds, facilityIds, timelineDate]);
 
   const capacityCO2 = capacityEstimates.reduce((sum, e) => sum + e.co2, 0);
   const totalCO2 = satelliteCO2 + capacityCO2;
