@@ -15,7 +15,7 @@ interface SubmissionBody {
   photoUrl: string | null;
 }
 
-const REPO = 'oilburntracker/oilburntracker';
+const REPO = 'Sujaya-Nimneth/Oil-Burn-Tracker';
 
 // Simple in-memory rate limit (resets on cold start — good enough)
 const ipHits = new Map<string, { count: number; resetAt: number }>();
