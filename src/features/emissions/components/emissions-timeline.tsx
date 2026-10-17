@@ -1,7 +1,6 @@
 'use client';
 
 import { useFireStore } from '@/stores/fire-store';
-import { curatedFires } from '@/features/fires/data/curated-fires';
 import {
   AreaChart,
   Area,
@@ -19,12 +18,14 @@ const FACILITY_COLORS: Record<string, string> = {
   pipeline: '#f59e0b',
   storage: '#8b5cf6',
   oil_field: '#10b981',
+  gas_field: '#14b8a6',
   port: '#06b6d4',
   unknown: '#6b7280'
 };
 
 export default function EmissionsTimeline() {
   const fireData = useFireStore((s) => s.fireData);
+  const loading = useFireStore((s) => s.loading);
 
   // Group fires by date and facility type
   const dateMap = new Map<string, Record<string, number>>();
@@ -60,7 +61,11 @@ export default function EmissionsTimeline() {
   if (data.length === 0) {
     return (
       <div className='flex h-64 items-center justify-center text-muted-foreground'>
-        <p>No emissions data available yet. Fire data is loading...</p>
+        <p>
+          {loading
+            ? 'Loading live satellite fire data...'
+            : 'No live satellite thermal detections available right now.'}
+        </p>
       </div>
     );
   }
