@@ -2587,8 +2587,12 @@ function buildUniqueAllEvents(events: ConflictEvent[]): ConflictEvent[] {
 export const allEvents: ConflictEvent[] = buildUniqueAllEvents([
   ...conflictEvents,
   ...autoEvents,
-  ...autoDailyStats,
 ]);
+
+const allEventsWithTelemetry: ConflictEvent[] = [
+  ...allEvents,
+  ...autoDailyStats,
+];
 
 // ═══ HELPER FUNCTIONS ═══
 
@@ -2608,7 +2612,7 @@ const IRAN_REGIME_IDS = new Set([
 ]);
 
 export function getCasualtiesUpTo(date: string) {
-  const events = getEventsUpTo(date);
+  const events = allEventsWithTelemetry.filter((e) => e.date <= date);
   let totalKilled = 0;
   let totalInjured = 0;
   let totalDisplaced = 0;
