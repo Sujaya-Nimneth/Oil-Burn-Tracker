@@ -47,8 +47,8 @@ Abqaiq (7M BPD), SAMREF Yanbu, Jubail, Al Hosn, Mesaieed
 ## Quick Start
 
 ```bash
-git clone https://github.com/oilburntracker/oilburntracker.git
-cd oilburntracker
+git clone https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker.git
+cd Oil-Burn-Tracker
 npm install
 cp .env.example .env.local
 ```

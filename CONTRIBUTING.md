@@ -5,8 +5,8 @@ Thanks for your interest. This project tracks conflict-affected energy infrastru
 ## Quick Start
 
 ```bash
-git clone https://github.com/oilburntracker/oilburntracker.git
-cd oilburntracker
+git clone https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker.git
+cd Oil-Burn-Tracker
 npm install
 cp .env.example .env.local
 # Add your FIRMS API key to .env.local (free: https://firms.modaps.eosdis.nasa.gov/api/area/)
