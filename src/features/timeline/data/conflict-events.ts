@@ -2560,8 +2560,35 @@ export const conflictEvents: ConflictEvent[] = [
 const autoEvents: ConflictEvent[] = autoEventsJson as ConflictEvent[];
 // ═══ AUTO DAILY STATS (from daily-stats-update.js — casualty estimates) ═══
 const autoDailyStats: ConflictEvent[] = autoDailyStatsJson as ConflictEvent[];
-export const allEvents: ConflictEvent[] = [...conflictEvents, ...autoEvents, ...autoDailyStats]
-  .sort((a, b) => a.date.localeCompare(b.date) || (a.time || '').localeCompare(b.time || ''));
+
+function buildUniqueAllEvents(events: ConflictEvent[]): ConflictEvent[] {
+  const seenKeys = new Set<string>();
+  const usedIds = new Map<string, number>();
+  const result: ConflictEvent[] = [];
+
+  for (const e of events) {
+    const titleKey = `${e.date}|${e.title.trim().toLowerCase()}`;
+    if (seenKeys.has(titleKey)) continue;
+    seenKeys.add(titleKey);
+
+    let id = e.id;
+    const prevCount = usedIds.get(id) || 0;
+    usedIds.set(id, prevCount + 1);
+    if (prevCount > 0) {
+      id = `${e.id}-${e.date}-${prevCount + 1}`;
+    }
+
+    result.push(id === e.id ? e : { ...e, id });
+  }
+
+  return result.sort((a, b) => a.date.localeCompare(b.date) || (a.time || '').localeCompare(b.time || ''));
+}
+
+export const allEvents: ConflictEvent[] = buildUniqueAllEvents([
+  ...conflictEvents,
+  ...autoEvents,
+  ...autoDailyStats,
+]);
 
 // ═══ HELPER FUNCTIONS ═══
 
