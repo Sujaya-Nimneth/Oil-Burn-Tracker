@@ -11,10 +11,11 @@ import DeepDivePanel from '@/features/overview/components/deep-dive-panel';
 import MobileTabs from '@/features/overview/components/mobile-tabs';
 import { useFireData } from '@/features/map/hooks/use-fire-data';
 import { useFireStore } from '@/stores/fire-store';
-import { getCasualtiesUpTo, getVisibleFacilityIds, getNuclearStatusUpTo } from '@/features/timeline/data/conflict-events';
+import { getCasualtiesUpTo, getVisibleFacilityIds } from '@/features/timeline/data/conflict-events';
 import { getSupplyDisruptionUpTo } from '@/features/fires/data/curated-fires';
 import { getWarCostUpTo } from '@/features/timeline/data/war-costs';
 import { getConsumerImpactUpTo } from '@/features/impact/data/consumer-impact';
+import { useIsMobile } from '@/hooks/use-mobile';
 import { IconSkull, IconBomb, IconAlertTriangle, IconReceipt, IconX, IconChevronUp, IconMap } from '@tabler/icons-react';
 
 const FireMap = dynamic(() => import('@/features/map/components/fire-map'), {
@@ -111,6 +112,7 @@ function FloatingStats() {
 
 export default function OverviewPage() {
   const [mapMode, setMapMode] = useState(false);
+  const isMobile = useIsMobile();
   const setMapCenter = useFireStore((s) => s.setMapCenter);
   const setMapZoom = useFireStore((s) => s.setMapZoom);
   useFireData();
@@ -171,21 +173,21 @@ export default function OverviewPage() {
         </button>
       </div>
 
-
-      {/* Mobile: tabs (Feed / Data) + map icon */}
-      <div className='md:hidden flex-1 min-h-0'>
-        <MobileTabs onFlyTo={handleFlyTo} onMapMode={() => setMapMode(true)} />
-      </div>
-
-      {/* Desktop: data panel + feed side by side */}
-      <div className='hidden md:flex flex-1 min-h-0'>
-        <div className='w-[340px] shrink-0 border-r border-gray-200 dark:border-zinc-800 bg-white dark:bg-zinc-950/90'>
-          <DeepDivePanel onMapMode={() => setMapMode(true)} />
+      {/* Render only active viewport layout to avoid double-mounting 1,300+ event cards */}
+      {isMobile ? (
+        <div className='flex-1 min-h-0 flex flex-col'>
+          <MobileTabs onFlyTo={handleFlyTo} onMapMode={() => setMapMode(true)} />
         </div>
-        <div className='flex-1 min-w-0'>
-          <EventFeed onFlyTo={handleFlyTo} fullPage />
+      ) : (
+        <div className='flex flex-1 min-h-0'>
+          <div className='w-[340px] shrink-0 border-r border-gray-200 dark:border-zinc-800 bg-white dark:bg-zinc-950/90'>
+            <DeepDivePanel onMapMode={() => setMapMode(true)} />
+          </div>
+          <div className='flex-1 min-w-0'>
+            <EventFeed onFlyTo={handleFlyTo} fullPage />
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Timeline scrubber — fixed to bottom */}
       <div className='fixed bottom-0 left-0 right-0 z-20 bg-white dark:bg-zinc-950 border-t border-gray-200 dark:border-zinc-800'>
