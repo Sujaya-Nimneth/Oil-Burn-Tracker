@@ -44,9 +44,10 @@ export default function TimelinePage() {
               from detected fires, measured in megawatts (MW).
             </p>
             <p>
-              We apply facility-type-specific conversion factors to translate FRP into estimated
-              CO₂ emissions (tons/day). Refineries produce approximately 86.4 tons CO₂ per MW-day,
-              while pipeline fires produce approximately 50.4 tons CO₂ per MW-day.
+              We apply facility-type-specific conversion factors (calibrated to IPCC 2006 fuel
+              parameters and Elvidge et al. 2020 radiative fractions) to translate FRP into estimated
+              CO₂ emissions (tons/day). Refineries produce approximately 79.1 tons CO₂ per MW-day,
+              while pipeline fires produce approximately 32.3 tons CO₂ per MW-day.
             </p>
             <p className='text-yellow-500'>
               These are rough estimates for awareness purposes, not precise measurements.
