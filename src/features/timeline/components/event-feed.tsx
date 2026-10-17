@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useRef, useEffect, useCallback } from 'react';
+import { useState, useMemo, useRef, useEffect, useCallback } from 'react';
 import { useFireStore } from '@/stores/fire-store';
 import {
   getEventsUpTo,
@@ -8,14 +8,27 @@ import {
   getVisibleFacilityIds,
   CATEGORY_COLORS,
   CATEGORY_LABELS,
-  type ConflictEvent
+  type ConflictEvent,
+  type EventCategory
 } from '../data/conflict-events';
 import { getSupplyDisruptionUpTo } from '@/features/fires/data/curated-fires';
 import { getConsumerImpactUpTo } from '@/features/impact/data/consumer-impact';
 import {
   IconExternalLink, IconSkull, IconMapPin, IconFlame,
-  IconDroplet, IconReceipt, IconAlertTriangle, IconPlayerPlay
+  IconDroplet, IconReceipt, IconAlertTriangle, IconPlayerPlay,
+  IconSearch, IconX
 } from '@tabler/icons-react';
+
+const FILTER_CATEGORIES: { id: 'all' | EventCategory; label: string }[] = [
+  { id: 'all', label: 'All' },
+  { id: 'military_strike', label: 'Strikes' },
+  { id: 'facility_damage', label: 'Facilities' },
+  { id: 'chokepoint', label: 'Chokepoints' },
+  { id: 'escalation', label: 'Escalation' },
+  { id: 'retaliation', label: 'Retaliation' },
+  { id: 'diplomatic', label: 'Diplomatic' },
+  { id: 'humanitarian', label: 'Humanitarian' },
+];
 
 function getYouTubeId(url: string): string | null {
   const m = url.match(
@@ -60,13 +73,21 @@ interface EventFeedProps {
 export default function EventFeed({ onFlyTo, fullPage = false }: EventFeedProps) {
   const timelineDate = useFireStore((s) => s.timelineDate);
   const setTimelineDate = useFireStore((s) => s.setTimelineDate);
+  const [selectedCategory, setSelectedCategory] = useState<'all' | EventCategory>('all');
+  const [searchQuery, setSearchQuery] = useState('');
   const scrollRef = useRef<HTMLDivElement>(null);
   const ratiosRef = useRef<Map<string, number>>(new Map());
   const eventMapRef = useRef<Map<string, ConflictEvent>>(new Map());
 
   const events = useMemo(() => {
-    return getEventsUpTo(timelineDate).reverse();
-  }, [timelineDate]);
+    const base = getEventsUpTo(timelineDate).reverse();
+    const q = searchQuery.trim().toLowerCase();
+    return base.filter((e) => {
+      if (selectedCategory !== 'all' && e.category !== selectedCategory) return false;
+      if (q && !e.title.toLowerCase().includes(q) && !e.description.toLowerCase().includes(q)) return false;
+      return true;
+    });
+  }, [timelineDate, selectedCategory, searchQuery]);
 
   const eventCount = useMemo(() => {
     const m = new Map<string, ConflictEvent>();
@@ -164,11 +185,61 @@ export default function EventFeed({ onFlyTo, fullPage = false }: EventFeedProps)
   );
 
   return (
-    <div className={fullPage ? 'h-full' : 'w-[360px] max-h-[calc(100dvh-180px)] rounded-xl border border-gray-300 dark:border-zinc-700/80 bg-white/95 dark:bg-zinc-950/95 backdrop-blur-md shadow-2xl overflow-hidden flex flex-col'}>
+    <div className={fullPage ? 'h-full flex flex-col' : 'w-[360px] max-h-[calc(100dvh-180px)] rounded-xl border border-gray-300 dark:border-zinc-700/80 bg-white/95 dark:bg-zinc-950/95 backdrop-blur-md shadow-2xl overflow-hidden flex flex-col'}>
+      {/* Search & Category Filter Header */}
+      <div className='px-3 pt-2.5 pb-2 border-b border-gray-200 dark:border-zinc-800/80 bg-gray-50/80 dark:bg-zinc-900/50 space-y-2 shrink-0'>
+        <div className='relative flex items-center'>
+          <IconSearch className='h-3.5 w-3.5 text-gray-400 dark:text-zinc-500 absolute left-2.5 pointer-events-none' />
+          <input
+            type='text'
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder='Search events, facilities, locations...'
+            className='w-full pl-8 pr-16 py-1 text-xs rounded-lg border border-gray-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 text-gray-900 dark:text-zinc-200 placeholder:text-gray-400 dark:placeholder:text-zinc-600 focus:outline-none focus:border-zinc-500'
+          />
+          {searchQuery ? (
+            <button
+              onClick={() => setSearchQuery('')}
+              className='absolute right-2 text-gray-400 hover:text-gray-700 dark:hover:text-white cursor-pointer'
+              aria-label='Clear search'
+            >
+              <IconX className='h-3.5 w-3.5' />
+            </button>
+          ) : (
+            <span className='absolute right-2.5 text-[10px] font-mono text-gray-400 dark:text-zinc-600 pointer-events-none'>
+              {events.length}
+            </span>
+          )}
+        </div>
+        <div className='flex items-center gap-1 overflow-x-auto no-scrollbar pb-0.5'>
+          {FILTER_CATEGORIES.map((cat) => {
+            const active = selectedCategory === cat.id;
+            return (
+              <button
+                key={cat.id}
+                onClick={() => setSelectedCategory(cat.id)}
+                className={`px-2 py-0.5 rounded-full text-[10px] font-bold whitespace-nowrap transition-colors cursor-pointer ${
+                  active
+                    ? 'bg-zinc-900 text-white dark:bg-white dark:text-black'
+                    : 'bg-gray-200/70 text-gray-600 hover:bg-gray-300 dark:bg-zinc-800/80 dark:text-zinc-400 dark:hover:bg-zinc-700'
+                }`}
+              >
+                {cat.label}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
       <div
         ref={scrollRef}
-        className={fullPage ? 'h-full overflow-y-auto px-3 py-3 space-y-3' : 'overflow-y-auto flex-1 px-3 py-3 space-y-3'}
+        className='overflow-y-auto flex-1 px-3 py-3 space-y-3'
       >
+        {events.length === 0 && (
+          <div className='py-8 text-center text-xs text-gray-500 dark:text-zinc-500'>
+            No matching events found up to {formatDate(timelineDate)}.
+          </div>
+        )}
         {events.map((event) => {
           const ytMedia = event.mediaUrls?.find((m) => m.type === 'youtube');
           const videoId = ytMedia ? getYouTubeId(ytMedia.url) : null;
