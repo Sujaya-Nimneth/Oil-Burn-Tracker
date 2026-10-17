@@ -263,7 +263,7 @@ try {
 
   const msg = `Auto: Daily stats ${today} — ${consumerData.length} price, ${warData.length} cost, ${statsData.length} casualty entries`;
   execSync(`git commit -m "${msg}"`, { cwd: ROOT });
-  execSync('git push origin master', { cwd: ROOT });
+  execSync('git push origin main', { cwd: ROOT });
 
   console.log('  Committed and pushed.');
 } catch (e) {
