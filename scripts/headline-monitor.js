@@ -39,17 +39,39 @@ const YT_QUERIES = [
   'Iran nuclear news',
 ];
 
-// ── Category detection ──
+// ── Category detection (maps strictly to EventCategory in conflict-events.ts) ──
 const CATEGORY_RULES = [
-  { pattern: /nuclear|enrichment|natanz|fordow|radiation/i, category: 'nuclear' },
-  { pattern: /oil|refiner|pipeline|barrel|crude|petrol|gas price|fuel/i, category: 'infrastructure' },
-  { pattern: /houthi|shipping|strait|hormuz|bab.el|tanker|maritime/i, category: 'shipping' },
-  { pattern: /ceasefire|peace|negotiat|diplomat|UN|united nations/i, category: 'diplomacy' },
-  { pattern: /strike|bomb|attack|missile|drone|raid|offensive/i, category: 'military_strike' },
-  { pattern: /retaliat|escalat|response|counter/i, category: 'retaliation' },
-  { pattern: /killed|dead|casualt|massacre|civilian|hospital/i, category: 'escalation' },
-  { pattern: /sanction|economic|inflation|recession/i, category: 'economic' },
+  { pattern: /refiner|pipeline|oil field|gas field|lng|ras tanura|abqaiq|kharg|south pars|ras laffan|bapco|mina al-ahmadi|fujairah|natanz|fordow|arak|bushehr/i, category: 'facility_damage' },
+  { pattern: /houthi|shipping|strait|hormuz|bab.el|tanker|maritime|red sea|vessel|cargo ship/i, category: 'chokepoint' },
+  { pattern: /ceasefire|peace|negotiat|diplomat|UN\b|united nations|treaty|talks|envoy|summit/i, category: 'diplomatic' },
+  { pattern: /retaliat|response|counter-strike|vows revenge|hits back/i, category: 'retaliation' },
+  { pattern: /strike|bomb|attack|missile|drone|raid|airstrike|shelling|intercept/i, category: 'military_strike' },
+  { pattern: /humanitarian|famine|aid|hospital|refugee|displaced|unicef|unrwa|ocha|red cross|civilian toll/i, category: 'humanitarian' },
+  { pattern: /escalat|nuclear|enrichment|sanction|oil price|crude|barrel|inflation|troops|mobiliz/i, category: 'escalation' },
 ];
+
+const VALID_CATEGORIES = new Set([
+  'military_strike',
+  'facility_damage',
+  'chokepoint',
+  'diplomatic',
+  'escalation',
+  'retaliation',
+  'humanitarian',
+]);
+
+function normalizeCategory(cat, title = '', description = '') {
+  if (VALID_CATEGORIES.has(cat)) return cat;
+  const legacyMap = {
+    infrastructure: 'facility_damage',
+    nuclear: 'facility_damage',
+    shipping: 'chokepoint',
+    diplomacy: 'diplomatic',
+    economic: 'escalation',
+  };
+  if (cat && legacyMap[cat]) return legacyMap[cat];
+  return detectCategory(title, description);
+}
 
 function detectCategory(title, description = '') {
   const text = `${title} ${description}`;
@@ -57,6 +79,69 @@ function detectCategory(title, description = '') {
     if (rule.pattern.test(text)) return rule.category;
   }
   return 'escalation';
+}
+
+// ── Middle East Location & Energy Facility Gazetteer ──
+const LOCATION_GAZETTEER = [
+  // Curated Energy & Nuclear Facilities
+  { pattern: /ras tanura/i, lat: 26.643, lng: 50.158, zoom: 11, facilityId: 'ras-tanura' },
+  { pattern: /abqaiq/i, lat: 25.937, lng: 49.681, zoom: 11, facilityId: 'abqaiq' },
+  { pattern: /kharg island/i, lat: 29.233, lng: 50.324, zoom: 11, facilityId: 'kharg-island' },
+  { pattern: /south pars/i, lat: 27.500, lng: 52.000, zoom: 9, facilityId: 'south-pars' },
+  { pattern: /ras laffan/i, lat: 25.926, lng: 51.535, zoom: 11, facilityId: 'ras-laffan' },
+  { pattern: /bapco|sitra/i, lat: 26.155, lng: 50.614, zoom: 12, facilityId: 'bapco-sitra' },
+  { pattern: /mina al-ahmadi|ahmadi refinery/i, lat: 29.067, lng: 48.133, zoom: 11, facilityId: 'mina-al-ahmadi' },
+  { pattern: /fujairah/i, lat: 25.128, lng: 56.326, zoom: 11, facilityId: 'fujairah' },
+  { pattern: /shah gas|al hosn/i, lat: 22.933, lng: 53.883, zoom: 10, facilityId: 'shah-gas' },
+  { pattern: /yanbu|samref/i, lat: 23.989, lng: 38.221, zoom: 11, facilityId: 'samref-yanbu' },
+  { pattern: /jubail|satorp/i, lat: 27.011, lng: 49.658, zoom: 11, facilityId: 'jubail-satorp' },
+  { pattern: /ghawar/i, lat: 25.433, lng: 49.583, zoom: 9, facilityId: 'ghawar' },
+  { pattern: /habshan/i, lat: 23.867, lng: 53.650, zoom: 10, facilityId: 'habshan' },
+  { pattern: /haifa/i, lat: 32.794, lng: 35.034, zoom: 11, facilityId: 'haifa-bazan' },
+  { pattern: /natanz/i, lat: 33.724, lng: 51.727, zoom: 11 },
+  { pattern: /fordow/i, lat: 34.884, lng: 50.996, zoom: 11 },
+  { pattern: /isfahan/i, lat: 32.655, lng: 51.667, zoom: 9 },
+  { pattern: /bushehr/i, lat: 28.829, lng: 50.886, zoom: 10 },
+  { pattern: /arak/i, lat: 34.374, lng: 49.241, zoom: 10 },
+  // Chokepoints
+  { pattern: /hormuz/i, lat: 26.566, lng: 56.250, zoom: 8, facilityId: 'strait-of-hormuz' },
+  { pattern: /bab el-mandeb|bab al-mandab|red sea/i, lat: 12.583, lng: 43.333, zoom: 7, facilityId: 'bab-el-mandeb' },
+  { pattern: /suez canal/i, lat: 30.585, lng: 32.265, zoom: 8 },
+  // Cities & Conflict Theaters
+  { pattern: /rafah/i, lat: 31.297, lng: 34.243, zoom: 12 },
+  { pattern: /khan younis/i, lat: 31.346, lng: 34.303, zoom: 12 },
+  { pattern: /gaza/i, lat: 31.501, lng: 34.467, zoom: 10 },
+  { pattern: /west bank|jenin|nablus|ramallah|tulkarm/i, lat: 32.221, lng: 35.254, zoom: 9 },
+  { pattern: /tel aviv/i, lat: 32.085, lng: 34.782, zoom: 10 },
+  { pattern: /jerusalem/i, lat: 31.768, lng: 35.214, zoom: 11 },
+  { pattern: /beirut/i, lat: 33.894, lng: 35.502, zoom: 11 },
+  { pattern: /lebanon|hezbollah|tyre|sidon|litani/i, lat: 33.366, lng: 35.433, zoom: 8 },
+  { pattern: /damascus|syria|aleppo/i, lat: 33.514, lng: 36.276, zoom: 8 },
+  { pattern: /baghdad|iraq/i, lat: 33.315, lng: 44.366, zoom: 7 },
+  { pattern: /sanaa|hodeidah|yemen|houthi/i, lat: 15.369, lng: 44.191, zoom: 7 },
+  { pattern: /riyadh|saudi/i, lat: 24.714, lng: 46.675, zoom: 6 },
+  { pattern: /abu dhabi|dubai|\buae\b|emirates/i, lat: 24.454, lng: 54.377, zoom: 7 },
+  { pattern: /doha|qatar/i, lat: 25.285, lng: 51.531, zoom: 8 },
+  { pattern: /kuwait/i, lat: 29.376, lng: 47.977, zoom: 8 },
+  { pattern: /bahrain|manama/i, lat: 26.228, lng: 50.586, zoom: 9 },
+  { pattern: /tehran|iran|irgc/i, lat: 35.689, lng: 51.389, zoom: 6 },
+  { pattern: /israel|idf|netanyahu/i, lat: 31.768, lng: 34.851, zoom: 7 },
+];
+
+function geocodeHeadline(title, description = '') {
+  const text = `${title} ${description}`;
+  for (const loc of LOCATION_GAZETTEER) {
+    if (loc.pattern.test(text)) {
+      return {
+        lat: loc.lat,
+        lng: loc.lng,
+        zoom: loc.zoom || 7,
+        ...(loc.facilityId ? { facilityId: loc.facilityId } : {}),
+      };
+    }
+  }
+  // Regional default (central Persian Gulf / Middle East)
+  return { lat: 29.5, lng: 48.5, zoom: 5 };
 }
 
 // ── Load/save seen headlines ──
