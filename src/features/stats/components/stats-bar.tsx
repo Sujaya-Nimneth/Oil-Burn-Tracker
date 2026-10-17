@@ -10,11 +10,17 @@ import {
   CardTitle,
   CardDescription
 } from '@/components/ui/card';
-import { IconFlame, IconCloud, IconBuildingFactory, IconWorld } from '@tabler/icons-react';
+import { IconFlame, IconCloud, IconBuildingFactory, IconWorld, IconSatellite, IconClock } from '@tabler/icons-react';
 
 export default function StatsBar() {
   const fireData = useFireStore((s) => s.fireData);
   const loading = useFireStore((s) => s.loading);
+  const lastUpdated = useFireStore((s) => s.lastUpdated);
+  const timelineDate = useFireStore((s) => s.timelineDate);
+  const setTimelineDate = useFireStore((s) => s.setTimelineDate);
+
+  const todayIso = new Date().toISOString().slice(0, 10);
+  const isHistorical = timelineDate < todayIso;
 
   const facilityFires = fireData.features.filter(f => f.properties.matchedFacility);
   const activeFires = facilityFires.length;
@@ -24,7 +30,7 @@ export default function StatsBar() {
     0
   );
 
-  // Capacity-based fallback for burning facilities without satellite match
+  // Capacity-based fallback for burning facilities without satellite match (respecting timelineDate)
   const capacityCO2 = useMemo(() => {
     const matchedIds = new Set(
       facilityFires
@@ -32,9 +38,9 @@ export default function StatsBar() {
         .map(f => f.properties.matchedFacility!.id)
     );
     return curatedFires
-      .filter(f => (f.status === 'active_fire' || f.status === 'damaged') && !matchedIds.has(f.id))
+      .filter(f => (f.status === 'active_fire' || f.status === 'damaged') && (!f.attackDate || f.attackDate <= timelineDate) && !matchedIds.has(f.id))
       .reduce((sum, f) => sum + estimateCO2FromCapacity(f.facilityType, f.status, f.capacityBPD, f.gasCapacityBCFD, f.storageMBBL), 0);
-  }, [facilityFires]);
+  }, [facilityFires, timelineDate]);
 
   const totalCO2 = satelliteCO2 + capacityCO2;
 
@@ -51,54 +57,84 @@ export default function StatsBar() {
   }, 0);
 
   return (
-    <div className='grid grid-cols-2 gap-3 lg:grid-cols-4'>
-      <Card>
-        <CardHeader className='pb-2'>
-          <div className='flex items-center justify-between'>
-            <CardDescription>Facility Fires</CardDescription>
-            <IconFlame className='text-orange-500 h-4 w-4' />
-          </div>
-          <CardTitle className='text-2xl tabular-nums'>
-            {loading ? '...' : activeFires.toLocaleString()}
-          </CardTitle>
-          <p className='text-xs text-muted-foreground'>
-            {loading ? '' : `of ${totalDetections} satellite detections`}
-          </p>
-        </CardHeader>
-      </Card>
-      <Card>
-        <CardHeader className='pb-2'>
-          <div className='flex items-center justify-between'>
-            <CardDescription>Est. CO₂/day</CardDescription>
-            <IconCloud className='text-red-400 h-4 w-4' />
-          </div>
-          <CardTitle className='text-2xl tabular-nums'>
-            {loading ? '...' : `${formatCO2(totalCO2)} tons`}
-          </CardTitle>
-        </CardHeader>
-      </Card>
-      <Card>
-        <CardHeader className='pb-2'>
-          <div className='flex items-center justify-between'>
-            <CardDescription>Facilities Hit</CardDescription>
-            <IconBuildingFactory className='text-yellow-500 h-4 w-4' />
-          </div>
-          <CardTitle className='text-2xl tabular-nums'>
-            {loading ? '...' : facilitiesAffected}
-          </CardTitle>
-        </CardHeader>
-      </Card>
-      <Card>
-        <CardHeader className='pb-2'>
-          <div className='flex items-center justify-between'>
-            <CardDescription>Global Energy at Risk</CardDescription>
-            <IconWorld className='text-cyan-400 h-4 w-4' />
-          </div>
-          <CardTitle className='text-2xl tabular-nums'>
-            {loading ? '...' : `${globalEnergyAtRisk.toFixed(1)}%`}
-          </CardTitle>
-        </CardHeader>
-      </Card>
+    <div className='space-y-2.5'>
+      <div className='flex flex-wrap items-center justify-between gap-2 rounded-lg border bg-muted/30 px-3 py-1.5 text-xs text-muted-foreground'>
+        <div className='flex items-center gap-2'>
+          <span className='inline-flex items-center gap-1.5 font-medium text-foreground'>
+            <span className={`h-2 w-2 rounded-full ${loading ? 'bg-amber-400 animate-pulse' : 'bg-emerald-500'}`} />
+            <IconSatellite className='h-3.5 w-3.5 text-emerald-500' />
+            {loading ? 'Syncing NASA FIRMS VIIRS...' : `VIIRS Satellite Active (${totalDetections} thermal points)`}
+          </span>
+          {lastUpdated && (
+            <span className='hidden sm:inline-flex items-center gap-1 text-[11px] text-muted-foreground/80'>
+              &middot; <IconClock className='h-3 w-3' /> Synced {lastUpdated.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+            </span>
+          )}
+        </div>
+        <div className='flex items-center gap-2'>
+          <span className='text-[11px]'>
+            Timeline: <strong className='text-foreground'>{timelineDate}</strong>
+          </span>
+          {isHistorical && (
+            <button
+              onClick={() => setTimelineDate(todayIso)}
+              className='rounded bg-primary/10 px-2 py-0.5 text-[11px] font-semibold text-primary hover:bg-primary/20 transition-colors cursor-pointer'
+            >
+              Jump to Latest
+            </button>
+          )}
+        </div>
+      </div>
+
+      <div className='grid grid-cols-2 gap-3 lg:grid-cols-4'>
+        <Card>
+          <CardHeader className='pb-2'>
+            <div className='flex items-center justify-between'>
+              <CardDescription>Facility Fires</CardDescription>
+              <IconFlame className='text-orange-500 h-4 w-4' />
+            </div>
+            <CardTitle className='text-2xl tabular-nums'>
+              {loading ? '...' : activeFires.toLocaleString()}
+            </CardTitle>
+            <p className='text-xs text-muted-foreground'>
+              {loading ? '' : `of ${totalDetections} satellite detections`}
+            </p>
+          </CardHeader>
+        </Card>
+        <Card>
+          <CardHeader className='pb-2'>
+            <div className='flex items-center justify-between'>
+              <CardDescription>Est. CO₂/day</CardDescription>
+              <IconCloud className='text-red-400 h-4 w-4' />
+            </div>
+            <CardTitle className='text-2xl tabular-nums'>
+              {loading ? '...' : `${formatCO2(totalCO2)} tons`}
+            </CardTitle>
+          </CardHeader>
+        </Card>
+        <Card>
+          <CardHeader className='pb-2'>
+            <div className='flex items-center justify-between'>
+              <CardDescription>Facilities Hit</CardDescription>
+              <IconBuildingFactory className='text-yellow-500 h-4 w-4' />
+            </div>
+            <CardTitle className='text-2xl tabular-nums'>
+              {loading ? '...' : facilitiesAffected}
+            </CardTitle>
+          </CardHeader>
+        </Card>
+        <Card>
+          <CardHeader className='pb-2'>
+            <div className='flex items-center justify-between'>
+              <CardDescription>Global Energy at Risk</CardDescription>
+              <IconWorld className='text-cyan-400 h-4 w-4' />
+            </div>
+            <CardTitle className='text-2xl tabular-nums'>
+              {loading ? '...' : `${globalEnergyAtRisk.toFixed(1)}%`}
+            </CardTitle>
+          </CardHeader>
+        </Card>
+      </div>
     </div>
   );
 }
