@@ -2554,6 +2554,103 @@ export const conflictEvents: ConflictEvent[] = [
     sourceUrl: 'https://fortune.com/2026/03/27/israel-strikes-irans-nuclear-facilities-tehran-vows-retaliation/',
     mediaUrls: []
   },
+  // ══════════════════════════════════════════════
+  // APRIL – OCTOBER 2026 — MARITIME CONTAINMENT, RECONSTRUCTION & LONG-TERM ENERGY IMPACT
+  // ══════════════════════════════════════════════
+  {
+    id: 'hormuz-naval-corridor-apr2026',
+    date: '2026-04-12',
+    title: 'Multinational naval task force establishes escorted tanker corridor through Strait of Hormuz',
+    category: 'chokepoint',
+    description: 'Following weeks of severe tanker disruptions and minesweeping operations in the Strait of Hormuz, a US-led multinational maritime coalition establishes scheduled armed convoy transits for VLCC crude carriers and LNG vessels. Daily transit volumes recover from crisis lows of ~6M BPD toward ~13M BPD, though war-risk insurance premiums remain 4x pre-war levels.',
+    facilityId: 'strait-of-hormuz',
+    lat: 26.566,
+    lng: 56.250,
+    zoom: 8,
+    sourceUrl: 'https://www.reuters.com/world/middle-east/'
+  },
+  {
+    id: 'ras-tanura-emergency-repair-may2026',
+    date: '2026-05-04',
+    title: 'Saudi Aramco restores partial crude processing at Ras Tanura after emergency repairs',
+    category: 'facility_damage',
+    description: 'Saudi Aramco engineering teams complete emergency bypass and stabilization work at the 550,000 BPD Ras Tanura complex following the March strikes. Secondary distillation units resume partial operation while East-West Pipeline flows to Yanbu on the Red Sea are maximized to bypass Persian Gulf chokepoint risk.',
+    facilityId: 'ras-tanura',
+    lat: 26.643,
+    lng: 50.158,
+    zoom: 11,
+    sourceUrl: 'https://www.bloomberg.com/energy'
+  },
+  {
+    id: 'iaea-nuclear-assessment-may2026',
+    date: '2026-05-19',
+    title: 'IAEA satellite & environmental assessment confirms extensive containment damage at Natanz and Isfahan',
+    category: 'diplomatic',
+    description: 'The International Atomic Energy Agency releases a comprehensive technical assessment of Iranian nuclear facilities struck in March 2026. Underground centrifuge halls at Natanz and conversion units at Isfahan remain offline with localized chemical contamination contained within facility perimeters.',
+    lat: 33.724,
+    lng: 51.727,
+    zoom: 9,
+    sourceUrl: 'https://www.iaea.org/newscenter/news'
+  },
+  {
+    id: 'ras-laffan-lng-train-restart-jun2026',
+    date: '2026-06-08',
+    title: 'QatarEnergy brings undamaged LNG trains back online at Ras Laffan under tightened air defense',
+    category: 'facility_damage',
+    description: 'After extinguishing residual fires and isolating damaged liquefaction trains at Ras Laffan Industrial City, QatarEnergy resumes partial LNG export shipments under coalition air and naval escort. European and Asian spot LNG prices ease from March peaks but remain structurally elevated ahead of winter storage refills.',
+    facilityId: 'ras-laffan',
+    lat: 25.926,
+    lng: 51.535,
+    zoom: 11,
+    sourceUrl: 'https://www.reuters.com/business/energy/'
+  },
+  {
+    id: 'red-sea-bab-el-mandeb-jul2026',
+    date: '2026-07-02',
+    title: 'UNCTAD Mid-Year Maritime Review: Cape of Good Hope rerouting persists as Red Sea threat continues',
+    category: 'chokepoint',
+    description: 'UNCTAD reports that over 65% of container ship tonnage and oil product tankers between Asia and Europe continue diverting around Africa\'s Cape of Good Hope due to persistent Houthi drone and missile threats near Bab el-Mandeb, adding 10–14 days to global supply chains and keeping freight surcharges elevated.',
+    facilityId: 'bab-el-mandeb',
+    lat: 12.583,
+    lng: 43.333,
+    zoom: 7,
+    sourceUrl: 'https://unctad.org/topic/transport-and-trade-logistics'
+  },
+  {
+    id: 'south-pars-kharg-satellite-aug2026',
+    date: '2026-08-14',
+    title: 'Satellite thermal monitoring shows intermittent flaring and ongoing reconstruction at Kharg Island & South Pars',
+    category: 'facility_damage',
+    description: 'VIIRS satellite thermal anomaly data indicates major secondary storage fires at Kharg Island and South Pars treatment phases have largely been capped, transitioning to intermittent emergency flaring as Iranian engineers attempt makeshift manifold repairs to restore domestic gas and export loading capacity.',
+    facilityId: 'kharg-island',
+    lat: 29.233,
+    lng: 50.324,
+    zoom: 9,
+    sourceUrl: 'https://firms.modaps.eosdis.nasa.gov/'
+  },
+  {
+    id: 'un-ocha-humanitarian-sep2026',
+    date: '2026-09-10',
+    title: 'UN OCHA Regional Humanitarian Update: Over 3.8 million displaced across Gaza, Lebanon, and Iran',
+    category: 'humanitarian',
+    description: 'United Nations Office for the Coordination of Humanitarian Affairs releases its autumn regional impact assessment, documenting severe acute infrastructure loss, water and power grid deficits, and over 3.8 million internally displaced persons across Gaza, southern Lebanon, and conflict-affected Iranian provinces.',
+    lat: 31.501,
+    lng: 34.467,
+    zoom: 7,
+    sourceUrl: 'https://www.unocha.org/'
+  },
+  {
+    id: 'iea-october-2026-energy-outlook',
+    date: '2026-10-15',
+    title: 'IEA October Oil Market Report: Global supply cushion remains thin amid lingering Persian Gulf outage',
+    category: 'escalation',
+    description: 'The International Energy Agency\'s October report highlights that while strategic reserve releases and non-OPEC supply growth buffered the initial March shock, roughly 3.5M BPD of Persian Gulf refining and export capacity remains degraded or offline, keeping Brent crude near $88–$92/bbl heading into Q4.',
+    facilityId: 'strait-of-hormuz',
+    lat: 26.2,
+    lng: 52.5,
+    zoom: 6,
+    sourceUrl: 'https://www.iea.org/topics/oil-market-report'
+  }
 ];
 
 // ═══ AUTO-PUBLISHED EVENTS (from headline monitor pipeline) ═══
