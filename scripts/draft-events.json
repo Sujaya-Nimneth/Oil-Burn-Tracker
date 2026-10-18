@@ -1,340 +1,5 @@
 [
   {
-    "id": "a10-aircraft-hit-by-iranian",
-    "date": "2026-04-03",
-    "title": "A-10 aircraft hit by Iranian air defenses, second US aircraft to go down in the Middle East - FOX Carolina",
-    "description": "Via FOX Carolina. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOTFRlVndaUHhuRTR5dUt5VFhUc0xqaFJ5dC1xWHdNRzM1TThiZktBQkw2NXBhZEduMjUzSXFXRGFJbFhnbFBxa2hNVnBqR3M5dVI3MXZKSzRhN0NEUzZ0Y3dfczdQdGx2T3RieGwxMk95RXg2aktnLWktZHlhZ0tQYlJLQzRYbVh6X3RRY29KbGJiVjVYbGRxME1hNFBJakdQLW1GU2RudS1XZUxiOWFZZkJOblFBREl0T05EajhYTQ?oc=5",
-    "source": "FOX Carolina",
-    "fetchedAt": "2026-04-04T03:00:26.554Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=581By6kcf80",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "581By6kcf80",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "regional-war-forgotten-crisis-gaza",
-    "date": "2026-04-02",
-    "title": "Regional War, Forgotten Crisis: Gaza Spirals Deeper - ispionline.it",
-    "description": "Via ispionline.it. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxPMklPcW9NUXpXelZMWXNZeXgyUi1JWHlVOExtR0Z5cXYzZWNyLWU5dDR3MmRCUGl6YzR4SUduZDNjNzcxSkVSbzFJZEZYczNDbW13VE1TZXVMWnJ0QzlQcVctQUlMZHI0ZVVpZGI2NUJkOXg3aTNwZ1NyR0I2ZzlYMnJNLW1BdGZxOExZTUlLVFZLbllnYmRuaVZNWWowUQ?oc=5",
-    "source": "ispionline.it",
-    "fetchedAt": "2026-04-04T03:00:36.096Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=JR95DDkY0d4",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "JR95DDkY0d4",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "lebanon-israel-iran-war-gazettextra",
-    "date": "2026-04-03",
-    "title": "Lebanon Israel Iran War - GazetteXtra",
-    "description": "Via GazetteXtra. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMFRUbF9ydDJnSFQwWFdqcjN0Mm1ib2d2X29MQzNrSExvNmpUbFRMZVRESE1ZUzdaWURtUTVDTVlxal9tTGF6aG83V29LYV91TnNoRS1fdjhMY0E4ZlZ1d2hnNXZXejhQU0JZdHBhOEVQSzJsNjRvZG13VXk4SHJkOTNTeHlLd0pPTXRJbm1wRXZvbi1YY25vLWNTMDlGX09YRmJ2d3c4b05yeG5tVTh0V016VFQ0Zi1p?oc=5",
-    "source": "GazetteXtra",
-    "fetchedAt": "2026-04-04T04:00:16.845Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=020Rn3nyNd0",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "020Rn3nyNd0",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "the-geoeconomic-angle-of-the",
-    "date": "2026-04-03",
-    "title": "The Geoeconomic Angle of the Third Gulf War - geopoliticalmonitor.com",
-    "description": "Via geopoliticalmonitor.com. Auto-detected by headline monitor.",
-    "category": "economic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1sTnUyUGlUMU1kZU94UHY2Wk13MEZyOEhhWjJxb2JfQW1WeFNUc1h1VGZUUVhLelZfUXNBNHlvMi1va2p0RVFBVjllSnJGeENOSEZZQUZpbml4Zy1nVlpRU0hsODg0QnNLWVIzTVVXcEYtN2pmOWxvMWFwNDVESFk?oc=5",
-    "source": "geopoliticalmonitor.com",
-    "fetchedAt": "2026-04-04T04:00:19.064Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "sri-lankan-tamil-bourgeois-parties",
-    "date": "2026-04-04",
-    "title": "Sri Lankan Tamil bourgeois parties support US-Israeli war on Iran - World Socialist Web Site",
-    "description": "Via World Socialist Web Site. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1aQkVjNGRyZFhnM3ZEcDFsQmNNdEpvNFVUbVl5YlBVNjVYWDB5Nlpxdk5sQjZYV0YyM3BnWmpFRGo0TFFJREl6dVJiY0ZvRmk5U0lGdlhzNEdXVWpiaDAwSUVfcEpNQi1I?oc=5",
-    "source": "World Socialist Web Site",
-    "fetchedAt": "2026-04-04T04:00:21.366Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=X6C48xT43IQ",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "X6C48xT43IQ",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "sisis-highwire-act-can-egypt",
-    "date": "2026-04-03",
-    "title": "Sisi’s High-Wire Act: Can Egypt Survive a Victorious Israel and a Weakened Iran? - meforum.org",
-    "description": "Via meforum.org. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPanNUTy15U1lsWHEyaS1heUFJZmZ2UTlZbmRJT2F4QXpFMy1NdmZId2haOVFRdzlXQ09ncGdQclBKcjdCYnhETFRpWEJ6QV9ELXVaQzM5M0xtbmdNT0VGMzNBRHc1VGpPUG9HRk5zSWw3aUlxX2IxMUwyeURJbTBSQ1dQVE9aTnBKT3VXZ1ZuV18xOUVNWmRkU0FqTUd4bm9TcGlZ?oc=5",
-    "source": "meforum.org",
-    "fetchedAt": "2026-04-04T04:00:23.161Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "usisraeliran-war-on-course-for",
-    "date": "2026-03-11",
-    "title": "U.S./Israel–Iran War on Course for Cataclysmic Civilian Harm, Displacement, and Humanitarian Need - Refugees International",
-    "description": "Via Refugees International. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOeUM5dTdrMTJJazZySTVldHZ4VncxbEMxV1lNMm5jREJ5WTJWN2g0TWVLMnpDSi1HVWF5OS0yMU1hRkdfcWNRWDJtaC1hNlRrSEExTXIzcTJsMkVQMzBULVg1TGh1R0JiV1J4aGtOa1kySDNKUmVyYTI3MDJ6RGR1UDBMcjlfOU5Zd2tkcXNlSGJUSjB4QzVnTndFS0F6Q18wSWVsSkxFeGNadVFBT3J0OEZ1djdDMlFrenk3anRhWDVHanBSejVXaUp3Q193RDdLUU8zb290T1dRU1RQanFJcTgzOWdxb1h2?oc=5",
-    "source": "Refugees International",
-    "fetchedAt": "2026-04-04T04:00:31.723Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "no-red-lines-israels-new",
-    "date": "2026-04-03",
-    "title": "No red lines: Israel's new tactics in its war on Lebanon - with pages taken from the Gaza playbook - The National",
-    "description": "Via The National. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaXhTSm9fUld0V3p3ZDhIX3hoRVdxRzZjNmR3RnBtWFVwZ3lEWE5NM3NTRjFvTktOMUR6eXJySjlFUEdTVHVteUpqVWNPRnpydk1jRjFGanFWOUpibHdrbFN6UXFnVU0zdUdJX05QQkFsTDBIX3N5eUYzckNsMURIb3hhNFBTZDI0RGM1WlF3?oc=5",
-    "source": "The National",
-    "fetchedAt": "2026-04-04T04:00:38.387Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "egypt-races-to-rescue-gaza",
-    "date": "2026-04-02",
-    "title": "Egypt races to rescue Gaza ceasefire as Iran war pushes it aside - The New Arab",
-    "description": "Via The New Arab. Auto-detected by headline monitor.",
-    "category": "diplomacy",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSU1GMWtVODktU2ZXclpjRTlZSC1RWE0wVUc0QWVteWxGaXZqOVFLNHI5SXZVc3dnMWoxYmdXc0ZnNUM3dHRCS2ttX0NlSnM5NVdQdDgyTVVHNUVIWC14a3pPMElwYWpLOEVlNjZwR09NTENEbW5tOFBwUDZQaU9CazQ5Tk9aVXpXZ3B3N0FSZzPSAZYBQVVfeXFMT0EtQVNWb0hleFBScG5fSUFaRkRSXzNUbVhXcTFHQXllWUxNRlJjdHhqZnYyNU9rR1dZTnlpU1BEQ3lqZVdyeTdlbjl3RGt1Sk05eU4zRzJaR3JaeURsM0FhQkpMbjlqM19nVEdidkF2anMxWlNXUnNabWs5MjBicmptYlB4aVhUa01aNVFSYnIwRlpqM01B?oc=5",
-    "source": "The New Arab",
-    "fetchedAt": "2026-04-04T04:00:57.417Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "clinging-to-what-remains-palestinians",
-    "date": "2026-03-31",
-    "title": "Clinging to what remains: Palestinians in Gaza mark Land Day - The New Arab",
-    "description": "Via The New Arab. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWW41d0YyMG9mUjFWLURmV2t3a2NUaUZQbWdyWmtqU1lYN0FheVdVSV8xOHFZOTB4NmxnXzJSam0wMUVWQ21pVl81WW1jU1JmcWcxOWVJejdCWGx5RnJ5MmluTnk5OFV2Y1ZUNFlvQnI2b3VfdnduZzFYSmM5TTdka3ZMdlZwc1JtdUHSAY8BQVVfeXFMT2R6MHI3T3ZKRjhFOXJBY0VzNFNtWDEzRHp4V1NoSmc5azlneGNkYkRkVTVacHJkckpEd2g1eF82RzlvSkJoS1FCaDZreHhUN1gwa2lUZmJsdXpXZW4zTWZQZmxNVVU5NjJPMURndVkxZUpVRlRNUE5GNkwwWm5hMHR4Nnc5cVQwN2FFRXlqZEE?oc=5",
-    "source": "The New Arab",
-    "fetchedAt": "2026-04-04T04:01:03.327Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "who-won-the-war-the",
-    "date": "2025-12-28",
-    "title": "Who Won the War? - The Washington Institute",
-    "description": "Via The Washington Institute. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Zc3F4YjUyZDBxMFU3T2VZbVJvWE9ISzFPWGRjcmhxV2JuZDhGb0pIU3F6MXZHbGtPakdzbThOdGlKSlR4MDdWS19SbUdnU2E1UTk4ZC1jNm8wbTRDQTFQT3lSZE9IaWNkc3hiVmxObHk?oc=5",
-    "source": "The Washington Institute",
-    "fetchedAt": "2026-04-04T04:01:09.970Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "how-the-war-with-iran",
-    "date": "2026-04-03",
-    "title": "How the War with Iran Ends - warontherocks.com",
-    "description": "Via warontherocks.com. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1HbVI0WjZZd2NOR3dNMHNYWmNFelV5Szgyd21BNjEtRW52c01jLTZPUlNCaWhLYVBEY1ZoVWM1emxHUThFX1ZzbFc4Um93M3ZNNHI3Qkk0UXBvX0JzRFpFNlFqckRDaFFIZ3ItRVl3?oc=5",
-    "source": "warontherocks.com",
-    "fetchedAt": "2026-04-04T05:00:11.722Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=km55fapSojM",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "km55fapSojM",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "usisraeliran-conflict-2026-the-house",
-    "date": "2026-03-31",
-    "title": "US/Israel-Iran conflict 2026 - The House of Commons Library",
-    "description": "Via The House of Commons Library. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBLUVlHOWM5XzJtTzd6aW1SZUJfdmRBRmVDcnRjMmZoY1lJbll1UF9zZEkxVVRySzdTaUpzN1lUMlZmN18yOXNfVk5UdU9BNVA5STNSSUZ1Q2pzM0Z4VEFGN21fbi1JMGc4cmJhZk1DaVhCeFIx?oc=5",
-    "source": "The House of Commons Library",
-    "fetchedAt": "2026-04-04T05:00:19.570Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=F4jZrzFO-KM",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "F4jZrzFO-KM",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "daily-brief-about-usisraeli-strikes",
-    "date": "2026-04-03",
-    "title": "Daily brief about U.S.-Israeli strikes on Iran: Day 35 - Xinhua",
-    "description": "Via Xinhua. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA0OHFvd0NhSEpIUy1NVFdSekVKOXRaand0SmtjNmpzdXZkOHhCV0p4TXR5djV4VW5iOVpSY1dyb0R1VHRHeWU3VHdTWUduYlhwQzNPejFGOExJVXMzN0puaFhqNnVmd3luXzhBQ2ZoRlFabHhBSnVsRFZwUjE?oc=5",
-    "source": "Xinhua",
-    "fetchedAt": "2026-04-04T05:00:21.729Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sMOVDigbnMI",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "sMOVDigbnMI",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "the-latest-us-a10-attack",
-    "date": "2026-04-03",
-    "title": "The Latest: US A-10 attack aircraft was hit by Iranian air defense forces, says Iran’s state media - The Killeen Daily Herald",
-    "description": "Via The Killeen Daily Herald. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQck8xdnJMZG9FVS0zTDJtY01PX3BNaXp2TmtMc0FwUDA4MnN3ZVRDOUxYQTVKMjhIVmVoV0gxM3l6bU1SZUE4bGNxR3NCc2tzN2oxdEpMbXBzN1NHbHhrdHYzcGFOTDRua0JPTHIyTEdwd1c1MDlwaHg1aFJZTENhd3otZU5UbVJkcWIzNzJUbGt3a2U3ZUEwSndBTGR5RmtHMU9UdmVuVnBjd0ozZmczS0x5cFN1R2RUS2t4bUkzZzNpTDl4alpUNVRDbnNET19wY1VGUFM0LVJ6amxtWmhaLUJDaFdWeGJ5QzExQXBXU2RmQQ?oc=5",
-    "source": "The Killeen Daily Herald",
-    "fetchedAt": "2026-04-04T05:00:24.793Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=581By6kcf80",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "581By6kcf80",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
     "id": "cars-buildings-catch-fire-across",
     "date": "2026-04-04",
     "title": "Cars, buildings catch fire across 15 reported impact sites; Negev factory struck - Haaretz",
@@ -4674,6 +4339,361 @@
     "lng": 56.25,
     "zoom": 8,
     "facilityId": "strait-of-hormuz",
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iran-war-live-ships-attacked-2026-10-18",
+    "date": "2026-10-18",
+    "title": "Iran war live: Ships attacked off UAE, Yemen; drones downed near Riyadh",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeXpSZEVqaUJfWndWbXFQaXBHMmFIQ1pDeUs5TzJZQm85NDVDZlNWZG4zbEs5aVVDZFNwSnFlVDhpNEZTQllpTTRyRVJTdnJySl9yWjZWcVdWa29GTlhJS3FqQW1NSnQ2NWtCZHNia3RtTWhZc0V5NjRtdFZFS0M5dkgwc3dYV29sQWViaEsxRS1aYnVydnZ3eWNMWEpLb3ZTU3VaYUhPT1lwUE5sWmE3T3RTV1pTam04aDdGNHFfdlXSAcYBQVVfeXFMT2luSjM1c3BIVEhRRWRLQ3Y0N0d1MmhHWVBiYm9GMXBXR3hHZ0gwSk5pWjdacV9PVnVHd013NC1mWmRZNEJyMFF5YzJ2RERIbFlSLUU5MTFCZ0s1VU9BYXNHRzgwT2J0R2RTMGRNa0YyYUxOejVUVkczMHNwWkh0aFFWbV9TZC0wQkdRTmpPZ2xEX3JKRUVwdXJWYzNpQ2pHUFB0RDI3VW1reWc1MjFsU3lEWDVyalppR2NkUmxnM1ExYlR1OER3?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-10-18T10:34:22.679Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=8ulVsFOq9dQ",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "8ulVsFOq9dQ",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 15.369,
+    "lng": 44.191,
+    "zoom": 7,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-live-irans-new-defense-minister-2026-10-18",
+    "date": "2026-10-18",
+    "title": "Live - Iran’s new defense minister urges US personnel out of region as Washington signals longer stay",
+    "description": "Via Iran International. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBrcnBqMUFFX1cyREwxckpUbVNRS0FRcUhUS2dlMU1xWnZmWXFKR01HbFZqaHBhYTlJRk9Rb2kzN1FrbmNVbTRFVmViNFFtOVBRWkdXQWVXZkpyWEFfcGc?oc=5",
+    "source": "Iran International",
+    "fetchedAt": "2026-10-18T10:34:24.092Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Nuz3jjhZcVY",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "Nuz3jjhZcVY",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-why-iranus-negotiations-keep-failing-2026-10-18",
+    "date": "2026-10-18",
+    "title": "Why Iran-US negotiations keep failing",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "diplomatic",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQSzJfRTJ4WDA0NTdUSmF4MVVvZzNNMVVUaTJRZkkybFNuTVg3dGtHV0RDTGFvM2V2dWk5YnpRSjFQSHdmZFdWZVdPLWJWYjFRWXFSWkVQWERDcW5CeWNXQ2M1U0pxZ1ZkNXkyT016Zk1lRElfVVBCRDAwVVIwOHZqMlpSYlFFWlpzOGtv0gGQAUFVX3lxTE03ZnQySURobzdsN3VPTHdqQXI3YnVYZ2RxemJaX21kUG9pYjZYTF9LbWpvM3doM3UwUG05RldmSVRGeFlQTVVYQnRMOVJPS0s1aWFfdklESXFUcE9hSlJsRFNtMTVBX1dNUmozS1NyOWsweWtsN25DM25qNzZucERDdWNna0RtMURjR1c3NW50Ug?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-10-18T10:34:25.490Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=bGy39J2winM",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "bGy39J2winM",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-you-are-the-real-target-2026-10-18",
+    "date": "2026-10-18",
+    "title": "'You are the real target': Netanyahu warns Iran may attempt to develop missiles able to reach US",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9Qa0x3MUZCcVpESlhBNGhWTml1RnpZYkVpNFlKMVlUT3lJYkEtY3lsbkp5M1Rxem5Xbk02VGJWZGpUYVlOYlJKY05EODVCd0lFRWE2UXM2RlpEWS0yTWUtOWtka1RPeG1Dd3loeW5BMUJ1am5lcHVLVUkwOA?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-10-18T10:34:26.821Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=e05qzbaqKn8",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "e05qzbaqKn8",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-names-new-defense-minister-2026-10-18",
+    "date": "2026-10-18",
+    "title": "Iran names new defense minister after predecessor killed during war with Israel",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5PdGhRYmhFX3lncERicXZ2Nm5rY2Y4cWZNTjJGQkg4Q3lveDFSMGNMNXpqQWYxTVUyaGRNN0hYOVRzWWd2OVVUMDdmeHJqZlJQWHVfbEFnQm5Dck44RjJwSHI1Z2JnbFdk?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-10-18T10:34:28.165Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=MScR5YlTaK4",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "MScR5YlTaK4",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-after-october-7-and-years-2026-10-18",
+    "date": "2026-10-18",
+    "title": "After October 7 and years of war, Iranians and Jews have found a common enemy - opinion",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9IZFR5ZEpWRmZFcEVFWkpjczRlZ0ZKbl9ZZjU0RFlURHVUMVlqRXBjeHJZeDFxWmk1S0hwTG5QS0ZiVjRxUTVhOWo3bDRPRFAzNE5qUnZtSQ?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-10-18T10:34:30.454Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=SdSc0Pagtc0",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "SdSc0Pagtc0",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-middle-east-lng-industry-remains-2026-10-18",
+    "date": "2026-10-18",
+    "title": "Middle East LNG industry remains hostage of Iran war",
+    "description": "Via Awani International. Auto-detected by headline monitor.",
+    "category": "facility_damage",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZko5d1l3ZGhmaFRRVE9ZcHZDRndZNnBySkRrdEx1dHY4ZWdXLVhIaFV1cmpDekdFclBSR3FFd0dQWk5leWpUQTVfVXNaRjZlVHIyTUktWnZpZGFKcldtRHJQT0xUQkpuR25BVlJKUlJ0b2VpdlVNYzRzemEzcnFTUDFNVzc3MVZ1dm9aWV9EZ1dzcS1UQzAzZDFLV1VhMVNoQ2c?oc=5",
+    "source": "Awani International",
+    "fetchedAt": "2026-10-18T10:34:32.703Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=6zM_YWWfCL8",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "6zM_YWWfCL8",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-us-launches-strikes-on-iran-2026-06-13",
+    "date": "2026-06-13",
+    "title": "U.S. Launches Strikes on Iran; Tehran Claims Attacks on U.S. Fleet",
+    "description": "Via The New York Times. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSmVTQlBBU2hybzN1RVMzZUZuU19hbTYtRm5GdW9kUU9Kd19KOThfbUE2aHRyNFU3NnZSS2RjREJUbW14NTZXMEVxNDJNdnlLd1I0SXh4U1JmTlVQRU9GNEhlUkRxRWc4Sm14LUdkWm0yU3dYaU8taVVGYkV0TEFGZw?oc=5",
+    "source": "The New York Times",
+    "fetchedAt": "2026-10-18T10:34:34.876Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=ah-HQboR6Mc",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "ah-HQboR6Mc",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-israel-and-iran-pull-back-2026-06-08",
+    "date": "2026-06-08",
+    "title": "Israel and Iran pull back after trading missile fire — for now",
+    "description": "Via NPR. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBTNHQ1RXBOWlhKdEhLUHd2V2x0WTU1YWFtZzNmbVN0X0laSjlPT0Q3ZXBWWlVTZ2pubHVYUWI1X0otMDZnSDV4QnVtQ1hxVjI1ZHVsVFVYVlFsZDhfMnQwblFrejRBU3J5QTNZ?oc=5",
+    "source": "NPR",
+    "fetchedAt": "2026-10-18T10:34:37.047Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=zMYbvloV7Zc",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "zMYbvloV7Zc",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-bluster-and-backdown-have-turned-2026-08-09",
+    "date": "2026-08-09",
+    "title": "Bluster and backdown have turned Iran war into Trump’s own Groundhog Day",
+    "description": "Via The Guardian. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPeGprMUwzRUJfd3RITl81bmt2NFlZU0N5MC1mcWgwemI0YlBpamRtaUZtc0FOTHI2aWdQOG9hMFJoaFdvbnhMZGdDSzlIZ1lORGY1NEdaZWlqZUxWVTA2Wl8tT2piRGZ2N3lmS0VLaEJsTTdra3E0V1ZkeEZQRkl6c0lPTjRUaXRyZFR1cnhNMFU4eXpuWEZ1b1ZLNkNDZExH?oc=5",
+    "source": "The Guardian",
+    "fetchedAt": "2026-10-18T10:34:39.163Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=7VEFTjsT4WI",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "7VEFTjsT4WI",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-israeli-think-tank-israels-policies-2026-10-18",
+    "date": "2026-10-18",
+    "title": "Israeli think tank: Israel’s policies are making life harder for Jews abroad",
+    "description": "Via Jewish Telegraphic Agency. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZ1B2a3NpNkdkeG5wUWI4b2JtTW82V0VkUV9JOUp3MWVJMUxOMFhpemdzbTQ4eUNNQWdEdHB1V2VyV2x2VGZfZnQweFJlRlFBbmlMc0VtanpFcVVOX2tXWHQ1Nml2a2RyTnNJQUE4QmVkenJrUXMzaFpYN0ZpdlkwVWxZZGxHdHctWklPLVVRdmZVX3Y2Sm5aR0VpVXgtSVRHenpZTkJB?oc=5",
+    "source": "Jewish Telegraphic Agency",
+    "fetchedAt": "2026-10-18T10:34:45.158Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-israelhamas-war-gaza-conflict-explanation-2026-10-06",
+    "date": "2026-10-06",
+    "title": "Israel-Hamas War (Gaza Conflict) | Explanation, Summary, Ceasefire, Casualties, & Map",
+    "description": "Via Britannica. Auto-detected by headline monitor.",
+    "category": "diplomatic",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBlLUZSVWt0R3QwOVg1OENhbGZKXzBFbVk4Wi1kVGdvay1zRDN4Z2ZralpEZzVCV1N5Z2JUcUpYWFU1d3hLUThZVUxuN1JoTl9rLXJGMlhmT3o0NmdqR2c?oc=5",
+    "source": "Britannica",
+    "fetchedAt": "2026-10-18T10:34:51.267Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 31.501,
+    "lng": 34.467,
+    "zoom": 10,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-naza-harrowing-documentary-shows-how-2026-10-14",
+    "date": "2026-10-14",
+    "title": "NAZA: harrowing documentary shows how killing in Gaza became just another day’s work",
+    "description": "Via The Conversation. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPS054S2FXYjNaalhGLVF0RW9QNDVsS2M0VnJrRFBzWGdVMmtyWUVuLWg0WDEtVjBJVjluTmVQOUhRT3ltV1ZkcGhldERZTWsxbUxvOEFSTnVDWFIzNE9uMWVwdlF3Y2tuSjBSNzl3UkxhdGRxeUxCMi1DekJLeFRKbm9yTjNhS2dUWlRzd05GaFc0cXBpWHZWTlhaWlFCTFJmM2R1YzVoZ1hMek04RDl1LS1hc3YxSHQt?oc=5",
+    "source": "The Conversation",
+    "fetchedAt": "2026-10-18T10:34:57.011Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 31.501,
+    "lng": 34.467,
+    "zoom": 10,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-inside-israels-war-on-journalists-2026-10-18",
+    "date": "2026-10-18",
+    "title": "Inside Israel’s war on journalists and how Western media ‘facilitated genocide’",
+    "description": "Via The National Scot. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPd3F0cDFFOFNTUnVhMW9iV3RMVnJyUnlaOWJ1QXFEQXVNV19FQVFTQlR2aGdUbkl6bVlzdWQydnpFZ245emlnUVFsa3lXQXBCUmhhdndMQmxQTmF2RzFTZ244QzV5R1I5Q1hVWktwdmcyOXYtUDFWeEEtcXZvRUlVVVNVYURRVnpWM01HRW53?oc=5",
+    "source": "The National Scot",
+    "fetchedAt": "2026-10-18T10:35:02.556Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-gazas-ceasefire-had-momentum-now-2026-03-02",
+    "date": "2026-03-02",
+    "title": "Gaza's ceasefire had momentum. Now, some fear a new war in Iran will distract the world",
+    "description": "Via PBS. Auto-detected by headline monitor.",
+    "category": "diplomatic",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOVRleG9SVU9DNHp6ckxxMmhndjN5dFdDREV1Q0RpR2U2Q25KMkloR3VMb1JiaUVTWHhLSWFDRml2Zl9ZNkZkUmo1SnN1OXUzekpvbXU4R1Eta2l2eVpCRVdyVUY3WGN6TXpYVHhTaWh3U2ZQSzBSZ1FsT2poSnI5REhfRnZIOTc2YlIxLXlMRWpOYTM2TG0wZF9md1ZNMllJeThrRGtzZFctNmk2TG1reUgxbnhqSDNnMUVJ0gHAAUFVX3lxTE5jN3V5MzFHVkNMRWJ1Ul9OR3pKVXFhcktBM2lYWTF3cU1ueUZRYzVfdXF1c3I4U1A3M2VLRV9UNS05aGVpSkRmUWpqMHFDTG14QXVhUUQ5UkZxR3UzTXpfbmlEa1VWTDEtb3ZaNlh4ZWRBUFdITUVEQ0RUS2VRTktHVU1XN2pjN2djaXFTaGMzazhEcXdwX05JeFhfVW5Xc2RlRDlXVXJaa0NSZHNZVjBCVEIxQ3dSMzVKVEJfXzh1Qg?oc=5",
+    "source": "PBS",
+    "fetchedAt": "2026-10-18T10:35:08.618Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 31.501,
+    "lng": 34.467,
+    "zoom": 10,
     "casualties": null,
     "status": "published"
   }
