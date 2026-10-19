@@ -1,320 +1,5 @@
 [
   {
-    "id": "us-iran-war-highlights-iran",
-    "date": "2026-04-04",
-    "title": "US Iran war highlights: Iran fires missiles towards Israel; loud explosions heard in Lebanon's Beirut | World News - hindustantimes.com",
-    "description": "Via hindustantimes.com. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOMGxKMkZjMEZnMjdHU283UjRUWGxtaGNoa3ZYVG9qc3FNVGhnT2FYVDhzeDVnWC1YMmMwWUhOWnlLNHRmSy1tUU1ybC1hWlNXU2lFY0VaWEM5NEh4WklvRzNSaFIxZjQwMmotcWdoUERxMjJrY3hFZm1VWk4tZVVZb2VNcWE1N2x2UmxleWRobFFHUGo2bWhGVU52NU9zLTZia0NiZE1CZ05iMXNWakFLTjlBSVJvUFp6QmN4SXJMcUtTZGFIaGpEZk4xbVRqRk1BTks0RlNrSENIT1NYTmlNQVQ2aThUSXNWQndnd1RuZ29JQVF6R2I0SVJiczlZTGx5RXVYOFdQR0ZhOWJwdnVkV9IBlgJBVV95cUxNZlhyejVtMU1NdUxLOWVOVndNMXRlQURKLUw2akFJY3FDMDVUNzlkejlNbGlwY0NTYUVUSWhXbjZBSnpGOTBQTjVsbjM2OXNLNExmT3dpcFZ1RV9HQk9xbjVfdC00RTNkRld0UzlDampZa2JMemQ0a3pWWmowMEhweTcyaEVxY3NyT2lzRHl5V28tRkhIZHNfN1dCbEpxQzdnZHZIcDFkaldhWGRBSnNqRnktc1IzbFRQSE1fejRpeS1ZREN1LXJVUFpYMkVzZXktb2l6N2JBXzV6dHZQN2JpTUUtTEVaZUt6T0RzUE1tRTBjT2xwV2psMXZ0eVpTU3ZCYmk1UnZKTmx0eUYxNDJRaWhfbHk4Zw?oc=5",
-    "source": "hindustantimes.com",
-    "fetchedAt": "2026-04-04T10:00:46.651Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "iran-israel-war-live-news",
-    "date": "2026-04-04",
-    "title": "Iran Israel War Live News: US-Israeli strikes hit Iran’s Bushehr nuclear plant, kill one, says report - Firstpost",
-    "description": "Via Firstpost. Auto-detected by headline monitor.",
-    "category": "nuclear",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOdGdsamFGRlhSZ3hlVWRIbURiZHFJaGVqaFY1Y2tNUnVVS2F2REZTTlJoVTZoR3cybVc1b2FMQzl0WFRNUEpmYjVzUWF5SkRnYUNxWVdGNHB4VzNaa1k5ZXdwdFNSMHZIb3hDQ1JRYzBpQXpaMFpaa3dRRExXWl84RmN4X2xkZ2hpYTdQTm83ZVFwLVA1M1loaHhxS2dZVVpQQnpJRkFIVFVOQVNBMmJBcm5NSS0yalY2V0QzZ3puN3hadGdadTR6bU1CVlRJQVVQRW5BOTdR0gHbAUFVX3lxTFBoR0g1OEo3RWV4bXk5TllaVHRHSjNYSHdkNTg5WHI4RVVPUk1TV2VYNEcyVGZqM25kNjJaNVNfSDRNMnpiamJYX2dWWEhEYk5walVhbHJocHBiRHJjbnJSZTVmMHlQVi1rSXRPWEpCeS1ibC1LWjk1andwbDhWMjN6QmhfQ1NMRzFDUjVTOEEtMkxsZS1jZHZPcE5EUnFDc1N1bVYwOThGR28xSHgwaXIwanBXRHVRSzZhbTQ2T1MxZy1OVXprM1RxYXdmRHN3OTd0LWtiQ3dhU3NXUQ?oc=5",
-    "source": "Firstpost",
-    "fetchedAt": "2026-04-04T10:00:52.990Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "west-asia-war-live-usisrael",
-    "date": "2026-04-04",
-    "title": "West Asia War LIVE: US-Israel Strike Hits Iran's Bushehr Nuclear Site for Fourth Time; 1 Killed - Republic World",
-    "description": "Via Republic World. Auto-detected by headline monitor.",
-    "category": "nuclear",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZUhOQmtidlZKYmxTMnhEYlFKcURJdTNjOUZDN2t1N2pQS0lxZWpISkRUZERKRGFhYW90RWM3RS1WVlpDTEwyaEFDTDhDSEtTbjd2N2ZGeXoyV254Q056RGJCTU5HaXhkQnlwMDlKSDk3VVlISFNMUjkzM2g2TFdUcTZ5V3NLejRDdG5UTnA5cFZDcGNTREVOVVBFbVY3dVYxZk82UTZDUGNVeDBuOGc0X1J3VFZYdTVPTHBwTWJ30gHDAUFVX3lxTE5MajBySVpCSkp6emxlejJZQ0M4dmxzRnlyUmlTRzNoSEhEVjEzckJnYmI2b2JYN1dDRVkzQWNaWTA0X3NOYUVNU3JjRGpBZjZaMV9LOEtYaUdMdGJrNVZ6TkgxXzd3VVVKc1hnSkRxeTRoTE1hVFVkNy1ZMWZ3RmFWeGtPSHMtSUhkWGdXMG5hNm82bWdOMnlKYVBJYkdyRVJDd3VGeXJwSDJLZVlDODhGLWFnSDZvR0RvaHVtd1VuaGgxdw?oc=5",
-    "source": "Republic World",
-    "fetchedAt": "2026-04-04T10:00:59.282Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "iran-israel-war-highlights-airstrikes",
-    "date": "2026-04-04",
-    "title": "Iran Israel War Highlights: Airstrikes Reported In Iran's Petrochemical Zone; American Bases In Iraq Targeted - Times Now",
-    "description": "Via Times Now. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxONlBYLUJWc2RTeXdIMVhNVEh2OVVRTWZrM2I4MndHdGVrVmpoSGJMQ3AtdnU4alZMVDIyZnlNMmxZTV81MU8zZUg4RFJTSkdROXZ1Ml9CVUpIaHZfcFU3NlBNcGlIX1g1SUdHMjNJTngtS0JBQjdJYW95V2J0QVozR2lrUnNfemxBaFA5SFdKdlQ5ak44QU1PcWxfM2M0MGNua0Q3QThscGgtRUo3ZktJTmpkd0hNdGVQcDFqRVJsOXEtM3VlTTljbkFWandQdTV3ZG5CbmpsdXFBUTFRWlF3SE1SZC1GdjdOS3JtcjdXcG0wdHhzUkRwVXhRZGlBVDDSAYQCQVVfeXFMTS1hWGhnenNCamhya2R1a251aG1QdzZmMnk4Ry1lZnBQTTVobkJXV01aRjUxYko0ckhJekhNNDd4ZDBIQzhUR2RwemJEVlFfMEdfcGhqS3dURXBVTmozbGgteVpBTXN3NzVLcGhvZi1kNWJVcmJIenNjbGpXTmxHYUdIcFR6TDhfa3Fra1p3TlFtYkRLckE2cVMxelF4RjdxMVV0MmhOOXJtRGRBZTlyU1JQWElrb2RTdzNsLThLaF9XZG5kLW5aSE8wdGdxS1Y5Wlc2YjcxMHJIZHRPblYwWHhid2k5anlrNGFJNzBKTUtWTzRBRkpFakpJMENwVjZOZFJUaWo?oc=5",
-    "source": "Times Now",
-    "fetchedAt": "2026-04-04T10:01:05.596Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "usisraeliran-war-highlights-pentagon-email",
-    "date": "2026-04-01",
-    "title": "US-Israel-Iran War Highlights: Pentagon email says US aircraft shot down in Middle East - indiatoday.in",
-    "description": "Via indiatoday.in. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOYVFmRmI0UTE2YjFRV0V6Vl95TjlvRGFwMWc2bEZtT0ZSV0VTVGFfZ3RwaUZsaDI2RXc5Y2xuSGg5NXJUdC1xM3RBNGxMUDVLa2FIZjhqSW5ldDZXc2R3WjBnZl80c3RQWkY5ZkVUbGtFUC1HUUdGX2c4Q0lVNl80VXAtbERxbXdySnlzcGN3SjYyVlRiSDd0cGc3NVJqeFV5d29MQlFwSmluQzZLdFNpNGcxT1ZTOER6ZV9TSC1NeElVNlNGbUUtYUFPcGZjQlZqRFNYcFl2cjJSZVBWZ1RKX3Frd9IB6AFBVV95cUxPVXBDa2U1TXozQTUwVkZZUnR6ZDVPcUpsLTF3TDZxd0Y0MkI4Q0FLNUNtQmJZaFdmeXF5ZnJOS2VMNFIzQXBGLTNXMW8zeURUOHNiU0JWUmE3OC1lb0RTUU1KdkNWOEJTLVl2YXZhMldrandnUVVRNzZlV3loRVJOUV80ZEEwSUtzbmRCVTJKYUZobmZwa1lQNzNTS1E1dmg0dGVDZ1RoY0xWZ3J0RFJYMEJaemdLQzNmRWpFZ2lXTHZZZ1pkYXZBWTk5V1BxUWVlXzV1YU44V25ySWhsTmtlS210MEhkMVc0?oc=5",
-    "source": "indiatoday.in",
-    "fetchedAt": "2026-04-04T10:01:12.165Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "live-updates-latest-from-israel",
-    "date": "2026-04-04",
-    "title": "Live Updates: Latest from Israel, Iran, and the Middle East - The Jerusalem Post",
-    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9YcVNNeE05SEVvS00wV0dpNkpsYmxKOGQtOTVObjVLc18xRjVjOEVFM2p0TlBkT3doWDZfVm1oSUUwanZ1U2Rud19lUUFIZXROWUxtek9fbnBVYUcxYnZ1UTVYSGlvbjlDQnpxejVWSmRicmNYUUlqRV9TQ0szQUk?oc=5",
-    "source": "The Jerusalem Post",
-    "fetchedAt": "2026-04-04T11:00:14.032Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=CYfpoi5_bik",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "CYfpoi5_bik",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "collection-iran-israel-and-the",
-    "date": "2026-04-02",
-    "title": "Collection: Iran, Israel and the United States at War (2025-2026 Operations) - Just Security",
-    "description": "Via Just Security. Auto-detected by headline monitor.",
-    "category": "diplomacy",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBoSVdUeXVkem5oeFB6SzlYa0xrbmpSVXdlWDdrX3dhbG5vWFNvZ1ZLXzR6U0N1WVMyekQ0RzY2UXgwRWdwU0E2ZXRIbXZwaWN2eTZRbkU4M1N2X25xMjY0RjQ4WFdvdEc2VHhkbXpONWJYWEo2TzBB?oc=5",
-    "source": "Just Security",
-    "fetchedAt": "2026-04-04T11:00:15.698Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=Yn2ccFs2dzY",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "Yn2ccFs2dzY",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "irans-war-with-israel-and",
-    "date": "2026-04-02",
-    "title": "Iran’s War With Israel and the United States | Global Conflict Tracker - cfr.org",
-    "description": "Via cfr.org. Auto-detected by headline monitor.",
-    "category": "diplomacy",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMWduRExjZXhMUjFuYjV4Zzc0LS11OHVKUEhXSlpUNUdFMm9MVGlJeFd5eGh1ZWpEWWhFNEdJX0tOVTlJbnZ5NmpBQ3dYeGNpSTBOSWtISUduak5WSHhfQUhQcHBKbVpLdG1IVi1ySWVGd05NM18yektrem1TM3ZvaV9xVjR2eC04cE9RZ3FZajNCZWFHNzBaS0hhSS02dw?oc=5",
-    "source": "cfr.org",
-    "fetchedAt": "2026-04-04T11:00:20.158Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=0bFt4cxmGKI",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "0bFt4cxmGKI",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "iran-launches-missile-barrage-at",
-    "date": "2026-04-03",
-    "title": "Iran launches missile barrage at central Israel, minor injuries reported - The Jerusalem Post",
-    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
-    "category": "diplomacy",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1tYW95cmxmeG56b1FOMmtZYTBLUUdVUWdiLTY4MnBRQlBaR0RqYVdaUXlySHQyM1BXOUlEQWl4cVhhQlZOdGsxbm05V3BldHk4TGgyRHhhMlpMaU1FYVVkNV91bENndFdZa2hyeUxn?oc=5",
-    "source": "The Jerusalem Post",
-    "fetchedAt": "2026-04-04T11:00:22.433Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=jHQ0EM_mR5Y",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "jHQ0EM_mR5Y",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "irans-revolutionary-guard-would-fiercely",
-    "date": "2026-04-04",
-    "title": "Iran’s Revolutionary Guard would fiercely resist a US ground invasion. History proves it - The Conversation",
-    "description": "Via The Conversation. Auto-detected by headline monitor.",
-    "category": "diplomacy",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdzZFVDF5MGltdTZvTk9rbjZoOTRKeXZMejVTM1d5bDJteXJqc1hBSDhsZi1xdzlKT1RlQmM1R016Q0VNN1VSd2x3OHVjR0hTZnktTGs0X1FFcVp6OGhha19rT29xdWlIRlc0OGN1MGtVRVdWUzBlUGlLejN4Z0V0c0Z6NEQ5eVJ1N0ZSWlk4MHdBZkhwQ1lOcmx1ZlZyZU5UT2tzZFc0NjlEMS16ajRGdE1aM19fcnFyZ2FMcU9B?oc=5",
-    "source": "The Conversation",
-    "fetchedAt": "2026-04-04T11:00:24.784Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=u6tTGdtVbIw",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "u6tTGdtVbIw",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "israel-iran-war-dailyrecordnewscom",
-    "date": "2026-04-04",
-    "title": "Israel Iran War - dailyrecordnews.com",
-    "description": "Via dailyrecordnews.com. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOUFNBSzJuVVp1X0I5SFhmYjFwUk9qNVRBY1AzQWk3dVhjaFpRSWxOUWxrX1ZzbVh6SW4zbWhvRUg5WjJPcFlnODZDTTRsRXpqNnVnWUhqUlliRURYamZteXdkREVBaUQ3WlpMVkRXdmwwcDE1STU5Wk1yUVNVZUFJNXMxR1dsZW0zY2dqMkJRQ2pOd1BrTTRBZEtyVU1adFdrbDMtTWNtd2w3WS11Qm5mVldYRlBiSDRy?oc=5",
-    "source": "dailyrecordnews.com",
-    "fetchedAt": "2026-04-04T11:00:26.920Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=hI6-37dmQ6k",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "hI6-37dmQ6k",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "iran-said-restoring-bombed-missile",
-    "date": "2026-04-04",
-    "title": "Iran said restoring bombed missile bunkers within hours after being struck - The Times of Israel",
-    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
-    "category": "diplomacy",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNX3ZxeDc4SE5xZFh2cU92ek1HWjE1RVZXZlRhM2dCaEhqeUFwWEpRcXNrcHNZNkwzemhmSVdzOC15OWFpNnp2aXJUcFQ2M3RUYkVMQTRQUDl5XzZ2R0NBN3ZqRTVHUW5zRWVlYkxfM1I3R0dPSS12YV9hbnp0VGJMSmVMLVFQYTRBWUFtemlPYnV3VmtTY2VpZnFGMVpCWjV6N0d6cDZsUnbSAa4BQVVfeXFMTlltWUs0aDNzbGxCZ3RMZnpISl9WWjhldFBKdE1pdERJZnpJYWwyTlM3QlppdzJMY3RoX0dma2hzX3JweVFQenJNRmtrSzNjZHk1dmVyNi1zelU1ZDhsZDMxbmdzazhBZDI5STk4czFyU096b2hJSGRXb2lFRUZlWENhU3ZrMk5NV1pKRTBXOVBUaElrQ0FXZHB5R1BVOFZKN19LRXFIZTV3TUFDa0R3?oc=5",
-    "source": "The Times of Israel",
-    "fetchedAt": "2026-04-04T11:00:33.517Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "one-crew-member-rescued-after",
-    "date": "2026-04-04",
-    "title": "One crew member rescued after US fighter jet downed — as it happened - The Times",
-    "description": "Via The Times. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcThXbUxNcWdBU2NWSHpUOExkR3EyOVVYWFgzbzAzRnpUTHhrYVA2RTdLRmFSWnA4SEd1ZFp0RkJHbE4yMXhlUmdaWi05Tmxwc0pXME1WMEtKbnRNUUZLandjbGFlTU9NWWY0N1BWZ1N3dXd4YmZ0UEFRQmg2a2U4ZjJOckcyeUFVY1U1NUY4Q1NmVmRBcmtBMkh3bHREVlhzZWNlV1g3OWxlU3JFc2gxaHNaVQ?oc=5",
-    "source": "The Times",
-    "fetchedAt": "2026-04-04T11:00:51.935Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "why-israelis-are-losing-faith",
-    "date": "2026-04-02",
-    "title": "Why Israelis Are Losing Faith in the Iran War - Haaretz",
-    "description": "Via Haaretz. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNUzdrZTNzRjZhNUhsNHRzcFF2bjVrTlpzUkFiQW1iSXhNcW85dC0xb3BmaUotMGpvZTJkeHlNY2oxM2syWHZSNzhLMmx6UmlFLVc0dFZaMTd1YkJBTXF4RFo3RG9HaElGaXVMbWhUWWY3ZmJaNGdYaXpsNjhKbEJlallPNmU0dWdZVS1McjVqTWFpdFB0ZnFGNG5xTThWYnlFangtOHpJVFlnd291dHZhSmxvY3E5Q0dkdkNuSzBGdmthanlFd2pGNHEydk11V25PdklsVGxGVFBIaFVTcXY1TjdUdmdWOHo2TUIzM0IwRHVSbWl5WVZFXw?oc=5",
-    "source": "Haaretz",
-    "fetchedAt": "2026-04-04T11:01:04.203Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "usisrael-vs-iran-war-day",
-    "date": "2026-04-04",
-    "title": "US-Israel vs Iran war Day 36: US aircraft downed in Iran; Oracle building hit in Dubai as conflict escalates - The Indian Express",
-    "description": "Via The Indian Express. Auto-detected by headline monitor.",
-    "category": "retaliation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOMFFlU1VBTW9Ta3lVallBYk01VmdUdFdSMTFnRjJULWxfUGlWd3ppNFM5UF9iWUt5c3VOUXY0cG9aa0IteWxmUzdlS2lFZ2pSVlh1SDJHRHdTMEUyQVlJbVhmWDRFWUhWMDFPblBiY3RVMW1QQTBXQTlOSVloeExVeldXMUN4M2tZVWQ5Q3pqVWswVlg0dW5PbG9VdURxOTQ0bEdRWlJXYjQybUVnZFMySjFYYmxqN3dHMlRQQUxuazZGQ01CbjlkWVJTX1pucGEyaHBkQXU0S3Z6SUtMRlZrZnlnN01PTm9fZmR5VdIB8wFBVV95cUxQUDhSUFIzNm9oVDRKOXBpd1REUHYySTgxa1NaVmpiNURNeERTREtNMkx3UDN1VmlSYWdtNngtcjVlWjF6Qm52cUR0MWNwd1E1c1ZMMnU3c1ZEeVZaSFI5Xy11am5FYXVHbXE4cDlheElEMXB5bTRJaWRHNXA1eHNoNTQxTXpBMTVRcnpNYVBWWjZCN1VUdlhuWmR6ZGdObUN0UDdKM2ljLXpTS1hIMnlnLUx5QlFsLVhfZm4xTUdlb2IyUnRHdFpkckZnZVltTmVBMEk1S2tVMHZoSUIyQXpkUWQ3R2RJenlHSzRCNjE4QzhySzA?oc=5",
-    "source": "The Indian Express",
-    "fetchedAt": "2026-04-04T11:01:10.660Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
     "id": "iran-war-latest-us-pilot",
     "date": "2026-04-04",
     "title": "Iran war latest: US pilot search continues as Iranian drone targets Oracle in Dubai - The Independent",
@@ -4730,6 +4415,361 @@
     "lng": 56.25,
     "zoom": 8,
     "facilityId": "strait-of-hormuz",
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-explainer-whats-behind-egypts-move-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Explainer: What's behind Egypt's move towards possible military involvement in Saudi-Yemen conflict?",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVEFCaTJXdXlZR1NxZkpndXE3d0hRYWpmRUtBOXpXeTI3M2hUVnFSVVJrQm1NS29LLWlobDd4enF2OWxOY1h1SmJidXVlUksxeDdZdVMyZF9tVklTdWJiQzJZZzRNVnFEX0tMQUdCTW04WHhmdWdhQW42cERybkd1QzBDTHgxMklXU3dvbF9mbUt3a3RSb3NhZlpNbkpWcFNaWXZhMWE5TUkzTTVFMlI1YWV3NXJjb0lSMTRQVFNqbzFsRmZwRmtB?oc=5",
+    "source": "Reuters",
+    "fetchedAt": "2026-10-19T22:06:17.599Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=qdiHGEz1h5c",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "qdiHGEz1h5c",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 15.369,
+    "lng": 44.191,
+    "zoom": 7,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-saudi-arabia-postpones-its-davos-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Saudi Arabia postpones its 'Davos in the Desert' conference after attacks",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPaXJvV3ktdmE4WU9ZNjVBcDRBYW9yNXJVYVI3MV83aWtIV0pYN0lGNzM4UlNRZDdpRGs1bGsxR18wcjY5STVhU1Q1VEZJUmRKWFZPUnoxSlpFaThtMzhjRlVIZGl2VVVYYTlYM181N0Jyb0h4ZWRrM2FVZFZsSFRBT1haU0QtdEp5QlZ6dVg2VVpyX2RsaDEzbnN2Q1NvSFc5WW5jT2VmVQ?oc=5",
+    "source": "Reuters",
+    "fetchedAt": "2026-10-19T22:06:19.034Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=vYeE9gWH8kE",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "vYeE9gWH8kE",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 24.714,
+    "lng": 46.675,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-us-and-israel-threaten-renewed-2026-10-19",
+    "date": "2026-10-19",
+    "title": "US and Israel threaten renewed Iran strikes, Tehran warns of response",
+    "description": "Via Iran International. Auto-detected by headline monitor.",
+    "category": "retaliation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1zNl9zdG1hb2kzUnMxdnIwNDN6MjZtTHdYcEpnOGhyU2JaVnVzTm9jVWwzUVJSYWI5VmZla0FqMVlJaWZOdGxnWjdFMVQxZDRGTFE?oc=5",
+    "source": "Iran International",
+    "fetchedAt": "2026-10-19T22:06:20.692Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=9q96-aFB-HM",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "9q96-aFB-HM",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-qatar-warns-global-energy-shockwaves-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Qatar warns global energy shockwaves from Iran war have yet to peak",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNU0VIWU5qMkFsVzFscGFuVFV1VEtOTWx1Wmg2OE1fQmZCalJJbkJNMHJid1JBUjJTLXVXYThDMEQyMVc4dGlMakxOTEFudklpU2NhdDU1Vm1xZDB1NXZ3RVU5em5IV01uTVI4T1RjMFhVbW12bV95Qy1EcnVkdURuT0Zyd3VtYVI3M25vN0RIUjVNeHJkU1dPbzYtUWw0RmJ5UWttS2g1b1NxVzUyQVHSAbMBQVVfeXFMT0V1ZDUxUjhWYW9iOENYbi1sNFhfSXlNSi12ZDZRbWJ6ZTVJWjRyd3BvUnBJZ2xRLWpSTUlnLWNVd0ZNZ0xTU2EzVUVsTWpNcXlJbkxLXzE4LVJ1OHNFM0NTQ1dxYy1IRUJLSGlqenFYeGVCVjhGVU5GYW1vSldqVE1weWRpRjhjeHk0QVFxVFE0aTBzN2hSQ2ZWYkd1YnlVaEYzQzN4TXIxcDFnNE5FMlJMTzA?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-10-19T22:06:22.105Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=69fi82UVUUw",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "69fi82UVUUw",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 25.285,
+    "lng": 51.531,
+    "zoom": 8,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-donald-trump-benjamin-netanyahu-warn-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Donald Trump, Benjamin Netanyahu warn Iran as fears of renewed war grow",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5CV0dNTVVnNUZlMmlncmF4amlNa19Qc0J4cHpQd2lSXy04aVJ1VFNsdWZqbkU5bnBVdzJTTGg2eE1ndVhjREp4by0tM29PbkVIM3YxTlEyY1FLM3ct?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-10-19T22:06:23.671Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Sit-ReD8Lcc",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "Sit-ReD8Lcc",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-russias-lavrov-discusses-us-war-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Russia’s Lavrov discusses US war and regional security during Tehran visit",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQlRWbm1ZdGNfX3BQcTV4MTZBMERabzQ1ZWEwSXhhdW5pZkUxMFBvZXFuRTBsMjZ6Q182MG9qZWhJNDJOb3Y0WU96Zng3bWpfWGgyMFdrUzVvdjhrRk1QSm1IdTZoTW1TZENrTVNyLWpxdmpwbU5PZXFnd2RReXhDaS1pNEN6azVDdGt3OEtCTnRHV1hybXZ2Y3FLMzVVQndkNlFEbWlZWEJ1WTlWN3FJX3A4U3I3SGvSAbwBQVVfeXFMT2J4YW5XUTF5ckF5M2xIaWx2LUJkeW9sUkdhWnVCRU8wT1BIa2hsckRiZlFqcmlWMTFCb21iODNXUngxM1ZDeXB0UnRLcEZkbjFRbDkxMjllYlpmbXZhd3NXTk9nRHI2a2VuUm5KVWprcG53RzJQMFdKa0Y1TWhkN1V3VVB2UmJ2OElZWU43VGVETTlrNkdOa3NYdFlEajlLYVJOZDNybnc0WW9EV19CZEN2LV9WMGhiU3doV2U?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-10-19T22:06:25.848Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=STvnvaxsXK4",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "STvnvaxsXK4",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-the-lessons-israel-must-learn-2026-10-19",
+    "date": "2026-10-19",
+    "title": "The lessons Israel must learn before the next war with Iran",
+    "description": "Via www.israelhayom.com. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUmpqVC1fbC03bWtPV3R6MUxXZGw3VmhxVUtpR2I3NWc0RjRsbnI3RzZWYk5YOGN2ZHZ6b2R3VVBIWUVQSDRtcEN1Wmd1QWxLaWNsczJxQWJFaVJGT3FyYXFmcVFYdzBJbTdnQ2VRM3VUMUlobjNVWmg5OFdoNjZPSzFMOFpjeEtzSFRieThaZjlWMVBmQnRIT2h2X0lMbDRv?oc=5",
+    "source": "www.israelhayom.com",
+    "fetchedAt": "2026-10-19T22:06:28.276Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=hlgs8TA74w0",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "hlgs8TA74w0",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-threatens-stronger-response-to-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Iran threatens stronger response to new US attack as Lavrov visits Tehran",
+    "description": "Via Iran International. Auto-detected by headline monitor.",
+    "category": "retaliation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1NV0dFLWtqajhaelNMelVxMFVtVTFTTXlFejhEZ0hJSzZRYWxtUEwxVlF4OUh0Zmk3b1IyemxNNjdhcmp5bzNpa3RRMXVtY3dzS3c?oc=5",
+    "source": "Iran International",
+    "fetchedAt": "2026-10-19T22:06:30.221Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=4LuFayVGkhs",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "4LuFayVGkhs",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-says-20-to-30-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Iran says 20 to 30 aircraft destroyed during war with US, Israel",
+    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObUhfWnZNSVFEMURHWV9KNnpBZksyVXhBT1lxREkyemNvZEV0YThtX0YtRWw1WXA3TTZMVWdYTkloRWY4a2w4ZFZZakVkZDJyc21iLWVfRlRETmM0cndScVc2UFpiOHZ6aDdkdTI3NnVUZERxSEtJZ1k5YVBsVzlxVXhCSFB2LXlESUwyZmdsRy1WSndMM0dOa1FqSG1TUWhBdFlKSHNiTQ?oc=5",
+    "source": "Anadolu Ajansı",
+    "fetchedAt": "2026-10-19T22:06:32.411Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Ddgz_9pGkw8",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "Ddgz_9pGkw8",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-russias-lavrov-discusses-us-war-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Russia’s Lavrov discusses US war and regional security in Tehran visit",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNGY3eEp1ejlqZ1BCWkVka0pFRC03ZXQzc2VVclNpM21GZUlPZVh3N0xvLVpydVpyTTB0ZXhsQm1WdFdrT0RuaW5SUU9BbXlCVXNpcjF1dEQ2cmExWG43VzhiZlpwZUN3Zkl1Z2xraHVVcWFQZmZOR1ppd3NHazVTYnJ0N25sVGFYYW12VzJlRUtDaXNTeTFvMWVPZmFFT1pHZXQ5eDJKYU1KcVRFTU4tOEpubFN3MzBlSFJfdmdn0gHDAUFVX3lxTE5qTEpIbW1EeTcwM2dBQ2ItX1MzTVF4NDR0NG44ZHpzWDdINm1OUjhLT243cHRvQVdBb1dHbFVLdjlZN3FDaWxDR25oeXBZU0hIbnBnZmp3d3djZDl0WUFYRURTR2JzS2YxRXVmcUlIZ0tIUE4tZDZ5QTN3YWJGQXZoODM3el9XS1RINVF4dlB3Y2RsQzRUNTNQUXBTUFRWRTd3amI0OVpFSDJFUDJHSVVpbWR5eTc2dTlka3Y2N0xSQllRWQ?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-10-19T22:06:34.656Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=STvnvaxsXK4",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "STvnvaxsXK4",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-escalating-geopolitical-crisis-in-the-2026-10-19",
+    "date": "2026-10-19",
+    "title": "escalating geopolitical crisis in the Middle East.",
+    "description": "Via TV7 Israel News. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTE83d1BPQmY0TVJXTEJmRmp5dFVoR1prQVc4Mzd5RFhVUW8xRklBYUxweWhmVkx5Zjg5ZV9GZ2U4MzUwRDBRNW9CTXRvY1ZrOWJRdkY3VTltaDg2d2pra0JpVVM4ZVBxaGdiVWVfTHhrMThYQTBjTDdv?oc=5",
+    "source": "TV7 Israel News",
+    "fetchedAt": "2026-10-19T22:06:41.010Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 29.5,
+    "lng": 48.5,
+    "zoom": 5,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-says-2030-planes-destroyed-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Iran says 20-30 planes destroyed during war with US, Israel",
+    "description": "Via Yeni Şafak English. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYy01NGJNQkdIRDRSZmEwTWtXb1MzY2VkU1EzY1ZfLVlMQnphZ1BPejBvS1ZUR09YTlRVZVBMcTZCS1RZTG1VWHMxOUFJWDNzMW5uU2tPbW43SFljQVJPR0RQVzJZMVpOeUNWZmlaN1N6ZWs1MXpEMzRkMGxZZ3g4OGhyUDlocWIwUU9mYU92RGZtV1hDOC1vZWpfWl9fdw?oc=5",
+    "source": "Yeni Şafak English",
+    "fetchedAt": "2026-10-19T22:06:46.633Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-says-up-to-30-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Iran says up to 30 aircraft destroyed during war with US, Israel",
+    "description": "Via Latest news from Azerbaijan. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRDlaV3RSXzlsbDdzXzQyc1JSTGVuN0ZlVEUwbTlGY2psc080U01hY0loeHNxRk85X1c0RUlELVZVSi1mbDNHa3ZCSThuMlFwd0ZzMTktNjAwN0hNNnJNRHdCTUhFa2R3ODVMVGhWby15MG9aby0zdnJZdDhwTV9LN2JsT2hLQThBNDliZg?oc=5",
+    "source": "Latest news from Azerbaijan",
+    "fetchedAt": "2026-10-19T22:06:52.296Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-israels-invisible-hand-in-the-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Israel’s invisible hand in the war on Yemen",
+    "description": "Via Tehran Times. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPc2RKNENrQjljWDU2U25DSGdCaVphN1lyUnVZWDlMUS1keUlBLVhhYndvRHR5MGNzcnRfODN1cnBnNVhMcmc1STBKZGNxZG8wQzI5X01IS2R1Rzk5Z1lSNzNWcEhXLTA1aERVVEJlb3hFS1VqUjhyb1ctNUx4LTFETVI3ckRHMV9xNXZJ?oc=5",
+    "source": "Tehran Times",
+    "fetchedAt": "2026-10-19T22:06:57.860Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 15.369,
+    "lng": 44.191,
+    "zoom": 7,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-regional-crises-have-no-military-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Regional Crises Have No Military Solution; U.S. and Israeli Aggression Drive Persian Gulf Insecurity",
+    "description": "Via WANA News Agency. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPYXd1R0pSV0o4SW5lVVQyYURfeG1WRGhmWHBiYlRmbldYcVlURENlbEZrLTNUMTlZaF9SdXN5ODJUeUpnSXBDSWRFbmRMNU9KVFdlMW42d1RqekJpSFdYVUJ1b0dWWmJYbkVzYlFQSFk0TGhMWEExSVowMzRjblNLZG5PdmFFZjNxRG1IZXk1dFlNZmp3dGl2Q0QxeEx1S0pZQXFCdHYzR3diV01rMkU3WS1BUkdPb01qY3c?oc=5",
+    "source": "WANA News Agency",
+    "fetchedAt": "2026-10-19T22:07:03.338Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
     "casualties": null,
     "status": "draft"
   }
