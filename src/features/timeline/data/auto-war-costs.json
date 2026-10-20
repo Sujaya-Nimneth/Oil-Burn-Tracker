@@ -602,31 +602,17 @@
     "source": "[OBT model: oil risk premium + shipping rerouting drag]"
   },
   {
-    "date": "2026-10-05",
-    "category": "weapons",
-    "label": "3-day period through Day 219 ongoing operations (~$0.2B/day)",
-    "amountBillions": 0.6,
-    "source": "Pentagon / CENTCOM operational tempo estimate"
-  },
-  {
-    "date": "2026-10-05",
-    "category": "economic",
-    "label": "3-day period through Day 219 economic drag — energy & maritime war-risk premium",
-    "amountBillions": 1.2,
-    "source": "[OBT model: oil risk premium + shipping rerouting drag]"
-  },
-  {
     "date": "2026-10-06",
     "category": "weapons",
-    "label": "Day 220 ongoing operations (~$0.2B/day)",
-    "amountBillions": 0.2,
+    "label": "4-day period through Day 220 ongoing operations (~$0.2B/day)",
+    "amountBillions": 0.8,
     "source": "Pentagon / CENTCOM operational tempo estimate"
   },
   {
     "date": "2026-10-06",
     "category": "economic",
-    "label": "Day 220 economic drag — energy & maritime war-risk premium",
-    "amountBillions": 0.4,
+    "label": "4-day period through Day 220 economic drag — energy & maritime war-risk premium",
+    "amountBillions": 1.6,
     "source": "[OBT model: oil risk premium + shipping rerouting drag]"
   },
   {
@@ -808,6 +794,20 @@
     "date": "2026-10-19",
     "category": "economic",
     "label": "Day 233 economic drag — energy & maritime war-risk premium",
+    "amountBillions": 0.4,
+    "source": "[OBT model: oil risk premium + shipping rerouting drag]"
+  },
+  {
+    "date": "2026-10-20",
+    "category": "weapons",
+    "label": "Day 234 ongoing operations (~$0.2B/day)",
+    "amountBillions": 0.2,
+    "source": "Pentagon / CENTCOM operational tempo estimate"
+  },
+  {
+    "date": "2026-10-20",
+    "category": "economic",
+    "label": "Day 234 economic drag — energy & maritime war-risk premium",
     "amountBillions": 0.4,
     "source": "[OBT model: oil risk premium + shipping rerouting drag]"
   }

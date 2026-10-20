@@ -1,370 +1,5 @@
 [
   {
-    "id": "iran-war-latest-us-pilot",
-    "date": "2026-04-04",
-    "title": "Iran war latest: US pilot search continues as Iranian drone targets Oracle in Dubai - The Independent",
-    "description": "Via The Independent. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOeExncTAyMW9PR1BKZzk4Z0hHa2tFR0JOXzFxejFYdTFDZjRZeGVhclg0MEw1djZtZWFlckJkbUg3aUhhQWVKY0Ztdi1fWm43ZmY2OThRQ0ktUDhYb0wyNzlFS2YtaWdZWFVJR0JRQU5Za2lPbTZSbFc3YjJFSXBzb3B4SWNudTJrSXFXTFZ0T0l6dVEwMEhtYWxNdnJnVlp2ZDMwSFZqZUZrOXd0UUphdU1sMVdXcEVDek1tUHhUVHI?oc=5",
-    "source": "The Independent",
-    "fetchedAt": "2026-04-04T12:00:13.418Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=3AStObksAHI",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "3AStObksAHI",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "who-is-winning-the-iran",
-    "date": "2026-04-02",
-    "title": "Who Is Winning the Iran War? - CSIS | Center for Strategic and International Studies",
-    "description": "Via CSIS | Center for Strategic and International Studies. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9hOWVvLWJGenY5TEZyU0xIT2NUbEI1cGFPUkI0NWQxSU8tVzRwaDZsaU0tNUU2ZjhWSlpsenZ2MW1NNjF6M3Y1OG9rZDl2ZUxwMW5zd0hyaVBoRFZheDJF?oc=5",
-    "source": "CSIS | Center for Strategic and International Studies",
-    "fetchedAt": "2026-04-04T12:00:15.178Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=THbl4xD56FM",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "THbl4xD56FM",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "voices-from-the-arab-press",
-    "date": "2026-04-03",
-    "title": "Voices from the Arab press: US-Israel Iran war faces political limits - The Jerusalem Post",
-    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBHWVdNSkNEOUx4YkNTVkNycXhJWGJMWmZwQXN0WWpSMUw4eUhnQ3ZSV0J5X0FqdS1MSlg0SWNxWEtFVlQyT3lfZnViSlBUbm55djh1aHBKQ1ZMZXRN?oc=5",
-    "source": "The Jerusalem Post",
-    "fetchedAt": "2026-04-04T12:00:16.719Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sA6jV6CWo_w",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "sA6jV6CWo_w",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "united-airlines-cancels-flights-to",
-    "date": "2026-04-04",
-    "title": "United Airlines Cancels Flights to Israel Until September Over Iran War - Haaretz",
-    "description": "Via Haaretz. Auto-detected by headline monitor.",
-    "category": "diplomacy",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNejU1a2VKcTNTNmV3dll5a08zZWFpeTJlM0lxTHhWLTd2bEJzTF9SWkcyZ2o2b2tVTWoweENFeVp0UEdGQmdtcjRLVGZ4R0pSWDJ2ZjlwZGZjQXgweDdKakp3WlZDOWhYampJaGpldzJoNE5FSXhKVWNJNmNUakVnUW43aU1teU1SNFhjV3I2a0laT3AzWE1YYzYzdnAxNnhGVUE5a2JNV0NTUE91ZkhxQkxmcDB3ek9IN0p5Y2owVmlQVmVYc01ubGRkQnhJOHlvQncyWjdLMHRIZUR1WllQUXZJWGUzYlptWm5mTUFnVm9yVnVoMUM5QmNURkVNNUZuTEdCbWxR?oc=5",
-    "source": "Haaretz",
-    "fetchedAt": "2026-04-04T12:00:21.632Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=UHJ1UO3EhtI",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "UHJ1UO3EhtI",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "red-sea-arena-yemens-houthis",
-    "date": "2026-04-03",
-    "title": "Red Sea arena: Yemen’s Houthis open fourth front in Iran war, with global implications - The Jerusalem Post",
-    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
-    "category": "shipping",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9UMUl1ajVmSmhGQjAwb05XUzR3ZHR5d01oVVVnaEt1czNHMmxoOGNJcHdrb3lncVczR1lXYV9Ld2Nyb1oybThjUXdiSzNGRnE1LWJMVGIxVGpsYkFB?oc=5",
-    "source": "The Jerusalem Post",
-    "fetchedAt": "2026-04-04T12:00:28.879Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=Z-HCJFLGiVg",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "Z-HCJFLGiVg",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "us-israel-strike-irans-bushehr",
-    "date": "2026-04-04",
-    "title": "US, Israel strike Iran’s Bushehr nuclear plant, killing 1 | Daily Sabah - Daily Sabah",
-    "description": "Via Daily Sabah. Auto-detected by headline monitor.",
-    "category": "nuclear",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPd3hrSnJ6YzY5eGVBVDV6Njd6MS1uOVY4al9heUJSREpURmVQLUM5R2lUV0pvTWZfLTAyUzB1MlBWcHRJcGpPcDdvZmFPbFpnUWUzMm9yQ0hmU1E1M2tGb25yWVI4UE94X3BOcTFPTG9IeFkzR2lVNWZsY0kxWTFyS2lZMXl5RkJSVGwwdGdTcnVDYXhlSE80SGhwMzPSAaIBQVVfeXFMUGpuR2NOYU9OaElhZGtaUi13OURSX1JscVBia29GWG9qNE1lcUhuTFNodm1NQmx5eG8wZGwwZ085dkdQZjEtT0NJQVVaZ0luTmNSWmJ4dmJyOXdfUXgzWEY5My1naEhIWUF2NENvejF1THhvLVM5VE1RZlFMSUpqT2V2RVE1NWptLXhYQnh3Tk5na3ZfeGFPOVNUVmdvLThxSjRR?oc=5",
-    "source": "Daily Sabah",
-    "fetchedAt": "2026-04-04T12:00:31.259Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=sK24sGtzdbQ",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "sK24sGtzdbQ",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "explosion-damages-proisrael-center-in",
-    "date": "2026-04-04",
-    "title": "Explosion Damages Pro-Israel Center in Netherlands, No Injuries Reported - Kurdistan24",
-    "description": "Via Kurdistan24. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdk1Qa2VkLUM1X2tWNWFXWHVYeFB2Z3I4M1lIQjBfNF9IWEZPTWFHY2djaVdzd2tlYkRYS3cxcHdRU1cxaFdTcmVJbkFJb2NwYUoyZkQ1ZjJ3V0ZtUUpLQ1BtWmlwakJieG9oZldOV1Q4MzVQcV9NS3VsNElxYm1ZMnR4cDhuTVBYM3UxbGdua3JnYVZhUF9WX3BxaEdCY2lsSHoxaTRzb05kYnpYVjI1NktsTEpDdw?oc=5",
-    "source": "Kurdistan24",
-    "fetchedAt": "2026-04-04T12:00:44.103Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "video-a-dolls-funeral-in",
-    "date": "2026-04-03",
-    "title": "Video: A Doll's Funeral In Gaza Shows How War Has Reached Its Youngest - NDTV",
-    "description": "Via NDTV. Auto-detected by headline monitor.",
-    "category": "diplomacy",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQR19halZDdk9zVFBIQ3M2eFFpdFZ6SE1UOUN0VXJDSzgwdFVuanZZdlFld1NJN0sxOFBCZUxab2FCMW1kQ1M1dDItU0puNjFqYW5CXzJiV3ZWcjhNYk93ck5iSW9EeDBlNEVnUjFYMjQ1emVXa2hueWQxVXk3M0prUHd5YkE2WmhxNTdFOEtCSTE4d1N1RktwZDgteWNkWThwRnR6cnFyZVM4TWM5SUhTQmE2eXVLTzZhUWNkaHlXMW1oSVcwTnY2dzNja9IB0wFBVV95cUxQSE9Sb3hFNFVVa09ZcFlUNXZZTnpNY3JiMGdibkN2WjhEWHo3WEdEQnJpRzBxNm4yRS1JOUpVX2VTUEdBcUJLMEZXYzF0Q1RoMmVrRWc0NFVkMUpOYUVzQkk0WHRxMTE1djFSWnZVaWZsNldQdjNlVVRpaEIxczZFNzl2M2RNN3Bya3VyS0NQZ0g1V0dXSzRjMFI1TFdYc0t0cVBHSEY4QW5TZXE1T3d6RjNZeVp2OXlpMllld3Zycmg0d0J1eUJ4Zy1nSUVIX1gwZVY0?oc=5",
-    "source": "NDTV",
-    "fetchedAt": "2026-04-04T12:00:50.071Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "palestinian-babies-separated-from-parents",
-    "date": "2026-04-04",
-    "title": "Palestinian babies separated from parents at start of war, reunited after 2 years - ABC News",
-    "description": "Via ABC News. Auto-detected by headline monitor.",
-    "category": "diplomacy",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZzRBaHdVMkZPZW40UG9kQ1dTUzIyc0xqMm9aTGhKY3pEaURFT0RpRExNYjhjWER6WkpuNGxWMXF6emU3MWxzbmxxUzhoSzE0UUVkYW1jczloei1hcDZjdFpQQ1Jodzc1RndtYjBRQTRzazBSSmZCMkhqaEV2ZW1rZUYwQVd5V2JxZkU4ODVZN0h3R1U1WnhJZVdvVEZwLVBYYk9MdzRPWmR4cjZuWXJDMTVRY2rSAboBQVVfeXFMUF84UEtudG50c2NVLXE0U1BjOVlUaFAwaXozbmRmT0gycmV0WEtYRnE3U19KQnUwdTZyS0RETl9sZGdBZ21WRklNZENXR3NwamJ5VnFFaldvV0R5cTl0RDFDVkhoOUVyUWFmdmN5YjhUVC1hMFR2c29mZ1RzNGVzeVllRjJ3UVdBYmpTOHZUYmZhczNJRTZhaUNUZ3pORXd0RFlrREI5U0hPUV9VSFhMajhsREU4N09KZHN3?oc=5",
-    "source": "ABC News",
-    "fetchedAt": "2026-04-04T12:00:57.163Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "premature-babies-who-escaped-war",
-    "date": "2026-03-31",
-    "title": "Premature babies who escaped war in Gaza finally reunited with families after more than 2 years - CBS News",
-    "description": "Via CBS News. Auto-detected by headline monitor.",
-    "category": "diplomacy",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcDItWmF5a3FYOExPZHV4X2dra1JaT1hTR1Q2ZjQ3TS1Sd3M0NDZLRVN1RDM0eEh4Y0dudVlLOTRobVR0S3BvUTMta0E3aTQ1UFpvNDFNZnNzdzAxUXpOcG9MZ1h3TlhQdUlWNElzcTFOa0pzNC1SeTl5RmJoSGVtOXZ3NXE1UEhhS1ZCTlh2WTFTbVdXdU91Q0c3RjVNSXhidVJN0gGoAUFVX3lxTE9iWEl1eEZja0FIWW9lLVE3VXdWQkVLRWh3X21aSGlHQkpvLXo4MWtOOTVOZWFlSVVUcE5feGFnTld3S1BaQnJxOVpKZmlNMkZnanVNR0pHZ3lBRFhxQ3VNeTFlenBRbDA4SnQ4MkUxZTZXZVVVT2N2WHAyTndNZ2lGVjNkWC1DX2VKX0FEbDQtNFhKQWRIT0JLR0tFVVZNYllaWEpnYkJCNw?oc=5",
-    "source": "CBS News",
-    "fetchedAt": "2026-04-04T12:01:03.449Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "iranian-media-israeli-strike-kills",
-    "date": "2026-04-03",
-    "title": "Iranian Media: Israeli Strike Kills One in Iran's Bushehr Nuclear Plant - Haaretz",
-    "description": "Via Haaretz. Auto-detected by headline monitor.",
-    "category": "nuclear",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNMlJ5MXA0eHA3ZFNmcGE3c2otZ3BOaGpnMndYUGlRb1A5Mk85dXVDODlYYVNiMHNzWjNOQk9oRjdFRVlKRGRBMHJSWF9welJXUWpvRnVyME9ud1NFZWtVRmJlbU9MZnY3cHg4S2JoNVhZVU55dXhkaU84ZE85dTFneEhMMnJYT3RXRnRFYUN2aXh5cGR2VjBmR25zOTNoanRiSEE4Y29wRV9mYlRZdk1qNmtUampCZjI0MXJVYmdFZF9hbTJDMEpQa2k3LUE3VmcwWklIc3V2WVdaS1BxUjROZ1FSMFlpbWdWb1hzeXVBNlpQcUt5aGpqQmhoNDV1ZW1xdFE?oc=5",
-    "source": "Haaretz",
-    "fetchedAt": "2026-04-04T13:00:17.266Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=7oPQ4cTy1us",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "7oPQ4cTy1us",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "usisraeliran-war-news-live-updates",
-    "date": "2026-04-04",
-    "title": "US-Israel-Iran War News Live Updates: Iran claims Israel-linked ship targeted in Hormuz; warns attack on N-site will 'end life' in Gulf - The Times of India",
-    "description": "Via The Times of India. Auto-detected by headline monitor.",
-    "category": "shipping",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi5wJBVV95cUxORzVJQmVrcFNTVlk5b1hmbkticHZaRDJ3ZnBib3FCcHNFWjlQZ0pfUThERkU1Z2JFY1NBT0hfVExwODY3RklBUGJ5cWdVZGtmYmkwTXI3TXlWQlZ5UmU0bk9pUWx1Yms1QmY4NHR5eDE4b1pVaTVKOVRqTFkxWkJ5MW54LVNUMTItc2NxVlNhQ3ptTmtzREJHTWs0YUhZYnVVM3lqd0hpR3pPRXFQbDBBTmVxMjIyVEk5VmV2aGNpdjFabTc3QW44dHVyTTVJb015R3Eyblo5emZSaTBYNWIwdHB0cmVINFJHQkE5eGtSQ1F2enQ0Q2p0X3E0ZllOYkQxUzdoMGhOTS1iRXJlTGxvc1FDRnhaMzBBcWozYTUyVGdkTUxzUVJjM0dsQlhkT0JQS3FDZkk4bi0zdXNFNW41bkY5US10VVlWV241b1R6czA2WXhPODI0V2Y3WEVWcnRQeS1ZbjdNTdIB7AJBVV95cUxPRGFaN1dydGNya09VMGJ0ZXZrUWpuUUw2dEFmeDVvZy1ER05OOHRmOGZ0RVYzeVdVRDVIRlZhRU4tcV9SeVJDSjg3RmU5MDBtVzV4U3VYcDYzOG9ueHdzQzJQeVZfUE5IRk1YdjVqeVBPNVlIcHAxNDRzR1FsQkZpeGhDOUk3TjdnbnZJNE5NR1JBOWpzSXlWVWw3ZnphV3lSQ21PMmpzSno3enVnNUZZbEEzQTRjenlKR2U2YzAzSk5fMUlKTkpjemJlV0ZuR2J4blZ4dHlsbFhYcDZfVWJqX0U4Sm5CSU9YcjAzZ3ZoYkt4dVZoWGdRTl9SZTA4X3NlRGZHOW9nUFh2c3FVN000SThEVVY5enFKSWgyQXUxTGxCWmJTZzdiNXlIN2xOaTluMkwzTGRJTHV4a3hiaGJHNmZhaThWcUJRRllNcGhoYlk5WmtnSTVVanJRdkpnaktFcDFWa3BPYUZwdkRK?oc=5",
-    "source": "The Times of India",
-    "fetchedAt": "2026-04-04T13:00:19.788Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=RhGmGvR9DUY",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "RhGmGvR9DUY",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "usisraeliran-war-live-attacks-on",
-    "date": "2026-04-04",
-    "title": "US-Israel-Iran War Live: Attacks on nuke facilities will end life in Gulf cities, says Iran's Araghchi - India Today",
-    "description": "Via India Today. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQQ183XzNZbndzQjVuNlJFamloZ0ZuM0RoNC1Id2oxQk5IMHJVdlczY21GQU1pMG9Dd1NPaWxObnBkMG5mbHlxTmFfVW9YQ2JWam5zckI2bnNFYk1rd21XYVhHZlgxYU00bkN0eXZNUkRIUmlDZEkxNl90TVZUdkY0TDJxb0pSZFBtSmV1eXl5emZtYTRKN3FpanRLT05ES3h2MUs1ODRMemhLdW1oSEpvaFpZUmo1WWpFbmFOaHRNREpKTW5oMFoxdGhJRVZoWGdjUnpvdjJmNm5CR05BN3NYZ0ZaZEJ1YzlxY0HSAe8BQVVfeXFMTnFmMUVXRnRaUzVEWk9USXZSeDM5cG9pNUdaNE5zVWI0dWhmNVY0eHF2ODRubktILU85Tm1BODdSWHdYbk1udURETnJ6UXdRYlhzVkJPVXZ3dGIydEJwNEZ3UEhBTGR5ZkhIZFNsTGgtbkJmSWRpOWppSUhHbUEtTjNiMnpVQVpSWTloRkF4d0oxbVpFNEY1T180b3AySWFJUEhFN2wyMTJoN09vUTJIVXBWdVFMNFl5Y1hBREJ2S0MxNFBHZjRzM0lsOU1JUzFuOWJ4QS1uSHdlTUNHajFDMUtTRER4OEVkUzBodUNYU2M?oc=5",
-    "source": "India Today",
-    "fetchedAt": "2026-04-04T13:00:22.443Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=WEyelZNda9Q",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "WEyelZNda9Q",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "iran-war-news-live-iran",
-    "date": "2026-04-04",
-    "title": "Iran war news LIVE: Iran targets Israel-linked vessel in Strait of Hormuz; thanks Pakistan for peace efforts | World News - Hindustan Times",
-    "description": "Via Hindustan Times. Auto-detected by headline monitor.",
-    "category": "shipping",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQTndzbU5QdDJ3YkNPaFduVmtVYjNZSjVFZFB1ZDh5TV83NDhwWHJsWGROWThuUTMzVWd3TXBkSXN1UGlxdGFDUnhHNDR2ZkFvb045VUh2V2ZFX1Z0QldlTnhlejFvS0dGSWJENi1xOVB5bkhNT3c1X2lCN2JSVHNBSFI0X2duNno5ejVCWXJ3VXBVVE1BbXpCTnZ3NnFGOG9YZHNTODFtV29NQzJlUGt3YnJraWUzTmlIUDBJcU9UaWlPSTFaMWt4UHBBekdYdUFCN3BwcjFDN0x4SWEybUNIbk1IcVg0aEg2c0RNS2hqeHpjS1pzaWxjQnZlaHBiWE5YX1NXX0lqQVlDNU1mYzdj0gGUAkFVX3lxTFBYd21FbnNPaDVSNE51Sy1vM19lb0VWS3FtektPZ1VXTUFzcjJrM2h5enZjOFg2TVpRUDg3Q19hZnNYMkFTOGY0enIwT2JSbEpkTmI1VloxaUJxdGFER2h5d01VS19DUW54cDFMNWJaWkp0QVZqR2tQaFlOUjVJN1hNMzRCSXUtWnUta0ZuaEl3eDhxdUR1T2ppTFFsZFVaMnRqX3lrbGN0VDNPamdDUl9iMmxzOUxtcy1YY1NtNFBsWlFhZWtJUVk0M19IUGZsVDZmQWFfZGprd25lTHNfMkk4YmZheDQ0VU5oaFlVOTBMeHA2Qkl3Z1dvRjA3c1g0dTR4ZWdGLVd6dTluX1VHNzJBbVVRdA?oc=5",
-    "source": "Hindustan Times",
-    "fetchedAt": "2026-04-04T13:00:25.033Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=KOJ44HgPRp8",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "KOJ44HgPRp8",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "usisraeliran-war-live-updates-iran",
-    "date": "2026-04-04",
-    "title": "US-Israel-Iran war LIVE updates: Iran hunts missing US fighter pilot after crash - WION",
-    "description": "Via WION. Auto-detected by headline monitor.",
-    "category": "diplomacy",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOXzBrV19VcUcyMi1hY21fNkFveEtaT0JlQmtCRF9HT3NuUTMzclhLZVdfcnNGTzJkUjhIVTZ5dC1YR0lHSXFQbTlaU3hSNk11ZExjR2o0b2ZwYU1ucEdlSWk3OWxaN3VfSHo3QmtnWUdhdFBDNWVBN1hHX2t5bTJDWVhCQ2ZSSkk0QTdMTElKN2dqOXZ0TUVhaU9aemJJN2I1OURZMk1rQXZoNzdMbng0bjJlbmJISkNZZDhzUzQ5VGVFbW9oQUdjWUxYM1BLVDYtYTUzZE00d1pyWTNwQTRXWmE5RdIB6AFBVV95cUxNbTQ0REFBTEY5TzYwNldpM1E2eUF2dFlOaDYwRk9ibmFoNVdHSDA3QW9kTXA0bkxsV3I5OGdSQmZ3cmpsWGJzTWZtbHBpWnBrU0tBanBxMGg0VVFMSGJxQWVLR1V1S1pROGpqS0I4VkVxbkltbG9BVGNwYlRjNUp0WWlXMGpiN0FpZm82VV9VbmdjQkd1SW95QTlSZk5hRmlhSWxHd1A3QTc0NzhpMWZCRGNNREQ4MUx3OVR5dHFhMFY5UV83U3JRV3dOQnl0dWxQQ0p1c3dsVUtDQTNqcWZsR2xqVE1oYTI5?oc=5",
-    "source": "WION",
-    "fetchedAt": "2026-04-04T13:00:27.478Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=RhGmGvR9DUY",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "RhGmGvR9DUY",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": null,
-    "lng": null,
-    "zoom": null,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
     "id": "iran-war-latest-iran-says",
     "date": "2026-04-04",
     "title": "Iran war latest: Iran says US-Israeli strikes hit key petrochemical facilities - The National",
@@ -4770,6 +4405,411 @@
     "lat": 31.768,
     "lng": 34.851,
     "zoom": 7,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-issues-warning-to-us-2026-10-20",
+    "date": "2026-10-20",
+    "title": "Iran issues warning to US as Qatar prepares to announce regional defense agreement",
+    "description": "Via Fox News. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTUFPUFpGU3BuOGJsTXlVcDdTQ3NzNnZLQjdOd0c5ME5Ta3AtVzBwZ1RKRUtDY2QtLW1wMllqY3R1ZzJVSk5wRUxEUE1fZHdrYXNwZFBxTGZ2OWlMYVlRanNtUzNwU1Y4SlpBS2lfbFBqMGR4Y3ZUYWJVUzVhZlhlcFVvdjhLSGs?oc=5",
+    "source": "Fox News",
+    "fetchedAt": "2026-10-20T03:55:30.261Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=A7vCxJb2iiI",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "A7vCxJb2iiI",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 25.285,
+    "lng": 51.531,
+    "zoom": 8,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-war-updates-58-recruits-2026-10-18",
+    "date": "2026-10-18",
+    "title": "Iran war updates: 58 recruits killed, 200 hurt in Houthi attacks in Yemen",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUjFlTlRqQkJBNFNTYTgtOVZMTXpUOEE4U3dtT2xuRXBydTZkd1FPcl9vMUNidUR5SUU2X251NUtSZnZseXlOdnJrMnRNLVpFamNRQnF4WFVYcG9UbEoxV054QkQ3UkVFUEZyeENidkQ0U1dlUVRtMWlFSlFCbTVhTkdjMkJ6VkVwRW13MERpS2JHSGc2MDktX1NKYTk3YVdUa1JTVXFsNHlDeHdMSHJMLWU3bVg1V044RUt2anVJd07SAcYBQVVfeXFMTWZYeGhfVWxhNVpuTUMxOXZXVkw1Y3hWWWt0ak1PLUo0N3QxdnFQek1leHQ5TW1mMWhIMlZST1UzeTQwZElscjRIX09BZlBMaS13ZUdtU2JPRWVCdTBWZzF2V3dSUlhFYnhlUmV3dEFvQ3c2empwS0tKTTRIWXNyb2FwMnBEOTNxX1ktWktGdXVYR1MwbzFBMG5UWmJWRVVVR0szUDU3RFBUZS1lZTJIaHAtci1jZnBiTUFPSmdwVWwyWGwtYm93?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-10-20T03:55:31.740Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=PoIJ4wTjRKo",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "PoIJ4wTjRKo",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 15.369,
+    "lng": 44.191,
+    "zoom": 7,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-on-iran-israels-opposition-is-2026-10-19",
+    "date": "2026-10-19",
+    "title": "On Iran, Israel’s opposition is even more hawkish than Netanyahu",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUHpYMlBmSFVPVjFDc3hPREdtUW1xSG1DRk1nZlZsT3lVMWcxdXBneWtKZFR5YnJqRE9OX1NqM0E3OTY1WmdtX1VPWTRkMm41WVoyajVYYzZEaHY3MDBOMHV6RjIyZDUtVFVEdU5tU2wzXzYtcUJSMklwQjZ5T211RHhzaktrbEVfdVRkNkFZSVVQT2F3MUwyWWhhVy1tQzF5TXZXRjNTVdIBrAFBVV95cUxOUEVNQkhxajRNMWVScXZDeGphYzJZZk0xcHFSVVBVLU9wcTZYa25hdmQwTWhkMFpIVWZXS3Z2c1R0Sks4ZFptbVFwb3owZzhWV3NoUHdZYkJaWDNHM21LQzR0ckQ5dkdFeEdwMzgtbGpUUk5KcDlPcVJIQ3FiRlh5OFdSUENSSHc2SS1mcFdzaTVQbWRWRUtTLVU3Q3pBQmVYYUt4Y1V1N3lSQXFf?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-10-20T03:55:33.263Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Fs0H5qEMWjQ",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "Fs0H5qEMWjQ",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-trump-backs-netanyahu-is-the-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Trump backs Netanyahu: Is the US planning a new Iran attack with Israel?",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNa1Zud0l3Tmd1WENUNlFUTXM3QjVudnRWdnVrTHk2enF0eTZsWmtyR1RsMFRmUHhHTzYyN2NRdVlNamlMUFhlNkNsUmI5TkQ3V1hhMV9ISVlPaUtxYkYybkJfYzljcFZsUWtjT2oxOTdPelJ4UmZMeVNDX0U2QVRLZ2tIdXo1NjBFMTFSVGZDOHN5Z1RMVGdUc3BzSi1oRE5FMTdSaGNBdjJyMUYwYjFKdWh30gG3AUFVX3lxTE9vR1ZvNVZoeWNMbnYtRWhPalliR3NjZ2NsbGNWckR6bURQN0JLYkxqQUtRZ2lJOGVtMnZ4T29yeEFBczlFQWVQR2xwb0lnTFdZelVOaUxKTVBEbTYwUzN0ZnJoekZQZUVmOXJYdFE0VEMwdVQ2MWxJZ1FQbDEyUy16ZTlhSXhfMGhKSnVoZS16bW5rcjJvb2RJTFRHcHdxUHltUkZSMHkzQ2tReklsNE1UT1N2NHNBOA?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-10-20T03:55:34.661Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=YVlaR8UDhZQ",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "YVlaR8UDhZQ",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-us-defence-secretary-pete-hegseth-2026-10-20",
+    "date": "2026-10-20",
+    "title": "US Defence Secretary Pete Hegseth meets Netanyahu in unannounced Israel visit",
+    "description": "Via TRT World. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMk50VC03YmhvTGV2bE4tZXg0WmlYWUJvU0thN1NsQ1dMbXp4R0owZFRUU2pEY0ZibEt3aFViQ054dnNiSWRWa2xNX2FSaTdINHdwZUtZOTJDYWxoVjdWSEZOdTVxMktzQTlMaS1uVnRUMG5ael9nYkxDSnIzQk5rTjEwNXpTa3dqTXlIMVhWc2VFTE1LSnloeERJclVZcnI1YWdKWFhFVkgyb1ZvcHNUZ2pGLVZvTFhQclowM3N4ZEo1dWtETWYxNg?oc=5",
+    "source": "TRT World",
+    "fetchedAt": "2026-10-20T03:55:36.181Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=9q5wpwK70jA",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "9q5wpwK70jA",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-pete-hegseth-benjamin-netanyahu-meet-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Pete Hegseth, Benjamin Netanyahu meet in Israel ahead of elections",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE81UEtpSnpXWW8xZWtIYjFMYmFteVRFUl9KNGN5VmJOUmJHbEJGeU1Pc1Z5MTNsZ1h0YUNoeF9YUC1tNzk4eVJud1gzWVVOaU5NcVpNazhHSmxCeVZIaVJFclQ3UmhsZjJYUDA2LUhEc0lJZXJpRFFLQ0pDNA?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-10-20T03:55:38.374Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=9q5wpwK70jA",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "9q5wpwK70jA",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-lavrov-meets-abbas-araghchi-in-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Lavrov Meets Abbas Araghchi in Tehran to Discuss Ending War With the United States: 27 outlets compared",
+    "description": "Via NewsCord. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOaFVickZTVVowT1hxeVZ5ZVo4UHVRY3VRb0VLZ2w4UFc0bm90a2lqQUdjSF9UbnVKWlZOY2dod0Q4SGUwVDlpQW80VDBYVVFUUi1zblZkcGFvZUd6TTVURmNqb0lBSHdueUdkOUpQUDdRLWFmTUtPVThPOHhGV2FVY3BKejR4eWZ4cjN1aGlwTXg3X2xlU0lMV2NSemliVzJydnBydGdlWFJYWXNTZkp2b3d6TDQzQ1VDdGR4ci1Vak5PMml6NkpodmxsOHVuRDhwSFA2YVc3bw?oc=5",
+    "source": "NewsCord",
+    "fetchedAt": "2026-10-20T03:55:40.563Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=IyuJwDxeOpU",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "IyuJwDxeOpU",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-pols-finally-admit-they-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Iran pols finally admit they want nuclear weapons: 'It’s a necessity more important than bread'",
+    "description": "Via New York Post. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWVdUTzdWWVhxQmlxNHU2d25RYmlsaUtnMTJGdEZMVzlzdVMtN3FXOEc5czZVQUp5RnBMTFVWVWhUUkVWQXpwZ2dDd05MdFpydGw4Q0VWOE5ERmxZZ29VWVdhUVk5a0xDWlpmbUV6VkRhZTdlVFg3YUttSk0wZkI0Y0hYZ1pLcUUzZlcyQUlRQkdQTi1pSHVNVkNkOE41MmNsS2lKdzRnWXNsSGszWWZMOXVMeWMwZi04NXE1UVdSY1V2YXZ4c1FnSmdBR0xfZw?oc=5",
+    "source": "New York Post",
+    "fetchedAt": "2026-10-20T03:55:43.044Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=SOIV1xiLOk0",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "SOIV1xiLOk0",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-lavrov-backs-iran-after-trump-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Lavrov backs Iran after Trump says Russia doing 'little' for Tehran",
+    "description": "Via Euronews. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMk5EVm9pS2FDMERjOC1yUnd6dVNiSUhheVpTYkQxclZpSU5ER01JdU1nSHVxb2pldzdpYXYwTDdmVmtZemc0UjJVY3RCVlkwR04yalhMZlZLU2c3ZDRRdnVqbmI3RUlmRENfX0o3aWJfZEZXbmp5QVVFWHpwYXhVYzFZekFWbG9EWmhZS09kS19XTkhyMENXTS05VVpyeS1fU0F2NXJ4X0hmYmg1OHQ5TjhCWTg4ckE?oc=5",
+    "source": "Euronews",
+    "fetchedAt": "2026-10-20T03:55:45.582Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=xlx5b4odEgI",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "xlx5b4odEgI",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iran-warns-un-over-trump-2026-10-20",
+    "date": "2026-10-20",
+    "title": "Iran warns UN over Trump, Israel military threats",
+    "description": "Via Mehr News Agency. Auto-detected by headline monitor.",
+    "category": "diplomatic",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOaGd0a0wxY1BxS3ZBSU9za3NFZ09VdzZMTDZMeURvQ3RHSkY4NTdySUtYUnk5dzgxTGVQbzRSWmd3R0FRRWxLRE0yU0VWT19mRDBEOEdJemhnWVpRVGQ0M1BCY1dEWi1TT3hwYU9LVVUySzFiVUI2S01tbVNIYWIySWZaandtZXdxazRpdA?oc=5",
+    "source": "Mehr News Agency",
+    "fetchedAt": "2026-10-20T03:55:47.990Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=qqaUyjOJCMc",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "qqaUyjOJCMc",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-israeli-election-tests-netanyahus-wartime-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Israeli Election Tests Netanyahu's Wartime Leadership",
+    "description": "Via 조선일보. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZXNiNThHWVhyR2lhNlZ1Qk9Ob2N6R0hjbWMyZUtnVXFsN1d6RnRWd3phd2Y0eVpLRWp2MGstTVhCSzZNcjhRZ2dTR1IyUnFoVkJlT29QSVBYend2RVhzQVl6R3pDQ0o1NXF3eGI4ZVgtZHFmNU1ZWE5YdHBBSG9xYU1yaDc?oc=5",
+    "source": "조선일보",
+    "fetchedAt": "2026-10-20T03:55:50.311Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=jLnON5Tco1Q",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "jLnON5Tco1Q",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-blatant-aggression-chinas-premier-backs-2026-10-19",
+    "date": "2026-10-19",
+    "title": "'Blatant aggression': China’s premier backs Iran, slams US and Israeli strikes",
+    "description": "Via Gulf News. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUlV6WUEzaEdaYXBxZVZtR1J0TE9HWkw5ZzBrZFlRRHNtal9kbEZVRHlRdTQyY2dsXzNQQjMyaW4wSU15bmZXLWQ2dTNIN0QxSVIxbnZDMDJLYjRna0pWTUV4SFVFcDVIYkdMXzl2blEzRzVpcjYyRWJoNmV3Q3VCZG9CQkh4SzkwUTdta1RfY1pzaVVVQVRxVUYxc1BoNC0wbHpsb0ZVVERHOFNwRHlad0xqSDF5QW51?oc=5",
+    "source": "Gulf News",
+    "fetchedAt": "2026-10-20T03:55:52.466Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=vJ1I3SUFUqs",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "vJ1I3SUFUqs",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-dont-ask-how-this-war-2026-09-21",
+    "date": "2026-09-21",
+    "title": "Don’t Ask How This War Ends",
+    "description": "Via The Atlantic. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQXNoMGF5WGdOZndnOXk0MkVPc2RsT2tEXzdvTWF0dGd1eXozQTcxXzYzdWJmeV9hQ2Z4NTFRM1BTT3ZvRXhIX3NiN2JVNVNtcnV0OTJTRC0yU3ZKaVJ4NGVfQUt2c3dCTzJsM3ptNUVRcl81dEVCM01VVUhkTXVNdGluLUx4V2M?oc=5",
+    "source": "The Atlantic",
+    "fetchedAt": "2026-10-20T03:55:54.754Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=sB8wuJmZ0gA",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "sB8wuJmZ0gA",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 29.5,
+    "lng": 48.5,
+    "zoom": 5,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-farsnews-military-official-iran-counting-2026-10-19",
+    "date": "2026-10-19",
+    "title": "Farsnews | Military Official: Iran Counting Moments for Next US-Israel Foolish Acts",
+    "description": "Via خبرگزاری فارس. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZk40U1p3SWMwUWM0bWo3OEVUbjBnQURfRGo0NE9xTnB3NDZJdi1QWnFMVlExQUVNUGg4Nk9uTnJQZGZhZzdrbXYxRGRsQUVuaGRaUlI0SDlaWFJDa09oT3F5T0tBeU1jV29HaTFjdkgwRDNuWENSbHo4NGVBdXJxclVoNEVFRjViUzFqZFBwYlRkYjVLeVpIbHJTcDF4ZW93bGE3VlNyWVhVRTVIVTU3RXhaVmxRNDZOcUE?oc=5",
+    "source": "خبرگزاری فارس",
+    "fetchedAt": "2026-10-20T03:55:56.825Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=QoXpPf2aR_A",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "QoXpPf2aR_A",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-trump-endorses-israeli-prime-minister-2026-10-18",
+    "date": "2026-10-18",
+    "title": "Trump endorses Israeli Prime Minister Netanyahu for reelection amid Iran war",
+    "description": "Via Investing.com India. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYVFObHdoekdaSnFiVzl5U19DcEsyN19jMTJGckltM3NoOVZwRWlkdFBRaS1DSm9aRUZ1UTduMGVLNlpUUEZHRk44SEdvTWRuZDBuLTFOb0xNR2F4ZkdWdGc5UER0cVp0ei1ORnZOcmpjbU5uNkxhTVQ2SFVWbndhUWVGcFBOWjNoUHNCUWdMTElZSGM1SXRTSzVmX01vTGF2eC1RQ1RQWERPUE4tWHdhVVdvN0laSFRDWUE?oc=5",
+    "source": "Investing.com India",
+    "fetchedAt": "2026-10-20T03:55:59.117Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=iGBSU0Vulgw",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "iGBSU0Vulgw",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
     "casualties": null,
     "status": "draft"
   }
