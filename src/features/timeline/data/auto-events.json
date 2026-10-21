@@ -19256,6 +19256,16 @@
     ]
   },
   {
+    "id": "auto-gaza-changed-after-three-years-2026-10-07",
+    "date": "2026-10-07",
+    "title": "Gaza changed after three years of Israel’s genocidal war",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSzZRZC02dUZMTHkycVhaZ3dFaU5Ya3JiSktFazJjaC1pa0ZzTUZwVlN0QjFGWDZzYVFmdnFoYTUtSVFjU0FtdlFwakxVYURwMGV5ekVqNlNtTWJlOHVsamxSQkgxeWNIWjRuOUZYbkhBSE5JckN3amszUGQxd0YxcFpvUTgydzZBMW1MNDE1TGJ3b1lWN1VWZGJTS0dYTVNB0gGmAUFVX3lxTE1uV0J3NElTdVFpZkdiX2V1Mm54RGtULVZHZnlhYXltMld6S3Z1eXJhNjZWS0EycmktWWFRdkJqaDRTUERPOUl0WTU3ZGc3N3drODZrbngyOThvMXVJeW5fcDlac0pmejBsX1BvZWtycXMxdlYtTjNMYUtrd3dpX0xCb2F2VnhoZk43Tjc2VU42Wk5TaXRScF9jU095ajJ5QWNYT0pmTWc?oc=5"
+  },
+  {
     "id": "auto-iran-war-updates-12-killed-2026-10-10",
     "date": "2026-10-10",
     "title": "Iran war updates: 12 killed in attack on Riyadh airport – Saudi authorities",
@@ -19349,6 +19359,24 @@
       {
         "type": "youtube",
         "url": "https://www.youtube.com/watch?v=Rb2GBpZYxzI",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-updates-cargo-ships-2026-10-14",
+    "date": "2026-10-14",
+    "title": "Iran war updates: Cargo ships sunk in Hormuz, Houthis claim Riyadh attack",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOUTRUUUk1T3A4eVQ1MnhCQ2ZkaGlHWDM2M2RQV3BxYWJzZ3JpUDVRTVFSMUg5MjFlNFlfakttOVdlamc1cVUwclhwc1BjemRRSzJsVW1IbHZVUld1Q3BjMzBtRmtpbTg3WGRDdXVvS21lNURLeEdfUkNEaVFMcmtTSXR1d2RCMlhfVlFHRF9lSUpQVlhKQzI0d1M0ekdYRFl5aVJjcENnV0tBcnoxVng4ejJiX3Q2dHhyV3JxQ19yUW5uQdIBxwFBVV95cUxNeFBkVndtaFJBRzVnOC1yVmEzb3Rkb1hsUnFHY0pqS2RiUGhsX1d4djJrUE0td09PQ0NyZ2ZGSHV3akNIbDk4T3B4WVRjbG1xb3RFN1R6TWdaRkJTRXBIbl9fY2NrbGFaSHI4cUR0d3RCZEFwYkRiR19SUFVFY2F5NkVHYlhnN1NGTjZSZWNhZy0waXFvNy02bnVpTk9WMzNtMnZGU1BLYkJWTkhmeGJxa21LM0RDVEFaUU5yczZOWDFoNXVveFRZ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=nS_yft5GuL4",
         "label": ""
       }
     ]
@@ -20420,5 +20448,90 @@
     "lat": 35.689,
     "lng": 51.389,
     "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNY2ZqT3ZPT19KMlJ1cVVydVI5cXM5UDBjWlR4LUlEMGxJeVNaTTVjcTU3R1g2VjcyRzVidlRsWXR1dVlVUnpselpQMEZhdDlZTzZ0U3lmSzNaSWtod3hRNTZFWUVkSDA4R0lXb3dBTUJVbEFLRk9uT1R5SjhEMjVKcjdYcVVBakw4cmwzanluVThKRHRNYTQzc1dzVmVrSlViM2N4WDFFQTlxUFAtN003VUZoTjFZcTlOOUNjSWlWdzhzRlk?oc=5"
+  },
+  {
+    "id": "auto-iran-war-live-tehran-calls-2026-10-21",
+    "date": "2026-10-21",
+    "title": "Iran war live: Tehran calls for diplomacy but is ‘fully prepared’ to defend itself",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQUDdudll1aUxJTEdvMlBrZGRqSENudHVWUy1HQml2LUM3TVZzUl96bUZSMTFSU1dtUGdKUkxZRkFwc3U5UzF5X0kzRDVoQm4wWkpjVWNlaHZpWkZQZEdOTTl3cnVjbF90UGJMZ1pGSU5CX0pjdUZlcnpabm1YYU1CcGN4djhIdWdkUHpob1RxTTQ2Um9id0tGRER4OTZMTUFvb1dNSnlpMW1aaFR4Z2RXVmNQUjFxbE5YRTl30gHAAUFVX3lxTFA2cERpMnJnd201QmtUaWV2aGQ4R0I2RDZYYVRRUUhtMi05ZllYOXpMbXN3b081RTNGa09tOTBJaENxcUtsYkhtLXRaU1AwbUhCTjNDQW5wY2R5NmU0U2ZPZXpfU3dMUXlGcE9raGRLcWp3RHZGeVNqOER2NkpJaUk0SDlVUV9mM1hHdG9mSjBqQ0xqSVdMN2wzdWxvaFNSTHpsSU1mV3U3NjlTTGFOM2haVEJsR0J2ZU9hMkRBYkFWaw?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=nR5ldwFZ2l4",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-israels-election-may-change-its-2026-10-21",
+    "date": "2026-10-21",
+    "title": "Israel's election may change its leader, but not Iran war policy",
+    "category": "escalation",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZm1ibWE2TFE3M0JlejZpUkp2aHJkY1NBTFRUR2tvaVV5dmtrbkFjbTlYMGM5WkpOTUp6MXFka3pyX1FGeUthY1NlS25oamJ6R1kzdjR2NHJIWWJDay1VWm00WmJkNjhnWlBwNFp0RDhvdnBZbjMyZHNabGZPSjFhbzJ0eU5lRGpvZXFaN0pXb1F0aWVveW93WWw2a0k1eFg0anJWQllTODdPaDkyejZVNVF3?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=iNTz9-D-F8g",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-live-updates-iran-says-indirect-2026-10-21",
+    "date": "2026-10-21",
+    "title": "Live Updates: Iran says indirect talks with U.S. on ceasefire proposal continue",
+    "category": "diplomatic",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZDJacGlyUkJSMmZfSXF5dlBwLU5PRXdsQnZiMFRyRmJTeVU3dHZnQlF6WDVRQ0pjYlFFamxjV3dXU0E4SmZ0SkRUMW1uLVh6cE05SDBLTEhlTnI3T3dwQXNWbFQ3TzFaZ1lZY0RNeVlNSW8zaDN6aDh1NWg2ZTNvTV9OM0xYQQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=93JB6iAGwcI",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-netanyahu-planned-attack-on-iran-2026-10-21",
+    "date": "2026-10-21",
+    "title": "Netanyahu planned attack on Iran earlier this month, but Trump opposed it – report",
+    "category": "military_strike",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPR2tFek1CVWlzWW53MkZQekkzaUlZQkJwWEpHcm1mTmVfMWo0MkJMN0lhQ194ek5kYVpZUDI3TmdFVnNxelkyd1YwOHNQT0EtN2s2aGl3YmJjZmpGNTljdTJzOHZtZkluczNrVXhLX2RqMEZjQ2ZfV2ZlMldtendyR1IyWXBPNnRSOTJ6cXpoR2NpYVBBZnlQVDhzVEVkSlFyWXoyWGFqcVAwZmxUOGtn0gG0AUFVX3lxTFB4WXdiZm4zVlZxZy1EZDlUTy1rckxMSjlKSFJleURFdExHU3BoLWhCekp6R203ejJGVjZXaVRIRm56d3lienU2N2lqT2t6YmVFaHdBN1R2enhNbm05R3lXSzhXZE1HcUhqZTVsd2JWSHFjYlNhNEYzUjZiNktHQy10M1JMNG1iaXFWdFZ4bGdaWThqMGpBY3puQ0toZW80Q2lubW91V2NDeU9FUF9oOEFhNXVJQQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=MG-oyxMwPX4",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-lauds-ties-with-russia-2026-10-21",
+    "date": "2026-10-21",
+    "title": "Iran lauds ties with Russia, contradicting Trump's claim of little Russian support for Tehran",
+    "category": "escalation",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNQXBXMWdNYVRIU0pDdjdkTnZLOEhXdnE0dW9UYkl6NjVpcDRlWEE0MHoxS2VObkNYSjJsbzJCMkVxNlZaTHplRmV3aEtrMFNueEtRT1RreXNtLVhvNWoxVExlalo5UW9zU0hrQVhOMzBRZjhQMjRFNWN4SVduaTJ5Yi1uNE1sbjlBLThsZnln?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=a1egIcWbu6c",
+        "label": ""
+      }
+    ]
   }
 ]
