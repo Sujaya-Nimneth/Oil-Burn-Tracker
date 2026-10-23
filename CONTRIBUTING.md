@@ -80,16 +80,20 @@ The `whyItMatters`, `ifDestroyed`, and `supplyChainRole` fields tell the real st
 
 ```
 src/
-├── app/                         # Next.js app router
-│   ├── api/firms/               # FIRMS proxy + CSV→GeoJSON
-│   └── dashboard/               # App pages (overview, fires, timeline, about)
+├── app/                         # Next.js app router (static export)
+│   └── dashboard/               # App pages (overview, fires, timeline, impact, lost, about)
 ├── features/
-│   ├── map/                     # Map component, hooks, pulsing dots, GeoJSON utils
+│   ├── map/                     # Map component, hooks, popup builders, GeoJSON utils
 │   ├── fires/                   # Curated facility data, facility drawer, fire list
 │   ├── emissions/               # CO2 model, timeline chart
+│   ├── timeline/                # Conflict events, event feed, timeline scrubber
+│   ├── impact/                  # Consumer impact data
+│   ├── memorial/                # Lives-lost dataset + submission dialog
 │   └── stats/                   # Stats components
 ├── stores/                      # Zustand state (fire-store.ts)
 └── components/                  # Shared UI (shadcn/ui)
+functions/api/                   # Cloudflare Pages Functions (FIRMS proxy, memorial submit)
+scripts/                         # Data pipeline (headline monitor, stats update, FIRMS snapshot)
 ```
 
 ## License
