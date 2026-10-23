@@ -7,6 +7,12 @@
  * a calibrated baseline thermal snapshot for Persian Gulf energy corridors
  * so local development (`npm run dev`) and static exports always have
  * a valid `/firms-latest.json` fallback.
+ *
+ * Fallback rules (a failed/missing-key fetch must never destroy real data):
+ *   - If the existing snapshot holds live satellite data, it is kept as-is.
+ *   - A baseline is only written when no snapshot exists, or the existing
+ *     one is itself a baseline that is more than 3 days old.
+ *   - Pass --force-baseline to regenerate the baseline unconditionally.
  */
 
 const fs = require('fs');
@@ -124,11 +130,29 @@ function buildBaselineSnapshot() {
   };
 }
 
+function readExistingSnapshot() {
+  try {
+    if (!fs.existsSync(OUT_FILE)) return null;
+    const parsed = JSON.parse(fs.readFileSync(OUT_FILE, 'utf-8'));
+    if (!parsed || !Array.isArray(parsed.features)) return null;
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
+function isOlderThan(snapshot, maxAgeDays) {
+  const fetchedAt = snapshot?.metadata?.fetchedAt ? Date.parse(snapshot.metadata.fetchedAt) : NaN;
+  if (Number.isNaN(fetchedAt)) return true;
+  return Date.now() - fetchedAt > maxAgeDays * 86400000;
+}
+
 async function main() {
+  const forceBaseline = process.argv.includes('--force-baseline');
   const mapKey = process.env.FIRMS_MAP_KEY;
   console.log('[fetch-firms-snapshot] Starting...');
 
-  if (mapKey) {
+  if (mapKey && !forceBaseline) {
     try {
       const url = `${FIRMS_BASE_URL}/${mapKey}/VIIRS_SNPP_NRT/${MIDDLE_EAST_BBOX}/2`;
       const res = await fetch(url, { signal: AbortSignal.timeout(15000) });
@@ -154,10 +178,29 @@ async function main() {
         return;
       }
     } catch (e) {
-      console.warn(`  Live FIRMS fetch failed (${e.message}), generating baseline snapshot...`);
+      console.warn(`  Live FIRMS fetch failed (${e.message}).`);
     }
+  } else if (!mapKey) {
+    console.log('  FIRMS_MAP_KEY not set.');
   } else {
-    console.log('  FIRMS_MAP_KEY not set — generating calibrated baseline snapshot...');
+    console.log('  --force-baseline specified.');
+  }
+
+  // Fallback path: never overwrite real satellite data with a fabricated
+  // baseline — keep the last good live snapshot instead.
+  const existing = readExistingSnapshot();
+  if (!forceBaseline && existing && existing.metadata && !existing.metadata.fallback) {
+    console.log(
+      `  Keeping existing live snapshot (${existing.features.length} detections, fetched ${existing.metadata.fetchedAt || 'unknown'}) instead of writing baseline data.`
+    );
+    return;
+  }
+
+  // Write a baseline only when there is no usable snapshot, or the existing
+  // one is itself a baseline that has gone stale.
+  if (existing && existing.metadata && existing.metadata.fallback && !isOlderThan(existing, 3) && !forceBaseline) {
+    console.log(`  Existing baseline snapshot is recent (fetched ${existing.metadata.fetchedAt}) — nothing to do.`);
+    return;
   }
 
   const snapshot = buildBaselineSnapshot();
