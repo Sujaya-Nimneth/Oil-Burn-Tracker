@@ -177,6 +177,12 @@ export default function FireMap() {
   isMutedRef.current = isMuted;
   const mapState = useFireStore((s) => s.mapState);
 
+  // The 'load' handler runs once with a first-render closure; without a ref it
+  // would seed the fires source with stale (empty) data when the fetch
+  // resolves before the map finishes loading.
+  const fireDataRef = useRef(fireData);
+  fireDataRef.current = fireData;
+
   const initMap = useCallback(() => {
     if (!mapContainer.current || map.current) return;
 
@@ -200,7 +206,7 @@ export default function FireMap() {
       // ── FIRMS fire data source (only fires near oil facilities) ──
       const facilityFires: FireGeoJSON = {
         type: 'FeatureCollection',
-        features: fireData.features.filter(f => f.properties.matchedFacility)
+        features: fireDataRef.current.features.filter(f => f.properties.matchedFacility)
       };
       m.addSource('fires', {
         type: 'geojson',
