@@ -13,14 +13,21 @@ const CACHE_SECONDS = 1800; // 30 min
 export const onRequestGet: PagesFunction<Env> = async (context) => {
   const url = new URL(context.request.url);
   const bbox = url.searchParams.get('bbox') || MIDDLE_EAST_BBOX;
-  const days = Math.min(Math.max(parseInt(url.searchParams.get('days') || '2'), 1), 5);
+  const days = Math.min(
+    Math.max(parseInt(url.searchParams.get('days') || '2'), 1),
+    5
+  );
   const source = url.searchParams.get('source') || 'VIIRS_SNPP_NRT';
 
   const mapKey = context.env.FIRMS_MAP_KEY;
 
   if (!mapKey) {
     return Response.json(
-      { type: 'FeatureCollection', features: [], metadata: { error: 'FIRMS_MAP_KEY not configured', count: 0 } },
+      {
+        type: 'FeatureCollection',
+        features: [],
+        metadata: { error: 'FIRMS_MAP_KEY not configured', count: 0 }
+      },
       { status: 200, headers: corsHeaders() }
     );
   }
@@ -41,12 +48,34 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
     const geojson = csvToGeoJSON(csv);
 
     return Response.json(
-      { ...geojson, metadata: { source, bbox, days, fetchedAt: new Date().toISOString(), count: geojson.features.length } },
-      { headers: { ...corsHeaders(), 'Cache-Control': `public, max-age=${CACHE_SECONDS}` } }
+      {
+        ...geojson,
+        metadata: {
+          source,
+          bbox,
+          days,
+          fetchedAt: new Date().toISOString(),
+          count: geojson.features.length
+        }
+      },
+      {
+        headers: {
+          ...corsHeaders(),
+          'Cache-Control': `public, max-age=${CACHE_SECONDS}`
+        }
+      }
     );
   } catch (error) {
     return Response.json(
-      { type: 'FeatureCollection', features: [], metadata: { error: String(error), fetchedAt: new Date().toISOString(), count: 0 } },
+      {
+        type: 'FeatureCollection',
+        features: [],
+        metadata: {
+          error: String(error),
+          fetchedAt: new Date().toISOString(),
+          count: 0
+        }
+      },
       { status: 200, headers: corsHeaders() }
     );
   }
@@ -55,7 +84,7 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
 function corsHeaders(): Record<string, string> {
   return {
     'Access-Control-Allow-Origin': '*',
-    'Content-Type': 'application/json',
+    'Content-Type': 'application/json'
   };
 }
 
@@ -80,7 +109,9 @@ function csvToGeoJSON(csv: string) {
     if (values.length !== headers.length) continue;
 
     const row: Record<string, string> = {};
-    headers.forEach((h, idx) => { row[h] = values[idx]?.trim() || ''; });
+    headers.forEach((h, idx) => {
+      row[h] = values[idx]?.trim() || '';
+    });
 
     const lat = parseFloat(row.latitude);
     const lng = parseFloat(row.longitude);

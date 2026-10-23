@@ -65,14 +65,14 @@ import type { FacilityType } from '@/features/fires/data/curated-fires';
 // composition, combustion efficiency, wind, and atmospheric conditions.
 
 // IPCC fuel parameters
-const CRUDE_H_C = 42.3;  // MJ/kg (net calorific value)
-const CRUDE_EF = 3.10;   // kg CO2/kg fuel
-const GAS_H_C = 48.0;    // MJ/kg
-const GAS_EF = 2.69;     // kg CO2/kg fuel
+const CRUDE_H_C = 42.3; // MJ/kg (net calorific value)
+const CRUDE_EF = 3.1; // kg CO2/kg fuel
+const GAS_H_C = 48.0; // MJ/kg
+const GAS_EF = 2.69; // kg CO2/kg fuel
 
 // Compute multiplier: t CO2/day per MW FRP
 function mult(fRad: number, hc: number, ef: number): number {
-  return Math.round((86400 / (fRad * hc) * ef / 1000) * 10) / 10;
+  return Math.round((((86400 / (fRad * hc)) * ef) / 1000) * 10) / 10;
 }
 
 // Per-facility-type parameters for transparency (exported for UI tooltips)
@@ -85,28 +85,91 @@ export interface FacilityEmissionParams {
   note: string;
 }
 
-export const FACILITY_PARAMS: Record<FacilityType | 'unknown', FacilityEmissionParams> = {
-  refinery:      { fRad: 0.08, hc: CRUDE_H_C, ef: CRUDE_EF, fuel: 'crude oil',   multiplier: mult(0.08,  CRUDE_H_C, CRUDE_EF), note: 'Heavy crude, dense dark smoke' },
-  oil_field:     { fRad: 0.09, hc: CRUDE_H_C, ef: CRUDE_EF, fuel: 'crude oil',   multiplier: mult(0.09,  CRUDE_H_C, CRUDE_EF), note: 'Wellhead crude fires' },
-  storage:       { fRad: 0.10, hc: CRUDE_H_C, ef: CRUDE_EF, fuel: 'crude oil',   multiplier: mult(0.10,  CRUDE_H_C, CRUDE_EF), note: 'Mixed fuels, tank fires' },
-  port:          { fRad: 0.10, hc: CRUDE_H_C, ef: CRUDE_EF, fuel: 'crude oil',   multiplier: mult(0.10,  CRUDE_H_C, CRUDE_EF), note: 'Mixed crude/product storage' },
-  gas_field:     { fRad: 0.12, hc: GAS_H_C,   ef: GAS_EF,   fuel: 'natural gas', multiplier: mult(0.12,  GAS_H_C,   GAS_EF),   note: 'Natural gas, some condensate' },
-  lng_terminal:  { fRad: 0.12, hc: GAS_H_C,   ef: GAS_EF,   fuel: 'natural gas', multiplier: mult(0.12,  GAS_H_C,   GAS_EF),   note: 'LNG / natural gas' },
-  pipeline:      { fRad: 0.15, hc: GAS_H_C,   ef: GAS_EF,   fuel: 'natural gas', multiplier: mult(0.15,  GAS_H_C,   GAS_EF),   note: 'Gas-dominated, cleaner burn' },
-  unknown:       { fRad: 0.12, hc: CRUDE_H_C, ef: CRUDE_EF, fuel: 'crude oil',   multiplier: mult(0.12,  CRUDE_H_C, CRUDE_EF), note: 'Conservative middle estimate' },
+export const FACILITY_PARAMS: Record<
+  FacilityType | 'unknown',
+  FacilityEmissionParams
+> = {
+  refinery: {
+    fRad: 0.08,
+    hc: CRUDE_H_C,
+    ef: CRUDE_EF,
+    fuel: 'crude oil',
+    multiplier: mult(0.08, CRUDE_H_C, CRUDE_EF),
+    note: 'Heavy crude, dense dark smoke'
+  },
+  oil_field: {
+    fRad: 0.09,
+    hc: CRUDE_H_C,
+    ef: CRUDE_EF,
+    fuel: 'crude oil',
+    multiplier: mult(0.09, CRUDE_H_C, CRUDE_EF),
+    note: 'Wellhead crude fires'
+  },
+  storage: {
+    fRad: 0.1,
+    hc: CRUDE_H_C,
+    ef: CRUDE_EF,
+    fuel: 'crude oil',
+    multiplier: mult(0.1, CRUDE_H_C, CRUDE_EF),
+    note: 'Mixed fuels, tank fires'
+  },
+  port: {
+    fRad: 0.1,
+    hc: CRUDE_H_C,
+    ef: CRUDE_EF,
+    fuel: 'crude oil',
+    multiplier: mult(0.1, CRUDE_H_C, CRUDE_EF),
+    note: 'Mixed crude/product storage'
+  },
+  gas_field: {
+    fRad: 0.12,
+    hc: GAS_H_C,
+    ef: GAS_EF,
+    fuel: 'natural gas',
+    multiplier: mult(0.12, GAS_H_C, GAS_EF),
+    note: 'Natural gas, some condensate'
+  },
+  lng_terminal: {
+    fRad: 0.12,
+    hc: GAS_H_C,
+    ef: GAS_EF,
+    fuel: 'natural gas',
+    multiplier: mult(0.12, GAS_H_C, GAS_EF),
+    note: 'LNG / natural gas'
+  },
+  pipeline: {
+    fRad: 0.15,
+    hc: GAS_H_C,
+    ef: GAS_EF,
+    fuel: 'natural gas',
+    multiplier: mult(0.15, GAS_H_C, GAS_EF),
+    note: 'Gas-dominated, cleaner burn'
+  },
+  unknown: {
+    fRad: 0.12,
+    hc: CRUDE_H_C,
+    ef: CRUDE_EF,
+    fuel: 'crude oil',
+    multiplier: mult(0.12, CRUDE_H_C, CRUDE_EF),
+    note: 'Conservative middle estimate'
+  }
 };
 
 // Tonnes CO2 per MW-day by facility type
-const FACILITY_MULTIPLIERS: Record<FacilityType | 'unknown', number> = Object.fromEntries(
-  Object.entries(FACILITY_PARAMS).map(([k, v]) => [k, v.multiplier])
-) as Record<FacilityType | 'unknown', number>;
+const FACILITY_MULTIPLIERS: Record<FacilityType | 'unknown', number> =
+  Object.fromEntries(
+    Object.entries(FACILITY_PARAMS).map(([k, v]) => [k, v.multiplier])
+  ) as Record<FacilityType | 'unknown', number>;
 
 /**
  * Estimate CO2 emissions in tonnes/day from FRP (in MW) and facility type.
  * Uses IPCC emission factors and satellite-calibrated radiative fractions.
  * See methodology sources above.
  */
-export function estimateCO2(frpMW: number, facilityType?: FacilityType | null): number {
+export function estimateCO2(
+  frpMW: number,
+  facilityType?: FacilityType | null
+): number {
   const type = facilityType || 'unknown';
   const multiplier = FACILITY_MULTIPLIERS[type] || FACILITY_MULTIPLIERS.unknown;
   return frpMW * multiplier;
@@ -131,7 +194,10 @@ export function co2Equivalents(tonsPerDay: number) {
  * Generate a human-readable calculation breakdown for a CO2 estimate.
  * Shows the exact formula and values so users can verify.
  */
-export function co2Breakdown(frpMW: number, facilityType?: FacilityType | null): string {
+export function co2Breakdown(
+  frpMW: number,
+  facilityType?: FacilityType | null
+): string {
   const type = facilityType || 'unknown';
   const p = FACILITY_PARAMS[type] || FACILITY_PARAMS.unknown;
   const result = frpMW * p.multiplier;
@@ -148,7 +214,7 @@ export function co2Breakdown(frpMW: number, facilityType?: FacilityType | null):
     `EF               = ${p.ef} kg CO\u2082/kg (IPCC 2006)`,
     `Multiplier       = 86400 / (${p.fRad} \u00d7 ${p.hc}) \u00d7 ${p.ef} / 1000 = ${p.multiplier} t/MW/day`,
     ``,
-    `Result: ${frpMW.toFixed(1)} MW \u00d7 ${p.multiplier} = ${result.toFixed(1)} t CO\u2082/day`,
+    `Result: ${frpMW.toFixed(1)} MW \u00d7 ${p.multiplier} = ${result.toFixed(1)} t CO\u2082/day`
   ].join('\n');
 }
 
@@ -163,12 +229,12 @@ export function co2Breakdown(frpMW: number, facilityType?: FacilityType | null):
 //   - Burn fraction: conservative 5% for active fire, 2% for damaged
 //     (a major fire typically affects one unit, not the whole facility)
 
-const CRUDE_CO2_PER_BARREL = 0.43;   // tonnes CO2/barrel (EPA)
-const GAS_CO2_PER_BCF = 54_600;      // tonnes CO2/BCF (EPA)
+const CRUDE_CO2_PER_BARREL = 0.43; // tonnes CO2/barrel (EPA)
+const GAS_CO2_PER_BCF = 54_600; // tonnes CO2/BCF (EPA)
 
 const BURN_FRACTION: Record<string, number> = {
-  active_fire: 0.05,  // 5% of capacity actively burning
-  damaged: 0.02,      // 2% smoldering/partial
+  active_fire: 0.05, // 5% of capacity actively burning
+  damaged: 0.02 // 2% smoldering/partial
 };
 
 /**
@@ -180,14 +246,18 @@ export function estimateCO2FromCapacity(
   status: string,
   capacityBPD: number,
   gasCapacityBCFD?: number,
-  storageMBBL?: number,
+  storageMBBL?: number
 ): number {
   const beta = BURN_FRACTION[status];
-  if (!beta) return 0;  // not burning
+  if (!beta) return 0; // not burning
 
   // Gas facilities: use gas capacity
-  if ((facilityType === 'gas_field' || facilityType === 'lng_terminal' || facilityType === 'pipeline')
-      && gasCapacityBCFD) {
+  if (
+    (facilityType === 'gas_field' ||
+      facilityType === 'lng_terminal' ||
+      facilityType === 'pipeline') &&
+    gasCapacityBCFD
+  ) {
     return gasCapacityBCFD * GAS_CO2_PER_BCF * beta;
   }
 
@@ -213,21 +283,25 @@ export function capacityBreakdown(
   status: string,
   capacityBPD: number,
   gasCapacityBCFD?: number,
-  storageMBBL?: number,
+  storageMBBL?: number
 ): string {
   const beta = BURN_FRACTION[status];
   if (!beta) return 'Not burning — no emissions estimated';
   const pctLabel = `${(beta * 100).toFixed(0)}%`;
   const statusLabel = status === 'active_fire' ? 'Active fire' : 'Damaged';
 
-  if ((facilityType === 'gas_field' || facilityType === 'lng_terminal' || facilityType === 'pipeline')
-      && gasCapacityBCFD) {
+  if (
+    (facilityType === 'gas_field' ||
+      facilityType === 'lng_terminal' ||
+      facilityType === 'pipeline') &&
+    gasCapacityBCFD
+  ) {
     const co2 = gasCapacityBCFD * GAS_CO2_PER_BCF * beta;
     return [
       `${statusLabel}: ${pctLabel} burn fraction`,
       `Gas capacity: ${gasCapacityBCFD} BCF/day`,
       `CO₂ = ${gasCapacityBCFD} × 54,600 t/BCF × ${pctLabel} = ${co2.toFixed(0)} t/day`,
-      `Source: EPA emission factors (capacity-based estimate)`,
+      `Source: EPA emission factors (capacity-based estimate)`
     ].join('\n');
   }
 
@@ -237,7 +311,7 @@ export function capacityBreakdown(
       `${statusLabel}: ${pctLabel} burn fraction`,
       `Capacity: ${capacityBPD.toLocaleString()} BPD`,
       `CO₂ = ${capacityBPD.toLocaleString()} × 0.43 t/bbl × ${pctLabel} = ${co2.toFixed(0)} t/day`,
-      `Source: EPA emission factors (capacity-based estimate)`,
+      `Source: EPA emission factors (capacity-based estimate)`
     ].join('\n');
   }
 
@@ -248,7 +322,7 @@ export function capacityBreakdown(
       `${statusLabel}: ${pctLabel} burn fraction`,
       `Storage: ${storageMBBL}M bbl → ${Math.round(dailyEquivBPD).toLocaleString()} bbl/day equiv`,
       `CO₂ = ${Math.round(dailyEquivBPD).toLocaleString()} × 0.43 t/bbl × ${pctLabel} = ${co2.toFixed(0)} t/day`,
-      `Source: EPA emission factors (capacity-based estimate)`,
+      `Source: EPA emission factors (capacity-based estimate)`
     ].join('\n');
   }
 

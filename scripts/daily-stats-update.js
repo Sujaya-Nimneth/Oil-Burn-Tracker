@@ -26,16 +26,16 @@ const CONSUMER_BASELINE = {
   groceryInflationPct: 5.5,
   natGasMMBtu: 7.0,
   shippingSurchargePct: 65,
-  deliveryDelayDays: 12,
+  deliveryDelayDays: 12
 };
 
 const WAR_COST_BASELINE = {
-  lastDate: '2026-03-27',
+  lastDate: '2026-03-27'
 };
 
 const CASUALTY_BASELINE = {
   lastDate: '2026-03-27',
-  childrenPct: 0.17, // ~17% of killed are children (UNICEF pattern)
+  childrenPct: 0.17 // ~17% of killed are children (UNICEF pattern)
 };
 
 // ═══ PHASE-AWARE TARGETS & LIVE COMMODITY FETCH ═══
@@ -45,7 +45,7 @@ async function fetchYahooQuote(symbol) {
     const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?interval=1d&range=5d`;
     const res = await fetch(url, {
       headers: { 'User-Agent': 'OilBurnTracker-Stats/1.0' },
-      signal: AbortSignal.timeout(5000),
+      signal: AbortSignal.timeout(5000)
     });
     if (!res.ok) return null;
     const json = await res.json();
@@ -59,10 +59,12 @@ async function fetchYahooQuote(symbol) {
 async function fetchLiveCommodities() {
   const [brent, natGas] = await Promise.all([
     fetchYahooQuote('BZ=F'),
-    fetchYahooQuote('NG=F'),
+    fetchYahooQuote('NG=F')
   ]);
   if (brent || natGas) {
-    console.log(`  Live commodity feed: Brent=${brent ? `$${brent.toFixed(2)}` : 'n/a'}, NatGas=${natGas ? `$${natGas.toFixed(2)}` : 'n/a'}`);
+    console.log(
+      `  Live commodity feed: Brent=${brent ? `$${brent.toFixed(2)}` : 'n/a'}, NatGas=${natGas ? `$${natGas.toFixed(2)}` : 'n/a'}`
+    );
   }
   return { brent, natGas };
 }
@@ -81,7 +83,7 @@ function getPhaseTargets(date, livePrices = {}) {
       dailyEconomicBillions: 1.8,
       dailyKilled: 135,
       dailyInjured: 320,
-      phaseLabel: 'Acute Gulf escalation & Hormuz disruption',
+      phaseLabel: 'Acute Gulf escalation & Hormuz disruption'
     };
   }
   if (date <= '2026-07-31') {
@@ -97,12 +99,15 @@ function getPhaseTargets(date, livePrices = {}) {
       dailyEconomicBillions: 0.65,
       dailyKilled: 65,
       dailyInjured: 155,
-      phaseLabel: 'Naval escort corridors & partial Gulf infrastructure stabilization',
+      phaseLabel:
+        'Naval escort corridors & partial Gulf infrastructure stabilization'
     };
   }
   // Phase 3: Sustained maritime risk floor & regional containment
   const liveOil = livePrices.brent ? Math.round(livePrices.brent) : 88;
-  const liveNatGas = livePrices.natGas ? Math.round(livePrices.natGas * 10) / 10 : 4.5;
+  const liveNatGas = livePrices.natGas
+    ? Math.round(livePrices.natGas * 10) / 10
+    : 4.5;
   return {
     oilTarget: liveOil,
     gasTarget: Math.round((liveOil * 0.028 + 1.02) * 100) / 100,
@@ -114,7 +119,7 @@ function getPhaseTargets(date, livePrices = {}) {
     dailyEconomicBillions: 0.4,
     dailyKilled: 42,
     dailyInjured: 98,
-    phaseLabel: 'Sustained maritime war-risk premium & regional attrition',
+    phaseLabel: 'Sustained maritime war-risk premium & regional attrition'
   };
 }
 
@@ -124,7 +129,7 @@ function getPhaseTargets(date, livePrices = {}) {
 function dateHash(dateStr) {
   let hash = 0;
   for (let i = 0; i < dateStr.length; i++) {
-    hash = ((hash << 5) - hash) + dateStr.charCodeAt(i);
+    hash = (hash << 5) - hash + dateStr.charCodeAt(i);
     hash |= 0;
   }
   return hash;
@@ -151,7 +156,9 @@ function generateDays(fromDate, toDate) {
 
 function daysSince(from, to) {
   return Math.round(
-    (new Date(to + 'T00:00:00Z').getTime() - new Date(from + 'T00:00:00Z').getTime()) / 86400000
+    (new Date(to + 'T00:00:00Z').getTime() -
+      new Date(from + 'T00:00:00Z').getTime()) /
+      86400000
   );
 }
 
@@ -192,7 +199,7 @@ function generateConsumerImpact(days, today, livePrices) {
     // Gas: tracks oil with 3-5 day lag
     const gasEquilibrium = oil * 0.028 + 1.08;
     gas += (gasEquilibrium - gas) * 0.15 + (r2 - 0.5) * 0.04;
-    gas = Math.max(2.90, Math.min(6.00, Math.round(gas * 100) / 100));
+    gas = Math.max(2.9, Math.min(6.0, Math.round(gas * 100) / 100));
 
     // Grocery inflation
     grocery += (t.groceryTarget - grocery) * 0.06 + (r3 - 0.5) * 0.05;
@@ -213,11 +220,12 @@ function generateConsumerImpact(days, today, livePrices) {
     if (!shouldEmitCheckpoint(date, today)) continue;
 
     // Compute household cost impacts vs baseline
-    const gasExtra = Math.max(0, Math.round((gas - 3.20) * 40)); // 40 gal/month
-    const groceryExtra = Math.round(1000 * grocery / 100);       // $1000/mo baseline
-    const utilityExtra = Math.round((natGas - 2.80) * 16);      // ~$16 per $1/MMBtu above baseline
-    const shippingImpact = Math.round(shipping * 0.15);          // Delivery cost pass-through
-    const totalExtra = gasExtra + groceryExtra + Math.max(0, utilityExtra) + shippingImpact;
+    const gasExtra = Math.max(0, Math.round((gas - 3.2) * 40)); // 40 gal/month
+    const groceryExtra = Math.round((1000 * grocery) / 100); // $1000/mo baseline
+    const utilityExtra = Math.round((natGas - 2.8) * 16); // ~$16 per $1/MMBtu above baseline
+    const shippingImpact = Math.round(shipping * 0.15); // Delivery cost pass-through
+    const totalExtra =
+      gasExtra + groceryExtra + Math.max(0, utilityExtra) + shippingImpact;
 
     results.push({
       date,
@@ -231,9 +239,10 @@ function generateConsumerImpact(days, today, livePrices) {
       deliveryDelayDays: delay,
       totalMonthlyExtra: Math.max(0, totalExtra),
       headline: `Oil ~$${oil}/bbl, gas ~$${gas.toFixed(2)}/gal — ${t.phaseLabel}.`,
-      source: date === today && livePrices.brent
-        ? 'Live market feed (Brent/Henry Hub) + OBT household impact model'
-        : '[OBT phase-calibrated trend model]',
+      source:
+        date === today && livePrices.brent
+          ? 'Live market feed (Brent/Henry Hub) + OBT household impact model'
+          : '[OBT phase-calibrated trend model]'
     });
   }
 
@@ -257,14 +266,17 @@ function generateWarCosts(days, today) {
     if (!shouldEmitCheckpoint(date, today)) continue;
 
     const dayNum = daysSince('2026-03-01', date) + 1;
-    const periodLabel = spanDays > 1 ? `${spanDays}-day period through Day ${dayNum}` : `Day ${dayNum}`;
+    const periodLabel =
+      spanDays > 1
+        ? `${spanDays}-day period through Day ${dayNum}`
+        : `Day ${dayNum}`;
 
     entries.push({
       date,
       category: 'weapons',
       label: `${periodLabel} ongoing operations (~$${t.dailyMilitaryBillions}B/day)`,
       amountBillions: Math.round(accMil * 100) / 100,
-      source: 'Pentagon / CENTCOM operational tempo estimate',
+      source: 'Pentagon / CENTCOM operational tempo estimate'
     });
 
     entries.push({
@@ -272,7 +284,7 @@ function generateWarCosts(days, today) {
       category: 'economic',
       label: `${periodLabel} economic drag — energy & maritime war-risk premium`,
       amountBillions: Math.round(accEcon * 100) / 100,
-      source: '[OBT model: oil risk premium + shipping rerouting drag]',
+      source: '[OBT model: oil risk premium + shipping rerouting drag]'
     });
 
     accMil = 0;
@@ -318,10 +330,10 @@ function generateDailyStats(days, today) {
         killed: accKilled,
         injured: accInjured,
         children: accChildren,
-        source: '[OBT phase-calibrated conflict telemetry estimate]',
+        source: '[OBT phase-calibrated conflict telemetry estimate]'
       },
       lat: 31.0,
-      lng: 46.0,
+      lng: 46.0
     });
 
     accKilled = 0;
@@ -347,7 +359,9 @@ async function main() {
     path.join(ROOT, 'src/features/impact/data/auto-consumer-impact.json'),
     JSON.stringify(consumerData, null, 2) + '\n'
   );
-  console.log(`  Consumer: ${consumerData.length} checkpoints (${CONSUMER_BASELINE.lastDate} → ${today})`);
+  console.log(
+    `  Consumer: ${consumerData.length} checkpoints (${CONSUMER_BASELINE.lastDate} → ${today})`
+  );
 
   // War costs
   const warDays = generateDays(WAR_COST_BASELINE.lastDate, today);
@@ -356,7 +370,9 @@ async function main() {
     path.join(ROOT, 'src/features/timeline/data/auto-war-costs.json'),
     JSON.stringify(warData, null, 2) + '\n'
   );
-  console.log(`  War costs: ${warData.length} entries (${WAR_COST_BASELINE.lastDate} → ${today})`);
+  console.log(
+    `  War costs: ${warData.length} entries (${WAR_COST_BASELINE.lastDate} → ${today})`
+  );
 
   // Casualties
   const casualtyDays = generateDays(CASUALTY_BASELINE.lastDate, today);
@@ -365,7 +381,9 @@ async function main() {
     path.join(ROOT, 'src/features/timeline/data/auto-daily-stats.json'),
     JSON.stringify(statsData, null, 2) + '\n'
   );
-  console.log(`  Casualties: ${statsData.length} checkpoints (${CASUALTY_BASELINE.lastDate} → ${today})`);
+  console.log(
+    `  Casualties: ${statsData.length} checkpoints (${CASUALTY_BASELINE.lastDate} → ${today})`
+  );
 
   if (NO_GIT) {
     console.log('  Skipping git commit/push (--no-git specified).');
@@ -374,10 +392,13 @@ async function main() {
 
   // Git commit + push (only if data changed)
   try {
-    const status = execSync('git status --porcelain src/features/impact/data/auto-consumer-impact.json src/features/timeline/data/auto-war-costs.json src/features/timeline/data/auto-daily-stats.json', {
-      cwd: ROOT,
-      encoding: 'utf-8',
-    }).trim();
+    const status = execSync(
+      'git status --porcelain src/features/impact/data/auto-consumer-impact.json src/features/timeline/data/auto-war-costs.json src/features/timeline/data/auto-daily-stats.json',
+      {
+        cwd: ROOT,
+        encoding: 'utf-8'
+      }
+    ).trim();
 
     if (!status) {
       console.log('  No changes — already up to date.');

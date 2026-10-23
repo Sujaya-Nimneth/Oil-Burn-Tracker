@@ -59,8 +59,8 @@
   color: #e0e0e0 !important;
   border-radius: 8px !important;
   padding: 0 !important;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.6) !important;
-  border: 1px solid rgba(255,255,255,0.1) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
   overflow: hidden !important;
   max-width: min(320px, calc(100vw - 32px)) !important;
 }
@@ -72,7 +72,7 @@
 }
 .maplibregl-popup-close-button:hover {
   color: #fff !important;
-  background: rgba(255,255,255,0.1) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
 }
 .maplibregl-popup-tip {
   border-top-color: #1a1a1a !important;
@@ -83,6 +83,10 @@
 
 /* Scrolling ticker for facility data */
 @keyframes tickerScroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-33.33%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
 }

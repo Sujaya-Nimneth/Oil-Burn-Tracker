@@ -3,14 +3,24 @@
 import { useMemo } from 'react';
 import { useFireStore } from '@/stores/fire-store';
 import { curatedFires } from '@/features/fires/data/curated-fires';
-import { formatCO2, estimateCO2FromCapacity } from '@/features/emissions/utils/emissions-model';
+import {
+  formatCO2,
+  estimateCO2FromCapacity
+} from '@/features/emissions/utils/emissions-model';
 import {
   Card,
   CardHeader,
   CardTitle,
   CardDescription
 } from '@/components/ui/card';
-import { IconFlame, IconCloud, IconBuildingFactory, IconWorld, IconSatellite, IconClock } from '@tabler/icons-react';
+import {
+  IconFlame,
+  IconCloud,
+  IconBuildingFactory,
+  IconWorld,
+  IconSatellite,
+  IconClock
+} from '@tabler/icons-react';
 
 export default function StatsBar() {
   const fireData = useFireStore((s) => s.fireData);
@@ -22,7 +32,9 @@ export default function StatsBar() {
   const todayIso = new Date().toISOString().slice(0, 10);
   const isHistorical = timelineDate < todayIso;
 
-  const facilityFires = fireData.features.filter(f => f.properties.matchedFacility);
+  const facilityFires = fireData.features.filter(
+    (f) => f.properties.matchedFacility
+  );
   const activeFires = facilityFires.length;
   const totalDetections = fireData.features.length;
   const satelliteCO2 = facilityFires.reduce(
@@ -34,12 +46,28 @@ export default function StatsBar() {
   const capacityCO2 = useMemo(() => {
     const matchedIds = new Set(
       facilityFires
-        .filter(f => f.properties.matchedFacility)
-        .map(f => f.properties.matchedFacility!.id)
+        .filter((f) => f.properties.matchedFacility)
+        .map((f) => f.properties.matchedFacility!.id)
     );
     return curatedFires
-      .filter(f => (f.status === 'active_fire' || f.status === 'damaged') && (!f.attackDate || f.attackDate <= timelineDate) && !matchedIds.has(f.id))
-      .reduce((sum, f) => sum + estimateCO2FromCapacity(f.facilityType, f.status, f.capacityBPD, f.gasCapacityBCFD, f.storageMBBL), 0);
+      .filter(
+        (f) =>
+          (f.status === 'active_fire' || f.status === 'damaged') &&
+          (!f.attackDate || f.attackDate <= timelineDate) &&
+          !matchedIds.has(f.id)
+      )
+      .reduce(
+        (sum, f) =>
+          sum +
+          estimateCO2FromCapacity(
+            f.facilityType,
+            f.status,
+            f.capacityBPD,
+            f.gasCapacityBCFD,
+            f.storageMBBL
+          ),
+        0
+      );
   }, [facilityFires, timelineDate]);
 
   const totalCO2 = satelliteCO2 + capacityCO2;
@@ -51,34 +79,46 @@ export default function StatsBar() {
   );
   const facilitiesAffected = matchedFacilityIds.size;
 
-  const globalEnergyAtRisk = Array.from(matchedFacilityIds).reduce((sum, id) => {
-    const facility = curatedFires.find((f) => f.id === id);
-    return sum + (facility?.percentGlobalCapacity || 0);
-  }, 0);
+  const globalEnergyAtRisk = Array.from(matchedFacilityIds).reduce(
+    (sum, id) => {
+      const facility = curatedFires.find((f) => f.id === id);
+      return sum + (facility?.percentGlobalCapacity || 0);
+    },
+    0
+  );
 
   return (
     <div className='space-y-2.5'>
-      <div className='flex flex-wrap items-center justify-between gap-2 rounded-lg border bg-muted/30 px-3 py-1.5 text-xs text-muted-foreground'>
+      <div className='bg-muted/30 text-muted-foreground flex flex-wrap items-center justify-between gap-2 rounded-lg border px-3 py-1.5 text-xs'>
         <div className='flex items-center gap-2'>
-          <span className='inline-flex items-center gap-1.5 font-medium text-foreground'>
-            <span className={`h-2 w-2 rounded-full ${loading ? 'bg-amber-400 animate-pulse' : 'bg-emerald-500'}`} />
+          <span className='text-foreground inline-flex items-center gap-1.5 font-medium'>
+            <span
+              className={`h-2 w-2 rounded-full ${loading ? 'animate-pulse bg-amber-400' : 'bg-emerald-500'}`}
+            />
             <IconSatellite className='h-3.5 w-3.5 text-emerald-500' />
-            {loading ? 'Syncing NASA FIRMS VIIRS...' : `VIIRS Satellite Active (${totalDetections} thermal points)`}
+            {loading
+              ? 'Syncing NASA FIRMS VIIRS...'
+              : `VIIRS Satellite Active (${totalDetections} thermal points)`}
           </span>
           {lastUpdated && (
-            <span className='hidden sm:inline-flex items-center gap-1 text-[11px] text-muted-foreground/80'>
-              &middot; <IconClock className='h-3 w-3' /> Synced {lastUpdated.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+            <span className='text-muted-foreground/80 hidden items-center gap-1 text-[11px] sm:inline-flex'>
+              &middot; <IconClock className='h-3 w-3' /> Synced{' '}
+              {lastUpdated.toLocaleTimeString([], {
+                hour: '2-digit',
+                minute: '2-digit'
+              })}
             </span>
           )}
         </div>
         <div className='flex items-center gap-2'>
           <span className='text-[11px]'>
-            Timeline: <strong className='text-foreground'>{timelineDate}</strong>
+            Timeline:{' '}
+            <strong className='text-foreground'>{timelineDate}</strong>
           </span>
           {isHistorical && (
             <button
               onClick={() => setTimelineDate(todayIso)}
-              className='rounded bg-primary/10 px-2 py-0.5 text-[11px] font-semibold text-primary hover:bg-primary/20 transition-colors cursor-pointer'
+              className='bg-primary/10 text-primary hover:bg-primary/20 cursor-pointer rounded px-2 py-0.5 text-[11px] font-semibold transition-colors'
             >
               Jump to Latest
             </button>
@@ -91,12 +131,12 @@ export default function StatsBar() {
           <CardHeader className='pb-2'>
             <div className='flex items-center justify-between'>
               <CardDescription>Facility Fires</CardDescription>
-              <IconFlame className='text-orange-500 h-4 w-4' />
+              <IconFlame className='h-4 w-4 text-orange-500' />
             </div>
             <CardTitle className='text-2xl tabular-nums'>
               {loading ? '...' : activeFires.toLocaleString()}
             </CardTitle>
-            <p className='text-xs text-muted-foreground'>
+            <p className='text-muted-foreground text-xs'>
               {loading ? '' : `of ${totalDetections} satellite detections`}
             </p>
           </CardHeader>
@@ -105,7 +145,7 @@ export default function StatsBar() {
           <CardHeader className='pb-2'>
             <div className='flex items-center justify-between'>
               <CardDescription>Est. CO₂/day</CardDescription>
-              <IconCloud className='text-red-400 h-4 w-4' />
+              <IconCloud className='h-4 w-4 text-red-400' />
             </div>
             <CardTitle className='text-2xl tabular-nums'>
               {loading ? '...' : `${formatCO2(totalCO2)} tons`}
@@ -116,7 +156,7 @@ export default function StatsBar() {
           <CardHeader className='pb-2'>
             <div className='flex items-center justify-between'>
               <CardDescription>Facilities Hit</CardDescription>
-              <IconBuildingFactory className='text-yellow-500 h-4 w-4' />
+              <IconBuildingFactory className='h-4 w-4 text-yellow-500' />
             </div>
             <CardTitle className='text-2xl tabular-nums'>
               {loading ? '...' : facilitiesAffected}
@@ -127,7 +167,7 @@ export default function StatsBar() {
           <CardHeader className='pb-2'>
             <div className='flex items-center justify-between'>
               <CardDescription>Global Energy at Risk</CardDescription>
-              <IconWorld className='text-cyan-400 h-4 w-4' />
+              <IconWorld className='h-4 w-4 text-cyan-400' />
             </div>
             <CardTitle className='text-2xl tabular-nums'>
               {loading ? '...' : `${globalEnergyAtRisk.toFixed(1)}%`}

@@ -6,7 +6,8 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'OilBurnTracker — Real-time Conflict Fire & Emissions Tracker',
-  description: 'Satellite fire detection, facility identification, and emissions estimates for conflict-affected oil & gas infrastructure',
+  description:
+    'Satellite fire detection, facility identification, and emissions estimates for conflict-affected oil & gas infrastructure',
   robots: {
     index: true,
     follow: true

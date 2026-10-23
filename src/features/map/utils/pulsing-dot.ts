@@ -44,11 +44,12 @@ export function createPulsingDot(
       ctx.arc(size / 2, size / 2, radius, 0, Math.PI * 2);
       ctx.fillStyle = `rgba(${r}, ${g}, ${b}, 1)`;
       ctx.strokeStyle = 'white';
-      ctx.lineWidth = 2 + (4 * (1 - t));
+      ctx.lineWidth = 2 + 4 * (1 - t);
       ctx.fill();
       ctx.stroke();
 
-      this.data = ctx.getImageData(0, 0, size, size).data as unknown as Uint8Array;
+      this.data = ctx.getImageData(0, 0, size, size)
+        .data as unknown as Uint8Array;
 
       map.triggerRepaint();
       return true;
@@ -57,8 +58,8 @@ export function createPulsingDot(
 }
 
 export const INTENSITY_CONFIGS = {
-  low: { size: 40, color: [255, 235, 59] as [number, number, number] },      // Yellow
-  medium: { size: 50, color: [255, 152, 0] as [number, number, number] },     // Orange
-  high: { size: 60, color: [244, 67, 54] as [number, number, number] },       // Red
-  extreme: { size: 70, color: [183, 28, 28] as [number, number, number] }     // Dark Red
+  low: { size: 40, color: [255, 235, 59] as [number, number, number] }, // Yellow
+  medium: { size: 50, color: [255, 152, 0] as [number, number, number] }, // Orange
+  high: { size: 60, color: [244, 67, 54] as [number, number, number] }, // Red
+  extreme: { size: 70, color: [183, 28, 28] as [number, number, number] } // Dark Red
 };

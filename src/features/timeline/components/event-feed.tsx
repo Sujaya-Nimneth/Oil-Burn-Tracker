@@ -14,9 +14,16 @@ import {
 import { getSupplyDisruptionUpTo } from '@/features/fires/data/curated-fires';
 import { getConsumerImpactUpTo } from '@/features/impact/data/consumer-impact';
 import {
-  IconExternalLink, IconSkull, IconMapPin, IconFlame,
-  IconDroplet, IconReceipt, IconAlertTriangle, IconPlayerPlay,
-  IconSearch, IconX
+  IconExternalLink,
+  IconSkull,
+  IconMapPin,
+  IconFlame,
+  IconDroplet,
+  IconReceipt,
+  IconAlertTriangle,
+  IconPlayerPlay,
+  IconSearch,
+  IconX
 } from '@tabler/icons-react';
 
 const FILTER_CATEGORIES: { id: 'all' | EventCategory; label: string }[] = [
@@ -27,7 +34,7 @@ const FILTER_CATEGORIES: { id: 'all' | EventCategory; label: string }[] = [
   { id: 'escalation', label: 'Escalation' },
   { id: 'retaliation', label: 'Retaliation' },
   { id: 'diplomatic', label: 'Diplomatic' },
-  { id: 'humanitarian', label: 'Humanitarian' },
+  { id: 'humanitarian', label: 'Humanitarian' }
 ];
 
 function getYouTubeId(url: string): string | null {
@@ -46,9 +53,7 @@ function formatDate(iso: string): string {
 }
 
 function timeAgo(iso: string): string {
-  const diff = Math.floor(
-    (Date.now() - new Date(iso).getTime()) / 86400000
-  );
+  const diff = Math.floor((Date.now() - new Date(iso).getTime()) / 86400000);
   if (diff === 0) return 'Today';
   if (diff === 1) return '1d ago';
   if (diff < 30) return `${diff}d ago`;
@@ -70,10 +75,15 @@ interface EventFeedProps {
   fullPage?: boolean;
 }
 
-export default function EventFeed({ onFlyTo, fullPage = false }: EventFeedProps) {
+export default function EventFeed({
+  onFlyTo,
+  fullPage = false
+}: EventFeedProps) {
   const timelineDate = useFireStore((s) => s.timelineDate);
   const setTimelineDate = useFireStore((s) => s.setTimelineDate);
-  const [selectedCategory, setSelectedCategory] = useState<'all' | EventCategory>('all');
+  const [selectedCategory, setSelectedCategory] = useState<
+    'all' | EventCategory
+  >('all');
   const [searchQuery, setSearchQuery] = useState('');
   const scrollRef = useRef<HTMLDivElement>(null);
   const ratiosRef = useRef<Map<string, number>>(new Map());
@@ -83,8 +93,14 @@ export default function EventFeed({ onFlyTo, fullPage = false }: EventFeedProps)
     const base = getEventsUpTo(timelineDate).reverse();
     const q = searchQuery.trim().toLowerCase();
     return base.filter((e) => {
-      if (selectedCategory !== 'all' && e.category !== selectedCategory) return false;
-      if (q && !e.title.toLowerCase().includes(q) && !e.description.toLowerCase().includes(q)) return false;
+      if (selectedCategory !== 'all' && e.category !== selectedCategory)
+        return false;
+      if (
+        q &&
+        !e.title.toLowerCase().includes(q) &&
+        !e.description.toLowerCase().includes(q)
+      )
+        return false;
       return true;
     });
   }, [timelineDate, selectedCategory, searchQuery]);
@@ -110,17 +126,27 @@ export default function EventFeed({ onFlyTo, fullPage = false }: EventFeedProps)
     if (!container) return;
     const saved = sessionStorage.getItem('obt-feed-scroll');
     if (saved) {
-      requestAnimationFrame(() => { container.scrollTop = parseInt(saved, 10); });
+      requestAnimationFrame(() => {
+        container.scrollTop = parseInt(saved, 10);
+      });
     }
     let timeout: ReturnType<typeof setTimeout>;
     const onScroll = () => {
       clearTimeout(timeout);
       timeout = setTimeout(() => {
-        try { sessionStorage.setItem('obt-feed-scroll', String(container.scrollTop)); } catch {}
+        try {
+          sessionStorage.setItem(
+            'obt-feed-scroll',
+            String(container.scrollTop)
+          );
+        } catch {}
       }, 300);
     };
     container.addEventListener('scroll', onScroll, { passive: true });
-    return () => { container.removeEventListener('scroll', onScroll); clearTimeout(timeout); };
+    return () => {
+      container.removeEventListener('scroll', onScroll);
+      clearTimeout(timeout);
+    };
   }, []);
 
   // IntersectionObserver: scrolling syncs timeline date
@@ -185,40 +211,46 @@ export default function EventFeed({ onFlyTo, fullPage = false }: EventFeedProps)
   );
 
   return (
-    <div className={fullPage ? 'h-full flex flex-col' : 'w-[360px] max-h-[calc(100dvh-180px)] rounded-xl border border-gray-300 dark:border-zinc-700/80 bg-white/95 dark:bg-zinc-950/95 backdrop-blur-md shadow-2xl overflow-hidden flex flex-col'}>
+    <div
+      className={
+        fullPage
+          ? 'flex h-full flex-col'
+          : 'flex max-h-[calc(100dvh-180px)] w-[360px] flex-col overflow-hidden rounded-xl border border-gray-300 bg-white/95 shadow-2xl backdrop-blur-md dark:border-zinc-700/80 dark:bg-zinc-950/95'
+      }
+    >
       {/* Search & Category Filter Header */}
-      <div className='px-3 pt-2.5 pb-2 border-b border-gray-200 dark:border-zinc-800/80 bg-gray-50/80 dark:bg-zinc-900/50 space-y-2 shrink-0'>
+      <div className='shrink-0 space-y-2 border-b border-gray-200 bg-gray-50/80 px-3 pt-2.5 pb-2 dark:border-zinc-800/80 dark:bg-zinc-900/50'>
         <div className='relative flex items-center'>
-          <IconSearch className='h-3.5 w-3.5 text-gray-400 dark:text-zinc-500 absolute left-2.5 pointer-events-none' />
+          <IconSearch className='pointer-events-none absolute left-2.5 h-3.5 w-3.5 text-gray-400 dark:text-zinc-500' />
           <input
             type='text'
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder='Search events, facilities, locations...'
-            className='w-full pl-8 pr-16 py-1 text-xs rounded-lg border border-gray-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 text-gray-900 dark:text-zinc-200 placeholder:text-gray-400 dark:placeholder:text-zinc-600 focus:outline-none focus:border-zinc-500'
+            className='w-full rounded-lg border border-gray-200 bg-white py-1 pr-16 pl-8 text-xs text-gray-900 placeholder:text-gray-400 focus:border-zinc-500 focus:outline-none dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-200 dark:placeholder:text-zinc-600'
           />
           {searchQuery ? (
             <button
               onClick={() => setSearchQuery('')}
-              className='absolute right-2 text-gray-400 hover:text-gray-700 dark:hover:text-white cursor-pointer'
+              className='absolute right-2 cursor-pointer text-gray-400 hover:text-gray-700 dark:hover:text-white'
               aria-label='Clear search'
             >
               <IconX className='h-3.5 w-3.5' />
             </button>
           ) : (
-            <span className='absolute right-2.5 text-[10px] font-mono text-gray-400 dark:text-zinc-600 pointer-events-none'>
+            <span className='pointer-events-none absolute right-2.5 font-mono text-[10px] text-gray-400 dark:text-zinc-600'>
               {events.length}
             </span>
           )}
         </div>
-        <div className='flex items-center gap-1 overflow-x-auto no-scrollbar pb-0.5'>
+        <div className='no-scrollbar flex items-center gap-1 overflow-x-auto pb-0.5'>
           {FILTER_CATEGORIES.map((cat) => {
             const active = selectedCategory === cat.id;
             return (
               <button
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.id)}
-                className={`px-2 py-0.5 rounded-full text-[10px] font-bold whitespace-nowrap transition-colors cursor-pointer ${
+                className={`cursor-pointer rounded-full px-2 py-0.5 text-[10px] font-bold whitespace-nowrap transition-colors ${
                   active
                     ? 'bg-zinc-900 text-white dark:bg-white dark:text-black'
                     : 'bg-gray-200/70 text-gray-600 hover:bg-gray-300 dark:bg-zinc-800/80 dark:text-zinc-400 dark:hover:bg-zinc-700'
@@ -233,7 +265,7 @@ export default function EventFeed({ onFlyTo, fullPage = false }: EventFeedProps)
 
       <div
         ref={scrollRef}
-        className='overflow-y-auto flex-1 px-3 py-3 space-y-3'
+        className='flex-1 space-y-3 overflow-y-auto px-3 py-3'
       >
         {events.length === 0 && (
           <div className='py-8 text-center text-xs text-gray-500 dark:text-zinc-500'>
@@ -250,34 +282,41 @@ export default function EventFeed({ onFlyTo, fullPage = false }: EventFeedProps)
             <div
               key={event.id}
               data-event-id={event.id}
-              className='rounded-xl border border-gray-200 dark:border-zinc-800 bg-white dark:bg-black/60 shadow-sm overflow-hidden'
+              className='overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-black/60'
             >
               {/* Impact pills — cumulative damage at this date */}
               {stats && (
-                <div className='flex items-center gap-2 px-3 py-1.5 bg-gray-50 dark:bg-zinc-900/60 border-b border-gray-100 dark:border-zinc-800/50 overflow-x-auto'>
-                  <span className='flex items-center gap-1 text-[10px] font-bold text-red-600 dark:text-red-400 whitespace-nowrap'>
+                <div className='flex items-center gap-2 overflow-x-auto border-b border-gray-100 bg-gray-50 px-3 py-1.5 dark:border-zinc-800/50 dark:bg-zinc-900/60'>
+                  <span className='flex items-center gap-1 text-[10px] font-bold whitespace-nowrap text-red-600 dark:text-red-400'>
                     <IconSkull className='h-3 w-3' />
                     {stats.casualties.totalKilled.toLocaleString()}
                   </span>
                   <span className='text-gray-300 dark:text-zinc-700'>|</span>
-                  <span className='flex items-center gap-1 text-[10px] font-bold text-blue-600 dark:text-blue-400 whitespace-nowrap'>
+                  <span className='flex items-center gap-1 text-[10px] font-bold whitespace-nowrap text-blue-600 dark:text-blue-400'>
                     <IconDroplet className='h-3 w-3' />
                     {stats.supply.productionPct.toFixed(1)}% offline
                   </span>
                   <span className='text-gray-300 dark:text-zinc-700'>|</span>
-                  <span className='flex items-center gap-1 text-[10px] font-bold text-green-700 dark:text-green-400 whitespace-nowrap'>
+                  <span className='flex items-center gap-1 text-[10px] font-bold whitespace-nowrap text-green-700 dark:text-green-400'>
                     <IconReceipt className='h-3 w-3' />
                     +${stats.impact.totalMonthlyExtra}/mo
                   </span>
                   {stats.supply.level !== 'normal' && (
                     <>
-                      <span className='text-gray-300 dark:text-zinc-700'>|</span>
-                      <span className={`text-[10px] font-black uppercase whitespace-nowrap ${
-                        stats.supply.level === 'catastrophe' ? 'text-orange-700 dark:text-orange-400' :
-                        stats.supply.level === 'crisis' ? 'text-orange-600 dark:text-orange-400' :
-                        'text-amber-600 dark:text-amber-400'
-                      }`}>
-                        <IconAlertTriangle className='h-3 w-3 inline' /> {stats.supply.level}
+                      <span className='text-gray-300 dark:text-zinc-700'>
+                        |
+                      </span>
+                      <span
+                        className={`text-[10px] font-black whitespace-nowrap uppercase ${
+                          stats.supply.level === 'catastrophe'
+                            ? 'text-orange-700 dark:text-orange-400'
+                            : stats.supply.level === 'crisis'
+                              ? 'text-orange-600 dark:text-orange-400'
+                              : 'text-amber-600 dark:text-amber-400'
+                        }`}
+                      >
+                        <IconAlertTriangle className='inline h-3 w-3' />{' '}
+                        {stats.supply.level}
                       </span>
                     </>
                   )}
@@ -286,21 +325,21 @@ export default function EventFeed({ onFlyTo, fullPage = false }: EventFeedProps)
 
               {/* Card header */}
               <div className='px-3 pt-2.5 pb-2'>
-                <div className='flex items-center justify-between mb-1.5'>
+                <div className='mb-1.5 flex items-center justify-between'>
                   <div className='flex items-center gap-2'>
                     <div
                       className='h-2.5 w-2.5 rounded-full'
                       style={{ backgroundColor: catColor }}
                     />
                     <span
-                      className='text-[10px] uppercase tracking-widest font-bold'
+                      className='text-[10px] font-bold tracking-widest uppercase'
                       style={{ color: catColor }}
                     >
                       {CATEGORY_LABELS[event.category]}
                     </span>
                   </div>
                   <div className='flex items-center gap-2'>
-                    <span className='text-[10px] text-gray-500 dark:text-zinc-500 font-mono'>
+                    <span className='font-mono text-[10px] text-gray-500 dark:text-zinc-500'>
                       {formatDate(event.date)}
                     </span>
                     <span className='text-[10px] text-gray-400 dark:text-zinc-600'>
@@ -308,7 +347,7 @@ export default function EventFeed({ onFlyTo, fullPage = false }: EventFeedProps)
                     </span>
                   </div>
                 </div>
-                <h3 className='text-sm font-black text-gray-900 dark:text-zinc-100 leading-snug'>
+                <h3 className='text-sm leading-snug font-black text-gray-900 dark:text-zinc-100'>
                   {event.title}
                 </h3>
               </div>
@@ -319,23 +358,26 @@ export default function EventFeed({ onFlyTo, fullPage = false }: EventFeedProps)
                   href={ytMedia!.url}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='relative block w-full bg-gray-100 dark:bg-black group'
+                  className='group relative block w-full bg-gray-100 dark:bg-black'
                   style={{ paddingBottom: '56.25%' }}
                 >
                   <img
                     src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
                     alt={event.title}
-                    className='absolute inset-0 w-full h-full object-cover'
-                    onError={(e) => { (e.target as HTMLImageElement).src = `https://img.youtube.com/vi/${videoId}/default.jpg`; }}
+                    className='absolute inset-0 h-full w-full object-cover'
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src =
+                        `https://img.youtube.com/vi/${videoId}/default.jpg`;
+                    }}
                   />
                   {/* Play button overlay */}
                   <div className='absolute inset-0 flex items-center justify-center'>
-                    <div className='w-12 h-12 rounded-full bg-black/60 group-hover:bg-red-600 transition-colors flex items-center justify-center'>
-                      <IconPlayerPlay className='h-6 w-6 text-white ml-0.5' />
+                    <div className='flex h-12 w-12 items-center justify-center rounded-full bg-black/60 transition-colors group-hover:bg-red-600'>
+                      <IconPlayerPlay className='ml-0.5 h-6 w-6 text-white' />
                     </div>
                   </div>
                   {ytMedia?.label && (
-                    <div className='absolute bottom-2 left-2 text-[10px] bg-black/80 text-white px-2 py-0.5 rounded font-medium backdrop-blur-sm'>
+                    <div className='absolute bottom-2 left-2 rounded bg-black/80 px-2 py-0.5 text-[10px] font-medium text-white backdrop-blur-sm'>
                       {ytMedia.label}
                     </div>
                   )}
@@ -343,15 +385,15 @@ export default function EventFeed({ onFlyTo, fullPage = false }: EventFeedProps)
               )}
 
               {/* Body */}
-              <div className='px-3 py-2.5 space-y-2'>
-                <p className='text-[11px] text-gray-600 dark:text-zinc-400 leading-relaxed'>
+              <div className='space-y-2 px-3 py-2.5'>
+                <p className='text-[11px] leading-relaxed text-gray-600 dark:text-zinc-400'>
                   {event.description}
                 </p>
 
                 {/* Casualties from this event */}
                 {event.casualties &&
                   (event.casualties.killed || event.casualties.displaced) && (
-                    <div className='flex flex-wrap items-center gap-2 py-1.5 px-2.5 rounded-lg bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-500/20'>
+                    <div className='flex flex-wrap items-center gap-2 rounded-lg border border-red-200 bg-red-50 px-2.5 py-1.5 dark:border-red-500/20 dark:bg-red-950/30'>
                       {event.casualties.killed != null &&
                         event.casualties.killed > 0 && (
                           <span className='flex items-center gap-1 text-[11px] font-bold text-red-600 dark:text-red-400'>
@@ -362,27 +404,29 @@ export default function EventFeed({ onFlyTo, fullPage = false }: EventFeedProps)
                       {event.casualties.displaced != null &&
                         event.casualties.displaced > 0 && (
                           <span className='text-[11px] font-bold text-amber-600 dark:text-amber-400'>
-                            {event.casualties.displaced.toLocaleString()} displaced
+                            {event.casualties.displaced.toLocaleString()}{' '}
+                            displaced
                           </span>
                         )}
                       {event.casualties.children != null &&
                         event.casualties.children > 0 && (
                           <span className='text-[11px] font-bold text-red-500 dark:text-red-300'>
-                            {event.casualties.children.toLocaleString()} children
+                            {event.casualties.children.toLocaleString()}{' '}
+                            children
                           </span>
                         )}
                     </div>
                   )}
 
                 {/* Action row */}
-                <div className='flex items-center justify-between pt-1 border-t border-gray-200 dark:border-zinc-800/50'>
+                <div className='flex items-center justify-between border-t border-gray-200 pt-1 dark:border-zinc-800/50'>
                   <div className='flex flex-wrap gap-2'>
                     {event.sourceUrl && (
                       <a
                         href={event.sourceUrl}
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='inline-flex items-center gap-1 text-[10px] text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 font-medium px-2 py-1 rounded-md hover:bg-gray-100 dark:hover:bg-zinc-800/50 transition-colors'
+                        className='inline-flex items-center gap-1 rounded-md px-2 py-1 text-[10px] font-medium text-blue-600 transition-colors hover:bg-gray-100 hover:text-blue-500 dark:text-blue-400 dark:hover:bg-zinc-800/50 dark:hover:text-blue-300'
                       >
                         <IconExternalLink className='h-3 w-3' />
                         Source
@@ -396,7 +440,7 @@ export default function EventFeed({ onFlyTo, fullPage = false }: EventFeedProps)
                           href={media.url}
                           target='_blank'
                           rel='noopener noreferrer'
-                          className='inline-flex items-center gap-1 text-[10px] text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 font-medium px-2 py-1 rounded-md hover:bg-gray-100 dark:hover:bg-zinc-800/50 transition-colors'
+                          className='inline-flex items-center gap-1 rounded-md px-2 py-1 text-[10px] font-medium text-blue-600 transition-colors hover:bg-gray-100 hover:text-blue-500 dark:text-blue-400 dark:hover:bg-zinc-800/50 dark:hover:text-blue-300'
                         >
                           <IconExternalLink className='h-3 w-3' />
                           {media.label || media.type}
@@ -406,7 +450,7 @@ export default function EventFeed({ onFlyTo, fullPage = false }: EventFeedProps)
                   {event.lat && event.lng && (
                     <button
                       onClick={() => handleFlyTo(event)}
-                      className='inline-flex items-center gap-1 text-[10px] text-gray-500 dark:text-zinc-500 hover:text-gray-700 dark:hover:text-zinc-300 font-medium px-2 py-1 rounded-md hover:bg-gray-100 dark:hover:bg-zinc-800/50 transition-colors cursor-pointer'
+                      className='inline-flex cursor-pointer items-center gap-1 rounded-md px-2 py-1 text-[10px] font-medium text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-700 dark:text-zinc-500 dark:hover:bg-zinc-800/50 dark:hover:text-zinc-300'
                     >
                       <IconMapPin className='h-3 w-3' />
                       Map

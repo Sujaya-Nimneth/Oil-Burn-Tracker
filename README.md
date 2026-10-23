@@ -5,6 +5,7 @@ Real-time tracking of conflict-affected energy infrastructure. Open source, free
 ## The Problem
 
 The March 2026 Iran conflict has struck 8+ major oil and gas facilities across the Persian Gulf. There is no single tool that shows:
+
 - Which facilities have been hit
 - How much energy capacity is at risk
 - What the downstream impact is on global supply
@@ -24,24 +25,27 @@ OilBurnTracker fills that gap.
 ## Currently Tracked
 
 ### Confirmed Strikes
-| Facility | Country | Date | Type | Global Capacity |
-|----------|---------|------|------|----------------|
-| Ras Tanura Refinery | Saudi Arabia | Mar 2 | Refinery | 0.55% |
-| BAPCO Sitra Refinery | Bahrain | Mar 9 | Refinery | 0.27% |
-| Kharg Island Terminal | Iran | Mar 13 | Export Port | 5.0% |
-| Shah Gas Field | UAE | Mar 16 | Gas Field | 0.3% |
-| Fujairah Storage Zone | UAE | Mar 16 | Oil Storage | 0.1% |
-| South Pars Gas Field | Iran | Mar 18 | Gas Field | 2.5% |
-| Ras Laffan LNG | Qatar | Mar 18 | LNG Terminal | 1.4% |
-| Mina al-Ahmadi Refinery | Kuwait | Mar 19 | Refinery | 0.47% |
+
+| Facility                | Country      | Date   | Type         | Global Capacity |
+| ----------------------- | ------------ | ------ | ------------ | --------------- |
+| Ras Tanura Refinery     | Saudi Arabia | Mar 2  | Refinery     | 0.55%           |
+| BAPCO Sitra Refinery    | Bahrain      | Mar 9  | Refinery     | 0.27%           |
+| Kharg Island Terminal   | Iran         | Mar 13 | Export Port  | 5.0%            |
+| Shah Gas Field          | UAE          | Mar 16 | Gas Field    | 0.3%            |
+| Fujairah Storage Zone   | UAE          | Mar 16 | Oil Storage  | 0.1%            |
+| South Pars Gas Field    | Iran         | Mar 18 | Gas Field    | 2.5%            |
+| Ras Laffan LNG          | Qatar        | Mar 18 | LNG Terminal | 1.4%            |
+| Mina al-Ahmadi Refinery | Kuwait       | Mar 19 | Refinery     | 0.47%           |
 
 ### Strategic Chokepoints
-| Location | Daily Transit | Global Share |
-|----------|--------------|-------------|
-| Strait of Hormuz | 21M BPD | 21% of world oil |
-| Bab el-Mandeb | 6.2M BPD | Gateway to Suez Canal |
+
+| Location         | Daily Transit | Global Share          |
+| ---------------- | ------------- | --------------------- |
+| Strait of Hormuz | 21M BPD       | 21% of world oil      |
+| Bab el-Mandeb    | 6.2M BPD      | Gateway to Suez Canal |
 
 ### Iran-Threatened (Named as targets Mar 18)
+
 Abqaiq (7M BPD), SAMREF Yanbu, Jubail, Al Hosn, Mesaieed
 
 ## Quick Start
@@ -54,6 +58,7 @@ cp .env.example .env.local
 ```
 
 Get a free NASA FIRMS API key (takes 30 seconds):
+
 1. Go to https://firms.modaps.eosdis.nasa.gov/api/area/
 2. Register with any email
 3. Add your key to `.env.local`:
@@ -72,16 +77,16 @@ Open http://localhost:3000
 
 ## Tech Stack
 
-| Layer | Technology | Cost |
-|-------|-----------|------|
-| Framework | Next.js 16 + React 19 + TypeScript | Free |
-| Map | MapLibre GL JS (open-source 3D WebGL map engine) | Free |
-| Tiles | ESRI satellite + AWS terrain DEM + CARTO labels | Free |
-| Fire Data | NASA FIRMS VIIRS satellite detections | Free |
-| Charts | Recharts | Free |
-| State | Zustand | Free |
-| Styling | Tailwind CSS 4 + shadcn/ui | Free |
-| Hosting | Cloudflare Pages (static export) | Free tier |
+| Layer     | Technology                                       | Cost      |
+| --------- | ------------------------------------------------ | --------- |
+| Framework | Next.js 16 + React 19 + TypeScript               | Free      |
+| Map       | MapLibre GL JS (open-source 3D WebGL map engine) | Free      |
+| Tiles     | ESRI satellite + AWS terrain DEM + CARTO labels  | Free      |
+| Fire Data | NASA FIRMS VIIRS satellite detections            | Free      |
+| Charts    | Recharts                                         | Free      |
+| State     | Zustand                                          | Free      |
+| Styling   | Tailwind CSS 4 + shadcn/ui                       | Free      |
+| Hosting   | Cloudflare Pages (static export)                 | Free tier |
 
 **Total cost to run: $0**
 
@@ -104,14 +109,14 @@ Next.js
 
 ## Data Sources
 
-| Source | What | Frequency | License |
-|--------|------|-----------|---------|
-| NASA FIRMS | VIIRS satellite fire detections | ~3 hours | Public domain (US Gov) |
-| ESRI World Imagery | Satellite basemap tiles | Continuous | Free for non-commercial |
-| AWS Terrain Tiles | Elevation/DEM for 3D terrain | Continuous | Public domain |
-| CARTO | Map label tiles | Continuous | BSD |
-| Curated Database | Facility data, attack dates, strategic analysis | Manual updates | MIT (this repo) |
-| News Sources | Attack confirmations, damage reports | As reported | Linked, not reproduced |
+| Source             | What                                            | Frequency      | License                 |
+| ------------------ | ----------------------------------------------- | -------------- | ----------------------- |
+| NASA FIRMS         | VIIRS satellite fire detections                 | ~3 hours       | Public domain (US Gov)  |
+| ESRI World Imagery | Satellite basemap tiles                         | Continuous     | Free for non-commercial |
+| AWS Terrain Tiles  | Elevation/DEM for 3D terrain                    | Continuous     | Public domain           |
+| CARTO              | Map label tiles                                 | Continuous     | BSD                     |
+| Curated Database   | Facility data, attack dates, strategic analysis | Manual updates | MIT (this repo)         |
+| News Sources       | Attack confirmations, damage reports            | As reported    | Linked, not reproduced  |
 
 ## Legal & Disclaimers
 
@@ -160,28 +165,28 @@ Static export — no SSR, no wrangler deploy, just serve the `out/` folder.
 
 Go to **dash.cloudflare.com → Workers & Pages → oilburntracker → Settings → Build & Deployments → Edit**:
 
-| Setting | Value |
-|---------|-------|
-| **Framework preset** | `None` |
-| **Build command** | `npm run build` |
-| **Build output directory** | `out` |
-| **Deploy command** | *(leave empty — do NOT set this)* |
+| Setting                    | Value                             |
+| -------------------------- | --------------------------------- |
+| **Framework preset**       | `None`                            |
+| **Build command**          | `npm run build`                   |
+| **Build output directory** | `out`                             |
+| **Deploy command**         | _(leave empty — do NOT set this)_ |
 
 ### Environment Variables
 
 Set in **Settings → Environment variables**:
 
-| Variable | Value |
-|----------|-------|
+| Variable        | Value                   |
+| --------------- | ----------------------- |
 | `FIRMS_MAP_KEY` | Your NASA FIRMS API key |
 
 ### Common Deploy Failures
 
-| Symptom | Fix |
-|---------|-----|
-| `@opennextjs/cloudflare` error | Set framework preset to `None`, not "Next.js" |
-| `npx wrangler deploy` fails | Clear the deploy command field — it must be EMPTY |
-| Build succeeds, deploy fails | Same as above — Cloudflare auto-adds `npx wrangler deploy` if preset is wrong |
+| Symptom                        | Fix                                                                           |
+| ------------------------------ | ----------------------------------------------------------------------------- |
+| `@opennextjs/cloudflare` error | Set framework preset to `None`, not "Next.js"                                 |
+| `npx wrangler deploy` fails    | Clear the deploy command field — it must be EMPTY                             |
+| Build succeeds, deploy fails   | Same as above — Cloudflare auto-adds `npx wrangler deploy` if preset is wrong |
 
 ### Self-hosted
 

@@ -3,11 +3,22 @@
 import dynamic from 'next/dynamic';
 import { useFireData } from '@/features/map/hooks/use-fire-data';
 import PageContainer from '@/components/layout/page-container';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent
+} from '@/components/ui/card';
 
 const EmissionsTimeline = dynamic(
   () => import('@/features/emissions/components/emissions-timeline'),
-  { ssr: false, loading: () => <div className='h-[400px] animate-pulse bg-muted rounded-lg' /> }
+  {
+    ssr: false,
+    loading: () => (
+      <div className='bg-muted h-[400px] animate-pulse rounded-lg' />
+    )
+  }
 );
 
 export default function TimelinePage() {
@@ -17,16 +28,20 @@ export default function TimelinePage() {
     <PageContainer>
       <div className='space-y-4'>
         <div>
-          <h1 className='text-2xl font-bold tracking-tight'>Emissions Timeline</h1>
+          <h1 className='text-2xl font-bold tracking-tight'>
+            Emissions Timeline
+          </h1>
           <p className='text-muted-foreground text-sm'>
-            Estimated CO₂ emissions from satellite-detected fires, broken down by facility type.
+            Estimated CO₂ emissions from satellite-detected fires, broken down
+            by facility type.
           </p>
         </div>
         <Card>
           <CardHeader>
             <CardTitle>CO₂ Emissions Over Time</CardTitle>
             <CardDescription>
-              Stacked area chart showing estimated daily CO₂ output by facility type (tons/day)
+              Stacked area chart showing estimated daily CO₂ output by facility
+              type (tons/day)
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -37,21 +52,25 @@ export default function TimelinePage() {
           <CardHeader>
             <CardTitle>Methodology</CardTitle>
           </CardHeader>
-          <CardContent className='text-sm text-muted-foreground space-y-2'>
+          <CardContent className='text-muted-foreground space-y-2 text-sm'>
             <p>
-              CO₂ estimates are derived from Fire Radiative Power (FRP) measurements captured by
-              NASA&apos;s VIIRS satellite instrument. FRP indicates the rate of radiant heat output
-              from detected fires, measured in megawatts (MW).
+              CO₂ estimates are derived from Fire Radiative Power (FRP)
+              measurements captured by NASA&apos;s VIIRS satellite instrument.
+              FRP indicates the rate of radiant heat output from detected fires,
+              measured in megawatts (MW).
             </p>
             <p>
-              We apply facility-type-specific conversion factors (calibrated to IPCC 2006 fuel
-              parameters and Elvidge et al. 2020 radiative fractions) to translate FRP into estimated
-              CO₂ emissions (tons/day). Refineries produce approximately 79.1 tons CO₂ per MW-day,
-              while pipeline fires produce approximately 32.3 tons CO₂ per MW-day.
+              We apply facility-type-specific conversion factors (calibrated to
+              IPCC 2006 fuel parameters and Elvidge et al. 2020 radiative
+              fractions) to translate FRP into estimated CO₂ emissions
+              (tons/day). Refineries produce approximately 79.1 tons CO₂ per
+              MW-day, while pipeline fires produce approximately 32.3 tons CO₂
+              per MW-day.
             </p>
             <p className='text-yellow-500'>
-              These are rough estimates for awareness purposes, not precise measurements.
-              Actual emissions depend on fuel composition, burn efficiency, and many other factors.
+              These are rough estimates for awareness purposes, not precise
+              measurements. Actual emissions depend on fuel composition, burn
+              efficiency, and many other factors.
             </p>
           </CardContent>
         </Card>

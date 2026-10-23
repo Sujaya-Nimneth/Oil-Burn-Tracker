@@ -19,14 +19,18 @@ export function sanitizeUrl(url: string | null | undefined): string {
   if (!url) return '';
   try {
     const parsed = new URL(url);
-    return parsed.protocol === 'http:' || parsed.protocol === 'https:' ? parsed.href : '';
+    return parsed.protocol === 'http:' || parsed.protocol === 'https:'
+      ? parsed.href
+      : '';
   } catch {
     return '';
   }
 }
 
 export function getYouTubeId(url: string): string | null {
-  const m = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|shorts\/))([a-zA-Z0-9_-]{11})/);
+  const m = url.match(
+    /(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|shorts\/))([a-zA-Z0-9_-]{11})/
+  );
   return m ? m[1] : null;
 }
 
@@ -41,7 +45,11 @@ function formatEventDate(date?: string): string {
 
 // YouTube embed + sound toggle. videoId is constrained to [a-zA-Z0-9_-]{11}
 // by getYouTubeId, so it is safe to interpolate directly.
-function embedYouTube(videoId: string, iframePrefix: string, isMuted: boolean): string {
+function embedYouTube(
+  videoId: string,
+  iframePrefix: string,
+  isMuted: boolean
+): string {
   const iframeId = `${iframePrefix}-yt-${videoId}`;
   let html = `<div style="position:relative;width:100%;padding-bottom:56.25%;margin-bottom:4px;border-radius:6px;overflow:hidden;background:#000">`;
   html += `<iframe id="${iframeId}" src="https://www.youtube-nocookie.com/embed/${videoId}?rel=0&autoplay=1&mute=${isMuted ? 1 : 0}&enablejsapi=1" `;
@@ -69,7 +77,10 @@ export interface EventPopupData {
   sourceUrl?: string;
 }
 
-export function buildEventPopupHtml(data: EventPopupData, isMuted: boolean): string {
+export function buildEventPopupHtml(
+  data: EventPopupData,
+  isMuted: boolean
+): string {
   let inner = `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><span style="font-size:11px;color:${data.color};font-weight:700;text-transform:uppercase">${escapeHtml(data.category.replace('_', ' '))}</span><span style="font-size:11px;color:#999;font-weight:600">${escapeHtml(formatEventDate(data.date))}</span></div>`;
   inner += `<div style="font-size:13px;font-weight:800;line-height:1.3;margin-bottom:4px">${escapeHtml(data.title)}</div>`;
   inner += `<div style="font-size:11px;opacity:0.75;line-height:1.4;margin-bottom:6px">${escapeHtml(data.description.slice(0, 200))}...</div>`;
@@ -136,13 +147,17 @@ export interface FacilityPopupData {
   videoId?: string | null;
 }
 
-export function buildFacilityPopupHtml(f: FacilityPopupData, isMuted: boolean): string {
+export function buildFacilityPopupHtml(
+  f: FacilityPopupData,
+  isMuted: boolean
+): string {
   const sColor = STATUS_COLORS[f.status] || '#999';
   const dateStr = f.attackDate ? formatEventDate(f.attackDate) : '';
 
   let inner = `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">`;
   inner += `<span style="font-size:10px;color:${sColor};font-weight:700;letter-spacing:0.5px">${escapeHtml(STATUS_LABELS[f.status] || f.status)}</span>`;
-  if (dateStr) inner += `<span style="font-size:11px;color:#999;font-weight:600">${escapeHtml(dateStr)}</span>`;
+  if (dateStr)
+    inner += `<span style="font-size:11px;color:#999;font-weight:600">${escapeHtml(dateStr)}</span>`;
   inner += `</div>`;
   inner += `<div style="font-size:14px;font-weight:800;line-height:1.3;margin-bottom:2px">${escapeHtml(f.name)}</div>`;
   inner += `<div style="font-size:11px;color:#999;margin-bottom:6px">${escapeHtml(f.country)} · ${escapeHtml(TYPE_LABELS[f.facilityType] || f.facilityType)}</div>`;
@@ -153,8 +168,10 @@ export function buildFacilityPopupHtml(f: FacilityPopupData, isMuted: boolean): 
 
   // Scrolling data ticker
   const stats: string[] = [];
-  if (f.capacityBPD > 0) stats.push(`${(f.capacityBPD / 1000).toFixed(0)}K BPD`);
-  if (f.percentGlobalCapacity > 0) stats.push(`${f.percentGlobalCapacity}% global supply`);
+  if (f.capacityBPD > 0)
+    stats.push(`${(f.capacityBPD / 1000).toFixed(0)}K BPD`);
+  if (f.percentGlobalCapacity > 0)
+    stats.push(`${f.percentGlobalCapacity}% global supply`);
   if (f.gasCapacityBCFD) stats.push(`${f.gasCapacityBCFD} BCF/day gas`);
   if (f.lngMTPA) stats.push(`${f.lngMTPA}M tons/yr LNG`);
   if (f.storageMBBL) stats.push(`${f.storageMBBL}M bbl storage`);

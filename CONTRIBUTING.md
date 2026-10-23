@@ -45,6 +45,7 @@ Edit `src/features/fires/data/curated-fires.ts`:
 ```
 
 **Rules for facility data:**
+
 - Every confirmed strike MUST have a `newsSourceUrl` from a major outlet
 - Capacity figures should come from public corporate disclosures, EIA, or IEA data
 - Descriptions must be factual summaries, not copied article text
@@ -57,6 +58,7 @@ The `whyItMatters`, `ifDestroyed`, and `supplyChainRole` fields tell the real st
 ### 3. Improve the Emissions Model
 
 `src/features/emissions/utils/emissions-model.ts` uses rough FRP-to-CO2 multipliers. If you have domain expertise:
+
 - Suggest better facility-type-specific conversion factors
 - Add fuel composition adjustments
 - Cite academic sources

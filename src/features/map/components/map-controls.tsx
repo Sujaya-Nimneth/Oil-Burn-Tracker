@@ -5,7 +5,13 @@ import { useFireStore } from '@/stores/fire-store';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
-import { IconMap, IconFlame, IconBuildingFactory, IconSettings, IconX } from '@tabler/icons-react';
+import {
+  IconMap,
+  IconFlame,
+  IconBuildingFactory,
+  IconSettings,
+  IconX
+} from '@tabler/icons-react';
 
 interface MapControlsProps {
   onFlyTo?: (lat: number, lng: number, zoom: number) => void;
@@ -29,7 +35,7 @@ export default function MapControls({ onFlyTo }: MapControlsProps) {
         <Button
           size='icon'
           variant='outline'
-          className='h-9 w-9 bg-background/80 backdrop-blur-md shadow-lg'
+          className='bg-background/80 h-9 w-9 shadow-lg backdrop-blur-md'
           onClick={() => setOpen(true)}
         >
           <IconSettings className='h-4 w-4' />
@@ -40,43 +46,74 @@ export default function MapControls({ onFlyTo }: MapControlsProps) {
 
   return (
     <div className='absolute top-3 left-3 z-10'>
-      <div className='rounded-lg border bg-background/90 backdrop-blur-md p-3 shadow-lg min-w-[160px]'>
-        <div className='flex items-center justify-between mb-2'>
-          <p className='text-xs font-semibold text-muted-foreground uppercase tracking-wider'>Layers</p>
-          <button onClick={() => setOpen(false)} className='text-muted-foreground hover:text-foreground'>
+      <div className='bg-background/90 min-w-[160px] rounded-lg border p-3 shadow-lg backdrop-blur-md'>
+        <div className='mb-2 flex items-center justify-between'>
+          <p className='text-muted-foreground text-xs font-semibold tracking-wider uppercase'>
+            Layers
+          </p>
+          <button
+            onClick={() => setOpen(false)}
+            className='text-muted-foreground hover:text-foreground'
+          >
             <IconX className='h-3.5 w-3.5' />
           </button>
         </div>
         <div className='space-y-2'>
           <div className='flex items-center gap-2'>
-            <Switch id='layer-heat' checked={layers.heatmap} onCheckedChange={() => toggleLayer('heatmap')} />
-            <Label htmlFor='layer-heat' className='flex items-center gap-1.5 text-xs cursor-pointer'>
+            <Switch
+              id='layer-heat'
+              checked={layers.heatmap}
+              onCheckedChange={() => toggleLayer('heatmap')}
+            />
+            <Label
+              htmlFor='layer-heat'
+              className='flex cursor-pointer items-center gap-1.5 text-xs'
+            >
               <IconMap className='h-3 w-3' /> Heatmap
             </Label>
           </div>
           <div className='flex items-center gap-2'>
-            <Switch id='layer-points' checked={layers.markers} onCheckedChange={() => toggleLayer('markers')} />
-            <Label htmlFor='layer-points' className='flex items-center gap-1.5 text-xs cursor-pointer'>
+            <Switch
+              id='layer-points'
+              checked={layers.markers}
+              onCheckedChange={() => toggleLayer('markers')}
+            />
+            <Label
+              htmlFor='layer-points'
+              className='flex cursor-pointer items-center gap-1.5 text-xs'
+            >
               <IconFlame className='h-3 w-3' /> Fires
             </Label>
           </div>
           <div className='flex items-center gap-2'>
-            <Switch id='layer-facilities' checked={layers.facilities} onCheckedChange={() => toggleLayer('facilities')} />
-            <Label htmlFor='layer-facilities' className='flex items-center gap-1.5 text-xs cursor-pointer'>
+            <Switch
+              id='layer-facilities'
+              checked={layers.facilities}
+              onCheckedChange={() => toggleLayer('facilities')}
+            />
+            <Label
+              htmlFor='layer-facilities'
+              className='flex cursor-pointer items-center gap-1.5 text-xs'
+            >
               <IconBuildingFactory className='h-3 w-3' /> Facilities
             </Label>
           </div>
         </div>
-        <div className='border-t mt-2 pt-2'>
-          <p className='text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1.5'>Zoom</p>
+        <div className='mt-2 border-t pt-2'>
+          <p className='text-muted-foreground mb-1.5 text-xs font-semibold tracking-wider uppercase'>
+            Zoom
+          </p>
           <div className='flex flex-wrap gap-1'>
             {REGIONS.map((r) => (
               <Button
                 key={r.label}
                 size='sm'
                 variant='outline'
-                className='h-6 text-xs px-2'
-                onClick={() => { onFlyTo?.(r.lat, r.lng, r.zoom); setOpen(false); }}
+                className='h-6 px-2 text-xs'
+                onClick={() => {
+                  onFlyTo?.(r.lat, r.lng, r.zoom);
+                  setOpen(false);
+                }}
               >
                 {r.label}
               </Button>

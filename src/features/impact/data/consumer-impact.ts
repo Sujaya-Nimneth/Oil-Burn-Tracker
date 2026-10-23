@@ -21,27 +21,27 @@ import autoConsumerJson from './auto-consumer-impact.json';
 
 export interface ConsumerImpact {
   date: string;
-  oilPriceBbl: number;           // Brent $/barrel
-  gasPriceGallon: number;        // US avg $/gallon
-  groceryInflationPct: number;   // % increase from baseline
-  monthlyGroceryExtra: number;   // $ extra/month (family of 4)
-  natGasMMBtu: number;           // $/MMBtu
-  monthlyUtilityExtra: number;   // $ extra/month
-  shippingSurchargePct: number;  // % surcharge on containers
-  deliveryDelayDays: number;     // extra days on avg package
-  totalMonthlyExtra: number;     // aggregate $/month per household
-  headline: string;              // one-liner for this date
-  source?: string;               // primary data source for this snapshot
+  oilPriceBbl: number; // Brent $/barrel
+  gasPriceGallon: number; // US avg $/gallon
+  groceryInflationPct: number; // % increase from baseline
+  monthlyGroceryExtra: number; // $ extra/month (family of 4)
+  natGasMMBtu: number; // $/MMBtu
+  monthlyUtilityExtra: number; // $ extra/month
+  shippingSurchargePct: number; // % surcharge on containers
+  deliveryDelayDays: number; // extra days on avg package
+  totalMonthlyExtra: number; // aggregate $/month per household
+  headline: string; // one-liner for this date
+  source?: string; // primary data source for this snapshot
 }
 
 // Pre-war baseline constants
 export const BASELINE = {
-  oilPriceBbl: 75,               // EIA STEO Sep 2023
-  gasPriceGallon: 3.20,          // AAA national avg Sep 2023
-  natGasMMBtu: 2.80,             // EIA Henry Hub Sep 2023
-  monthlyGasGallons: 40,         // EIA avg household
-  monthlyGroceryBaseline: 1000,  // BLS CPI avg family of 4
-  monthlyUtilityBaseline: 120,   // EIA RECS 2022
+  oilPriceBbl: 75, // EIA STEO Sep 2023
+  gasPriceGallon: 3.2, // AAA national avg Sep 2023
+  natGasMMBtu: 2.8, // EIA Henry Hub Sep 2023
+  monthlyGasGallons: 40, // EIA avg household
+  monthlyGroceryBaseline: 1000, // BLS CPI avg family of 4
+  monthlyUtilityBaseline: 120 // EIA RECS 2022
 } as const;
 
 export const consumerImpactData: ConsumerImpact[] = [
@@ -56,8 +56,9 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 5,
     deliveryDelayDays: 0,
     totalMonthlyExtra: 25,
-    headline: 'War risk premium adds ~$10/bbl to oil. Barely noticeable at the pump.',
-    source: 'EIA STEO Oct 2023, AAA Gas Prices',
+    headline:
+      'War risk premium adds ~$10/bbl to oil. Barely noticeable at the pump.',
+    source: 'EIA STEO Oct 2023, AAA Gas Prices'
   },
   {
     date: '2023-11-19',
@@ -70,8 +71,9 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 15,
     deliveryDelayDays: 3,
     totalMonthlyExtra: 30,
-    headline: 'Houthis attack Red Sea shipping. Container rates begin climbing.',
-    source: 'EIA, Drewry World Container Index',
+    headline:
+      'Houthis attack Red Sea shipping. Container rates begin climbing.',
+    source: 'EIA, Drewry World Container Index'
   },
   {
     date: '2024-01-12',
@@ -84,8 +86,9 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 25,
     deliveryDelayDays: 5,
     totalMonthlyExtra: 40,
-    headline: 'Prosperity Guardian launches. Ships reroute via Cape — +10-14 days.',
-    source: 'UNCTAD: container rates +256% Shanghai→Europe',
+    headline:
+      'Prosperity Guardian launches. Ships reroute via Cape — +10-14 days.',
+    source: 'UNCTAD: container rates +256% Shanghai→Europe'
   },
   {
     date: '2024-04-14',
@@ -98,13 +101,14 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 30,
     deliveryDelayDays: 5,
     totalMonthlyExtra: 50,
-    headline: 'Iran\'s 300+ drone/missile barrage spikes oil to $90. Markets jittery.',
-    source: 'EIA STEO Apr 2024, AAA',
+    headline:
+      "Iran's 300+ drone/missile barrage spikes oil to $90. Markets jittery.",
+    source: 'EIA STEO Apr 2024, AAA'
   },
   {
     date: '2024-06-01',
     oilPriceBbl: 83,
-    gasPriceGallon: 3.40,
+    gasPriceGallon: 3.4,
     groceryInflationPct: 3,
     monthlyGroceryExtra: 30,
     natGasMMBtu: 2.9,
@@ -112,8 +116,9 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 20,
     deliveryDelayDays: 4,
     totalMonthlyExtra: 45,
-    headline: 'Markets stabilize somewhat. Grocery inflation creeps up from shipping costs.',
-    source: 'BLS CPI Food Jun 2024, EIA',
+    headline:
+      'Markets stabilize somewhat. Grocery inflation creeps up from shipping costs.',
+    source: 'BLS CPI Food Jun 2024, EIA'
   },
   {
     date: '2024-09-23',
@@ -126,8 +131,9 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 18,
     deliveryDelayDays: 3,
     totalMonthlyExtra: 55,
-    headline: 'Lebanon campaign starts. Oil dips but food costs sticky from supply chains.',
-    source: 'EIA STEO Sep 2024, BLS CPI Food',
+    headline:
+      'Lebanon campaign starts. Oil dips but food costs sticky from supply chains.',
+    source: 'EIA STEO Sep 2024, BLS CPI Food'
   },
   {
     date: '2025-01-01',
@@ -140,8 +146,9 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 12,
     deliveryDelayDays: 2,
     totalMonthlyExtra: 60,
-    headline: 'Oil calm but groceries never came back down. Fertilizer costs passed to consumers.',
-    source: 'EIA STEO Jan 2025, USDA Food Price Outlook',
+    headline:
+      'Oil calm but groceries never came back down. Fertilizer costs passed to consumers.',
+    source: 'EIA STEO Jan 2025, USDA Food Price Outlook'
   },
   {
     date: '2025-06-01',
@@ -154,8 +161,9 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 15,
     deliveryDelayDays: 3,
     totalMonthlyExtra: 65,
-    headline: 'West Bank operations add uncertainty. Diesel costs lift trucking prices.',
-    source: 'EIA, BLS CPI',
+    headline:
+      'West Bank operations add uncertainty. Diesel costs lift trucking prices.',
+    source: 'EIA, BLS CPI'
   },
   {
     date: '2025-09-01',
@@ -168,8 +176,9 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 12,
     deliveryDelayDays: 2,
     totalMonthlyExtra: 55,
-    headline: 'Relative calm. But baseline costs never returned to pre-2023 levels.',
-    source: 'EIA STEO Sep 2025, AAA',
+    headline:
+      'Relative calm. But baseline costs never returned to pre-2023 levels.',
+    source: 'EIA STEO Sep 2025, AAA'
   },
   {
     date: '2026-03-01',
@@ -182,8 +191,9 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 25,
     deliveryDelayDays: 5,
     totalMonthlyExtra: 60,
-    headline: 'US strikes Iran. Oil spikes briefly then settles. Gas still near pre-war levels — the lag hasn\'t hit yet.',
-    source: 'AAA: $2.94/gal national avg Feb 23. EIA: Brent ~$78/bbl.',
+    headline:
+      "US strikes Iran. Oil spikes briefly then settles. Gas still near pre-war levels — the lag hasn't hit yet.",
+    source: 'AAA: $2.94/gal national avg Feb 23. EIA: Brent ~$78/bbl.'
   },
   {
     date: '2026-03-06',
@@ -196,8 +206,9 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 30,
     deliveryDelayDays: 6,
     totalMonthlyExtra: 75,
-    headline: 'Iran nuclear sites hit. Oil climbing but SPR release + Saudi spare capacity absorbing shock.',
-    source: 'EIA, AAA Gas Prices',
+    headline:
+      'Iran nuclear sites hit. Oil climbing but SPR release + Saudi spare capacity absorbing shock.',
+    source: 'EIA, AAA Gas Prices'
   },
   {
     date: '2026-03-09',
@@ -210,8 +221,9 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 40,
     deliveryDelayDays: 7,
     totalMonthlyExtra: 95,
-    headline: 'Hormuz disruption escalates. Iran threatens closure. Insurance rates rising. Gas up 40¢ in a week.',
-    source: 'AAA, CNBC, IEA',
+    headline:
+      'Hormuz disruption escalates. Iran threatens closure. Insurance rates rising. Gas up 40¢ in a week.',
+    source: 'AAA, CNBC, IEA'
   },
   {
     date: '2026-03-12',
@@ -224,8 +236,9 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 50,
     deliveryDelayDays: 8,
     totalMonthlyExtra: 115,
-    headline: 'Gas jumps 35¢ in a week — fastest rise since 2022. Oil pushing toward $100.',
-    source: 'AAA: $3.58 national avg Mar 11. EIA weekly retail.',
+    headline:
+      'Gas jumps 35¢ in a week — fastest rise since 2022. Oil pushing toward $100.',
+    source: 'AAA: $3.58 national avg Mar 11. EIA weekly retail.'
   },
   {
     date: '2026-03-16',
@@ -238,8 +251,9 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 60,
     deliveryDelayDays: 10,
     totalMonthlyExtra: 140,
-    headline: 'UAE facilities struck. Oil breaks $100 for first time since 2022. Gulf shipping insurance rates 5x normal.',
-    source: 'AAA: $3.72 week of Mar 16. Fortune: Brent $105.',
+    headline:
+      'UAE facilities struck. Oil breaks $100 for first time since 2022. Gulf shipping insurance rates 5x normal.',
+    source: 'AAA: $3.72 week of Mar 16. Fortune: Brent $105.'
   },
   {
     date: '2026-03-18',
@@ -252,8 +266,9 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 70,
     deliveryDelayDays: 12,
     totalMonthlyExtra: 165,
-    headline: 'Ras Laffan + South Pars hit same day. LNG markets in crisis. EU gas futures spike 40%.',
-    source: 'Fortune: Brent peaked $112. AAA.',
+    headline:
+      'Ras Laffan + South Pars hit same day. LNG markets in crisis. EU gas futures spike 40%.',
+    source: 'Fortune: Brent peaked $112. AAA.'
   },
   {
     date: '2026-03-20',
@@ -266,8 +281,9 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 65,
     deliveryDelayDays: 11,
     totalMonthlyExtra: 155,
-    headline: 'Oil pulls back from $112 peak on SPR talk. But gas at the pump still climbing — $3.94 national avg.',
-    source: 'AAA: $3.94 Mar 22. Fortune: Brent $108.',
+    headline:
+      'Oil pulls back from $112 peak on SPR talk. But gas at the pump still climbing — $3.94 national avg.',
+    source: 'AAA: $3.94 Mar 22. Fortune: Brent $108.'
   },
   {
     date: '2026-03-23',
@@ -280,8 +296,10 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 65,
     deliveryDelayDays: 12,
     totalMonthlyExtra: 150,
-    headline: 'Oil drops 13% to $101 — but gas hasn\'t followed yet. Grocery inflation building as trucking costs rise.',
-    source: 'AAA: $3.96 Mar 23. Fortune: Brent $101.44. BLS CPI food +3.1% YoY Feb.',
+    headline:
+      "Oil drops 13% to $101 — but gas hasn't followed yet. Grocery inflation building as trucking costs rise.",
+    source:
+      'AAA: $3.96 Mar 23. Fortune: Brent $101.44. BLS CPI food +3.1% YoY Feb.'
   },
   {
     date: '2026-03-27',
@@ -294,9 +312,10 @@ export const consumerImpactData: ConsumerImpact[] = [
     shippingSurchargePct: 65,
     deliveryDelayDays: 12,
     totalMonthlyExtra: 160,
-    headline: 'Brent surges 2.9% to $105 on nuclear/steel strikes. IRGC threatens Gulf industrial targets. Stocks hit worst streak in 4 years.',
-    source: 'Fortune: Brent $104.81. US crude $98.61 (+4.4%). AAA est ~$4.02.',
-  },
+    headline:
+      'Brent surges 2.9% to $105 on nuclear/steel strikes. IRGC threatens Gulf industrial targets. Stocks hit worst streak in 4 years.',
+    source: 'Fortune: Brent $104.81. US crude $98.61 (+4.4%). AAA est ~$4.02.'
+  }
 ];
 
 // ═══ MERGE AUTO-GENERATED DAILY DATA ═══
@@ -305,7 +324,9 @@ export const consumerImpactData: ConsumerImpact[] = [
 const curatedDates = new Set(consumerImpactData.map((e) => e.date));
 const allConsumerData: ConsumerImpact[] = [
   ...consumerImpactData,
-  ...(autoConsumerJson as ConsumerImpact[]).filter((a) => !curatedDates.has(a.date)),
+  ...(autoConsumerJson as ConsumerImpact[]).filter(
+    (a) => !curatedDates.has(a.date)
+  )
 ].sort((a, b) => a.date.localeCompare(b.date));
 
 /**

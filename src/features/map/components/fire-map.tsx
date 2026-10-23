@@ -3,9 +3,21 @@
 import { useEffect, useRef, useCallback } from 'react';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { useFireStore, type FireFeature, type FireGeoJSON } from '@/stores/fire-store';
-import { curatedFires, type FacilityStatus } from '@/features/fires/data/curated-fires';
-import { allEvents, conflictEvents, CATEGORY_COLORS, type ConflictEvent } from '@/features/timeline/data/conflict-events';
+import {
+  useFireStore,
+  type FireFeature,
+  type FireGeoJSON
+} from '@/stores/fire-store';
+import {
+  curatedFires,
+  type FacilityStatus
+} from '@/features/fires/data/curated-fires';
+import {
+  allEvents,
+  conflictEvents,
+  CATEGORY_COLORS,
+  type ConflictEvent
+} from '@/features/timeline/data/conflict-events';
 import {
   buildEventPopupHtml,
   buildFacilityPopupHtml,
@@ -18,7 +30,7 @@ const SATELLITE_STYLE: maplibregl.StyleSpecification = {
   version: 8,
   name: 'Satellite + Terrain',
   sources: {
-    'satellite': {
+    satellite: {
       type: 'raster',
       tiles: [
         'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
@@ -36,7 +48,7 @@ const SATELLITE_STYLE: maplibregl.StyleSpecification = {
       encoding: 'terrarium',
       maxzoom: 15
     },
-    'labels': {
+    labels: {
       type: 'raster',
       tiles: [
         'https://a.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}@2x.png'
@@ -84,8 +96,9 @@ const STATUS_COLORS: Record<FacilityStatus, string> = {
 };
 
 // Capacity label: show BPD or BCF/day or storage
-function capacityLabel(f: typeof curatedFires[0]): string {
-  if (f.capacityBPD >= 1000000) return `${(f.capacityBPD / 1000000).toFixed(1)}M BPD`;
+function capacityLabel(f: (typeof curatedFires)[0]): string {
+  if (f.capacityBPD >= 1000000)
+    return `${(f.capacityBPD / 1000000).toFixed(1)}M BPD`;
   if (f.capacityBPD > 0) return `${(f.capacityBPD / 1000).toFixed(0)}K BPD`;
   if (f.gasCapacityBCFD) return `${f.gasCapacityBCFD} BCF/d`;
   if (f.storageMBBL) return `${f.storageMBBL}M bbl`;
@@ -95,12 +108,12 @@ function capacityLabel(f: typeof curatedFires[0]): string {
 // Impact radius scales with percentGlobalCapacity
 // bigger facilities = bigger glow on the map
 function impactScale(pct: number): number {
-  if (pct >= 20) return 6;   // Hormuz-level
-  if (pct >= 5) return 5;    // Abqaiq, Kharg
-  if (pct >= 2) return 4;    // South Pars, Ghawar
-  if (pct >= 1) return 3;    // Ras Laffan, Rumaila
-  if (pct >= 0.3) return 2;  // Most refineries
-  return 1;                   // Small facilities
+  if (pct >= 20) return 6; // Hormuz-level
+  if (pct >= 5) return 5; // Abqaiq, Kharg
+  if (pct >= 2) return 4; // South Pars, Ghawar
+  if (pct >= 1) return 3; // Ras Laffan, Rumaila
+  if (pct >= 0.3) return 2; // Most refineries
+  return 1; // Small facilities
 }
 
 function buildFacilitiesGeoJSON() {
@@ -197,8 +210,14 @@ export default function FireMap() {
       attributionControl: false
     });
 
-    map.current.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), 'bottom-right');
-    map.current.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-left');
+    map.current.addControl(
+      new maplibregl.NavigationControl({ visualizePitch: true }),
+      'bottom-right'
+    );
+    map.current.addControl(
+      new maplibregl.AttributionControl({ compact: true }),
+      'bottom-left'
+    );
 
     map.current.on('load', () => {
       const m = map.current!;
@@ -206,7 +225,9 @@ export default function FireMap() {
       // ── FIRMS fire data source (only fires near oil facilities) ──
       const facilityFires: FireGeoJSON = {
         type: 'FeatureCollection',
-        features: fireDataRef.current.features.filter(f => f.properties.matchedFacility)
+        features: fireDataRef.current.features.filter(
+          (f) => f.properties.matchedFacility
+        )
       };
       m.addSource('fires', {
         type: 'geojson',
@@ -221,29 +242,54 @@ export default function FireMap() {
         maxzoom: 12,
         paint: {
           'heatmap-weight': [
-            'interpolate', ['linear'],
+            'interpolate',
+            ['linear'],
             ['get', 'frp'],
-            0, 0, 10, 0.3, 50, 0.6, 200, 1
+            0,
+            0,
+            10,
+            0.3,
+            50,
+            0.6,
+            200,
+            1
           ],
           'heatmap-intensity': [
-            'interpolate', ['linear'],
+            'interpolate',
+            ['linear'],
             ['zoom'],
-            0, 1, 12, 3
+            0,
+            1,
+            12,
+            3
           ],
           'heatmap-color': [
-            'interpolate', ['linear'],
+            'interpolate',
+            ['linear'],
             ['heatmap-density'],
-            0, 'rgba(0,0,0,0)',
-            0.2, 'rgba(255,255,0,0.4)',
-            0.4, 'rgba(255,165,0,0.6)',
-            0.6, 'rgba(255,69,0,0.8)',
-            0.8, 'rgba(255,0,0,0.9)',
-            1, 'rgba(183,28,28,1)'
+            0,
+            'rgba(0,0,0,0)',
+            0.2,
+            'rgba(255,255,0,0.4)',
+            0.4,
+            'rgba(255,165,0,0.6)',
+            0.6,
+            'rgba(255,69,0,0.8)',
+            0.8,
+            'rgba(255,0,0,0.9)',
+            1,
+            'rgba(183,28,28,1)'
           ],
           'heatmap-radius': [
-            'interpolate', ['linear'],
+            'interpolate',
+            ['linear'],
             ['zoom'],
-            0, 15, 6, 30, 12, 50
+            0,
+            15,
+            6,
+            30,
+            12,
+            50
           ],
           'heatmap-opacity': 0.8
         }
@@ -257,16 +303,55 @@ export default function FireMap() {
         minzoom: 4,
         paint: {
           'circle-radius': [
-            'interpolate', ['linear'], ['zoom'],
-            4, ['match', ['get', 'intensity'], 'extreme', 8, 'high', 7, 'medium', 6, 5],
-            8, ['match', ['get', 'intensity'], 'extreme', 14, 'high', 12, 'medium', 10, 8],
-            12, ['match', ['get', 'intensity'], 'extreme', 20, 'high', 16, 'medium', 13, 10]
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            4,
+            [
+              'match',
+              ['get', 'intensity'],
+              'extreme',
+              8,
+              'high',
+              7,
+              'medium',
+              6,
+              5
+            ],
+            8,
+            [
+              'match',
+              ['get', 'intensity'],
+              'extreme',
+              14,
+              'high',
+              12,
+              'medium',
+              10,
+              8
+            ],
+            12,
+            [
+              'match',
+              ['get', 'intensity'],
+              'extreme',
+              20,
+              'high',
+              16,
+              'medium',
+              13,
+              10
+            ]
           ],
           'circle-color': [
-            'match', ['get', 'intensity'],
-            'extreme', '#B71C1C',
-            'high', '#F44336',
-            'medium', '#FF9800',
+            'match',
+            ['get', 'intensity'],
+            'extreme',
+            '#B71C1C',
+            'high',
+            '#F44336',
+            'medium',
+            '#FF9800',
             '#FFEB3B'
           ],
           'circle-opacity': 0.35,
@@ -282,10 +367,45 @@ export default function FireMap() {
         minzoom: 5,
         paint: {
           'circle-radius': [
-            'interpolate', ['linear'], ['zoom'],
-            5, ['match', ['get', 'intensity'], 'extreme', 18, 'high', 14, 'medium', 10, 8],
-            8, ['match', ['get', 'intensity'], 'extreme', 30, 'high', 24, 'medium', 18, 14],
-            12, ['match', ['get', 'intensity'], 'extreme', 45, 'high', 35, 'medium', 28, 20]
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            5,
+            [
+              'match',
+              ['get', 'intensity'],
+              'extreme',
+              18,
+              'high',
+              14,
+              'medium',
+              10,
+              8
+            ],
+            8,
+            [
+              'match',
+              ['get', 'intensity'],
+              'extreme',
+              30,
+              'high',
+              24,
+              'medium',
+              18,
+              14
+            ],
+            12,
+            [
+              'match',
+              ['get', 'intensity'],
+              'extreme',
+              45,
+              'high',
+              35,
+              'medium',
+              28,
+              20
+            ]
           ],
           'circle-color': '#555',
           'circle-opacity': 0.15,
@@ -302,16 +422,55 @@ export default function FireMap() {
         minzoom: 4,
         paint: {
           'circle-radius': [
-            'interpolate', ['linear'], ['zoom'],
-            4, ['match', ['get', 'intensity'], 'extreme', 4, 'high', 3.5, 'medium', 3, 2.5],
-            8, ['match', ['get', 'intensity'], 'extreme', 7, 'high', 6, 'medium', 5, 4],
-            12, ['match', ['get', 'intensity'], 'extreme', 10, 'high', 8, 'medium', 7, 5]
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            4,
+            [
+              'match',
+              ['get', 'intensity'],
+              'extreme',
+              4,
+              'high',
+              3.5,
+              'medium',
+              3,
+              2.5
+            ],
+            8,
+            [
+              'match',
+              ['get', 'intensity'],
+              'extreme',
+              7,
+              'high',
+              6,
+              'medium',
+              5,
+              4
+            ],
+            12,
+            [
+              'match',
+              ['get', 'intensity'],
+              'extreme',
+              10,
+              'high',
+              8,
+              'medium',
+              7,
+              5
+            ]
           ],
           'circle-color': [
-            'match', ['get', 'intensity'],
-            'extreme', '#B71C1C',
-            'high', '#F44336',
-            'medium', '#FF9800',
+            'match',
+            ['get', 'intensity'],
+            'extreme',
+            '#B71C1C',
+            'high',
+            '#F44336',
+            'medium',
+            '#FF9800',
             '#FFEB3B'
           ],
           'circle-opacity': 0.9,
@@ -334,10 +493,15 @@ export default function FireMap() {
         source: 'facilities',
         paint: {
           'circle-radius': [
-            'interpolate', ['linear'], ['zoom'],
-            3, ['*', ['get', 'impactScale'], 6],
-            6, ['*', ['get', 'impactScale'], 14],
-            10, ['*', ['get', 'impactScale'], 25]
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            3,
+            ['*', ['get', 'impactScale'], 6],
+            6,
+            ['*', ['get', 'impactScale'], 14],
+            10,
+            ['*', ['get', 'impactScale'], 25]
           ],
           'circle-color': ['get', 'color'],
           'circle-opacity': 0.12,
@@ -352,10 +516,15 @@ export default function FireMap() {
         source: 'facilities',
         paint: {
           'circle-radius': [
-            'interpolate', ['linear'], ['zoom'],
-            3, ['*', ['get', 'impactScale'], 3.5],
-            6, ['*', ['get', 'impactScale'], 8],
-            10, ['*', ['get', 'impactScale'], 14]
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            3,
+            ['*', ['get', 'impactScale'], 3.5],
+            6,
+            ['*', ['get', 'impactScale'], 8],
+            10,
+            ['*', ['get', 'impactScale'], 14]
           ],
           'circle-color': ['get', 'color'],
           'circle-opacity': 0.25,
@@ -370,19 +539,19 @@ export default function FireMap() {
         source: 'facilities',
         paint: {
           'circle-radius': [
-            'interpolate', ['linear'], ['zoom'],
-            3, ['*', ['get', 'impactScale'], 1.8],
-            6, ['*', ['get', 'impactScale'], 3.5],
-            10, ['*', ['get', 'impactScale'], 5.5]
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            3,
+            ['*', ['get', 'impactScale'], 1.8],
+            6,
+            ['*', ['get', 'impactScale'], 3.5],
+            10,
+            ['*', ['get', 'impactScale'], 5.5]
           ],
           'circle-color': ['get', 'color'],
           'circle-opacity': 0.9,
-          'circle-stroke-width': [
-            'case',
-            ['==', ['get', 'isActive'], 1],
-            2,
-            1
-          ],
+          'circle-stroke-width': ['case', ['==', ['get', 'isActive'], 1], 2, 1],
           'circle-stroke-color': [
             'case',
             ['==', ['get', 'isActive'], 1],
@@ -406,10 +575,15 @@ export default function FireMap() {
             ['get', 'labelText']
           ],
           'text-size': [
-            'interpolate', ['linear'], ['zoom'],
-            4, 9,
-            7, 11,
-            10, 13
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            4,
+            9,
+            7,
+            11,
+            10,
+            13
           ],
           'text-offset': [0, 2.2] as [number, number],
           'text-anchor': 'top',
@@ -436,15 +610,13 @@ export default function FireMap() {
         layout: {
           'text-field': [
             'case',
-            ['==', ['get', 'status'], 'active_fire'], 'FIRE',
-            ['==', ['get', 'status'], 'damaged'], 'DAMAGED',
+            ['==', ['get', 'status'], 'active_fire'],
+            'FIRE',
+            ['==', ['get', 'status'], 'damaged'],
+            'DAMAGED',
             ''
           ],
-          'text-size': [
-            'interpolate', ['linear'], ['zoom'],
-            4, 8,
-            8, 10
-          ],
+          'text-size': ['interpolate', ['linear'], ['zoom'], 4, 8, 8, 10],
           'text-offset': [0, -2.2] as [number, number],
           'text-anchor': 'bottom',
           'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
@@ -470,8 +642,15 @@ export default function FireMap() {
         source: 'conflict-events',
         paint: {
           'circle-radius': [
-            'interpolate', ['linear'], ['zoom'],
-            3, 12, 6, 22, 10, 35
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            3,
+            12,
+            6,
+            22,
+            10,
+            35
           ],
           'circle-color': ['get', 'color'],
           'circle-opacity': 0.25,
@@ -486,8 +665,15 @@ export default function FireMap() {
         source: 'conflict-events',
         paint: {
           'circle-radius': [
-            'interpolate', ['linear'], ['zoom'],
-            3, 7, 6, 11, 10, 16
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            3,
+            7,
+            6,
+            11,
+            10,
+            16
           ],
           'circle-color': ['get', 'color'],
           'circle-opacity': 0.9,
@@ -502,16 +688,8 @@ export default function FireMap() {
         type: 'symbol',
         source: 'conflict-events',
         layout: {
-          'text-field': [
-            'case',
-            ['==', ['get', 'hasVideo'], 1],
-            '▶',
-            '•'
-          ],
-          'text-size': [
-            'interpolate', ['linear'], ['zoom'],
-            3, 10, 8, 16
-          ],
+          'text-field': ['case', ['==', ['get', 'hasVideo'], 1], '▶', '•'],
+          'text-size': ['interpolate', ['linear'], ['zoom'], 3, 10, 8, 16],
           'text-allow-overlap': true,
           'text-ignore-placement': true,
           'text-font': ['Open Sans Bold']
@@ -532,7 +710,10 @@ export default function FireMap() {
         const smokeOp = 0.12 + 0.06 * Math.sin(t * 1.3); // smoke fades in/out
         try {
           m.setPaintProperty('fires-glow', 'circle-opacity', 0.25 * pulse);
-          m.setPaintProperty('fires-smoke', 'circle-translate', [Math.sin(t * 0.5) * 2, smokeY]);
+          m.setPaintProperty('fires-smoke', 'circle-translate', [
+            Math.sin(t * 0.5) * 2,
+            smokeY
+          ]);
           m.setPaintProperty('fires-smoke', 'circle-opacity', smokeOp);
         } catch {}
         animFrameRef.current = requestAnimationFrame(animateFires);
@@ -564,14 +745,25 @@ export default function FireMap() {
           isMutedRef.current
         );
 
-        popup.current = new maplibregl.Popup({ closeButton: true, maxWidth: 'calc(100vw - 40px)', className: 'event-popup', offset: 15 })
+        popup.current = new maplibregl.Popup({
+          closeButton: true,
+          maxWidth: 'calc(100vw - 40px)',
+          className: 'event-popup',
+          offset: 15
+        })
           .setLngLat(coords)
           .setHTML(html)
           .addTo(m);
-        m.easeTo({ center: coords, offset: [0, Math.min(-60, -window.innerHeight * 0.12)], duration: 400 });
+        m.easeTo({
+          center: coords,
+          offset: [0, Math.min(-60, -window.innerHeight * 0.12)],
+          duration: 400
+        });
         // Sync scrubber to this event's date so skip fwd/back works from here
         if (props?.id) {
-          window.dispatchEvent(new CustomEvent('timeline-sync', { detail: { eventId: props.id } }));
+          window.dispatchEvent(
+            new CustomEvent('timeline-sync', { detail: { eventId: props.id } })
+          );
         }
       });
 
@@ -586,8 +778,12 @@ export default function FireMap() {
         if (popup.current) popup.current.remove();
 
         // Find linked conflict event for this facility (for video)
-        const linkedEvent = conflictEvents.find(ev => ev.facilityId === facility.id);
-        const ytMedia = linkedEvent?.mediaUrls?.find(media => media.type === 'youtube');
+        const linkedEvent = conflictEvents.find(
+          (ev) => ev.facilityId === facility.id
+        );
+        const ytMedia = linkedEvent?.mediaUrls?.find(
+          (media) => media.type === 'youtube'
+        );
         const videoId = ytMedia ? getYouTubeId(ytMedia.url) : null;
 
         const html = buildFacilityPopupHtml(
@@ -610,11 +806,20 @@ export default function FireMap() {
           isMutedRef.current
         );
 
-        popup.current = new maplibregl.Popup({ closeButton: true, maxWidth: 'calc(100vw - 40px)', className: 'event-popup', offset: 15 })
+        popup.current = new maplibregl.Popup({
+          closeButton: true,
+          maxWidth: 'calc(100vw - 40px)',
+          className: 'event-popup',
+          offset: 15
+        })
           .setLngLat(coords)
           .setHTML(html)
           .addTo(m);
-        m.easeTo({ center: coords, offset: [0, Math.min(-60, -window.innerHeight * 0.12)], duration: 400 });
+        m.easeTo({
+          center: coords,
+          offset: [0, Math.min(-60, -window.innerHeight * 0.12)],
+          duration: 400
+        });
       });
 
       // Click FIRMS fire point → popup
@@ -626,9 +831,10 @@ export default function FireMap() {
         let matchedFacility = null;
         if (props?.matchedFacility && props.matchedFacility !== 'null') {
           try {
-            matchedFacility = typeof props.matchedFacility === 'string'
-              ? JSON.parse(props.matchedFacility)
-              : props.matchedFacility;
+            matchedFacility =
+              typeof props.matchedFacility === 'string'
+                ? JSON.parse(props.matchedFacility)
+                : props.matchedFacility;
           } catch {}
         }
 
@@ -640,7 +846,9 @@ export default function FireMap() {
             longitude: props?.longitude ? Number(props.longitude) : 0,
             bright_ti4: props?.bright_ti4 ? Number(props.bright_ti4) : 0,
             frp: props?.frp ? Number(props.frp) : 0,
-            estimatedCO2TonsDay: props?.estimatedCO2TonsDay ? Number(props.estimatedCO2TonsDay) : 0,
+            estimatedCO2TonsDay: props?.estimatedCO2TonsDay
+              ? Number(props.estimatedCO2TonsDay)
+              : 0,
             confidence: props?.confidence || 'nominal',
             acq_date: props?.acq_date || '',
             acq_time: props?.acq_time || '',
@@ -656,12 +864,18 @@ export default function FireMap() {
         const coords = (feature.geometry as any).coordinates.slice();
         if (popup.current) popup.current.remove();
 
-        popup.current = new maplibregl.Popup({ closeButton: true, maxWidth: '260px', offset: 15 })
+        popup.current = new maplibregl.Popup({
+          closeButton: true,
+          maxWidth: '260px',
+          offset: 15
+        })
           .setLngLat(coords)
           .setHTML(
             buildFirePopupHtml({
               frp: props?.frp ? Number(props.frp) : 0,
-              estimatedCO2TonsDay: props?.estimatedCO2TonsDay ? Number(props.estimatedCO2TonsDay) : 0,
+              estimatedCO2TonsDay: props?.estimatedCO2TonsDay
+                ? Number(props.estimatedCO2TonsDay)
+                : 0,
               satellite: props?.satellite || '',
               acqDate: props?.acq_date || '',
               acqTime: props?.acq_time || ''
@@ -671,9 +885,17 @@ export default function FireMap() {
       });
 
       // Cursors
-      for (const layerId of ['facility-core', 'fires-points', 'event-pin-core']) {
-        m.on('mouseenter', layerId, () => { m.getCanvas().style.cursor = 'pointer'; });
-        m.on('mouseleave', layerId, () => { m.getCanvas().style.cursor = ''; });
+      for (const layerId of [
+        'facility-core',
+        'fires-points',
+        'event-pin-core'
+      ]) {
+        m.on('mouseenter', layerId, () => {
+          m.getCanvas().style.cursor = 'pointer';
+        });
+        m.on('mouseleave', layerId, () => {
+          m.getCanvas().style.cursor = '';
+        });
       }
     });
   }, []);
@@ -700,7 +922,7 @@ export default function FireMap() {
     if (source) {
       const facilityFires: FireGeoJSON = {
         type: 'FeatureCollection',
-        features: fireData.features.filter(f => f.properties.matchedFacility)
+        features: fireData.features.filter((f) => f.properties.matchedFacility)
       };
       source.setData(facilityFires);
     }
@@ -714,10 +936,26 @@ export default function FireMap() {
     if (!map.current || !map.current.isStyleLoaded()) return;
     const m = map.current;
     try {
-      m.setLayoutProperty('fires-heat', 'visibility', layers.heatmap ? 'visible' : 'none');
-      m.setLayoutProperty('fires-glow', 'visibility', layers.markers ? 'visible' : 'none');
-      m.setLayoutProperty('fires-smoke', 'visibility', layers.markers ? 'visible' : 'none');
-      m.setLayoutProperty('fires-points', 'visibility', layers.markers ? 'visible' : 'none');
+      m.setLayoutProperty(
+        'fires-heat',
+        'visibility',
+        layers.heatmap ? 'visible' : 'none'
+      );
+      m.setLayoutProperty(
+        'fires-glow',
+        'visibility',
+        layers.markers ? 'visible' : 'none'
+      );
+      m.setLayoutProperty(
+        'fires-smoke',
+        'visibility',
+        layers.markers ? 'visible' : 'none'
+      );
+      m.setLayoutProperty(
+        'fires-points',
+        'visibility',
+        layers.markers ? 'visible' : 'none'
+      );
       const fv = layers.facilities ? 'visible' : 'none';
       m.setLayoutProperty('facility-impact-glow', 'visibility', fv);
       m.setLayoutProperty('facility-mid-ring', 'visibility', fv);
@@ -752,13 +990,13 @@ export default function FireMap() {
       const m = map.current;
 
       // Always resolve the full event from source data for rich content
-      const ev = allEvents.find(evt => evt.id === eventId);
+      const ev = allEvents.find((evt) => evt.id === eventId);
       if (!ev || !ev.lat || !ev.lng) return;
 
       if (popup.current) popup.current.remove();
 
       // Build popup HTML — same quality as click handler (matches refinery pin style)
-      const ytMedia = ev.mediaUrls?.find(media => media.type === 'youtube');
+      const ytMedia = ev.mediaUrls?.find((media) => media.type === 'youtube');
       const videoId = ytMedia ? getYouTubeId(ytMedia.url) : null;
 
       const html = buildEventPopupHtml(
@@ -776,17 +1014,24 @@ export default function FireMap() {
         isMutedRef.current
       );
 
-      popup.current = new maplibregl.Popup({ closeButton: true, maxWidth: 'calc(100vw - 40px)', className: 'event-popup', offset: 15 })
+      popup.current = new maplibregl.Popup({
+        closeButton: true,
+        maxWidth: 'calc(100vw - 40px)',
+        className: 'event-popup',
+        offset: 15
+      })
         .setLngLat([ev.lng!, ev.lat!])
         .setHTML(html)
         .addTo(m);
-      m.easeTo({ center: [ev.lng!, ev.lat!], offset: [0, Math.min(-60, -window.innerHeight * 0.12)], duration: 400 });
+      m.easeTo({
+        center: [ev.lng!, ev.lat!],
+        offset: [0, Math.min(-60, -window.innerHeight * 0.12)],
+        duration: 400
+      });
     };
     window.addEventListener('map-show-event', handler);
     return () => window.removeEventListener('map-show-event', handler);
   }, []);
 
-  return (
-    <div ref={mapContainer} className='h-full w-full' />
-  );
+  return <div ref={mapContainer} className='h-full w-full' />;
 }

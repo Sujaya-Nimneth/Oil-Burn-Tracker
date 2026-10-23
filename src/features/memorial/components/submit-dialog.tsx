@@ -26,7 +26,11 @@ interface SubmitDialogProps {
   entryNumber?: number;
 }
 
-export default function SubmitDialog({ open, onOpenChange, entryNumber }: SubmitDialogProps) {
+export default function SubmitDialog({
+  open,
+  onOpenChange,
+  entryNumber
+}: SubmitDialogProps) {
   const [humanity, setHumanity] = useState('');
   const [relationship, setRelationship] = useState('');
   const [age, setAge] = useState('');
@@ -35,7 +39,12 @@ export default function SubmitDialog({ open, onOpenChange, entryNumber }: Submit
   const [photoUrl, setPhotoUrl] = useState('');
   const [submitting, setSubmitting] = useState(false);
 
-  const canSubmit = humanity.length >= 10 && humanity.length <= 280 && relationship && region && email;
+  const canSubmit =
+    humanity.length >= 10 &&
+    humanity.length <= 280 &&
+    relationship &&
+    region &&
+    email;
 
   async function handleSubmit() {
     if (!canSubmit) return;
@@ -70,7 +79,11 @@ export default function SubmitDialog({ open, onOpenChange, entryNumber }: Submit
       setEmail('');
       setPhotoUrl('');
     } catch (err) {
-      toast.error(err instanceof Error ? err.message : 'Something went wrong. Please try again.');
+      toast.error(
+        err instanceof Error
+          ? err.message
+          : 'Something went wrong. Please try again.'
+      );
     } finally {
       setSubmitting(false);
     }
@@ -78,10 +91,11 @@ export default function SubmitDialog({ open, onOpenChange, entryNumber }: Submit
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className='bg-zinc-950 border-zinc-800 text-white max-w-md'>
+      <DialogContent className='max-w-md border-zinc-800 bg-zinc-950 text-white'>
         <DialogHeader>
           <DialogTitle className='text-white'>
-            Remember someone{entryNumber ? ` (#${entryNumber.toLocaleString()})` : ''}
+            Remember someone
+            {entryNumber ? ` (#${entryNumber.toLocaleString()})` : ''}
           </DialogTitle>
           <DialogDescription className='text-zinc-400'>
             Tell us who they were. Submissions are reviewed before appearing.
@@ -91,7 +105,7 @@ export default function SubmitDialog({ open, onOpenChange, entryNumber }: Submit
         <div className='space-y-4'>
           {/* Who were they */}
           <div>
-            <label className='text-sm text-zinc-400 mb-1 block'>
+            <label className='mb-1 block text-sm text-zinc-400'>
               Who were they? <span className='text-red-500'>*</span>
             </label>
             <Textarea
@@ -99,21 +113,23 @@ export default function SubmitDialog({ open, onOpenChange, entryNumber }: Submit
               onChange={(e) => setHumanity(e.target.value)}
               placeholder='A mother of three who sang while she cooked'
               maxLength={280}
-              className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-600 min-h-20'
+              className='min-h-20 border-zinc-700 bg-zinc-900 text-white placeholder:text-zinc-600'
             />
-            <span className='text-xs text-zinc-600 mt-1 block'>{humanity.length}/280</span>
+            <span className='mt-1 block text-xs text-zinc-600'>
+              {humanity.length}/280
+            </span>
           </div>
 
           {/* Relationship */}
           <div>
-            <label className='text-sm text-zinc-400 mb-1 block'>
+            <label className='mb-1 block text-sm text-zinc-400'>
               Your relationship <span className='text-red-500'>*</span>
             </label>
             <Select value={relationship} onValueChange={setRelationship}>
-              <SelectTrigger className='w-full bg-zinc-900 border-zinc-700 text-white'>
+              <SelectTrigger className='w-full border-zinc-700 bg-zinc-900 text-white'>
                 <SelectValue placeholder='Select...' />
               </SelectTrigger>
-              <SelectContent className='bg-zinc-900 border-zinc-700'>
+              <SelectContent className='border-zinc-700 bg-zinc-900'>
                 <SelectItem value='family'>Family member</SelectItem>
                 <SelectItem value='friend'>Friend</SelectItem>
                 <SelectItem value='neighbor'>Neighbor</SelectItem>
@@ -126,7 +142,7 @@ export default function SubmitDialog({ open, onOpenChange, entryNumber }: Submit
           {/* Age + Region row */}
           <div className='flex gap-3'>
             <div className='w-24'>
-              <label className='text-sm text-zinc-400 mb-1 block'>Age</label>
+              <label className='mb-1 block text-sm text-zinc-400'>Age</label>
               <Input
                 type='number'
                 value={age}
@@ -134,18 +150,18 @@ export default function SubmitDialog({ open, onOpenChange, entryNumber }: Submit
                 min={0}
                 max={120}
                 placeholder='—'
-                className='bg-zinc-900 border-zinc-700 text-white'
+                className='border-zinc-700 bg-zinc-900 text-white'
               />
             </div>
             <div className='flex-1'>
-              <label className='text-sm text-zinc-400 mb-1 block'>
+              <label className='mb-1 block text-sm text-zinc-400'>
                 Region <span className='text-red-500'>*</span>
               </label>
               <Select value={region} onValueChange={setRegion}>
-                <SelectTrigger className='w-full bg-zinc-900 border-zinc-700 text-white'>
+                <SelectTrigger className='w-full border-zinc-700 bg-zinc-900 text-white'>
                   <SelectValue placeholder='Select...' />
                 </SelectTrigger>
-                <SelectContent className='bg-zinc-900 border-zinc-700'>
+                <SelectContent className='border-zinc-700 bg-zinc-900'>
                   <SelectItem value='Gaza'>Gaza</SelectItem>
                   <SelectItem value='West Bank'>West Bank</SelectItem>
                   <SelectItem value='Lebanon'>Lebanon</SelectItem>
@@ -157,7 +173,7 @@ export default function SubmitDialog({ open, onOpenChange, entryNumber }: Submit
 
           {/* Email */}
           <div>
-            <label className='text-sm text-zinc-400 mb-1 block'>
+            <label className='mb-1 block text-sm text-zinc-400'>
               Your email <span className='text-red-500'>*</span>
             </label>
             <Input
@@ -165,21 +181,25 @@ export default function SubmitDialog({ open, onOpenChange, entryNumber }: Submit
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder='For follow-up only, never displayed'
-              className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-600'
+              className='border-zinc-700 bg-zinc-900 text-white placeholder:text-zinc-600'
             />
           </div>
 
           {/* Photo URL */}
           <div>
-            <label className='text-sm text-zinc-400 mb-1 block'>Photo link</label>
+            <label className='mb-1 block text-sm text-zinc-400'>
+              Photo link
+            </label>
             <Input
               type='url'
               value={photoUrl}
               onChange={(e) => setPhotoUrl(e.target.value)}
               placeholder='https://...'
-              className='bg-zinc-900 border-zinc-700 text-white placeholder:text-zinc-600'
+              className='border-zinc-700 bg-zinc-900 text-white placeholder:text-zinc-600'
             />
-            <span className='text-xs text-zinc-600 mt-1 block'>Optional — link to a hosted photo</span>
+            <span className='mt-1 block text-xs text-zinc-600'>
+              Optional — link to a hosted photo
+            </span>
           </div>
 
           {/* Submit */}

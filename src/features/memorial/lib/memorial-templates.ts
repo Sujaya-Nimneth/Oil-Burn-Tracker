@@ -28,7 +28,7 @@ const INFANT_HUMANITY = [
   'A baby who had just learned to grip a finger',
   'A newborn who never got to leave the hospital',
   'A baby born into a war they would never understand',
-  'A newborn who was someone\'s entire world for a few weeks',
+  "A newborn who was someone's entire world for a few weeks",
   'A baby who had just started to recognize voices',
   'A newborn whose parents had already picked out a name',
   'A baby who had never seen anything but a shelter ceiling',
@@ -39,22 +39,22 @@ const INFANT_HUMANITY = [
   'A newborn whose parents were already making plans',
   'A baby small enough to fit in one arm',
   'A newborn who had only known warmth and hunger and sleep',
-  'A baby whose first sounds were sirens',
+  'A baby whose first sounds were sirens'
 ];
 
 const INFANT_LOST = [
   'Their mother had been up with them at 3am the night before, exhausted and grateful at the same time. The crib was a folded blanket on a shelter floor. They had maybe eight weeks of life — most of it spent hearing sounds no baby should hear. Their parents had already imagined a first day of school. A favorite food. A first word. None of it will happen now.',
-  'Someone spent nine months waiting for this baby. Picked a name. Argued about the name. Picked a different one. Bought things they couldn\'t afford because it felt important. Held them for the first time and felt something shift permanently inside their chest. All of that — the waiting, the hoping, the rearranging of an entire life around this small person — ended.',
-  'They were born into a hospital that was running out of everything. Their mother delivered them without painkillers because there weren\'t any. A doctor who hadn\'t slept in two days checked their lungs and said they were healthy. They were healthy. They had working lungs and a strong cry and ten fingers and ten toes and a whole life ahead of them and none of it mattered.',
-  'Their older sibling had been asking about them for months. When are they coming. What will they look like. Can I hold them. The sibling got to hold them once, maybe twice. Sat very still on the bed with their arms out, trying so hard to be gentle. That\'s the image that stays — a child holding a baby, both of them gone now.',
-  'They weighed almost nothing. You could hold them in one arm and do something else with the other. That\'s how small they were. Their entire existence fit inside a blanket. Their parents had spent more time imagining who this person would become than this person spent being alive. The dreams lasted longer than the life.',
-  'There\'s a particular kind of crying a newborn does — not because they\'re sad, because they don\'t know what sad is yet — but because the world is too bright and too loud and too cold and they want to be held. That\'s all they ever wanted. To be held. To be warm. To hear a heartbeat close to their ear. They didn\'t get enough of it.',
+  "Someone spent nine months waiting for this baby. Picked a name. Argued about the name. Picked a different one. Bought things they couldn't afford because it felt important. Held them for the first time and felt something shift permanently inside their chest. All of that — the waiting, the hoping, the rearranging of an entire life around this small person — ended.",
+  "They were born into a hospital that was running out of everything. Their mother delivered them without painkillers because there weren't any. A doctor who hadn't slept in two days checked their lungs and said they were healthy. They were healthy. They had working lungs and a strong cry and ten fingers and ten toes and a whole life ahead of them and none of it mattered.",
+  "Their older sibling had been asking about them for months. When are they coming. What will they look like. Can I hold them. The sibling got to hold them once, maybe twice. Sat very still on the bed with their arms out, trying so hard to be gentle. That's the image that stays — a child holding a baby, both of them gone now.",
+  "They weighed almost nothing. You could hold them in one arm and do something else with the other. That's how small they were. Their entire existence fit inside a blanket. Their parents had spent more time imagining who this person would become than this person spent being alive. The dreams lasted longer than the life.",
+  "There's a particular kind of crying a newborn does — not because they're sad, because they don't know what sad is yet — but because the world is too bright and too loud and too cold and they want to be held. That's all they ever wanted. To be held. To be warm. To hear a heartbeat close to their ear. They didn't get enough of it.",
   'They had just learned to track movement with their eyes. Would follow a finger back and forth, back and forth. Were starting to figure out that the blurry shapes above them were faces. Were starting to connect that one particular face with warmth and milk and safety. Were building, without knowing it, the most important bond a human being can build. It was cut short.',
-  'A nurse in a hospital without power wrapped them in whatever was clean. Their mother hadn\'t eaten in two days but was trying to feed them anyway. The body does what it can. The baby didn\'t know any of this — didn\'t know about the war or the siege or the shortage of everything. They just knew hungry and full, cold and warm, held and not held.',
+  "A nurse in a hospital without power wrapped them in whatever was clean. Their mother hadn't eaten in two days but was trying to feed them anyway. The body does what it can. The baby didn't know any of this — didn't know about the war or the siege or the shortage of everything. They just knew hungry and full, cold and warm, held and not held.",
   'In another life, this baby grows up. Learns to walk by holding onto furniture. Says something that sounds like a word and the whole family celebrates. Goes to school. Makes a friend. Gets in trouble for something small. Grows taller than their mother expected. Becomes someone. In this life, none of that. Just a few weeks of being alive, then not.',
-  'Their parents probably took a photo. Probably sent it to everyone they knew. Probably stared at this baby\'s face and saw pieces of themselves and pieces of each other and tried to imagine what this person would look like at five, at ten, at twenty. Parents do that. They can\'t help it. The photos are still on someone\'s phone. The baby isn\'t.',
-  'A baby who had only known two things — their mother\'s arms and the sound of explosions. Both of those things were their whole world. They didn\'t know the explosions weren\'t normal. They didn\'t know that most babies fall asleep to quiet. Their nervous system was already wired to flinch at sounds that would have made any adult in a safe country break down.',
-  'Born during a ceasefire that didn\'t hold. Their parents thought there might be time. There wasn\'t. The math is simple and brutal — this baby was alive for fewer days than the war has been going on for. The war will continue after them. It was here before them and it will be here after and they were just a small, brief life caught inside it.',
+  "Their parents probably took a photo. Probably sent it to everyone they knew. Probably stared at this baby's face and saw pieces of themselves and pieces of each other and tried to imagine what this person would look like at five, at ten, at twenty. Parents do that. They can't help it. The photos are still on someone's phone. The baby isn't.",
+  "A baby who had only known two things — their mother's arms and the sound of explosions. Both of those things were their whole world. They didn't know the explosions weren't normal. They didn't know that most babies fall asleep to quiet. Their nervous system was already wired to flinch at sounds that would have made any adult in a safe country break down.",
+  "Born during a ceasefire that didn't hold. Their parents thought there might be time. There wasn't. The math is simple and brutal — this baby was alive for fewer days than the war has been going on for. The war will continue after them. It was here before them and it will be here after and they were just a small, brief life caught inside it."
 ];
 
 const TODDLER_HUMANITY_M = [
@@ -66,36 +66,36 @@ const TODDLER_HUMANITY_M = [
   'A little boy who wanted to be carried everywhere',
   'A boy who loved water and splashing',
   'A toddler who laughed at funny faces',
-  'A boy just learning to say his mother\'s name',
+  "A boy just learning to say his mother's name",
   'A little boy who needed a nightlight to sleep',
   'A toddler who kept trying to feed himself',
-  'A boy who had just figured out how doors work',
+  'A boy who had just figured out how doors work'
 ];
 
 const TODDLER_HUMANITY_F = [
   'A little girl who was learning to walk',
   'A toddler who wanted to touch everything',
-  'A girl who hid behind her mother\'s legs around strangers',
+  "A girl who hid behind her mother's legs around strangers",
   'A little girl who was afraid of loud noises',
   'A toddler learning her first words',
   'A little girl who danced whenever she heard music',
   'A girl who loved being read to before bed',
   'A toddler who laughed at peekaboo every single time',
-  'A girl just learning to say her father\'s name',
+  "A girl just learning to say her father's name",
   'A little girl who carried a stuffed toy everywhere',
   'A toddler who kept trying to put on her own shoes',
-  'A girl who had just learned to climb stairs',
+  'A girl who had just learned to climb stairs'
 ];
 
 const TODDLER_LOST = [
   'They had a favorite thing — a toy, a blanket, a cup they insisted on using. They were becoming a person with preferences and opinions and a specific laugh that only came out when you did the right thing. They had a word for their mother and a word for water and were working on more. All of it was just starting. All of it stopped.',
-  'Old enough to be scared. Old enough to cry and reach for someone. Old enough to know that the sounds outside were bad even if they couldn\'t say why. Too young to understand any of it. Too young to run. Too young to have done anything to anyone. Two or three years of consciousness. Most of it spent in a war zone.',
+  "Old enough to be scared. Old enough to cry and reach for someone. Old enough to know that the sounds outside were bad even if they couldn't say why. Too young to understand any of it. Too young to run. Too young to have done anything to anyone. Two or three years of consciousness. Most of it spent in a war zone.",
   'Their parents remember everything. The way they smelled after a bath. The sound they made when they were concentrating. The way they fell asleep — always fighting it, always losing. These details will keep their parents up at night for the rest of their lives. The world will not remember any of it.',
-  'They were just starting to become someone. Had a way of walking that was theirs. Had figured out that if you cry a certain way, someone comes. Had started saying no, which is how you know a person is forming — they learn what they don\'t want. They didn\'t want any of this. They didn\'t even know what this was.',
-  'Somewhere there\'s a photo of this child laughing. Maybe in a highchair. Maybe being held by someone who is also now gone. The photo will outlast everyone who knew what that laugh sounded like. It will become just an image of a child — no context, no sound, no smell of baby shampoo. Just pixels. That\'s what\'s left.',
-  'Had maybe two or three years of being a person. Learned to walk. Learned a few words. Figured out that the big people controlled the food and the lights and when things were safe. Trusted them completely. The big people couldn\'t keep them safe. That\'s not the big people\'s fault. But it\'s what happened.',
-  'A toddler doesn\'t know about borders or politics or military objectives. A toddler knows about the cup they like and the song that makes them bounce and whether the person holding them feels scared. They can feel it. They absorb it. This child spent their short life absorbing fear from every adult around them and never understanding why.',
-  'They were somebody\'s everything. The reason someone got up in the morning when getting up made no sense. The reason someone walked miles to find formula or clean water or medicine. The reason someone kept going. And then the reason was gone, and the question of why to keep going got a lot harder to answer.',
+  "They were just starting to become someone. Had a way of walking that was theirs. Had figured out that if you cry a certain way, someone comes. Had started saying no, which is how you know a person is forming — they learn what they don't want. They didn't want any of this. They didn't even know what this was.",
+  "Somewhere there's a photo of this child laughing. Maybe in a highchair. Maybe being held by someone who is also now gone. The photo will outlast everyone who knew what that laugh sounded like. It will become just an image of a child — no context, no sound, no smell of baby shampoo. Just pixels. That's what's left.",
+  "Had maybe two or three years of being a person. Learned to walk. Learned a few words. Figured out that the big people controlled the food and the lights and when things were safe. Trusted them completely. The big people couldn't keep them safe. That's not the big people's fault. But it's what happened.",
+  "A toddler doesn't know about borders or politics or military objectives. A toddler knows about the cup they like and the song that makes them bounce and whether the person holding them feels scared. They can feel it. They absorb it. This child spent their short life absorbing fear from every adult around them and never understanding why.",
+  "They were somebody's everything. The reason someone got up in the morning when getting up made no sense. The reason someone walked miles to find formula or clean water or medicine. The reason someone kept going. And then the reason was gone, and the question of why to keep going got a lot harder to answer."
 ];
 
 const CHILD_HUMANITY_M = [
@@ -118,14 +118,14 @@ const CHILD_HUMANITY_M = [
   'A boy who had just lost his first tooth',
   'A kid who liked to climb everything',
   'A boy who was teaching himself to cook',
-  'A boy who collected interesting rocks',
+  'A boy who collected interesting rocks'
 ];
 
 const CHILD_HUMANITY_F = [
   'A girl who loved drawing',
   'A girl learning to read',
   'A girl who wanted to be a teacher',
-  'A girl who braided her sister\'s hair every morning',
+  "A girl who braided her sister's hair every morning",
   'A kid who was the responsible one',
   'A girl who helped her mother cook',
   'A girl who liked science better than Arabic',
@@ -141,7 +141,7 @@ const CHILD_HUMANITY_F = [
   'A girl who had just started a new grade',
   'A kid who hummed songs while she studied',
   'A girl who was teaching herself English',
-  'A girl who made friendship bracelets for everyone',
+  'A girl who made friendship bracelets for everyone'
 ];
 
 const CHILD_LOST = [
@@ -154,9 +154,9 @@ const CHILD_LOST = [
   'Left behind a bedroom and a backpack and nothing else.',
   'Someone is still waiting for them to come home from school.',
   'Had just figured out who they wanted to be.',
-  'Was going to be somebody. We\'ll never know who.',
+  "Was going to be somebody. We'll never know who.",
   'Every year that should have followed is just empty now.',
-  'The gap they left is bigger than they were.',
+  'The gap they left is bigger than they were.'
 ];
 
 const TEEN_HUMANITY_M = [
@@ -164,7 +164,7 @@ const TEEN_HUMANITY_M = [
   'A young man studying for his exams',
   'A teen who played football with his friends every evening',
   'A teenager who was the oldest child and took it seriously',
-  'A young man who helped his father\'s shop',
+  "A young man who helped his father's shop",
   'A teen who wanted to study engineering',
   'A teenager who spent hours on his phone like every other teenager',
   'A young man who was training to be an electrician',
@@ -172,12 +172,12 @@ const TEEN_HUMANITY_M = [
   'A teenager who looked after his grandmother',
   'A young man who was saving money for something',
   'A teen who had just started shaving',
-  'A teenager who wrote poetry he didn\'t show anyone',
+  "A teenager who wrote poetry he didn't show anyone",
   'A young man who fixed things around the house',
   'A teen who wanted to leave and see the world',
   'A teenager who stayed up late gaming',
   'A young man who was the peacemaker among his friends',
-  'A teen learning to drive',
+  'A teen learning to drive'
 ];
 
 const TEEN_HUMANITY_F = [
@@ -198,20 +198,20 @@ const TEEN_HUMANITY_F = [
   'A teen who wrote her thoughts in a journal',
   'A teenager who stayed up late studying',
   'A young woman who was learning photography',
-  'A teen who organized study groups',
+  'A teen who organized study groups'
 ];
 
 const TEEN_LOST = [
   'Had their whole life ahead of them. Literally.',
-  'Was weeks away from something important. It doesn\'t matter what anymore.',
+  "Was weeks away from something important. It doesn't matter what anymore.",
   'Their friends will carry this. It will shape who they become.',
   'Was old enough to understand what was happening. That makes it worse.',
   'Had plans for next year. Next month. Next week.',
-  'The future they were working toward doesn\'t exist.',
+  "The future they were working toward doesn't exist.",
   'Will never take the exam they studied for.',
   'Someone who was almost an adult. Almost.',
   'Their generation lost one of its own.',
-  'Had just started to figure out who they were.',
+  'Had just started to figure out who they were.'
 ];
 
 const YOUNG_ADULT_HUMANITY_M = [
@@ -227,18 +227,18 @@ const YOUNG_ADULT_HUMANITY_M = [
   'A young father who carried his daughter on his shoulders',
   'A man who drove a taxi and knew every street',
   'A mechanic who could fix anything',
-  'A university graduate who couldn\'t find work',
+  "A university graduate who couldn't find work",
   'A man who delivered bread to shelters',
   'A young husband who called his wife every break',
   'A nurse who worked double shifts',
   'A farmer who grew tomatoes and cucumbers',
   'A man who volunteered to clear rubble',
   'A photographer who documented his neighborhood',
-  'A barber who gave free haircuts to kids',
+  'A barber who gave free haircuts to kids'
 ];
 
 const YOUNG_ADULT_HUMANITY_F = [
-  'A young mother who hadn\'t slept through the night in months',
+  "A young mother who hadn't slept through the night in months",
   'A university student studying pharmacy',
   'A woman who had just gotten married',
   'A young woman working at a hospital',
@@ -251,34 +251,34 @@ const YOUNG_ADULT_HUMANITY_F = [
   'A social worker who checked on displaced families',
   'A woman who organized the shelter she lived in',
   'A university graduate who was tutoring children',
-  'A woman who sewed clothes for her neighbors\' children',
+  "A woman who sewed clothes for her neighbors' children",
   'A mother who walked hours to find clean water',
   'A young wife who kept the family together',
   'A pharmacist who handed out whatever medicine was left',
   'A woman who translated for foreign aid workers',
-  'A journalist covering her own neighborhood\'s destruction',
-  'A woman who carried her baby through three evacuations',
+  "A journalist covering her own neighborhood's destruction",
+  'A woman who carried her baby through three evacuations'
 ];
 
 const YOUNG_ADULT_LOST = [
   'Someone depended on them. Now they depend on nobody.',
   'Was in the middle of building a life. It was half-finished.',
-  'Left behind a family that doesn\'t know how to continue.',
+  "Left behind a family that doesn't know how to continue.",
   'Their children will grow up with a photo instead of a parent.',
   'Was doing what anyone would do — trying to make it work.',
-  'The kind of person a community can\'t replace.',
+  "The kind of person a community can't replace.",
   'Leaves a gap that no one else can fill.',
   'Was exactly the age when life is supposed to start opening up.',
-  'Somebody\'s partner. Somebody\'s provider. Somebody\'s person.',
-  'Had a phone full of messages they\'ll never answer.',
+  "Somebody's partner. Somebody's provider. Somebody's person.",
+  "Had a phone full of messages they'll never answer."
 ];
 
 const ADULT_HUMANITY_M = [
-  'A father who coached his son\'s football team',
+  "A father who coached his son's football team",
   'A construction worker who built half the buildings on his street',
   'A teacher with twenty years of students who remember him',
   'A doctor who stayed when the others left',
-  'A shopkeeper who extended credit to families who couldn\'t pay',
+  "A shopkeeper who extended credit to families who couldn't pay",
   'A father of four who drove a delivery truck',
   'A man who spent his evenings at the mosque',
   'A government clerk who processed paperwork for everyone',
@@ -293,12 +293,12 @@ const ADULT_HUMANITY_M = [
   'A man who organized the neighborhood watch',
   'A tailor who could look at someone and know their measurements',
   'A man who grew mint and basil on his balcony',
-  'A driver who knew every checkpoint and shortcut',
+  'A driver who knew every checkpoint and shortcut'
 ];
 
 const ADULT_HUMANITY_F = [
   'A mother who fed the whole neighborhood during holidays',
-  'A teacher who remembered every student\'s name',
+  "A teacher who remembered every student's name",
   'A nurse who trained three generations of new nurses',
   'A woman who held her family together through everything',
   'A mother of five who ran a catering business from home',
@@ -312,24 +312,24 @@ const ADULT_HUMANITY_F = [
   'A mother who knew which neighbor needed what before they asked',
   'A pharmacist who stayed open through the worst nights',
   'A woman who cooked for funerals and weddings alike',
-  'A mother who kept her children\'s artwork on the wall',
+  "A mother who kept her children's artwork on the wall",
   'A woman who managed the household finances down to the last shekel',
   'A school principal who fought to keep the building open',
   'A mother who packed the same lunch every day and never got tired of it',
-  'A woman who cleaned the clinic because nobody else would',
+  'A woman who cleaned the clinic because nobody else would'
 ];
 
 const ADULT_LOST = [
   'Held things together. Now those things are falling apart.',
   'Was the kind of person other people relied on without thinking about it.',
   'Twenty or thirty years of being needed. Then nothing.',
-  'Their family will figure out how much they did now that they can\'t.',
-  'The neighborhood is quieter without them and it shouldn\'t be.',
+  "Their family will figure out how much they did now that they can't.",
+  "The neighborhood is quieter without them and it shouldn't be.",
   'Was in the middle of a life that made sense.',
   'People keep almost calling them. Then they remember.',
   'Left behind a way of doing things nobody else knows.',
   'Their children will become adults faster than they should.',
-  'Was the load-bearing wall of their family. It shows.',
+  'Was the load-bearing wall of their family. It shows.'
 ];
 
 const ELDER_HUMANITY_M = [
@@ -348,13 +348,13 @@ const ELDER_HUMANITY_M = [
   'An elder who served coffee to anyone who came to the door',
   'A retired fisherman who still smelled like the sea',
   'A grandfather who kept the family tree in his head',
-  'An old man who refused to complain about anything',
+  'An old man who refused to complain about anything'
 ];
 
 const ELDER_HUMANITY_F = [
   'A grandmother who held the family together with cooking and stubbornness',
   'An old woman who still woke up before everyone else',
-  'A grandmother who knew everyone\'s birthday and anniversary',
+  "A grandmother who knew everyone's birthday and anniversary",
   'An elder who had raised her children, then their children',
   'A retired teacher who still corrected grammar',
   'A grandmother who kept the old recipes alive',
@@ -367,7 +367,7 @@ const ELDER_HUMANITY_F = [
   'An elder who kept the family history in stories',
   'A grandmother who had survived things she never talked about',
   'An old woman who still tended her rooftop garden',
-  'A grandmother who braided her granddaughter\'s hair every morning',
+  "A grandmother who braided her granddaughter's hair every morning"
 ];
 
 const ELDER_LOST = [
@@ -380,7 +380,7 @@ const ELDER_LOST = [
   'The stories they carried are gone now too.',
   'Their grandchildren will have to learn the family history from someone else.',
   'Lived long enough to see it all happen again.',
-  'Deserved to rest. Got this instead.',
+  'Deserved to rest. Got this instead.'
 ];
 
 // ── Israel-specific (Oct 7 + soldiers) ──
@@ -400,7 +400,7 @@ const ISRAEL_OCT7_HUMANITY_M = [
   'A kibbutz member who had lived there his entire life',
   'A man who stayed behind so others could escape',
   'A peace activist who had spent years building bridges',
-  'A farmer who knew every tree on his land',
+  'A farmer who knew every tree on his land'
 ];
 
 const ISRAEL_OCT7_HUMANITY_F = [
@@ -413,12 +413,12 @@ const ISRAEL_OCT7_HUMANITY_F = [
   'A mother who carried her baby through the fields',
   'A woman who hid in silence for hours',
   'A young soldier who had been posted to the border a week ago',
-  'A teacher who called her students\' parents one by one',
+  "A teacher who called her students' parents one by one",
   'A woman who had survived worse before and thought she could again',
   'A mother of three who was making Saturday breakfast',
   'A young woman who had plans to travel next month',
   'A woman who opened her door to neighbors running',
-  'A social worker who had spent decades in the community',
+  'A social worker who had spent decades in the community'
 ];
 
 const ISRAEL_SOLDIER_HUMANITY = [
@@ -433,7 +433,7 @@ const ISRAEL_SOLDIER_HUMANITY = [
   'A reservist who had a business waiting for him',
   'A soldier who never wanted to be in a war',
   'A young man who was supposed to finish his service next month',
-  'A combat medic who went in to pull others out',
+  'A combat medic who went in to pull others out'
 ];
 
 const ISRAEL_LOST = [
@@ -442,11 +442,11 @@ const ISRAEL_LOST = [
   'The morning had been normal. That was the last normal morning.',
   'Their family will never feel safe in the same way.',
   'Was a civilian. That word is supposed to mean something.',
-  'The people who loved them are still here. That\'s the hard part.',
+  "The people who loved them are still here. That's the hard part.",
   'There is no political framing that makes this okay.',
   'Someone is still leaving the porch light on.',
-  'Was living their life. That\'s all they were doing.',
-  'Nobody should die like this. Nobody.',
+  "Was living their life. That's all they were doing.",
+  'Nobody should die like this. Nobody.'
 ];
 
 // ── Lebanon-specific ──
@@ -454,19 +454,19 @@ const ISRAEL_LOST = [
 const LEBANON_HUMANITY_M = [
   'A shopkeeper who had run the same store for thirty years',
   'A father who drove a taxi through Beirut traffic every day',
-  'A young man who worked in his family\'s restaurant',
+  "A young man who worked in his family's restaurant",
   'A farmer in the south who grew tobacco and olives',
   'A man who had rebuilt his home after the last war',
   'A fisherman who went out from Tyre every morning',
   'A university student in Beirut who went home for the weekend',
-  'A mechanic who kept the neighborhood\'s cars running',
+  "A mechanic who kept the neighborhood's cars running",
   'A man who worked construction in the Bekaa Valley',
   'An old man who sat on his balcony and watched the border',
   'A teacher at a village school near the blue line',
   'A young man who had just found work after months of searching',
   'A pharmacist in a southern town everyone relied on',
   'A man who refused to leave his village when the warnings came',
-  'A father who was driving his family north when it happened',
+  'A father who was driving his family north when it happened'
 ];
 
 const LEBANON_HUMANITY_F = [
@@ -484,20 +484,20 @@ const LEBANON_HUMANITY_F = [
   'A woman who cooked for displaced families at the shelter',
   'A grandmother who had memorized every prayer',
   'A woman who worked at the municipality and knew every file',
-  'A mother who carried water from the well because the pipes were broken',
+  'A mother who carried water from the well because the pipes were broken'
 ];
 
 const LEBANON_LOST = [
   'Had survived so much already. This was supposed to be over.',
-  'The south lost another person it can\'t replace.',
-  'Was trying to leave. Didn\'t make it.',
+  "The south lost another person it can't replace.",
+  "Was trying to leave. Didn't make it.",
   'Their village will be quieter now. It was already too quiet.',
-  'Had rebuilt before. Won\'t get to rebuild again.',
+  "Had rebuilt before. Won't get to rebuild again.",
   'Left behind a house with the door still open.',
   'Lebanon keeps losing people it needs.',
   'Was not part of any militia. Was just home.',
   'Their family is scattered now. That was the last thing holding them together.',
-  'Another name the world won\'t learn.',
+  "Another name the world won't learn."
 ];
 
 // ── West Bank ──
@@ -511,10 +511,10 @@ const WESTBANK_HUMANITY_M = [
   'A young man who had just finished his shift',
   'A teenager who was on the roof when they came',
   'A man who was standing outside his front door',
-  'An old man who couldn\'t move fast enough',
+  "An old man who couldn't move fast enough",
   'A young man who was driving home',
   'A worker who crossed the checkpoint every morning',
-  'A student who was in the wrong place',
+  'A student who was in the wrong place'
 ];
 
 const WESTBANK_HUMANITY_F = [
@@ -525,7 +525,7 @@ const WESTBANK_HUMANITY_F = [
   'A teacher on her way to work',
   'A woman who was standing by the window',
   'A mother who had just put her children to bed',
-  'An old woman who couldn\'t get to shelter',
+  "An old woman who couldn't get to shelter"
 ];
 
 const WESTBANK_LOST = [
@@ -533,10 +533,10 @@ const WESTBANK_LOST = [
   'Was in the West Bank. That was enough.',
   'Their family will file a report. Nothing will come of it.',
   'Another raid. Another person.',
-  'The checkpoint doesn\'t remember them. Their family does.',
+  "The checkpoint doesn't remember them. Their family does.",
   'Was not armed. Was not wanted. Was just there.',
   'Life under occupation. This is what it looks like.',
-  'Their name will be in a UN report. Nobody will read it.',
+  'Their name will be in a UN report. Nobody will read it.'
 ];
 
 // ── Iran — Protest massacre & airstrike victims ──
@@ -550,13 +550,13 @@ const IRAN_PROTEST_HUMANITY_M = [
   'A taxi driver who gave free rides to protesters fleeing teargas',
   'A mechanic who had never been to a protest before this one',
   'A teacher who told his students to stay home — then went himself',
-  'A young man who carried a woman he didn\'t know away from the gunfire',
+  "A young man who carried a woman he didn't know away from the gunfire",
   'A medical student who set up a first aid station in an alley',
   'A Kurdish man who drove six hours from Sanandaj to join the Tehran march',
   'A father who went to find his son in the crowd and never came home',
   'A construction worker who made signs from scrap cardboard',
   'A software engineer who built the VPN that kept the protest organized',
-  'A baker who handed out bread to marchers from his shop window',
+  'A baker who handed out bread to marchers from his shop window'
 ];
 
 const IRAN_PROTEST_HUMANITY_F = [
@@ -564,7 +564,7 @@ const IRAN_PROTEST_HUMANITY_F = [
   'A university student studying law who wanted to change the system from inside',
   'A nurse who treated wounded protesters in a basement',
   'A young woman who painted "Zan, Zendegi, Azadi" on a wall',
-  'A mother who marched because her daughter couldn\'t afford milk',
+  "A mother who marched because her daughter couldn't afford milk",
   'A grandmother who had marched in 1979 and was marching again',
   'A teenager who organized walkouts at her school',
   'A woman who opened her home to strangers running from the Basij',
@@ -572,9 +572,9 @@ const IRAN_PROTEST_HUMANITY_F = [
   'A journalist who kept filing stories after the internet went dark',
   'A young woman who stood on a car hood and sang',
   'A social worker who refused to be silent about what she had seen',
-  'A student who hadn\'t slept in three days — running between protests and hospital visits',
+  "A student who hadn't slept in three days — running between protests and hospital visits",
   'A woman who distributed water bottles at the front of the march',
-  'A schoolteacher who joined the march still wearing her work clothes',
+  'A schoolteacher who joined the march still wearing her work clothes'
 ];
 
 const IRAN_PROTEST_LOST = [
@@ -583,11 +583,11 @@ const IRAN_PROTEST_LOST = [
   'Their crime was standing in a square. The sentence was immediate.',
   'The regime called them mohareb — enemy of God. They were holding a sign.',
   'Disappeared for three days. Family found them in the morgue.',
-  'Survived 2022. Survived the crackdowns. Didn\'t survive January 8.',
+  "Survived 2022. Survived the crackdowns. Didn't survive January 8.",
   'Their phone was their weapon. A bullet was the answer.',
   'Had never broken a law in their life. Died as a "rioter" in state media.',
   'The blood was still on the pavement when they hosed it down.',
-  'One of fifteen thousand. The regime says three thousand. The graves say more.',
+  'One of fifteen thousand. The regime says three thousand. The graves say more.'
 ];
 
 const IRAN_AIRSTRIKE_HUMANITY_M = [
@@ -600,7 +600,7 @@ const IRAN_AIRSTRIKE_HUMANITY_M = [
   'A boy walking to school when the missile hit the building next door',
   'A husband who shielded his wife with his body in the stairwell',
   'A man driving to work on the highway when the overpressure wave flipped his car',
-  'A janitor at the school in Minab who was setting up chairs for morning assembly',
+  'A janitor at the school in Minab who was setting up chairs for morning assembly'
 ];
 
 const IRAN_AIRSTRIKE_HUMANITY_F = [
@@ -612,22 +612,28 @@ const IRAN_AIRSTRIKE_HUMANITY_F = [
   'A young woman studying for exams in her apartment',
   'A teacher who had gathered the children in the prayer room for safety',
   'A pregnant woman in the maternity ward of a hospital near the target',
-  'An old woman who couldn\'t get down the stairs fast enough',
-  'A teenager who had been posting about the bombs on social media all night',
+  "An old woman who couldn't get down the stairs fast enough",
+  'A teenager who had been posting about the bombs on social media all night'
 ];
 
 const IRAN_AIRSTRIKE_LOST = [
-  'Killed by a bomb made in a country they\'d never visited.',
+  "Killed by a bomb made in a country they'd never visited.",
   'Was not a military target. Was not near a military target. Was home.',
   'The building stood for forty years. It took four seconds to bring it down.',
-  'Collateral damage. That\'s the term. It means a person who didn\'t matter enough.',
+  "Collateral damage. That's the term. It means a person who didn't matter enough.",
   'The strike was "surgical." The funeral was not.',
-  'Their neighborhood was not on any target list. The shrapnel didn\'t know that.',
+  "Their neighborhood was not on any target list. The shrapnel didn't know that.",
   'Survived the earthquake of 2003. Did not survive the airstrike of 2026.',
-  'An American bomb. An Israeli jet. An Iranian life. The math of modern warfare.',
+  'An American bomb. An Israeli jet. An Iranian life. The math of modern warfare.'
 ];
 
-export const REGION_NAMES = ['Gaza', 'West Bank', 'Lebanon', 'Israel', 'Iran'] as const;
+export const REGION_NAMES = [
+  'Gaza',
+  'West Bank',
+  'Lebanon',
+  'Israel',
+  'Iran'
+] as const;
 
 export interface GeneratedEntry {
   humanity: string;
@@ -637,7 +643,12 @@ export interface GeneratedEntry {
   region: string;
 }
 
-export function generateEntry(index: number, age: number, sex: number, region: number): GeneratedEntry {
+export function generateEntry(
+  index: number,
+  age: number,
+  sex: number,
+  region: number
+): GeneratedEntry {
   const isFemale = sex === 1;
   const s = index; // seed
   const regionName = REGION_NAMES[region] || 'Gaza';
@@ -652,7 +663,10 @@ export function generateEntry(index: number, age: number, sex: number, region: n
       // Some young Israeli men are soldiers
       humanity = pick(ISRAEL_SOLDIER_HUMANITY, s);
     } else {
-      humanity = pick(isFemale ? ISRAEL_OCT7_HUMANITY_F : ISRAEL_OCT7_HUMANITY_M, s);
+      humanity = pick(
+        isFemale ? ISRAEL_OCT7_HUMANITY_F : ISRAEL_OCT7_HUMANITY_M,
+        s
+      );
     }
     lost = pick(ISRAEL_LOST, s);
   } else if (region === 2 && age >= 18) {
@@ -669,7 +683,10 @@ export function generateEntry(index: number, age: number, sex: number, region: n
     // Use seed to deterministically split — ~83% protest, ~17% airstrike (matching 15K vs 3.1K ratio)
     const isAirstrike = ((s * 2654435761) >>> 0) % 6 === 0; // ~17%
     if (isAirstrike) {
-      humanity = pick(isFemale ? IRAN_AIRSTRIKE_HUMANITY_F : IRAN_AIRSTRIKE_HUMANITY_M, s);
+      humanity = pick(
+        isFemale ? IRAN_AIRSTRIKE_HUMANITY_F : IRAN_AIRSTRIKE_HUMANITY_M,
+        s
+      );
       lost = pick(IRAN_AIRSTRIKE_LOST, s);
     } else {
       if (age < 13) {
@@ -677,7 +694,10 @@ export function generateEntry(index: number, age: number, sex: number, region: n
         humanity = pick(isFemale ? CHILD_HUMANITY_F : CHILD_HUMANITY_M, s);
         lost = pick(CHILD_LOST, s);
       } else {
-        humanity = pick(isFemale ? IRAN_PROTEST_HUMANITY_F : IRAN_PROTEST_HUMANITY_M, s);
+        humanity = pick(
+          isFemale ? IRAN_PROTEST_HUMANITY_F : IRAN_PROTEST_HUMANITY_M,
+          s
+        );
         lost = pick(IRAN_PROTEST_LOST, s);
       }
     }
@@ -696,7 +716,10 @@ export function generateEntry(index: number, age: number, sex: number, region: n
       humanity = pick(isFemale ? TEEN_HUMANITY_F : TEEN_HUMANITY_M, s);
       lost = pick(TEEN_LOST, s);
     } else if (age < 35) {
-      humanity = pick(isFemale ? YOUNG_ADULT_HUMANITY_F : YOUNG_ADULT_HUMANITY_M, s);
+      humanity = pick(
+        isFemale ? YOUNG_ADULT_HUMANITY_F : YOUNG_ADULT_HUMANITY_M,
+        s
+      );
       lost = pick(YOUNG_ADULT_LOST, s);
     } else if (age < 60) {
       humanity = pick(isFemale ? ADULT_HUMANITY_F : ADULT_HUMANITY_M, s);

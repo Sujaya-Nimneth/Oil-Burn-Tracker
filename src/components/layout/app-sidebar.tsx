@@ -45,7 +45,9 @@ export default function AppSidebar() {
                 </div>
                 <div className='grid flex-1 text-left text-sm leading-tight'>
                   <span className='truncate font-semibold'>OilBurnTracker</span>
-                  <span className='truncate text-xs text-muted-foreground'>Conflict Fire Monitor</span>
+                  <span className='text-muted-foreground truncate text-xs'>
+                    Conflict Fire Monitor
+                  </span>
                 </div>
               </Link>
             </SidebarMenuButton>

@@ -36,7 +36,7 @@ function corsHeaders(): Record<string, string> {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
-    'Content-Type': 'application/json',
+    'Content-Type': 'application/json'
   };
 }
 
@@ -73,7 +73,11 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   }
 
   // Validate
-  if (!body.humanity || body.humanity.length < 10 || body.humanity.length > 280) {
+  if (
+    !body.humanity ||
+    body.humanity.length < 10 ||
+    body.humanity.length > 280
+  ) {
     return Response.json(
       { error: 'Description must be 10-280 characters.' },
       { status: 400, headers: corsHeaders() }
@@ -104,23 +108,23 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     `*Submitted: ${new Date().toISOString()}*`,
     '',
     '> To approve: add the `approved` label. To reject: close the issue.',
-    '> Community reactions help prioritize.',
+    '> Community reactions help prioritize.'
   ].join('\n');
 
   try {
     const res = await fetch(`https://api.github.com/repos/${REPO}/issues`, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${token}`,
-        'Accept': 'application/vnd.github+json',
+        Authorization: `Bearer ${token}`,
+        Accept: 'application/vnd.github+json',
         'User-Agent': 'OilBurnTracker/1.0',
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         title,
         body: issueBody,
-        labels: ['memorial-submission'],
-      }),
+        labels: ['memorial-submission']
+      })
     });
 
     if (!res.ok) {
@@ -132,7 +136,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       );
     }
 
-    const issue = await res.json() as { number: number; html_url: string };
+    const issue = (await res.json()) as { number: number; html_url: string };
     return Response.json(
       { success: true, issueNumber: issue.number, url: issue.html_url },
       { status: 201, headers: corsHeaders() }

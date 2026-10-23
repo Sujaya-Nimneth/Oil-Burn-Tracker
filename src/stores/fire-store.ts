@@ -77,7 +77,10 @@ interface FireStore {
   setError: (error: string | null) => void;
   setLastUpdated: (date: Date) => void;
 
-  setFilter: <K extends keyof FireFilters>(key: K, value: FireFilters[K]) => void;
+  setFilter: <K extends keyof FireFilters>(
+    key: K,
+    value: FireFilters[K]
+  ) => void;
   setSelectedFire: (fire: FireFeature | null) => void;
   setSelectedFacility: (facility: CuratedFire | null) => void;
   setTimelineDate: (date: string) => void;
@@ -114,7 +117,10 @@ export const useFireStore = create<FireStore>((set) => ({
   },
 
   selectedFacility: null,
-  timelineDate: (typeof window !== 'undefined' && sessionStorage.getItem('obt-timeline-date')) || new Date().toISOString().slice(0, 10),
+  timelineDate:
+    (typeof window !== 'undefined' &&
+      sessionStorage.getItem('obt-timeline-date')) ||
+    new Date().toISOString().slice(0, 10),
   isMuted: true,
 
   setFireData: (data) => set({ fireData: data }),
@@ -134,7 +140,9 @@ export const useFireStore = create<FireStore>((set) => ({
 
   setSelectedFacility: (facility) => set({ selectedFacility: facility }),
   setTimelineDate: (date) => {
-    try { sessionStorage.setItem('obt-timeline-date', date); } catch {}
+    try {
+      sessionStorage.setItem('obt-timeline-date', date);
+    } catch {}
     set({ timelineDate: date });
   },
   setIsMuted: (muted) => set({ isMuted: muted }),

@@ -2,7 +2,11 @@
 
 import { useMemo } from 'react';
 import { useFireStore } from '@/stores/fire-store';
-import { getNuclearStatusUpTo, getVisibleFacilityIds, getRecentEventStats } from '@/features/timeline/data/conflict-events';
+import {
+  getNuclearStatusUpTo,
+  getVisibleFacilityIds,
+  getRecentEventStats
+} from '@/features/timeline/data/conflict-events';
 import { getSupplyDisruptionUpTo } from '@/features/fires/data/curated-fires';
 import { computePerilScore, HISTORICAL_ANCHORS } from '@/lib/peril-score';
 
@@ -26,15 +30,15 @@ export default function PerilGauge() {
   }, [timelineDate]);
 
   return (
-    <div className='px-3 md:px-4 py-2 md:py-2.5'>
+    <div className='px-3 py-2 md:px-4 md:py-2.5'>
       {/* Bar + score */}
       <div className='flex items-center gap-3'>
-        <div className='flex-1 h-3 md:h-4 rounded-full bg-gray-200 dark:bg-zinc-800 overflow-hidden relative'>
+        <div className='relative h-3 flex-1 overflow-hidden rounded-full bg-gray-200 md:h-4 dark:bg-zinc-800'>
           <div
             className='h-full rounded-full transition-all duration-500 ease-out'
             style={{
               width: `${peril.score}%`,
-              background: `linear-gradient(90deg, #eab308 0%, #f97316 30%, #ea580c 50%, #ef4444 70%, #dc2626 100%)`,
+              background: `linear-gradient(90deg, #eab308 0%, #f97316 30%, #ea580c 50%, #ef4444 70%, #dc2626 100%)`
             }}
           />
           {/* Historical anchor marks — desktop only */}
@@ -49,15 +53,15 @@ export default function PerilGauge() {
             ))}
           </div>
         </div>
-        <div className='shrink-0 flex items-center gap-2'>
+        <div className='flex shrink-0 items-center gap-2'>
           <span
-            className='text-lg md:text-xl font-black tabular-nums'
+            className='text-lg font-black tabular-nums md:text-xl'
             style={{ color: peril.color }}
           >
             {peril.score}
           </span>
           <span
-            className='text-xs md:text-sm font-bold uppercase tracking-wide hidden md:inline'
+            className='hidden text-xs font-bold tracking-wide uppercase md:inline md:text-sm'
             style={{ color: peril.color }}
           >
             {peril.label}
@@ -66,10 +70,15 @@ export default function PerilGauge() {
       </div>
 
       {/* Historical anchors legend — desktop only */}
-      <div className='hidden md:flex items-center gap-4 mt-0.5'>
-        <span className='text-[10px] text-gray-400 dark:text-zinc-600 uppercase tracking-wider font-bold'>Peril</span>
+      <div className='mt-0.5 hidden items-center gap-4 md:flex'>
+        <span className='text-[10px] font-bold tracking-wider text-gray-400 uppercase dark:text-zinc-600'>
+          Peril
+        </span>
         {HISTORICAL_ANCHORS.map((a) => (
-          <span key={a.label} className='text-[10px] text-gray-400 dark:text-zinc-600'>
+          <span
+            key={a.label}
+            className='text-[10px] text-gray-400 dark:text-zinc-600'
+          >
             {a.label} ({a.score})
           </span>
         ))}

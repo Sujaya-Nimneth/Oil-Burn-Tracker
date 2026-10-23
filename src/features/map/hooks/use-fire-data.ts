@@ -20,7 +20,9 @@ export function useFireData() {
     setError(null);
 
     try {
-      let data: (FireGeoJSON & { metadata?: { error?: string; fetchedAt?: string } }) | null = null;
+      let data:
+        | (FireGeoJSON & { metadata?: { error?: string; fetchedAt?: string } })
+        | null = null;
 
       try {
         const res = await fetch('/api/firms?days=2&source=VIIRS_SNPP_NRT');
@@ -48,7 +50,10 @@ export function useFireData() {
       const enriched: FireGeoJSON = {
         type: 'FeatureCollection',
         features: data.features.map((f: FireFeature) => {
-          const facility = matchFacility(f.properties.latitude, f.properties.longitude);
+          const facility = matchFacility(
+            f.properties.latitude,
+            f.properties.longitude
+          );
           const co2 = estimateCO2(
             f.properties.frp,
             facility?.facilityType || null
@@ -80,7 +85,9 @@ export function useFireData() {
       setFireData(enriched);
       setLastUpdated(new Date());
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to fetch fire data');
+      setError(
+        err instanceof Error ? err.message : 'Failed to fetch fire data'
+      );
     } finally {
       setLoading(false);
     }

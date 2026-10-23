@@ -16,10 +16,12 @@ const META_THEME_COLORS = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://oilburntracker.pages.dev'),
   title: 'OilBurnTracker — Live Conflict Fire & Emissions Tracker',
-  description: 'Track oil fires, facility strikes, and CO₂ emissions in real-time using NASA satellite data. Open source, free, no tracking.',
+  description:
+    'Track oil fires, facility strikes, and CO₂ emissions in real-time using NASA satellite data. Open source, free, no tracking.',
   openGraph: {
     title: 'OilBurnTracker — Live Conflict Fire & Emissions Tracker',
-    description: 'Track oil fires, facility strikes, and CO₂ emissions in real-time using NASA satellite data. Open source, free, no tracking.',
+    description:
+      'Track oil fires, facility strikes, and CO₂ emissions in real-time using NASA satellite data. Open source, free, no tracking.',
     url: 'https://oilburntracker.pages.dev',
     siteName: 'OilBurnTracker',
     images: [
@@ -35,7 +37,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'OilBurnTracker — Live Conflict Fire & Emissions Tracker',
-    description: 'Track oil fires, facility strikes, and CO₂ emissions in real-time using NASA satellite data. Free & open source.',
+    description:
+      'Track oil fires, facility strikes, and CO₂ emissions in real-time using NASA satellite data. Free & open source.',
     images: ['/og-image.png']
   }
 };

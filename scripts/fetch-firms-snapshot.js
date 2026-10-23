@@ -69,8 +69,8 @@ function csvToGeoJSON(csv) {
         daynight: row.daynight || 'D',
         intensity: classifyIntensity(frp),
         estimatedCO2TonsDay: Math.round(frp * 52.7),
-        matchedFacility: null,
-      },
+        matchedFacility: null
+      }
     });
   }
 
@@ -80,25 +80,162 @@ function csvToGeoJSON(csv) {
 function buildBaselineSnapshot() {
   const today = new Date();
   const date0 = today.toISOString().slice(0, 10);
-  const yesterday = new Date(today.getTime() - 86400000).toISOString().slice(0, 10);
+  const yesterday = new Date(today.getTime() - 86400000)
+    .toISOString()
+    .slice(0, 10);
 
   // Representative thermal anomalies across Persian Gulf / Middle East oil & gas facilities
   const hotspots = [
-    { lat: 29.236, lng: 50.321, frp: 245.8, bright: 366.4, conf: 'high', date: date0, time: '1015', dn: 'D' },      // Kharg Island
-    { lat: 29.229, lng: 50.328, frp: 168.2, bright: 354.1, conf: 'high', date: yesterday, time: '2240', dn: 'N' },  // Kharg Island storage
-    { lat: 27.504, lng: 52.008, frp: 312.5, bright: 371.0, conf: 'high', date: date0, time: '0950', dn: 'D' },      // South Pars Gas Field
-    { lat: 27.495, lng: 51.992, frp: 194.0, bright: 358.2, conf: 'high', date: yesterday, time: '2115', dn: 'N' },  // South Pars Phase 14
-    { lat: 25.928, lng: 51.532, frp: 142.6, bright: 349.8, conf: 'high', date: date0, time: '1005', dn: 'D' },      // Ras Laffan LNG
-    { lat: 26.641, lng: 50.161, frp: 88.4, bright: 341.2, conf: 'nominal', date: date0, time: '1010', dn: 'D' },    // Ras Tanura
-    { lat: 29.069, lng: 48.135, frp: 115.3, bright: 345.9, conf: 'high', date: yesterday, time: '2255', dn: 'N' },  // Mina al-Ahmadi
-    { lat: 26.153, lng: 50.612, frp: 64.7, bright: 338.5, conf: 'nominal', date: yesterday, time: '1008', dn: 'D' },// BAPCO Sitra
-    { lat: 25.131, lng: 56.329, frp: 72.1, bright: 339.7, conf: 'nominal', date: date0, time: '0940', dn: 'D' },    // Fujairah Storage Zone
-    { lat: 22.931, lng: 53.881, frp: 95.0, bright: 343.0, conf: 'nominal', date: yesterday, time: '2150', dn: 'N' },// Shah Gas Field
-    { lat: 25.939, lng: 49.683, frp: 54.2, bright: 336.1, conf: 'nominal', date: date0, time: '1012', dn: 'D' },    // Abqaiq
-    { lat: 25.431, lng: 49.585, frp: 48.9, bright: 334.8, conf: 'nominal', date: yesterday, time: '2230', dn: 'N' },// Ghawar
-    { lat: 30.512, lng: 47.781, frp: 134.0, bright: 348.5, conf: 'high', date: date0, time: '1020', dn: 'D' },      // Rumaila / Basra flaring
-    { lat: 31.345, lng: 48.672, frp: 108.6, bright: 344.2, conf: 'high', date: date0, time: '1018', dn: 'D' },      // Ahvaz oil field
-    { lat: 23.865, lng: 53.648, frp: 41.5, bright: 332.9, conf: 'nominal', date: yesterday, time: '0945', dn: 'D' },// Habshan
+    {
+      lat: 29.236,
+      lng: 50.321,
+      frp: 245.8,
+      bright: 366.4,
+      conf: 'high',
+      date: date0,
+      time: '1015',
+      dn: 'D'
+    }, // Kharg Island
+    {
+      lat: 29.229,
+      lng: 50.328,
+      frp: 168.2,
+      bright: 354.1,
+      conf: 'high',
+      date: yesterday,
+      time: '2240',
+      dn: 'N'
+    }, // Kharg Island storage
+    {
+      lat: 27.504,
+      lng: 52.008,
+      frp: 312.5,
+      bright: 371.0,
+      conf: 'high',
+      date: date0,
+      time: '0950',
+      dn: 'D'
+    }, // South Pars Gas Field
+    {
+      lat: 27.495,
+      lng: 51.992,
+      frp: 194.0,
+      bright: 358.2,
+      conf: 'high',
+      date: yesterday,
+      time: '2115',
+      dn: 'N'
+    }, // South Pars Phase 14
+    {
+      lat: 25.928,
+      lng: 51.532,
+      frp: 142.6,
+      bright: 349.8,
+      conf: 'high',
+      date: date0,
+      time: '1005',
+      dn: 'D'
+    }, // Ras Laffan LNG
+    {
+      lat: 26.641,
+      lng: 50.161,
+      frp: 88.4,
+      bright: 341.2,
+      conf: 'nominal',
+      date: date0,
+      time: '1010',
+      dn: 'D'
+    }, // Ras Tanura
+    {
+      lat: 29.069,
+      lng: 48.135,
+      frp: 115.3,
+      bright: 345.9,
+      conf: 'high',
+      date: yesterday,
+      time: '2255',
+      dn: 'N'
+    }, // Mina al-Ahmadi
+    {
+      lat: 26.153,
+      lng: 50.612,
+      frp: 64.7,
+      bright: 338.5,
+      conf: 'nominal',
+      date: yesterday,
+      time: '1008',
+      dn: 'D'
+    }, // BAPCO Sitra
+    {
+      lat: 25.131,
+      lng: 56.329,
+      frp: 72.1,
+      bright: 339.7,
+      conf: 'nominal',
+      date: date0,
+      time: '0940',
+      dn: 'D'
+    }, // Fujairah Storage Zone
+    {
+      lat: 22.931,
+      lng: 53.881,
+      frp: 95.0,
+      bright: 343.0,
+      conf: 'nominal',
+      date: yesterday,
+      time: '2150',
+      dn: 'N'
+    }, // Shah Gas Field
+    {
+      lat: 25.939,
+      lng: 49.683,
+      frp: 54.2,
+      bright: 336.1,
+      conf: 'nominal',
+      date: date0,
+      time: '1012',
+      dn: 'D'
+    }, // Abqaiq
+    {
+      lat: 25.431,
+      lng: 49.585,
+      frp: 48.9,
+      bright: 334.8,
+      conf: 'nominal',
+      date: yesterday,
+      time: '2230',
+      dn: 'N'
+    }, // Ghawar
+    {
+      lat: 30.512,
+      lng: 47.781,
+      frp: 134.0,
+      bright: 348.5,
+      conf: 'high',
+      date: date0,
+      time: '1020',
+      dn: 'D'
+    }, // Rumaila / Basra flaring
+    {
+      lat: 31.345,
+      lng: 48.672,
+      frp: 108.6,
+      bright: 344.2,
+      conf: 'high',
+      date: date0,
+      time: '1018',
+      dn: 'D'
+    }, // Ahvaz oil field
+    {
+      lat: 23.865,
+      lng: 53.648,
+      frp: 41.5,
+      bright: 332.9,
+      conf: 'nominal',
+      date: yesterday,
+      time: '0945',
+      dn: 'D'
+    } // Habshan
   ];
 
   return {
@@ -118,8 +255,8 @@ function buildBaselineSnapshot() {
         daynight: h.dn,
         intensity: classifyIntensity(h.frp),
         estimatedCO2TonsDay: Math.round(h.frp * 52.7),
-        matchedFacility: null,
-      },
+        matchedFacility: null
+      }
     })),
     metadata: {
       source: 'VIIRS_SNPP_NRT_SNAPSHOT',
@@ -127,8 +264,8 @@ function buildBaselineSnapshot() {
       days: 2,
       fetchedAt: today.toISOString(),
       count: hotspots.length,
-      fallback: true,
-    },
+      fallback: true
+    }
   };
 }
 
@@ -144,7 +281,9 @@ function readExistingSnapshot() {
 }
 
 function isOlderThan(snapshot, maxAgeDays) {
-  const fetchedAt = snapshot?.metadata?.fetchedAt ? Date.parse(snapshot.metadata.fetchedAt) : NaN;
+  const fetchedAt = snapshot?.metadata?.fetchedAt
+    ? Date.parse(snapshot.metadata.fetchedAt)
+    : NaN;
   if (Number.isNaN(fetchedAt)) return true;
   return Date.now() - fetchedAt > maxAgeDays * 86400000;
 }
@@ -172,11 +311,13 @@ async function main() {
             bbox: MIDDLE_EAST_BBOX,
             days: 2,
             fetchedAt: new Date().toISOString(),
-            count: geojson.features.length,
-          },
+            count: geojson.features.length
+          }
         };
         fs.writeFileSync(OUT_FILE, JSON.stringify(payload, null, 2) + '\n');
-        console.log(`  Saved ${geojson.features.length} live FIRMS detections to public/firms-latest.json`);
+        console.log(
+          `  Saved ${geojson.features.length} live FIRMS detections to public/firms-latest.json`
+        );
         return;
       }
     } catch (e) {
@@ -191,7 +332,12 @@ async function main() {
   // Fallback path: never overwrite real satellite data with a fabricated
   // baseline — keep the last good live snapshot instead.
   const existing = readExistingSnapshot();
-  if (!forceBaseline && existing && existing.metadata && !existing.metadata.fallback) {
+  if (
+    !forceBaseline &&
+    existing &&
+    existing.metadata &&
+    !existing.metadata.fallback
+  ) {
     console.log(
       `  Keeping existing live snapshot (${existing.features.length} detections, fetched ${existing.metadata.fetchedAt || 'unknown'}) instead of writing baseline data.`
     );
@@ -200,14 +346,24 @@ async function main() {
 
   // Write a baseline only when there is no usable snapshot, or the existing
   // one is itself a baseline that has gone stale.
-  if (existing && existing.metadata && existing.metadata.fallback && !isOlderThan(existing, 3) && !forceBaseline) {
-    console.log(`  Existing baseline snapshot is recent (fetched ${existing.metadata.fetchedAt}) — nothing to do.`);
+  if (
+    existing &&
+    existing.metadata &&
+    existing.metadata.fallback &&
+    !isOlderThan(existing, 3) &&
+    !forceBaseline
+  ) {
+    console.log(
+      `  Existing baseline snapshot is recent (fetched ${existing.metadata.fetchedAt}) — nothing to do.`
+    );
     return;
   }
 
   const snapshot = buildBaselineSnapshot();
   fs.writeFileSync(OUT_FILE, JSON.stringify(snapshot, null, 2) + '\n');
-  console.log(`  Wrote ${snapshot.features.length} baseline thermal detections to public/firms-latest.json`);
+  console.log(
+    `  Wrote ${snapshot.features.length} baseline thermal detections to public/firms-latest.json`
+  );
 }
 
 main().catch(console.error);
