@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useFireStore } from '@/stores/fire-store';
 import { curatedFires } from '@/features/fires/data/curated-fires';
 import {
@@ -29,32 +29,41 @@ export default function StatsBar() {
   const timelineDate = useFireStore((s) => s.timelineDate);
   const setTimelineDate = useFireStore((s) => s.setTimelineDate);
 
-  const todayIso = new Date().toISOString().slice(0, 10);
-  const isHistorical = timelineDate < todayIso;
+  // Read the clock after mount so the build-time prerender never disagrees
+  // with the client (avoids hydration mismatches around midnight).
+  const [todayIso, setTodayIso] = useState('');
+  useEffect(() => {
+    setTodayIso(new Date().toISOString().slice(0, 10));
+  }, []);
+  const isHistorical = todayIso !== '' && timelineDate < todayIso;
 
-  const facilityFires = fireData.features.filter(
-    (f) => f.properties.matchedFacility
-  );
+  // Facility-matched fires and their ids in one pass, memoized so the
+  // derived memos below keep stable dependencies.
+  const { facilityFires, matchedFacilityIds } = useMemo(() => {
+    const fires = fireData.features.filter((f) => f.properties.matchedFacility);
+    const ids = new Set(fires.map((f) => f.properties.matchedFacility!.id));
+    return { facilityFires: fires, matchedFacilityIds: ids };
+  }, [fireData]);
+
   const activeFires = facilityFires.length;
   const totalDetections = fireData.features.length;
-  const satelliteCO2 = facilityFires.reduce(
-    (sum, f) => sum + (f.properties.estimatedCO2TonsDay || 0),
-    0
+  const satelliteCO2 = useMemo(
+    () =>
+      facilityFires.reduce(
+        (sum, f) => sum + (f.properties.estimatedCO2TonsDay || 0),
+        0
+      ),
+    [facilityFires]
   );
 
   // Capacity-based fallback for burning facilities without satellite match (respecting timelineDate)
   const capacityCO2 = useMemo(() => {
-    const matchedIds = new Set(
-      facilityFires
-        .filter((f) => f.properties.matchedFacility)
-        .map((f) => f.properties.matchedFacility!.id)
-    );
     return curatedFires
       .filter(
         (f) =>
           (f.status === 'active_fire' || f.status === 'damaged') &&
           (!f.attackDate || f.attackDate <= timelineDate) &&
-          !matchedIds.has(f.id)
+          !matchedFacilityIds.has(f.id)
       )
       .reduce(
         (sum, f) =>
@@ -68,15 +77,10 @@ export default function StatsBar() {
           ),
         0
       );
-  }, [facilityFires, timelineDate]);
+  }, [matchedFacilityIds, timelineDate]);
 
   const totalCO2 = satelliteCO2 + capacityCO2;
 
-  const matchedFacilityIds = new Set(
-    fireData.features
-      .filter((f) => f.properties.matchedFacility)
-      .map((f) => f.properties.matchedFacility!.id)
-  );
   const facilitiesAffected = matchedFacilityIds.size;
 
   const globalEnergyAtRisk = Array.from(matchedFacilityIds).reduce(
