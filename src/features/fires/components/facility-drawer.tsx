@@ -2,7 +2,6 @@
 
 import { useFireStore } from '@/stores/fire-store';
 import {
-  getCurrentDisruptionLevel,
   type FacilityStatus,
   type ThreatLevel
 } from '@/features/fires/data/curated-fires';
@@ -22,8 +21,6 @@ import {
   IconCircleOff,
   IconCircleCheck,
   IconExternalLink,
-  IconDroplet,
-  IconWorld,
   IconCalendar,
   IconMapPin,
   IconBolt,
@@ -98,7 +95,6 @@ export default function FacilityDrawer() {
   const StatusIcon = config.icon;
   const threat = THREAT_CONFIG[selectedFacility.threatLevel];
   const capacityParts = formatCapacity(selectedFacility);
-  const disruption = getCurrentDisruptionLevel();
 
   return (
     <Drawer

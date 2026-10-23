@@ -52,11 +52,7 @@ function daysSince(from: string, to: string): number {
   );
 }
 
-interface TimelineScrubberProps {
-  onFlyTo?: (lat: number, lng: number, zoom: number) => void;
-}
-
-export default function TimelineScrubber({ onFlyTo }: TimelineScrubberProps) {
+export default function TimelineScrubber() {
   const storedDate = useFireStore((s) => s.timelineDate);
   const setTimelineDate = useFireStore((s) => s.setTimelineDate);
   const foundIndex = ALL_DAYS.indexOf(storedDate);

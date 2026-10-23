@@ -68,15 +68,6 @@ export default function ImpactPage() {
   );
   const oilDelta = impact.oilPriceBbl - BASELINE.oilPriceBbl;
 
-  const totalSeverity =
-    impact.totalMonthlyExtra >= 400
-      ? 'crisis'
-      : impact.totalMonthlyExtra >= 150
-        ? 'severe'
-        : impact.totalMonthlyExtra >= 50
-          ? 'elevated'
-          : 'normal';
-
   const barPct = Math.min(100, (impact.totalMonthlyExtra / 800) * 100);
 
   return (

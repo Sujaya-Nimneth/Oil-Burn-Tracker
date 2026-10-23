@@ -187,14 +187,17 @@ export default function FireMap() {
   const setSelectedFire = useFireStore((s) => s.setSelectedFire);
   const isMuted = useFireStore((s) => s.isMuted);
   const isMutedRef = useRef(isMuted);
-  isMutedRef.current = isMuted;
   const mapState = useFireStore((s) => s.mapState);
 
   // The 'load' handler runs once with a first-render closure; without a ref it
   // would seed the fires source with stale (empty) data when the fetch
-  // resolves before the map finishes loading.
+  // resolves before the map finishes loading. The refs are written in an
+  // effect (not during render) so the map callbacks always read fresh values.
   const fireDataRef = useRef(fireData);
-  fireDataRef.current = fireData;
+  useEffect(() => {
+    isMutedRef.current = isMuted;
+    fireDataRef.current = fireData;
+  }, [isMuted, fireData]);
 
   const initMap = useCallback(() => {
     if (!mapContainer.current || map.current) return;

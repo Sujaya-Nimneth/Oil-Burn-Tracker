@@ -987,7 +987,7 @@ export function getInfrastructureDamageByCountry(
   }
 
   // Add non-oil countries (Lebanon, Yemen) if they have events
-  for (const [country, bbox] of Object.entries(COUNTRY_BBOXES)) {
+  for (const country of Object.keys(COUNTRY_BBOXES)) {
     if (countryFacilities[country]) continue; // already handled
     const ce = countryEvents[country];
     if (!ce || ce.events === 0) continue;

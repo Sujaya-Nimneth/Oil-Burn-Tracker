@@ -17,7 +17,6 @@ import {
   IconExternalLink,
   IconSkull,
   IconMapPin,
-  IconFlame,
   IconDroplet,
   IconReceipt,
   IconAlertTriangle,
@@ -105,12 +104,18 @@ export default function EventFeed({
     });
   }, [timelineDate, selectedCategory, searchQuery]);
 
-  const eventCount = useMemo(() => {
+  // id → event lookup for the IntersectionObserver callback below
+  const eventMap = useMemo(() => {
     const m = new Map<string, ConflictEvent>();
     events.forEach((e) => m.set(e.id, e));
-    eventMapRef.current = m;
-    return events.length;
+    return m;
   }, [events]);
+  const eventCount = events.length;
+
+  // Refs must not be written during render — sync after commit instead
+  useEffect(() => {
+    eventMapRef.current = eventMap;
+  }, [eventMap]);
 
   // Precompute impact stats for each unique date in visible events
   const impactByDate = useMemo(() => {

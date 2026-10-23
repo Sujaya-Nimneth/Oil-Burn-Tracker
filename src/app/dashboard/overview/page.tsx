@@ -190,7 +190,7 @@ export default function OverviewPage() {
         </button>
         <FloatingStats />
         <MapControls onFlyTo={handleFlyTo} />
-        <TimelineScrubber onFlyTo={handleFlyTo} />
+        <TimelineScrubber />
         <FacilityDrawer />
       </div>
     );

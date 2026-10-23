@@ -15,13 +15,6 @@ function pick<T>(arr: T[], seed: number): T {
   return arr[((seed * 2654435761) >>> 0) % arr.length];
 }
 
-function pickTwo<T>(arr: T[], seed: number): [T, T] {
-  const i1 = ((seed * 2654435761) >>> 0) % arr.length;
-  let i2 = ((seed * 1597334677) >>> 0) % arr.length;
-  if (i2 === i1) i2 = (i2 + 1) % arr.length;
-  return [arr[i1], arr[i2]];
-}
-
 // ── Templates by age bucket ──
 
 const INFANT_HUMANITY = [

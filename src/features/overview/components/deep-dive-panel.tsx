@@ -41,7 +41,6 @@ import {
   IconBomb,
   IconCloud,
   IconAlertTriangle,
-  IconSkull,
   IconFlame,
   IconWorld,
   IconBuildingSkyscraper,
