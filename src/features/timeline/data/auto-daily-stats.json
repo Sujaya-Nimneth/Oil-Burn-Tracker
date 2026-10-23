@@ -645,30 +645,15 @@
     "lng": 46
   },
   {
-    "id": "auto-daily-2026-10-08",
-    "date": "2026-10-08",
-    "title": "Ongoing casualties across conflict zones — Day 222",
-    "category": "humanitarian",
-    "description": "Estimated casualties from ongoing operations across Gaza, Lebanon, Iran, and Gulf states. Auto-generated from conflict telemetry trends.",
-    "casualties": {
-      "killed": 267,
-      "injured": 621,
-      "children": 44,
-      "source": "[OBT phase-calibrated conflict telemetry estimate]"
-    },
-    "lat": 31,
-    "lng": 46
-  },
-  {
     "id": "auto-daily-2026-10-09",
     "date": "2026-10-09",
     "title": "Ongoing casualties across conflict zones — Day 223",
     "category": "humanitarian",
     "description": "Estimated casualties from ongoing operations across Gaza, Lebanon, Iran, and Gulf states. Auto-generated from conflict telemetry trends.",
     "casualties": {
-      "killed": 36,
-      "injured": 83,
-      "children": 6,
+      "killed": 303,
+      "injured": 704,
+      "children": 50,
       "source": "[OBT phase-calibrated conflict telemetry estimate]"
     },
     "lat": 31,
@@ -863,6 +848,21 @@
     "casualties": {
       "killed": 49,
       "injured": 114,
+      "children": 8,
+      "source": "[OBT phase-calibrated conflict telemetry estimate]"
+    },
+    "lat": 31,
+    "lng": 46
+  },
+  {
+    "id": "auto-daily-2026-10-23",
+    "date": "2026-10-23",
+    "title": "Ongoing casualties across conflict zones — Day 237",
+    "category": "humanitarian",
+    "description": "Estimated casualties from ongoing operations across Gaza, Lebanon, Iran, and Gulf states. Auto-generated from conflict telemetry trends.",
+    "casualties": {
+      "killed": 45,
+      "injured": 104,
       "children": 8,
       "source": "[OBT phase-calibrated conflict telemetry estimate]"
     },
