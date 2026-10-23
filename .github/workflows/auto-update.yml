@@ -9,6 +9,12 @@ on:
 permissions:
   contents: write
 
+# Serialize data-updating workflows so concurrent runs don't fail their push
+# (shared with update-memorial.yml — one data commit pipeline at a time).
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
 jobs:
   update-data:
     runs-on: ubuntu-latest
@@ -62,4 +68,6 @@ jobs:
           fi
           TODAY=$(date -u +%Y-%m-%d)
           git commit -m "data(auto): scheduled conflict, market, and satellite update ($TODAY)"
+          # Replay on top of anything pushed while this job ran
+          git pull --rebase origin main
           git push origin main
