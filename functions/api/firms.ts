@@ -59,7 +59,8 @@ function corsHeaders(): Record<string, string> {
   };
 }
 
-// Inline CSV→GeoJSON (no imports in CF Functions)
+// Inline CSV→GeoJSON — keep in sync with scripts/fetch-firms-snapshot.js
+// (same parsing, defaults, and CO2 constant; only fetch/caching differs).
 function classifyIntensity(frp: number): string {
   if (frp < 10) return 'low';
   if (frp < 50) return 'medium';
@@ -93,7 +94,7 @@ function csvToGeoJSON(csv: string) {
       properties: {
         latitude: lat,
         longitude: lng,
-        bright_ti4: parseFloat(row.bright_ti4) || 0,
+        bright_ti4: parseFloat(row.bright_ti4) || 335,
         frp,
         confidence: row.confidence || 'nominal',
         acq_date: row.acq_date || '',
@@ -101,7 +102,7 @@ function csvToGeoJSON(csv: string) {
         satellite: row.satellite || '',
         daynight: row.daynight || '',
         intensity: classifyIntensity(frp),
-        estimatedCO2TonsDay: frp * 52.7, // conservative default: mult(0.12, 42.3, 3.10)
+        estimatedCO2TonsDay: Math.round(frp * 52.7), // conservative default: mult(0.12, 42.3, 3.10)
         matchedFacility: null
       }
     });

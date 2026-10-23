@@ -30,6 +30,8 @@ function classifyIntensity(frp) {
   return 'extreme';
 }
 
+// CSV→GeoJSON parsing — keep in sync with functions/api/firms.ts
+// (same parsing, defaults, and CO2 constant; only fetch/caching differs).
 function csvToGeoJSON(csv) {
   const lines = csv.trim().split('\n');
   if (lines.length < 2) return { type: 'FeatureCollection', features: [] };
