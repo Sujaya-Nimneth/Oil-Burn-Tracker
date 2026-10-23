@@ -22,8 +22,12 @@ const ipHits = new Map<string, { count: number; resetAt: number }>();
 
 function isRateLimited(ip: string): boolean {
   const now = Date.now();
+  // Evict expired entries so the map cannot grow without bound
+  for (const [key, entry] of ipHits) {
+    if (now > entry.resetAt) ipHits.delete(key);
+  }
   const entry = ipHits.get(ip);
-  if (!entry || now > entry.resetAt) {
+  if (!entry) {
     ipHits.set(ip, { count: 1, resetAt: now + 3600000 });
     return false;
   }
@@ -88,6 +92,25 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       { error: 'Missing required fields.' },
       { status: 400, headers: corsHeaders() }
     );
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(body.contactEmail)) {
+    return Response.json(
+      { error: 'Please provide a valid contact email.' },
+      { status: 400, headers: corsHeaders() }
+    );
+  }
+  if (body.photoUrl) {
+    try {
+      const parsed = new URL(body.photoUrl);
+      if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') {
+        throw new Error('bad protocol');
+      }
+    } catch {
+      return Response.json(
+        { error: 'Photo URL must be a valid http(s) link.' },
+        { status: 400, headers: corsHeaders() }
+      );
+    }
   }
 
   // Build GitHub issue
