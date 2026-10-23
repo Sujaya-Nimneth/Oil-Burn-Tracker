@@ -6,6 +6,12 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import { useFireStore, type FireFeature, type FireGeoJSON } from '@/stores/fire-store';
 import { curatedFires, type FacilityStatus } from '@/features/fires/data/curated-fires';
 import { allEvents, conflictEvents, CATEGORY_COLORS, type ConflictEvent } from '@/features/timeline/data/conflict-events';
+import {
+  buildEventPopupHtml,
+  buildFacilityPopupHtml,
+  buildFirePopupHtml,
+  getYouTubeId
+} from '@/features/map/utils/popup-html';
 
 // Free satellite tiles — no API key needed
 const SATELLITE_STYLE: maplibregl.StyleSpecification = {
@@ -122,11 +128,6 @@ function buildFacilitiesGeoJSON() {
       }
     }))
   };
-}
-
-function getYouTubeId(url: string): string | null {
-  const m = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|shorts\/))([a-zA-Z0-9_-]{11})/);
-  return m ? m[1] : null;
 }
 
 function buildEventsGeoJSON(events: ConflictEvent[]) {
@@ -542,35 +543,20 @@ export default function FireMap() {
 
         if (popup.current) popup.current.remove();
 
-        const dateStr = props?.date ? new Date(props.date + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
-        let html = `<div style="font-family:system-ui;color:#e0e0e0;background:#1a1a1a;padding:10px;border-radius:8px;box-sizing:border-box">`;
-        html += `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><span style="font-size:11px;color:${props?.color};font-weight:700;text-transform:uppercase">${props?.category?.replace('_', ' ')}</span><span style="font-size:11px;color:#999;font-weight:600">${dateStr}</span></div>`;
-        html += `<div style="font-size:13px;font-weight:800;line-height:1.3;margin-bottom:4px">${props?.title}</div>`;
-        html += `<div style="font-size:11px;opacity:0.75;line-height:1.4;margin-bottom:6px">${props?.description}...</div>`;
-
-        if (props?.killed > 0) {
-          html += `<div style="font-size:11px;color:#ef4444;font-weight:700;margin-bottom:6px">${Number(props.killed).toLocaleString()}+ killed</div>`;
-        }
-        if (props?.displaced > 0) {
-          html += `<div style="font-size:11px;color:#f59e0b;font-weight:600;margin-bottom:6px">${Number(props.displaced).toLocaleString()} displaced</div>`;
-        }
-
-        if (props?.videoId) {
-          const iframeId = `pin-yt-${props.videoId}`;
-          html += `<div style="position:relative;width:100%;padding-bottom:56.25%;margin-bottom:4px;border-radius:6px;overflow:hidden;background:#000">`;
-          html += `<iframe id="${iframeId}" src="https://www.youtube-nocookie.com/embed/${props.videoId}?rel=0&autoplay=1&mute=${isMutedRef.current ? 1 : 0}&enablejsapi=1" `;
-          html += `style="position:absolute;top:0;left:0;width:100%;height:100%;border:none" `;
-          html += `allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>`;
-          html += `</div>`;
-          html += `<button id="pin-vol-toggle" onclick="(function(){var f=document.getElementById('${iframeId}');var b=document.getElementById('pin-vol-toggle');if(!f)return;var m=b.dataset.muted!=='false';var cmd=m?'unMute':'mute';f.contentWindow.postMessage(JSON.stringify({event:'command',func:cmd,args:''}),'*');b.dataset.muted=m?'false':'true';b.textContent=m?'🔊 Sound On':'🔇 Muted'})()" `;
-          html += `data-muted="${isMutedRef.current}" style="display:block;width:100%;padding:6px;margin-bottom:6px;border:1px solid rgba(255,255,255,0.15);border-radius:6px;background:rgba(255,255,255,0.05);color:#e0e0e0;font-size:12px;font-weight:600;cursor:pointer;text-align:center">${isMutedRef.current ? '🔇 Muted — Tap to unmute' : '🔊 Sound On'}</button>`;
-        }
-
-        if (props?.sourceUrl) {
-          html += `<a href="${props.sourceUrl}" target="_blank" rel="noopener noreferrer" style="font-size:11px;color:#60a5fa;text-decoration:underline">Read more</a>`;
-        }
-
-        html += `</div>`;
+        const html = buildEventPopupHtml(
+          {
+            category: props?.category || '',
+            color: props?.color || '#999',
+            date: props?.date,
+            title: props?.title || '',
+            description: props?.description || '',
+            killed: props?.killed ? Number(props.killed) : 0,
+            displaced: props?.displaced ? Number(props.displaced) : 0,
+            videoId: props?.videoId || null,
+            sourceUrl: props?.sourceUrl || ''
+          },
+          isMutedRef.current
+        );
 
         popup.current = new maplibregl.Popup({ closeButton: true, maxWidth: 'calc(100vw - 40px)', className: 'event-popup', offset: 15 })
           .setLngLat(coords)
@@ -598,62 +584,25 @@ export default function FireMap() {
         const ytMedia = linkedEvent?.mediaUrls?.find(media => media.type === 'youtube');
         const videoId = ytMedia ? getYouTubeId(ytMedia.url) : null;
 
-        const statusColors: Record<string, string> = {
-          active_fire: '#ef4444', damaged: '#f97316', monitoring: '#eab308', offline: '#6b7280', operational: '#22c55e'
-        };
-        const statusLabels: Record<string, string> = {
-          active_fire: 'ACTIVE FIRE', damaged: 'DAMAGED', monitoring: 'MONITORING', offline: 'OFFLINE', operational: 'OPERATIONAL'
-        };
-        const typeLabels: Record<string, string> = {
-          refinery: 'Refinery', lng_terminal: 'LNG Terminal', pipeline: 'Pipeline', storage: 'Oil Storage', oil_field: 'Oil Field', gas_field: 'Gas Field', port: 'Port'
-        };
-        const sColor = statusColors[facility.status] || '#999';
-        const dateStr = facility.attackDate ? new Date(facility.attackDate + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
-
-        let html = `<div style="font-family:system-ui;color:#e0e0e0;background:#1a1a1a;padding:10px;border-radius:8px;box-sizing:border-box">`;
-        // Header: status + date
-        html += `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">`;
-        html += `<span style="font-size:10px;color:${sColor};font-weight:700;letter-spacing:0.5px">${statusLabels[facility.status] || facility.status}</span>`;
-        if (dateStr) html += `<span style="font-size:11px;color:#999;font-weight:600">${dateStr}</span>`;
-        html += `</div>`;
-        // Name + type
-        html += `<div style="font-size:14px;font-weight:800;line-height:1.3;margin-bottom:2px">${facility.name}</div>`;
-        html += `<div style="font-size:11px;color:#999;margin-bottom:6px">${facility.country} · ${typeLabels[facility.facilityType] || facility.facilityType}</div>`;
-
-        // Video
-        if (videoId) {
-          const iframeId = `fac-yt-${videoId}`;
-          html += `<div style="position:relative;width:100%;padding-bottom:56.25%;margin-bottom:4px;border-radius:6px;overflow:hidden;background:#000">`;
-          html += `<iframe id="${iframeId}" src="https://www.youtube-nocookie.com/embed/${videoId}?rel=0&autoplay=1&mute=${isMutedRef.current ? 1 : 0}&enablejsapi=1" `;
-          html += `style="position:absolute;top:0;left:0;width:100%;height:100%;border:none" `;
-          html += `allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>`;
-          html += `</div>`;
-          html += `<button id="fac-vol-toggle" onclick="(function(){var f=document.getElementById('${iframeId}');var b=document.getElementById('fac-vol-toggle');if(!f)return;var m=b.dataset.muted!=='false';var cmd=m?'unMute':'mute';f.contentWindow.postMessage(JSON.stringify({event:'command',func:cmd,args:''}),'*');b.dataset.muted=m?'false':'true';b.textContent=m?'\ud83d\udd0a Sound On':'\ud83d\udd07 Muted'})()" `;
-          html += `data-muted="${isMutedRef.current}" style="display:block;width:100%;padding:6px;margin-bottom:6px;border:1px solid rgba(255,255,255,0.15);border-radius:6px;background:rgba(255,255,255,0.05);color:#e0e0e0;font-size:12px;font-weight:600;cursor:pointer;text-align:center">${isMutedRef.current ? '\ud83d\udd07 Muted \u2014 Tap to unmute' : '\ud83d\udd0a Sound On'}</button>`;
-        }
-
-        // Scrolling data ticker
-        const stats: string[] = [];
-        if (facility.capacityBPD > 0) stats.push(`${(facility.capacityBPD / 1000).toFixed(0)}K BPD`);
-        if (facility.percentGlobalCapacity > 0) stats.push(`${facility.percentGlobalCapacity}% global supply`);
-        if (facility.gasCapacityBCFD) stats.push(`${facility.gasCapacityBCFD} BCF/day gas`);
-        if (facility.lngMTPA) stats.push(`${facility.lngMTPA}M tons/yr LNG`);
-        if (facility.storageMBBL) stats.push(`${facility.storageMBBL}M bbl storage`);
-        const ticker = stats.join('  ·  ');
-        if (ticker) {
-          html += `<div style="overflow:hidden;white-space:nowrap;margin-bottom:6px;padding:4px 0;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1)">`;
-          html += `<div style="display:inline-block;animation:tickerScroll 12s linear infinite;font-size:11px;font-weight:700;color:#f59e0b;font-family:monospace">${ticker}  ·  ${ticker}  ·  ${ticker}</div>`;
-          html += `</div>`;
-        }
-
-        // Why it matters + if destroyed
-        html += `<div style="font-size:11px;opacity:0.85;line-height:1.4;margin-bottom:4px">${facility.whyItMatters}</div>`;
-        html += `<div style="font-size:11px;color:#ef4444;line-height:1.4;margin-bottom:6px">${facility.ifDestroyed}</div>`;
-
-        if (facility.newsSourceUrl) {
-          html += `<a href="${facility.newsSourceUrl}" target="_blank" rel="noopener noreferrer" style="font-size:11px;color:#60a5fa;text-decoration:underline">News source</a>`;
-        }
-        html += `</div>`;
+        const html = buildFacilityPopupHtml(
+          {
+            name: facility.name,
+            country: facility.country,
+            facilityType: facility.facilityType,
+            status: facility.status,
+            attackDate: facility.attackDate,
+            capacityBPD: facility.capacityBPD,
+            gasCapacityBCFD: facility.gasCapacityBCFD,
+            lngMTPA: facility.lngMTPA,
+            storageMBBL: facility.storageMBBL,
+            percentGlobalCapacity: facility.percentGlobalCapacity,
+            whyItMatters: facility.whyItMatters,
+            ifDestroyed: facility.ifDestroyed,
+            newsSourceUrl: facility.newsSourceUrl,
+            videoId
+          },
+          isMutedRef.current
+        );
 
         popup.current = new maplibregl.Popup({ closeButton: true, maxWidth: 'calc(100vw - 40px)', className: 'event-popup', offset: 15 })
           .setLngLat(coords)
@@ -703,13 +652,15 @@ export default function FireMap() {
 
         popup.current = new maplibregl.Popup({ closeButton: true, maxWidth: '260px', offset: 15 })
           .setLngLat(coords)
-          .setHTML(`
-            <div style="font-family:system-ui;font-size:12px;color:#e0e0e0;background:#1a1a1a;padding:8px;border-radius:6px">
-              <strong>FRP:</strong> ${Number(props?.frp || 0).toFixed(1)} MW &middot;
-              <strong>CO&#8322;:</strong> ~${Number(props?.estimatedCO2TonsDay || 0).toFixed(0)} t/day<br/>
-              <span style="opacity:0.7">${props?.satellite} &middot; ${props?.acq_date} ${props?.acq_time}</span>
-            </div>
-          `)
+          .setHTML(
+            buildFirePopupHtml({
+              frp: props?.frp ? Number(props.frp) : 0,
+              estimatedCO2TonsDay: props?.estimatedCO2TonsDay ? Number(props.estimatedCO2TonsDay) : 0,
+              satellite: props?.satellite || '',
+              acqDate: props?.acq_date || '',
+              acqTime: props?.acq_time || ''
+            })
+          )
           .addTo(m);
       });
 
@@ -801,40 +752,23 @@ export default function FireMap() {
       if (popup.current) popup.current.remove();
 
       // Build popup HTML — same quality as click handler (matches refinery pin style)
-      const color = CATEGORY_COLORS[ev.category];
-      const dateStr = new Date(ev.date + 'T00:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-      let html = `<div style="font-family:system-ui;color:#e0e0e0;background:#1a1a1a;padding:10px;border-radius:8px;box-sizing:border-box">`;
-      html += `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><span style="font-size:11px;color:${color};font-weight:700;text-transform:uppercase">${ev.category.replace('_', ' ')}</span><span style="font-size:11px;color:#999;font-weight:600">${dateStr}</span></div>`;
-      html += `<div style="font-size:13px;font-weight:800;line-height:1.3;margin-bottom:4px">${ev.title}</div>`;
-      html += `<div style="font-size:11px;opacity:0.75;line-height:1.4;margin-bottom:6px">${ev.description.slice(0, 200)}...</div>`;
-
-      if (ev.casualties?.killed) {
-        html += `<div style="font-size:11px;color:#ef4444;font-weight:700;margin-bottom:6px">${ev.casualties.killed.toLocaleString()}+ killed</div>`;
-      }
-      if (ev.casualties?.displaced) {
-        html += `<div style="font-size:11px;color:#f59e0b;font-weight:600;margin-bottom:6px">${ev.casualties.displaced.toLocaleString()} displaced</div>`;
-      }
-
       const ytMedia = ev.mediaUrls?.find(media => media.type === 'youtube');
-      if (ytMedia) {
-        const vid = getYouTubeId(ytMedia.url);
-        if (vid) {
-          const iframeId = `auto-yt-${vid}`;
-          html += `<div style="position:relative;width:100%;padding-bottom:56.25%;margin-bottom:4px;border-radius:6px;overflow:hidden;background:#000">`;
-          html += `<iframe id="${iframeId}" src="https://www.youtube-nocookie.com/embed/${vid}?rel=0&autoplay=1&mute=${isMutedRef.current ? 1 : 0}&enablejsapi=1" `;
-          html += `style="position:absolute;top:0;left:0;width:100%;height:100%;border:none" `;
-          html += `allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>`;
-          html += `</div>`;
-          html += `<button id="pin-vol-toggle" onclick="(function(){var f=document.getElementById('${iframeId}');var b=document.getElementById('pin-vol-toggle');if(!f)return;var m=b.dataset.muted!=='false';var cmd=m?'unMute':'mute';f.contentWindow.postMessage(JSON.stringify({event:'command',func:cmd,args:''}),'*');b.dataset.muted=m?'false':'true';b.textContent=m?'\ud83d\udd0a Sound On':'\ud83d\udd07 Muted'})()" `;
-          html += `data-muted="${isMutedRef.current}" style="display:block;width:100%;padding:6px;margin-bottom:6px;border:1px solid rgba(255,255,255,0.15);border-radius:6px;background:rgba(255,255,255,0.05);color:#e0e0e0;font-size:12px;font-weight:600;cursor:pointer;text-align:center">${isMutedRef.current ? '\ud83d\udd07 Muted \u2014 Tap to unmute' : '\ud83d\udd0a Sound On'}</button>`;
-        }
-      }
+      const videoId = ytMedia ? getYouTubeId(ytMedia.url) : null;
 
-      if (ev.sourceUrl) {
-        html += `<a href="${ev.sourceUrl}" target="_blank" rel="noopener noreferrer" style="font-size:11px;color:#60a5fa;text-decoration:underline">Read more</a>`;
-      }
-
-      html += `</div>`;
+      const html = buildEventPopupHtml(
+        {
+          category: ev.category,
+          color: CATEGORY_COLORS[ev.category],
+          date: ev.date,
+          title: ev.title,
+          description: ev.description,
+          killed: ev.casualties?.killed || 0,
+          displaced: ev.casualties?.displaced || 0,
+          videoId,
+          sourceUrl: ev.sourceUrl
+        },
+        isMutedRef.current
+      );
 
       popup.current = new maplibregl.Popup({ closeButton: true, maxWidth: 'calc(100vw - 40px)', className: 'event-popup', offset: 15 })
         .setLngLat([ev.lng!, ev.lat!])
