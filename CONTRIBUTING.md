@@ -73,7 +73,7 @@ The `whyItMatters`, `ifDestroyed`, and `supplyChainRole` fields tell the real st
 
 - TypeScript strict mode
 - Tailwind CSS 4 + shadcn/ui components
-- Test that `npm run build` passes before submitting
+- Test that `npm run lint`, `npm run typecheck`, and `npm run build` pass before submitting (`pre-push` runs the last two for you; `pre-commit` auto-formats staged files with Prettier)
 - No API keys in commits
 - Keep PRs focused — one feature or fix per PR
 - Factual, neutral language in all user-facing text

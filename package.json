@@ -10,7 +10,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "tsc --noEmit",
+    "lint": "eslint .",
     "typecheck": "tsc --noEmit && tsc -p functions/tsconfig.json --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -83,13 +83,17 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20260317.1",
+    "@eslint/eslintrc": "^3.3.7",
     "@types/node": "22.10.2",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.2",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.0.10",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1",
-    "tw-animate-css": "^1.2.4"
+    "tw-animate-css": "^1.2.4",
+    "typescript-eslint": "^8.72.0"
   }
 }
