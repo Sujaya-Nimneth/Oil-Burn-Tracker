@@ -20,7 +20,6 @@
     "pages:deploy": "npx wrangler pages deploy out"
   },
   "dependencies": {
-    "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-accordion": "^1.2.3",
     "@radix-ui/react-alert-dialog": "^1.1.6",
     "@radix-ui/react-aspect-ratio": "^1.1.8",
@@ -55,7 +54,6 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
-    "date-fns": "^4.1.0",
     "lucide-react": "^0.476.0",
     "maplibre-gl": "^5.20.2",
     "motion": "^11.17.0",
@@ -68,16 +66,13 @@
     "react-day-picker": "^8.10.1",
     "react-dom": "^19.2.0",
     "react-hook-form": "^7.71.2",
-    "react-responsive": "^10.0.0",
     "recharts": "^2.15.1",
-    "sharp": "^0.33.5",
     "sonner": "^1.7.1",
     "tailwind-merge": "^3.0.2",
     "tailwindcss": "^4.0.0",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "5.7.2",
     "vaul": "^1.1.2",
-    "zod": "^4.1.8",
     "zustand": "^5.0.2"
   },
   "devDependencies": {
