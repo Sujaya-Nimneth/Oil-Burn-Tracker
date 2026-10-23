@@ -20637,6 +20637,23 @@
     ]
   },
   {
+    "id": "auto-trump-accuses-iran-of-making-2026-10-21",
+    "date": "2026-10-21",
+    "title": "Trump accuses Iran of making up fake strikes on ships to drive up oil prices",
+    "category": "military_strike",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZDJacGlyUkJSMmZfSXF5dlBwLU5PRXdsQnZiMFRyRmJTeVU3dHZnQlF6WDVRQ0pjYlFFamxjV3dXU0E4SmZ0SkRUMW1uLVh6cE05SDBLTEhlTnI3T3dwQXNWbFQ3TzFaZ1lZY0RNeVlNSW8zaDN6aDh1NWg2ZTNvTV9OM0xYQQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Xr6Q3e0UgDU",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "auto-iran-war-live-irgc-threatens-2026-10-22",
     "date": "2026-10-22",
     "title": "Iran war live: IRGC threatens US bases if tankers continue ‘illegal’ routes",
@@ -21026,6 +21043,26 @@
     ]
   },
   {
+    "id": "auto-bill-ackman-iran-war-has-2026-10-22",
+    "date": "2026-10-22",
+    "title": "Bill Ackman: Iran war has been 'extremely well-executed'",
+    "category": "escalation",
+    "description": "Via CNBC. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPa2hzX3I0Qm5tcmRZamRkWHVVcGQ2ZEprZ0xPTFFVclM4aVE0VHowdG9fYUpWY2NJTmdKRVJfZnNPRFNJN0VFaXhrTmdKZEpFeXRpaklFdi1ySDhuSEpMdzFSZkFzYi12d3pGZFZrYXhyZkQ1MDYzT0FXdVlCQjRaSXVFLWRxd0ZGeDVsRFhUb2ZCMWdndnhqZkkzZnU?oc=5"
+  },
+  {
+    "id": "auto-ahead-of-us-and-israeli-2026-10-22",
+    "date": "2026-10-22",
+    "title": "Ahead of US and Israeli elections, 3-day joint attack on Iran 'would not radically change conflict'",
+    "category": "military_strike",
+    "description": "Via France 24. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNnAyZHA0SFRoOXBVVXBIVFhRLTRKclFzbVZTTFFUWHVWd2ZBUEM2MVl1REpmUzB1YTFkM3VrT2xLY1NqRm52ZXc4MTlLTzVENU84OENhenJDMEN6ZkVyUV95Z1I0VFE0R1dqa0JGTkpVUnd4aXpOSDJCbUNxek9SXzdMNmVLYXFMb19wd3JNWkRvVHJRQjdlLUw3enVNX282dm4yWXFTRnNOb1ZHamJORnZCbExWbV9VNXpxaGxXem1kQQ?oc=5"
+  },
+  {
     "id": "auto-iran-war-live-trump-hints-2026-10-23",
     "date": "2026-10-23",
     "title": "Iran war live: Trump hints new strikes, says US knocked ‘hell out’ of Iran",
@@ -21041,5 +21078,66 @@
         "label": ""
       }
     ]
+  },
+  {
+    "id": "auto-netanyahu-announces-full-lockdown-of-2026-10-23",
+    "date": "2026-10-23",
+    "title": "Netanyahu announces ‘full lockdown’ of West Bank after shooting in Hebron",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 32.221,
+    "lng": 35.254,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNR3o4M2xXdHNxMjUycUNrdDRtTGNVNGJDcGpzRC1FR2luNGxVU3M2TjhzRE5mc3lQbV9UR1piZmI0b1F2UEtTS1NBQ0kxVXRnS3pySmF2YWhMRjRoZkdTQ1FaNGctOVV5WnR2VnMyZkM0NGljWS1ZNzhibXdENWxDMU1IWWpJR0k3aDRGeHNDNVJFMHYxNDJJZFRHLVgwZDFiM3dlcFdFaEp0Y0k?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=zUJxxAb5Pug",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-are-global-oil-reserves-sufficient-2026-10-23",
+    "date": "2026-10-23",
+    "title": "Are global oil reserves sufficient to withstand renewed US-Iran war?",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPanhMUG9fMjBOTDd6UGhPUnUzd1pPcTVseGNYeEY0SXZPZXpEZVlkREFUVFRUQkgwSEpXQkgwNVF4T29pdGlkWTFpYWhzamt4U1I3NVhUVmxGM3hnUzRCMkdPZm1zb3FjeWRYYXJLcTdaTFNNQTRwS21hbjlibzhoQWt3VG1oaU5tQ2tLRV9IazZqTVFabzBINmNKZ1BSY1lxN0NqVFVFU2ZJYktuTGfSAbMBQVVfeXFMUG1ncnBSWUd5S0F0LUx5c2RSVjk4QlFPbGlpUWEwZkhKSVRoYVhiU2FmS2lLWm5mdTR4LU8xMEJlRF9fU3Nua2psYmM3T1ROdDN4VUltMVc1YUc0OUFOMzI3UzB3ZGdWRHFiX0dEdlpiai1aOWR5eFoyaV9qbEVHQUZ6X3hMelBRVkg2STlzNm0zQ0wxTjhvb1p0R1o5clBGYVc0b3NaeFlHNkp3a3RmY1g2ZVU?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=hmjdxradHcg",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-wars-architects-get-ready-2026-10-23",
+    "date": "2026-10-23",
+    "title": "Iran War’s Architects Get Ready to Face Frustrated Voters",
+    "category": "escalation",
+    "description": "Via Bloomberg.com. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxObWMzdEJ4QWxfZ242VDVLX1hEZGFGS1I4Q3lWN0xGWjhjbXRLaXZzUy1TeW9XeUVzNk1mMnhxUVdHcXdIdVExejhhdllxcWpNN2stQ1FiZGFtaXpZcDUtaEJMWHEwdXlpTjFxNkczWDdKOHU3UWdtUlVzZ1F6eU1yUXBEMjduaUFhem1wZ0pDNkRUUWg5cU51SFhoUHo1T2RJektfSVZLazZqTFBpa1BlZGUxdzdMYmZUVlk1SndUTFlvdDlSZWIxOTRld204a0ktbmRaZldn?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=4n5visLZSmE",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-eisenkot-offers-hawkish-alternative-to-2026-10-23",
+    "date": "2026-10-23",
+    "title": "Eisenkot offers hawkish alternative to Netanyahu for Israeli PM",
+    "category": "escalation",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "lat": 31.768,
+    "lng": 34.851,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxORnVtbXdVNGp0NmpKbTE1MzdLbnRRTEZOLXJmWXRqdTRBSTZ5OVM2SF85V1FwbzA2VlJWYWpGUjRqeURkRVM3X2lPbDJxWFkyUHRGeFFTNmRDMk11SVNTSVVzVjBhUTBCeFgzMGZMeEUwNVdYWW5nYWZnelQxMGtqQk5DY1lPdmR1ajVjVGp0NGloaWFOTC1wdklGVGFEOWs?oc=5"
   }
 ]
