@@ -20,6 +20,7 @@ export default function HeroPills() {
   const timelineDate = useFireStore((s) => s.timelineDate);
   const events = useEventsStore((s) => s.events);
   const eventsWithTelemetry = useEventsStore((s) => s.eventsWithTelemetry);
+  const casualtyAnchors = useEventsStore((s) => s.casualtyAnchors);
 
   const facilityFires = fireData.features.filter(
     (f) => f.properties.matchedFacility
@@ -58,7 +59,11 @@ export default function HeroPills() {
   }, [facilityFires, events, timelineDate]);
 
   const totalCO2 = satelliteCO2 + capacityCO2;
-  const casualties = getCasualtiesUpTo(eventsWithTelemetry, timelineDate);
+  const casualties = getCasualtiesUpTo(
+    eventsWithTelemetry,
+    casualtyAnchors,
+    timelineDate
+  );
   const impact = getConsumerImpactUpTo(timelineDate);
 
   const co2Label =
@@ -96,10 +101,11 @@ export default function HeroPills() {
 
       <div className='h-7 w-px shrink-0 bg-gray-300 dark:bg-zinc-800' />
 
-      {/* Human cost */}
+      {/* Human cost — title carries the documented/estimated split */}
       <a
         href='/dashboard/lost'
         className='group flex min-w-0 items-center gap-1.5'
+        title={`${casualties.documentedKilled.toLocaleString()} documented · ${casualties.estimatedKilled.toLocaleString()} estimated (OBT model)`}
       >
         <IconSkull className='h-5 w-5 shrink-0 animate-pulse text-red-600' />
         <span className='text-base leading-none font-black text-red-600 tabular-nums underline decoration-red-500/60 decoration-2 underline-offset-2 transition-colors group-hover:decoration-red-400 md:text-lg dark:text-red-500'>

@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-10-24T06:55:34.771111+00:00",
+  "regions": {
+    "gaza": {
+      "killed": 72835,
+      "asOf": "2025-06-15"
+    },
+    "west_bank": {
+      "killed": 1127,
+      "asOf": "2026-09-28"
+    },
+    "lebanon": {
+      "killed": 4047,
+      "asOf": "2025-12-30"
+    },
+    "israel": {
+      "killed": 1539,
+      "asOf": "2025-12-16"
+    }
+  },
+  "sources": {
+    "gaza": "Tech for Palestine / Gaza Ministry of Health",
+    "west_bank": "Tech for Palestine / OCHA",
+    "lebanon": "Lebanese Ministry of Health",
+    "israel": "Israeli Government / Emergency Services"
+  }
+}

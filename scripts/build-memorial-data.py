@@ -18,8 +18,14 @@ import json
 import os
 import random
 import urllib.request
+from datetime import datetime, timezone
 
 OUT_PATH = os.path.join(os.path.dirname(__file__), '..', 'public', 'memorial-data.json')
+# Tiny sidecar consumed by the client casualty ledger (src/features/timeline/
+# data/conflict-events.ts): per-region cumulative totals + coverage date.
+# Registry-anchored theaters use these as a floor so curated-event sums can
+# never silently drift below what the registries document.
+ANCHORS_PATH = os.path.join(os.path.dirname(__file__), '..', 'public', 'casualty-anchors.json')
 
 # MoH list update → approximate death date range (end date)
 UPDATE_TO_DATE = {
@@ -234,6 +240,31 @@ def main():
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, 'w') as f:
         json.dump(output, f, separators=(',', ':'))
+
+    # ── Casualty anchors sidecar ──
+    # Per region: documented cumulative killed + the date that figure covers
+    # (latest date present in the region's records).
+    def region_anchor(records):
+        dates = [r[3] for r in records if r[3]]
+        return {
+            'killed': len(records),
+            'asOf': max(dates) if dates else '',
+        }
+
+    anchors = {
+        'generatedAt': datetime.now(timezone.utc).isoformat(),
+        'regions': {
+            'gaza': region_anchor(gaza),
+            'west_bank': region_anchor(west_bank),
+            'lebanon': region_anchor(lebanon),
+            'israel': region_anchor(israel),
+        },
+        'sources': output['sources'],
+    }
+    with open(ANCHORS_PATH, 'w') as f:
+        json.dump(anchors, f, indent=2)
+        f.write('\n')
+    print(f'Anchors written to {ANCHORS_PATH}')
 
     size_kb = os.path.getsize(OUT_PATH) / 1024
     print(f'\nTotal: {len(all_records)} records')

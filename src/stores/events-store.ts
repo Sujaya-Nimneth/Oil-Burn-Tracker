@@ -5,7 +5,8 @@ import { create } from 'zustand';
 import {
   conflictEvents,
   buildUniqueAllEvents,
-  type ConflictEvent
+  type ConflictEvent,
+  type CasualtyAnchors
 } from '@/features/timeline/data/conflict-events';
 
 // ═══ TIMELINE EVENT STORE ═══
@@ -26,6 +27,8 @@ interface EventsStore {
   events: ConflictEvent[];
   /** events + daily casualty telemetry entries (for cumulative totals). */
   eventsWithTelemetry: ConflictEvent[];
+  /** Registry casualty anchors (public/casualty-anchors.json) or null. */
+  casualtyAnchors: CasualtyAnchors | null;
   /** Oldest date in the loaded auto events; scrubbing past it needs the archive. */
   archiveStartDate: string | null;
   archiveLoaded: boolean;
@@ -33,7 +36,11 @@ interface EventsStore {
   status: 'idle' | 'loading' | 'ready' | 'error';
   error: string | null;
   beginLoad: () => void;
-  hydrate: (autoEvents: ConflictEvent[], dailyStats: ConflictEvent[]) => void;
+  hydrate: (
+    autoEvents: ConflictEvent[],
+    dailyStats: ConflictEvent[],
+    anchors: CasualtyAnchors | null
+  ) => void;
   fail: (error: string) => void;
   loadArchive: () => Promise<void>;
 }
@@ -51,17 +58,19 @@ function oldestDate(events: ConflictEvent[]): string | null {
 export const useEventsStore = create<EventsStore>((set, get) => ({
   events: CURATED_ONLY,
   eventsWithTelemetry: CURATED_ONLY,
+  casualtyAnchors: null,
   archiveStartDate: null,
   archiveLoaded: false,
   archiveLoading: false,
   status: 'idle',
   error: null,
   beginLoad: () => set({ status: 'loading' }),
-  hydrate: (autoEvents, dailyStats) => {
+  hydrate: (autoEvents, dailyStats, anchors) => {
     const events = buildUniqueAllEvents([...conflictEvents, ...autoEvents]);
     set({
       events,
       eventsWithTelemetry: [...events, ...dailyStats],
+      casualtyAnchors: anchors,
       archiveStartDate: oldestDate(autoEvents),
       status: 'ready',
       error: null
@@ -105,19 +114,23 @@ export const useEventsStore = create<EventsStore>((set, get) => ({
  * timeline degrades gracefully instead of breaking.
  */
 export function useTimelineData() {
-  const status = useEventsStore((s) => s.status);
-
   useEffect(() => {
-    if (status !== 'idle') return;
+    // Read status from the store, not a reactive dep: beginLoad() flips the
+    // status to 'loading' mid-effect, and with status in the dependency
+    // array React would tear the effect down and cancel the in-flight fetch.
+    if (useEventsStore.getState().status !== 'idle') return;
     const store = useEventsStore.getState();
     store.beginLoad();
     let cancelled = false;
 
     (async () => {
       try {
-        const [eventsRes, statsRes] = await Promise.all([
+        const [eventsRes, statsRes, anchorsRes] = await Promise.all([
           fetch('/auto-events.json'),
-          fetch('/auto-daily-stats.json')
+          fetch('/auto-daily-stats.json'),
+          // Registry anchors are optional — the ledger degrades to
+          // curated-event sums when unavailable
+          fetch('/casualty-anchors.json').catch(() => null)
         ]);
         if (!eventsRes.ok) {
           throw new Error(`auto-events.json returned HTTP ${eventsRes.status}`);
@@ -135,7 +148,26 @@ export function useTimelineData() {
         if (!Array.isArray(autoEvents) || !Array.isArray(dailyStats)) {
           throw new Error('Invalid timeline data payload');
         }
-        store.hydrate(autoEvents, dailyStats);
+
+        let anchors: CasualtyAnchors | null = null;
+        if (anchorsRes && anchorsRes.ok) {
+          try {
+            const parsed = await anchorsRes.json();
+            if (
+              parsed &&
+              typeof parsed === 'object' &&
+              parsed.regions &&
+              typeof parsed.regions === 'object'
+            ) {
+              anchors = parsed as CasualtyAnchors;
+            }
+          } catch {
+            // Malformed anchors — proceed without the registry floor
+          }
+        }
+        if (cancelled) return;
+
+        store.hydrate(autoEvents, dailyStats, anchors);
       } catch (err) {
         if (!cancelled) {
           store.fail(
@@ -148,5 +180,6 @@ export function useTimelineData() {
     return () => {
       cancelled = true;
     };
-  }, [status]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- mount-once by design
+  }, []);
 }

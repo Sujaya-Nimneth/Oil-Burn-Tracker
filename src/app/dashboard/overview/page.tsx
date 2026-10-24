@@ -50,11 +50,16 @@ function FloatingStats() {
   const timelineDate = useFireStore((s) => s.timelineDate);
   const events = useEventsStore((s) => s.events);
   const eventsWithTelemetry = useEventsStore((s) => s.eventsWithTelemetry);
+  const casualtyAnchors = useEventsStore((s) => s.casualtyAnchors);
   const [collapsed, setCollapsed] = useState(false);
 
   const visibleFacilityIds = getVisibleFacilityIds(events, timelineDate);
   const supply = getSupplyDisruptionUpTo(visibleFacilityIds, timelineDate);
-  const casualties = getCasualtiesUpTo(eventsWithTelemetry, timelineDate);
+  const casualties = getCasualtiesUpTo(
+    eventsWithTelemetry,
+    casualtyAnchors,
+    timelineDate
+  );
   const cost = getWarCostUpTo(timelineDate);
   const impact = getConsumerImpactUpTo(timelineDate);
 

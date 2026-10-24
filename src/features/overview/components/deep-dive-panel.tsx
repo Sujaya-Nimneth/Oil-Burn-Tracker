@@ -776,10 +776,15 @@ export default function DeepDivePanel({
   const timelineDate = useFireStore((s) => s.timelineDate);
   const storeEvents = useEventsStore((s) => s.events);
   const eventsWithTelemetry = useEventsStore((s) => s.eventsWithTelemetry);
+  const casualtyAnchors = useEventsStore((s) => s.casualtyAnchors);
 
   const data = useMemo(() => {
     const impact = getConsumerImpactUpTo(timelineDate);
-    const casualties = getCasualtiesUpTo(eventsWithTelemetry, timelineDate);
+    const casualties = getCasualtiesUpTo(
+      eventsWithTelemetry,
+      casualtyAnchors,
+      timelineDate
+    );
     const nuclear = getNuclearStatusUpTo(timelineDate);
     const cost = getWarCostUpTo(timelineDate);
     const facilityIds = getVisibleFacilityIds(storeEvents, timelineDate);
@@ -1425,7 +1430,7 @@ export default function DeepDivePanel({
       yearsOfLifeLost,
       roleCounts
     };
-  }, [timelineDate, storeEvents, eventsWithTelemetry]);
+  }, [timelineDate, storeEvents, eventsWithTelemetry, casualtyAnchors]);
 
   const {
     impact,
@@ -1921,6 +1926,10 @@ export default function DeepDivePanel({
             {casualties.totalDisplaced > 0
               ? `${(casualties.totalDisplaced / 1_000_000).toFixed(1)}M displaced`
               : ''}
+          </div>
+          <div className='mt-1 text-xs text-gray-400/80 tabular-nums dark:text-zinc-600'>
+            {casualties.documentedKilled.toLocaleString()} documented ·{' '}
+            {casualties.estimatedKilled.toLocaleString()} estimated (OBT model)
           </div>
         </a>
 

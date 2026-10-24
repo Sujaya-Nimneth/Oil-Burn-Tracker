@@ -1,3 +1,7 @@
+// Facility countries feed the casualty theater mapping below. Safe import
+// direction: curated-fires deliberately does not import this module.
+import { curatedFires } from '@/features/fires/data/curated-fires';
+
 export type EventCategory =
   | 'military_strike'
   | 'facility_damage'
@@ -4536,6 +4540,90 @@ export function getEventsUpTo(
   return events.filter((e) => e.date <= date);
 }
 
+// ═══ CASUALTY LEDGER ═══
+// Per-theater accounting that keeps documented (registry/sourced) figures
+// and model estimates distinguishable. Policy (see README "Casualty
+// Accounting"): one canonical source per theater, registry anchors act as
+// a floor for registry theaters, the phase model only fills gaps and is
+// always reported as estimated.
+
+export type CasualtyTheater =
+  | 'gaza'
+  | 'west_bank'
+  | 'lebanon'
+  | 'israel'
+  | 'iran'
+  | 'yemen'
+  | 'gulf'
+  | 'other';
+
+export interface RegistryAnchor {
+  killed: number;
+  asOf: string;
+}
+
+export interface CasualtyAnchors {
+  generatedAt?: string;
+  regions: Partial<
+    Record<'gaza' | 'west_bank' | 'lebanon' | 'israel', RegistryAnchor>
+  >;
+  sources?: Record<string, string>;
+}
+
+export const THEATER_LABELS: Record<CasualtyTheater, string> = {
+  gaza: 'Gaza',
+  west_bank: 'West Bank (incl. Jerusalem)',
+  lebanon: 'Lebanon',
+  israel: 'Israel',
+  iran: 'Iran',
+  yemen: 'Yemen',
+  gulf: 'Gulf States',
+  other: 'Other / Unattributed'
+};
+
+const COUNTRY_THEATER: Record<string, CasualtyTheater> = {
+  Iran: 'iran',
+  Israel: 'israel',
+  Iraq: 'gulf',
+  Yemen: 'yemen',
+  Lebanon: 'lebanon',
+  'Saudi Arabia': 'gulf',
+  UAE: 'gulf',
+  Qatar: 'gulf',
+  Kuwait: 'gulf',
+  Bahrain: 'gulf',
+  'International Waters': 'gulf'
+};
+
+const FACILITY_COUNTRY = new Map(curatedFires.map((f) => [f.id, f.country]));
+
+/**
+ * Attribute an event to a casualty theater. Facilities win (their country
+ * is curated); otherwise coordinate boxes in priority order. Jerusalem
+ * events fall under West Bank by the box rule — documented in the policy.
+ */
+export function theaterOf(event: ConflictEvent): CasualtyTheater {
+  if (event.facilityId) {
+    const country = FACILITY_COUNTRY.get(event.facilityId);
+    if (country && COUNTRY_THEATER[country]) return COUNTRY_THEATER[country];
+  }
+  const lat = event.lat;
+  const lng = event.lng;
+  if (lat == null || lng == null) return 'other';
+  if (lat >= 31.15 && lat <= 31.7 && lng >= 33.9 && lng < 34.75) return 'gaza';
+  // Coastal Israel strip (Tel Aviv / central Israel default geocode) —
+  // west of the Green Line, before the West Bank box
+  if (lat >= 31.0 && lat < 32.5 && lng >= 34.2 && lng < 34.86) return 'israel';
+  if (lat >= 31.7 && lat < 33.0 && lng >= 34.86 && lng < 35.7)
+    return 'west_bank';
+  if (lat >= 33.05 && lat < 34.9 && lng >= 34.8 && lng < 36.9) return 'lebanon';
+  if (lat >= 10 && lat < 20 && lng >= 42 && lng < 46.5) return 'yemen';
+  if (lng >= 44 && lng < 65 && lat >= 25 && lat < 40) {
+    return lat >= 29.6 ? 'iran' : 'gulf';
+  }
+  return 'other';
+}
+
 // Oct 7 Hamas attack event IDs (attacks ON Israel, not Israeli response)
 const HAMAS_ATTACK_IDS = new Set([
   'oct7-rockets',
@@ -4558,6 +4646,7 @@ const IRAN_REGIME_IDS = new Set([
 
 export function getCasualtiesUpTo(
   eventsWithTelemetry: ConflictEvent[],
+  anchors: CasualtyAnchors | null,
   date: string
 ) {
   const events = eventsWithTelemetry.filter((e) => e.date <= date);
@@ -4566,10 +4655,25 @@ export function getCasualtiesUpTo(
   let totalDisplaced = 0;
   let totalKilledAdjusted = 0;
   let totalChildren = 0;
+  let estimatedKilled = 0;
   const byParty: Record<
     string,
     { killed: number; injured: number; displaced: number }
   > = {};
+  const byTheater: Record<
+    CasualtyTheater,
+    { killed: number; injured: number; displaced: number; documented: boolean }
+  > = {
+    gaza: { killed: 0, injured: 0, displaced: 0, documented: true },
+    west_bank: { killed: 0, injured: 0, displaced: 0, documented: true },
+    lebanon: { killed: 0, injured: 0, displaced: 0, documented: true },
+    israel: { killed: 0, injured: 0, displaced: 0, documented: true },
+    iran: { killed: 0, injured: 0, displaced: 0, documented: true },
+    yemen: { killed: 0, injured: 0, displaced: 0, documented: true },
+    gulf: { killed: 0, injured: 0, displaced: 0, documented: true },
+    other: { killed: 0, injured: 0, displaced: 0, documented: true }
+  };
+  const anchoredTheaters = new Set<CasualtyTheater>();
 
   for (const event of events) {
     if (!event.casualties) continue;
@@ -4578,6 +4682,19 @@ export function getCasualtiesUpTo(
     const disp = event.casualties.displaced || 0;
     const adj = event.casualties.killedAdjusted || 0;
     const children = event.casualties.children || 0;
+    const isTelemetry = event.id.startsWith('auto-daily-');
+
+    // Ledger split: model telemetry counts as estimated, everything else
+    // (curated, sourced events) as documented
+    if (isTelemetry) {
+      estimatedKilled += k;
+    } else {
+      const theater = theaterOf(event);
+      byTheater[theater].killed += k;
+      byTheater[theater].injured += inj;
+      byTheater[theater].displaced += disp;
+    }
+
     totalKilled += k;
     totalInjured += inj;
     totalDisplaced += disp;
@@ -4644,13 +4761,39 @@ export function getCasualtiesUpTo(
     byParty[party].displaced += disp;
   }
 
+  // Registry floors: for registry-covered theaters, the documented count
+  // can never fall below the registry figure once the timeline passes the
+  // registry's coverage date. Totals only ever reconcile upward.
+  if (anchors?.regions) {
+    for (const key of ['gaza', 'west_bank', 'lebanon', 'israel'] as const) {
+      const anchor = anchors.regions[key];
+      if (!anchor || !anchor.asOf || date < anchor.asOf) continue;
+      const theater = byTheater[key];
+      if (anchor.killed > theater.killed) {
+        totalKilled += anchor.killed - theater.killed;
+        theater.killed = anchor.killed;
+      }
+      anchoredTheaters.add(key);
+    }
+  }
+
+  const documentedKilled = (
+    Object.values(byTheater) as {
+      killed: number;
+    }[]
+  ).reduce((sum, t) => sum + t.killed, 0);
+
   return {
     totalKilled,
+    documentedKilled,
+    estimatedKilled,
+    anchoredTheaters: [...anchoredTheaters],
     totalInjured,
     totalDisplaced,
     totalKilledAdjusted,
     totalChildren,
-    byParty
+    byParty,
+    byTheater
   };
 }
 

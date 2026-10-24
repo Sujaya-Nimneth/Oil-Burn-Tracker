@@ -209,13 +209,15 @@ function DataEntry({
 /* ── Page ── */
 export default function WhatWeLostPage() {
   const eventsWithTelemetry = useEventsStore((s) => s.eventsWithTelemetry);
+  const casualtyAnchors = useEventsStore((s) => s.casualtyAnchors);
   const casualties = useMemo(
     () =>
       getCasualtiesUpTo(
         eventsWithTelemetry,
+        casualtyAnchors,
         new Date().toISOString().slice(0, 10)
       ),
-    [eventsWithTelemetry]
+    [eventsWithTelemetry, casualtyAnchors]
   );
   const total = casualties.totalKilled;
   const { data: records, loading } = useMemorialData();
@@ -289,7 +291,12 @@ export default function WhatWeLostPage() {
         <div className='mx-auto max-w-4xl px-6 md:px-12'>
           {loading ? (
             <div className='py-20 text-center font-mono text-sm text-zinc-700'>
-              {total.toLocaleString()} people
+              <div>{total.toLocaleString()} people</div>
+              <div className='mt-1 text-xs text-zinc-600'>
+                {casualties.documentedKilled.toLocaleString()} documented ·{' '}
+                {casualties.estimatedKilled.toLocaleString()} estimated (OBT
+                model)
+              </div>
             </div>
           ) : (
             <div
@@ -341,6 +348,15 @@ export default function WhatWeLostPage() {
             </div>
             <p className='mt-6 text-lg leading-relaxed text-zinc-500'>
               You just scrolled past every one of them.
+            </p>
+
+            <p className='mt-4 font-mono text-xs text-zinc-700 tabular-nums'>
+              Across all theaters, the documented toll stands at{' '}
+              {casualties.documentedKilled.toLocaleString()} killed
+              (registry-anchored), plus{' '}
+              {casualties.estimatedKilled.toLocaleString()} model-estimated
+              deaths in theaters without registries —{' '}
+              {casualties.totalKilled.toLocaleString()} in total.
             </p>
 
             <div className='mt-10 space-y-2 border-t border-zinc-900 pt-6 text-sm text-zinc-700'>

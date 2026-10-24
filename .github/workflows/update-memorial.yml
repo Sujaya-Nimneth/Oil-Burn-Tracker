@@ -39,9 +39,9 @@ jobs:
         run: |
           git config user.name "Sujaya Nimneth"
           git config user.email "sujayanimneth@outlook.com"
-          git add public/memorial-data.json
+          git add public/memorial-data.json public/casualty-anchors.json
           if git diff --cached --quiet; then
-            echo "No changes to memorial-data.json."
+            echo "No changes to memorial data."
             exit 0
           fi
           TODAY=$(date -u +%Y-%m-%d)

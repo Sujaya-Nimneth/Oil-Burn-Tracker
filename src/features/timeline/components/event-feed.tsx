@@ -10,7 +10,8 @@ import {
   CATEGORY_COLORS,
   CATEGORY_LABELS,
   type ConflictEvent,
-  type EventCategory
+  type EventCategory,
+  type CasualtyAnchors
 } from '../data/conflict-events';
 import { getSupplyDisruptionUpTo } from '@/features/fires/data/curated-fires';
 import { getConsumerImpactUpTo } from '@/features/impact/data/consumer-impact';
@@ -65,9 +66,14 @@ function timeAgo(iso: string): string {
 function getImpactAt(
   date: string,
   events: ConflictEvent[],
-  eventsWithTelemetry: ConflictEvent[]
+  eventsWithTelemetry: ConflictEvent[],
+  casualtyAnchors: CasualtyAnchors | null
 ) {
-  const casualties = getCasualtiesUpTo(eventsWithTelemetry, date);
+  const casualties = getCasualtiesUpTo(
+    eventsWithTelemetry,
+    casualtyAnchors,
+    date
+  );
   const facilityIds = getVisibleFacilityIds(events, date);
   const supply = getSupplyDisruptionUpTo(facilityIds, date);
   const impact = getConsumerImpactUpTo(date);
@@ -87,6 +93,7 @@ export default function EventFeed({
   const setTimelineDate = useFireStore((s) => s.setTimelineDate);
   const allEvents = useEventsStore((s) => s.events);
   const eventsWithTelemetry = useEventsStore((s) => s.eventsWithTelemetry);
+  const casualtyAnchors = useEventsStore((s) => s.casualtyAnchors);
   const [selectedCategory, setSelectedCategory] = useState<
     'all' | EventCategory
   >('all');
@@ -129,10 +136,13 @@ export default function EventFeed({
     const dates = new Set(events.map((e) => e.date));
     const map = new Map<string, ReturnType<typeof getImpactAt>>();
     dates.forEach((d) =>
-      map.set(d, getImpactAt(d, allEvents, eventsWithTelemetry))
+      map.set(
+        d,
+        getImpactAt(d, allEvents, eventsWithTelemetry, casualtyAnchors)
+      )
     );
     return map;
-  }, [events, allEvents, eventsWithTelemetry]);
+  }, [events, allEvents, eventsWithTelemetry, casualtyAnchors]);
 
   // Save & restore scroll position
   useEffect(() => {

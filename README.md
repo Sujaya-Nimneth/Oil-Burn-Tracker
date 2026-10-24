@@ -37,6 +37,18 @@ Every number on this site is either **measured** (sourced) or **modeled** (estim
 
 The OBT Peril Index is an editorial composite (nuclear 40% / supply 35% / escalation 25%) — its weights and historical anchors are judgment calls, documented in `src/lib/peril-score.ts`.
 
+## Casualty Accounting Policy
+
+The headline casualty figure is **documented + estimated across all theaters, with the split always visible**. The ledger (`getCasualtiesUpTo` in `src/features/timeline/data/conflict-events.ts`) applies:
+
+1. **One canonical source per theater — never two counting the same deaths.**
+   - **Registry-anchored theaters** (Gaza, West Bank, Lebanon, Israel): the humanitarian registries behind `/dashboard/lost` are the spine. `public/casualty-anchors.json` (rebuilt weekly by `scripts/build-memorial-data.py`) carries each registry's cumulative count and coverage date. The documented count for these theaters is `max(curated sourced events, registry figure)` — totals reconcile **upward only**, never down.
+   - **Estimated theaters** (Iran, Yemen, Gulf states): no individual-level registries exist. Counts come from curated sourced events plus the phase-calibrated model for periods past the last curated snapshot.
+2. **Model fills registry lag, labeled.** Registries trail events by weeks or months; for dates past a registry's coverage, the phase model continues the count and every such death is reported under "estimated," never "documented."
+3. **Attribution rule.** Events link to a theater via their facility's country when one exists, otherwise by coordinate boxes (documented in `theaterOf`). Jerusalem-area events count under West Bank by the box rule.
+
+Per-theater figures and sources are shown on the Lost page and the deep-dive panel. Corrections to any figure should go through its cited registry or news source first.
+
 ## Currently Tracked
 
 ### Confirmed Strikes
