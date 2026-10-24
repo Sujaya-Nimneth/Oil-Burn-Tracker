@@ -62,7 +62,7 @@
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
     "lucide-react": "^0.476.0",
-    "maplibre-gl": "^5.20.2",
+    "maplibre-gl": "^6.15.0",
     "motion": "^11.17.0",
     "next": "16.0.10",
     "next-themes": "^0.4.6",
