@@ -63,7 +63,7 @@
     "cmdk": "^1.1.1",
     "lucide-react": "^0.476.0",
     "maplibre-gl": "^5.24.0",
-    "motion": "^11.17.0",
+    "motion": "^14.5.0",
     "next": "16.4.2",
     "next-themes": "^0.4.6",
     "nextjs-toploader": "^3.7.15",
