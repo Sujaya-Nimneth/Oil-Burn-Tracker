@@ -42,6 +42,9 @@ export default function TimelineScrubber() {
   const storedDate = useFireStore((s) => s.timelineDate);
   const setTimelineDate = useFireStore((s) => s.setTimelineDate);
   const events = useEventsStore((s) => s.events);
+  const archiveStartDate = useEventsStore((s) => s.archiveStartDate);
+  const archiveLoaded = useEventsStore((s) => s.archiveLoaded);
+  const loadArchive = useEventsStore((s) => s.loadArchive);
   const foundIndex = ALL_DAYS.indexOf(storedDate);
   const [currentIndex, setCurrentIndex] = useState(
     foundIndex >= 0 ? foundIndex : ALL_DAYS.length - 1
@@ -75,6 +78,17 @@ export default function TimelineScrubber() {
   useEffect(() => {
     setTimelineDate(currentDate);
   }, [currentDate, setTimelineDate]);
+
+  // ── Scrubbed past the hot event window → lazily fetch the archive ──
+  useEffect(() => {
+    if (
+      !archiveLoaded &&
+      archiveStartDate !== null &&
+      currentDate < archiveStartDate
+    ) {
+      loadArchive();
+    }
+  }, [currentDate, archiveStartDate, archiveLoaded, loadArchive]);
 
   // ── Sync scrubber when user clicks a pin on the map ──
   useEffect(() => {

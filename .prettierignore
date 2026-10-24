@@ -57,6 +57,7 @@ scripts/seen-headlines.json
 scripts/draft-events.json
 scripts/youtube-latest.json
 public/auto-events.json
+public/auto-events-archive.json
 public/auto-daily-stats.json
 src/features/timeline/data/auto-war-costs.json
 src/features/impact/data/auto-consumer-impact.json

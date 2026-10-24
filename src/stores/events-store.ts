@@ -16,24 +16,44 @@ import {
 // are fetched once at runtime and merged in here, keeping 1MB+ of growing
 // data out of the JS bundle and letting app chunks stay cached across the
 // every-6-hour data commits.
+//
+// auto-events.json only carries the most recent window of headlines; older
+// entries live in public/auto-events-archive.json and are fetched lazily by
+// loadArchive() when the timeline scrubber moves back past the window.
 
 interface EventsStore {
   /** Curated + auto events, deduped and sorted (no daily telemetry). */
   events: ConflictEvent[];
   /** events + daily casualty telemetry entries (for cumulative totals). */
   eventsWithTelemetry: ConflictEvent[];
+  /** Oldest date in the loaded auto events; scrubbing past it needs the archive. */
+  archiveStartDate: string | null;
+  archiveLoaded: boolean;
+  archiveLoading: boolean;
   status: 'idle' | 'loading' | 'ready' | 'error';
   error: string | null;
   beginLoad: () => void;
   hydrate: (autoEvents: ConflictEvent[], dailyStats: ConflictEvent[]) => void;
   fail: (error: string) => void;
+  loadArchive: () => Promise<void>;
 }
 
 const CURATED_ONLY = buildUniqueAllEvents(conflictEvents);
 
-export const useEventsStore = create<EventsStore>((set) => ({
+function oldestDate(events: ConflictEvent[]): string | null {
+  let min: string | null = null;
+  for (const e of events) {
+    if (min === null || e.date < min) min = e.date;
+  }
+  return min;
+}
+
+export const useEventsStore = create<EventsStore>((set, get) => ({
   events: CURATED_ONLY,
   eventsWithTelemetry: CURATED_ONLY,
+  archiveStartDate: null,
+  archiveLoaded: false,
+  archiveLoading: false,
   status: 'idle',
   error: null,
   beginLoad: () => set({ status: 'loading' }),
@@ -42,11 +62,41 @@ export const useEventsStore = create<EventsStore>((set) => ({
     set({
       events,
       eventsWithTelemetry: [...events, ...dailyStats],
+      archiveStartDate: oldestDate(autoEvents),
       status: 'ready',
       error: null
     });
   },
-  fail: (error) => set({ status: 'error', error })
+  fail: (error) => set({ status: 'error', error }),
+  loadArchive: async () => {
+    const { archiveLoaded, archiveLoading, events, eventsWithTelemetry } =
+      get();
+    if (archiveLoaded || archiveLoading) return;
+    set({ archiveLoading: true });
+    try {
+      const res = await fetch('/auto-events-archive.json');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const archived: ConflictEvent[] = await res.json();
+      if (!Array.isArray(archived)) throw new Error('Invalid archive payload');
+
+      // Keep daily telemetry entries out of the merged event list
+      const dailyStats = eventsWithTelemetry.filter((e) =>
+        e.id.startsWith('auto-daily-')
+      );
+      const ids = new Set(events.map((e) => e.id));
+      const extras = archived.filter((e) => !ids.has(e.id));
+      const merged = buildUniqueAllEvents([...events, ...extras]);
+      set({
+        events: merged,
+        eventsWithTelemetry: [...merged, ...dailyStats],
+        archiveLoaded: true,
+        archiveLoading: false
+      });
+    } catch {
+      // Curated events still cover the deep timeline — degrade quietly
+      set({ archiveLoaded: true, archiveLoading: false });
+    }
+  }
 }));
 
 /**

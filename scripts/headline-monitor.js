@@ -16,6 +16,13 @@ const DATA_DIR = __dirname;
 const SEEN_FILE = join(DATA_DIR, 'seen-headlines.json');
 const DRAFTS_FILE = join(DATA_DIR, 'draft-events.json');
 const AUTO_EVENTS_FILE = join(DATA_DIR, '..', 'public', 'auto-events.json');
+const ARCHIVE_FILE = join(DATA_DIR, '..', 'public', 'auto-events-archive.json');
+
+// auto-events.json (fetched by every visitor) keeps only the most recent
+// HOT_WINDOW_DAYS of events; older entries move to auto-events-archive.json,
+// which the client fetches lazily when the timeline scrubber goes back
+// past the hot window. Keeps the runtime payload bounded forever.
+const HOT_WINDOW_DAYS = 120;
 
 const ARGS = new Set(process.argv.slice(2));
 const SHOULD_PUBLISH = ARGS.has('--publish') || !ARGS.has('--drafts-only');
@@ -501,6 +508,38 @@ function saveAutoEvents(events) {
   writeFileSync(AUTO_EVENTS_FILE, JSON.stringify(events, null, 2) + '\n');
 }
 
+// Split events into a bounded hot window and a cumulative archive.
+// The hot file is what every site visitor fetches on load; entries older
+// than HOT_WINDOW_DAYS move to the archive (fetched by the client only
+// when the timeline is scrubbed back that far).
+function capAndArchive(events) {
+  const cutoff = new Date(Date.now() - HOT_WINDOW_DAYS * 86400000)
+    .toISOString()
+    .slice(0, 10);
+  const hot = events.filter((e) => e.date >= cutoff);
+  const agedOut = events.filter((e) => e.date < cutoff);
+  if (agedOut.length === 0) return { hot, archived: 0 };
+
+  let archive = [];
+  if (existsSync(ARCHIVE_FILE)) {
+    try {
+      archive = JSON.parse(readFileSync(ARCHIVE_FILE, 'utf-8'));
+    } catch {
+      archive = [];
+    }
+  }
+  const ids = new Set(archive.map((e) => e.id));
+  for (const e of agedOut) {
+    if (!ids.has(e.id)) {
+      archive.push(e);
+      ids.add(e.id);
+    }
+  }
+  archive.sort((a, b) => a.date.localeCompare(b.date));
+  writeFileSync(ARCHIVE_FILE, JSON.stringify(archive, null, 2) + '\n');
+  return { hot, archived: agedOut.length };
+}
+
 function toPublishedEvent(draft) {
   const cleanTitle = cleanHeadlineTitle(draft.title, draft.source);
   const geo =
@@ -662,9 +701,15 @@ async function main() {
   if (SHOULD_PUBLISH && candidatesToPublish.length > 0) {
     const publishedCount = mergeIntoAutoEvents(autoEvents, candidatesToPublish);
     if (publishedCount > 0) {
-      saveAutoEvents(autoEvents);
+      const { hot, archived } = capAndArchive(autoEvents);
+      saveAutoEvents(hot);
+      if (archived > 0) {
+        console.log(
+          `  Archived ${archived} event(s) older than ${HOT_WINDOW_DAYS} days to auto-events-archive.json (${hot.length} hot remaining)`
+        );
+      }
       console.log(
-        `  Published ${publishedCount} verified event(s) to auto-events.json`
+        `  Published ${publishedCount} verified event(s); auto-events.json now holds ${hot.length} event(s)`
       );
     }
   }

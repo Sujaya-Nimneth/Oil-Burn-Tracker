@@ -55,6 +55,7 @@ jobs:
           git config user.email "sujayanimneth@outlook.com"
           git add \
             public/auto-events.json \
+            public/auto-events-archive.json \
             src/features/impact/data/auto-consumer-impact.json \
             src/features/timeline/data/auto-war-costs.json \
             public/auto-daily-stats.json \
