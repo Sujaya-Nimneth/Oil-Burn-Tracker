@@ -181,6 +181,8 @@ export default function FireMap() {
   const map = useRef<maplibregl.Map | null>(null);
   const popup = useRef<maplibregl.Popup | null>(null);
   const animFrameRef = useRef<number | null>(null);
+  const animSyncRef = useRef<(() => void) | null>(null);
+  const animCleanupRef = useRef<(() => void) | null>(null);
 
   const fireData = useFireStore((s) => s.fireData);
   const layers = useFireStore((s) => s.layers);
@@ -196,11 +198,15 @@ export default function FireMap() {
   // effect (not during render) so the map callbacks always read fresh values.
   const fireDataRef = useRef(fireData);
   const eventsRef = useRef(events);
+  const layersRef = useRef(layers);
   useEffect(() => {
     isMutedRef.current = isMuted;
     fireDataRef.current = fireData;
     eventsRef.current = events;
-  }, [isMuted, fireData, events]);
+    layersRef.current = layers;
+    // Fires layer toggled → start/stop the pulse animation accordingly
+    animSyncRef.current?.();
+  }, [isMuted, fireData, events, layers]);
 
   const initMap = useCallback(() => {
     if (!mapContainer.current || map.current) return;
@@ -706,6 +712,8 @@ export default function FireMap() {
       });
 
       // ── Fire pulse + smoke drift animation ──
+      // Runs only while the fires layer is visible, the tab is foregrounded,
+      // and the user hasn't asked for reduced motion.
       let animFrame = 0;
       const animateFires = () => {
         if (!map.current) return;
@@ -724,7 +732,34 @@ export default function FireMap() {
         } catch {}
         animFrameRef.current = requestAnimationFrame(animateFires);
       };
-      animateFires();
+      const startAnim = () => {
+        if (animFrameRef.current === null) {
+          animFrameRef.current = requestAnimationFrame(animateFires);
+        }
+      };
+      const stopAnim = () => {
+        if (animFrameRef.current !== null) {
+          cancelAnimationFrame(animFrameRef.current);
+          animFrameRef.current = null;
+        }
+      };
+      const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const shouldAnimate = () =>
+        layersRef.current.markers && !document.hidden && !motionQuery.matches;
+      const syncAnim = () => {
+        if (shouldAnimate()) startAnim();
+        else stopAnim();
+      };
+      animSyncRef.current = syncAnim;
+      const onMotionChange = () => syncAnim();
+      const onVisibility = () => syncAnim();
+      motionQuery.addEventListener('change', onMotionChange);
+      document.addEventListener('visibilitychange', onVisibility);
+      animCleanupRef.current = () => {
+        motionQuery.removeEventListener('change', onMotionChange);
+        document.removeEventListener('visibilitychange', onVisibility);
+      };
+      syncAnim();
 
       // ── Click handlers ──
 
@@ -914,6 +949,9 @@ export default function FireMap() {
         cancelAnimationFrame(animFrameRef.current);
         animFrameRef.current = null;
       }
+      animCleanupRef.current?.();
+      animCleanupRef.current = null;
+      animSyncRef.current = null;
       if (map.current) {
         map.current.remove();
         map.current = null;
