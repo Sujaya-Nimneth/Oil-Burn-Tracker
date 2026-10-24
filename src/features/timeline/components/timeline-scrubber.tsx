@@ -1,12 +1,9 @@
 'use client';
 
 import { useState, useCallback, useEffect, useMemo } from 'react';
-import {
-  allEvents,
-  CATEGORY_COLORS,
-  type ConflictEvent
-} from '../data/conflict-events';
+import { CATEGORY_COLORS, type ConflictEvent } from '../data/conflict-events';
 import { useFireStore } from '@/stores/fire-store';
+import { useEventsStore } from '@/stores/events-store';
 
 // ── Build day-by-day date array from first event to today (UTC-safe) ──
 function buildDayArray(): string[] {
@@ -23,17 +20,6 @@ function buildDayArray(): string[] {
 }
 
 const ALL_DAYS = buildDayArray();
-
-// Build a lookup: date → events on that date
-const EVENTS_BY_DATE = new Map<string, ConflictEvent[]>();
-for (const event of allEvents) {
-  const existing = EVENTS_BY_DATE.get(event.date) || [];
-  existing.push(event);
-  EVENTS_BY_DATE.set(event.date, existing);
-}
-
-// Dates that have events (for tick marks)
-const EVENT_DATES = Array.from(EVENTS_BY_DATE.keys()).sort();
 
 function formatDate(iso: string): string {
   const d = new Date(iso + 'T00:00:00');
@@ -55,14 +41,28 @@ function daysSince(from: string, to: string): number {
 export default function TimelineScrubber() {
   const storedDate = useFireStore((s) => s.timelineDate);
   const setTimelineDate = useFireStore((s) => s.setTimelineDate);
+  const events = useEventsStore((s) => s.events);
   const foundIndex = ALL_DAYS.indexOf(storedDate);
   const [currentIndex, setCurrentIndex] = useState(
     foundIndex >= 0 ? foundIndex : ALL_DAYS.length - 1
   );
 
   const currentDate = ALL_DAYS[currentIndex];
-  const todayEvents = EVENTS_BY_DATE.get(currentDate) || [];
   const dayNumber = daysSince('2023-10-07', currentDate);
+
+  // Lookup: date → events on that date (for summary + tick marks)
+  const { eventsByDate, eventDates } = useMemo(() => {
+    const byDate = new Map<string, ConflictEvent[]>();
+    for (const event of events) {
+      const existing = byDate.get(event.date) || [];
+      existing.push(event);
+      byDate.set(event.date, existing);
+    }
+    const dates = Array.from(byDate.keys()).sort();
+    return { eventsByDate: byDate, eventDates: dates };
+  }, [events]);
+
+  const todayEvents = eventsByDate.get(currentDate) || [];
 
   // ── Sync timeline date to global store (and update local index when store changes externally) ──
   useEffect(() => {
@@ -80,7 +80,8 @@ export default function TimelineScrubber() {
   useEffect(() => {
     const handler = (e: Event) => {
       const { eventId } = (e as CustomEvent).detail;
-      const ev = allEvents.find((c) => c.id === eventId);
+      // Vanilla store access — the handler must not capture a stale list
+      const ev = useEventsStore.getState().events.find((c) => c.id === eventId);
       if (!ev) return;
       const idx = ALL_DAYS.indexOf(ev.date);
       if (idx >= 0) setCurrentIndex(idx);
@@ -98,17 +99,17 @@ export default function TimelineScrubber() {
 
   // Event tick positions on the slider
   const eventTicks = useMemo(() => {
-    return EVENT_DATES.map((date) => {
+    return eventDates.map((date) => {
       const idx = ALL_DAYS.indexOf(date);
       const pct = (idx / (ALL_DAYS.length - 1)) * 100;
-      const events = EVENTS_BY_DATE.get(date) || [];
+      const eventsOnDate = eventsByDate.get(date) || [];
       const color =
-        events.length > 0
-          ? CATEGORY_COLORS[events[events.length - 1].category]
+        eventsOnDate.length > 0
+          ? CATEGORY_COLORS[eventsOnDate[eventsOnDate.length - 1].category]
           : '#999';
       return { date, pct, color };
     });
-  }, []);
+  }, [eventDates, eventsByDate]);
 
   const eventSummary =
     todayEvents.length > 0 ? todayEvents.map((e) => e.title).join(' | ') : null;

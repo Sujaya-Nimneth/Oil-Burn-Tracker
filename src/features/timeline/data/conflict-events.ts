@@ -1,6 +1,3 @@
-import autoEventsJson from './auto-events.json';
-import autoDailyStatsJson from './auto-daily-stats.json';
-
 export type EventCategory =
   | 'military_strike'
   | 'facility_damage'
@@ -4496,12 +4493,13 @@ export const conflictEvents: ConflictEvent[] = [
   }
 ];
 
-// ═══ AUTO-PUBLISHED EVENTS (from headline monitor pipeline) ═══
-const autoEvents: ConflictEvent[] = autoEventsJson as ConflictEvent[];
-// ═══ AUTO DAILY STATS (from daily-stats-update.js — casualty estimates) ═══
-const autoDailyStats: ConflictEvent[] = autoDailyStatsJson as ConflictEvent[];
+// ═══ MERGE LOGIC ═══
+// Auto-published events (public/auto-events.json) and daily casualty
+// telemetry (public/auto-daily-stats.json) are fetched at runtime by
+// useTimelineData() and merged with the curated events through the
+// events store — keeping 1MB+ of growing data out of the JS bundle.
 
-function buildUniqueAllEvents(events: ConflictEvent[]): ConflictEvent[] {
+export function buildUniqueAllEvents(events: ConflictEvent[]): ConflictEvent[] {
   const seenKeys = new Set<string>();
   const usedIds = new Map<string, number>();
   const result: ConflictEvent[] = [];
@@ -4527,20 +4525,15 @@ function buildUniqueAllEvents(events: ConflictEvent[]): ConflictEvent[] {
   );
 }
 
-export const allEvents: ConflictEvent[] = buildUniqueAllEvents([
-  ...conflictEvents,
-  ...autoEvents
-]);
-
-const allEventsWithTelemetry: ConflictEvent[] = [
-  ...allEvents,
-  ...autoDailyStats
-];
-
 // ═══ HELPER FUNCTIONS ═══
+// Pure functions over the merged event arrays held in the events store
+// (src/stores/events-store.ts). Pass the arrays explicitly.
 
-export function getEventsUpTo(date: string): ConflictEvent[] {
-  return allEvents.filter((e) => e.date <= date);
+export function getEventsUpTo(
+  events: ConflictEvent[],
+  date: string
+): ConflictEvent[] {
+  return events.filter((e) => e.date <= date);
 }
 
 // Oct 7 Hamas attack event IDs (attacks ON Israel, not Israeli response)
@@ -4563,8 +4556,11 @@ const IRAN_REGIME_IDS = new Set([
   'iran-protests-suppressed'
 ]);
 
-export function getCasualtiesUpTo(date: string) {
-  const events = allEventsWithTelemetry.filter((e) => e.date <= date);
+export function getCasualtiesUpTo(
+  eventsWithTelemetry: ConflictEvent[],
+  date: string
+) {
+  const events = eventsWithTelemetry.filter((e) => e.date <= date);
   let totalKilled = 0;
   let totalInjured = 0;
   let totalDisplaced = 0;
@@ -4658,9 +4654,12 @@ export function getCasualtiesUpTo(date: string) {
   };
 }
 
-export function getVisibleFacilityIds(date: string): Set<string> {
+export function getVisibleFacilityIds(
+  events: ConflictEvent[],
+  date: string
+): Set<string> {
   const ids = new Set<string>();
-  for (const event of allEvents) {
+  for (const event of events) {
     if (event.date <= date && event.facilityId) {
       ids.add(event.facilityId);
     }
@@ -4668,8 +4667,8 @@ export function getVisibleFacilityIds(date: string): Set<string> {
   return ids;
 }
 
-export function getTimelineDates(): string[] {
-  const dates = Array.from(new Set(allEvents.map((e) => e.date)));
+export function getTimelineDates(events: ConflictEvent[]): string[] {
+  const dates = Array.from(new Set(events.map((e) => e.date)));
   return dates.sort();
 }
 
@@ -4770,8 +4769,8 @@ export function getNuclearStatusUpTo(date: string): NuclearStatus | null {
   return latest;
 }
 
-export function getRecentEventStats(date: string) {
-  const events = getEventsUpTo(date);
+export function getRecentEventStats(events: ConflictEvent[], date: string) {
+  const eventsUpTo = getEventsUpTo(events, date);
   const dateMs = new Date(date + 'T23:59:59').getTime();
   const severeCategories = new Set([
     'escalation',
@@ -4782,7 +4781,7 @@ export function getRecentEventStats(date: string) {
   let last7 = 0;
   let severeLast30 = 0;
 
-  for (const e of events) {
+  for (const e of eventsUpTo) {
     const diff = (dateMs - new Date(e.date + 'T00:00:00').getTime()) / 86400000;
     if (diff <= 7) last7++;
     if (diff <= 30 && severeCategories.has(e.category)) severeLast30++;
@@ -4791,6 +4790,6 @@ export function getRecentEventStats(date: string) {
   return {
     eventsLast7: last7,
     severeEventsLast30: severeLast30,
-    totalEvents: events.length
+    totalEvents: eventsUpTo.length
   };
 }

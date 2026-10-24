@@ -2,6 +2,7 @@
 
 import { useMemo } from 'react';
 import { useFireStore } from '@/stores/fire-store';
+import { useEventsStore } from '@/stores/events-store';
 import {
   getNuclearStatusUpTo,
   getVisibleFacilityIds,
@@ -12,12 +13,13 @@ import { computePerilScore, HISTORICAL_ANCHORS } from '@/lib/peril-score';
 
 export default function PerilGauge() {
   const timelineDate = useFireStore((s) => s.timelineDate);
+  const events = useEventsStore((s) => s.events);
 
   const peril = useMemo(() => {
     const nuclear = getNuclearStatusUpTo(timelineDate);
-    const facilityIds = getVisibleFacilityIds(timelineDate);
+    const facilityIds = getVisibleFacilityIds(events, timelineDate);
     const supply = getSupplyDisruptionUpTo(facilityIds, timelineDate);
-    const stats = getRecentEventStats(timelineDate);
+    const stats = getRecentEventStats(events, timelineDate);
 
     return computePerilScore(
       nuclear,
@@ -27,7 +29,7 @@ export default function PerilGauge() {
       stats.severeEventsLast30,
       stats.totalEvents
     );
-  }, [timelineDate]);
+  }, [events, timelineDate]);
 
   return (
     <div className='px-3 py-2 md:px-4 md:py-2.5'>

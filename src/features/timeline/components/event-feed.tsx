@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useRef, useEffect, useCallback } from 'react';
 import { useFireStore } from '@/stores/fire-store';
+import { useEventsStore } from '@/stores/events-store';
 import {
   getEventsUpTo,
   getCasualtiesUpTo,
@@ -61,9 +62,13 @@ function timeAgo(iso: string): string {
 }
 
 // Compute cumulative impact stats at a given date
-function getImpactAt(date: string) {
-  const casualties = getCasualtiesUpTo(date);
-  const facilityIds = getVisibleFacilityIds(date);
+function getImpactAt(
+  date: string,
+  events: ConflictEvent[],
+  eventsWithTelemetry: ConflictEvent[]
+) {
+  const casualties = getCasualtiesUpTo(eventsWithTelemetry, date);
+  const facilityIds = getVisibleFacilityIds(events, date);
   const supply = getSupplyDisruptionUpTo(facilityIds, date);
   const impact = getConsumerImpactUpTo(date);
   return { casualties, supply, impact };
@@ -80,6 +85,8 @@ export default function EventFeed({
 }: EventFeedProps) {
   const timelineDate = useFireStore((s) => s.timelineDate);
   const setTimelineDate = useFireStore((s) => s.setTimelineDate);
+  const allEvents = useEventsStore((s) => s.events);
+  const eventsWithTelemetry = useEventsStore((s) => s.eventsWithTelemetry);
   const [selectedCategory, setSelectedCategory] = useState<
     'all' | EventCategory
   >('all');
@@ -89,7 +96,7 @@ export default function EventFeed({
   const eventMapRef = useRef<Map<string, ConflictEvent>>(new Map());
 
   const events = useMemo(() => {
-    const base = getEventsUpTo(timelineDate).reverse();
+    const base = getEventsUpTo(allEvents, timelineDate).reverse();
     const q = searchQuery.trim().toLowerCase();
     return base.filter((e) => {
       if (selectedCategory !== 'all' && e.category !== selectedCategory)
@@ -102,7 +109,7 @@ export default function EventFeed({
         return false;
       return true;
     });
-  }, [timelineDate, selectedCategory, searchQuery]);
+  }, [allEvents, timelineDate, selectedCategory, searchQuery]);
 
   // id → event lookup for the IntersectionObserver callback below
   const eventMap = useMemo(() => {
@@ -121,9 +128,11 @@ export default function EventFeed({
   const impactByDate = useMemo(() => {
     const dates = new Set(events.map((e) => e.date));
     const map = new Map<string, ReturnType<typeof getImpactAt>>();
-    dates.forEach((d) => map.set(d, getImpactAt(d)));
+    dates.forEach((d) =>
+      map.set(d, getImpactAt(d, allEvents, eventsWithTelemetry))
+    );
     return map;
-  }, [events]);
+  }, [events, allEvents, eventsWithTelemetry]);
 
   // Save & restore scroll position
   useEffect(() => {

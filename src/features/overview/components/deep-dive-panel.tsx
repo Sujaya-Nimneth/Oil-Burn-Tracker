@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import { useFireStore } from '@/stores/fire-store';
+import { useEventsStore } from '@/stores/events-store';
 import {
   getConsumerImpactUpTo,
   BASELINE
@@ -773,16 +774,18 @@ export default function DeepDivePanel({
   const fireData = useFireStore((s) => s.fireData);
   const loading = useFireStore((s) => s.loading);
   const timelineDate = useFireStore((s) => s.timelineDate);
+  const storeEvents = useEventsStore((s) => s.events);
+  const eventsWithTelemetry = useEventsStore((s) => s.eventsWithTelemetry);
 
   const data = useMemo(() => {
     const impact = getConsumerImpactUpTo(timelineDate);
-    const casualties = getCasualtiesUpTo(timelineDate);
+    const casualties = getCasualtiesUpTo(eventsWithTelemetry, timelineDate);
     const nuclear = getNuclearStatusUpTo(timelineDate);
     const cost = getWarCostUpTo(timelineDate);
-    const facilityIds = getVisibleFacilityIds(timelineDate);
+    const facilityIds = getVisibleFacilityIds(storeEvents, timelineDate);
     const supply = getSupplyDisruptionUpTo(facilityIds, timelineDate);
-    const events = getEventsUpTo(timelineDate);
-    const stats = getRecentEventStats(timelineDate);
+    const events = getEventsUpTo(storeEvents, timelineDate);
+    const stats = getRecentEventStats(storeEvents, timelineDate);
     const peril = computePerilScore(
       nuclear,
       supply.productionPct,
@@ -1422,7 +1425,7 @@ export default function DeepDivePanel({
       yearsOfLifeLost,
       roleCounts
     };
-  }, [timelineDate]);
+  }, [timelineDate, storeEvents, eventsWithTelemetry]);
 
   const {
     impact,

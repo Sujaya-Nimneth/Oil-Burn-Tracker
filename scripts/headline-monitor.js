@@ -15,15 +15,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = __dirname;
 const SEEN_FILE = join(DATA_DIR, 'seen-headlines.json');
 const DRAFTS_FILE = join(DATA_DIR, 'draft-events.json');
-const AUTO_EVENTS_FILE = join(
-  DATA_DIR,
-  '..',
-  'src',
-  'features',
-  'timeline',
-  'data',
-  'auto-events.json'
-);
+const AUTO_EVENTS_FILE = join(DATA_DIR, '..', 'public', 'auto-events.json');
 
 const ARGS = new Set(process.argv.slice(2));
 const SHOULD_PUBLISH = ARGS.has('--publish') || !ARGS.has('--drafts-only');

@@ -8,6 +8,7 @@ import {
   REGION_NAMES
 } from '@/features/memorial/lib/memorial-templates';
 import { getCasualtiesUpTo } from '@/features/timeline/data/conflict-events';
+import { useEventsStore } from '@/stores/events-store';
 import { IconHeart } from '@tabler/icons-react';
 import SubmitDialog from '@/features/memorial/components/submit-dialog';
 
@@ -207,7 +208,15 @@ function DataEntry({
 
 /* ── Page ── */
 export default function WhatWeLostPage() {
-  const casualties = getCasualtiesUpTo(new Date().toISOString().slice(0, 10));
+  const eventsWithTelemetry = useEventsStore((s) => s.eventsWithTelemetry);
+  const casualties = useMemo(
+    () =>
+      getCasualtiesUpTo(
+        eventsWithTelemetry,
+        new Date().toISOString().slice(0, 10)
+      ),
+    [eventsWithTelemetry]
+  );
   const total = casualties.totalKilled;
   const { data: records, loading } = useMemorialData();
   const scrollRef = useRef<HTMLDivElement>(null);

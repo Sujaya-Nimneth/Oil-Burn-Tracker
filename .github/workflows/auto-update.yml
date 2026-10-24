@@ -54,10 +54,10 @@ jobs:
           git config user.name "Sujaya Nimneth"
           git config user.email "sujayanimneth@outlook.com"
           git add \
-            src/features/timeline/data/auto-events.json \
+            public/auto-events.json \
             src/features/impact/data/auto-consumer-impact.json \
             src/features/timeline/data/auto-war-costs.json \
-            src/features/timeline/data/auto-daily-stats.json \
+            public/auto-daily-stats.json \
             public/firms-latest.json \
             scripts/draft-events.json \
             scripts/seen-headlines.json \

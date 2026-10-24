@@ -11,6 +11,7 @@ import DeepDivePanel from '@/features/overview/components/deep-dive-panel';
 import MobileTabs from '@/features/overview/components/mobile-tabs';
 import { useFireData } from '@/features/map/hooks/use-fire-data';
 import { useFireStore } from '@/stores/fire-store';
+import { useEventsStore } from '@/stores/events-store';
 import {
   getCasualtiesUpTo,
   getVisibleFacilityIds
@@ -47,11 +48,13 @@ function formatBillions(n: number): string {
 // ── Floating stats for map mode (collapsible) ──
 function FloatingStats() {
   const timelineDate = useFireStore((s) => s.timelineDate);
+  const events = useEventsStore((s) => s.events);
+  const eventsWithTelemetry = useEventsStore((s) => s.eventsWithTelemetry);
   const [collapsed, setCollapsed] = useState(false);
 
-  const visibleFacilityIds = getVisibleFacilityIds(timelineDate);
+  const visibleFacilityIds = getVisibleFacilityIds(events, timelineDate);
   const supply = getSupplyDisruptionUpTo(visibleFacilityIds, timelineDate);
-  const casualties = getCasualtiesUpTo(timelineDate);
+  const casualties = getCasualtiesUpTo(eventsWithTelemetry, timelineDate);
   const cost = getWarCostUpTo(timelineDate);
   const impact = getConsumerImpactUpTo(timelineDate);
 

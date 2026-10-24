@@ -2,6 +2,7 @@
 
 import { useMemo } from 'react';
 import { useFireStore } from '@/stores/fire-store';
+import { useEventsStore } from '@/stores/events-store';
 import {
   getCasualtiesUpTo,
   getVisibleFacilityIds
@@ -17,6 +18,8 @@ import { IconFlame, IconReceipt, IconSkull } from '@tabler/icons-react';
 export default function HeroPills() {
   const fireData = useFireStore((s) => s.fireData);
   const timelineDate = useFireStore((s) => s.timelineDate);
+  const events = useEventsStore((s) => s.events);
+  const eventsWithTelemetry = useEventsStore((s) => s.eventsWithTelemetry);
 
   const facilityFires = fireData.features.filter(
     (f) => f.properties.matchedFacility
@@ -31,7 +34,7 @@ export default function HeroPills() {
     const matchedIds = new Set(
       facilityFires.map((f) => f.properties.matchedFacility!.id)
     );
-    const hitIds = getVisibleFacilityIds(timelineDate);
+    const hitIds = getVisibleFacilityIds(events, timelineDate);
     return curatedFires
       .filter(
         (f) =>
@@ -52,10 +55,10 @@ export default function HeroPills() {
           ),
         0
       );
-  }, [facilityFires, timelineDate]);
+  }, [facilityFires, events, timelineDate]);
 
   const totalCO2 = satelliteCO2 + capacityCO2;
-  const casualties = getCasualtiesUpTo(timelineDate);
+  const casualties = getCasualtiesUpTo(eventsWithTelemetry, timelineDate);
   const impact = getConsumerImpactUpTo(timelineDate);
 
   const co2Label =

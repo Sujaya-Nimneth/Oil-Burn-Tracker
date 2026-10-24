@@ -378,7 +378,7 @@ async function main() {
   const casualtyDays = generateDays(CASUALTY_BASELINE.lastDate, today);
   const statsData = generateDailyStats(casualtyDays, today);
   fs.writeFileSync(
-    path.join(ROOT, 'src/features/timeline/data/auto-daily-stats.json'),
+    path.join(ROOT, 'public/auto-daily-stats.json'),
     JSON.stringify(statsData, null, 2) + '\n'
   );
   console.log(
@@ -393,7 +393,7 @@ async function main() {
   // Git commit + push (only if data changed)
   try {
     const status = execSync(
-      'git status --porcelain src/features/impact/data/auto-consumer-impact.json src/features/timeline/data/auto-war-costs.json src/features/timeline/data/auto-daily-stats.json',
+      'git status --porcelain src/features/impact/data/auto-consumer-impact.json src/features/timeline/data/auto-war-costs.json public/auto-daily-stats.json',
       {
         cwd: ROOT,
         encoding: 'utf-8'
@@ -406,7 +406,7 @@ async function main() {
     }
 
     execSync(
-      'git add src/features/impact/data/auto-consumer-impact.json src/features/timeline/data/auto-war-costs.json src/features/timeline/data/auto-daily-stats.json',
+      'git add src/features/impact/data/auto-consumer-impact.json src/features/timeline/data/auto-war-costs.json public/auto-daily-stats.json',
       { cwd: ROOT }
     );
 

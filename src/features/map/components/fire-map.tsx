@@ -13,11 +13,11 @@ import {
   type FacilityStatus
 } from '@/features/fires/data/curated-fires';
 import {
-  allEvents,
   conflictEvents,
   CATEGORY_COLORS,
   type ConflictEvent
 } from '@/features/timeline/data/conflict-events';
+import { useEventsStore } from '@/stores/events-store';
 import {
   buildEventPopupHtml,
   buildFacilityPopupHtml,
@@ -188,16 +188,19 @@ export default function FireMap() {
   const isMuted = useFireStore((s) => s.isMuted);
   const isMutedRef = useRef(isMuted);
   const mapState = useFireStore((s) => s.mapState);
+  const events = useEventsStore((s) => s.events);
 
   // The 'load' handler runs once with a first-render closure; without a ref it
   // would seed the fires source with stale (empty) data when the fetch
   // resolves before the map finishes loading. The refs are written in an
   // effect (not during render) so the map callbacks always read fresh values.
   const fireDataRef = useRef(fireData);
+  const eventsRef = useRef(events);
   useEffect(() => {
     isMutedRef.current = isMuted;
     fireDataRef.current = fireData;
-  }, [isMuted, fireData]);
+    eventsRef.current = events;
+  }, [isMuted, fireData, events]);
 
   const initMap = useCallback(() => {
     if (!mapContainer.current || map.current) return;
@@ -635,7 +638,7 @@ export default function FireMap() {
       // ── Conflict event pins (synced to timeline) ──
       m.addSource('conflict-events', {
         type: 'geojson',
-        data: buildEventsGeoJSON(allEvents)
+        data: buildEventsGeoJSON(eventsRef.current)
       });
 
       // Outer glow ring for event pins
@@ -931,8 +934,17 @@ export default function FireMap() {
     }
   }, [fireData]);
 
-  // Update event pins when timeline date changes
-  // All event pins always visible — no date filtering
+  // Update event pins when the runtime-fetched events hydrate
+  // (all pins stay visible — no date filtering)
+  useEffect(() => {
+    if (!map.current) return;
+    const source = map.current.getSource(
+      'conflict-events'
+    ) as maplibregl.GeoJSONSource;
+    if (source) {
+      source.setData(buildEventsGeoJSON(events));
+    }
+  }, [events]);
 
   // Toggle layers
   useEffect(() => {
@@ -993,7 +1005,10 @@ export default function FireMap() {
       const m = map.current;
 
       // Always resolve the full event from source data for rich content
-      const ev = allEvents.find((evt) => evt.id === eventId);
+      // Vanilla store access — the handler must not capture a stale list
+      const ev = useEventsStore
+        .getState()
+        .events.find((evt) => evt.id === eventId);
       if (!ev || !ev.lat || !ev.lng) return;
 
       if (popup.current) popup.current.remove();
