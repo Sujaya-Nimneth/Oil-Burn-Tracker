@@ -13,8 +13,11 @@ const META_THEME_COLORS = {
   dark: '#09090b'
 };
 
+// Canonical deployment — keep in sync with public/robots.txt and src/app/sitemap.ts
+const SITE_URL = 'https://monitor-the-war.pages.dev';
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://oilburntracker.pages.dev'),
+  metadataBase: new URL(SITE_URL),
   title: 'OilBurnTracker — Live Conflict Fire & Emissions Tracker',
   description:
     'Track oil fires, facility strikes, and CO₂ emissions in real-time using NASA satellite data. Open source, free, no tracking.',
@@ -22,7 +25,7 @@ export const metadata: Metadata = {
     title: 'OilBurnTracker — Live Conflict Fire & Emissions Tracker',
     description:
       'Track oil fires, facility strikes, and CO₂ emissions in real-time using NASA satellite data. Open source, free, no tracking.',
-    url: 'https://oilburntracker.pages.dev',
+    url: SITE_URL,
     siteName: 'OilBurnTracker',
     images: [
       {
