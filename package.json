@@ -83,7 +83,7 @@
     "zustand": "^5.0.15"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20260317.1",
+    "@cloudflare/workers-types": "^5.20261021.1",
     "@eslint/eslintrc": "^3.3.7",
     "@types/node": "26.6.5",
     "@types/react": "^19.3.0",
