@@ -9,7 +9,7 @@
 
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { fileURLToPath, pathToFileURL } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = __dirname;
@@ -755,4 +755,23 @@ async function main() {
   );
 }
 
-main().catch(console.error);
+// Run only when executed directly; unit tests import the pure helpers
+// below without triggering network fetches.
+const isDirectRun =
+  process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (isDirectRun) {
+  main().catch(console.error);
+}
+
+// ── Exports for unit tests (scripts/headline-monitor.test.mjs) ──
+export {
+  parseRSSItems,
+  extractTag,
+  decodeHTMLEntities,
+  detectCategory,
+  normalizeCategory,
+  cleanHeadlineTitle,
+  generateEventId,
+  geocodeHeadline,
+  isTrustedSource
+};

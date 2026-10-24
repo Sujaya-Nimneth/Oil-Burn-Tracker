@@ -55,7 +55,7 @@ import type { FacilityType } from '@/features/fires/data/curated-fires';
 // ═══ MULTIPLIER DERIVATION ═══
 //
 // Each multiplier below = 86400 / (f_rad × H_c) × EF / 1000
-// Verify: refinery = 86400 / (0.08 × 42.3) × 3.10 / 1000 = 79.2 t/MW/day
+// Verify: refinery = 86400 / (0.08 × 42.3) × 3.10 / 1000 = 79.1 t/MW/day
 //
 // We use the LOWER end of f_rad ranges (more smoke → more hidden heat),
 // giving HIGHER estimates. This is intentionally conservative — it is better

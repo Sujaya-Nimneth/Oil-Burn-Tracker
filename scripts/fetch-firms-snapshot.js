@@ -68,7 +68,7 @@ function csvToGeoJSON(csv) {
         satellite: row.satellite || 'N',
         daynight: row.daynight || 'D',
         intensity: classifyIntensity(frp),
-        estimatedCO2TonsDay: Math.round(frp * 52.7),
+        estimatedCO2TonsDay: Math.round(frp * 52.8),
         matchedFacility: null
       }
     });
@@ -254,7 +254,7 @@ function buildBaselineSnapshot() {
         satellite: 'N',
         daynight: h.dn,
         intensity: classifyIntensity(h.frp),
-        estimatedCO2TonsDay: Math.round(h.frp * 52.7),
+        estimatedCO2TonsDay: Math.round(h.frp * 52.8),
         matchedFacility: null
       }
     })),

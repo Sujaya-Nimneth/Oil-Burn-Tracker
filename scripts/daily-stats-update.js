@@ -420,4 +420,16 @@ async function main() {
   }
 }
 
-main().catch(console.error);
+// Run only when executed directly; unit tests require the pure helpers.
+if (require.main === module) {
+  main().catch(console.error);
+}
+
+module.exports = {
+  dateHash,
+  seededRandom,
+  getPhaseTargets,
+  shouldEmitCheckpoint,
+  daysSince,
+  generateDays
+};

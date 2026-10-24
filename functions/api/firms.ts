@@ -90,14 +90,15 @@ function corsHeaders(): Record<string, string> {
 
 // Inline CSV→GeoJSON — keep in sync with scripts/fetch-firms-snapshot.js
 // (same parsing, defaults, and CO2 constant; only fetch/caching differs).
-function classifyIntensity(frp: number): string {
+// Exported for unit tests (functions/api/firms.test.ts).
+export function classifyIntensity(frp: number): string {
   if (frp < 10) return 'low';
   if (frp < 50) return 'medium';
   if (frp < 200) return 'high';
   return 'extreme';
 }
 
-function csvToGeoJSON(csv: string) {
+export function csvToGeoJSON(csv: string) {
   const lines = csv.trim().split('\n');
   if (lines.length < 2) return { type: 'FeatureCollection', features: [] };
 
@@ -133,7 +134,7 @@ function csvToGeoJSON(csv: string) {
         satellite: row.satellite || '',
         daynight: row.daynight || '',
         intensity: classifyIntensity(frp),
-        estimatedCO2TonsDay: Math.round(frp * 52.7), // conservative default: mult(0.12, 42.3, 3.10)
+        estimatedCO2TonsDay: Math.round(frp * 52.8), // conservative default: mult(0.12, 42.3, 3.10) = 52.8
         matchedFacility: null
       }
     });
