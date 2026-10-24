@@ -51,6 +51,12 @@ jobs:
         run: npm run typecheck
 
       - name: Commit and push updated data
+        env:
+          # Branch rulesets block pushes from github-actions[bot]; pushing
+          # with the owner's fine-grained PAT (DATA_PUSH_TOKEN secret) makes
+          # the push actor the Repository admin, who bypasses the ruleset.
+          # Falls back to the default token when the secret is unset.
+          PUSH_TOKEN: ${{ secrets.DATA_PUSH_TOKEN }}
         run: |
           git config user.name "Sujaya Nimneth"
           git config user.email "sujayanimneth@outlook.com"
@@ -72,7 +78,11 @@ jobs:
           git commit -m "data(auto): scheduled conflict, market, and satellite update ($TODAY)"
           # Replay on top of anything pushed while this job ran
           git pull --rebase origin main
-          git push origin main
+          if [ -n "$PUSH_TOKEN" ]; then
+            git push "https://x-access-token:${PUSH_TOKEN}@github.com/Sujaya-Nimneth/Oil-Burn-Tracker.git" HEAD:main
+          else
+            git push origin main
+          fi
 
       # A failed scheduled run otherwise fails silently and the site serves
       # ever-staler data — file (or update) an alert issue instead.
