@@ -1,0 +1,26 @@
+version: 2
+updates:
+  # App + tooling dependencies (Next.js, React, Radix, ESLint, Vitest…)
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      # Minor/patch updates are batched into one PR to keep the queue small;
+      # majors stay separate because they need real review.
+      minor-and-patch:
+        update-types:
+          - minor
+          - patch
+    commit-message:
+      prefix: chore
+      prefix-development: chore
+
+  # Keep pinned action versions fresh (checkout, setup-node, setup-python)
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: ci
