@@ -1,5 +1,9 @@
 # OilBurnTracker
 
+[![CI](https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker/actions/workflows/ci.yml/badge.svg)](https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker/actions/workflows/ci.yml)
+[![Data pipeline](https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker/actions/workflows/auto-update.yml/badge.svg)](https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker/actions/workflows/auto-update.yml)
+[![Memorial sync](https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker/actions/workflows/update-memorial.yml/badge.svg)](https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker/actions/workflows/update-memorial.yml)
+
 Real-time tracking of conflict-affected energy infrastructure. Open source, free data, no login required.
 
 ## The Problem

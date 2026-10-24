@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  issues: write # failure alerts
 
 # Serialize data-updating workflows so concurrent runs don't fail their push
 # (shared with update-memorial.yml — one data commit pipeline at a time).
@@ -72,3 +73,20 @@ jobs:
           # Replay on top of anything pushed while this job ran
           git pull --rebase origin main
           git push origin main
+
+      # A failed scheduled run otherwise fails silently and the site serves
+      # ever-staler data — file (or update) an alert issue instead.
+      - name: Alert on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Data pipeline failure — auto-update"
+          RUN_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          ISSUE_NUMBER=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number --jq '.[0].number' || true)
+          if [ -n "$ISSUE_NUMBER" ]; then
+            gh issue comment "$ISSUE_NUMBER" --body "Scheduled run failed again: $RUN_URL"
+          else
+            gh issue create --title "$TITLE" --body "A scheduled data-update run failed: $RUN_URL" --label "pipeline-alert" || \
+            gh issue create --title "$TITLE" --body "A scheduled data-update run failed: $RUN_URL"
+          fi
