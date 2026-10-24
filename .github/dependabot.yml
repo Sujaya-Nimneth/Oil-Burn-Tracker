@@ -6,6 +6,15 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
+    ignore:
+      # Major bumps with breaking API changes the code isn't migrated to
+      # yet (maplibre-gl v6 dropped the default export; recharts v3 breaks
+      # the shadcn chart wrapper). Minors/patches keep flowing — remove
+      # these rules when the migrations land.
+      - dependency-name: maplibre-gl
+        update-types: ['version-update:semver-major']
+      - dependency-name: recharts
+        update-types: ['version-update:semver-major']
     groups:
       # Minor/patch updates are batched into one PR to keep the queue small;
       # majors stay separate because they need real review.
