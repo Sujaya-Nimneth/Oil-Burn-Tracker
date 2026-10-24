@@ -36,6 +36,21 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Verify push token identity
+        env:
+          PUSH_TOKEN: ${{ secrets.DATA_PUSH_TOKEN }}
+        run: |
+          if [ -z "$PUSH_TOKEN" ]; then
+            echo "::warning::DATA_PUSH_TOKEN not set — push will use the default token and may be blocked by branch rules"
+            exit 0
+          fi
+          LOGIN=$(curl -sf -H "Authorization: Bearer $PUSH_TOKEN" https://api.github.com/user | grep -o '"login":"[^"]*"' | head -1 | cut -d'"' -f4 || true)
+          if [ "$LOGIN" != "Sujaya-Nimneth" ]; then
+            echo "::error::DATA_PUSH_TOKEN authenticates as '${LOGIN:-<invalid token>}' — expected 'Sujaya-Nimneth'. Regenerate the token and update the secret."
+            exit 1
+          fi
+          echo "Push identity verified: $LOGIN"
+
       - name: Fetch & publish verified conflict headlines
         run: node scripts/headline-monitor.js --publish
 
