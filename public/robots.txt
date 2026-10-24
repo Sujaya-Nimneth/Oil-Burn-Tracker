@@ -1,6 +1,6 @@
+# All site content lives under /dashboard/* — allow full crawling.
+# (The old template blocked /dashboard, which hid the entire site from search engines.)
 User-agent: *
-Disallow: /auth
-Disallow: /dashboard
-Disallow: /sign-in
-Disallow: /sign-up
-Disallow: /v1/
+Allow: /
+
+Sitemap: https://monitor-the-war.pages.dev/sitemap.xml
