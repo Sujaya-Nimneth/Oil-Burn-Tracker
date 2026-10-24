@@ -45,14 +45,27 @@ const NEWS_QUERIES = [
   'Iran retaliation Israel'
 ];
 
-// ── YouTube search queries ──
-const YT_QUERIES = [
-  'Israel Iran war today',
-  'Gaza latest news today',
-  'Middle East conflict oil',
-  'Houthi shipping attack',
-  'Iran nuclear news'
+// ── YouTube video corpus ──
+// Primary source: uploads RSS feeds for major English-language news
+// channels (no API key, no scraping — feed URL is stable and public).
+// Channel IDs verified against each channel's own page; if a feed starts
+// 404ing, correct the ID here. If the feeds are unreachable (some CI
+// networks block them), video matching falls back to the legacy
+// search-page path and logs a warning when both yield nothing.
+const YT_CHANNELS = [
+  'UC16niRr50-MSBwiO3YDb3RA', // BBC News
+  'UCNye-wNBqNL5ZzHSJj3l8Bg', // Al Jazeera English
+  'UCCCPCZNChQdGa9EkATeye4g', // FRANCE 24 English
+  'UChqUTb7kYRX8-EiaN3XFrSQ', // Reuters
+  'UCbbS1GE942k3UVqpLklyhIA', // DW News
+  'UCkFclpi8U9VJjfxLYoms7Aw' // Sky News
 ];
+
+const YT_FEED_HEADERS = {
+  'User-Agent':
+    'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'Accept-Language': 'en-US,en;q=0.9'
+};
 
 // ── Category detection (maps strictly to EventCategory in conflict-events.ts) ──
 const CATEGORY_RULES = [
@@ -399,24 +412,103 @@ function decodeHTMLEntities(text) {
     .replace(/&#8221;/g, '"');
 }
 
-// ── Search YouTube via RSS (no API key needed) ──
+// ── YouTube corpus: fetch uploads RSS for each curated channel ──
+async function fetchChannelCorpus() {
+  const videos = [];
+  const seen = new Set();
+  let failedFeeds = 0;
+  for (const channelId of YT_CHANNELS) {
+    try {
+      const res = await fetch(
+        `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`,
+        {
+          headers: YT_FEED_HEADERS,
+          signal: AbortSignal.timeout(15000)
+        }
+      );
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const xml = await res.text();
+      // Atom uploads feed: <entry><id>yt:video:VIDEOID</id><title>…</title>
+      const entryRegex = /<entry>([\s\S]*?)<\/entry>/g;
+      let m;
+      while ((m = entryRegex.exec(xml)) !== null) {
+        const block = m[1];
+        const videoId = (extractTag(block, 'id') || '').replace(
+          'yt:video:',
+          ''
+        );
+        const title = decodeHTMLEntities(extractTag(block, 'title') || '');
+        if (videoId && title && !seen.has(videoId)) {
+          seen.add(videoId);
+          videos.push({
+            videoId,
+            title,
+            url: `https://www.youtube.com/watch?v=${videoId}`
+          });
+        }
+      }
+    } catch (e) {
+      failedFeeds++;
+      console.warn(`  YouTube feed unavailable for ${channelId}: ${e.message}`);
+    }
+    await new Promise((r) => setTimeout(r, 400));
+  }
+  if (failedFeeds === YT_CHANNELS.length) {
+    console.warn(
+      '  WARNING: all YouTube channel feeds failed — video matching will use the legacy search fallback.'
+    );
+  }
+  return videos;
+}
+
+// ── Match a headline against the corpus by token overlap ──
+const MATCH_STOPWORDS = new Set(
+  (
+    'the a an in on at to for of and or but is are was were has have had with ' +
+    'new video live news update latest says report reports after over into'
+  ).split(' ')
+);
+
+function tokenize(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, '')
+    .split(/\s+/)
+    .filter((w) => w.length > 2 && !MATCH_STOPWORDS.has(w));
+}
+
+function matchFromCorpus(headline, corpus) {
+  const headlineTokens = new Set(tokenize(headline));
+  let best = null;
+  let bestHits = 0;
+  for (const video of corpus) {
+    const titleTokens = tokenize(video.title);
+    let hits = 0;
+    for (const w of titleTokens) if (headlineTokens.has(w)) hits++;
+    // Require at least two significant shared tokens so unrelated
+    // same-topic videos don't attach to every headline
+    if (hits >= 2 && hits > bestHits) {
+      bestHits = hits;
+      best = video;
+    }
+  }
+  return best;
+}
+
+// ── Legacy fallback: YouTube search page scraping ──
+// Only used when the RSS corpus is empty (blocked network). YouTube
+// changes its markup often — expect this to break; the corpus is the
+// durable path.
 async function searchYouTube(query) {
-  // Use YouTube's search page and extract video IDs from the HTML
-  // This is a lightweight approach that doesn't need an API key
   const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}&sp=CAI%253D`;
   try {
     const res = await fetch(url, {
-      headers: {
-        'User-Agent':
-          'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept-Language': 'en-US,en;q=0.9'
-      },
+      headers: YT_FEED_HEADERS,
       signal: AbortSignal.timeout(15000)
     });
     if (!res.ok) return [];
     const html = await res.text();
 
-    // Extract video IDs from the page
     const videoIds = [];
     const idRegex = /"videoId":"([a-zA-Z0-9_-]{11})"/g;
     let m;
@@ -429,7 +521,6 @@ async function searchYouTube(query) {
       if (videoIds.length >= 5) break;
     }
 
-    // Extract titles
     const results = [];
     for (const vid of videoIds) {
       const titleRegex = new RegExp(
@@ -451,8 +542,14 @@ async function searchYouTube(query) {
 }
 
 // ── Find best YouTube match for a headline ──
+let YT_CORPUS = [];
+
 async function findVideoForHeadline(headline) {
-  // Simplify headline for search
+  // Prefer the RSS corpus (verified channels, durable endpoint)
+  const corpusMatch = matchFromCorpus(headline, YT_CORPUS);
+  if (corpusMatch) return corpusMatch;
+
+  // Fallback: simplify headline into a search query
   const searchQuery = headline
     .replace(
       /\b(the|a|an|in|on|at|to|for|of|and|or|but|is|are|was|were|has|have|had|with)\b/gi,
@@ -623,6 +720,13 @@ async function main() {
     }
   }
 
+  // 0. Build the YouTube corpus once (channel uploads RSS)
+  console.log('  Building YouTube video corpus from channel feeds...');
+  YT_CORPUS = await fetchChannelCorpus();
+  console.log(
+    `  Corpus: ${YT_CORPUS.length} recent videos across ${YT_CHANNELS.length} channels`
+  );
+
   // 1. Fetch news from all queries
   console.log('  Fetching news RSS feeds...');
   const allItems = [];
@@ -650,11 +754,13 @@ async function main() {
   console.log(`  ${uniqueNew.length} new headlines after dedup`);
 
   // 3. For each new headline, find a YouTube video, geocode, and create event
+  let videosMatched = 0;
   for (const item of uniqueNew.slice(0, 15)) {
     // Cap at 15 per run
     console.log(`  Processing: ${item.title.slice(0, 60)}...`);
 
     const video = await findVideoForHeadline(item.title);
+    if (video) videosMatched++;
     const cleanTitle = cleanHeadlineTitle(item.title, item.source);
     const category = detectCategory(cleanTitle);
     const geo = geocodeHeadline(cleanTitle);
@@ -690,8 +796,16 @@ async function main() {
       candidatesToPublish.push(toPublishedEvent(draft));
     }
 
-    // Rate limit YouTube requests
+    // Rate limit YouTube requests (only needed by the search fallback)
     await new Promise((r) => setTimeout(r, 800));
+  }
+
+  // Both video paths produced nothing while headlines existed — surface it
+  if (uniqueNew.length > 0 && videosMatched === 0) {
+    console.warn(
+      '  WARNING: no videos matched any new headline (corpus empty and search fallback failed). ' +
+        'Check YT_CHANNELS feed availability and the search fallback markup.'
+    );
   }
 
   // 4. Save state & publish to auto-events.json
@@ -714,29 +828,15 @@ async function main() {
     }
   }
 
-  // 5. Also fetch latest YouTube videos from key channels
-  if (uniqueNew.length > 0) {
-    console.log('  Searching YouTube for latest conflict videos...');
-    const ytResults = [];
-    for (const query of YT_QUERIES) {
-      const videos = await searchYouTube(query);
-      ytResults.push(...videos);
-      await new Promise((r) => setTimeout(r, 800));
-    }
-
+  // 5. Persist the corpus as the latest-videos state file
+  if (uniqueNew.length > 0 && YT_CORPUS.length > 0) {
     const ytFile = join(DATA_DIR, 'youtube-latest.json');
-    const ytUnique = [];
-    const ytSeen = new Set();
-    for (const v of ytResults) {
-      if (!ytSeen.has(v.videoId)) {
-        ytSeen.add(v.videoId);
-        ytUnique.push({ ...v, fetchedAt: new Date().toISOString() });
-      }
-    }
-    if (ytUnique.length > 0) {
-      writeFileSync(ytFile, JSON.stringify(ytUnique.slice(0, 30), null, 2));
-      console.log(`  Saved ${ytUnique.length} unique YouTube videos`);
-    }
+    const stamped = YT_CORPUS.slice(0, 30).map((v) => ({
+      ...v,
+      fetchedAt: new Date().toISOString()
+    }));
+    writeFileSync(ytFile, JSON.stringify(stamped, null, 2));
+    console.log(`  Saved ${stamped.length} recent YouTube videos`);
   }
 
   // 6. Log summary
@@ -773,5 +873,7 @@ export {
   cleanHeadlineTitle,
   generateEventId,
   geocodeHeadline,
-  isTrustedSource
+  isTrustedSource,
+  tokenize,
+  matchFromCorpus
 };

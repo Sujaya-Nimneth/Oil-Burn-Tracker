@@ -7,7 +7,8 @@ import {
   cleanHeadlineTitle,
   generateEventId,
   geocodeHeadline,
-  isTrustedSource
+  isTrustedSource,
+  matchFromCorpus
 } from './headline-monitor.js';
 
 describe('RSS parsing', () => {
@@ -120,5 +121,43 @@ describe('trusted source gate', () => {
 
   it('rejects unknown sources', () => {
     expect(isTrustedSource('Random Blog', 'a story')).toBe(false);
+  });
+});
+
+describe('YouTube corpus matching', () => {
+  const corpus = [
+    {
+      videoId: 'aaa11111111',
+      title: 'Missile strike hits Ras Tanura refinery in Saudi Arabia',
+      url: 'https://www.youtube.com/watch?v=aaa11111111'
+    },
+    {
+      videoId: 'bbb22222222',
+      title: 'Ceasefire negotiations continue in Geneva',
+      url: 'https://www.youtube.com/watch?v=bbb22222222'
+    }
+  ];
+
+  it('matches a headline sharing two or more significant tokens', () => {
+    const m = matchFromCorpus('Strike hits Ras Tanura oil refinery', corpus);
+    expect(m?.videoId).toBe('aaa11111111');
+  });
+
+  it('picks the video with the most overlapping tokens', () => {
+    const m = matchFromCorpus(
+      'Ras Tanura refinery missile strike aftermath',
+      corpus
+    );
+    expect(m?.videoId).toBe('aaa11111111');
+  });
+
+  it('returns null below the two-token threshold', () => {
+    // only "strike" overlaps — stopwords and single hits must not match
+    expect(matchFromCorpus('Airstrike reported elsewhere', corpus)).toBeNull();
+  });
+
+  it('ignores stopwords when counting overlap', () => {
+    // shares only 'the/new/live' style words with the ceasefire title
+    expect(matchFromCorpus('Live: the new update', corpus)).toBeNull();
   });
 });
