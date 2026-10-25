@@ -83,15 +83,17 @@ jobs:
           git checkout -B "$BRANCH"
           git push --force origin "$BRANCH"
           # (Re)use a single standing PR for the branch
-          gh pr create --head "$BRANCH" \
-            --title "data(auto): conflict, market, and satellite update ($TODAY)" \
-            --body "Automated data-pipeline update. Merges automatically once checks pass." \
-            --label data-update 2>/dev/null || echo "Reusing existing open PR"
-          # --auto waits for required checks when auto-merge is enabled;
-          # otherwise (no required checks yet) the PR is immediately mergeable
-          gh pr merge "$BRANCH" --squash --auto --delete-branch || \
-          gh pr merge "$BRANCH" --squash --delete-branch || {
-            echo "::error::Data PR could not be merged — check required checks/approval settings"
+          if ! gh pr view "$BRANCH" --json state >/dev/null 2>&1; then
+            gh pr create --head "$BRANCH" \
+              --title "data(auto): conflict, market, and satellite update ($TODAY)" \
+              --body "Automated data-pipeline update. Merges automatically once checks pass." \
+              || { echo "::error::Failed to create the data PR"; exit 1; }
+          fi
+          # Prefer auto-merge (waits for required checks once any are configured);
+          # fall back to immediate merge while no checks are required
+          gh pr merge "$BRANCH" --squash --auto || \
+          gh pr merge "$BRANCH" --squash || {
+            echo "::error::Data PR could not be merged — see the PR's checks and rules"
             exit 1
           }
 
