@@ -98,7 +98,7 @@ jobs:
               | grep -o '"html_url": *"[^"]*/pull/[0-9]*"' | head -1 | cut -d'"' -f4)
           fi
           if [ -z "$PR_URL" ]; then
-            echo "::error::Data PR creation failed: $(echo "$CREATE" | head -c 600)"
+            echo "::error::Data PR creation failed: $(echo "$CREATE" | tr -d '\n' | head -c 800)"
             exit 1
           fi
           echo "Data PR: $PR_URL"
