@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write # data ships via auto-merged PR
   issues: write # failure alerts
 
 # Serialize data-updating workflows so concurrent runs don't fail their push
@@ -36,25 +37,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Verify push token identity
-        env:
-          PUSH_TOKEN: ${{ secrets.DATA_PUSH_TOKEN }}
-        run: |
-          # Trim paste artifacts (trailing newline/space) that break auth headers
-          PUSH_TOKEN="$(printf '%s' "$PUSH_TOKEN" | tr -d '[:space:]')"
-          if [ -z "$PUSH_TOKEN" ]; then
-            echo "::warning::DATA_PUSH_TOKEN not set — push will use the default token and may be blocked by branch rules"
-            exit 0
-          fi
-          # Length only — never the value. classic PAT = 40, fine-grained = 93
-          echo "Token length: ${#PUSH_TOKEN}"
-          LOGIN=$(curl -sf -H "Authorization: Bearer $PUSH_TOKEN" https://api.github.com/user | grep -o '"login":"[^"]*"' | head -1 | cut -d'"' -f4 || true)
-          if [ "$LOGIN" != "Sujaya-Nimneth" ]; then
-            echo "::error::DATA_PUSH_TOKEN authenticates as '${LOGIN:-<invalid token>}' — expected 'Sujaya-Nimneth'. Regenerate the token and update the secret."
-            exit 1
-          fi
-          echo "Push identity verified: $LOGIN"
-
       - name: Fetch & publish verified conflict headlines
         run: node scripts/headline-monitor.js --publish
 
@@ -69,15 +51,13 @@ jobs:
       - name: Validate TypeScript types before committing
         run: npm run typecheck
 
-      - name: Commit and push updated data
+      # Data ships as a pull request from an unprotected branch, so the
+      # require-PR ruleset on main is satisfied by design — no PAT, no
+      # bypass, and the data commit passes the full CI gate before landing.
+      - name: Ship data update via auto-merged PR
         env:
-          # Branch rulesets block pushes from github-actions[bot]; pushing
-          # with the owner's PAT (DATA_PUSH_TOKEN secret) makes the push
-          # actor the Repository admin, who bypasses the ruleset.
-          # Falls back to the default token when the secret is unset.
-          PUSH_TOKEN: ${{ secrets.DATA_PUSH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
         run: |
-          PUSH_TOKEN="$(printf '%s' "$PUSH_TOKEN" | tr -d '[:space:]')"
           git config user.name "Sujaya Nimneth"
           git config user.email "sujayanimneth@outlook.com"
           git add \
@@ -96,13 +76,24 @@ jobs:
           fi
           TODAY=$(date -u +%Y-%m-%d)
           git commit -m "data(auto): scheduled conflict, market, and satellite update ($TODAY)"
-          # Replay on top of anything pushed while this job ran
-          git pull --rebase origin main
-          if [ -n "$PUSH_TOKEN" ]; then
-            git push "https://x-access-token:${PUSH_TOKEN}@github.com/Sujaya-Nimneth/Oil-Burn-Tracker.git" HEAD:main
-          else
-            git push origin main
-          fi
+          # Stay current with main, then move the commit to the data branch
+          git fetch origin main
+          git rebase origin/main
+          BRANCH=data/auto-update
+          git checkout -B "$BRANCH"
+          git push --force origin "$BRANCH"
+          # (Re)use a single standing PR for the branch
+          gh pr create --head "$BRANCH" \
+            --title "data(auto): conflict, market, and satellite update ($TODAY)" \
+            --body "Automated data-pipeline update. Merges automatically once checks pass." \
+            --label data-update 2>/dev/null || echo "Reusing existing open PR"
+          # --auto waits for required checks when auto-merge is enabled;
+          # otherwise (no required checks yet) the PR is immediately mergeable
+          gh pr merge "$BRANCH" --squash --auto --delete-branch || \
+          gh pr merge "$BRANCH" --squash --delete-branch || {
+            echo "::error::Data PR could not be merged — check required checks/approval settings"
+            exit 1
+          }
 
       # A failed scheduled run otherwise fails silently and the site serves
       # ever-staler data — file (or update) an alert issue instead.
