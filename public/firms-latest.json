@@ -33336,13 +33336,37 @@
         "estimatedCO2TonsDay": 122,
         "matchedFacility": null
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.34513,
+          42.36975
+        ]
+      },
+      "properties": {
+        "latitude": 42.36975,
+        "longitude": 21.34513,
+        "bright_ti4": 337.94,
+        "frp": 4.27,
+        "confidence": "n",
+        "acq_date": "2026-10-25",
+        "acq_time": "1251",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 225,
+        "matchedFacility": null
+      }
     }
   ],
   "metadata": {
     "source": "VIIRS_SNPP_NRT",
     "bbox": "10,30,40,65",
     "days": 2,
-    "fetchedAt": "2026-10-25T15:44:09.142Z",
-    "count": 1389
+    "fetchedAt": "2026-10-25T20:31:55.494Z",
+    "count": 1390
   }
 }
