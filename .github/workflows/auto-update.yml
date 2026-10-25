@@ -82,20 +82,37 @@ jobs:
           BRANCH=data/auto-update
           git checkout -B "$BRANCH"
           git push --force origin "$BRANCH"
-          # (Re)use a single standing PR for the branch
-          if ! gh pr view "$BRANCH" --json state >/dev/null 2>&1; then
-            gh pr create --head "$BRANCH" \
-              --title "data(auto): conflict, market, and satellite update ($TODAY)" \
-              --body "Automated data-pipeline update. Merges automatically once checks pass." \
-              || { echo "::error::Failed to create the data PR"; exit 1; }
+
+          # Create the PR via the REST API so any failure surfaces verbatim
+          API="https://api.github.com/repos/Sujaya-Nimneth/Oil-Burn-Tracker"
+          CREATE=$(curl -s -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "$API/pulls" \
+            -d "{\"title\":\"data(auto): conflict, market, and satellite update ($TODAY)\",\"head\":\"$BRANCH\",\"base\":\"main\",\"body\":\"Automated data-pipeline update. Merges automatically once checks pass.\"}")
+          PR_URL=$(echo "$CREATE" | grep -o '"html_url": *"[^"]*/pull/[0-9]*"' | head -1 | cut -d'"' -f4)
+          if [ -z "$PR_URL" ]; then
+            # An open PR for this branch may already exist — find it
+            PR_URL=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
+              "$API/pulls?head=Sujaya-Nimneth:$BRANCH&state=open" \
+              | grep -o '"html_url": *"[^"]*/pull/[0-9]*"' | head -1 | cut -d'"' -f4)
           fi
+          if [ -z "$PR_URL" ]; then
+            echo "::error::Data PR creation failed: $(echo "$CREATE" | head -c 600)"
+            exit 1
+          fi
+          echo "Data PR: $PR_URL"
+          PR_NUM="${PR_URL##*/}"
+
           # Prefer auto-merge (waits for required checks once any are configured);
           # fall back to immediate merge while no checks are required
-          gh pr merge "$BRANCH" --squash --auto || \
-          gh pr merge "$BRANCH" --squash || {
-            echo "::error::Data PR could not be merged — see the PR's checks and rules"
-            exit 1
-          }
+          MERGE_ERR=""
+          if ! MERGE_ERR=$(gh pr merge "$PR_NUM" --squash --auto 2>&1); then
+            if ! MERGE_ERR=$(gh pr merge "$PR_NUM" --squash 2>&1); then
+              echo "::error::Data PR merge failed: ${MERGE_ERR:0:600} — $PR_URL"
+              exit 1
+            fi
+          fi
 
       # A failed scheduled run otherwise fails silently and the site serves
       # ever-staler data — file (or update) an alert issue instead.
