@@ -228,6 +228,23 @@
     ]
   },
   {
+    "id": "auto-iran-war-updates-us-says-2026-09-03",
+    "date": "2026-09-03",
+    "title": "Iran war updates: US says no major operations against Iran; options open",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcWY3aFROMjg1SUI0N0M5cDh5ODFZUGdRSHlIRUFfSjQ4UGl4Z2RvUmZScl9WS1pTbjJ1STlXelFGckNuTjB1akswSm5xUm1RSjc0RkRZUHloLURCWTU1eWRpcnVBdloxNG84eDVla3o4MC1BRDlmRExxZnNWTGlQNC1BdTExZzJBVEUwV2dxODZqTDlneUIxcU1GZ0lKU3hnbWRjUkFLUlpuNzNrbVJVRHpmeWZpd9IBuwFBVV95cUxPYWZQbWZRclMwUnVKanBGd2Etd0VTUVpLd3NHZHdBOGlJUllHX2JWeVM1ZVhzdmI2VEpXd0FkUnA4bFgtaHN2bmVsdHlqSVdlSEltM0swY2NJRmVlZW1fRWFPaGxGbFBZOTJISy1XdWZfdXEwREZQYXdwQ2FyOE9hYTZNN0lUNkVpMTdScTZjVzlMMjEyWklnWUVtTktObGNSeWFwUzB1YXlTNkxYZHNoQWRvUVFESTBJR2tj?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=6no55Ud_VaE",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "auto-trump-says-iran-war-is-2026-09-04",
     "date": "2026-09-04",
     "title": "Trump says Iran war is 'small potatoes', Israel strikes southern Lebanon",
@@ -253,6 +270,23 @@
     "lat": 35.689,
     "lng": 51.389,
     "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVjdic3NWOEx4bDdlWTRfcXp3bUhUUDlMWkc4RGFfazVDSmVoWHh1dmRKZktTNllZM1RhRjJoRGkxMGR2S1lHbE9Cd0NndEptdnFTZEZMaW93bTRRRTJ1ZThGc1V0c1o1VDc0Q2VjZ0NIaTVMZ1otdzBEbnhFMTZ4WE1sZ1c5Y2Z3MHJaRUt6ZF82NkFLcWlzcEJfc9IBoAFBVV95cUxPRS14Y20xajR0enBJQzRGN1dTNlhSSU1sNmRTSVNOeUptcEtpeG9tRzdJalZQNTFEYkJteUptc3ktSXhtZDJPdHB5b2tGUnNMclE0OHVRQ0FYak1xSnFMZFg3S0x1OG50bzRSQ3Z1LTc0NFExejBxU21TOWRpVUotWndtWGdYelhvOWZwc1FtdU5VYUJsU3BXTXpORTVZODhl?oc=5"
+  },
+  {
+    "id": "auto-vance-extremely-skeptical-us-strike-2026-09-04",
+    "date": "2026-09-04",
+    "title": "Vance \"extremely skeptical\" U.S. strike hit Iran wedding party, says he wouldn't call conflict a war",
+    "category": "military_strike",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaGpwVVBCeVNvZE5lV3RCSFl0M2E1cnZlZS0wMjVSRFlrS1E5ZXFWSml2MGdKZEFMaHlSRFc1Ylc1WkRPTy1IaEpRZzFrbFpBZFJJbmw4RnVYaDJxWDFUQ3hlVk9JMUJ5Zk1HXzQ1Z2RxbVpWN2dTa3lFTzdwN3V3QjFTb20tSEdkOTRnQS10eUEwaFBQWlcxSmQwbUZxRmhCOEptYXhaTWJyNGpnV0E?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=f6kBvn3G0Z0",
+        "label": ""
+      }
+    ]
   },
   {
     "id": "auto-iran-war-updates-tehran-slams-2026-09-05",
@@ -305,6 +339,34 @@
         "label": ""
       }
     ]
+  },
+  {
+    "id": "auto-iran-war-updates-hormuz-traffic-2026-09-07",
+    "date": "2026-09-07",
+    "title": "Iran war updates: Hormuz traffic falls as US insists waterway ‘fully open’",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWEx0eDJjS1ZhZmlrQm81R0JkSXFYTG1HeDVRTHY2VFNVa3RKaXl4YThfbjAxWnhoNGlsZTM2UFUzbmk2WTB4dWtMcFZnWDRFb204bXJJRXYzbXVnbjBPdEVzTHpwc3UtVEk4cDBtQW9meTdNTTFGZGx5cVRqVWFZYS13anZZZGszd3J0UGlQdkRxdTN5LU5YOUJwQkxUdFNJNkZxSV81RTF3Y3htTTZZY1hIVTdwMnREd2JBTWhnd9IBxAFBVV95cUxNU0twWmhxcUJXelhrV0xFeWVxWlBWZkFMRmozVXc0Tmx5WGlkRFlad3BMRXptUTZ3OE5VUTFuZkhiQzBGNklFMUlidkg2TmxOTG5PRm9jRXExZ29rNkd4cEFoWjhVblg5VnFJYjJyVUtfbWZ4b0JRNjl2ZUdBSVRtRVhqRUtnYkdHanRPcmJqdXRYRWViYUVhNVk2YXdEdzJ0NTU2MmhLcHJnQ1JDNTlteHhzSWY1S3ZzbjdfTVpvMU4zS2Uz?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=vXt3h6BTBtM",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-the-domestic-armed-threat-facing-2026-09-07",
+    "date": "2026-09-07",
+    "title": "The domestic armed threat facing Iran",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNR254UlBUVk94YnU4c0tBbVVRZzFXT2hmYWVFaFptX200RkZjNU5vN05neW93eHlfUnk5Q3FzQUFTenFFQ0ZMd1ZIT2ZJSHpzT0Q4ZjdjN3lEUjZBQnI0X283bVhKMWJxTXpvQ1pkVWtDUEFyTXpRNmgxZU15OTVURTdUWdIBiAFBVV95cUxOa1BUblRlMTlQa0VVa05HclM3WWNMNG9ma0VxeWFiUVk4OFN6OXN2amhya3VOZTRUTkdlQkFpNm8yX0FGdFFKX3YtbUhadVlOSXEtTkE5ekdySUZ1eTZlRmZBV3pJdFByeHMzSWFCM0g3Tzh4dFBOZkh4UGp2NHRBNEQ5Sy1LSElx?oc=5"
   },
   {
     "id": "auto-how-south-korea-finds-itself-2026-09-08",
@@ -407,6 +469,23 @@
       {
         "type": "youtube",
         "url": "https://www.youtube.com/watch?v=9p-gxcg-3fg",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-us-sends-third-aircraft-carrier-2026-10-01",
+    "date": "2026-10-01",
+    "title": "US sends third aircraft carrier to Middle East amid stalemate in Iran war",
+    "category": "escalation",
+    "description": "Via The Guardian. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOeG1vM25faW5LcklvY082VWw2bHJ2MFdzR1NRekV1TzI2SzloOTFrZGhPTEVyWlY4bGpiRXprNWVhTUxqbF8zc3pxNGFFZzJIalNteWs5UV9oWkI3V1dBX2hjckVwejBiZmtSVnFTUUVVeFdGS19nZE9kOVB4OTUwUUcxOWZzY25FWXJPNXg3WGprdw?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=PiGHGQsnD18",
         "label": ""
       }
     ]
@@ -2795,6 +2874,23 @@
     ]
   },
   {
+    "id": "auto-saudi-says-riyadh-airport-partly-2026-10-24",
+    "date": "2026-10-24",
+    "title": "Saudi says Riyadh airport partly reopens despite renewed Houthi threats",
+    "category": "chokepoint",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "lat": 15.369,
+    "lng": 44.191,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNT0JBTVByRUdVWnYzNWpyRUlfbGRFR2RnQzZpbTgzR05tX1AzU2VkVC10RUswYWthSGtJa2FZamVSa2E2ckdSeG5FN3VGTFU5SVJfbjY4NEZjR2tQSWJfZmxtbTJvUU5YSEpKWHRQQWpHMGRfR29xeFhkR1BwcHA5NlA3MnJmRnloYzF6Q0tBZG92ZDgzWmRubVNpNi1CajBmdXdNZmNTYnkzLWFnMldvaQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=EOU9sIXcQdE",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "auto-trump-says-us-considers-possible-2026-10-25",
     "date": "2026-10-25",
     "title": "Trump says US considers possible Sunday attack on Iran or to reach deal",
@@ -2875,6 +2971,74 @@
       {
         "type": "youtube",
         "url": "https://www.youtube.com/watch?v=B47LZhWQlBw",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-live-qatar-mediators-2026-10-25",
+    "date": "2026-10-25",
+    "title": "Iran war live: Qatar mediators in Tehran as US attack threats continue",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 25.285,
+    "lng": 51.531,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRy1XR2xLRHBpdDFLWmZBY0Q0QW95SXpadWRTS1Z2dlFYUWtfaEFsNTBfTEloZXRuTFlyWUdkLU9FSF84VkNoMmx6UXZiTWhyNmI4WnZZVlgtWHhHcllTcGgtRlV0RGMxWnRvczBuMDFBRXhwdUUxYXNaZVdUbkN6VTZrY3JTd1VIR0JPTWItOXp1NDFBWjlRMGdQeW03aGlpc3JVWm1BTThmNGQzZHgzVHNMRXJwZjFGVEE4Rk14SUHSAcYBQVVfeXFMTzk5N2k2NXlJMUtfdW9EZXh4dU9sdk1YdTJNMWh1cnpER2ZqR2pXZ2xmVU5peWVGMnduRlpDeklHcXJLX0dUQ25jY1dpWGg3aXAwaWNIdmpKdzlHV3ZHLWxveThZNlVCRGx2Wkd0T1ViVUhZc20yUDFHX0t0SW4yYkxmeU8yV1RUeG50SmVoYXpLalpaLW1UMlBmeUdnT1YzdUxrbHZWYWhxSTFfMGNaTUxsTTBxV0lvSE9GYmtGNnM4SVpiYVpB?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=QYCbZAHs0tQ",
+        "label": "Trump mocks reporter asking about Iran strikes, as Tehran says US derailed talks | AJ #shorts"
+      }
+    ]
+  },
+  {
+    "id": "auto-live-updates-iran-says-potential-2026-10-25",
+    "date": "2026-10-25",
+    "title": "Live Updates: Iran says potential new U.S. strikes won't change Tehran's position",
+    "category": "military_strike",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZXdRdW1Db041UUN4dlYyNURUdmFWS0V0V1hCc0hnNVBZWlIxYk5Pdkg0Nks0Ri01UkRsM0NVR3VVTEVzc2psaWhpZDk1ZlRTTG0tcHgzcEZkTURsUDFoejN3MVl0NVBKZXNwU1ZVeDI0VWY5TEJ2M2dqSXBDcFpRTzRvSExKWEtVQlNzLUZINnZsT3phZ0xROHd3VXc?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=QYCbZAHs0tQ",
+        "label": "Trump mocks reporter asking about Iran strikes, as Tehran says US derailed talks | AJ #shorts"
+      }
+    ]
+  },
+  {
+    "id": "auto-how-the-iran-war-is-2026-10-25",
+    "date": "2026-10-25",
+    "title": "How the Iran war is influencing voters in the U.S. and Israel",
+    "category": "escalation",
+    "description": "Via NPR. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQS2tWNzJzT2ZBVEIwY09lQ2NvdkdvbWNZM18tQXcxWXhRSHZKc1cyNmxNN0MxVng2Y2xYTlZTbmJJUGx4aUxGYXp0Wkg2Vnc0ZnNOYjNmdklkc1VKc0VCWlBHcF9RU3RsQlQybGQ0U3VnUXVqWTBkX0ZqRElVTzZnZ3NSUDNPekJZWHM4Wjd5OVd2cVdsY2xObUI5NG02OUVvTzFLSTk3TjU?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=YVdEap5Ma-E",
+        "label": "Starlink, Ukraine and Iran: how the US requested changes to Musk's network | Reuters World News"
+      }
+    ]
+  },
+  {
+    "id": "auto-watch-us-and-israel-elections-2026-10-25",
+    "date": "2026-10-25",
+    "title": "Watch US and Israel Elections Loom Over Iran War",
+    "category": "escalation",
+    "description": "Via Bloomberg.com. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxNRlhBRnVBcVhUb2M2NVpXeFQxOWNQOWZBWXQ2eUQ4QUV6b3pTUFF2T2RmUTZHUTBPTWlMYW1WLXRzWjRTUGxzMlNPYjZUZ1UzY3BPVkxIamZsaWJMX1I5XzgwRWRfYWdWSGpESjJhWXN0SDM0aDlQbDhBWUIwekdRTkZmcU9uVWpwcmJIUE80QjVNNDliTUQtMHQwdnRTdw?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=fPRkMf62y7w",
         "label": ""
       }
     ]
