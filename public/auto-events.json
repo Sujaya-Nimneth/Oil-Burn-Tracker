@@ -3381,6 +3381,23 @@
     ]
   },
   {
+    "id": "auto-saudi-arabia-issues-safety-warnings-2026-10-25",
+    "date": "2026-10-25",
+    "title": "Saudi Arabia issues safety warnings for Riyadh, other regions",
+    "category": "escalation",
+    "description": "Via ABC News - Breaking News, Latest News and Videos. Auto-detected by headline monitor.",
+    "lat": 24.714,
+    "lng": 46.675,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYVFqc0lubVY2dlRqcFhLV0tWZy1fNG5HWXVLMVd2ZXVabUVkdHI0Y09wNXBxNzZRYWVsX0ZPbnJjRG9yckNHVnB3eS03OEJTZTdPU2hZZVpjZUYzX1dpT1dNdXl0eXJ2cjBpa0t3eUlSb3hGSE5IWk1ZcWlJNzZxSzVYdm_SAYoBQVVfeXFMTzlUajdJSDU5QzlnZnM1OG9wMHE4cWpmMlRyMG1SSkhLRWxYc0gyUXlnU3l0ZnhOYzh4UUFUX1V4ZVAwTUJLaGZXZ0VHM3RUVHphYXNVOGdZeWZTRHh3cVZEWUhXRUQza1VfOFp4UXlMLU82dU54S1pkRmdhaVZDVV8zUnpJWlNVLVdB?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=rRGakjNRFKA",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "auto-iran-war-live-trump-rules-2026-10-26",
     "date": "2026-10-26",
     "title": "Iran war live: Trump rules out strikes ‘today’; missile downed near Riyadh",
@@ -4352,6 +4369,23 @@
     ]
   },
   {
+    "id": "auto-iranians-cut-essentials-and-put-2026-10-28",
+    "date": "2026-10-28",
+    "title": "Iranians cut essentials and put dreams on hold as war-hit economy bites",
+    "category": "escalation",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQVjd4SVdyN0hZcml3UmdlZW1qOW11WFNjUVJxTjhiNHF1N2tCanBqd1ctbzNtOFhOQURONzhNZFRyckdnVVloZ05VNFVaTm9EbFpUUm16MmFrNlFNSC16N1lMb1h4cUdCS29DalBFcEptZkpVLWVUbFhpQ2lwdkV1SS1RYU9ReDU1czFNNHB0dlFTM1BOWnhudzd1VUViVWg3WWViWnlaWnVlZm9uTDN0LXlEVF9VNDVUcnc?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=8kB48u-9Tk4",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "auto-iran-war-live-trump-says-2026-10-29",
     "date": "2026-10-29",
     "title": "Iran war live: Trump says he approved Vance outreach over medical supplies",
@@ -4364,6 +4398,110 @@
       {
         "type": "youtube",
         "url": "https://www.youtube.com/watch?v=zYIu4RCSFbc",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-live-irgc-says-2026-10-29",
+    "date": "2026-10-29",
+    "title": "Iran war live: IRGC says 3 tankers on fire after hitting mines in Hormuz",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNemJmdTRNZDJOMzFaR0hrdkY1cU42SHZvM0pETzdIcW1HblIzMmxIekZKaTd3Qi1JQ0VnTVJRWnp4VlJPQXRUSmhxa0lLbWczekMxZVFjLThWX0N5N0NrSzFCbUJHNHMtSzRTM3R1Tzh1TXMyTjFlNTRoeUpRR0N3SzNPX1pfbEpCd0VsZHVUbVliTW9wbFVzcW03WXlBNEItaU9QUkEybUZoTUdwci1GNjdpZG9RSFR2NkZlR2FIQdIBxAFBVV95cUxOYl9oTE1fNWxDMXZibzBGQ214WWxLTTFmeE9RVHBBQVdRY1E0czRjUjNGX0hoS3lQRFRUejdoNEx5X3NNeUlKcGZ0RFlfMWRYZi12TVJ5dG8ycjdUUTJYcmZ2Rl9KdThjN3pWZF9YMEYzWTFCVExqUHRrc0pTWnlDX3RTZ3dpRWlidDZiT0ZYVFItUnBuWnp1XzVSWW5iQmhjMFB5TU1FeWEzNkFQUWtUYVducnR6WlRHYlRfWWw0a3hmTW0t?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=7_xCGTvhflg",
+        "label": "What next for the war in Iran after Israeli elections? | BBC News"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-updates-ship-on-2026-10-29",
+    "date": "2026-10-29",
+    "title": "Iran War Updates: Ship on fire in Strait of Hormuz as Hegseth fires top general accused of leaking war info",
+    "category": "chokepoint",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaldzakpwdnNPdVBvcUw2WmlXOGFPU0hSaktBa0RtLUFscVVkZGV1QmtNbDZXQks3UGVQNWlxTmQ1VFJqNUlCT2tZeHpMTGxOemgxN1J2M3JJWTJnUTFZUURrNEpjTGJ2Q1JoMmVPVUVkSE1Qb0NIRlhqMWFVbFpmVlhtXzBsa1o5UlctX2U0Y18yemFBWUROQmNWV2g?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=7_xCGTvhflg",
+        "label": "What next for the war in Iran after Israeli elections? | BBC News"
+      }
+    ]
+  },
+  {
+    "id": "auto-how-to-stop-the-usisrael-2026-10-29",
+    "date": "2026-10-29",
+    "title": "How to stop the US-Israel war on Iran",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORzN0dVNJQ1U3bGptWHNyNmFsNDBMdF9qaW84MGtyaVEwVmZrUm1xZEtsS2J3eUVjQVktdWlPR3pMQlc1MkM4WTRmSGFYamJLNUN0eUZub0VGbldzcWVOVHo5eWNiVU9EWl83MmFhb0FIM3JhU3hRX01oTDRnYkhhekRwVW9BM2M2eGZZ0gGQAUFVX3lxTE9RNFo1S3I3YVhDdVBNS2l5LTloUHRCeHVqd0lFRjNfOGZrRlNkQ3FCbkdpV25adVVOOFdrbDduVFFOejZWS3VGR0JUVTBpWk5DRjJ1THdEcVR3anoxVTNaOERhTnVPTC16REFjdW1IM3duS092ZUtGaDViWkx1Sk41cFB0R1lhZkZCV3poemlxYw?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=7_xCGTvhflg",
+        "label": "What next for the war in Iran after Israeli elections? | BBC News"
+      }
+    ]
+  },
+  {
+    "id": "auto-former-us-officials-call-on-2026-10-29",
+    "date": "2026-10-29",
+    "title": "Former US officials call on 2028 candidates to denounce Biden’s Gaza policy",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTXl2bXI1eWpKSmhuOUwybFVwaWN2b3Vabk9rM2ZETXh2RjYta2d2UndVcG5LY3NFZ3N2V18zTXNFUU5zMzMxWkxQNTF5MXVnMk1EaXQ4eW1aNG9MaVRPYm84WUhWU1o5ODFKNHlnc1EyUHYyYzZHc05ZOWIwQ3haTkU4UllpZjN1ZHNnSkVnQXBiT1hJci1QblVVaG1PcFMzeHlaTkJHaTRnMlNON0I2aUc4bGMzNXfSAbwBQVVfeXFMTUctSFNZVW9oRjFYQlhYTXdtZkNCTGt4ZkFGNWthME9mUkl5ZlFILW5yTjZiMmtHWFQzYlJwaUdYWmQ5V2RTUld2VUYwWXlaM3M1QW1BX2lyTVVLUUVfQkFoTjh4Nzl1NzlKRVBGX25oU0tjNmhuWWZmam1MUjhSVmJKZklqMGtpWnphcEpHQlJ4ZXVkdkZyaW9nYVNFdDFkZ1djSkRwTFV3eG83NGdZZHBhQjhyMVBhdUF0ODc?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=sfm_l2eK8X4",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-gaza-coach-teaches-taekwondo-amid-2026-10-29",
+    "date": "2026-10-29",
+    "title": "Gaza coach teaches taekwondo amid destruction",
+    "category": "escalation",
+    "description": "Via DW.com. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMG16a0pnLUprMlE0LTNEVVdHN2l3MVlBN280M1NUdXM2V0dLcFRKVDdpMHZrbkZyR190bzJLbUQtT01waHgzUEZnQTFSWklhYU1QR3lSaU9mS1JaU0MzcS1qUHZHS1FjZTljM0RGNkhJVDlkak1fQ1FKWGxNS1MxcHF2LXc?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=b-88NcioUmg",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-transcript-can-netanyahu-hold-on-2026-10-29",
+    "date": "2026-10-29",
+    "title": "Transcript: Can Netanyahu hold on to power?",
+    "category": "escalation",
+    "description": "Via Financial Times. Auto-detected by headline monitor.",
+    "lat": 31.768,
+    "lng": 34.851,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNHRvQnFvYS1vMGdHbHFMQnF6NnFZdGhNN3ZxZE9qRVFVcS1DY0JIM0FuVVZYYXpNVTdMZUlMMk1YMjlmY0dldERPVXRpc2xJVmlNVEpualJLbXVpNjNWZDVDUGdNSXc3U0NsQmg0RUY1azc1X1JnS284dk1GNUtnVFg1UEI?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=gHS4QX0rlN8",
         "label": ""
       }
     ]
