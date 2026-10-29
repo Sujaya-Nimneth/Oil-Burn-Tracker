@@ -1,400 +1,5 @@
 [
   {
-    "id": "auto-iran-war-updates-iran-says-2026-10-20",
-    "date": "2026-10-20",
-    "title": "Iran war updates: Iran says US attack means ‘destruction’ throughout region",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1wRmU1RzJvUnBDSDFoNnRnZ0ZFdUtDWDNkMGlsSHRkSHhPN1RBaFZDNG0zd3E0TDFubVRidWkxTlg3ZVNHRGF4YnNiN2t2SVZBSU1GSl9nM0VVa2RIT21jTklHLUV6ZFI1dXfSAW9BVV95cUxQa2FxRGFjdHc1Y3dzTVhIZFJ5b1huMTdVeWw2R0Q5a1B0RTZGSlFyZmR4Yl9sZmE0anY2Ukw5VDNzem9mWU96UHRtd3JOYWd2cXlKX3RDNjE5bVZVU29LOEpvLUhydjc1UTl4Y2dsZms?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-10-25T15:43:59.810Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=BeQXQaJ8rLc",
-        "label": "Gaza content creator tells Al Jazeera how much her award win means"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "BeQXQaJ8rLc",
-      "title": "Gaza content creator tells Al Jazeera how much her award win means",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-small-potatoes-us-president-trump-2026-09-04",
-    "date": "2026-09-04",
-    "title": "‘Small potatoes’: US President Trump downplays war on Iran",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVjdic3NWOEx4bDdlWTRfcXp3bUhUUDlMWkc4RGFfazVDSmVoWHh1dmRKZktTNllZM1RhRjJoRGkxMGR2S1lHbE9Cd0NndEptdnFTZEZMaW93bTRRRTJ1ZThGc1V0c1o1VDc0Q2VjZ0NIaTVMZ1otdzBEbnhFMTZ4WE1sZ1c5Y2Z3MHJaRUt6ZF82NkFLcWlzcEJfc9IBoAFBVV95cUxPRS14Y20xajR0enBJQzRGN1dTNlhSSU1sNmRTSVNOeUptcEtpeG9tRzdJalZQNTFEYkJteUptc3ktSXhtZDJPdHB5b2tGUnNMclE0OHVRQ0FYak1xSnFMZFg3S0x1OG50bzRSQ3Z1LTc0NFExejBxU21TOWRpVUotWndtWGdYelhvOWZwc1FtdU5VYUJsU3BXTXpORTVZODhl?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-10-25T15:44:00.611Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=QYCbZAHs0tQ",
-        "label": "Trump mocks reporter asking about Iran strikes, as Tehran says US derailed talks | AJ #shorts"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "QYCbZAHs0tQ",
-      "title": "Trump mocks reporter asking about Iran strikes, as Tehran says US derailed talks | AJ #shorts",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-vance-extremely-skeptical-us-strike-2026-09-04",
-    "date": "2026-09-04",
-    "title": "Vance \"extremely skeptical\" U.S. strike hit Iran wedding party, says he wouldn't call conflict a war",
-    "description": "Via CBS News. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaGpwVVBCeVNvZE5lV3RCSFl0M2E1cnZlZS0wMjVSRFlrS1E5ZXFWSml2MGdKZEFMaHlSRFc1Ylc1WkRPTy1IaEpRZzFrbFpBZFJJbmw4RnVYaDJxWDFUQ3hlVk9JMUJ5Zk1HXzQ1Z2RxbVpWN2dTa3lFTzdwN3V3QjFTb20tSEdkOTRnQS10eUEwaFBQWlcxSmQwbUZxRmhCOEptYXhaTWJyNGpnV0E?oc=5",
-    "source": "CBS News",
-    "fetchedAt": "2026-10-25T15:44:02.931Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=f6kBvn3G0Z0",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "f6kBvn3G0Z0",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-war-updates-us-says-2026-09-03",
-    "date": "2026-09-03",
-    "title": "Iran war updates: US says no major operations against Iran; options open",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcWY3aFROMjg1SUI0N0M5cDh5ODFZUGdRSHlIRUFfSjQ4UGl4Z2RvUmZScl9WS1pTbjJ1STlXelFGckNuTjB1akswSm5xUm1RSjc0RkRZUHloLURCWTU1eWRpcnVBdloxNG84eDVla3o4MC1BRDlmRExxZnNWTGlQNC1BdTExZzJBVEUwV2dxODZqTDlneUIxcU1GZ0lKU3hnbWRjUkFLUlpuNzNrbVJVRHpmeWZpd9IBuwFBVV95cUxPYWZQbWZRclMwUnVKanBGd2Etd0VTUVpLd3NHZHdBOGlJUllHX2JWeVM1ZVhzdmI2VEpXd0FkUnA4bFgtaHN2bmVsdHlqSVdlSEltM0swY2NJRmVlZW1fRWFPaGxGbFBZOTJISy1XdWZfdXEwREZQYXdwQ2FyOE9hYTZNN0lUNkVpMTdScTZjVzlMMjEyWklnWUVtTktObGNSeWFwUzB1YXlTNkxYZHNoQWRvUVFESTBJR2tj?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-10-25T15:44:05.354Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=6no55Ud_VaE",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "6no55Ud_VaE",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-the-domestic-armed-threat-facing-2026-09-07",
-    "date": "2026-09-07",
-    "title": "The domestic armed threat facing Iran",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNR254UlBUVk94YnU4c0tBbVVRZzFXT2hmYWVFaFptX200RkZjNU5vN05neW93eHlfUnk5Q3FzQUFTenFFQ0ZMd1ZIT2ZJSHpzT0Q4ZjdjN3lEUjZBQnI0X283bVhKMWJxTXpvQ1pkVWtDUEFyTXpRNmgxZU15OTVURTdUWdIBiAFBVV95cUxOa1BUblRlMTlQa0VVa05HclM3WWNMNG9ma0VxeWFiUVk4OFN6OXN2amhya3VOZTRUTkdlQkFpNm8yX0FGdFFKX3YtbUhadVlOSXEtTkE5ekdySUZ1eTZlRmZBV3pJdFByeHMzSWFCM0g3Tzh4dFBOZkh4UGp2NHRBNEQ5Sy1LSElx?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-10-25T15:44:07.372Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-war-live-trump-says-2026-10-25",
-    "date": "2026-10-25",
-    "title": "Iran war live: Trump says ‘no strike today’; Qatar mediators in Tehran",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRy1XR2xLRHBpdDFLWmZBY0Q0QW95SXpadWRTS1Z2dlFYUWtfaEFsNTBfTEloZXRuTFlyWUdkLU9FSF84VkNoMmx6UXZiTWhyNmI4WnZZVlgtWHhHcllTcGgtRlV0RGMxWnRvczBuMDFBRXhwdUUxYXNaZVdUbkN6VTZrY3JTd1VIR0JPTWItOXp1NDFBWjlRMGdQeW03aGlpc3JVWm1BTThmNGQzZHgzVHNMRXJwZjFGVEE4Rk14SUHSAcYBQVVfeXFMTzk5N2k2NXlJMUtfdW9EZXh4dU9sdk1YdTJNMWh1cnpER2ZqR2pXZ2xmVU5peWVGMnduRlpDeklHcXJLX0dUQ25jY1dpWGg3aXAwaWNIdmpKdzlHV3ZHLWxveThZNlVCRGx2Wkd0T1ViVUhZc20yUDFHX0t0SW4yYkxmeU8yV1RUeG50SmVoYXpLalpaLW1UMlBmeUdnT1YzdUxrbHZWYWhxSTFfMGNaTUxsTTBxV0lvSE9GYmtGNnM4SVpiYVpB?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-10-25T20:31:28.769Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=6no55Ud_VaE",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "6no55Ud_VaE",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 25.285,
-    "lng": 51.531,
-    "zoom": 8,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-live-updates-trump-says-hes-2026-10-25",
-    "date": "2026-10-25",
-    "title": "Live Updates: Trump says he's weighing deal with Iran against action to \"finish them off\"",
-    "description": "Via CBS News. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZXdRdW1Db041UUN4dlYyNURUdmFWS0V0V1hCc0hnNVBZWlIxYk5Pdkg0Nks0Ri01UkRsM0NVR3VVTEVzc2psaWhpZDk1ZlRTTG0tcHgzcEZkTURsUDFoejN3MVl0NVBKZXNwU1ZVeDI0VWY5TEJ2M2dqSXBDcFpRTzRvSExKWEtVQlNzLUZINnZsT3phZ0xROHd3VXc?oc=5",
-    "source": "CBS News",
-    "fetchedAt": "2026-10-25T20:31:30.503Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=-LqIbCc6Mns",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "-LqIbCc6Mns",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iranians-fear-possible-return-to-2026-10-25",
-    "date": "2026-10-25",
-    "title": "Iranians fear possible return to all-out war as US and Israeli elections approach",
-    "description": "Via Politico. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPeHQ1eTVHV0lnTUxkcHZTSmxubVl5dHBCa1VrTHNFV1hVOUxKaXlmRXc0QjVrRlJDQW5CMk4zRmV1bGxsTkZ6b19peDRaX2hlNHR4aGF1ajNoenJjMl9fSGFIdzA4LXJUbzNZaDI1bGMzdUd5eklrNjg5MVp0WHFqbE93NTU2UnB0THZ2ZERwLUlrRHRRODF1WWFCaXc2SGJZV3hZbVBCZGlRV3BHemJ2SGhHakh6cjdnLWNvellCVVVtTl9zQkdkRkdfdw?oc=5",
-    "source": "Politico",
-    "fetchedAt": "2026-10-25T20:31:31.948Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=5GuFcNywQLY",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "5GuFcNywQLY",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-iranians-fear-a-possible-return-2026-10-25",
-    "date": "2026-10-25",
-    "title": "Iranians fear a possible return to all-out war as US and Israeli elections approach",
-    "description": "Via AP News. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPVERVeGhKVnFuNV82YUV2SEFmNEF6SUIwSWszbi00MC1ObThxa1dtQVY3ZG1JcUFjZlRzWmhTT0Jwbk5IV3VJMlVlNE9wSTlOZ3B1bGU1aFpldmtMei1TckZBemhNckxUdXVZNjkwWlBNWjhHSncxdVRhOTIwNDZPem1uNXN0YmI2bUdBNmJNYjVSTTg?oc=5",
-    "source": "AP News",
-    "fetchedAt": "2026-10-25T20:31:33.332Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=5GuFcNywQLY",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "5GuFcNywQLY",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-says-nothing-will-be-2026-10-25",
-    "date": "2026-10-25",
-    "title": "Iran says 'nothing will be same' in region after war with US",
-    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdzN1T3hGZVFOX2R5NHFOS2dHNFNMQTE4elFDcHhYRlFucGU2RVpTS2JnYkhPSEJTSUVYNlRlRnM3c3RMWU9rOFY4enVDVXZEYzZBNjJ6Tl90bG5lek1TSng1dzVBd2NjM2dhLWFaMkR3OURMbWljUjF4eUJCYWZOQXFIT0dYWXFBR3h1a2lKVi02empqWGd6d05wYVhWdTlJZDUtVXVn?oc=5",
-    "source": "Anadolu Ajansı",
-    "fetchedAt": "2026-10-25T20:31:34.815Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=trowUvgK9HI",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "trowUvgK9HI",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-trump-prepares-for-iran-escalation-2026-10-25",
-    "date": "2026-10-25",
-    "title": "Trump Prepares for Iran Escalation After US, Israeli Elections",
-    "description": "Via Bloomberg.com. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbS1tMzRuM2wzRGNDV0R5b3o5N3p0V1U1OVhreW01YXB6dWdmQlBCMS1Hb2FmQnJYYVZsSVJKNG5pVHFGN1pqWlJYUk13cC02OTR5RWpZczZ1c21KMjkyMmIxOXJOQ1VDZFg0V3pSTENZTi1DM1NDeGx1OHJBVVc4TjlyeG84ZUhTZ3NXVnVHZGZVaE9tVFFoSHVkUlJoeE5BMkJJVU9kOFNSUG05YVRtc09R?oc=5",
-    "source": "Bloomberg.com",
-    "fetchedAt": "2026-10-25T20:31:37.010Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=V8xNE_eh0PM",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "V8xNE_eh0PM",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-the-us-and-israel-have-2026-10-25",
-    "date": "2026-10-25",
-    "title": "The U.S. and Israel have drawn up plans to renew strikes against Iran, creating a sense of anxiety and dread among war-weary residents. “People are under enormous pressure and are being crushed by the economic siege,” said one man who lives in Kerma",
-    "description": "Via Facebook. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcnBpNjQ2cm5iNHVTNVRlUm5yd2VxR21mczU0aVNSQ25ubkpROTZkMGE4XzZjUjRvZGQtZXVCTlJxc3N1Qm5BajNKd3VpYWFuZEQ0dzJnTGNRQjU1TzVHU1ZBU1pUbU5sR0VGazB2ZWxHVkhGRGs3ZW13a0wtc0tpUHlVTlRfUER3Y28zMVRxVkhJcmZtWW43RzBidVNmaTFhQzRJMk5zcjZ6eUxRRFFrTTM2T3VWUFpBWE5ob215b2NGSExnNFJBckh2Z2ZfbHgxaC1n?oc=5",
-    "source": "Facebook",
-    "fetchedAt": "2026-10-25T20:31:37.811Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=YQLTOkNQDd0",
-        "label": "Hebron under siege as Israeli forces continue raids and arrests for third day"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "YQLTOkNQDd0",
-      "title": "Hebron under siege as Israeli forces continue raids and arrests for third day",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-iran-is-still-passing-messages-2026-10-25",
-    "date": "2026-10-25",
-    "title": "Iran is still passing messages to the U.S. via intermediaries, foreign ministry says",
-    "description": "Via Fortune. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTWVjTFJyNXNtQnNIYkZtcWcxRlBKUlRhMmFkYno5aVh0bDVDaU9fbUtOeFp1UWRPa2N4MnVqOXNVdDNUTHFxaDE3Y044SzZ4RWJmRVRRTkFNMkY1QTRUUDl5Rm0tX3g2ZnA3b25tWEo4YlpiOVYxUjBKVFMzNi1oUW14bXhEdWhETG9qWGJsNkNoWWtx?oc=5",
-    "source": "Fortune",
-    "fetchedAt": "2026-10-25T20:31:40.171Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=cdyFTKGiG3E",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "cdyFTKGiG3E",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-centcom-reportedly-has-plans-for-2026-10-25",
-    "date": "2026-10-25",
-    "title": "CENTCOM reportedly has plans for Iran strikes: Will Trump approve them?",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPd29BdjhJS29PZ0IwcElEZmdpZW4xRlhlYnIyQWhXR1VaZ2FCQlBFTW9kWjRETG0zalRDOWZ3dC1fc0cxc09HTmQ2UjhnUldtZXlNV0xEbjBQc0FFTTJ3S0hZOXFqbGhjVDYydEVXNFF2WTk3aHhKRVAwVnlOUENTVUlLOWpVZlN2M09CRjJVcUZfVlRHOEpHS2hSUUxLZW51OXZnZDk0YnBTamkyZlhpSNIBtgFBVV95cUxPQWc2WnhrU0s2LVRqd01IeHlnNG5RUllfQWVKVmlIeHMzQmp0UmQ3Vlo2VlAtTGMweHd3ZlZwWDZnTHhveUdmS1QyV00xLW9Jb2Q1MEN5ZzU3ZUZobUUzMzJXUjlMb240aDNNcDg0dU9Ibnk0bDhNcGVDQkZRS3pfTzNWTkFFcTFEUUFLamhaYzVVNVRPenJzQ3JEbTVxcjdtWVZsSXBsZEpzNWdyeGR0ZlllTE1UQQ?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-10-25T20:31:42.562Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=iAkNmYbuV1E",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "iAkNmYbuV1E",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-how-is-the-usisraeli-war-2026-10-25",
-    "date": "2026-10-25",
-    "title": "How is the US-Israeli war on Iran causing havoc in Europe?",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVmJvVFROYklRaWdWUnhjOXhGUVpNQmRzME1NM25aUWVTNVlDQU90aGNQaTRlZTUzZUNscE9QZHNZX2ZZY0pKS2htbjNpUHJXaDVMR25zeFRlU1I2ZzN0LWlsdTNsSU9TUnZvcFVFTXVyUXZtUjNvZFhlQU1WUjdITnBlZ1hzc0gyRXV4blBDMkdPcC13Wl9VbW5uaC1JaGR30gGmAUFVX3lxTE4xY3BFSzlQa0VZLWcwaUo3SklTdzRKaExfbzlEUjNDYlVpczR6amNiN3BmUzRaM0tReUhJeVVnWkJnaWJkVXMtVUlQR3haX2JScWFsRHRmazlzYW9hMVZfaFdIYWxiendHMldwcDBMOWctQWNQX0xQd0RZUVVDOEt5OUQzSkhZbFpHMEIxc0dSOENFbm1jRVNUUjZBSzN6MjJzTjNJMFE?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-10-25T20:31:44.565Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=cTHSIrylnfY",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "cTHSIrylnfY",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
     "id": "auto-saudi-arabia-intercepts-houthi-missiles-2026-10-25",
     "date": "2026-10-25",
     "title": "Saudi Arabia intercepts Houthi missiles, drones as Yemen fighting continues",
@@ -5174,6 +4779,364 @@
     "lat": 29.5,
     "lng": 48.5,
     "zoom": 5,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-war-live-houthis-again-2026-10-29",
+    "date": "2026-10-29",
+    "title": "Iran war live: Houthis again target Riyadh as coalition intercepts missiles",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNemJmdTRNZDJOMzFaR0hrdkY1cU42SHZvM0pETzdIcW1HblIzMmxIekZKaTd3Qi1JQ0VnTVJRWnp4VlJPQXRUSmhxa0lLbWczekMxZVFjLThWX0N5N0NrSzFCbUJHNHMtSzRTM3R1Tzh1TXMyTjFlNTRoeUpRR0N3SzNPX1pfbEpCd0VsZHVUbVliTW9wbFVzcW03WXlBNEItaU9QUkEybUZoTUdwci1GNjdpZG9RSFR2NkZlR2FIQdIBxAFBVV95cUxOYl9oTE1fNWxDMXZibzBGQ214WWxLTTFmeE9RVHBBQVdRY1E0czRjUjNGX0hoS3lQRFRUejdoNEx5X3NNeUlKcGZ0RFlfMWRYZi12TVJ5dG8ycjdUUTJYcmZ2Rl9KdThjN3pWZF9YMEYzWTFCVExqUHRrc0pTWnlDX3RTZ3dpRWlidDZiT0ZYVFItUnBuWnp1XzVSWW5iQmhjMFB5TU1FeWEzNkFQUWtUYVducnR6WlRHYlRfWWw0a3hmTW0t?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-10-29T22:32:33.568Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=C87WluVbxXw",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "C87WluVbxXw",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 15.369,
+    "lng": 44.191,
+    "zoom": 7,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-live-updates-tankers-strike-mines-2026-10-29",
+    "date": "2026-10-29",
+    "title": "Live Updates: Tankers strike mines in Strait of Hormuz, Iran says, as Hegseth fires top general",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaldzakpwdnNPdVBvcUw2WmlXOGFPU0hSaktBa0RtLUFscVVkZGV1QmtNbDZXQks3UGVQNWlxTmQ1VFJqNUlCT2tZeHpMTGxOemgxN1J2M3JJWTJnUTFZUURrNEpjTGJ2Q1JoMmVPVUVkSE1Qb0NIRlhqMWFVbFpmVlhtXzBsa1o5UlctX2U0Y18yemFBWUROQmNWV2g?oc=5",
+    "source": "CBS News",
+    "fetchedAt": "2026-10-29T22:32:35.108Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=F1vKeW6HD1c",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "F1vKeW6HD1c",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 26.566,
+    "lng": 56.25,
+    "zoom": 8,
+    "facilityId": "strait-of-hormuz",
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-israeli-election-results-raise-prospect-2026-10-29",
+    "date": "2026-10-29",
+    "title": "Israeli election results raise prospect of new Iran attack",
+    "description": "Via The National. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTGFQQjcxZ1I0dlhqVTd1U0NkY0h6SkVGMlAzdTBIWnNKN1pEMUx0MlNGTTA0TU9CcENXd24wQjdoRV9Va0hIaGRxZzUzRkhFMlJIbUh5dU0wandfS1NIQ1FybFJRczdfakJKbnlnVmNmRnlvRnlBYTBZZlExNXVKcGJERGJlNXZ2QkU4QkxWeklnenhibUY2cERlR1NCU2VmS2lDVHNvU3NleTB3STRYSFB3?oc=5",
+    "source": "The National",
+    "fetchedAt": "2026-10-29T22:32:36.478Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=ukS72DoHdI8",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "ukS72DoHdI8",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-pentagon-says-iran-war-has-2026-10-29",
+    "date": "2026-10-29",
+    "title": "Pentagon says Iran war has cost US taxpayers $47bn: What that means",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNOXo4WGVRZE9wNk5rWUQzcENPb3lhaVRWSU8wSnN4eE5HT2NNT2tNNHV5czhKaGNKQnRSdVNmenFUaEVraTd0WWZYSG1SdGJGZnlmVXNhZHNNanlhVXRLdmx1TV9oV3lfV1kwUko0VVg4bEoyTzFzOFhkd3l4bXBHSzVHMlVXZmJVRGptMUlrZlFpYTlvcXlLZlBTNHlZaDJRekNjRTRCSG9uSjTSAbABQVVfeXFMUGRIczNfdUtzdlp3Sl85MEtReUNERjA3WjdJbWs0bFl1cVh4bHU1clU3bHk5bEthcUJIb2xOM3RiX0IxdWl2elpwbXVQd0M0dlBnc01LLUs0eDRYQ0cwemR1V1hGcFFEc0x5VE1tajh2eS1aaUNUZ1hpTVNyaFc1NTE4MjJNQkJ3V09MSHdnNlQ1Y1h0NjZrYV8zUE5jOFdYRG9DZ3c2UlNRdDZBdURmNjg?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-10-29T22:32:38.118Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=AeU1hF6YIm4",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "AeU1hF6YIm4",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-exclusive-qatarenergy-buys-us-other-2026-10-29",
+    "date": "2026-10-29",
+    "title": "EXCLUSIVE: QatarEnergy buys US, other LNG to hedge future Hormuz disruptions",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "category": "facility_damage",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQT19OLUYzbVNkOXdLUFJnQWJpOHRJaDQ0Y3FyVWs5M1IyLTFIZmRsazhqakFvMlFPNnFTeEM1T0VTTnlHTjJyMjFsblVzMlduWlRNeFI0VjlZVXRwNUZGUTVFeWdTY0tLRzlaRWFKam9uU2lRREVFS0lTLXpQME9jR25LRjF5Z0lnZ2lqbV9ybjZfRlZldDRYXzB6UElVU08zVFduMzhCYjFTb25hWTBtNTA4dw?oc=5",
+    "source": "Reuters",
+    "fetchedAt": "2026-10-29T22:32:39.596Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=rKMKHvMLgHg",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "rKMKHvMLgHg",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 26.566,
+    "lng": 56.25,
+    "zoom": 8,
+    "facilityId": "strait-of-hormuz",
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-military-ordered-to-be-ready-2026-10-07",
+    "date": "2026-10-07",
+    "title": "Military ordered to be ready for possible Iran strikes as Trump weighs timing",
+    "description": "Via Axios. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOcTJVT0lpY01IdHRxLXR3WFJUWVdlVlNWM2IyV0p2cFNoQVRPQjVMdXNkTHNpYk5NY2lvRzQ0SkpHN1I3T21KLThjVHI5SHlmeFZyZndfempWYjgzNWJMaWFmY1B2dk9nbGxuV056WG9NSWlRdWszd085cWZUOXBKbjc5YlFrcGo4VjI4?oc=5",
+    "source": "Axios",
+    "fetchedAt": "2026-10-29T22:32:41.743Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=t99oYY2flDY",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "t99oYY2flDY",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-how-south-korea-finds-itself-2026-09-08",
+    "date": "2026-09-08",
+    "title": "How South Korea finds itself trapped in the US-Iran war",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeHBsY3Zuc19xSDZ3dHMyVHk4M2VER1k2OXhhVXE3Y0ttQVotQndHNXQ3SHViRHNtak81cXp3UE1XUU50ZTBTUWU5MTdmUUoyQlVnYXh6N3h0ejFMR0FodVRmVWwtMDVCM29aYjJxeVlLc2prSThEUzVESXRYcjNZTWNBNF8wUmxmUVNhWnplUnZZVUFwZW5oZzBkWdIBoAFBVV95cUxPSGdjSkh2ZG1QWklWS013QTQwSXlQWHR0OEZRS1BGdlFzaGVPWTNadW0wSTFZWVpGQ1Z3MWxqMUdFUXF4ZkJJTWYzay1zQWNvbWxyWl8xUVhVVk40U2loNl9yM1gzbXpBOTFwbEhQal9uNjByeUsxNTk0N3Z5Wjk5WUZBb3NVSU50VHRRUGxOSUlWT0gxdjNWS0RmUDRRTndt?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-10-29T22:32:44.133Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=tof7x_nJBgc",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "tof7x_nJBgc",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-netanyahu-or-eisenkot-tehran-sees-2026-10-29",
+    "date": "2026-10-29",
+    "title": "Netanyahu or Eisenkot? Tehran sees little difference on war",
+    "description": "Via Iran International. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBYdXBBZVZROUhaR3dtUnc0NmZvSHpKZUdfS0EzSzQ5OGxJTWJtNG9EZ3l2Nm9LaDJyVTVTbHE1S0FlZ1FBYXJlb3RNRDFzYzdhUlE?oc=5",
+    "source": "Iran International",
+    "fetchedAt": "2026-10-29T22:32:46.511Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=F4DS3ogxEwQ",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "F4DS3ogxEwQ",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-2026-iran-war-oil-explained-2026-10-28",
+    "date": "2026-10-28",
+    "title": "2026 Iran war | Oil, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
+    "description": "Via Britannica. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
+    "source": "Britannica",
+    "fetchedAt": "2026-10-29T22:32:48.763Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=L3KsJntW2bU",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "L3KsJntW2bU",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 26.566,
+    "lng": 56.25,
+    "zoom": 8,
+    "facilityId": "strait-of-hormuz",
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-analysis-not-october-7-not-2026-10-29",
+    "date": "2026-10-29",
+    "title": "Analysis • Not October 7, not the Iran war: Nothing can sway Israeli voters",
+    "description": "Via Haaretz. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNOWNyejRRbGJ4NmtVRVBGdnBLTEZ1NXlTcFJPdmNvWTdESmFlclA0cTEyWnNZc0EwSDctSGpDQkJsSURmZ0p6ZkFuNk1EenlwX3h1UEhOMmF0RzU3ck1GYlZSU1F2b2ItRVhDRXpXcUNOVW80TzlZUTVCSlVyVy1keUJWSnBJLUgxVnJIVERJX3hYN3B6LXJyVU9hb1lsQWJvc1laRVAybW1qZkJQc3RwS3IxU09HS2VreGJGbmszYjJTNU92enpqaFZWeUlyM1JWU1VOR2RHQWpFR1NQR29iY0RZSDl6aFhhbFZxVVMtc2JWVmxrRm05REpIZmFQWWRkcnh1cTBfVmRkRzBaQ0ZfQ2dWWVc5Zw?oc=5",
+    "source": "Haaretz",
+    "fetchedAt": "2026-10-29T22:32:50.901Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=1qW4Jk49xs0",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "1qW4Jk49xs0",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-study-15-cost-rise-iran-2026-10-29",
+    "date": "2026-10-29",
+    "title": "Study: 15% cost rise, Iran war impact rates of educational travel to Israel",
+    "description": "Via The Jewish Federations of North America. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOdG8wRnVZU1hZU0NvYWtMUWZOQnZzMzh2SDZEUlhLZEQ3NlVWTVUtSFB1N25vN3ZFR3dUUi1qYWNWd3VieUZsZWlTdEtoMjNMR3U3NWFfM2U1eWxsZkxEWGlIMXFMZ0ZocGw4TGtJYWZMZ3FKRS1vYllfV0M2WVI3R1VfMm15QXZUcXJzMUZxQVRmWUkzSFphSmRVdzFNc25yVWU4NWkwTGtfLXQ4QzRHbFQ1WE43alJVOGdvTTlmZw?oc=5",
+    "source": "The Jewish Federations of North America",
+    "fetchedAt": "2026-10-29T22:32:56.808Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-little-gaza-in-egypt-provides-2026-10-29",
+    "date": "2026-10-29",
+    "title": "“Little Gaza” in Egypt provides sanctuary for some Palestinian children but funding cuts loom and medical evacuations falling",
+    "description": "Via Save the Children. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNekZRbTBSYjNIZEhmMEw3Vkt1M29yM1NGaHlBUUlHcXlvTlpvMVl5Qko5OFZEdWNYb1Z6VkxVVzF1YlNpcGRncWJOb3RaWXQxeWVsVVduWFlNcFQyNG40S1J3Z0FqcGh6WFVEQjAxMTdWYUdnbE5EcmR4VUUzR2xUVTYwN0FheTM2dEhwVEtBVms2amMxQ2xCcmotOElJUGNrNGlVUnBlaGlVZjhGYnhwVXRlTkpQeG5EWXpBWW14Qmw2cGNkTGs3bA?oc=5",
+    "source": "Save the Children",
+    "fetchedAt": "2026-10-29T22:33:02.924Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 31.501,
+    "lng": 34.467,
+    "zoom": 10,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-israelis-have-changed-will-they-2026-10-25",
+    "date": "2026-10-25",
+    "title": "Israelis have changed. Will they change their leadership?",
+    "description": "Via NPR. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTFAtVXRuM1dxV0lqVnVoRnRiNGJ5SExjMUhraVFoTTFXSm1HYzJqclI0R1ZqamRzdDVfdEJnVHYwcWZVbjRwVkZaRjVBVW01UUw4azBnOTRuSGZwSUlOZ1JaQmNnU21qZE02b2ZtVEp5c0VtOGltdXdYSzhPMjY?oc=5",
+    "source": "NPR",
+    "fetchedAt": "2026-10-29T22:33:09.018Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-israeli-strikes-hit-gaza-as-2026-10-29",
+    "date": "2026-10-29",
+    "title": "Israeli strikes hit Gaza as Health Ministry urges Rafah opening",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTWhxRUpzcEpyamF0ZVJ1WmlJT1laNXlBZmY2TzdOajRacG9yZTNkTkt1dy11djZLY1dBWWtHdXlTNU8wcUhPMkU5aXNIdE5yaVhoR0NfUnZwR1Mzck9mN0k2VklfM010dHd0WE8xNjQzS19UQlU4UGpXM2RWUHh4TEVRc0VybkVVRnVkNjZpWVp3MHgyWnlzb2FtVkkyaVpWSEFsRXRvZTHSAa4BQVVfeXFMTWNFMG8tcEFWNHBZUnRWc0dXWDZNeUpUdnZETVNSdDlhOFE1b2NIYVlZbVl5bWdGUEd4VVBkTTBQSFNUblBPN1VsLUlieDliQVgweTdmZGpkUm84cjJweDFCOVlIbG1mWlBqcEJnOUNKYW4yeFZQQjhjUi1LTUZKdWdCRk9NTnhqY0JESXgwbXpvVXlveFJEdDVYc2tVZUZvYkdnQ1JxV2VybFRaQl9B?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-10-29T22:33:15.079Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 31.297,
+    "lng": 34.243,
+    "zoom": 12,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-what-to-know-about-israels-2026-10-29",
+    "date": "2026-10-29",
+    "title": "What To Know About Israel’s Election as Results Emerge With No Clear Winner",
+    "description": "Via Chapelboro.com. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUmRoR3YzR2twRjVVczZ4ZTVyb1I1TzFna3JDVFpKNVZwekhubmZUU0lpeHQ1ZHk5M0dGVTdFS3FNbTYwOW1FZTgtbU9xMHJfcXFfM1JZQ1VIdnd6V1REeWpPZmpoQW5CYUxOcWdrN2hYMDZhUHBmanJFbDd6QXg3aTViZVFLUUw3b2toMUNrMHFua1NMeTFNRUZoVDh6bkF1WEE3X2YyZGdvSmhi?oc=5",
+    "source": "Chapelboro.com",
+    "fetchedAt": "2026-10-29T22:33:20.721Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
     "casualties": null,
     "status": "draft"
   }

@@ -18432,13 +18432,7405 @@
         "estimatedCO2TonsDay": 283,
         "matchedFacility": null
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.46574,
+          41.23938
+        ]
+      },
+      "properties": {
+        "latitude": 41.23938,
+        "longitude": 36.46574,
+        "bright_ti4": 342.84,
+        "frp": 3.58,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 189,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.46336,
+          41.24438
+        ]
+      },
+      "properties": {
+        "latitude": 41.24438,
+        "longitude": 36.46336,
+        "bright_ti4": 330.01,
+        "frp": 2.04,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 108,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.58984,
+          45.10352
+        ]
+      },
+      "properties": {
+        "latitude": 45.10352,
+        "longitude": 38.58984,
+        "bright_ti4": 344.82,
+        "frp": 8.14,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 430,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.58655,
+          45.10551
+        ]
+      },
+      "properties": {
+        "latitude": 45.10551,
+        "longitude": 38.58655,
+        "bright_ti4": 339.38,
+        "frp": 7.98,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 421,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.592,
+          45.10682
+        ]
+      },
+      "properties": {
+        "latitude": 45.10682,
+        "longitude": 38.592,
+        "bright_ti4": 340.04,
+        "frp": 7.98,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 421,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.5879,
+          45.10763
+        ]
+      },
+      "properties": {
+        "latitude": 45.10763,
+        "longitude": 38.5879,
+        "bright_ti4": 354.7,
+        "frp": 8.14,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 430,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.59337,
+          45.10891
+        ]
+      },
+      "properties": {
+        "latitude": 45.10891,
+        "longitude": 38.59337,
+        "bright_ti4": 331.2,
+        "frp": 7.63,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 403,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.59008,
+          45.11094
+        ]
+      },
+      "properties": {
+        "latitude": 45.11094,
+        "longitude": 38.59008,
+        "bright_ti4": 340.15,
+        "frp": 7.98,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 421,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.57552,
+          45.18062
+        ]
+      },
+      "properties": {
+        "latitude": 45.18062,
+        "longitude": 38.57552,
+        "bright_ti4": 326.61,
+        "frp": 3.44,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 182,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.57359,
+          45.18474
+        ]
+      },
+      "properties": {
+        "latitude": 45.18474,
+        "longitude": 38.57359,
+        "bright_ti4": 325.27,
+        "frp": 3.02,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 159,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.41838,
+          45.22319
+        ]
+      },
+      "properties": {
+        "latitude": 45.22319,
+        "longitude": 38.41838,
+        "bright_ti4": 334.7,
+        "frp": 6.03,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 318,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.41445,
+          45.23145
+        ]
+      },
+      "properties": {
+        "latitude": 45.23145,
+        "longitude": 38.41445,
+        "bright_ti4": 330.99,
+        "frp": 2.65,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 140,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.30775,
+          45.24757
+        ]
+      },
+      "properties": {
+        "latitude": 45.24757,
+        "longitude": 38.30775,
+        "bright_ti4": 332.18,
+        "frp": 3.77,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 199,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.56731,
+          45.36668
+        ]
+      },
+      "properties": {
+        "latitude": 45.36668,
+        "longitude": 38.56731,
+        "bright_ti4": 329.29,
+        "frp": 2.59,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 137,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.32591,
+          45.38445
+        ]
+      },
+      "properties": {
+        "latitude": 45.38445,
+        "longitude": 38.32591,
+        "bright_ti4": 330.74,
+        "frp": 3.73,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 197,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.33144,
+          45.38578
+        ]
+      },
+      "properties": {
+        "latitude": 45.38578,
+        "longitude": 38.33144,
+        "bright_ti4": 342.52,
+        "frp": 7.89,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 417,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.33863,
+          45.38583
+        ]
+      },
+      "properties": {
+        "latitude": 45.38583,
+        "longitude": 38.33863,
+        "bright_ti4": 339.58,
+        "frp": 6.97,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 368,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.4974,
+          45.3866
+        ]
+      },
+      "properties": {
+        "latitude": 45.3866,
+        "longitude": 38.4974,
+        "bright_ti4": 337.1,
+        "frp": 8.1,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 428,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.33698,
+          45.38712
+        ]
+      },
+      "properties": {
+        "latitude": 45.38712,
+        "longitude": 38.33698,
+        "bright_ti4": 342.73,
+        "frp": 7.89,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 417,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.32556,
+          45.38736
+        ]
+      },
+      "properties": {
+        "latitude": 45.38736,
+        "longitude": 38.32556,
+        "bright_ti4": 343.56,
+        "frp": 16.4,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 866,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.37525,
+          45.41011
+        ]
+      },
+      "properties": {
+        "latitude": 45.41011,
+        "longitude": 38.37525,
+        "bright_ti4": 329.01,
+        "frp": 3.28,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 173,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.08996,
+          45.42039
+        ]
+      },
+      "properties": {
+        "latitude": 45.42039,
+        "longitude": 38.08996,
+        "bright_ti4": 328.39,
+        "frp": 3.51,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 185,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.08794,
+          45.42456
+        ]
+      },
+      "properties": {
+        "latitude": 45.42456,
+        "longitude": 38.08794,
+        "bright_ti4": 341.12,
+        "frp": 8.74,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 461,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.34852,
+          45.44044
+        ]
+      },
+      "properties": {
+        "latitude": 45.44044,
+        "longitude": 38.34852,
+        "bright_ti4": 338.61,
+        "frp": 8.43,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 445,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.35403,
+          45.44176
+        ]
+      },
+      "properties": {
+        "latitude": 45.44176,
+        "longitude": 38.35403,
+        "bright_ti4": 342.2,
+        "frp": 11.36,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 600,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.34102,
+          45.44325
+        ]
+      },
+      "properties": {
+        "latitude": 45.44325,
+        "longitude": 38.34102,
+        "bright_ti4": 330.08,
+        "frp": 8.43,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 445,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.34654,
+          45.44456
+        ]
+      },
+      "properties": {
+        "latitude": 45.44456,
+        "longitude": 38.34654,
+        "bright_ti4": 367,
+        "frp": 8.43,
+        "confidence": "h",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 445,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.16664,
+          45.45716
+        ]
+      },
+      "properties": {
+        "latitude": 45.45716,
+        "longitude": 38.16664,
+        "bright_ti4": 339.16,
+        "frp": 7.49,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 395,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.16393,
+          45.45806
+        ]
+      },
+      "properties": {
+        "latitude": 45.45806,
+        "longitude": 38.16393,
+        "bright_ti4": 347.71,
+        "frp": 7.24,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 382,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.21157,
+          45.46778
+        ]
+      },
+      "properties": {
+        "latitude": 45.46778,
+        "longitude": 38.21157,
+        "bright_ti4": 330.05,
+        "frp": 2.49,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 131,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.21426,
+          45.47025
+        ]
+      },
+      "properties": {
+        "latitude": 45.47025,
+        "longitude": 38.21426,
+        "bright_ti4": 330.11,
+        "frp": 4.62,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 244,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.3007,
+          45.4888
+        ]
+      },
+      "properties": {
+        "latitude": 45.4888,
+        "longitude": 38.3007,
+        "bright_ti4": 326.99,
+        "frp": 2.4,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 127,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.36191,
+          45.48946
+        ]
+      },
+      "properties": {
+        "latitude": 45.48946,
+        "longitude": 38.36191,
+        "bright_ti4": 367,
+        "frp": 13.13,
+        "confidence": "h",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 693,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.36741,
+          45.49075
+        ]
+      },
+      "properties": {
+        "latitude": 45.49075,
+        "longitude": 38.36741,
+        "bright_ti4": 343.24,
+        "frp": 14.84,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 784,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.3914,
+          45.49182
+        ]
+      },
+      "properties": {
+        "latitude": 45.49182,
+        "longitude": 38.3914,
+        "bright_ti4": 325.26,
+        "frp": 1.34,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 71,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.35994,
+          45.49357
+        ]
+      },
+      "properties": {
+        "latitude": 45.49357,
+        "longitude": 38.35994,
+        "bright_ti4": 338.41,
+        "frp": 13.13,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 693,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.36544,
+          45.49487
+        ]
+      },
+      "properties": {
+        "latitude": 45.49487,
+        "longitude": 38.36544,
+        "bright_ti4": 352.78,
+        "frp": 14.84,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 784,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.38942,
+          45.49593
+        ]
+      },
+      "properties": {
+        "latitude": 45.49593,
+        "longitude": 38.38942,
+        "bright_ti4": 325.29,
+        "frp": 1.89,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 100,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.17758,
+          45.50764
+        ]
+      },
+      "properties": {
+        "latitude": 45.50764,
+        "longitude": 38.17758,
+        "bright_ti4": 330.98,
+        "frp": 6.37,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 336,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.4818,
+          45.53915
+        ]
+      },
+      "properties": {
+        "latitude": 45.53915,
+        "longitude": 38.4818,
+        "bright_ti4": 342.15,
+        "frp": 4.91,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 259,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.48721,
+          45.54045
+        ]
+      },
+      "properties": {
+        "latitude": 45.54045,
+        "longitude": 38.48721,
+        "bright_ti4": 330.24,
+        "frp": 4.91,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 259,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.48352,
+          45.54073
+        ]
+      },
+      "properties": {
+        "latitude": 45.54073,
+        "longitude": 38.48352,
+        "bright_ti4": 367,
+        "frp": 11.13,
+        "confidence": "h",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 588,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.47985,
+          45.54325
+        ]
+      },
+      "properties": {
+        "latitude": 45.54325,
+        "longitude": 38.47985,
+        "bright_ti4": 329.14,
+        "frp": 4.91,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 259,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.48528,
+          45.54454
+        ]
+      },
+      "properties": {
+        "latitude": 45.54454,
+        "longitude": 38.48528,
+        "bright_ti4": 341.94,
+        "frp": 4.91,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "954",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 259,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.96967,
+          45.65483
+        ]
+      },
+      "properties": {
+        "latitude": 45.65483,
+        "longitude": 37.96967,
+        "bright_ti4": 344.89,
+        "frp": 9.98,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 527,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.05145,
+          45.77176
+        ]
+      },
+      "properties": {
+        "latitude": 45.77176,
+        "longitude": 38.05145,
+        "bright_ti4": 347.4,
+        "frp": 9.59,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 506,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.04879,
+          45.77235
+        ]
+      },
+      "properties": {
+        "latitude": 45.77235,
+        "longitude": 38.04879,
+        "bright_ti4": 339.6,
+        "frp": 9.79,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 517,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.05439,
+          45.77372
+        ]
+      },
+      "properties": {
+        "latitude": 45.77372,
+        "longitude": 38.05439,
+        "bright_ti4": 344.57,
+        "frp": 9.79,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 517,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.04943,
+          45.7759
+        ]
+      },
+      "properties": {
+        "latitude": 45.7759,
+        "longitude": 38.04943,
+        "bright_ti4": 352.87,
+        "frp": 9.59,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 506,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.05504,
+          45.77722
+        ]
+      },
+      "properties": {
+        "latitude": 45.77722,
+        "longitude": 38.05504,
+        "bright_ti4": 338.63,
+        "frp": 10.8,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 570,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.05238,
+          45.77785
+        ]
+      },
+      "properties": {
+        "latitude": 45.77785,
+        "longitude": 38.05238,
+        "bright_ti4": 345.26,
+        "frp": 9.79,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 517,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.62688,
+          46.58479
+        ]
+      },
+      "properties": {
+        "latitude": 46.58479,
+        "longitude": 39.62688,
+        "bright_ti4": 334.63,
+        "frp": 4.13,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 218,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.62679,
+          46.58649
+        ]
+      },
+      "properties": {
+        "latitude": 46.58649,
+        "longitude": 39.62679,
+        "bright_ti4": 336.31,
+        "frp": 7.19,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 380,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.9868,
+          46.83707
+        ]
+      },
+      "properties": {
+        "latitude": 46.83707,
+        "longitude": 38.9868,
+        "bright_ti4": 328.93,
+        "frp": 3.65,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 193,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.9514,
+          46.91974
+        ]
+      },
+      "properties": {
+        "latitude": 46.91974,
+        "longitude": 36.9514,
+        "bright_ti4": 339.03,
+        "frp": 8.28,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 437,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.6717,
+          46.95185
+        ]
+      },
+      "properties": {
+        "latitude": 46.95185,
+        "longitude": 39.6717,
+        "bright_ti4": 331.35,
+        "frp": 6.57,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 347,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.66996,
+          46.95562
+        ]
+      },
+      "properties": {
+        "latitude": 46.95562,
+        "longitude": 39.66996,
+        "bright_ti4": 341.24,
+        "frp": 6.57,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 347,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.84117,
+          47.58464
+        ]
+      },
+      "properties": {
+        "latitude": 47.58464,
+        "longitude": 39.84117,
+        "bright_ti4": 346.79,
+        "frp": 6.89,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 364,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.83948,
+          47.58835
+        ]
+      },
+      "properties": {
+        "latitude": 47.58835,
+        "longitude": 39.83948,
+        "bright_ti4": 328.93,
+        "frp": 3.88,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 205,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.0242,
+          47.78452
+        ]
+      },
+      "properties": {
+        "latitude": 47.78452,
+        "longitude": 39.0242,
+        "bright_ti4": 333.95,
+        "frp": 54.21,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "high",
+        "estimatedCO2TonsDay": 2862,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.01522,
+          47.78674
+        ]
+      },
+      "properties": {
+        "latitude": 47.78674,
+        "longitude": 39.01522,
+        "bright_ti4": 351.22,
+        "frp": 43.23,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 2283,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.02251,
+          47.78688
+        ]
+      },
+      "properties": {
+        "latitude": 47.78688,
+        "longitude": 39.02251,
+        "bright_ti4": 339.39,
+        "frp": 40.83,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 2156,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.02237,
+          47.78831
+        ]
+      },
+      "properties": {
+        "latitude": 47.78831,
+        "longitude": 39.02237,
+        "bright_ti4": 340.25,
+        "frp": 43.23,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 2283,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.0207,
+          47.79067
+        ]
+      },
+      "properties": {
+        "latitude": 47.79067,
+        "longitude": 39.0207,
+        "bright_ti4": 337.54,
+        "frp": 13.45,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 710,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.15544,
+          47.87283
+        ]
+      },
+      "properties": {
+        "latitude": 47.87283,
+        "longitude": 35.15544,
+        "bright_ti4": 330.47,
+        "frp": 6.85,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 362,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1622,
+          47.87458
+        ]
+      },
+      "properties": {
+        "latitude": 47.87458,
+        "longitude": 35.1622,
+        "bright_ti4": 335.75,
+        "frp": 6.85,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 362,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1528,
+          47.87578
+        ]
+      },
+      "properties": {
+        "latitude": 47.87578,
+        "longitude": 35.1528,
+        "bright_ti4": 329.13,
+        "frp": 5.57,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 294,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.15955,
+          47.87756
+        ]
+      },
+      "properties": {
+        "latitude": 47.87756,
+        "longitude": 35.15955,
+        "bright_ti4": 338.33,
+        "frp": 8.65,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 457,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.82738,
+          47.89711
+        ]
+      },
+      "properties": {
+        "latitude": 47.89711,
+        "longitude": 39.82738,
+        "bright_ti4": 329.76,
+        "frp": 4.22,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 223,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.83406,
+          47.89855
+        ]
+      },
+      "properties": {
+        "latitude": 47.89855,
+        "longitude": 39.83406,
+        "bright_ti4": 334.63,
+        "frp": 8.51,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 449,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.40918,
+          48.07915
+        ]
+      },
+      "properties": {
+        "latitude": 48.07915,
+        "longitude": 36.40918,
+        "bright_ti4": 332.58,
+        "frp": 3.78,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 200,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.41106,
+          48.07967
+        ]
+      },
+      "properties": {
+        "latitude": 48.07967,
+        "longitude": 36.41106,
+        "bright_ti4": 325.31,
+        "frp": 2.63,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 139,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.47037,
+          48.10657
+        ]
+      },
+      "properties": {
+        "latitude": 48.10657,
+        "longitude": 37.47037,
+        "bright_ti4": 352.23,
+        "frp": 42.48,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 2243,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.46776,
+          48.10672
+        ]
+      },
+      "properties": {
+        "latitude": 48.10672,
+        "longitude": 37.46776,
+        "bright_ti4": 351.37,
+        "frp": 22.63,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1195,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.47572,
+          48.10782
+        ]
+      },
+      "properties": {
+        "latitude": 48.10782,
+        "longitude": 37.47572,
+        "bright_ti4": 349.42,
+        "frp": 30.55,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1613,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.47304,
+          48.10798
+        ]
+      },
+      "properties": {
+        "latitude": 48.10798,
+        "longitude": 37.47304,
+        "bright_ti4": 352.15,
+        "frp": 22.63,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1195,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.37376,
+          48.10807
+        ]
+      },
+      "properties": {
+        "latitude": 48.10807,
+        "longitude": 36.37376,
+        "bright_ti4": 326.04,
+        "frp": 1.78,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 94,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.48113,
+          48.10908
+        ]
+      },
+      "properties": {
+        "latitude": 48.10908,
+        "longitude": 37.48113,
+        "bright_ti4": 342.06,
+        "frp": 30.55,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1613,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.47838,
+          48.10926
+        ]
+      },
+      "properties": {
+        "latitude": 48.10926,
+        "longitude": 37.47838,
+        "bright_ti4": 349.79,
+        "frp": 18.33,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 968,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.46845,
+          48.1106
+        ]
+      },
+      "properties": {
+        "latitude": 48.1106,
+        "longitude": 37.46845,
+        "bright_ti4": 357.18,
+        "frp": 13.7,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 723,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.46585,
+          48.11074
+        ]
+      },
+      "properties": {
+        "latitude": 48.11074,
+        "longitude": 37.46585,
+        "bright_ti4": 333.42,
+        "frp": 22.63,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1195,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.47373,
+          48.11182
+        ]
+      },
+      "properties": {
+        "latitude": 48.11182,
+        "longitude": 37.47373,
+        "bright_ti4": 327.54,
+        "frp": 6.64,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 351,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.4711,
+          48.112
+        ]
+      },
+      "properties": {
+        "latitude": 48.112,
+        "longitude": 37.4711,
+        "bright_ti4": 329.98,
+        "frp": 22.63,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1195,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.83102,
+          48.15821
+        ]
+      },
+      "properties": {
+        "latitude": 48.15821,
+        "longitude": 36.83102,
+        "bright_ti4": 330.52,
+        "frp": 3.51,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 185,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.76588,
+          48.16756
+        ]
+      },
+      "properties": {
+        "latitude": 48.16756,
+        "longitude": 36.76588,
+        "bright_ti4": 340.96,
+        "frp": 5.37,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 284,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.76102,
+          48.16905
+        ]
+      },
+      "properties": {
+        "latitude": 48.16905,
+        "longitude": 36.76102,
+        "bright_ti4": 336.86,
+        "frp": 8.86,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 468,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.76681,
+          48.17044
+        ]
+      },
+      "properties": {
+        "latitude": 48.17044,
+        "longitude": 36.76681,
+        "bright_ti4": 341.78,
+        "frp": 8.86,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 468,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.76371,
+          48.17165
+        ]
+      },
+      "properties": {
+        "latitude": 48.17165,
+        "longitude": 36.76371,
+        "bright_ti4": 356.91,
+        "frp": 13.42,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 709,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.25458,
+          48.29145
+        ]
+      },
+      "properties": {
+        "latitude": 48.29145,
+        "longitude": 36.25458,
+        "bright_ti4": 329.2,
+        "frp": 3.22,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 170,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.07908,
+          48.32119
+        ]
+      },
+      "properties": {
+        "latitude": 48.32119,
+        "longitude": 37.07908,
+        "bright_ti4": 332.9,
+        "frp": 6.15,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 325,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.32877,
+          48.41431
+        ]
+      },
+      "properties": {
+        "latitude": 48.41431,
+        "longitude": 39.32877,
+        "bright_ti4": 330.43,
+        "frp": 10.98,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 580,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.32714,
+          48.41592
+        ]
+      },
+      "properties": {
+        "latitude": 48.41592,
+        "longitude": 39.32714,
+        "bright_ti4": 354.93,
+        "frp": 13.27,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 701,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.32706,
+          48.41803
+        ]
+      },
+      "properties": {
+        "latitude": 48.41803,
+        "longitude": 39.32706,
+        "bright_ti4": 351.52,
+        "frp": 10.98,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 580,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.31846,
+          48.41811
+        ]
+      },
+      "properties": {
+        "latitude": 48.41811,
+        "longitude": 39.31846,
+        "bright_ti4": 354.66,
+        "frp": 10.15,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 536,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.31135,
+          48.41875
+        ]
+      },
+      "properties": {
+        "latitude": 48.41875,
+        "longitude": 39.31135,
+        "bright_ti4": 328.22,
+        "frp": 6.17,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 326,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.32544,
+          48.41964
+        ]
+      },
+      "properties": {
+        "latitude": 48.41964,
+        "longitude": 39.32544,
+        "bright_ti4": 335.83,
+        "frp": 11.69,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 617,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.31832,
+          48.42024
+        ]
+      },
+      "properties": {
+        "latitude": 48.42024,
+        "longitude": 39.31832,
+        "bright_ti4": 367,
+        "frp": 19.36,
+        "confidence": "h",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1022,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.3167,
+          48.42181
+        ]
+      },
+      "properties": {
+        "latitude": 48.42181,
+        "longitude": 39.3167,
+        "bright_ti4": 332.3,
+        "frp": 10.15,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 536,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.89467,
+          48.72963
+        ]
+      },
+      "properties": {
+        "latitude": 48.72963,
+        "longitude": 36.89467,
+        "bright_ti4": 339.94,
+        "frp": 5.11,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 270,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.90022,
+          48.73095
+        ]
+      },
+      "properties": {
+        "latitude": 48.73095,
+        "longitude": 36.90022,
+        "bright_ti4": 329.46,
+        "frp": 4.53,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 239,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.36416,
+          48.75386
+        ]
+      },
+      "properties": {
+        "latitude": 48.75386,
+        "longitude": 39.36416,
+        "bright_ti4": 339.93,
+        "frp": 6.04,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 319,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.36209,
+          48.75574
+        ]
+      },
+      "properties": {
+        "latitude": 48.75574,
+        "longitude": 39.36209,
+        "bright_ti4": 331.43,
+        "frp": 6.96,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 367,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.94963,
+          48.76869
+        ]
+      },
+      "properties": {
+        "latitude": 48.76869,
+        "longitude": 39.94963,
+        "bright_ti4": 334.63,
+        "frp": 4.22,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 223,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.94905,
+          48.7699
+        ]
+      },
+      "properties": {
+        "latitude": 48.7699,
+        "longitude": 39.94905,
+        "bright_ti4": 336.3,
+        "frp": 4.4,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 232,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.57285,
+          48.87703
+        ]
+      },
+      "properties": {
+        "latitude": 48.87703,
+        "longitude": 38.57285,
+        "bright_ti4": 325.13,
+        "frp": 3.1,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 164,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.31415,
+          49.0324
+        ]
+      },
+      "properties": {
+        "latitude": 49.0324,
+        "longitude": 37.31415,
+        "bright_ti4": 339.89,
+        "frp": 5.72,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 302,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.96197,
+          49.156
+        ]
+      },
+      "properties": {
+        "latitude": 49.156,
+        "longitude": 37.96197,
+        "bright_ti4": 332.07,
+        "frp": 10.4,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 549,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.49031,
+          49.1961
+        ]
+      },
+      "properties": {
+        "latitude": 49.1961,
+        "longitude": 38.49031,
+        "bright_ti4": 340.9,
+        "frp": 5.91,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 312,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.83921,
+          49.34497
+        ]
+      },
+      "properties": {
+        "latitude": 49.34497,
+        "longitude": 37.83921,
+        "bright_ti4": 336.88,
+        "frp": 6.9,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 364,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.12502,
+          49.54488
+        ]
+      },
+      "properties": {
+        "latitude": 49.54488,
+        "longitude": 37.12502,
+        "bright_ti4": 348.86,
+        "frp": 22.53,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1190,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.84957,
+          49.62174
+        ]
+      },
+      "properties": {
+        "latitude": 49.62174,
+        "longitude": 39.84957,
+        "bright_ti4": 339.36,
+        "frp": 6.32,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 334,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.35805,
+          50.12823
+        ]
+      },
+      "properties": {
+        "latitude": 50.12823,
+        "longitude": 37.35805,
+        "bright_ti4": 338.01,
+        "frp": 7.57,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 400,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.35856,
+          50.12989
+        ]
+      },
+      "properties": {
+        "latitude": 50.12989,
+        "longitude": 37.35856,
+        "bright_ti4": 345.33,
+        "frp": 11.78,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 622,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.7588,
+          50.13864
+        ]
+      },
+      "properties": {
+        "latitude": 50.13864,
+        "longitude": 39.7588,
+        "bright_ti4": 330.03,
+        "frp": 6.4,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 338,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.7652,
+          50.13995
+        ]
+      },
+      "properties": {
+        "latitude": 50.13995,
+        "longitude": 39.7652,
+        "bright_ti4": 331.31,
+        "frp": 17.86,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 943,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.70226,
+          50.28658
+        ]
+      },
+      "properties": {
+        "latitude": 50.28658,
+        "longitude": 36.70226,
+        "bright_ti4": 344.69,
+        "frp": 6.17,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 326,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.21771,
+          50.3052
+        ]
+      },
+      "properties": {
+        "latitude": 50.3052,
+        "longitude": 37.21771,
+        "bright_ti4": 335,
+        "frp": 6.74,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 356,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.21702,
+          50.30634
+        ]
+      },
+      "properties": {
+        "latitude": 50.30634,
+        "longitude": 37.21702,
+        "bright_ti4": 336.51,
+        "frp": 8.81,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 465,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.83083,
+          50.35703
+        ]
+      },
+      "properties": {
+        "latitude": 50.35703,
+        "longitude": 38.83083,
+        "bright_ti4": 354.02,
+        "frp": 16.43,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 868,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.83759,
+          50.35847
+        ]
+      },
+      "properties": {
+        "latitude": 50.35847,
+        "longitude": 38.83759,
+        "bright_ti4": 328.65,
+        "frp": 6.08,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 321,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.03757,
+          50.37165
+        ]
+      },
+      "properties": {
+        "latitude": 50.37165,
+        "longitude": 36.03757,
+        "bright_ti4": 339.76,
+        "frp": 3.62,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 191,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.04319,
+          50.37302
+        ]
+      },
+      "properties": {
+        "latitude": 50.37302,
+        "longitude": 36.04319,
+        "bright_ti4": 340.33,
+        "frp": 3.62,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 191,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.03628,
+          50.37461
+        ]
+      },
+      "properties": {
+        "latitude": 50.37461,
+        "longitude": 36.03628,
+        "bright_ti4": 346.96,
+        "frp": 7.05,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 372,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.0354,
+          50.37564
+        ]
+      },
+      "properties": {
+        "latitude": 50.37564,
+        "longitude": 36.0354,
+        "bright_ti4": 337.16,
+        "frp": 3.62,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 191,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.04185,
+          50.37593
+        ]
+      },
+      "properties": {
+        "latitude": 50.37593,
+        "longitude": 36.04185,
+        "bright_ti4": 349.91,
+        "frp": 6.9,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 364,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.04093,
+          50.37698
+        ]
+      },
+      "properties": {
+        "latitude": 50.37698,
+        "longitude": 36.04093,
+        "bright_ti4": 340.49,
+        "frp": 3.62,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 191,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.79345,
+          50.43503
+        ]
+      },
+      "properties": {
+        "latitude": 50.43503,
+        "longitude": 35.79345,
+        "bright_ti4": 325.81,
+        "frp": 3.55,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 187,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.54557,
+          50.51117
+        ]
+      },
+      "properties": {
+        "latitude": 50.51117,
+        "longitude": 35.54557,
+        "bright_ti4": 345.85,
+        "frp": 12.07,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 637,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.54311,
+          50.51515
+        ]
+      },
+      "properties": {
+        "latitude": 50.51515,
+        "longitude": 35.54311,
+        "bright_ti4": 351.3,
+        "frp": 19.63,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1036,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.38825,
+          50.56773
+        ]
+      },
+      "properties": {
+        "latitude": 50.56773,
+        "longitude": 35.38825,
+        "bright_ti4": 354.93,
+        "frp": 18.43,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 973,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.37994,
+          50.57028
+        ]
+      },
+      "properties": {
+        "latitude": 50.57028,
+        "longitude": 35.37994,
+        "bright_ti4": 328.71,
+        "frp": 42.92,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 2266,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.38589,
+          50.57176
+        ]
+      },
+      "properties": {
+        "latitude": 50.57176,
+        "longitude": 35.38589,
+        "bright_ti4": 342.59,
+        "frp": 42.92,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 2266,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.21802,
+          51.04713
+        ]
+      },
+      "properties": {
+        "latitude": 51.04713,
+        "longitude": 35.21802,
+        "bright_ti4": 353.26,
+        "frp": 9.7,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 512,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.35661,
+          51.11826
+        ]
+      },
+      "properties": {
+        "latitude": 51.11826,
+        "longitude": 38.35661,
+        "bright_ti4": 330.19,
+        "frp": 3.41,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 180,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.01845,
+          51.12655
+        ]
+      },
+      "properties": {
+        "latitude": 51.12655,
+        "longitude": 35.01845,
+        "bright_ti4": 333.17,
+        "frp": 5.57,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 294,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.02433,
+          51.12799
+        ]
+      },
+      "properties": {
+        "latitude": 51.12799,
+        "longitude": 35.02433,
+        "bright_ti4": 339.13,
+        "frp": 9.87,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 521,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.93318,
+          51.13621
+        ]
+      },
+      "properties": {
+        "latitude": 51.13621,
+        "longitude": 37.93318,
+        "bright_ti4": 330.44,
+        "frp": 3.48,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 184,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.93116,
+          51.13985
+        ]
+      },
+      "properties": {
+        "latitude": 51.13985,
+        "longitude": 37.93116,
+        "bright_ti4": 330.71,
+        "frp": 3.48,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 184,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.12378,
+          51.14315
+        ]
+      },
+      "properties": {
+        "latitude": 51.14315,
+        "longitude": 35.12378,
+        "bright_ti4": 338.58,
+        "frp": 4.92,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 260,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.12962,
+          51.14458
+        ]
+      },
+      "properties": {
+        "latitude": 51.14458,
+        "longitude": 35.12962,
+        "bright_ti4": 338.97,
+        "frp": 4.92,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 260,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.16239,
+          51.1572
+        ]
+      },
+      "properties": {
+        "latitude": 51.1572,
+        "longitude": 35.16239,
+        "bright_ti4": 338.7,
+        "frp": 4.47,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 236,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.16828,
+          51.15863
+        ]
+      },
+      "properties": {
+        "latitude": 51.15863,
+        "longitude": 35.16828,
+        "bright_ti4": 336.4,
+        "frp": 5.69,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 300,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.15983,
+          51.16116
+        ]
+      },
+      "properties": {
+        "latitude": 51.16116,
+        "longitude": 35.15983,
+        "bright_ti4": 339.47,
+        "frp": 7.15,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 378,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.99043,
+          51.25592
+        ]
+      },
+      "properties": {
+        "latitude": 51.25592,
+        "longitude": 34.99043,
+        "bright_ti4": 325.34,
+        "frp": 5.65,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 298,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.99143,
+          51.25686
+        ]
+      },
+      "properties": {
+        "latitude": 51.25686,
+        "longitude": 34.99143,
+        "bright_ti4": 327.62,
+        "frp": 2.41,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 127,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9771,
+          51.25797
+        ]
+      },
+      "properties": {
+        "latitude": 51.25797,
+        "longitude": 34.9771,
+        "bright_ti4": 334.4,
+        "frp": 5.71,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 301,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.96868,
+          51.26053
+        ]
+      },
+      "properties": {
+        "latitude": 51.26053,
+        "longitude": 34.96868,
+        "bright_ti4": 342.64,
+        "frp": 5.43,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 287,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.97364,
+          51.26097
+        ]
+      },
+      "properties": {
+        "latitude": 51.26097,
+        "longitude": 34.97364,
+        "bright_ti4": 343.76,
+        "frp": 9.24,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 488,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.97456,
+          51.26197
+        ]
+      },
+      "properties": {
+        "latitude": 51.26197,
+        "longitude": 34.97456,
+        "bright_ti4": 336.96,
+        "frp": 5.71,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 301,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.97112,
+          51.26498
+        ]
+      },
+      "properties": {
+        "latitude": 51.26498,
+        "longitude": 34.97112,
+        "bright_ti4": 349.82,
+        "frp": 9.24,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 488,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.95686,
+          51.26605
+        ]
+      },
+      "properties": {
+        "latitude": 51.26605,
+        "longitude": 34.95686,
+        "bright_ti4": 343.92,
+        "frp": 5.81,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 307,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.96272,
+          51.26751
+        ]
+      },
+      "properties": {
+        "latitude": 51.26751,
+        "longitude": 34.96272,
+        "bright_ti4": 357.05,
+        "frp": 25.91,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1368,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9543,
+          51.27004
+        ]
+      },
+      "properties": {
+        "latitude": 51.27004,
+        "longitude": 34.9543,
+        "bright_ti4": 326.13,
+        "frp": 5.81,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 307,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.84591,
+          51.29805
+        ]
+      },
+      "properties": {
+        "latitude": 51.29805,
+        "longitude": 38.84591,
+        "bright_ti4": 327.6,
+        "frp": 1.89,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 100,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.82997,
+          51.31435
+        ]
+      },
+      "properties": {
+        "latitude": 51.31435,
+        "longitude": 38.82997,
+        "bright_ti4": 326.93,
+        "frp": 2.9,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 153,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.81944,
+          51.32001
+        ]
+      },
+      "properties": {
+        "latitude": 51.32001,
+        "longitude": 38.81944,
+        "bright_ti4": 325.92,
+        "frp": 3.25,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 172,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.55731,
+          51.6166
+        ]
+      },
+      "properties": {
+        "latitude": 51.6166,
+        "longitude": 35.55731,
+        "bright_ti4": 326.37,
+        "frp": 5.28,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 279,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.50296,
+          52.19372
+        ]
+      },
+      "properties": {
+        "latitude": 52.19372,
+        "longitude": 34.50296,
+        "bright_ti4": 353.87,
+        "frp": 19.75,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1043,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.49447,
+          52.19621
+        ]
+      },
+      "properties": {
+        "latitude": 52.19621,
+        "longitude": 34.49447,
+        "bright_ti4": 328.68,
+        "frp": 11.71,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 618,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.5004,
+          52.19768
+        ]
+      },
+      "properties": {
+        "latitude": 52.19768,
+        "longitude": 34.5004,
+        "bright_ti4": 342.73,
+        "frp": 19.75,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1043,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.66254,
+          52.52932
+        ]
+      },
+      "properties": {
+        "latitude": 52.52932,
+        "longitude": 33.66254,
+        "bright_ti4": 329.65,
+        "frp": 21.98,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1161,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.6598,
+          52.53335
+        ]
+      },
+      "properties": {
+        "latitude": 52.53335,
+        "longitude": 33.6598,
+        "bright_ti4": 340,
+        "frp": 21.98,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1161,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.63316,
+          52.53585
+        ]
+      },
+      "properties": {
+        "latitude": 52.53585,
+        "longitude": 39.63316,
+        "bright_ti4": 330.26,
+        "frp": 3.58,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 189,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.63403,
+          52.54725
+        ]
+      },
+      "properties": {
+        "latitude": 52.54725,
+        "longitude": 39.63403,
+        "bright_ti4": 330.5,
+        "frp": 3.13,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 165,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.83192,
+          52.54781
+        ]
+      },
+      "properties": {
+        "latitude": 52.54781,
+        "longitude": 36.83192,
+        "bright_ti4": 329.53,
+        "frp": 8.6,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 454,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.83714,
+          52.5531
+        ]
+      },
+      "properties": {
+        "latitude": 52.5531,
+        "longitude": 36.83714,
+        "bright_ti4": 356.17,
+        "frp": 8.6,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 454,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.84452,
+          52.55474
+        ]
+      },
+      "properties": {
+        "latitude": 52.55474,
+        "longitude": 36.84452,
+        "bright_ti4": 346.36,
+        "frp": 13.93,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 736,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.61628,
+          52.55499
+        ]
+      },
+      "properties": {
+        "latitude": 52.55499,
+        "longitude": 39.61628,
+        "bright_ti4": 336.34,
+        "frp": 3.57,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 188,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.57357,
+          52.55786
+        ]
+      },
+      "properties": {
+        "latitude": 52.55786,
+        "longitude": 39.57357,
+        "bright_ti4": 337.07,
+        "frp": 5.18,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 274,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.84234,
+          52.55838
+        ]
+      },
+      "properties": {
+        "latitude": 52.55838,
+        "longitude": 36.84234,
+        "bright_ti4": 341.99,
+        "frp": 14.22,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 751,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.6145,
+          52.55838
+        ]
+      },
+      "properties": {
+        "latitude": 52.55838,
+        "longitude": 39.6145,
+        "bright_ti4": 335.1,
+        "frp": 5.32,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 281,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.64517,
+          53.19801
+        ]
+      },
+      "properties": {
+        "latitude": 53.19801,
+        "longitude": 39.64517,
+        "bright_ti4": 329.95,
+        "frp": 3.08,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "956",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 163,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.82782,
+          53.22146
+        ]
+      },
+      "properties": {
+        "latitude": 53.22146,
+        "longitude": 34.82782,
+        "bright_ti4": 355.68,
+        "frp": 11.74,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "958",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 620,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.76347,
+          53.27085
+        ]
+      },
+      "properties": {
+        "latitude": 53.27085,
+        "longitude": 35.76347,
+        "bright_ti4": 338.45,
+        "frp": 7.04,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "958",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 372,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.80368,
+          53.27736
+        ]
+      },
+      "properties": {
+        "latitude": 53.27736,
+        "longitude": 34.80368,
+        "bright_ti4": 338.53,
+        "frp": 6.94,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "958",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 366,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.80738,
+          53.27859
+        ]
+      },
+      "properties": {
+        "latitude": 53.27859,
+        "longitude": 34.80738,
+        "bright_ti4": 338.19,
+        "frp": 4.25,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "958",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 224,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.08788,
+          53.88516
+        ]
+      },
+      "properties": {
+        "latitude": 53.88516,
+        "longitude": 35.08788,
+        "bright_ti4": 346.85,
+        "frp": 26.05,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "958",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1375,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0774,
+          53.88703
+        ]
+      },
+      "properties": {
+        "latitude": 53.88703,
+        "longitude": 35.0774,
+        "bright_ti4": 282.08,
+        "frp": 26.05,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "958",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1375,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.08541,
+          53.88887
+        ]
+      },
+      "properties": {
+        "latitude": 53.88887,
+        "longitude": 35.08541,
+        "bright_ti4": 336.89,
+        "frp": 26.05,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "958",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1375,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.07495,
+          53.89074
+        ]
+      },
+      "properties": {
+        "latitude": 53.89074,
+        "longitude": 35.07495,
+        "bright_ti4": 325.67,
+        "frp": 7.98,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "958",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 421,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.08297,
+          53.89259
+        ]
+      },
+      "properties": {
+        "latitude": 53.89259,
+        "longitude": 35.08297,
+        "bright_ti4": 328.11,
+        "frp": 7.98,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "958",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 421,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.71362,
+          54.16747
+        ]
+      },
+      "properties": {
+        "latitude": 54.16747,
+        "longitude": 37.71362,
+        "bright_ti4": 328.85,
+        "frp": 4.6,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "958",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 243,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.98703,
+          56.71391
+        ]
+      },
+      "properties": {
+        "latitude": 56.71391,
+        "longitude": 39.98703,
+        "bright_ti4": 338.15,
+        "frp": 5.09,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "958",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 269,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.79303,
+          59.13129
+        ]
+      },
+      "properties": {
+        "latitude": 59.13129,
+        "longitude": 37.79303,
+        "bright_ti4": 343.86,
+        "frp": 16.08,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "958",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 849,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.02964,
+          30.19745
+        ]
+      },
+      "properties": {
+        "latitude": 30.19745,
+        "longitude": 30.02964,
+        "bright_ti4": 336.1,
+        "frp": 3.04,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 161,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.03437,
+          30.19805
+        ]
+      },
+      "properties": {
+        "latitude": 30.19805,
+        "longitude": 30.03437,
+        "bright_ti4": 333.54,
+        "frp": 9.03,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 477,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.02684,
+          30.19968
+        ]
+      },
+      "properties": {
+        "latitude": 30.19968,
+        "longitude": 30.02684,
+        "bright_ti4": 336.6,
+        "frp": 3.39,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 179,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.03157,
+          30.2003
+        ]
+      },
+      "properties": {
+        "latitude": 30.2003,
+        "longitude": 30.03157,
+        "bright_ti4": 351.82,
+        "frp": 10.04,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 530,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.02432,
+          30.20045
+        ]
+      },
+      "properties": {
+        "latitude": 30.20045,
+        "longitude": 30.02432,
+        "bright_ti4": 354.44,
+        "frp": 6.67,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 352,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.0363,
+          30.20092
+        ]
+      },
+      "properties": {
+        "latitude": 30.20092,
+        "longitude": 30.0363,
+        "bright_ti4": 338.61,
+        "frp": 10.04,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 530,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.02906,
+          30.20104
+        ]
+      },
+      "properties": {
+        "latitude": 30.20104,
+        "longitude": 30.02906,
+        "bright_ti4": 346.01,
+        "frp": 6.67,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 352,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.03379,
+          30.20164
+        ]
+      },
+      "properties": {
+        "latitude": 30.20164,
+        "longitude": 30.03379,
+        "bright_ti4": 335.61,
+        "frp": 4.84,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 256,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.02374,
+          30.20404
+        ]
+      },
+      "properties": {
+        "latitude": 30.20404,
+        "longitude": 30.02374,
+        "bright_ti4": 343.78,
+        "frp": 6.67,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 352,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.35695,
+          30.28092
+        ]
+      },
+      "properties": {
+        "latitude": 30.28092,
+        "longitude": 31.35695,
+        "bright_ti4": 344.85,
+        "frp": 6.37,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 336,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.61039,
+          30.40028
+        ]
+      },
+      "properties": {
+        "latitude": 30.40028,
+        "longitude": 19.61039,
+        "bright_ti4": 339.62,
+        "frp": 5.07,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 268,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.61111,
+          30.40249
+        ]
+      },
+      "properties": {
+        "latitude": 30.40249,
+        "longitude": 19.61111,
+        "bright_ti4": 343.61,
+        "frp": 6.04,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 319,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.59867,
+          30.4068
+        ]
+      },
+      "properties": {
+        "latitude": 30.4068,
+        "longitude": 19.59867,
+        "bright_ti4": 335.65,
+        "frp": 4.22,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 223,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.59943,
+          30.40894
+        ]
+      },
+      "properties": {
+        "latitude": 30.40894,
+        "longitude": 19.59943,
+        "bright_ti4": 340.22,
+        "frp": 4.52,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 239,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.88849,
+          31.09502
+        ]
+      },
+      "properties": {
+        "latitude": 31.09502,
+        "longitude": 30.88849,
+        "bright_ti4": 332.02,
+        "frp": 2.64,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 139,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.86283,
+          31.85856
+        ]
+      },
+      "properties": {
+        "latitude": 31.85856,
+        "longitude": 34.86283,
+        "bright_ti4": 341.29,
+        "frp": 6.83,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 361,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.30993,
+          32.71794
+        ]
+      },
+      "properties": {
+        "latitude": 32.71794,
+        "longitude": 35.30993,
+        "bright_ti4": 339.98,
+        "frp": 3.9,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 206,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.52188,
+          32.96613
+        ]
+      },
+      "properties": {
+        "latitude": 32.96613,
+        "longitude": 35.52188,
+        "bright_ti4": 339.47,
+        "frp": 6.61,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1132",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 349,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.15882,
+          37.22585
+        ]
+      },
+      "properties": {
+        "latitude": 37.22585,
+        "longitude": 15.15882,
+        "bright_ti4": 335.48,
+        "frp": 5.57,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 294,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.15648,
+          37.22674
+        ]
+      },
+      "properties": {
+        "latitude": 37.22674,
+        "longitude": 15.15648,
+        "bright_ti4": 339.97,
+        "frp": 4.37,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 231,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.90797,
+          37.35603
+        ]
+      },
+      "properties": {
+        "latitude": 37.35603,
+        "longitude": 13.90797,
+        "bright_ti4": 333.08,
+        "frp": 1.34,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 71,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.92883,
+          37.64261
+        ]
+      },
+      "properties": {
+        "latitude": 37.64261,
+        "longitude": 13.92883,
+        "bright_ti4": 346.3,
+        "frp": 11.86,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 626,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.72388,
+          37.66446
+        ]
+      },
+      "properties": {
+        "latitude": 37.66446,
+        "longitude": 13.72388,
+        "bright_ti4": 328.53,
+        "frp": 1.35,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 71,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.62857,
+          37.76818
+        ]
+      },
+      "properties": {
+        "latitude": 37.76818,
+        "longitude": 13.62857,
+        "bright_ti4": 342.62,
+        "frp": 1.99,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 105,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.45116,
+          37.80683
+        ]
+      },
+      "properties": {
+        "latitude": 37.80683,
+        "longitude": 13.45116,
+        "bright_ti4": 326.2,
+        "frp": 2.63,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 139,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.52729,
+          37.88583
+        ]
+      },
+      "properties": {
+        "latitude": 37.88583,
+        "longitude": 13.52729,
+        "bright_ti4": 331.91,
+        "frp": 2.22,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 117,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.52633,
+          37.89096
+        ]
+      },
+      "properties": {
+        "latitude": 37.89096,
+        "longitude": 13.52633,
+        "bright_ti4": 331.47,
+        "frp": 2.51,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 133,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.55748,
+          39.34669
+        ]
+      },
+      "properties": {
+        "latitude": 39.34669,
+        "longitude": 20.55748,
+        "bright_ti4": 338.79,
+        "frp": 2.59,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 137,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.89711,
+          39.52108
+        ]
+      },
+      "properties": {
+        "latitude": 39.52108,
+        "longitude": 20.89711,
+        "bright_ti4": 335.14,
+        "frp": 2.2,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 116,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.13142,
+          39.98612
+        ]
+      },
+      "properties": {
+        "latitude": 39.98612,
+        "longitude": 18.13142,
+        "bright_ti4": 331.48,
+        "frp": 1.95,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 103,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.54641,
+          40.75306
+        ]
+      },
+      "properties": {
+        "latitude": 40.75306,
+        "longitude": 19.54641,
+        "bright_ti4": 330.67,
+        "frp": 3.74,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 197,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.9154,
+          40.99348
+        ]
+      },
+      "properties": {
+        "latitude": 40.99348,
+        "longitude": 16.9154,
+        "bright_ti4": 330.35,
+        "frp": 4.92,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 260,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.8558,
+          41.29039
+        ]
+      },
+      "properties": {
+        "latitude": 41.29039,
+        "longitude": 20.8558,
+        "bright_ti4": 329.9,
+        "frp": 5.64,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 298,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.85374,
+          41.29711
+        ]
+      },
+      "properties": {
+        "latitude": 41.29711,
+        "longitude": 20.85374,
+        "bright_ti4": 336.57,
+        "frp": 4.89,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 258,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.58958,
+          41.57859
+        ]
+      },
+      "properties": {
+        "latitude": 41.57859,
+        "longitude": 19.58958,
+        "bright_ti4": 325.37,
+        "frp": 1.74,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1134",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 92,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.02878,
+          42.71132
+        ]
+      },
+      "properties": {
+        "latitude": 42.71132,
+        "longitude": 11.02878,
+        "bright_ti4": 327.79,
+        "frp": 1.55,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 82,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.80327,
+          44.33425
+        ]
+      },
+      "properties": {
+        "latitude": 44.33425,
+        "longitude": 22.80327,
+        "bright_ti4": 329.88,
+        "frp": 2.27,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 120,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.4182,
+          45.46381
+        ]
+      },
+      "properties": {
+        "latitude": 45.46381,
+        "longitude": 38.4182,
+        "bright_ti4": 334.62,
+        "frp": 7.94,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 419,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.4832,
+          45.54128
+        ]
+      },
+      "properties": {
+        "latitude": 45.54128,
+        "longitude": 38.4832,
+        "bright_ti4": 331.87,
+        "frp": 7.01,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 370,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.49076,
+          45.54132
+        ]
+      },
+      "properties": {
+        "latitude": 45.54132,
+        "longitude": 38.49076,
+        "bright_ti4": 354.45,
+        "frp": 7.01,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 370,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.48527,
+          45.54214
+        ]
+      },
+      "properties": {
+        "latitude": 45.54214,
+        "longitude": 38.48527,
+        "bright_ti4": 355.65,
+        "frp": 9.52,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 503,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.13377,
+          45.62175
+        ]
+      },
+      "properties": {
+        "latitude": 45.62175,
+        "longitude": 38.13377,
+        "bright_ti4": 338.07,
+        "frp": 5.31,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 280,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.13664,
+          45.62308
+        ]
+      },
+      "properties": {
+        "latitude": 45.62308,
+        "longitude": 38.13664,
+        "bright_ti4": 335.82,
+        "frp": 5.78,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 305,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.38034,
+          45.63761
+        ]
+      },
+      "properties": {
+        "latitude": 45.63761,
+        "longitude": 38.38034,
+        "bright_ti4": 339.59,
+        "frp": 11.89,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 628,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.37711,
+          45.64392
+        ]
+      },
+      "properties": {
+        "latitude": 45.64392,
+        "longitude": 38.37711,
+        "bright_ti4": 356.9,
+        "frp": 18.59,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 982,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.3846,
+          45.644
+        ]
+      },
+      "properties": {
+        "latitude": 45.644,
+        "longitude": 38.3846,
+        "bright_ti4": 343.27,
+        "frp": 18.59,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 982,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.37278,
+          45.64402
+        ]
+      },
+      "properties": {
+        "latitude": 45.64402,
+        "longitude": 38.37278,
+        "bright_ti4": 355.21,
+        "frp": 11.89,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 628,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.38029,
+          45.64407
+        ]
+      },
+      "properties": {
+        "latitude": 45.64407,
+        "longitude": 38.38029,
+        "bright_ti4": 357.81,
+        "frp": 11.89,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 628,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.04536,
+          45.77624
+        ]
+      },
+      "properties": {
+        "latitude": 45.77624,
+        "longitude": 38.04536,
+        "bright_ti4": 340.7,
+        "frp": 11.71,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 618,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.80155,
+          46.65101
+        ]
+      },
+      "properties": {
+        "latitude": 46.65101,
+        "longitude": 39.80155,
+        "bright_ti4": 327.13,
+        "frp": 3.26,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 172,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.31361,
+          47.09787
+        ]
+      },
+      "properties": {
+        "latitude": 47.09787,
+        "longitude": 39.31361,
+        "bright_ti4": 327.13,
+        "frp": 8.05,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 425,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.31366,
+          47.09985
+        ]
+      },
+      "properties": {
+        "latitude": 47.09985,
+        "longitude": 39.31366,
+        "bright_ti4": 327.3,
+        "frp": 5.98,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 316,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.49854,
+          47.15988
+        ]
+      },
+      "properties": {
+        "latitude": 47.15988,
+        "longitude": 39.49854,
+        "bright_ti4": 367,
+        "frp": 21.65,
+        "confidence": "h",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1143,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.93961,
+          48.06391
+        ]
+      },
+      "properties": {
+        "latitude": 48.06391,
+        "longitude": 36.93961,
+        "bright_ti4": 334.91,
+        "frp": 3.11,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 164,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.45166,
+          48.13248
+        ]
+      },
+      "properties": {
+        "latitude": 48.13248,
+        "longitude": 37.45166,
+        "bright_ti4": 329.1,
+        "frp": 4.99,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 263,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.45792,
+          48.13595
+        ]
+      },
+      "properties": {
+        "latitude": 48.13595,
+        "longitude": 37.45792,
+        "bright_ti4": 328,
+        "frp": 4.04,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 213,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.87525,
+          48.18516
+        ]
+      },
+      "properties": {
+        "latitude": 48.18516,
+        "longitude": 36.87525,
+        "bright_ti4": 326.55,
+        "frp": 2.44,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 129,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.76828,
+          48.22589
+        ]
+      },
+      "properties": {
+        "latitude": 48.22589,
+        "longitude": 36.76828,
+        "bright_ti4": 345.83,
+        "frp": 5.04,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 266,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.77097,
+          48.22616
+        ]
+      },
+      "properties": {
+        "latitude": 48.22616,
+        "longitude": 36.77097,
+        "bright_ti4": 334.74,
+        "frp": 4.24,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 224,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.91619,
+          48.75725
+        ]
+      },
+      "properties": {
+        "latitude": 48.75725,
+        "longitude": 39.91619,
+        "bright_ti4": 350.37,
+        "frp": 7.62,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 402,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.91461,
+          48.75859
+        ]
+      },
+      "properties": {
+        "latitude": 48.75859,
+        "longitude": 39.91461,
+        "bright_ti4": 346.19,
+        "frp": 9.11,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 481,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2089,
+          49.16601
+        ]
+      },
+      "properties": {
+        "latitude": 49.16601,
+        "longitude": 35.2089,
+        "bright_ti4": 339.19,
+        "frp": 5.3,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 280,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.10396,
+          50.03127
+        ]
+      },
+      "properties": {
+        "latitude": 50.03127,
+        "longitude": 37.10396,
+        "bright_ti4": 351.18,
+        "frp": 12,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 634,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.11172,
+          50.03131
+        ]
+      },
+      "properties": {
+        "latitude": 50.03131,
+        "longitude": 37.11172,
+        "bright_ti4": 357.27,
+        "frp": 16.13,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 852,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.09541,
+          50.03742
+        ]
+      },
+      "properties": {
+        "latitude": 50.03742,
+        "longitude": 37.09541,
+        "bright_ti4": 336.24,
+        "frp": 12,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 634,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.10366,
+          50.03748
+        ]
+      },
+      "properties": {
+        "latitude": 50.03748,
+        "longitude": 37.10366,
+        "bright_ti4": 358.26,
+        "frp": 12,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 634,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.11161,
+          50.03753
+        ]
+      },
+      "properties": {
+        "latitude": 50.03753,
+        "longitude": 37.11161,
+        "bright_ti4": 345.73,
+        "frp": 16.13,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1136",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 852,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.22176,
+          50.31652
+        ]
+      },
+      "properties": {
+        "latitude": 50.31652,
+        "longitude": 37.22176,
+        "bright_ti4": 328.58,
+        "frp": 4.94,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 261,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.03332,
+          50.3685
+        ]
+      },
+      "properties": {
+        "latitude": 50.3685,
+        "longitude": 36.03332,
+        "bright_ti4": 327.65,
+        "frp": 4.8,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 253,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.02737,
+          50.37167
+        ]
+      },
+      "properties": {
+        "latitude": 50.37167,
+        "longitude": 36.02737,
+        "bright_ti4": 327.37,
+        "frp": 3.87,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 204,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.03421,
+          50.37179
+        ]
+      },
+      "properties": {
+        "latitude": 50.37179,
+        "longitude": 36.03421,
+        "bright_ti4": 344.57,
+        "frp": 3.87,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 204,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.04098,
+          50.3719
+        ]
+      },
+      "properties": {
+        "latitude": 50.3719,
+        "longitude": 36.04098,
+        "bright_ti4": 334.39,
+        "frp": 8.2,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 433,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.03285,
+          50.37445
+        ]
+      },
+      "properties": {
+        "latitude": 50.37445,
+        "longitude": 36.03285,
+        "bright_ti4": 330.61,
+        "frp": 5.05,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 267,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.03977,
+          50.37453
+        ]
+      },
+      "properties": {
+        "latitude": 50.37453,
+        "longitude": 36.03977,
+        "bright_ti4": 348.77,
+        "frp": 5.05,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 267,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.04066,
+          50.37785
+        ]
+      },
+      "properties": {
+        "latitude": 50.37785,
+        "longitude": 36.04066,
+        "bright_ti4": 328.91,
+        "frp": 6.5,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 343,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.95546,
+          50.4685
+        ]
+      },
+      "properties": {
+        "latitude": 50.4685,
+        "longitude": 35.95546,
+        "bright_ti4": 341.84,
+        "frp": 7.98,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 421,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.93983,
+          50.47081
+        ]
+      },
+      "properties": {
+        "latitude": 50.47081,
+        "longitude": 35.93983,
+        "bright_ti4": 356.49,
+        "frp": 10.66,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 563,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.94642,
+          50.47089
+        ]
+      },
+      "properties": {
+        "latitude": 50.47089,
+        "longitude": 35.94642,
+        "bright_ti4": 337.86,
+        "frp": 10.66,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 563,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.953,
+          50.47097
+        ]
+      },
+      "properties": {
+        "latitude": 50.47097,
+        "longitude": 35.953,
+        "bright_ti4": 356.49,
+        "frp": 9.8,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 517,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.95961,
+          50.47105
+        ]
+      },
+      "properties": {
+        "latitude": 50.47105,
+        "longitude": 35.95961,
+        "bright_ti4": 335.82,
+        "frp": 9.8,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 517,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.94222,
+          50.47421
+        ]
+      },
+      "properties": {
+        "latitude": 50.47421,
+        "longitude": 35.94222,
+        "bright_ti4": 356.85,
+        "frp": 19.64,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 1037,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.94881,
+          50.47432
+        ]
+      },
+      "properties": {
+        "latitude": 50.47432,
+        "longitude": 35.94881,
+        "bright_ti4": 341.83,
+        "frp": 7.98,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 421,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.95537,
+          50.47443
+        ]
+      },
+      "properties": {
+        "latitude": 50.47443,
+        "longitude": 35.95537,
+        "bright_ti4": 356.85,
+        "frp": 7.98,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 421,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.55487,
+          50.50637
+        ]
+      },
+      "properties": {
+        "latitude": 50.50637,
+        "longitude": 35.55487,
+        "bright_ti4": 327.86,
+        "frp": 6.25,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 330,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.56104,
+          50.50648
+        ]
+      },
+      "properties": {
+        "latitude": 50.50648,
+        "longitude": 35.56104,
+        "bright_ti4": 327.13,
+        "frp": 7.82,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 413,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.54817,
+          50.51209
+        ]
+      },
+      "properties": {
+        "latitude": 50.51209,
+        "longitude": 35.54817,
+        "bright_ti4": 326.41,
+        "frp": 6.25,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 330,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.55441,
+          50.51221
+        ]
+      },
+      "properties": {
+        "latitude": 50.51221,
+        "longitude": 35.55441,
+        "bright_ti4": 356.8,
+        "frp": 6.25,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 330,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5607,
+          50.51231
+        ]
+      },
+      "properties": {
+        "latitude": 50.51231,
+        "longitude": 35.5607,
+        "bright_ti4": 352.92,
+        "frp": 7.82,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 413,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.53581,
+          50.51772
+        ]
+      },
+      "properties": {
+        "latitude": 50.51772,
+        "longitude": 35.53581,
+        "bright_ti4": 356.71,
+        "frp": 6.54,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 345,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.54198,
+          50.51783
+        ]
+      },
+      "properties": {
+        "latitude": 50.51783,
+        "longitude": 35.54198,
+        "bright_ti4": 330.92,
+        "frp": 6.54,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 345,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.38611,
+          50.57262
+        ]
+      },
+      "properties": {
+        "latitude": 50.57262,
+        "longitude": 35.38611,
+        "bright_ti4": 328.06,
+        "frp": 4.02,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 212,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.38148,
+          50.57285
+        ]
+      },
+      "properties": {
+        "latitude": 50.57285,
+        "longitude": 35.38148,
+        "bright_ti4": 328.77,
+        "frp": 2.29,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 121,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.38771,
+          50.57299
+        ]
+      },
+      "properties": {
+        "latitude": 50.57299,
+        "longitude": 35.38771,
+        "bright_ti4": 329.27,
+        "frp": 2.29,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 121,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.32201,
+          50.84283
+        ]
+      },
+      "properties": {
+        "latitude": 50.84283,
+        "longitude": 35.32201,
+        "bright_ti4": 337.94,
+        "frp": 8.39,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 443,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.53532,
+          51.40601
+        ]
+      },
+      "properties": {
+        "latitude": 51.40601,
+        "longitude": 38.53532,
+        "bright_ti4": 337.86,
+        "frp": 7.82,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 413,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          38.53414,
+          51.40845
+        ]
+      },
+      "properties": {
+        "latitude": 51.40845,
+        "longitude": 38.53414,
+        "bright_ti4": 336.57,
+        "frp": 4.94,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 261,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.21214,
+          51.6681
+        ]
+      },
+      "properties": {
+        "latitude": 51.6681,
+        "longitude": 25.21214,
+        "bright_ti4": 327.87,
+        "frp": 1.77,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 93,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.84467,
+          51.70472
+        ]
+      },
+      "properties": {
+        "latitude": 51.70472,
+        "longitude": 35.84467,
+        "bright_ti4": 340.02,
+        "frp": 3.71,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 196,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.62871,
+          52.53574
+        ]
+      },
+      "properties": {
+        "latitude": 52.53574,
+        "longitude": 39.62871,
+        "bright_ti4": 333.43,
+        "frp": 5.1,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 269,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.62899,
+          52.53705
+        ]
+      },
+      "properties": {
+        "latitude": 52.53705,
+        "longitude": 39.62899,
+        "bright_ti4": 329.8,
+        "frp": 4.36,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 230,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.56919,
+          52.55779
+        ]
+      },
+      "properties": {
+        "latitude": 52.55779,
+        "longitude": 39.56919,
+        "bright_ti4": 341.16,
+        "frp": 8.96,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 473,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          39.5697,
+          52.55885
+        ]
+      },
+      "properties": {
+        "latitude": 52.55885,
+        "longitude": 39.5697,
+        "bright_ti4": 333.98,
+        "frp": 6.97,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 368,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.1714,
+          52.91357
+        ]
+      },
+      "properties": {
+        "latitude": 52.91357,
+        "longitude": 34.1714,
+        "bright_ti4": 331.01,
+        "frp": 4.19,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 221,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.17742,
+          52.91372
+        ]
+      },
+      "properties": {
+        "latitude": 52.91372,
+        "longitude": 34.17742,
+        "bright_ti4": 332.1,
+        "frp": 5.55,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 293,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.69284,
+          52.99007
+        ]
+      },
+      "properties": {
+        "latitude": 52.99007,
+        "longitude": 35.69284,
+        "bright_ti4": 344.63,
+        "frp": 4.67,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 247,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.18584,
+          53.20627
+        ]
+      },
+      "properties": {
+        "latitude": 53.20627,
+        "longitude": 36.18584,
+        "bright_ti4": 336.03,
+        "frp": 7.14,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 377,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.19333,
+          53.20631
+        ]
+      },
+      "properties": {
+        "latitude": 53.20631,
+        "longitude": 36.19333,
+        "bright_ti4": 336.33,
+        "frp": 6.26,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 331,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.07652,
+          53.8876
+        ]
+      },
+      "properties": {
+        "latitude": 53.8876,
+        "longitude": 35.07652,
+        "bright_ti4": 329.64,
+        "frp": 12.21,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 645,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.09012,
+          53.88774
+        ]
+      },
+      "properties": {
+        "latitude": 53.88774,
+        "longitude": 35.09012,
+        "bright_ti4": 335.27,
+        "frp": 3.19,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 168,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.07445,
+          53.88831
+        ]
+      },
+      "properties": {
+        "latitude": 53.88831,
+        "longitude": 35.07445,
+        "bright_ti4": 346.8,
+        "frp": 15.25,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 805,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.06257,
+          53.89327
+        ]
+      },
+      "properties": {
+        "latitude": 53.89327,
+        "longitude": 35.06257,
+        "bright_ti4": 356.83,
+        "frp": 13.79,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 728,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0695,
+          53.89334
+        ]
+      },
+      "properties": {
+        "latitude": 53.89334,
+        "longitude": 35.0695,
+        "bright_ti4": 357.84,
+        "frp": 13.79,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 728,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.06747,
+          53.89402
+        ]
+      },
+      "properties": {
+        "latitude": 53.89402,
+        "longitude": 35.06747,
+        "bright_ti4": 356.73,
+        "frp": 15.25,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 805,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.52581,
+          54.3767
+        ]
+      },
+      "properties": {
+        "latitude": 54.3767,
+        "longitude": 35.52581,
+        "bright_ti4": 348.53,
+        "frp": 8.3,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 438,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.52568,
+          54.38263
+        ]
+      },
+      "properties": {
+        "latitude": 54.38263,
+        "longitude": 35.52568,
+        "bright_ti4": 357.33,
+        "frp": 8.3,
+        "confidence": "l",
+        "acq_date": "2026-10-29",
+        "acq_time": "1138",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 438,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.05854,
+          33.85936
+        ]
+      },
+      "properties": {
+        "latitude": 33.85936,
+        "longitude": 12.05854,
+        "bright_ti4": 330.45,
+        "frp": 3.38,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1314",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 178,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.00456,
+          37.18544
+        ]
+      },
+      "properties": {
+        "latitude": 37.18544,
+        "longitude": 14.00456,
+        "bright_ti4": 331.31,
+        "frp": 2.82,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1314",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 149,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.53074,
+          37.54409
+        ]
+      },
+      "properties": {
+        "latitude": 37.54409,
+        "longitude": 14.53074,
+        "bright_ti4": 339.76,
+        "frp": 4.06,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1314",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 214,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.52611,
+          37.54745
+        ]
+      },
+      "properties": {
+        "latitude": 37.54745,
+        "longitude": 14.52611,
+        "bright_ti4": 367,
+        "frp": 16.83,
+        "confidence": "h",
+        "acq_date": "2026-10-29",
+        "acq_time": "1314",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 889,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.53021,
+          37.55075
+        ]
+      },
+      "properties": {
+        "latitude": 37.55075,
+        "longitude": 14.53021,
+        "bright_ti4": 349.27,
+        "frp": 10.28,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1314",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "medium",
+        "estimatedCO2TonsDay": 543,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.93256,
+          37.64231
+        ]
+      },
+      "properties": {
+        "latitude": 37.64231,
+        "longitude": 13.93256,
+        "bright_ti4": 337.27,
+        "frp": 4.33,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1314",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 229,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.77641,
+          37.74094
+        ]
+      },
+      "properties": {
+        "latitude": 37.74094,
+        "longitude": 13.77641,
+        "bright_ti4": 342.97,
+        "frp": 7.38,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1314",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 390,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.77461,
+          37.74181
+        ]
+      },
+      "properties": {
+        "latitude": 37.74181,
+        "longitude": 13.77461,
+        "bright_ti4": 349.38,
+        "frp": 8.32,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1314",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 439,
+        "matchedFacility": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.52239,
+          37.88877
+        ]
+      },
+      "properties": {
+        "latitude": 37.88877,
+        "longitude": 13.52239,
+        "bright_ti4": 355.66,
+        "frp": 8.62,
+        "confidence": "n",
+        "acq_date": "2026-10-29",
+        "acq_time": "1314",
+        "satellite": "N",
+        "daynight": "D",
+        "intensity": "low",
+        "estimatedCO2TonsDay": 455,
+        "matchedFacility": null
+      }
     }
   ],
   "metadata": {
     "source": "VIIRS_SNPP_NRT",
     "bbox": "10,30,40,65",
     "days": 2,
-    "fetchedAt": "2026-10-29T12:29:23.082Z",
-    "count": 768
+    "fetchedAt": "2026-10-29T22:33:22.497Z",
+    "count": 1076
   }
 }
