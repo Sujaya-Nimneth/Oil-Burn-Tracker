@@ -324,6 +324,17 @@
     ]
   },
   {
+    "id": "auto-iran-war-updates-tehran-to-2026-09-06",
+    "date": "2026-09-06",
+    "title": "Iran war updates: Tehran to announce restricted zone near Hormuz Strait",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMGlsWGJZOXNiQVpva0R4eDBWMlQtTFRqR0dJSDdTQzJhUDVRemFoUzhxUzgyUzlmdWxDQ2p3VmN6V3Y0TElxR0lubUVQSTY1elhnMm9CX3pMQ0xmU09hTE82Tko0ODNDLUVpQ0hpVWx1aGJNTWR6RVV6Z3hDenMzQ3NvYjA5UFN4QVFRWjJNX1JqWnVqVjhkVU5BVkFfSk4xUEZ4YU5ueGZiU3pGcEJHZDh4OVFHUlZudEZyUGhB0gHDAUFVX3lxTE9vLU56cXNQckU0VWZTSzhDMTZYMU82eG5uX1NBRlBrY1RVUy1QXzNfZ0hBYXMwdUlLS21UenNBZm1jMm5EV05veERqSm9XdHZHU0lTSGttaUNHMHhxWWQ2N2djV2JnR1FuVGJzZDNjeTgwMTNON1ViLTV0VUM2V2VzUW94X3FGSWplVzMtUUVZT3pYRmZzakNvSTRBekNnU215TEFNdzI5UlpXTEtMZzZtWXNmemQ3N2NUSkdwcFZQbXlRYw?oc=5"
+  },
+  {
     "id": "auto-the-uae-like-the-us-2026-09-07",
     "date": "2026-09-07",
     "title": "The UAE, like the US and Israel, is normalising a permanent state of war in the Middle East",
@@ -554,6 +565,23 @@
       {
         "type": "youtube",
         "url": "https://www.youtube.com/watch?v=7ztNpJ6sCN4",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-oil-prices-back-up-as-2026-09-25",
+    "date": "2026-09-25",
+    "title": "Oil prices back up as U.S. and Iran trade fresh threats to expand 7-month war",
+    "category": "escalation",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSWU4WXp4UDJYb25pa3BRYTNqSW1rcFhDdF9vMXdoekszMG1JbEttak9SWDhnWnotU21ucFhVYlByOGQwaFdoRE1DeU04WXVjTVN2a0dmSzJoR3VsNGozZi0zQ0tNbkdMRkVRd0Z3MzE3QnFNWkNpYTgycTBqLUJ3QUNYN1hWVFA5NGdnS2JycV9KUTE1VnBQcQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=muY92ApFwNQ",
         "label": ""
       }
     ]
@@ -3706,6 +3734,23 @@
     ]
   },
   {
+    "id": "auto-flurry-of-diplomacy-in-iran-2026-10-26-2026-10-26-2",
+    "date": "2026-10-26",
+    "title": "Flurry of Diplomacy in Iran as Regional Countries Try to Stave Off War",
+    "category": "escalation",
+    "description": "Via The New York Times. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPd05yanVUalZUaF96N3JPYjQtOHdSX0g5SXhxZ08xV1NYRk1yN2lwTndDMXZXR1NUcXFmdmVsenlIbWRMalBfXzFtSk5tVl9hdjgxQlhDU2V5VzJPTWlEek04c3lnMkt0bVFXZ0Q2a0praUUyV3BtbTlhaVBoMFRielVkV1pTYnlPMGVod1ZHMi0?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=lmRUwRqRXx8",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "auto-iran-war-live-iran-says-2026-10-27",
     "date": "2026-10-27",
     "title": "Iran war live: Iran says US ‘not serious’ about talks; ship ablaze off Iraq",
@@ -4251,6 +4296,75 @@
         "type": "youtube",
         "url": "https://www.youtube.com/watch?v=2pr6f_alqCU",
         "label": "What Israel's election means for Netanyahu, Gaza and Palestinian statehood | Global News Podcast"
+      }
+    ]
+  },
+  {
+    "id": "auto-caretaker-role-could-limit-netanyahu-2026-10-28",
+    "date": "2026-10-28",
+    "title": "Caretaker role could limit Netanyahu but not rule out war with Iran",
+    "category": "escalation",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPU1JMOG03aUh5UHZjRGhLalZmOVhWc0F4YjFJY3hnN0pQcUlFdHlJN0xKZF9PWmNOT1JtN1czaGV6d3JqWUNzdEs2cWtQWnc1eU4xclJBT0haR3R2dmx3TEhSRWo2X3VIY1U1UjBpY29mZ0hnUkdqRjlZUGJFMGtsREpUajdFM1dHM09hSzVEM1JreDBubzVuMUQ3aDJDbHJ5QndDaHNFazNkcFFwSlpQTVMzN1hPR3di?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=GfQyrarU4XE",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-updates-tehran-in-2026-10-28",
+    "date": "2026-10-28",
+    "title": "Iran war updates: Tehran in ‘close contact’ with mediators on Hormuz plan",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOU1VJWnBIbm81cHdJeHVoVXBfd05HbmYya0lhdHczRnpUdUtDWk9nY2Rzd19iNF9LODJkWHdPWmFrSDE4a1dzYU8tWXVaWjZfU1VlaTBJM2xTT21RbFZJSzVMbFpYZG9nZ0EwTEpzcjVrWUN5OHBYWkxzV0g4eWNlYkFkZWlfTHJ2ZWdKeE96NkpQbmJIVmdpQTFmU2QtRHhJWEwyQm5neGlZRXZyVVpFb0hhN0hBYktxLWQ0VUE3d1Z3QdIBxwFBVV95cUxOdWNrd2Npd19xQ0tVRHo5UHlZWk9EdG00WGVvT2o5N0lZcU5rdURUXzVYQjNhZGhxYzZmd21wcDdKZlYzVXVFSjAwdTlmMmZQZFA5b2w5MTd4WjU0OUpKSlRQY2c1anU5RFp4X1Z6NVlPZ0theXZ1QXlBWkJaVTZaMnUtZndUdDNUYzAzZTNlRjh2Vm1ZZ1pHbGszVEJ4ZC1vRE92NWZKRHpQaW5vaDRyOTBLTnJ6QkMzN0pwV3hXdGZIOGtwNUgw?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=rQvge8ROrB0",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-are-gcc-countries-looking-for-2026-10-28",
+    "date": "2026-10-28",
+    "title": "Are GCC countries looking for a regional security pact with Iran?",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNGFYZDh4Wm1tcHpLUXphVGFwVmJxYnNQYmUxUmh6R1VZMmd1enJnbldtdFRaWHltVldtTWM3bEpVVUt6N2l1Z1RqVXZucXY1Q25jMWh0cEJxd0Vtc0p4NGgtcjZOZEtTdDlFLWhnVERpc0R1YWZBbjBjN2ZJQ1VDNDMzakRBZl9xWnFjZmdXNHRReEY1NWh3Z3lNUHJXa0M5cDlmdHJzTlFoZ9IBrwFBVV95cUxNUHBmbGNNS2lXWVlMSFM5eUE5eWExV0gwaFU2eml1Qi1OU3hQUHVvZWxGaGdFTDFaRjlVcVdwdnZ2dmQ2NWlLLUJucHd5MXl6SUZmTUFNMk9icExLOFVlYXpacmkxUkNncTVxTFRYUEphVE9iOFR0Ulh5Zy1QQmxaRE5QcmR0MDRaV09Hb0lmVmdHNjZNc2ZzdlhqWnNrX0FmSkptWjhNMEs2SlhRWkJV?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=vLVJ4xAKYuc",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-live-trump-says-2026-10-29",
+    "date": "2026-10-29",
+    "title": "Iran war live: Trump says he approved Vance outreach over medical supplies",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNemJmdTRNZDJOMzFaR0hrdkY1cU42SHZvM0pETzdIcW1HblIzMmxIekZKaTd3Qi1JQ0VnTVJRWnp4VlJPQXRUSmhxa0lLbWczekMxZVFjLThWX0N5N0NrSzFCbUJHNHMtSzRTM3R1Tzh1TXMyTjFlNTRoeUpRR0N3SzNPX1pfbEpCd0VsZHVUbVliTW9wbFVzcW03WXlBNEItaU9QUkEybUZoTUdwci1GNjdpZG9RSFR2NkZlR2FIQdIBxAFBVV95cUxOYl9oTE1fNWxDMXZibzBGQ214WWxLTTFmeE9RVHBBQVdRY1E0czRjUjNGX0hoS3lQRFRUejdoNEx5X3NNeUlKcGZ0RFlfMWRYZi12TVJ5dG8ycjdUUTJYcmZ2Rl9KdThjN3pWZF9YMEYzWTFCVExqUHRrc0pTWnlDX3RTZ3dpRWlidDZiT0ZYVFItUnBuWnp1XzVSWW5iQmhjMFB5TU1FeWEzNkFQUWtUYVducnR6WlRHYlRfWWw0a3hmTW0t?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=zYIu4RCSFbc",
+        "label": ""
       }
     ]
   }
