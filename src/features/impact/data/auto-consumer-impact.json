@@ -616,20 +616,6 @@
     "source": "[OBT phase-calibrated trend model]"
   },
   {
-    "date": "2026-10-15",
-    "oilPriceBbl": 89,
-    "gasPriceGallon": 3.56,
-    "groceryInflationPct": 5.2,
-    "monthlyGroceryExtra": 52,
-    "natGasMMBtu": 4.6,
-    "monthlyUtilityExtra": 29,
-    "shippingSurchargePct": 37,
-    "deliveryDelayDays": 10,
-    "totalMonthlyExtra": 101,
-    "headline": "Oil ~$89/bbl, gas ~$3.56/gal — Sustained maritime war-risk premium & regional attrition.",
-    "source": "[OBT phase-calibrated trend model]"
-  },
-  {
     "date": "2026-10-16",
     "oilPriceBbl": 89,
     "gasPriceGallon": 3.57,
@@ -813,16 +799,30 @@
   },
   {
     "date": "2026-10-29",
-    "oilPriceBbl": 86,
-    "gasPriceGallon": 3.5,
+    "oilPriceBbl": 83,
+    "gasPriceGallon": 3.49,
     "groceryInflationPct": 5.2,
     "monthlyGroceryExtra": 52,
-    "natGasMMBtu": 4.1,
-    "monthlyUtilityExtra": 21,
+    "natGasMMBtu": 4.3,
+    "monthlyUtilityExtra": 24,
     "shippingSurchargePct": 36,
     "deliveryDelayDays": 10,
-    "totalMonthlyExtra": 90,
-    "headline": "Oil ~$86/bbl, gas ~$3.50/gal — Sustained maritime war-risk premium & regional attrition.",
+    "totalMonthlyExtra": 93,
+    "headline": "Oil ~$83/bbl, gas ~$3.49/gal — Sustained maritime war-risk premium & regional attrition.",
+    "source": "[OBT phase-calibrated trend model]"
+  },
+  {
+    "date": "2026-10-30",
+    "oilPriceBbl": 84,
+    "gasPriceGallon": 3.48,
+    "groceryInflationPct": 5.2,
+    "monthlyGroceryExtra": 52,
+    "natGasMMBtu": 4,
+    "monthlyUtilityExtra": 19,
+    "shippingSurchargePct": 36,
+    "deliveryDelayDays": 10,
+    "totalMonthlyExtra": 87,
+    "headline": "Oil ~$84/bbl, gas ~$3.48/gal — Sustained maritime war-risk premium & regional attrition.",
     "source": "Live market feed (Brent/Henry Hub) + OBT household impact model"
   }
 ]
