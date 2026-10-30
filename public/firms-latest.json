@@ -19758,7 +19758,7 @@
     "source": "VIIRS_SNPP_NRT",
     "bbox": "10,30,40,65",
     "days": 2,
-    "fetchedAt": "2026-10-30T04:51:26.732Z",
+    "fetchedAt": "2026-10-30T12:21:14.522Z",
     "count": 823
   }
 }
