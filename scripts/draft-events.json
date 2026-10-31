@@ -1,410 +1,5 @@
 [
   {
-    "id": "auto-scoop-us-israeli-and-arab-2026-09-15",
-    "date": "2026-09-15",
-    "title": "Scoop: U.S., Israeli and Arab military chiefs held secret meeting on Iran",
-    "description": "Via Axios. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYzZVZGtBRi1nRFVZY1Y5WEhWQnFKLWdYYmc4akRHQ1RoRWlmaDRkc0NSLTdxY1BIVl9lSUl6VkNkeUQ5S3Z4ZWRSYTRjV1B0YUp1NEZuNWZYRDRJalQ2MmVMbGVoSmNhMFBBdkRWZmtlbzNIbnVkajRTMmFLblhkdkVHOUVJU0xMODlfRlRMZl9mWkVIb1hlS2ZmRFRoUTg?oc=5",
-    "source": "Axios",
-    "fetchedAt": "2026-10-26T22:24:30.153Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=XN1EsaxRM48",
-        "label": "Palestinian children crawl under Israeli military gates to get to school"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "XN1EsaxRM48",
-      "title": "Palestinian children crawl under Israeli military gates to get to school",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-trump-says-hes-weighing-deal-2026-10-26",
-    "date": "2026-10-26",
-    "title": "Trump says he's weighing deal with Iran against action to \"finish them off\"",
-    "description": "Via CBS News. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZXdRdW1Db041UUN4dlYyNURUdmFWS0V0V1hCc0hnNVBZWlIxYk5Pdkg0Nks0Ri01UkRsM0NVR3VVTEVzc2psaWhpZDk1ZlRTTG0tcHgzcEZkTURsUDFoejN3MVl0NVBKZXNwU1ZVeDI0VWY5TEJ2M2dqSXBDcFpRTzRvSExKWEtVQlNzLUZINnZsT3phZ0xROHd3VXc?oc=5",
-    "source": "CBS News",
-    "fetchedAt": "2026-10-26T22:24:31.730Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=CikzjGjkguQ",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "CikzjGjkguQ",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-war-updates-houthi-vehicles-2026-09-13",
-    "date": "2026-09-13",
-    "title": "Iran war updates: Houthi vehicles in Dhubab, Mocha hit by Yemen’s army",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdjJYYTEtc01jR1hnV3dPbDl1SW9GTlM3cmpZSkM1OFBsNm5pLVpTS3ZwbkdMQXN3YkdkVW5wUDNyUHBKeE01NUFvd3RDYUlMUlM2VGwwbUtodV9uTkhNYzFTR0h4NTdRbklvNUlZbjQ5aDZ1WTZZbzUtQTJ6U3BsaHRHZGVibkdVSkZaQ2NUMDk2Vk5lbHgwZFhjT0JvTjJOSkRjT01EYVNMOVFCbWF6bENSRWU5bjFRN0s3YlRR0gHDAUFVX3lxTE80eEFuVVFCNXR0dWhobEFRNTFGX0ZTQzJVT2NGQlh4djNpR2cySEl0ZHlXdmdNQ2I4Y0xhRDBOLXYzdGt6bkRRNlJCcFJ2X2dkMDg4R1hFeUplLTEwM3dDS2E4RU1GWllqU205OFgtVFJsWDk0OHk4RTdGX0F2MWppZW5vbGxjcTdteFZTZ1VzaVVaTlpWaGYzZE9IQzFfOFFVdUF2TzZUV3ZYSUhmSG9FenEyWkRGMkFtOHFfaUpoOFRUYw?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-10-26T22:24:32.531Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=YnwbNGT-ukA",
-        "label": "Sectors Up Close: Oil giants to cash in on Iran war"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "YnwbNGT-ukA",
-      "title": "Sectors Up Close: Oil giants to cash in on Iran war",
-      "confidence": "auto"
-    },
-    "lat": 15.369,
-    "lng": 44.191,
-    "zoom": 7,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-says-conditions-to-reengage-2026-09-19",
-    "date": "2026-09-19",
-    "title": "Iran says conditions to re-engage in talks, end war sent to US via Qatar",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZ1JPc2xzcDhQMWhGREtsMUlPTnpUNDJ6dDRGZ0dNb0NYYUlMVnVJcnoyb1ZKSUFMdmdrQTVELTdaR2huNVdkQU9KRkVZRUdUcTREU25LSTJoeGt1WG1EZzZfV1pOREZhVmtmT0I2NkZKaE9uZUhMekpvSmN2MWZuWjc4cTEzZ2JUd1RoandXSG9fMUZickh4Y25TVzV3UEVQcmduVWd1cXhOaDJkVjBraUVR0gG3AUFVX3lxTFAwY3hyelpiTHdEV000Vm1PXzJ5YVpIUldCZnRnWEJLelBBQmVUMDFVTkluRlcxemVBOWVVXzdoQURGNnhDTU5PWjFUSFcxcHIwMTVIOS1QWG50TjIxbDhFdG1yWFdRS3JQeTNQRWVMUEpMcDdRNGJzSVZILTZ3MjZVQS1FQ0tyVFRQV3R1MG5qTkVwY3E1Sk5kdDk0ZGk1bHRZemVobm53Q1pRWTktRUhLMnZ4M0s2WQ?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-10-26T22:24:33.332Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=yY-ufmoDNVw",
-        "label": "Bleach fans react to end of Thousand-Year Blood War anime. #Bleach #Anime #BBCNews"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "yY-ufmoDNVw",
-      "title": "Bleach fans react to end of Thousand-Year Blood War anime. #Bleach #Anime #BBCNews",
-      "confidence": "auto"
-    },
-    "lat": 25.285,
-    "lng": 51.531,
-    "zoom": 8,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-war-live-trump-says-2026-09-16",
-    "date": "2026-09-16",
-    "title": "Iran war live: Trump says war ‘toward the end’, claims he spoke with Tehran",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNa3QzUGUxYjdPU1JjbDBHUkY1UWFISWxIZ2YxeVk1N29WOG1ZdkszZEswZHdtempBRFNXSGJFcDBJZUpsUjZQTEtaTFMyZHp5Wm5oOTdfY24yS1E2YWpvejNhc1JXUDlNbUhBQXQzVUlVMGdIZmpiX0VqeXZaZUF1ek5fWVZsZFBSeGNkeWZ2VmllN05icFNaZWhmU0dkaUxqV2ZMZHBnMGo0eFJaZnQ4UlZac9IBuAFBVV95cUxNOVBwZkNVQjRaYlhQUUk2UGJ1MFM4QU9nQy1xSmVycTJPbnJkakFBQlN2MG9paXFYVU5pUzVzOEdYZ3ZCWUxvWjEtUWxEZHYwOGJ3RlFrUE42U2pBTFBHLVh3VzZLejVLcm1tUE84aklZdEdkS0x2VTg1ZEJRYUxfRS11bVJ4Q1h2Y0FGYmhKNmpwRlhnN2E5WjUwd0RkTUhINi01Qk1KTUtRLThPeFdKU3ljVDFTd2M1?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-10-26T22:24:34.133Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=yY-ufmoDNVw",
-        "label": "Bleach fans react to end of Thousand-Year Blood War anime. #Bleach #Anime #BBCNews"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "yY-ufmoDNVw",
-      "title": "Bleach fans react to end of Thousand-Year Blood War anime. #Bleach #Anime #BBCNews",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-war-live-iran-says-2026-10-27",
-    "date": "2026-10-27",
-    "title": "Iran war live: Iran says US ‘not serious’ about talks; ship ablaze off Iraq",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQlhLR01JVEF6ei0xcTFpVnBfQmZMU2YzQW9JejZIUlVWdWFaT0Z4Tm9YOXFRUy1SM3JHd2psWDlrNjhYOWJ3RWFTbWVRUVlDQWZKMW9YX3BXNzBqTmJybFVhUlBnOVJ6NnI2c3VWVHUwdkNSSTNVdEFmMzlYMVRHZjdWSlNNWV9YYTRTM3VPTjEzempaXzV2SEhZUU0tcXU4NXB6VUFtemtkM181a2s5ZHQzV3FfY080UmI3UNIBwgFBVV95cUxPcThnWmdPQTRfbjNJWjVTTlZ2cnRlY1k1dHRnRGN5X3RKSkcycktmaFFIelg5bFh4THk2Y3BYX1NWZFd6b1ZfZG9WNC1HTm05UVUweDhGZlBTUWRHWE9MODd1dFp2emVUbVowemhDMkN1V0c3cVJGS2xzU0lwbk5hTmRGQkhuaHNCWHlIdGhOV3FJVFVQVlE5QTZMQ3J0c25DSVdmS2pZNDQydWE2Uk5LV2VINEhadGo2N3NieV9iaWsyQQ?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-10-27T04:08:19.645Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=SHvD2OoL9gI",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "SHvD2OoL9gI",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 33.315,
-    "lng": 44.366,
-    "zoom": 7,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-us-forces-could-strike-iran-2026-10-26",
-    "date": "2026-10-26",
-    "title": "US forces could strike Iran within 96 hours of Trump order as Tehran hosts regional leaders",
-    "description": "Via Fox News. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ1lfU3p0Ul82aG5wTVlZaGd0THFLcFk0dVBwRVFwdFZkblczY0xCYXN4dVVUZzY4UlUwZG9TV3NEUFJ5cXpScXZIbHRJUFZTbjFqMDZTX2wtMlNWeTR1N0Zja1V6UF90aXRqREJ4TTN0SnNDSE1yQVJoNWYxWDlOZVl5QQ?oc=5",
-    "source": "Fox News",
-    "fetchedAt": "2026-10-27T04:08:21.137Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=SHvD2OoL9gI",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "SHvD2OoL9gI",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-us-has-plans-for-major-2026-10-26",
-    "date": "2026-10-26",
-    "title": "US has plans for major Iran strikes if Trump chooses",
-    "description": "Via CNN. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBGMkYxX0xCdEJNR19IcUM5QTlEN09sZS1zODJGam1TWTNMZGxUN0dRVTJNR0hhRENuYWo1SURGd2pQbTJYNGdiNmVMdlBCRmE4QUZDLXFXMjVnLWRSNXZfb3JERnBYa1U2a0d1ZnVPQnpEZm1w?oc=5",
-    "source": "CNN",
-    "fetchedAt": "2026-10-27T04:08:22.735Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=SHvD2OoL9gI",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "SHvD2OoL9gI",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-after-months-of-threats-by-2026-10-27",
-    "date": "2026-10-27",
-    "title": "After months of threats by Trump, resumption of Iran war now seems inevitable",
-    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZVJJZ0tBXzluNmZ1YjhWUnVBRVczRnZhSW9acG1vSUQ5dFUxa0dvTktRMGZ1MndGSjU0Q0pQTUpDb2dBSEFqRXhCVEdnZFZQb0lNTDJaa2RJbjl0cGJhMWM1MmQxQzczb0tWbVlGMXZ2eW50Q282RWpSM0hYa0N1WEVqVXplcUh1cl9fOGJNN0RheHhvUTNrNFdKQkNuQlRReUtFUEV4bTcwZXPSAbABQVVfeXFMTTd3QUZkZ0I0eUl6Yk1BYU80ektzQjJKSXctWE0tVnowenpKeURhcmtvRDFDY3IyMVQ4ZUo2d09vd2wydEZPckZiN3hSR3pSeEVnVnlyU3FSYkdldkFTZ3kxRTh5VmhxZTdGM243RV9mbFdfeENkSEg5UFU3cVpPam5OSXJMUnhPSG81eTkwZGtqYThWWGpFYUwzN1Y4VXZIYjVyVWN1eGloMGdCRThjeEU?oc=5",
-    "source": "The Times of Israel",
-    "fetchedAt": "2026-10-27T04:08:24.149Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=LbrDs3WM-9M",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "LbrDs3WM-9M",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-live-vessel-reported-on-fire-2026-10-24",
-    "date": "2026-10-24",
-    "title": "Live - Vessel reported on fire off Iraq hours after Mecca Pact talks in Tehran",
-    "description": "Via Iran International. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBiblkxNnVtVlJKZk9CWDVFRTZvY2F6bWZORmVtSkR4NVY4VzZQa3dPZy1KNE5EbUpvMWF3TDk0VEY5QnAzTmFWS3FjenBLRHdpU2UtMjVKZlphZl9tRkE?oc=5",
-    "source": "Iran International",
-    "fetchedAt": "2026-10-27T04:08:25.547Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=-DwdjH5mtlo",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "-DwdjH5mtlo",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 33.315,
-    "lng": 44.366,
-    "zoom": 7,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-netanyahu-denies-allegations-hes-escalating-2026-10-26",
-    "date": "2026-10-26",
-    "title": "Netanyahu denies allegations he's escalating tensions with Iran before Israel's election",
-    "description": "Via PBS. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdDhpMnVyRng4azBjbEJNWmtYbHhONmIwTTNCc0VqUE5jMzVESUpRUDljdW1xTlRLR0JtazNiQzYtRWdnd0tIcWNpMUQtRUxqYm1EU1lhcnpvS2hpNFI0amZGODhxTjYwakt6eDJ6VlBFZjBSX1NCNWdsaXhIbFdkY2sxYUJLd3JzbUhoUF9fY0d5Ri1rWlJlRC0xLUY5RGdUT3V2NGxycmt1WjFITjB6TjAzVU1VQklyVjNDQXZB0gHDAUFVX3lxTE5MU3FEMUQ2VjUxRTNRTTIyaDRhQkJfc3M0N19iaG9PWGFkMXFoRDBReVJtNUFhXzdyM24yLTlRU2JkM2xYTXkyN2w2aTVCeXBRb2sxWWZsU0ItZmZEZ2s1eURvdmZqU3hHY3pYWGpoWml2dVh4bGs5MUlUbmMtX2IydjVzbnJuTEREQktJZlRDV2NXQXpZelhLdUl3T2NDZ1VYVjA5cHQ0aUZzcTFJRmt6cldUUEhQSFhxU0ItUG5Gb0Y2OA?oc=5",
-    "source": "PBS",
-    "fetchedAt": "2026-10-27T04:08:28.010Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=mxpU60mg548",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "mxpU60mg548",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-netanyahu-pushed-for-attack-on-2026-10-27",
-    "date": "2026-10-27",
-    "title": "Netanyahu Pushed for Attack on Iran Ahead of Israeli Election, Officials Say",
-    "description": "Via The New York Times. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMERWcXFaZ1BsZ3FLanZOZHo1QVowcEtkb0VZTkE1dkF6cmktY3pwUVBYZ2FRTkVOaWpwMTZqbDZmNU15clM1MENCVU5OWWF6YlBYU1JUUUZiQ005VWhZZkxtczA1S1hDc0FFME9heGxMUFhUalJpUHV0X3Z6QjRoUXJyNHg3WERCVDVMa2hKTS0?oc=5",
-    "source": "The New York Times",
-    "fetchedAt": "2026-10-27T04:08:30.092Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=aECmh23noFo",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "aECmh23noFo",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-saudi-arabia-turkey-and-pakistan-2026-10-27",
-    "date": "2026-10-27",
-    "title": "Saudi Arabia, Turkey and Pakistan send envoys to Iran in push to end war",
-    "description": "Via The Washington Post. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPejFkczNnNTlDQi1sY3d3VkFxUjVSb1lJWEFYVGV1dDUydnFKRmxwTzctQnNzRzkzUjd0c05YMXZiak8xX2ZYSnhWQjZ5QWRrbEFabS16VzJVS2U3aWhpbm9nU0E3YndHRVYxX09tcTRIMF9YZU5ZbXRNRHBQTExJNWZ4ZnhWQndPNk9mYVVyOGR4Nzc4Mlkzdjl6WUJSa0NEM3E5LXdlZ1NpZEFIVktCYXB3VQ?oc=5",
-    "source": "The Washington Post",
-    "fetchedAt": "2026-10-27T04:08:32.004Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=aGSt9LsfF1s",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "aGSt9LsfF1s",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 24.714,
-    "lng": 46.675,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-politics-not-strategy-could-mean-2026-10-25",
-    "date": "2026-10-25",
-    "title": "Politics, not strategy, could mean more Israeli strikes on Iran",
-    "description": "Via The Economist. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQR2JHeGwwWlVfNFp6OE5XQUpnZE9LY1BPQXdzZnkzRVhvNkdkQXhPcXNvOUFvdGJJR0FXTllYaFlfenBneXpDQ1NBZ25ia3gtRU9fWG1HWW1kNXRoMllhcUYyQTZpN2E1eEk0SVkwT1lKdDJGNVp4OHdOTFg0cnpqQjZ3VTlld0JPVU13eGJucjlpdTNKRTZ1dXNQMFNnTGZTdzJKMmUxWHNYTFYwNl90T3N1YnZqNWE4ZFFjcm9n?oc=5",
-    "source": "The Economist",
-    "fetchedAt": "2026-10-27T04:08:34.303Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=W1LvKHeRJLw",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "W1LvKHeRJLw",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-hosts-saudi-arabia-and-2026-10-26",
-    "date": "2026-10-26",
-    "title": "Iran hosts Saudi Arabia and regional powers as fears grow of return to war",
-    "description": "Via CNN. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxONEl1bFlhVTIxQXNkLVoyQk5FQ3VFbmNacnNrWTUxeXRLWkU1X2RQakd4ckI2eGNIeFNSZUZuQlVtQU12UkZ6anVLZVhRRGQxWnNVRjE4cGN1bkhDWmlMMTRFMmh3cWluc1dnOXdsZmhjRXJxbXVPQmpkbGVpN3VVeg?oc=5",
-    "source": "CNN",
-    "fetchedAt": "2026-10-27T04:08:36.468Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=mn4C7grHGns",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "mn4C7grHGns",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 24.714,
-    "lng": 46.675,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
     "id": "auto-israel-without-netanyahu-still-a-2026-10-27",
     "date": "2026-10-27",
     "title": "Israel Without Netanyahu: Still A Nation At War",
@@ -5203,5 +4798,361 @@
     "zoom": 5,
     "casualties": null,
     "status": "draft"
+  },
+  {
+    "id": "auto-iran-war-live-4-tankers-2026-10-31",
+    "date": "2026-10-31",
+    "title": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end soon",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQelNIbUtVX3B2VzFuckxCZENUQmpfSHFxM1Z1dTcybmRkUmJfQjc5aXNWS2RUTzBYeTJhZWFETDgxOVZvb3VMdzVZM0FOamo0T08tUTQzSWtnQm85a2R2ZGI0bXNnRXB6VktrU3djS0xueTFvZjVDVVpzMHZIY2syYmdaNTVlVmFDUWEtY1lKSjR6NHB1UG9SQTRrdHhJSzBFX2FRMGFyLU84ekpwX0xEX2RwcV9pT1BzTGgtY1I0YUtTZ9IBxwFBVV95cUxQODNsX0VmMnZtcU5PTktTbWNsMVdlSnkzRmFQUUlaWF9IanFIVGpQMXJCYTdoR2U4N1F0Y3FZajRUMHViS2pPbk1UTGhidUhmTUE1Z2d0RExfelFwc2NJWGItMjN5MjJsWmZYUHpHbWhxdEZoVzBXT1VrRWthNnNoVzRwUWpkRFZtTFJXSUZKYjRQVGhMMF9XbUh1Y2F3LXJIS2xXRElUZVFJdk53YXc0b2g3MmpaNXZkUU9oSTFVTkNnUzkyZmJF?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-10-31T04:36:44.651Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=F1vKeW6HD1c",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "F1vKeW6HD1c",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 26.566,
+    "lng": 56.25,
+    "zoom": 8,
+    "facilityId": "strait-of-hormuz",
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iran-update-october-30-2026-2026-10-31",
+    "date": "2026-10-31",
+    "title": "Iran Update, October 30, 2026",
+    "description": "Via Critical Threats. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA2ZGJ6NllPMDJCdW4xbTRlR1JFSWFQYTgyTFZiMVpCVGJDQkxpU3Z5YmRvSkxFd09TYjUwc1hoalJYZ2NaeGo3SURsM3lCYlRnVF9PaW02S29oZjlkRjdRRGZkVU1NN001ZnlRNnJLODFJUTBTZVlV?oc=5",
+    "source": "Critical Threats",
+    "fetchedAt": "2026-10-31T04:36:46.010Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=SJrZ8_egpFc",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "SJrZ8_egpFc",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-qataris-hold-marathon-talks-in-2026-10-31",
+    "date": "2026-10-31",
+    "title": "Qataris hold marathon talks in Tehran in bid for U.S.-Iran deal before midterms",
+    "description": "Via Axios. Auto-detected by headline monitor.",
+    "category": "diplomatic",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMTg1UTZmdFFiVndiNS1OTnU2cUhBSk1lTVJDMWFOTEdKNmhtLV9wc0hJSlBqaEk0d2Z3UTdqQTRpbE1UMjV3WG1kaUE5TEFrOWp2clJGTTBFc2JkN0tXNXR5dnd3RGdjWlNhTkFRRFRwSmo5YW1Val83VWZuN3VYQnUteDFtdw?oc=5",
+    "source": "Axios",
+    "fetchedAt": "2026-10-31T04:36:47.344Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=vqlVBLQF8xc",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "vqlVBLQF8xc",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 25.285,
+    "lng": 51.531,
+    "zoom": 8,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-middle-east-latest-qatari-mediators-2026-10-31",
+    "date": "2026-10-31",
+    "title": "Middle East latest: Qatari mediators return to Tehran with latest proposal to end war",
+    "description": "Via The National. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWnZLTm9HNUpSbUNocng0VDBfQkRsbjFKajRDRTJSLUJrLXpCYktWaE94MWc1TzVJQlY1OEpaTDRRa2tLWlI4bTAyV1dZeDgtaE5maDQyVnYwN2lxZ29UYUdUXzZrejZJY0lqczlsZGRjUC0wTGtwQWotR3A3eHMwaG1ydFdGMkhO?oc=5",
+    "source": "The National",
+    "fetchedAt": "2026-10-31T04:36:48.757Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=1keSz6LR6vc",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "1keSz6LR6vc",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 25.285,
+    "lng": 51.531,
+    "zoom": 8,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-a-renewed-iran-war-is-2026-10-19",
+    "date": "2026-10-19",
+    "title": "A renewed Iran war is only a matter of time, Israeli experts warn",
+    "description": "Via Jewish Telegraphic Agency. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQa1d2RVhJXzJINlNMemVtRzNMajNsX29JcDM0WW14eUdCRlF2WmtIZ2J5cVY2TjZtN3AxcWtEYmExRzFjRE5PakVyZnkxRWhUTkM5TEpyemt1MnVSSmZlTmxOUzNYU1NJdC1JZWhtc1lQazJhWVM3bWRhMlpZczZLZ1JUNHBSSmI3ZTlSLU1QSEkxQTg5M2pSbDk5YU1oTE80bHItRA?oc=5",
+    "source": "Jewish Telegraphic Agency",
+    "fetchedAt": "2026-10-31T04:36:50.143Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=7WgXc7PF2sU",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "7WgXc7PF2sU",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-apathy-and-intrigue-in-iran-2026-10-30",
+    "date": "2026-10-30",
+    "title": "Apathy and intrigue in Iran over Israeli election",
+    "description": "Via The National. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOS3NGenhOeXduTjVUU1BHY2Y1d0hGVWJWNFZ3N1NFNVEwbmxmeGlhamVoanFmN1NoVWFkSGlyTXZKZHVqVG45aXFuenR3dm5meVRUbG1LdVR1NTdyQUJzd18zVFA3eHE0WE12RzZmZkx4TmJMeFJXRHhoNDhhWER4bERneVN2SXEtRDdlM2tfMTdUaGV5SFJDNnhiT2tYdFlzMUwxellB?oc=5",
+    "source": "The National",
+    "fetchedAt": "2026-10-31T04:36:52.509Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=dV7Uo1AIhqo",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "dV7Uo1AIhqo",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-as-vote-count-ends-in-2026-10-30",
+    "date": "2026-10-30",
+    "title": "As vote count ends in Israel, eyes turn to US midterms for Iran",
+    "description": "Via The New Arab. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTnd0a1RickVsRVJXNW5SUm5yYTR3VEhKYXFSM3A4eWJScGlMbGY3OUM1ZWY3c1gwOWdERlFacWVuYl9odTZyQ3F2TVBtcjh3c2Y1VTZQVjhKZjFKTjZrdVNFb1VhTEFTeGpESnlTM2dVYk9MckxTS3Q5QXEzUm5DRXNqWnY?oc=5",
+    "source": "The New Arab",
+    "fetchedAt": "2026-10-31T04:36:54.562Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=HJT5lXOPqGM",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "HJT5lXOPqGM",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-israels-highturnout-vote-brushed-aside-2026-10-28",
+    "date": "2026-10-28",
+    "title": "Israel's high-turnout vote brushed aside in rest of the Middle East",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNEx1ZTd0Y0hkdnJHWTZNU2JXU21wRDcyRVRVZ2FIMkVtckpnSTlEV09VWElYSzhjQmFPNzZkNmpETllORk91MlN3SFFTb0xndkV0R0x2bldXU3lLTmRyVlFzdm9BRm84MFIyN1VJSXllXzhHV1lRc0NWWEx0Vm9fb3czVlluM2JrSk41Qkhmbkw0NlN6N01KVG9Sems4bzBueEJOLWt1RGthRWNoY0hJ?oc=5",
+    "source": "Reuters",
+    "fetchedAt": "2026-10-31T04:36:56.602Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=clwhjut_fwY",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "clwhjut_fwY",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-in-israel-opposition-politicians-urge-2026-10-30",
+    "date": "2026-10-30",
+    "title": "In Israel, Opposition Politicians Urge Patience Even as Renewed Iran War Could Scramble Plans To Oust Netanyahu",
+    "description": "Via The New York Sun. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUEttOTlLSEt2dU1EM2dmX2xtc0FrQjFRMVVFMzEySUJSNzNzYW05cWM0eGJIX0pna3NMUUlqazZYUVJ3UVhFanFxeThwWktEaG1neGcwdE05N1BHZjVSTTlmb0ZmRHVaVEh6UzBSU2xMVGRPWGtSbEpKOXlnOUlPdDd2OEZzNFdGUXFTQmxkVmk3OEwzNnhIR0NmRFkwMk9MMjJWaEpReG44UmUwVnNHZ1ZmdlFuNWJwSDgwSnV5bWhqV3duWk0yeXoxNTM?oc=5",
+    "source": "The New York Sun",
+    "fetchedAt": "2026-10-31T04:36:58.677Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=HgQz2aRfVCQ",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "HgQz2aRfVCQ",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-trump-accuses-iran-of-making-2026-10-22",
+    "date": "2026-10-22",
+    "title": "Trump accuses Iran of making up fake strikes on ships to drive up oil prices",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZDJacGlyUkJSMmZfSXF5dlBwLU5PRXdsQnZiMFRyRmJTeVU3dHZnQlF6WDVRQ0pjYlFFamxjV3dXU0E4SmZ0SkRUMW1uLVh6cE05SDBLTEhlTnI3T3dwQXNWbFQ3TzFaZ1lZY0RNeVlNSW8zaDN6aDh1NWg2ZTNvTV9OM0xYQQ?oc=5",
+    "source": "CBS News",
+    "fetchedAt": "2026-10-31T04:37:00.852Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=o2ZkmEMrZSA",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "o2ZkmEMrZSA",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-speculation-grows-over-renewed-strikes-2026-10-31",
+    "date": "2026-10-31",
+    "title": "Speculation Grows Over Renewed Strikes On Iran As US Aircraft Arrive In Israel",
+    "description": "Via Eurasia Review. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPNEJkaDBCV0NxZTBHS29ZRHhsNS1tSldld3A2RTgzcFVubG1RaURTNmJRU0xEeUtVcU5oNlhUYzRHQ0ZUWkpyUW9XN3V1cUkzUnN0YmY2Ti1aUXJaN01pcjB1Q3BuX29ib1pIdTJpTUZiaTBvLUpBRkhaOUlIYnMzUk1PaGZqeEpGdEhmRHdFVW45Wi1IQl9rcUt5ZEplTXBCYUVzU2VaTmtTb0hPY3VJV280NVVlUEpiTWc?oc=5",
+    "source": "Eurasia Review",
+    "fetchedAt": "2026-10-31T04:37:07.548Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-houthis-continue-to-engage-in-2026-10-30",
+    "date": "2026-10-30",
+    "title": "Houthis continue to engage in ‘fierce battles’ in mountains near Aden, Taiz - report",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9oUVk3dVBqWTF3aGNyUEM4YUNMTVhlZUdZbS1vN25hQ2psZGwtN2taQ1hzLXZNeVNMNXJnRm9XdTVDakR2UUg1cVRRS2dJYk1KclEyN2FfdnVNbTZG?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-10-31T04:37:13.618Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 15.369,
+    "lng": 44.191,
+    "zoom": 7,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-may-be-digging-in-2026-10-13",
+    "date": "2026-10-13",
+    "title": "Iran may be digging in for next war, raising stakes for US, Israel, and Gulf",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8xNjZsVUhCLW1fd2xlRXdGSXpfU3hXdFJqeEg5Tkg5b2lrLVZaeHRKN2ZSeDVyVHlfY0ZLM2NEQWVOeG9fNGZxWHhweTJvcVR5QXVfT2VHUko0WFhoNDhGaHdjUkk5Qi1FM1E?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-10-31T04:37:19.618Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-the-new-york-times-as-2026-10-07",
+    "date": "2026-10-07",
+    "title": "The New York Times. . As the U.S.-Israeli war with Iran continues, it’s being felt in a wider region. Eric Schmitt, our national security correspondent, explains how the conflict is reaching U.S. bases and why the U.S. is pulling back its military presence in some lo",
+    "description": "Via Facebook. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOOW5xSG1QR3UwVjE0bENyc2Z4eGRJcjdNend2Qm1TazNNai11NmhpS3RKSE0xQ1BYZ3ZKb05EbTlGZFBNOTZQdk9DUTlfZDMzZ2tqTnhQd0dpQ2xtWUFkcU9SYmQzUmhLVGdqeE9waHg1bUtoN1Myb2QtZGZwQ3lNMFZKM1NzMW82LTZyUXZGZUxxSnNqQWdDc1VrdHY4ZGhmUE9NU3cySnFwbFpTQ05xcUF3azAzVkpyQkV3cjhDYkZieExzY2JsMms2bjcwbWNua1ZnTw?oc=5",
+    "source": "Facebook",
+    "fetchedAt": "2026-10-31T04:37:25.810Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-us-said-preparing-options-to-2026-10-09",
+    "date": "2026-10-09",
+    "title": "US said preparing options to renew Iran war, including plan for 3 days of intense strikes",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVWNzSUJZTWhicmlGYUpqd1NZcEI0T2JsSFNSbFprWXVackZEMDNGNElVOVcxOVVscWR2VGdITnkxQ0NaNEx0eE9HZVFyN0xlNG1KU3JEVU9RQS01NWlWcWtVZHVpV3ZDV29oS2pPM1JpQjB0RGdVaVFuTHNMTUtaNWsxd3lsWHNhcXNyNzdXLThkdkpQMzluRUZ2UGRmM1BzQVBoOWYyazFMUTVqdmg1TlBQdTNzc04yRC1Z0gHAAUFVX3lxTE5tOTR4aXFwc2dwWUJsOEo5bm5YLUw2b2pqSmt4OHp3NnFGMUxaeF9MeWhIY0ZnZDVJNGl3by0tWW1XOFRFVGx0TUlvN2tVNm5vWFdtVVlvdGdFb2dfejFXc3RnNmdnMEplelM1VnROc3NBYUZUclFqb1V4YVpJdURxMDhKRXV1TF9sRDcyZTU0MXVfVXlRRXdLVUg1dl9VaWRHV3pqUmlnNVhYVzRqWGxELUdvSFktRFdqeTZRX014cg?oc=5",
+    "source": "The Times of Israel",
+    "fetchedAt": "2026-10-31T04:37:31.201Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
   }
 ]
