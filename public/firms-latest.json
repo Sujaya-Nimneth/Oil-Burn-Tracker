@@ -15150,7 +15150,7 @@
     "source": "VIIRS_SNPP_NRT",
     "bbox": "10,30,40,65",
     "days": 2,
-    "fetchedAt": "2026-10-31T16:59:23.520Z",
+    "fetchedAt": "2026-10-31T21:10:43.083Z",
     "count": 631
   }
 }
