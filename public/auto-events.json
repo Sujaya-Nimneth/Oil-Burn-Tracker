@@ -5372,6 +5372,23 @@
     ]
   },
   {
+    "id": "auto-middle-east-on-edge-as-2026-10-31-2026-10-31-2",
+    "date": "2026-10-31",
+    "title": "Middle East on edge as fears mount that Iran war could restart after the midterms",
+    "category": "escalation",
+    "description": "Via CNN. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB6U0o2UHZCSFl5N1RfNzEzSWtrcXNFalpsV1htVUZYTHM5NVdyU05GQXloeW5JaXU1b1BlRU45WG1BRE5oZmhfN1JZMjRBM3pFZW5zRmpfdGpmMk42M2JvVFN0WmRhM1BtdFRYTWszS3lwNk1yMjRRZmd3?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=YH6XkhYe0vg",
+        "label": "What are Americans most concerned about ahead of the US midterms? #Midterms #USPolitics #BBCNews"
+      }
+    ]
+  },
+  {
     "id": "auto-iran-war-live-tehran-eyes-2026-11-01",
     "date": "2026-11-01",
     "title": "Iran war live: Tehran eyes 2-day Hormuz plan; Trump says talks ‘going fine’",
@@ -5488,6 +5505,143 @@
         "type": "youtube",
         "url": "https://www.youtube.com/watch?v=a2ZO67d5r5o",
         "label": "Trump at Halloween party ‘as himself’ says he’s ‘in no hurry’ with Iran | AJ #shorts"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-live-us-response-2026-11-01",
+    "date": "2026-11-01",
+    "title": "Iran war live: US response awaited on new proposal to reopen Hormuz: Tehran",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTmNPcm9sUXBiVUpNblA3VG1YRWZvOTZEcGNIMWZ1VnJ4bjFHa2t5cDQ3SHEwaGo2NXctdG1WOURWMVhndkpjOTF0SHZVeEJsS3ZtVFpWeTlOYTlKbDk2RmIyQnAyOWVFd3QySU5STlFKNy1acHVoUUhQM3ZhRS1udFpENjlydVVPdEw1cGRBemN1cF95d25tbFZQWENSQmFZd2FtOHdScVg1YVhIa0JvTl9Ud3lsMW9YSFBNa1RTSHpTUdIBxwFBVV95cUxQX0tzMW11LUQxVDB0X2RYM2tWWVNma2ZOaWVyWjRjbnYzVGxVUmtyaXZzQnlUMW13bmtWM29OYlA3OGctRUJFSWZyVUFETkh5QXh1TXgzS28xck1jTDRaZm5lRE9RS0xua1I0Smd3a3pNUmE1anVab29RMC04VnhUMGFZdWktYURNR0hsRDBmZ1c2LTFfZU9ZbktUb3Zza2JZNXNqakltVzJsVXRidHhqNFlQOFl1bDZoZk9LLU9zdnIwUGotWUI4?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=C2M4TenJzDw",
+        "label": "How will Iran war shape the outcome of the US midterm vote? | Inside Story"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-qatari-mediators-hold-third-2026-11-01",
+    "date": "2026-11-01",
+    "title": "Iran, Qatari mediators hold third day of talks to end US-Iran war",
+    "category": "diplomatic",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "lat": 25.285,
+    "lng": 51.531,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPdXU0aVh0RXlJYm1BOUtMU2FncFZnaDY5dVo4LXR0OFhsUzl1V2s0ZHpoeU5VX2d4cjg0RWRXRkRLLVhRRFJ6QlVKd3dEQ3ZtNVF0c0laVUtZZU1DTFB2bVVpN01abDA1RDRBWXJLRzFSVzZpQmFaWFBVaVdhNG9GdEVranBrT2M5NzlmWFVKSXo5QjJla0JLZ2x3SG9pOE9mb0xOaUNaZmxxbzQ4RlVVY04tZnRxZWNLNVBoby1WMXQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=C2M4TenJzDw",
+        "label": "How will Iran war shape the outcome of the US midterm vote? | Inside Story"
+      }
+    ]
+  },
+  {
+    "id": "auto-iranian-army-war-could-be-2026-11-01",
+    "date": "2026-11-01",
+    "title": "Iranian army: War could be longer than previous one, Trump won’t dictate its duration",
+    "category": "escalation",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPc0lMRlVva0JjWlN1Y1JZcFloZHZ0Z1VVX1VYTWhldDVNbldlQlJDbWNfRE8zOEEzdU82R3gyZzZjZUNRVWREZ2FxM1lHemhSbUlQeXVqT1hiUHZMS3RPUHQwejZGQ18zZ294bWJSbEJvR05KSmZhcnRja3VzSC1NTldFNjl5Rm9RRjBhQkJWTVRHUFZtR1A0S3hvb0tRVzRMRG9ScTUxM1FlUVZaaW9ZbThmZ9IBuAFBVV95cUxNel80bFpSYVhEZF9MbUtDSi1vVFlGNVZqMDkzMWJlTTRVOEg3LThxTHljVU5oMjQwTzhxdXVyaWNBQlM2OThVZmw4M2VjbGp4YjQ5RHVwU3JpTzFYejM2eXhwNEFkd2FiNkk2aTNCVUhaNHFQY09rNkhySVdORWlTV0hiWnBBdERwQ3JTcWlVMkh5TTd6QUxBSnFjemxWYTltM2RFNTNwMGZLR2NBMTRPM2FLbFN6aWJS?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=SjKbFspZy8A",
+        "label": "How Trump could govern without Congress after the midterms | Reuters World News"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-and-us-explore-diplomacy-2026-11-01",
+    "date": "2026-11-01",
+    "title": "Iran and US explore diplomacy amid rising threats of war",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxNaDc1ZXlCVTU0M1RYcWo5bG9kdGJhVEg3Njk3THFkQTNoV0lHT0dpdVN0OEU2UzlIUklveEFrV09iWFlXZ2xmNnZvYXdCYWtKYlBNV1NHLUVZa2lCTDFsNHVZWXJkQjk0a25ONTJYNkdUTzhtaFdDVmhkTU9EblZuOVFJOUJWa1JhbnpPMkZzUnNZanBqUkxHUjdMSEJZUdIBowFBVV95cUxQdTY2dC1IM2ZTakowQ3BFVm9XdTN6Z2tIdGV3UW8wdDJyV1BtM3BNS0xHTm9naU5EUGVJRWs5OUZYcjgtUlM4UF8yNWp2OFNSZ05pZ19EclRjNll4bjR5NFRiSGEyZG5CdlhSdDRFOGxGOVR3eDlLUkpoaW12eHd6cVBWblVFeDlzSVJ6U3RBT195SWMzaFdLWVJwTzViaUJQaVVr?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=C2M4TenJzDw",
+        "label": "How will Iran war shape the outcome of the US midterm vote? | Inside Story"
+      }
+    ]
+  },
+  {
+    "id": "auto-how-serious-are-irans-new-2026-11-01",
+    "date": "2026-11-01",
+    "title": "How serious are Iran's new threats of retaliation?",
+    "category": "retaliation",
+    "description": "Via DW.com. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUjg2WnAyeGdIdGo5Uk1lLWtyYnk1Y0Z0UnRPcFBtdlhaeGJhUHpPMkp2bkVtRGx6WDNFZlduaGtyYk5yOUJzc1hiaW4wX19lZ3hTaUMya0ppbDU2NmdmYlVIdEZqODN4TVlwcmRiMS1kWWtEVUJla3FQNGp0LVc5akZNRlktamZVY3ljWmd3?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=sIYaFh2qnPY",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-trump-has-frank-call-with-2026-11-01",
+    "date": "2026-11-01",
+    "title": "Trump has frank call with Netanyahu about next move in Iran war",
+    "category": "escalation",
+    "description": "Via Axios. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9MVUdNZ28zQzRiOVNwaDQyMC1WblRmazY5Y3VIbktXSk5BYkpNUFBHWG1GbnJ2RTg0dTFiMHZCbTRCME5ONEplcDZWVlRpQW1nZF9jdzAwT1dnNVNDWi0zdG1ySy1yc3k3UEVmZ2pucGZDNFJ4NzRPd0ln?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=C2M4TenJzDw",
+        "label": "How will Iran war shape the outcome of the US midterm vote? | Inside Story"
+      }
+    ]
+  },
+  {
+    "id": "auto-gulf-braced-for-escalation-of-2026-11-01",
+    "date": "2026-11-01",
+    "title": "Gulf braced for escalation of war between US-Israel alliance and Iran",
+    "category": "escalation",
+    "description": "Via Financial Times. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOYlZjTzdFYjAzeVItVzFIMWE4QXVhblR1SlVvMnFjLWxBczktR3o3V0kyMGRvMXFibUhmOUNoRGlQZ0dTanNhaUktM1dOeXBIcU9PS3Nyc01GbEhtX0t2VDZDckdQMGg5NGluZ3ZzOE11a3BYVGp4RHNEY243U0VUbGU5dk0?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=C2M4TenJzDw",
+        "label": "How will Iran war shape the outcome of the US midterm vote? | Inside Story"
+      }
+    ]
+  },
+  {
+    "id": "auto-report-netanyahu-pressed-trump-to-2026-11-01",
+    "date": "2026-11-01",
+    "title": "Report: Netanyahu pressed Trump to resume Iran war after US midterms; president undecided",
+    "category": "escalation",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPVVRYX3JzMmwyZ1NrZG1PaGNfRld5Z1U2N3VZdFlld0xleldDMFY1Z1lBLUdLdTFVeG9GLXVjRFUzV3E2M1UyQlVPRGlVWmRMQU5mTGJoRzdWaHZQVzUxOExsbWN5TGktMkhkOVJNYjExV1FIcFBGMFF6UEd0WkhYTFJMaFMxOTdxa1VxeXZlVHRmdU1sMm10Z05NYzFtbmdiUldmMzVybWxiOXdJWDBiMnFqUkdZbGc0WWVkM1B6YUc4S1BZeHRIbHFTV2NBQQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=YH6XkhYe0vg",
+        "label": "What are Americans most concerned about ahead of the US midterms? #Midterms #USPolitics #BBCNews"
       }
     ]
   }
