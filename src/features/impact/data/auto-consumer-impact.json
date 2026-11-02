@@ -827,16 +827,16 @@
   },
   {
     "date": "2026-11-02",
-    "oilPriceBbl": 86,
-    "gasPriceGallon": 3.44,
+    "oilPriceBbl": 85,
+    "gasPriceGallon": 3.43,
     "groceryInflationPct": 5.2,
     "monthlyGroceryExtra": 52,
     "natGasMMBtu": 4,
     "monthlyUtilityExtra": 19,
     "shippingSurchargePct": 35,
     "deliveryDelayDays": 10,
-    "totalMonthlyExtra": 86,
-    "headline": "Oil ~$86/bbl, gas ~$3.44/gal — Sustained maritime war-risk premium & regional attrition.",
+    "totalMonthlyExtra": 85,
+    "headline": "Oil ~$85/bbl, gas ~$3.43/gal — Sustained maritime war-risk premium & regional attrition.",
     "source": "Live market feed (Brent/Henry Hub) + OBT household impact model"
   }
 ]
