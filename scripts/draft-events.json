@@ -1,412 +1,5 @@
 [
   {
-    "id": "auto-tankers-strike-mines-in-strait-2026-10-30",
-    "date": "2026-10-30",
-    "title": "Tankers strike mines in Strait of Hormuz, Iran says, as Hegseth fires top general",
-    "description": "Via CBS News. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaldzakpwdnNPdVBvcUw2WmlXOGFPU0hSaktBa0RtLUFscVVkZGV1QmtNbDZXQks3UGVQNWlxTmQ1VFJqNUlCT2tZeHpMTGxOemgxN1J2M3JJWTJnUTFZUURrNEpjTGJ2Q1JoMmVPVUVkSE1Qb0NIRlhqMWFVbFpmVlhtXzBsa1o5UlctX2U0Y18yemFBWUROQmNWV2g?oc=5",
-    "source": "CBS News",
-    "fetchedAt": "2026-10-30T22:01:02.917Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=F1vKeW6HD1c",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "F1vKeW6HD1c",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-pakistan-army-cautiously-optimistic-about-2026-10-30",
-    "date": "2026-10-30",
-    "title": "Pakistan army ‘cautiously optimistic’ about US-Iran mediation efforts",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZXN3NmMweDBHRndNNUpxaVJBaFdrQkNCa3lkUnpCdnJxZU9vODk1ZW5sTy1fNEJVakZCSnhkdHBlN3VwUXFQOU5VZkZDOW9XSlRnZ2c2YzQ4aFlzak1jUndsci1ENU05V21pckU3czVGU0NwTnVOclM4NUtOS3RnVDJBLUtxYTU2YWdLOUxGUlp6M0RyZ1hGcXhxTjRoNjl4N1JmbkpXMkhiNUs4VUHSAbMBQVVfeXFMUHRycHBZQjBIWTdlbjlqcmpFZTJ0X0RNTlh1bWNDMEtEYlU3SG9ycllkTTZlcjhLbkNlcE1Zd2t1U1l4YThhWVkwbFdoSVBnNGwxTHAzTkNzTWhaRkxkNUxfa2wzUDlocm1reWJ2bFBiZHZzN0VCMGwzX0pMWFlMUUUxZERtNGpSTEp6THdTMm1qT2ltY3lOVFVQdVFIQXIwR2ZZU2dtODRPOG92ekx3XzV3OXM?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-10-30T22:01:04.528Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=0U7L305eN_M",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "0U7L305eN_M",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-qatari-officials-in-iran-in-2026-10-30",
-    "date": "2026-10-30",
-    "title": "Qatari officials in Iran in bid to revive ceasefire deal with US",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSDdnbjUwcjA0SXkzWlVXOFZsREJjcjR1dV80T25uVTVHeEExZkRwSjlIWHoxXy1xWnk5MnRkblhvcHpDTDEtWDF1VGRoTVVrWmZIUWRkSEdyd0VTLWFSSkRtTkdLZlBVdHFfWWlXd3FjWDJDTjFyTWxuYkdyVGdnZFVibWRhczJ3WmhhUmJWUTdsNTdXUWxqalpiSloyQTI3OWpzSHNESkdzUdIBrwFBVV95cUxNVXZ2X0l5M0gzLXExaUNPZ0RHem0zVzBMX3ExbURWZU9CZVVmRnM1dUExY2ljY1Q3VDYwSm5pNExMWDZ3Vmo2cy1kUk9WTWlmWjhLYmZRcXlPY2JHSHlkSzFEUlVtODlpcktaUk9MejdGek9jWGhyS1V5QkdTUDMwaVg0UnVYdE1UMVVyNEZINUZiMllkQTNia01ZVHhPUmxtS2F4RVZvVkcxOGdoYjU4?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-10-30T22:01:06.010Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=NOCVK9QTm5E",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "NOCVK9QTm5E",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 25.285,
-    "lng": 51.531,
-    "zoom": 8,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-qatari-mediators-return-to-tehran-2026-10-30",
-    "date": "2026-10-30",
-    "title": "Qatari mediators return to Tehran to push for US-Iran peace deal, official says",
-    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSW9waFZwcy1vUTBLLUlFaEEzejVwWUk4Ul9fTXhWZEwwNUMySnBZdHBTejN6NnVfWm9iT0FLV0tZcDlMOVRQUFlzYjNjQVdXNUU0NXp4VWUtZFB6cFA2MDZvYXR6aFZ0LVZkcXZnMDdDbi1ybW44azB5MWtjUUtLYzB1TXFxZEFoLVFQcUljaTlIMlNOTU04M2xvZ0N3V3pPYWw4Y2Z4QkF6UmgyV2fSAbMBQVVfeXFMT2E2aE50dmcyYTFCcF9WZ21KS0N3TTlfZXJRNHBUcXBtT0NYRFdPMDRkMFhkSVA0b3RGV2c1SEZQa01jSW52THNoU2VabEZNXzl4eDBWRU8zWGdRVHozdTVFWjRXNU1adnJ5VmVia1dyTjNZalBnRlBpN2RuUkdTMHlHZDBFVGhJc1R1SXdNVzVzdndteUw5NHhESHQxZDl1TlMxZUREak9YZGc3NEJvOXlFVW8?oc=5",
-    "source": "The Times of Israel",
-    "fetchedAt": "2026-10-30T22:01:08.306Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=1keSz6LR6vc",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "1keSz6LR6vc",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 25.285,
-    "lng": 51.531,
-    "zoom": 8,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-is-the-world-standing-on-2026-10-30",
-    "date": "2026-10-30",
-    "title": "Is the world standing on the brink of a global war?",
-    "description": "Via TV7 Israel News. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9LTkRHWklOcUxzakR1alJLZ3hoaHBKanRTQjI5S0tUblFQbHhUaTRkMC1TLW0wQnFBNmRxSlJCTkx2azV6VXd2RW9nSW9VUGg0Y2JJb2gwSGoyQnl5Z0hpc2ZMVlphc2toZFJlVGR4Snp3RDl1TUVj?oc=5",
-    "source": "TV7 Israel News",
-    "fetchedAt": "2026-10-30T22:01:09.107Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=eaXrokcitcE",
-        "label": "Is the evacuation of Oleshky just 'propaganda' for Putin in the Ukraine war? | Global News Podcast"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "eaXrokcitcE",
-      "title": "Is the evacuation of Oleshky just 'propaganda' for Putin in the Ukraine war? | Global News Podcast",
-      "confidence": "auto"
-    },
-    "lat": 29.5,
-    "lng": 48.5,
-    "zoom": 5,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-iran-war-live-4-tankers-2026-10-31",
-    "date": "2026-10-31",
-    "title": "Iran war live: 4 tankers hit in Hormuz; Trump says conflict will end soon",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQelNIbUtVX3B2VzFuckxCZENUQmpfSHFxM1Z1dTcybmRkUmJfQjc5aXNWS2RUTzBYeTJhZWFETDgxOVZvb3VMdzVZM0FOamo0T08tUTQzSWtnQm85a2R2ZGI0bXNnRXB6VktrU3djS0xueTFvZjVDVVpzMHZIY2syYmdaNTVlVmFDUWEtY1lKSjR6NHB1UG9SQTRrdHhJSzBFX2FRMGFyLU84ekpwX0xEX2RwcV9pT1BzTGgtY1I0YUtTZ9IBxwFBVV95cUxQODNsX0VmMnZtcU5PTktTbWNsMVdlSnkzRmFQUUlaWF9IanFIVGpQMXJCYTdoR2U4N1F0Y3FZajRUMHViS2pPbk1UTGhidUhmTUE1Z2d0RExfelFwc2NJWGItMjN5MjJsWmZYUHpHbWhxdEZoVzBXT1VrRWthNnNoVzRwUWpkRFZtTFJXSUZKYjRQVGhMMF9XbUh1Y2F3LXJIS2xXRElUZVFJdk53YXc0b2g3MmpaNXZkUU9oSTFVTkNnUzkyZmJF?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-10-31T04:36:44.651Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=F1vKeW6HD1c",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "F1vKeW6HD1c",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-update-october-30-2026-2026-10-31",
-    "date": "2026-10-31",
-    "title": "Iran Update, October 30, 2026",
-    "description": "Via Critical Threats. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA2ZGJ6NllPMDJCdW4xbTRlR1JFSWFQYTgyTFZiMVpCVGJDQkxpU3Z5YmRvSkxFd09TYjUwc1hoalJYZ2NaeGo3SURsM3lCYlRnVF9PaW02S29oZjlkRjdRRGZkVU1NN001ZnlRNnJLODFJUTBTZVlV?oc=5",
-    "source": "Critical Threats",
-    "fetchedAt": "2026-10-31T04:36:46.010Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=SJrZ8_egpFc",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "SJrZ8_egpFc",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-qataris-hold-marathon-talks-in-2026-10-31",
-    "date": "2026-10-31",
-    "title": "Qataris hold marathon talks in Tehran in bid for U.S.-Iran deal before midterms",
-    "description": "Via Axios. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPMTg1UTZmdFFiVndiNS1OTnU2cUhBSk1lTVJDMWFOTEdKNmhtLV9wc0hJSlBqaEk0d2Z3UTdqQTRpbE1UMjV3WG1kaUE5TEFrOWp2clJGTTBFc2JkN0tXNXR5dnd3RGdjWlNhTkFRRFRwSmo5YW1Val83VWZuN3VYQnUteDFtdw?oc=5",
-    "source": "Axios",
-    "fetchedAt": "2026-10-31T04:36:47.344Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=vqlVBLQF8xc",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "vqlVBLQF8xc",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 25.285,
-    "lng": 51.531,
-    "zoom": 8,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-middle-east-latest-qatari-mediators-2026-10-31",
-    "date": "2026-10-31",
-    "title": "Middle East latest: Qatari mediators return to Tehran with latest proposal to end war",
-    "description": "Via The National. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWnZLTm9HNUpSbUNocng0VDBfQkRsbjFKajRDRTJSLUJrLXpCYktWaE94MWc1TzVJQlY1OEpaTDRRa2tLWlI4bTAyV1dZeDgtaE5maDQyVnYwN2lxZ29UYUdUXzZrejZJY0lqczlsZGRjUC0wTGtwQWotR3A3eHMwaG1ydFdGMkhO?oc=5",
-    "source": "The National",
-    "fetchedAt": "2026-10-31T04:36:48.757Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=1keSz6LR6vc",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "1keSz6LR6vc",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 25.285,
-    "lng": 51.531,
-    "zoom": 8,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-a-renewed-iran-war-is-2026-10-19",
-    "date": "2026-10-19",
-    "title": "A renewed Iran war is only a matter of time, Israeli experts warn",
-    "description": "Via Jewish Telegraphic Agency. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQa1d2RVhJXzJINlNMemVtRzNMajNsX29JcDM0WW14eUdCRlF2WmtIZ2J5cVY2TjZtN3AxcWtEYmExRzFjRE5PakVyZnkxRWhUTkM5TEpyemt1MnVSSmZlTmxOUzNYU1NJdC1JZWhtc1lQazJhWVM3bWRhMlpZczZLZ1JUNHBSSmI3ZTlSLU1QSEkxQTg5M2pSbDk5YU1oTE80bHItRA?oc=5",
-    "source": "Jewish Telegraphic Agency",
-    "fetchedAt": "2026-10-31T04:36:50.143Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=7WgXc7PF2sU",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "7WgXc7PF2sU",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-apathy-and-intrigue-in-iran-2026-10-30",
-    "date": "2026-10-30",
-    "title": "Apathy and intrigue in Iran over Israeli election",
-    "description": "Via The National. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOS3NGenhOeXduTjVUU1BHY2Y1d0hGVWJWNFZ3N1NFNVEwbmxmeGlhamVoanFmN1NoVWFkSGlyTXZKZHVqVG45aXFuenR3dm5meVRUbG1LdVR1NTdyQUJzd18zVFA3eHE0WE12RzZmZkx4TmJMeFJXRHhoNDhhWER4bERneVN2SXEtRDdlM2tfMTdUaGV5SFJDNnhiT2tYdFlzMUwxellB?oc=5",
-    "source": "The National",
-    "fetchedAt": "2026-10-31T04:36:52.509Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=dV7Uo1AIhqo",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "dV7Uo1AIhqo",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-as-vote-count-ends-in-2026-10-30",
-    "date": "2026-10-30",
-    "title": "As vote count ends in Israel, eyes turn to US midterms for Iran",
-    "description": "Via The New Arab. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNTnd0a1RickVsRVJXNW5SUm5yYTR3VEhKYXFSM3A4eWJScGlMbGY3OUM1ZWY3c1gwOWdERlFacWVuYl9odTZyQ3F2TVBtcjh3c2Y1VTZQVjhKZjFKTjZrdVNFb1VhTEFTeGpESnlTM2dVYk9MckxTS3Q5QXEzUm5DRXNqWnY?oc=5",
-    "source": "The New Arab",
-    "fetchedAt": "2026-10-31T04:36:54.562Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=HJT5lXOPqGM",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "HJT5lXOPqGM",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-israels-highturnout-vote-brushed-aside-2026-10-28",
-    "date": "2026-10-28",
-    "title": "Israel's high-turnout vote brushed aside in rest of the Middle East",
-    "description": "Via Reuters. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNEx1ZTd0Y0hkdnJHWTZNU2JXU21wRDcyRVRVZ2FIMkVtckpnSTlEV09VWElYSzhjQmFPNzZkNmpETllORk91MlN3SFFTb0xndkV0R0x2bldXU3lLTmRyVlFzdm9BRm84MFIyN1VJSXllXzhHV1lRc0NWWEx0Vm9fb3czVlluM2JrSk41Qkhmbkw0NlN6N01KVG9Sems4bzBueEJOLWt1RGthRWNoY0hJ?oc=5",
-    "source": "Reuters",
-    "fetchedAt": "2026-10-31T04:36:56.602Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=clwhjut_fwY",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "clwhjut_fwY",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 31.768,
-    "lng": 34.851,
-    "zoom": 7,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-in-israel-opposition-politicians-urge-2026-10-30",
-    "date": "2026-10-30",
-    "title": "In Israel, Opposition Politicians Urge Patience Even as Renewed Iran War Could Scramble Plans To Oust Netanyahu",
-    "description": "Via The New York Sun. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUEttOTlLSEt2dU1EM2dmX2xtc0FrQjFRMVVFMzEySUJSNzNzYW05cWM0eGJIX0pna3NMUUlqazZYUVJ3UVhFanFxeThwWktEaG1neGcwdE05N1BHZjVSTTlmb0ZmRHVaVEh6UzBSU2xMVGRPWGtSbEpKOXlnOUlPdDd2OEZzNFdGUXFTQmxkVmk3OEwzNnhIR0NmRFkwMk9MMjJWaEpReG44UmUwVnNHZ1ZmdlFuNWJwSDgwSnV5bWhqV3duWk0yeXoxNTM?oc=5",
-    "source": "The New York Sun",
-    "fetchedAt": "2026-10-31T04:36:58.677Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=HgQz2aRfVCQ",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "HgQz2aRfVCQ",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-trump-accuses-iran-of-making-2026-10-22",
-    "date": "2026-10-22",
-    "title": "Trump accuses Iran of making up fake strikes on ships to drive up oil prices",
-    "description": "Via CBS News. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZDJacGlyUkJSMmZfSXF5dlBwLU5PRXdsQnZiMFRyRmJTeVU3dHZnQlF6WDVRQ0pjYlFFamxjV3dXU0E4SmZ0SkRUMW1uLVh6cE05SDBLTEhlTnI3T3dwQXNWbFQ3TzFaZ1lZY0RNeVlNSW8zaDN6aDh1NWg2ZTNvTV9OM0xYQQ?oc=5",
-    "source": "CBS News",
-    "fetchedAt": "2026-10-31T04:37:00.852Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=o2ZkmEMrZSA",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "o2ZkmEMrZSA",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
     "id": "auto-speculation-grows-over-renewed-strikes-2026-10-31",
     "date": "2026-10-31",
     "title": "Speculation Grows Over Renewed Strikes On Iran As US Aircraft Arrive In Israel",
@@ -5234,5 +4827,410 @@
     "zoom": 8,
     "casualties": null,
     "status": "published"
+  },
+  {
+    "id": "auto-iran-war-live-khamenei-warns-2026-11-04",
+    "date": "2026-11-04",
+    "title": "Iran war live: Khamenei warns of ‘broader retaliation’ if US renews attacks",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "retaliation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWWFRMjRmQ0tYMms0NUtabGFWZWJWT2Q5OWtWUk9XU3lEcktHbzZSczhkM1ZhTWttb2lYRVN5TzI4NVo0VFQ3WVhIRm1iX3U2ZHA1a25NMVRvbHNyaXhoV2pCV2dEQmJucVVGVU1QbTdwOV9yLVVZX2p1TXM2bV9TRW52aDVIOVBaaW5reTZma081aXJOZUgwNUFqLVRfWlVxcmVsWVhXc1pWb1l3SV9SRUVxMC13S2ZBeFkwNDBsSdIBxAFBVV95cUxNcXlNUU11WGJ1MV9lMmZDYXlhTFY1YzVmWWFNaUxxa3l6Q0lkVG5IdUl2blB4cEs4SFhDYXFEM01XUnJ3b3NfeHF0Y3hTN1Jvd0dpcUw2Z05XNmZXVVZUZVZhbnBBWk5NQW4tMEI5MU1aX3p3c3AtcVk1SnpfTUk3clA1ZDdOUTM4SGh4ZkxVVUF0eWhnMDRDLVNwZnd0VTVYbU9MWHZIOHM5LV9BbG1tT2p1aHUyZFM2dEtxeTRkTVVfb29B?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-04T15:27:49.803Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=eNeVgWmOfxc",
+        "label": "Khamenei says US midterms won’t change Washington’s hostility towards Iran"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "eNeVgWmOfxc",
+      "title": "Khamenei says US midterms won’t change Washington’s hostility towards Iran",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iran-plays-down-hope-for-2026-11-03",
+    "date": "2026-11-03",
+    "title": "Iran plays down hope for deal to end war after new U.S. strikes on eve of midterm elections",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbWVWWDlkaXg5ZDdDZ1c5R21YM3FiSm5xbkVDYTBFTHFQdmlLdFRCOFdBbWtNVjBBLVBmTVM3aUFQZGg2c3duOFFINjNKSkxTbkgwd2NXYXhZQ0hiM2FTYjdkTUk5V2g4ZFdiQnhGZmN1VklkQlozamlESzdYYWNmSFBZdw?oc=5",
+    "source": "CBS News",
+    "fetchedAt": "2026-11-04T15:27:50.606Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=tbYO-q1UzL0",
+        "label": "Trump says Democrats 'did a good job' in US midterm elections. #BBCNews"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "tbYO-q1UzL0",
+      "title": "Trump says Democrats 'did a good job' in US midterm elections. #BBCNews",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iranian-officials-gloat-as-us-2026-11-04",
+    "date": "2026-11-04",
+    "title": "Iranian officials gloat as US voters deal blow to Trump",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaERuaWNXaEtzV2Vjb0RCZUZiWkx1VE52SGpCLTBjaFI4THBXUUJGWTF0Y2kzMHZvY3FrTVlKRmJaRkFYSmgyb21EczFNeUxuQ1dPT2JpRXRGN3JaRmtIeW90Y0xRam5BdUdlVkswTHFqa2NjR3lxVHRHWWlzdUNtVTNDbTh1bW5uR0lRR0MteWFNTU9Jd010NHNGaTRweGlOdS1MZGlB?oc=5",
+    "source": "Reuters",
+    "fetchedAt": "2026-11-04T15:27:51.408Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Y9R5e6BJ6cM",
+        "label": "US voters have rejected Republicans - what does that mean for Trump? #USMidterms #BBCNews"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "Y9R5e6BJ6cM",
+      "title": "US voters have rejected Republicans - what does that mean for Trump? #USMidterms #BBCNews",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-irans-parliament-speaker-says-us-2026-11-04",
+    "date": "2026-11-04",
+    "title": "Iran’s parliament speaker says US voters rejected war, Tehran backs this message",
+    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNOENrdGVEU21ibnVXYm5sdW5LQjNtVkxCZ1BhdmY4VnBiTzRZVmNUcGNvN3hoYjR2SDZMOWVPM0dzZk5hWmZZRld4MGNOVWhZd0E0ZmlLZGlFUW13al9IMUFxQWVEOTZ4Z0hSX1RJb28xemNYTUpRbHE1T1M5NmM1OTl4MXBheTJFU09CT3VIR1V5ZzJUS29OZEs1R1hJM0VJcl9RU0U0QlJ2Xzg1WThoelV4RWtpTjJTNmphNzZUWVROZw?oc=5",
+    "source": "Anadolu Ajansı",
+    "fetchedAt": "2026-11-04T15:27:52.210Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Y9R5e6BJ6cM",
+        "label": "US voters have rejected Republicans - what does that mean for Trump? #USMidterms #BBCNews"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "Y9R5e6BJ6cM",
+      "title": "US voters have rejected Republicans - what does that mean for Trump? #USMidterms #BBCNews",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-who-determines-irans-fighting-and-2026-11-04",
+    "date": "2026-11-04",
+    "title": "Who determines Iran’s fighting and negotiating position amid US threats?",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "diplomatic",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQLTB0QV9yODh4YVZfbzZxU2gwUTF6eE53UHNYS0xxNS1JSURSZGd0TG9MQnVoVFVlLU91Z29KZ2NDbW1iWm52N0RCS3IyeV9NYkptZVppbUFCS001RHVRZHQ0YnhpYjZXQl9wVU5HcDNKM3pRUGhHMGpFeVNvazY3dzRmQVRYUDUtWXhLMzFrNDZ6cnA2UkZ1dTZOWVdLYXotQUhsV19QdEdjOW0zeU1CWtIBtgFBVV95cUxNYlQwSEVVRnBZNHRYamt1aUxhcl96Z2JtcjdjTlg5eFVhdEwteDlTOVFwV05ybGJ4MElIcW9OcmpOaEg0UHJHdEo1TUtxN2M5Nldoa285RGc0RWZKSUVZY1YyVkp4aWpjWm5SbmdpRWtuM2tCS3dpdjVHWGtzSXRQbG9sTm1Yb0o1d3FkTEt6cEdBdHNJNjJuLUZPZF9taFVtNmw5eW1TaTMwbUZLbHBDbGFMS2EyZw?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-04T15:27:53.634Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=D-nFjiXgbUo",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "D-nFjiXgbUo",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iran-war-updates-allies-in-2026-09-25",
+    "date": "2026-09-25",
+    "title": "Iran war updates: Allies in Riyadh as Iran says nuclear programme peaceful",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "diplomatic",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPLWNiekZna1Vxd3hyeGktbzdsREZHVDV4Y2N3MGZFMkpYcmVMTkFBWHZDVWtEOHRvOThtZzFvN01pZHhhcUYxN2k0UC00UThtVW9iT1Bta2pJNTMtQUREQ0dQWER5VHFGbTl2aGdacGVCZEZaaDBTMXlaRFY4dUNkUENlWmVsOUZNVWlxWFZuZHBHVk5kUU1oTHJjQVZHakdSTWMycGdjMUFycTVlQnZxTjdPZEN2WU51NFVxU0pQRdIBxAFBVV95cUxQSzQ4TTI0WV9MLUpMV3IwLXZhUDQ1aVVfODAtMUs0ZUVZNjQ4ZzJVQm84RVl0bVZCU2QyUzJPZHpmazZWaExTdGdjV2cyS3JyLWhsMHUwdDhGTURsSzBncDRsSlhEMEpCaS1nUGEwUnd0Rkc2dVpMOEN1NFhSRjlieHdhdEdxRUtOYXNPX2hzaFptNHlSb19xWXNjVVE1SjE2NlhCQ3EzSWZDcTNrSzZIUTQxUlJuMEhYZU1BUkh1RTN6S1FG?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-04T15:27:54.435Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=XJS0iCzJo2I",
+        "label": "Trump admits Iran war hurt Republican vote, vows to veto ‘insane’ bills | AJ #shorts"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "XJS0iCzJo2I",
+      "title": "Trump admits Iran war hurt Republican vote, vows to veto ‘insane’ bills | AJ #shorts",
+      "confidence": "auto"
+    },
+    "lat": 24.714,
+    "lng": 46.675,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iran-war-updates-tehran-says-2026-09-24",
+    "date": "2026-09-24",
+    "title": "Iran war updates: Tehran says hopes US returns to MoU before elections",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZGt3MzFWc3RVeHZzVGtrT2luUDZGWWpWN0JrQm9XUUs0d2g4OVBTdHpZX1o4VUx2TFJydXpRT3F6aG9CNlpveXM2c3ZxQ0JDRmxIcEY2LXlKODVTc2pNZV9SV0FMX1RTczQyNWhoU3BwOEN5aUtJYUpyZWc0MDZnVlRTYzVKQm5uanljRTdDcnF6dFNPWGJtaUpHSzJYX2lzRHdZVmFudXlqaWw2R2N5b2hNeVZTaGh20gG-AUFVX3lxTE45YVQ2S3FaQjA5c3hLZWpSSmYzeFVZa3J5T3JlSS10RElnVWJZSVpqbDBIVWplZ0Q2WHFVSDdER3RaUHV2NVl5VU9CTWVCaWRtWHgxTFozNm9KNjBQc0FQVkFrXzZrMlRwNFhhTWJ5dWtIN0U2OWNKQllmaVJtbGJHc2E0LVpBajd1YWlaTGtJRWgxSDdacmNidUJIN0wyQmZhLU44ZGdoZmk1c0RZTDlnNHRQOTZnd3drSjZjVXc?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-04T15:27:55.236Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=XJS0iCzJo2I",
+        "label": "Trump admits Iran war hurt Republican vote, vows to veto ‘insane’ bills | AJ #shorts"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "XJS0iCzJo2I",
+      "title": "Trump admits Iran war hurt Republican vote, vows to veto ‘insane’ bills | AJ #shorts",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iran-pitches-sevenday-roadmap-to-2026-09-25",
+    "date": "2026-09-25",
+    "title": "Iran pitches seven-day roadmap to end conflict with US",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQ2p2aDJ4dC1JV2lYaGZXWXBpenhCOEpxVWlubEQxUUZkTEd1VGxMZmJEY0FfdzllbUNGSDZLZEhuY0EwWXNlTk1xcDhNMkRLRGY1RlBoNkkwQzlqc2tUQ1NxRUNtM0hJRXROUjdKdzZuWXFtTTRJUlpEcjJLVkRkTWhIS1A2RnJObFhPYmdERy1EelZFUWFGNmc5b9IBoAFBVV95cUxNVEowcUwwd0U1VGp0TXQ2dGtTMm5RYm1DUy1Xem5ZVzFETzdHZWladVJuZHNWQzljM0l0SVlWUEk2VlJCcy1SWC05YTRZcXhhT0hMWWpINVBrby1RNTJrSHR2a3YzQ0x1U1NERm9MeXdtQlpYN2tfQ191UEkyVk9DQXFWSG16ZDZ5NHhnMkVEa2FfOTZWejVMT1dsZk1NY25a?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-04T15:27:56.787Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=7ztNpJ6sCN4",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "7ztNpJ6sCN4",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-why-a-new-round-in-2026-10-24",
+    "date": "2026-10-24",
+    "title": "Why a new round in the U.S.-Iran conflict could be the most devastating yet",
+    "description": "Via CBC. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPTGxMSnE1UkdfNGtYV2lnR1hIUFlIdXo0bVFHdXNTaktManl6WFRRZEJCSUoyWVhOeGhnSkQtMjdxM0xVZTFQeTFEaG5TR2gwSk80RzZIODBWd2kyT1FRdktwZEhKSHhaNGlZVlJmNjl0Q0Qyd0loaFp1cXdEZkZ5LUlUdEY?oc=5",
+    "source": "CBC",
+    "fetchedAt": "2026-11-04T15:27:58.266Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=p3DVuilfe6c",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "p3DVuilfe6c",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-trumps-iran-war-now-has-2026-09-10",
+    "date": "2026-09-10",
+    "title": "Trump’s Iran war now has a midterm election problem",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUjl0a2ZyQzNPa3RUbmlVNkhoS1FwMTExUHhWOFo3Y3NNdmVjcVp5QV91ZHFYb3NNZzZnNHQ2WFRnWkZNUHhzUkpEUjduZ2doWlZ6Tm9vQi0tT05KUkV6NUZlWXRQcGV5VDd3LWNOV1pKTlItcXNqMElGTW11VDBWWDl3SC1zZEM1VDdkTENqQ2VYTjVqTXfSAZsBQVVfeXFMUE1WQ2RRVlF6TkUwV0Z3c3ZRRGs4R1otcWVheGJOQ2VxMFpoWlB2NGtUMlB6eVdpOS1xN2F2MUhkTHh1bzQzMElab2xXb1F4am1MOHljVWdRNEp5Y0VkSk5BWERyMkxGUVowbnh0YjNlTGRFSTEyTzFrNmJMa2J6MkxPbGI0QUo0RHlUbnViTnB2OW9SUXdRMUlpVG8?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-04T15:27:59.068Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=XJS0iCzJo2I",
+        "label": "Trump admits Iran war hurt Republican vote, vows to veto ‘insane’ bills | AJ #shorts"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "XJS0iCzJo2I",
+      "title": "Trump admits Iran war hurt Republican vote, vows to veto ‘insane’ bills | AJ #shorts",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iranian-officials-say-midterm-results-2026-11-04",
+    "date": "2026-11-04",
+    "title": "Iranian officials say midterm results show US voters have rejected Trump's war",
+    "description": "Via ABC11 News. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM094bEpfXzNtWUhNWXE4QTB4SFZxc2VVWkQtT0huQjA2NUpOLTVPbjlFc3lyaGQ0bTV2dnVSZnA5X2lYVVlQYXZxd3RGVm0zQ2ctVER1VEYwM3dPQ01FbDU5eXZDYVNKVlFDZzhnWnhrbU1jaWdfZ2t3RzZ3TEhHMVJhNTJ6Zy1mTzZJLUZSa1RaSk0tVkJmcWp6NEJ6TE9YdmR1UXR1LUhDY25LLWlLUg?oc=5",
+    "source": "ABC11 News",
+    "fetchedAt": "2026-11-04T15:27:59.870Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=9qc7-GkwKuQ",
+        "label": "Voters in US react to midterm results from across country #US #bbcnews"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "9qc7-GkwKuQ",
+      "title": "Voters in US react to midterm results from across country #US #bbcnews",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-more-iranians-call-for-nuclear-2026-11-04",
+    "date": "2026-11-04",
+    "title": "More Iranians Call for Nuclear Weapons After War With U.S.",
+    "description": "Via The New York Times. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNk05aEdxMGZPY2dSX3NGVHRlenk0ejJTTW9ZUUMtU2U2ZXBZNlFHUGhMMmtBUldqRnc4UnFCMjBDV0dRRGZpQnR4VlJsRkpfbDFHVk9EWTBJRzY0aERoRzV0bmhwbVF5dVdEcGlrVUVfN2V6d0tkYUdlMDIteVZxNmNLRQ?oc=5",
+    "source": "The New York Times",
+    "fetchedAt": "2026-11-04T15:28:01.270Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Vw6UAmoDeHI",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "Vw6UAmoDeHI",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iran-hails-us-voters-rejecting-2026-11-04",
+    "date": "2026-11-04",
+    "title": "Iran hails US voters rejecting war while Khamenei warns hostility won’t end",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWDFEXzdGZXdFVFZjVENub3Z2ZC1YaVpJcjVoVjlVbjFwYWFQd0tEVC1yNEtKN0REUG5LcUZKTjV1amFCYVMwSjU4S0xNLUFGaWdsRzZpakQzQ2xmYy1ERzVmSnF5QTg0WnBBcHYyR3RoVVBLdTJKZ1RCN2FsWGNDdTVLeVVUeWt2VVE4WnpWNXdwU2pPckVsNnpoekJTdlNSYkdjWUhkZ3NscjkzSHRoRnFEZkkxd9IBuwFBVV95cUxQTjhXQ1dyT3JQQjRHaXdWMnpvNFNqNURSQWgyT0lzRWRJb3lmdEI4a29qLVVBOVpkZU1sRlBEMVI2ODN4R2NTeUhLRUFPcUUyckpCVEZLRkxLU2cyVjk3WjIwVmJENEhmM1E1V0tzSk5WN2pnam14QU8zLVNqcG12TVFNOXQ3Zk5KRG1hSzFSaG94OWd1RjY0T196MWdmVk1Od2tzZGVPZjFDbmsteWU4b3dINGQtYkpReEhV?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-04T15:28:02.071Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=eNeVgWmOfxc",
+        "label": "Khamenei says US midterms won’t change Washington’s hostility towards Iran"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "eNeVgWmOfxc",
+      "title": "Khamenei says US midterms won’t change Washington’s hostility towards Iran",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iranian-leaders-welcome-us-midterms-2026-11-04",
+    "date": "2026-11-04",
+    "title": "Iranian leaders welcome US midterms, but Trump may still attack",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdF9kYVI3SGNySm5CRUp6OWpWc1F3TzZYN09vMnJHTmFFTnJoOUpacUdHbnJ5Ty1WSmZab21Ea0Y0R2w3MERTcjd6ajBqN1FkQ3JCaGl4XzRxU091eFROMm9yUnBzODV0Zm8xMTh3WkxBMFpUVXV6YlB2d1R0bm9SMElIdktra1FJWTdabURGN1B3UzM1TWRqT1JkME5VcndzWExPbjBn0gGrAUFVX3lxTE0tSXQyTjAyWHRXMUl5dVJ0c0ZMSFdDSTFKNGtTU3pqMlUwd3ZMMmROb0NnbS01THhRYkloXzNQOGE4Uzc3RTdHekFIS3BJYUppYTA2b2NrcWVucmZBTkNaR1VrTGRfM3FueUNzMzNSSGlZZU8xQ0pzYTFyQWpULWhtU09zalFRY0xkSkh5N1hJWi1YS0Z3cjkxOTlURzlidGlEU2htVHZBa0Nfaw?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-04T15:28:02.872Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=7RXd3VafLoA",
+        "label": "Midterms 2026 : quelle fin de mandat pour Trump ? Parlons-en avec A. Cohen, A. Hurst et A. Corpet"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "7RXd3VafLoA",
+      "title": "Midterms 2026 : quelle fin de mandat pour Trump ? Parlons-en avec A. Cohen, A. Hurst et A. Corpet",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-democrats-midterm-gains-put-trumps-2026-11-04",
+    "date": "2026-11-04",
+    "title": "Democrat's Midterm Gains Put Trump’s Iran War And US-Israel Ties Under Pressure - Analysis",
+    "description": "Via i24NEWS. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxONURNeElxaU5EMExkMEZHN3dVcW1QQ0ZVVG5ZZ3RyaVJCeDhlZ0NiVUotX2YzYUx3ZFNYVEZoMGRxNGttQTBTTFllTUFjVWROTFBObnV6VUhZdzhLb1ltaHJGNDdxV1A4ajZGdm1waV9WUlItQWxTXzFDWm9xYUQxcFZacVBtWEhGMGl4UE8zaEU1b3pJSk44dUlqbVRYckItYXFjRGtJdGd5djFTcTRrUjRsWjJUNl9sMlhGakNhbjRzMy0yUzhTTlo2d2ViR0hybFdONTc4YkJaUGp2c19PZg?oc=5",
+    "source": "i24NEWS",
+    "fetchedAt": "2026-11-04T15:28:03.673Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=tbYO-q1UzL0",
+        "label": "Trump says Democrats 'did a good job' in US midterm elections. #BBCNews"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "tbYO-q1UzL0",
+      "title": "Trump says Democrats 'did a good job' in US midterm elections. #BBCNews",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
   }
 ]
