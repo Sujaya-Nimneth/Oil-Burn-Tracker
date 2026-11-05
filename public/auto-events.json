@@ -812,6 +812,16 @@
     ]
   },
   {
+    "id": "auto-israel-and-hamas-at-war-2026-10-07",
+    "date": "2026-10-07",
+    "title": "Israel and Hamas at War",
+    "category": "escalation",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "lat": 31.768,
+    "lng": 34.851,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBaU3BkM29nTldtWGpUTGdsamlqSnc3d2YycFU1emd6ZzdybW8xV1hlbHczM3prMnR1U1lVZjNTcDFNTC1VanUtNm8wSEhvbWl6Ylh4a19n?oc=5"
+  },
+  {
     "id": "auto-us-said-preparing-options-to-2026-10-09",
     "date": "2026-10-09",
     "title": "US said preparing options to renew Iran war, including plan for 3 days of intense strikes",
@@ -6793,5 +6803,83 @@
     "lat": 35.689,
     "lng": 51.389,
     "sourceUrl": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPTEV1T3lMakhoR2N0WVprekFFNXo5Z3RKaGhQay0tMVVIWmdpT29ER0xEUzIycHkycTVqU0wxUUNKRlBtZ1lpblNabVVXbnJJaS1ieXpjZzNpdjdDNXQ2cm11dWNtZ1lSeDZaRVhocmNVbXl1V290R1djRGQ3aDVob0dHVlpfRTlmYV9BVC1tdnhLNktKUHJIbDdhYWJDX0FQLUZCT01rSDJpbkpGYXp5LWJfYlJTcER6QkdhY2h2bkk4QjR0WFp4NVFkRV9WcXFIY3ViUDluc1d6Q2cwSjRNVg?oc=5"
+  },
+  {
+    "id": "auto-iran-war-updates-tehran-lauds-2026-11-04",
+    "date": "2026-11-04",
+    "title": "Iran war updates: Tehran lauds US election loss; urges Trump to end assault",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWWFRMjRmQ0tYMms0NUtabGFWZWJWT2Q5OWtWUk9XU3lEcktHbzZSczhkM1ZhTWttb2lYRVN5TzI4NVo0VFQ3WVhIRm1iX3U2ZHA1a25NMVRvbHNyaXhoV2pCV2dEQmJucVVGVU1QbTdwOV9yLVVZX2p1TXM2bV9TRW52aDVIOVBaaW5reTZma081aXJOZUgwNUFqLVRfWlVxcmVsWVhXc1pWb1l3SV9SRUVxMC13S2ZBeFkwNDBsSdIBxAFBVV95cUxNcXlNUU11WGJ1MV9lMmZDYXlhTFY1YzVmWWFNaUxxa3l6Q0lkVG5IdUl2blB4cEs4SFhDYXFEM01XUnJ3b3NfeHF0Y3hTN1Jvd0dpcUw2Z05XNmZXVVZUZVZhbnBBWk5NQW4tMEI5MU1aX3p3c3AtcVk1SnpfTUk3clA1ZDdOUTM4SGh4ZkxVVUF0eWhnMDRDLVNwZnd0VTVYbU9MWHZIOHM5LV9BbG1tT2p1aHUyZFM2dEtxeTRkTVVfb29B?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=c9nyqVakGYY",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-will-the-us-resume-its-2026-11-04",
+    "date": "2026-11-04",
+    "title": "Will the US resume its attacks on Iran?",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTHAxM29lZ1duNHpvaE42bWtkMVEwTnlxSTR1QWEzQmluZDVSanV2cFBta0NOY0dJZm91cnItWkJPSVNLMUZ6Q1E2Q1JKM3V6N1k0MXROMmFaZDBwZkVwY3I5Q1c3R2JqeXpxNmV5N1lUd0ZXSUNYZlh1ZkttTkNXaUJiS21hb3VsTWFvTG80cWhRQU5FWHFaY9IBngFBVV95cUxPcVpxTzZzOE9Eb0FsdmhCWE5KUXB6YUJtRFlKWF9lcGFYLW84b2RDUlZyWnRwY0QwUGNjM2tudlhSbDFhS1RaNnBVZ0kzMnFPelJuWThyMl9tRmw3Z0xKYk82ZEpnbmxNNmlaMjlJOHRYOEdhampsdmkxNDcxd1M4aEE5c0tyV2N1ZVlBQzNhQmZyX25qOHlyR3dpby1jUQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=LuuJmQdzJEQ",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-live-khamenei-says-2026-11-05",
+    "date": "2026-11-05",
+    "title": "Iran war live: Khamenei says US hostility will persist after midterms",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWXk2MWFUSUtxMEs2eXFJVHBpcDRLV3U1UVo0ck13VTJ6ajBTTnRUSVNFV19YNS12djdVdWFKb2FoQUIwZWtwTGk4WVRGRWRNX2pxakROcTlCaWxQRWtURDZTZTFEWDFDalBNUGF3QndXNUs1cnVPLTdzalN5OWRCcWtYNkdYQjM3dGVmLU1fMFcwZmFkQV9Ldlktb1phbGVIT3JJTURCRU81clVjR1Y1dTJUZmlPUXBmRXfSAb8BQVVfeXFMUDdiVXdJcWN6elVPeFVzVHA5ZU93aDNlZ283ckk1ZTlpNTdzRWdvZjNSdFYwa3psTGEwQmluckJ6eEZxUTBYMUpwZ3J4QkRmc2dLRk5XSU9YUmlTcDdFTHFVdmV3Z1lhNjgxT3Zzd3RVZi1MU3Y1QWNSZjFCUFZQZ200ZWI4cnN3dEdVQjRpMHRxdzczeTlPd1pEQnVHaDk1Wms3aVd2YlctQW5FM0xpLVlnX0dfZkZOTVB5eFF1SWM?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=TRJTDLTZcZs",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-vance-walks-trump-tightrope-with-2026-11-05",
+    "date": "2026-11-05",
+    "title": "Vance walks Trump tightrope with scathing election critique blaming Iran war",
+    "category": "escalation",
+    "description": "Via BBC. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0yRE8zWTktbFNWZGxHdlhMZk4xYTM1VUZMaHI1WGd6ck50M2N6anJ5N1pFOWlVZUtlN3hIWmdKMXlRWC10Z3FrSzFWWlFCSEFjT2VuQUZpeGpZSWs?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=7DPzc7BXB74",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-the-midterms-were-a-thumping-2026-11-05",
+    "date": "2026-11-05",
+    "title": "The midterms were a thumping rebuke of the US-Israel relationship",
+    "category": "escalation",
+    "description": "Via The Guardian. Auto-detected by headline monitor.",
+    "lat": 31.768,
+    "lng": 34.851,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd3VXNFdJVVAzaDVNb3g1VGI2QWxUOUQ0cG0yZjkwMnpSRGRHbHlwS091MV9zc1hLd0FsLWthSGcyd2JRN0FmNGhrTDlqVVNfZ3VvZkc2TERib2o0YkZvMEl5bkdtQ19VQmU1ZmZERnRiekxfZ0Vfb1ROMGxmR1NDSy11TG0wTnE5dGJRLTJB?oc=5"
   }
 ]
