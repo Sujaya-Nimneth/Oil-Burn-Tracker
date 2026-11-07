@@ -1,411 +1,5 @@
 [
   {
-    "id": "auto-trump-says-war-in-iran-2026-11-02",
-    "date": "2026-11-02",
-    "title": "Trump says war in Iran will be put away very soon \"one way or the other\"",
-    "description": "Via CBS News. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOU84MUlJV2w4ZEtpaS1ndkJieWpObTZJUzloRl8yUV9DSE54RFkyTklLUm1RSzVwUVNzMWQtNWRMc0RpLTZJQVRieS1qbVNLRGpRbnpYa3NxLUczeDdYdzBQUEtJTVg0NUlEbHZOaGJfQ2plTHFvTmZ0d2ZkMFo2aXNGWXY4SzNVRncxYUMwWVk?oc=5",
-    "source": "CBS News",
-    "fetchedAt": "2026-11-02T15:01:11.518Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=k_Bvlg0aFWo",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "k_Bvlg0aFWo",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-says-contacts-over-ending-2026-11-02",
-    "date": "2026-11-02",
-    "title": "Iran says contacts over ending war continue as talks end with no breakthrough",
-    "description": "Via Reuters. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOLXhRTFk2aHFYY3VOMWFGdmFySFR5MTNxeWRRU1ZQM3RaWjg4ZFZlOTJHNDZjYmdCVjBOX0RweVAyWEI4T2dZMVFSbUt4bTc4NGlibnlTaDh2TUNydEdOQjZJSmt3RnRIbk1LNVJ4SlNkR0M3QWs3NnZwQ0JlMW5Ud0FaN29PaGcwdk1CbTZ1UUhjYkg5XzZwVmdwWGNnRnladzZVUEhBeTZScEZIMl9YZ0hUT01GcDdkMXFwcXF0Q3hkTEluSnpnb3F5RFA?oc=5",
-    "source": "Reuters",
-    "fetchedAt": "2026-11-02T15:01:12.319Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=mNAkuBhOH7k",
-        "label": "Iran says US talks could resume ‘within a short period’ if demands are met | AJ #shorts"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "mNAkuBhOH7k",
-      "title": "Iran says US talks could resume ‘within a short period’ if demands are met | AJ #shorts",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-trumps-iran-war-could-escalate-2026-10-27",
-    "date": "2026-10-27",
-    "title": "Trump’s Iran war could escalate. Is anyone paying attention?",
-    "description": "Via Salon.com. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMjZwcnBDLVJwWjFlb0dnSUR5UE9pRTc0RWZtT0w5VHBXUXlSVXgwM2JxVlNkU0NseTlReEltYWRfOTlQbHdiSGozNGlGQkU3OTl0Q2MxZ202WDdFY09SR1dYem5XTUw0RXVGQTBrZ0dTRUFWTnFTV3BrM3RiTVFfYlBlR3p1SGJvUGNKQ08yTmhxRVRCM2c?oc=5",
-    "source": "Salon.com",
-    "fetchedAt": "2026-11-02T15:01:13.121Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=mNAkuBhOH7k",
-        "label": "Iran says US talks could resume ‘within a short period’ if demands are met | AJ #shorts"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "mNAkuBhOH7k",
-      "title": "Iran says US talks could resume ‘within a short period’ if demands are met | AJ #shorts",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-iran-war-wont-end-until-2026-09-10",
-    "date": "2026-09-10",
-    "title": "Iran war won't end until after US midterm elections, says Trump",
-    "description": "Via BBC. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1OM3F6X1RpZkkzWm1UMFFfVXlQLWFLSG5PNHZwVFN6ZnNNQzYwazlBamZzRkhoNmo3OEFNT25acm9PTWd3Y0pCLUdjWGxhZVAycnVtWEJ0UnFxQQ?oc=5",
-    "source": "BBC",
-    "fetchedAt": "2026-11-02T15:01:13.923Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=r_YJu2-u5_o",
-        "label": "Iran killed her teenage daughter - now she is facing up to the regime | BBC News"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "r_YJu2-u5_o",
-      "title": "Iran killed her teenage daughter - now she is facing up to the regime | BBC News",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-how-to-stop-the-usisrael-2026-10-29",
-    "date": "2026-10-29",
-    "title": "How to stop the US-Israel war on Iran",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORzN0dVNJQ1U3bGptWHNyNmFsNDBMdF9qaW84MGtyaVEwVmZrUm1xZEtsS2J3eUVjQVktdWlPR3pMQlc1MkM4WTRmSGFYamJLNUN0eUZub0VGbldzcWVOVHo5eWNiVU9EWl83MmFhb0FIM3JhU3hRX01oTDRnYkhhekRwVW9BM2M2eGZZ0gGQAUFVX3lxTE9RNFo1S3I3YVhDdVBNS2l5LTloUHRCeHVqd0lFRjNfOGZrRlNkQ3FCbkdpV25adVVOOFdrbDduVFFOejZWS3VGR0JUVTBpWk5DRjJ1THdEcVR3anoxVTNaOERhTnVPTC16REFjdW1IM3duS092ZUtGaDViWkx1Sk41cFB0R1lhZkZCV3poemlxYw?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-02T15:01:15.387Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=aNgJHKOnwBE",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "aNgJHKOnwBE",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-war-updates-tehran-says-2026-11-02",
-    "date": "2026-11-02",
-    "title": "Iran war updates: Tehran says ‘intensive’ US talks underway",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcjVGR3A0SEhEamhNR1o0SjNiVGpIYmJLRmZiOHRLZm14dWZHUThVeXZDZlUwdEY2dHBpSFVDOHh0Yko1SzlWa3R4aFpzUVRIMFZjcl9pM0kySGpZbFVDQ0VfZFh5bjlfOE1kY2lFZV9nV3AxR1Y3NHdKS1J2Y0Z6d2pBZ3lzTUxUQ3JJS2s4eDdLd0JGdklYeTFVSFZrUGgyOTZOcnBaRGtkYVhhd0tRYlpKRU9IQUtXRlh1MW9ERWXSAcYBQVVfeXFMTXFrTVhnTVZCTzVIOUg4WXlJUHBKdlhIcHNlYk12RUZZUWNLS3UwZm0yWTZZNW5GNHZJYzlDUk1ORWRMWXZ6dlJWS29CMXJhUWVKOVNvdzRUM1pRejdKMzVwQkhvQ29Ca0RGSWZBVzNzS19JWFN5ekc1VnZIZE9RS1VpdVpobXZlQUdwZGFMakc5dkx6XzdEaFI0YnZPNVJvRW5ISmE2Tk1SZlMwbjUxdndOaTRLZXY4UWREcHhqdTFGRnR2bWZR?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-03T00:42:18.041Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=PDcTTh5VKq0",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "PDcTTh5VKq0",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-israel-hopes-third-iran-war-2026-11-02",
-    "date": "2026-11-02",
-    "title": "Israel hopes third Iran war will differ from Gaza conflict with Hamas",
-    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1USGsza2ctd2oxb0hLcUowY0ZSVm80VWVSZWtjZzlxaWVsUjVHeVhhWXJMVkFnc1RROElselZtSDNCS0lNcGMzRndXRlpiLTIweV9GbjZwcFVmNVp1M2k4c3p0SWdjMWNPb0FWc2pB?oc=5",
-    "source": "The Jerusalem Post",
-    "fetchedAt": "2026-11-03T00:42:19.879Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=kvi0VkNdI9E",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "kvi0VkNdI9E",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 31.501,
-    "lng": 34.467,
-    "zoom": 10,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-usiran-war-news-israels-benjamin-2026-11-03",
-    "date": "2026-11-03",
-    "title": "US-Iran war news: Israel's Benjamin Netanyahu wants Donald Trump administration to carry out new Iran strikes, officials tell AP",
-    "description": "Via ABC7 Bay Area. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOU05CUmRBV005Ym5YT2FoT1BfeEZibXVsMXBNSnRpUEQyUExxSWtjQVVLeldMUWZEd2I1RjdhS3FSVG0xeDg5alNaRmJWbm8xLVZmMTRZa0NEUkxxdW1FczVhZFZQa3czQ29UN3o0S1VFVlVoNnFlbWxPZzlOX1ZlZk1BTFVHaFhyYzVrTnBxOWsxU3BIQmtlZWhsM0tqZVlsdWJjYXpnNmxlYTl2eVU4TnZfV1VkMnJoTGViVXQ4Z3oxZm1GMm15TzhOWE5RMFVENWhhMzl3S1JzQXV5aV9xSGEySdIB6AFBVV95cUxPNGpRX0RXUm04THhaWjd5a2hFOVg1eFdFZjF3Vnp0TU5FZFU3SGNvd2o5SWZmOTRzNkRrSzRId0cwNmVPZHdEdjU2TVlDVmVfQVdoZFdrai02Qk5JTDJtbUw3VGJTbmlEVzNrMktscmViTk9XalVxZnBNLWtZdENyUGI1NmdOdlp0Nmt6R2NnT2ZFMS0zNmIyemFvZjJZNUhoMnZLUTM3QkJja29OU1Z0QVo3OUdaMm9KX21yelVZdV94NHA5cmJoRzc3eUdJbG9pTS1JdE5jOERDM2VDLVdCbmlTMndzX013?oc=5",
-    "source": "ABC7 Bay Area",
-    "fetchedAt": "2026-11-03T00:42:21.684Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=7EsxA945bQw",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "7EsxA945bQw",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-war-live-vance-sees-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Iran war live: Vance sees ‘progress’, Tehran says ‘ball is in US court’",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQbk92SHBjQ3VxZlRQX2ZlWVNMUHEzV3V3RXhpLW1rajNzdU90dEhrQnJiWTN5dFhmNXE2Zk5sYWg1WFBDNG9QTFpSN0RKQ2VGUnQ3UnU0b0pqLXZ6S29oTnR2Umlnc3RJLUVBYl9pOXpSU1JQdmwtTkoxTHNwYVN1b0lzQ2Z2dWc0QlpVVFJROGQ3MkQwei1KVzB5aWFhdVRIR2VOU0htR09PYkh5NkdCQjg2NFBteGFTSXhjT1Z30gHDAUFVX3lxTE5qSVpNcUtFc29tNGVRaHJqRWZ0Nk53TldzTFBKZnNFNUdPWlVWSGoyM3Y1V3diSXFUTGs4OS1BaWs1c3dJaFRGUTFSTl9fUk1EY2QyME8yRlhBT2VuVHRqOW0wSUM5LXoxWlFDMFJyaGxoMVhlUXNqLXVUQk1jcG9WSl81bUFvSUdiUG9KYVBPSEhlNmVuWmF4OW5zTm9sSzYwWnItOFhDOGR0OF9Fb3BkbFM2cWU2ejhzS1BmaVVveTViYw?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-03T00:42:23.168Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=ccsvkM5VGL4",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "ccsvkM5VGL4",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-vance-says-us-has-had-2026-11-02",
-    "date": "2026-11-02",
-    "title": "Vance says US has had ‘good conversations’ with Iran on finding deal to end conflict",
-    "description": "Via AP News. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSlZQOGFnNWxyTG91ZkxGMkdDdlNhd1RuRUZzblYtZGxfOGpReXI2cE5oazAzZkFQRW96Y3VrUkdfenVFWWtPS1BfaFBYYWQ1WVBMVmpuaTZuU3llOGZNMF85QnVGRHAwZlphVWVoaDFiZWhoMWVjalhyTE5na3BVWjVHcmIyWDFoU0FnU2ZBaFZyOE5GRGJqQzdR?oc=5",
-    "source": "AP News",
-    "fetchedAt": "2026-11-03T00:42:24.769Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=u9Y1jsSJ3tk",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "u9Y1jsSJ3tk",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-irans-delegation-has-left-negotiations-2026-11-02",
-    "date": "2026-11-02",
-    "title": "Iran's delegation has left negotiations in Qatar after a tense weekend. Here's where things stand",
-    "description": "Via PBS. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPZDhDMmNsQ2tpZmxyZnVvc0tXTmstOUlXRWxWSHh4ZG8wTV95VlVDc29MemRtbVNGSXQzRHU5SFAtOTBMOW9hRXVQa0VPanRCWmloOUFFVF9jU1RiNmpEU2xIdHNqZHpKeFRvN0R3UC1JWE1OU2NkS1hxLXk3c3hpTndoOHJXTVZXZHpjV1JWTDUxZE5pd3hveGFQeWhmMHI3VGhjZkpUNl9RSE53MzQ4bk1DbjFaeHJfdlE2YmFOVGY0TFYtR00tV9IBzgFBVV95cUxOdXRFVVVob2hRQUlFWUZOVW9TTktGdWFPLUUxRkEyVjdSRnN4dlozbmdqaG1YTTRzVENmcmtnSXY2ellxU21YeV9NUHNEUUdqd3pYYjBSMjVWUlcwcnMyQkhlU09HbnJrMkFtVk96MzktdzNsdDlSUW1lUDJBRTk5UTJCVTlsa2MxaWY1bWdpd2puWmdsXzNHSnI4VDJoY1dUZkEwekVNZFp0Vnl2TVdpRWJBZ1oxWkJGUm1XMEJUZFRpWi1lbDl0Q1Rnb2ZpUQ?oc=5",
-    "source": "PBS",
-    "fetchedAt": "2026-11-03T00:42:27.029Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=XKxMZzuliiY",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "XKxMZzuliiY",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 25.285,
-    "lng": 51.531,
-    "zoom": 8,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-live-updates-trump-says-iran-2026-11-02",
-    "date": "2026-11-02",
-    "title": "Live Updates: Trump says \"Iran wants a settlement\" after Tehran calls on U.S. to make next move",
-    "description": "Via CBS News. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbWVWWDlkaXg5ZDdDZ1c5R21YM3FiSm5xbkVDYTBFTHFQdmlLdFRCOFdBbWtNVjBBLVBmTVM3aUFQZGg2c3duOFFINjNKSkxTbkgwd2NXYXhZQ0hiM2FTYjdkTUk5V2g4ZFdiQnhGZmN1VklkQlozamlESzdYYWNmSFBZdw?oc=5",
-    "source": "CBS News",
-    "fetchedAt": "2026-11-03T00:42:29.560Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=17pAi7PqX0Y",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "17pAi7PqX0Y",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-says-contacts-over-ending-2026-11-02",
-    "date": "2026-11-02",
-    "title": "Iran says contacts over ending war continue after talks finish with no breakthrough",
-    "description": "Via Reuters. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOLXhRTFk2aHFYY3VOMWFGdmFySFR5MTNxeWRRU1ZQM3RaWjg4ZFZlOTJHNDZjYmdCVjBOX0RweVAyWEI4T2dZMVFSbUt4bTc4NGlibnlTaDh2TUNydEdOQjZJSmt3RnRIbk1LNVJ4SlNkR0M3QWs3NnZwQ0JlMW5Ud0FaN29PaGcwdk1CbTZ1UUhjYkg5XzZwVmdwWGNnRnladzZVUEhBeTZScEZIMl9YZ0hUT01GcDdkMXFwcXF0Q3hkTEluSnpnb3F5RFA?oc=5",
-    "source": "Reuters",
-    "fetchedAt": "2026-11-03T00:42:31.639Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=k_Bvlg0aFWo",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "k_Bvlg0aFWo",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-usiran-war-news-israels-benjamin-2026-11-03",
-    "date": "2026-11-03",
-    "title": "US-Iran war news: Israel's Benjamin Netanyahu wants Donald Trump administration to carry out new Iran strikes, officials tell AP",
-    "description": "Via ABC7 New York. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQelNCSHN4aWg1SWY1ZUVhcDdOYzVHRWhBMHpGcVUxNTZOdDVJMkV2TnpFSk5telhrSDdzMW1WNXh5bTFrY2Mza19PckhKZzBoWWhRejdfdWZpVXhRR0lzNy11UXVQWjdSbmxrZnNNaXlicGRaT0pWMnN0RDRVeE14ZWNFN2FOb3I2NjkwU1BXdmZMUmdnal9TbDcyd3VDakR5SFpXblh1QkJ1em1YVkk0TVFIWHMyd0t5RlFCMXFjcG1McUlYX3BkRjZ4NS1FZFc5VWNBV05GdEZncHl5QWo2N9IB5gFBVV95cUxOQ19NSlJ1U2VJYXdCSHVlc214d2tYQ3hXUUZWa1hMOGZqbW5wb1FfamFKelBMMWpyTnRtU0taelJZRmdoTmJJUkZQcEVHOUZKTXh4cFgtSm91eXZZalgwOEVsRFFheERvcUI3dDJ6cmc4UHU5eEJLNlV2cEE0eTBKUTZRdUhwV2VFMjh3MDBZUFVWOTlyRVBGS1MwTzFPZ3AwZ2J1aHBXbzNmYWs5NzJEVXhhUjBSWUNwSzBOZUpseDQydFVGcUtyRWg0cmpzMFdCcGVZR1RxN1BLZDItUnZqVl95UjdkQQ?oc=5",
-    "source": "ABC7 New York",
-    "fetchedAt": "2026-11-03T00:42:34.109Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=7EsxA945bQw",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "7EsxA945bQw",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-2026-iran-war-oil-explained-2026-11-03",
-    "date": "2026-11-03",
-    "title": "2026 Iran war | Oil, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
-    "description": "Via Britannica. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
-    "source": "Britannica",
-    "fetchedAt": "2026-11-03T00:42:34.910Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=caIJY3kmzJY",
-        "label": "Strait of Hormuz could reopen within two days if the US agrees to demands, Iran says | BBC News"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "caIJY3kmzJY",
-      "title": "Strait of Hormuz could reopen within two days if the US agrees to demands, Iran says | BBC News",
-      "confidence": "auto"
-    },
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "draft"
-  },
-  {
     "id": "auto-israel-denies-pressing-trump-for-2026-11-02",
     "date": "2026-11-02",
     "title": "Israel denies pressing Trump for Iran strikes amid diplomatic push",
@@ -5100,5 +4694,411 @@
     "zoom": 6,
     "casualties": null,
     "status": "published"
+  },
+  {
+    "id": "auto-iran-war-live-irgc-warns-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Iran war live: IRGC warns ready to change ‘nuclear doctrine’ if ordered to",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYm1tV0FRYTVGTGJoajQ5V2l2QmNha2E2aHFyUk1VWnJseVdKUlNwaEdDWm9JSnEtbnlhRUpjR2l1ckkyR244Q3hBeUw2ZWt4RDI4UWp2a2lxaTB5SlVLSmlocmpfV1U3a1J3akp1OVpBdm9FQ2dZNXlYMXJHdWhpZFdLRWFLaUxSQkhfemJsUjFuYlVJMHNBS2tyNjNUZ0cxdEtlSlZRcW9IbExsOGZVbUEyN1lmNUVvQWRNQ9IBwgFBVV95cUxOdnpfSENoUUlXRWp0NVJkUjJYZkFmSVNXcEVGZUhtZnRtU1VWQ2VRM1J0Yk1ZeDJVOU9wRjJRX3FLZG5GdThfOW54bkVvTWRGS0tiTFVLOWV5Q1l4NE12WEI4VkdnYnJiSkxSZ0o1S3doNVMyNjNvT29iMi1uQy01TXBKUVVXMUpvd1Qzdk1oODVBMjlwTF9MRVFKMUFSeXNRMGdKN3pweF85R2hSSURGRENvc0gxb0hob3B6NjJXQUNWUQ?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-07T12:38:41.401Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=r7Mn6TdZ0YM",
+        "label": "Qatari PM says US willing to seek solution to war with Iran"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "r7Mn6TdZ0YM",
+      "title": "Qatari PM says US willing to seek solution to war with Iran",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-live-updates-us-offers-20-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Live Updates: U.S. offers $20 million for information on Iran's nuclear program, as Trump confirms \"minor\" strike",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTGRhLVU1VTVqNWp4WUduNU5uT1pwOEUwYnV1RmlnODdlUzduZDdsLTQzMkZLeVdiYlhBT09pMTI5RGN1a0NYVTl4Y3NDcmV2Q3BKZHJBZ1hEMTZsVXAwZkRyMGxZNDRYVXoyVV9qUXFoaDZrcHNmdXZwaEhMSE9raDJoSlM3a0Z4UVE?oc=5",
+    "source": "CBS News",
+    "fetchedAt": "2026-11-07T12:38:42.202Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=yCqRFRfund0",
+        "label": "Trump confirms US strikes in Iran, insists ‘it’s not a war’ | AJ #shorts"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "yCqRFRfund0",
+      "title": "Trump confirms US strikes in Iran, insists ‘it’s not a war’ | AJ #shorts",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-irans-hardliners-see-a-weakened-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Iran’s hardliners see a weakened Trump – what happens now?",
+    "description": "Via CNN. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9Ra0drcEFnU1lVY0lfOVJ0YkFxeVFfbE9YcEdmZm1PNHAxMkpLWUU5Q29oM3dONEFqTlVqOVlGaDBWZWhOcjBmb3dQUEZSV1ctd2JlRkl1bUdhVE15Z2NteXF4cGctNDRnSnlxUTYzRC1vTTNlb3FTNldLM04?oc=5",
+    "source": "CNN",
+    "fetchedAt": "2026-11-07T12:38:43.638Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=WrqQVJUa9UI",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "WrqQVJUa9UI",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-will-trump-strike-nuclear-sites-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Will Trump strike nuclear sites again as Iran engages ‘cognitive warfare’?",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxORWd2ZHNRRjNUZE56eU5kdTU3cl9ja2dwemEtRWYyaG9GcEVBU2RBS3N5a3g1dFY4blY4a1d0eEtQa0VwdTFtNGVZRGhkWW9fZURoZFlnS0dZUXBndnJMME5EUjloYmthMDlOcnltMUNVblF2eHRXNU53RWdLNEZuRWtZYzF3M0d6QlllRjBMMnJaUU5SdVJ0YVVWUXM3V0hKeVg0YXV4ONIBrAFBVV95cUxPSXZRVmV6bnNJWlA5Zm5mcHZNMEdFNjBGbXdGYWJsYnllQUxFM0pQZ2N6OTdpYUZ5NUFtSHhjaG15YTF3VVg4TFM2MTFZVE1nOGN1dngxOFZfOExmajNUMXFJYVRwR3VISFRiMWFBVWlHOE9pSjJtdkJZTHlHMGFFN0xkOVVRRVotTjgzOVBFVGhBbGxETTRVN2JXNHV2OXRYVjlSQ3ROdFRTeFFF?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-07T12:38:44.439Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=yCqRFRfund0",
+        "label": "Trump confirms US strikes in Iran, insists ‘it’s not a war’ | AJ #shorts"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "yCqRFRfund0",
+      "title": "Trump confirms US strikes in Iran, insists ‘it’s not a war’ | AJ #shorts",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-qeshm-island-and-hormuz-hit-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Qeshm island and Hormuz hit, as mediators try to prevent US-Iran escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNMjV6aVJxVlA0d3ZHU0VBY1JjTHBjcDF3dXF6dy0wV21mdkpERXp3WmtXc1VkNEx2bnlBN3h5YlRKWndGS3RKUGotSklFc2doeV9VWmYxWTlWOEZSeENUajB1STE4RVMxYW5DZ21acUxZMGtXN1M1UngyaFFtU0NUQTB1elJSZTctYVlxaE9UeWNVellKbFZUUUdmemZxdnNsTnpZMmloV3VRTUpZZzBzZ2pOZGdPd9IBuwFBVV95cUxQSDh5VUM3TVRybThfVllFeG05YjJHQXRLZWtFUWFraWg3T1dvRHFhdHlBNzZrMmVsSlpTVk9hcE1JbjYydXlOUmNSeXF2TTQ0RU1qSHQ3WDN6a3BOcXlmS0xVR3JqRFRvY3RiYV9iNXdtZXJPdUczeU1ucUZBM2ktY3duRzYwT3YyM2ZaSmh1NjRNbG56RzBabG5vWUtSM25MUUV2MEJwVWNMY3c0ZmV5VmVOWmJEbFJCTllJ?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-07T12:38:45.239Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=szeYvzkXWmA",
+        "label": "US strikes Iran's Qeshm island for second time this week"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "szeYvzkXWmA",
+      "title": "US strikes Iran's Qeshm island for second time this week",
+      "confidence": "auto"
+    },
+    "lat": 26.566,
+    "lng": 56.25,
+    "zoom": 8,
+    "facilityId": "strait-of-hormuz",
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-trump-confirms-fresh-iran-strikes-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Trump confirms fresh Iran strikes days after voters punish war at polls",
+    "description": "Via South China Morning Post. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPWklVQmxlUDJXa28xbDk4aUhHdVBUZHNDb2hvSWtUMjFTT3pVNXFxTGJ4c0FueFpvX0JfRGRWQWxtbWlNSDJ2MXdqUG5QaFhuQzQ3MENGMG1jTWs1dkFBQ3Z6cGdvVUxrQkpvWUNaYk1IOFhkUGZ1WFZ5TDVELWkzRk9CMU4wSHBJendDSGd6TXVLc3BJQmZocFBubXRsNm9ubndrUjA1VlFBVFdHNFF3LVNNZ3dlSURoNE1ROFVCbVVpY184TWhn0gHHAUFVX3lxTE5XS21EeWdhQXJvSmhGVDg2RG5DWDN2clgxQUR5dlF1NEpUS014aEtOdUp2VEpnazcySnhkTTRXaFM2Tkd2SGp0b0RLeTEzSWZDWmdwdHhNXy0yUzNpc2ZIQTBnbzM4SkhWWjl6QlRsMmxSN1poeEJXSzZfMFoyaXJSTUF2dDJOQlhHRHhsN3FYV2hLQUZTVE04dnFYUUpwLXhidzJ0R3VQWlhzRHdKRl9HYnlINGJuaTNYd0loVF9vVm5sa0pfbUU?oc=5",
+    "source": "South China Morning Post",
+    "fetchedAt": "2026-11-07T12:38:46.041Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=yCqRFRfund0",
+        "label": "Trump confirms US strikes in Iran, insists ‘it’s not a war’ | AJ #shorts"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "yCqRFRfund0",
+      "title": "Trump confirms US strikes in Iran, insists ‘it’s not a war’ | AJ #shorts",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-netanyahus-preelection-iran-operation-was-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Netanyahu's pre-election Iran operation was dropped after US was tipped off - Channel 12",
+    "description": "Via Iran International. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1kX0hEel9EbVNQTzFTMjhqaDBlWVZkbWtaZEk2anhudWRPSE9USDlreGRkZWRweUZEaVhiQXNnaXlhbzRtc0NLLXhYRWFKS0NvaHc?oc=5",
+    "source": "Iran International",
+    "fetchedAt": "2026-11-07T12:38:47.464Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=D3t4O-XesBc",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "D3t4O-XesBc",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-israel-needs-a-leader-who-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Israel needs a leader who puts national security before politics",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBjMVdjdGVZeGlxZl92TXJud3lBay13bmI5VUI4bkQ4Q1luMF90ckxKdk9qZUgwclVnTFRlZ0ZGVGRhVDltUlR2eGdVc0FGLXdCMEFXNDJ4OA?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-11-07T12:38:48.913Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=s5A8XpUsEVg",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "s5A8XpUsEVg",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-qatari-pm-says-us-willing-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Qatari PM says US willing to seek solution to war with Iran",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQU0ZScEt4eGdOMlg2RHVubFRkU3dORWNtbnRySWNYWG5FN3Brb0h6c1ZQZUZTLXJ1b3ZZbHQyWGlwWnoxUHBfdjFzb0NpdGRhNmJoYURTaVB5U3RTMmtjVGRpY21HQlFVbloxUWJVY2JGdEZFLV9MOUdwRVVJd0k5SWxncXJCdkdOa0VQZjJIUWZPUUV0S1IycWFQdDlxTVhzeW5pZlFkbFZsMmN6UUpB0gG0AUFVX3lxTE1ZTEpycFhWRnp5MUlHd2hOVWp1MTM3RkdwQkloZDJ2TFRGREl6WnRrblByc0t4SWtGOFpnNnRJcHRzRXpXMEFPZGZqRE9PZUFBLU43dGFHdXplT2s0THl2NVItNGNBaXgyUTZFRkJPcExfQWJDVXZQNXg5Q1JJRl9MUWc5RkxId195OGRMaEs1dVhmUVNEekx4dDg1WG13dExFZlZtbFFxZlphbzk5NEo1TVFQeA?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-07T12:38:49.714Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=r7Mn6TdZ0YM",
+        "label": "Qatari PM says US willing to seek solution to war with Iran"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "r7Mn6TdZ0YM",
+      "title": "Qatari PM says US willing to seek solution to war with Iran",
+      "confidence": "auto"
+    },
+    "lat": 25.285,
+    "lng": 51.531,
+    "zoom": 8,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-us-launches-new-strikes-on-2026-11-07",
+    "date": "2026-11-07",
+    "title": "US launches new strikes on key Iranian island as Tehran weighs proposals to end war",
+    "description": "Via The Independent. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcnNENHkzdjhNbXVNbnphczdiQWpiOHFRTFJQa2RmaF9seTlzazkyOFQ4THp3Z1BhMHp2emI5ZFhxTkpaMDF4d1NORVE2cVR5N1F1NG9QZUJqOXljcmZQai1Gcl94T2NZVTRfTGpKNWplNEc2UXFnZjJNYzRVendNU3JfRjdOcVR2QXM3LVUxRmF2d2NuM0JfdHBZNkt5U0FRU01xLWtTMEE?oc=5",
+    "source": "The Independent",
+    "fetchedAt": "2026-11-07T12:38:50.516Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=szeYvzkXWmA",
+        "label": "US strikes Iran's Qeshm island for second time this week"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "szeYvzkXWmA",
+      "title": "US strikes Iran's Qeshm island for second time this week",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-what-the-democratic-tidal-wave-2026-11-07",
+    "date": "2026-11-07",
+    "title": "What the Democratic Tidal Wave Means for Israel",
+    "description": "Via www.inss.org.il. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8wRTRPWDZORmE5SVBLX0M2UmFrdXI5cmhPMV9Vd1o4eDhtV0VHWk1OUHlsQVlFRlVtbUk0emFDY2JFS2tZd2MwWUlOWlhOczJ4RndrRERmUG9hdVAwU2c?oc=5",
+    "source": "www.inss.org.il",
+    "fetchedAt": "2026-11-07T12:38:51.947Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=61wrpxnXpe0",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "61wrpxnXpe0",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-says-forces-stronger-than-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Iran says forces 'stronger' than at beginning of war",
+    "description": "Via France 24. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQ2dfYm5xMVZzVjdfblh1d0Q5dkxEbENuLTNVN05kUUNaUEFOc3F3LXRhdzRNa1J4Vkx1N29WR3lZRGhCSFZtRlBZeHItZ2Z0N2huZ3dzZEZBZDZIR25IbFB3eXNhMEJua0UtZlV6T2RsaHdZRURUMXp3Z3lqQWVJdW92dDBBekpKNGU3OTVBTDhReFRVQ2oxdUU0Vk1lUQ?oc=5",
+    "source": "France 24",
+    "fetchedAt": "2026-11-07T12:38:52.748Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=r7Mn6TdZ0YM",
+        "label": "Qatari PM says US willing to seek solution to war with Iran"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "r7Mn6TdZ0YM",
+      "title": "Qatari PM says US willing to seek solution to war with Iran",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-khamenei-sent-security-chief-to-2026-11-06",
+    "date": "2026-11-06",
+    "title": "Khamenei sent security chief to Moscow to seek S-400 air defenses – report",
+    "description": "Via Iran International. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9yNzVCaWlNeThOSnA3aTdCd01ZYUJMa3ZsZFBRSjJFVTlnemRaUlpaN3pzOEt5TVpKU2RxMy0tSVpaSE0tdHd5YWJLR2hlVVlhT1E?oc=5",
+    "source": "Iran International",
+    "fetchedAt": "2026-11-07T12:38:53.550Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=r7Mn6TdZ0YM",
+        "label": "Qatari PM says US willing to seek solution to war with Iran"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "r7Mn6TdZ0YM",
+      "title": "Qatari PM says US willing to seek solution to war with Iran",
+      "confidence": "auto"
+    },
+    "lat": 29.5,
+    "lng": 48.5,
+    "zoom": 5,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-us-and-iran-edge-closer-2026-11-06",
+    "date": "2026-11-06",
+    "title": "US and Iran Edge Closer to Deal With Nuclear Issue Back in Play",
+    "description": "Via Bloomberg.com. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcTdReHN4a0FQUGZtRlE0NzM5bFR5R0RoRENITFlBN2VGdlFOY2psYzUtTjhZTGtMLUd2TF9WOGZNaDMtVWgzcHdaVnJzZ21HQVBUYnNfanBIVVJzMnhzVkdUd3ZqLUduSTdwWlFZaXR5dGlUbUtPWnhhM1pmQ1lWWUM4V2hnTk9iTGpWdFh2QWdzVWJaZTNOeURPMUlQR2xSaXlIcTc2aUtPeldNbFU3Mm5PeGo?oc=5",
+    "source": "Bloomberg.com",
+    "fetchedAt": "2026-11-07T12:38:54.948Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=r0rG_CQTqAg",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "r0rG_CQTqAg",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-shafaq-newsiran-claims-260-aircraft-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Shafaq News..Iran claims 260+ aircraft downed in US-Israel war",
+    "description": "Via شفق نيوز. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPY0xFNWlhQjlfaDBPUlRZdl9vZmNhRmgzd19iZ2x6VDljbVA0ZEJEOGdIM1VackMyNWgxTERQaTZJUWZPcVIzeTlsd0JvQ0owY0tLOHZSN2x1SExwUS1ydF9odlJyWmpuQUVUWVB4RXBITWtGMHB2WDlDVTY2RnBiejJR?oc=5",
+    "source": "شفق نيوز",
+    "fetchedAt": "2026-11-07T12:38:56.298Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=H8ZJgTo7QdI",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "H8ZJgTo7QdI",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
   }
 ]
