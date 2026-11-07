@@ -1,413 +1,5 @@
 [
   {
-    "id": "auto-israel-denies-pressing-trump-for-2026-11-02",
-    "date": "2026-11-02",
-    "title": "Israel denies pressing Trump for Iran strikes amid diplomatic push",
-    "description": "Via Iran International. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1VWHczajJIMVhpSllaSzdVZWhKWGFsb3JSOUJ5Q05fQnp6UFpZMlBXSUhNTjZ1ekhCbGpvTTRjRjcyZFIxRG9qVEs3Vk15Q25Lb2c?oc=5",
-    "source": "Iran International",
-    "fetchedAt": "2026-11-03T00:42:37.396Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=-kbpZnNPpVY",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "-kbpZnNPpVY",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-netanyahu-is-pressing-trump-to-2026-11-02",
-    "date": "2026-11-02",
-    "title": "Netanyahu is pressing Trump to attack Iran after the midterms, officials tell AP",
-    "description": "Via The Washington Post. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMThvQ0JEYkJsTEprQ2RTMkxsdktLem5EWDhZbEZWT0VGdDdHeTY4alBDQkV3akNIa3kyWDJTeE55Q3dJRUw2U05yTEZOdFhnM2VVVVUxS0s2Ti1ZNll0LVU5YjlZOXN3c3VhT2dEbXl1ejY4aEZGX2tYVlktbGlwZEt2UW1FQkNkVzhBS28weVdfVllFVndGRGVkNlJ0aDFENWZlTE9rWU91VVl4RDdITWY2MVR0aUNSandMdE1qMEoyYjVwMnRBY1VB?oc=5",
-    "source": "The Washington Post",
-    "fetchedAt": "2026-11-03T00:42:38.197Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=b-bSmfwfG-U",
-        "label": "Trump delivers final speech ahead of midterms. #BBCNews"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "b-bSmfwfG-U",
-      "title": "Trump delivers final speech ahead of midterms. #BBCNews",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-pushing-accelerated-plan-for-2026-11-02",
-    "date": "2026-11-02",
-    "title": "Iran pushing accelerated plan for ceasefire talks with US",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWXRvLUpqbi1FNFBLbTk4Y0lENWhacExyTXdZOGNvNENlYVd1WWdUWGpLdFBRQzM3S25GNUtNTUI2SEF3QVdrZFh1ZC11eDhUNEZfWVdNemhDazlUa0oxVEY2TXk5NmlGcVRNRFFMSUZwdlZYdVNTM3R0aVdYbFZVNmRCRzRZQ0FNMmFWMVBodFlOZzNhdUg0SEJacUNHTW_SAaQBQVVfeXFMT21lMjVQYV9jeGVYWTg0Rk5nWW5pQzg3MFhSS0NVRXUtQlBuNHcxUk5EQVVNR0FNY0NKalRuaFFrckpaYWhvY2s1NW5SeVZWa2ZVbk1XbVk2QUxhV1J6UmV6OU1JOEg3bV9JNkF6bnFzc0JlZVNBZDlsbTJoOHRnbDVWbUtsREpQQ0J0TW9JUGRfYUhzOHpHd3pLc1R3SF9naVNvZUg?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-03T00:42:40.601Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=vBE6_A7BeMg",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "vBE6_A7BeMg",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-how-would-tehran-respond-if-2026-11-02",
-    "date": "2026-11-02",
-    "title": "How would Tehran respond if the US and Israel bomb Iran again?",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdWpHWUZHZ1N3ZHppaFdQSUtWcHVIVGxRVUYzeERWNk1mTG1WRExjeVJQNW9kOENBd3UtNWtWTUdJZW5VZUV1VXUtckg4OXJ4R1BvcnRwdjdHQmpqQ2t3OElBVkNaR3VLakJCN2oyTWNlaXBfSm5ELTZmRnlFSlBOTVZNZlJ6aUlzem5SOFJLY1dTaTQyQU9rU1Z1WV_SAaIBQVVfeXFMTmdGYTllZVRpWXY5MnlmNy03Yk9zcEw1N1J3ekV1bEtMNW5zaGU3T1Y5OFdRR3FUYzJkUi0wZjk3TVZ2NVdocV9LZW5BSktWWGYwYTE3TzI2am9rWklnYWNIbnBhMVV5dVZHVlJHOVhmblB5WXRHcDMzdl9CUlZzSGEyOU5ubldUMWpfVUlPS2Jpc3JSemtCbHlkY3gzajFpVnZB?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-03T00:42:42.841Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=wINdVBq8v4o",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "wINdVBq8v4o",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-how-us-oil-firms-profit-2026-11-02",
-    "date": "2026-11-02",
-    "title": "How US oil firms profit $130bn from Iran war as household bills surge",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPWTl1NTlNZVhwYmJNd3dac1plX3ZZaXdlS2xuSUJIS0Q3NUx5UU04eDBmRzE5NjM5WXNkeVJNVzJOejVnbnJLV0NDTHNRMWhNRzBnWG5QOFE1dE56cjVtNGRwaHJ3T3hSR2FCZHU0RmRfbElKZnJDbkluSkhvUjBRdTM5Yk0xdHIyZVF6RFBmRUZuYmxsTm1TU09yR3EyaFdhbDd2Z0VPd1BJR21QMmfSAbMBQVVfeXFMTUVWdFhyYUduWmg3bGI5YnJoY2RlNGZTaFVEVmhtX2UtNmg1QzdDeVB3SnVURmFyclJQZ0dMNUlJaTVYbmJfQmZfNWtLRDlFU2haX2p1VTZrSHJHUlhzblhzdEFhMlJNcnpvYU8xVWhKT3M0WEdTQjN5a1J4VzQxdE5iTzVBYUtFbHUtSWt0N3hiUml5dEhHN2ZZRF9TUVpOMktwamRsNDIycmFTNHpXUzNZMGc?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-03T00:42:45.217Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=OUVezdgVFKs",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "OUVezdgVFKs",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-war-live-3-tankers-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Iran war live: 3 tankers explode in Hormuz as mediators hopeful over talks",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQbk92SHBjQ3VxZlRQX2ZlWVNMUHEzV3V3RXhpLW1rajNzdU90dEhrQnJiWTN5dFhmNXE2Zk5sYWg1WFBDNG9QTFpSN0RKQ2VGUnQ3UnU0b0pqLXZ6S29oTnR2Umlnc3RJLUVBYl9pOXpSU1JQdmwtTkoxTHNwYVN1b0lzQ2Z2dWc0QlpVVFJROGQ3MkQwei1KVzB5aWFhdVRIR2VOU0htR09PYkh5NkdCQjg2NFBteGFTSXhjT1Z30gHDAUFVX3lxTE5qSVpNcUtFc29tNGVRaHJqRWZ0Nk53TldzTFBKZnNFNUdPWlVWSGoyM3Y1V3diSXFUTGs4OS1BaWs1c3dJaFRGUTFSTl9fUk1EY2QyME8yRlhBT2VuVHRqOW0wSUM5LXoxWlFDMFJyaGxoMVhlUXNqLXVUQk1jcG9WSl81bUFvSUdiUG9KYVBPSEhlNmVuWmF4OW5zTm9sSzYwWnItOFhDOGR0OF9Fb3BkbFM2cWU2ejhzS1BmaVVveTViYw?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-03T13:48:25.768Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=caIJY3kmzJY",
-        "label": "Strait of Hormuz could reopen within two days if the US agrees to demands, Iran says | BBC News"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "caIJY3kmzJY",
-      "title": "Strait of Hormuz could reopen within two days if the US agrees to demands, Iran says | BBC News",
-      "confidence": "auto"
-    },
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-commander-sets-out-five-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Iran commander sets out five conditions for regional security",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQXFkQnJ5U3l2WU9GN09nSWlKaUZ0ZVRzWlNpZXBOMm4xN1pvYUpnNG5NU2ZBeFV3dTRiM1Q5MDBBTnZpdndVdXcxM3E4LUVwRWJmUWg0SXlZQUpXamFUdUdNNXZwbmVTYnBrSVA3RVZsSmRybGtZYzJ5WWZLWTBaUkdON0RvaEhhRFJwUnoyYUNZVFhJZWJWM0d6V3hvMU9RM3NVWNIBqgFBVV95cUxQbk0wZW9zWTVydEhvTUJBVFBCcFNJMUZNWk5qQWw0UkV5RjVpbDlldXVQSjYtUFdHY25rTlNFU3VfNm9zaFFQLXExRjFialZ2eWRmWXB1QXhSN3FVYTYwRm1lRDhIckV1N19QbFRiZTlqRDRsNFRFdjVnYWFxUlk5LW5aWF96SW80RDF0WHFtX3VkeEZSUDFsVDh6Uk85MmJjMnNLU05xU2Q3QQ?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-03T13:48:27.516Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=Ojcp-ZuTP_k",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "Ojcp-ZuTP_k",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-us-has-conducted-defensive-strikes-2026-11-03",
-    "date": "2026-11-03",
-    "title": "US has conducted defensive strikes on Iranian targets in the Strait of Hormuz, US official says",
-    "description": "Via AP News. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSlZQOGFnNWxyTG91ZkxGMkdDdlNhd1RuRUZzblYtZGxfOGpReXI2cE5oazAzZkFQRW96Y3VrUkdfenVFWWtPS1BfaFBYYWQ1WVBMVmpuaTZuU3llOGZNMF85QnVGRHAwZlphVWVoaDFiZWhoMWVjalhyTE5na3BVWjVHcmIyWDFoU0FnU2ZBaFZyOE5GRGJqQzdR?oc=5",
-    "source": "AP News",
-    "fetchedAt": "2026-11-03T13:48:28.317Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=caIJY3kmzJY",
-        "label": "Strait of Hormuz could reopen within two days if the US agrees to demands, Iran says | BBC News"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "caIJY3kmzJY",
-      "title": "Strait of Hormuz could reopen within two days if the US agrees to demands, Iran says | BBC News",
-      "confidence": "auto"
-    },
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-us-launches-defensive-strikes-on-2026-11-03",
-    "date": "2026-11-03",
-    "title": "US launches 'defensive' strikes on Iranian island as Tehran talks hang in balance",
-    "description": "Via Fox News. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNHdvem0tVUZ1NVlqZFQ2NTFqdmNwWFZpUWtVR1VEclNOWkNGbGliOHN1MVhCMzRkNElQaWNGbUwxWkx0TDRBc2pXYWRFMVVzNjQ0a2hHTHkyZndLZ2NNZEIwQl8xMS0tUGxQaE9ZMDFLbGtLMjZPZnU5ZThQRnNUd1l1S1lGZXBCcF9QZHZtd1RRdGZQd0E?oc=5",
-    "source": "Fox News",
-    "fetchedAt": "2026-11-03T13:48:29.119Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=gesxheKMQMg",
-        "label": "US conducts series of ‘defensive strikes’ against Iran"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "gesxheKMQMg",
-      "title": "US conducts series of ‘defensive strikes’ against Iran",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-iran-delivers-firm-rational-response-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Iran delivers ‘firm, rational’ response to US, says ‘ball in America’s court to prevent war’",
-    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
-    "category": "retaliation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcG93amIyUW9MT2NDUGVDVno5Q0JNNnhTSzYtVXZYV2NMdlZycTBKbER2NDJzRTR3XzNjcmp0Nk1jYUZLTFEwYWJzUFZSaFloZklHazhFcGtkck5hWkhDRm16alJJVGxDX1gzRTRZOHhVWWhEOENWeWJRVGlmOE52REhlcFR1cnlfcVRIdXQ1VmdoRUFlMDJwQmlFNDdQamtQc0huaXBYb3E4WUxTcmtqOTVkUTdQc1FLQW9EOFFzYWl6SmQ0ZGRvbHdROFg?oc=5",
-    "source": "Anadolu Ajansı",
-    "fetchedAt": "2026-11-03T13:48:30.538Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=vwHdKzQxS_k",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "vwHdKzQxS_k",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-us-carries-out-defensive-strikes-2026-11-03",
-    "date": "2026-11-03",
-    "title": "US carries out ‘defensive’ strikes on Iran’s Qeshm island in Strait of Hormuz",
-    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOOW0tRlhmb3AtbjI2TGE0dGJjWURQVHN6RVNoLUlfYkJ5a1VFc2JhYlR2Q1BndmFNYXJoaWZYRVdYaDdVNUJlUTluSEV3YXJaY2g1Z0N5T2JvNTFITHRheF9vRkhwT3QzaHZ1TGpSMUdmMkRPQVJsNXVLdHdMSmpXVHhUeWxMaWNJR3VuQzJOQ3pEVDVHdXFWZnNpWkVxZDFwX3MzNnpwUG3SAa4BQVVfeXFMUDcyeGVGUHVlbXlUejZrcU9IMnlpdlpKcW9IZjV5VzgwWERlWHJ1cVZHbHF3TGRLU0J5bVNVQTRmSnF6UUJWVmpVbFR2MkdfREZQeHotbnljdzU1b3Z4RVo1c0tIeWloTWotZnFsa3o0LXdtaGg5TVJaR0NhWm14UGhpOG1rQllwUnFZVVhvT200b2tVYnlqSHFTd1JMSmQ2NlMxR3l2dVVwenZyS3BB?oc=5",
-    "source": "The Times of Israel",
-    "fetchedAt": "2026-11-03T13:48:31.340Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=caIJY3kmzJY",
-        "label": "Strait of Hormuz could reopen within two days if the US agrees to demands, Iran says | BBC News"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "caIJY3kmzJY",
-      "title": "Strait of Hormuz could reopen within two days if the US agrees to demands, Iran says | BBC News",
-      "confidence": "auto"
-    },
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-israel-asks-lebanon-to-prevent-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Israel asks Lebanon to prevent Hezbollah from entering the war if the conflict with Iran resumes - report",
-    "description": "Via i24NEWS. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOVU5vdUFWekRNeTg4SUp6cHNOUG11Z2g5MHhpVTc3NVU1dW1rdnUwUU9MMDQ4aVlOYWh2UTlVTWw2T054RWtfMGVxMHVZRGU2TnNkaGUwQko4cTZ4Rl9Udkd5TnRFUm1zMldhM3FZM3FveFRKX0U4QlJvTUoxdm9xdjdkUWIwVWcyRTlzQlRSN2JEMFBXM2Q5TWJoeXdJemRKV0szeTI1dWJtRmE4blFsZW1KSDg3cFNNSnJidnVGTlVHSnJBckRGanZnaTRSWkR2Zm5JdW1HXzNZOHkxUUF5czJlR09oNHR5dEE?oc=5",
-    "source": "i24NEWS",
-    "fetchedAt": "2026-11-03T13:48:32.701Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=l1PTaMA0Xn0",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "l1PTaMA0Xn0",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 33.366,
-    "lng": 35.433,
-    "zoom": 8,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-irans-war-threats-now-reach-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Iran’s war threats now reach Europe, from Cyprus to Britain",
-    "description": "Via Iran International. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA4Z3BFSjJfVFFQVjlvWWVwLUp5bzJYRGlCb1F0WGtaYVlTbDRzYWZxVk4xYjJBVENxeGhzbGRycGx3Q1FnM2FmVU5tV1hhZEp5LWc?oc=5",
-    "source": "Iran International",
-    "fetchedAt": "2026-11-03T13:48:33.502Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=74OoDvYK-UQ",
-        "label": "Qatar remains hopeful the US and Iran can reach a deal"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "74OoDvYK-UQ",
-      "title": "Qatar remains hopeful the US and Iran can reach a deal",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-will-trump-relaunch-his-war-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Will Trump relaunch his war on Iran after the midterm elections? | Mohamad Bazzi",
-    "description": "Via The Guardian. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQWVTai1BdzlfVXk5ckFsajBvVGs2U0JQV2JodzZqSWJmdEN5LS1aQmtNZXNmd2dMY2c1Z1JhSE9qMEh2VnJidUN3UWk5a3dIaWhrSEZzemRETG1fdVNJUEVqcmFUTTUyN25wSWN2SVdFdVNwcXZjVkY2akl1eHNudC1Eanl1XzRwYWdLck9QbU9hRnVid0k4?oc=5",
-    "source": "The Guardian",
-    "fetchedAt": "2026-11-03T13:48:34.304Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=K2h1rzoTVp8",
-        "label": "Senate candidates in Iowa deliver final appeals for midterm elections | AJ #shorts"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "K2h1rzoTVp8",
-      "title": "Senate candidates in Iowa deliver final appeals for midterm elections | AJ #shorts",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-us-hits-qeshm-island-pezeshkian-2026-11-03",
-    "date": "2026-11-03",
-    "title": "US hits Qeshm Island, Pezeshkian signals more diplomacy: Iran war latest",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQN3VQMEhEWThtQUQ1MnNyMzlyTTNkVE5YQTljdkRXOHFsNjc4WVRMSVE1UDhxb0V2MnpVd3otLVJSempBQnRwVEdIbFN3emJKRGdWMGZOZ2ZuYm9zODY1V0RmZFFWV3ZLYkxZZ1ZySmY4WWU1bWwtcUwyT011eENIMlUxLWdCV294SXZxcHZ4ZjJPT2VGODFjN2xkRjNLX1RzSHVNQ0cwTldvaDdlbzFfMg?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-03T13:48:35.742Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=d9E4EYQdxbw",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "d9E4EYQdxbw",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
     "id": "auto-explosions-hit-irans-qeshm-island-2026-11-03",
     "date": "2026-11-03",
     "title": "Explosions hit Iran’s Qeshm Island as US media report US strikes in Hormuz",
@@ -5095,6 +4687,402 @@
       "title": "",
       "confidence": "auto"
     },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-war-live-houthis-claim-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Iran war live: Houthis claim attacks on Riyadh; US hits vessel near Hormuz",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYm1tV0FRYTVGTGJoajQ5V2l2QmNha2E2aHFyUk1VWnJseVdKUlNwaEdDWm9JSnEtbnlhRUpjR2l1ckkyR244Q3hBeUw2ZWt4RDI4UWp2a2lxaTB5SlVLSmlocmpfV1U3a1J3akp1OVpBdm9FQ2dZNXlYMXJHdWhpZFdLRWFLaUxSQkhfemJsUjFuYlVJMHNBS2tyNjNUZ0cxdEtlSlZRcW9IbExsOGZVbUEyN1lmNUVvQWRNQ9IBwgFBVV95cUxOdnpfSENoUUlXRWp0NVJkUjJYZkFmSVNXcEVGZUhtZnRtU1VWQ2VRM1J0Yk1ZeDJVOU9wRjJRX3FLZG5GdThfOW54bkVvTWRGS0tiTFVLOWV5Q1l4NE12WEI4VkdnYnJiSkxSZ0o1S3doNVMyNjNvT29iMi1uQy01TXBKUVVXMUpvd1Qzdk1oODVBMjlwTF9MRVFKMUFSeXNRMGdKN3pweF85R2hSSURGRENvc0gxb0hob3B6NjJXQUNWUQ?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-07T21:34:42.667Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=xesCK6mfL2s",
+        "label": "Major construction ongoing near Iran missile bases | BBC News"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "xesCK6mfL2s",
+      "title": "Major construction ongoing near Iran missile bases | BBC News",
+      "confidence": "auto"
+    },
+    "lat": 26.566,
+    "lng": 56.25,
+    "zoom": 8,
+    "facilityId": "strait-of-hormuz",
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-live-updates-us-expands-naval-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Live Updates: U.S. expands naval blockade to include task force on disrupting ground transport",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTGRhLVU1VTVqNWp4WUduNU5uT1pwOEUwYnV1RmlnODdlUzduZDdsLTQzMkZLeVdiYlhBT09pMTI5RGN1a0NYVTl4Y3NDcmV2Q3BKZHJBZ1hEMTZsVXAwZkRyMGxZNDRYVXoyVV9qUXFoaDZrcHNmdXZwaEhMSE9raDJoSlM3a0Z4UVE?oc=5",
+    "source": "CBS News",
+    "fetchedAt": "2026-11-07T21:34:44.074Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=o6UQyolk9AY",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "o6UQyolk9AY",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 29.5,
+    "lng": 48.5,
+    "zoom": 5,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-exclusive-expanding-on-naval-blockade-2026-11-07",
+    "date": "2026-11-07",
+    "title": "EXCLUSIVE: Expanding on naval blockade, US military looks to restrict Iranian land commerce",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTGRyZ1FFOWdNalpDbFdEeHZqc1JMNVVkekpWT3NULUU4N0hXTkN3MTQ5dlNSWjdhaUVCWlVUQVdhbkZrOEdDZ2FlNS1qOENqVnhOWGNYcmgtSU8xN3pHUjIzdDZ5akJZNzhnR3g4U0w5NjR1NUNka204MWRxak1WN056VUQ1MEhpNnpnaWVGSF90RlBMaTBWY1R5NFJDa3Q0SE1rMDhUUHRJZ01EMDJHdkhqMTY5aFU5TGd6WTNsekRoQkcyUkE?oc=5",
+    "source": "Reuters",
+    "fetchedAt": "2026-11-07T21:34:44.875Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=MXTF-2OcOhg",
+        "label": "Reuters reveals Apple's secret list of words blocked from iPhone autocomplete | Reuters World News"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "MXTF-2OcOhg",
+      "title": "Reuters reveals Apple's secret list of words blocked from iPhone autocomplete | Reuters World News",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-former-centcom-deputy-cmdr-discusses-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Former CENTCOM deputy cmdr. discusses significant US-Israeli Iran war failures",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBPNUVuclllbTJmZVJnQzltbVNxNXFveXJVeGVER3NndGl2TTJrZDdsMDBtSnBNRkdvbnZwRXBsZTRmYnhVYmxadVB1SEM3SUZnbjkzdnUyMDRfQmVRUjc5eUxtam54UU1qTEE?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-11-07T21:34:46.280Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Gk9TPtFYlmc",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "Gk9TPtFYlmc",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-says-missiles-no-longer-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Iran says missiles no longer bound by range limits",
+    "description": "Via Iran International. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1rUS05U0JMUUIxWWR4YjN1bm93S1c5aFlhZXkwWTNSczYxYlU3cXhsbzd6OGFDR3ZXQVhkZmRucUQtRTFlLUl5d0RpLV80b1dsSVE?oc=5",
+    "source": "Iran International",
+    "fetchedAt": "2026-11-07T21:34:47.689Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=-MDk7agAYSY",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "-MDk7agAYSY",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-warns-us-of-devastating-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Iran warns US of 'devastating response' if Washington starts war",
+    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
+    "category": "retaliation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbmVtN0wxM3FSekxMN0g4Tno2QXRwMEQ3a0Ezd1VGdkZORUYyeEVHeDh1UlB6anlwMUhNN3VBbk9Bd0RRU1RjeWJCRUZ2S0VFSHA0SVR3Zm5IdEZLUFE1X0hCZ2lFSTR4cXpZSHIwSnczMldyVnJPcmtUWmpwNHNzSnYyYnBLLUw1V19yZlhNRHQ4NG5yVzF2M0ZCY09zSGNlOWZWVTBpMmRtQ0ZpQjA5RFA3OTU?oc=5",
+    "source": "Anadolu Ajansı",
+    "fetchedAt": "2026-11-07T21:34:49.167Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=s0VBdTtfHtk",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "s0VBdTtfHtk",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-president-trump-forget-the-midterms-2026-11-07",
+    "date": "2026-11-07",
+    "title": "President Trump: Forget the midterms and finish the job in Iran",
+    "description": "Via The Hill. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1YNkxUc20yYlFVbDVvcklBWFNFMmo3dEZ1WXVMajcxbUYwOTlQTTh0SXgwR29Dam1sQkEzQzVOVXMyamZ0dHNlNENXWWxYZW5jNUs5NW1YbW5MN05sT3U2VE1wbU9NVkhZdURWYnh3NUZPcFdHdGdpUTZ3dU_SAYIBQVVfeXFMTk4wR1RQQlRuS0pZYlhsSTNyY2FEWGozLW50SkpBZDhQV19oSWRsbGw0X3o4WEJrdnE3bU9JYUpkX3l5RkplN3dYQmlkQk1KQXhfQXRzQTFNcGQ1U1ozZ1pOT0JwcUUyWC1UdDJZUkhTMW5ScWhUOXpiaDdsVm5Rd2xXUQ?oc=5",
+    "source": "The Hill",
+    "fetchedAt": "2026-11-07T21:34:50.694Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=dl6sozvpbbM",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "dl6sozvpbbM",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-irans-irgc-says-building-underground-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Iran’s IRGC says building underground sites for weapons production, storage",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQUnVtZjdfQnc2S1FwTXpEWnFWRFVxMzVDblFHdFFYaHlNenEzQjlBeGlyaW5waEhQSnJYVDh6d19nRExqTzhTT0JZSzFQUnlaRDFpcHF2dmJwd2ZDNW9uc1FqajJuNXpObEY1ZE9QX05uWndIZTJhQ1JqUWVWOTFlV2gtVWR1LUVDVWhaUWtINUstNEMtdnVCbFhPblU4X2tHR0tmMzNlU0pOVHFPbUpfXzlvMkPSAboBQVVfeXFMT24yWU5kekw4SXgtbXRBMW5IUDhkejNrbEJ2YlZZNkdNdWx5V3J1NU5GWTNHdHNBNkloSXJBTFFUZnVqdWJQaVZUZDRyVGZaY0ZtOExrMS11bW5CME13MVlDUXNUcWJYeW4wRmg4aHJoTTJ1WGVIWXlJb3JSWmZkY0Z4TEFHX0FZNTg1QnM5MWlUVmpBNmllMWFaQllEd3huX2JKZzdURzRncHBUR2ZSUDRTTGJCMmplLTln?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-07T21:34:52.903Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=EXDesf3ZfTc",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "EXDesf3ZfTc",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-us-military-carries-out-new-2026-11-07",
+    "date": "2026-11-07",
+    "title": "U.S. military carries out new limited strikes on Iran",
+    "description": "Via NBC News. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONS03bnllYUlGZGk4ckpGT0NNbkVucEZRT0FfeFlhbzZpbXp0aV95cFJ0bFI3LUYtN2RmT2Vta3ZOM2d2QWNOU2VFNGJha1I4SzFuZGotc1NGQXRvbTJhS255a0tfMWZCODNtMzVSOGJwWkM1OGVJZ3JpeUFRb1A5cUVhN21IZl9pWkdROTFzYXlRSEh1TldVeg?oc=5",
+    "source": "NBC News",
+    "fetchedAt": "2026-11-07T21:34:55.221Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=sjAfKVeCZ4c",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "sjAfKVeCZ4c",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-2026-us-midterms-how-trumps-2026-11-07",
+    "date": "2026-11-07",
+    "title": "2026 US Midterms: How Trump’s Policies Cost Republicans",
+    "description": "Via Frontline Magazine. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbFFxWkxhbm5qa0pXUmhrVmVTeE5ncmQ3Ulc3Qmg2RUVMcGQtc1lEakg5b0F0OWZ1QXpEbWxjVzdjUHRjQ25Wb3VWejhDaFFIZDhsNWdQWjR6SGtkNFh1M09jeDhKcnNzUklOeEp2WVZxOGtwQi01M3B0S1ZiSVpwckNrZE9MVndySTBraFRVMkJjVS1FeUJ0NkxZSE5sbzBPQlRjdWIxYWh2SVNtSXRZUTBLaXNabnNsRWfSAcABQVVfeXFMTzRCUHNCYlpqY1FyM3h2Z3JVSGxnWUEzTUthdXQ4UGh3ZHdfUG8ySmdSU1dobF93THpJSHAwWXVrdTFudl9KaEpMazdmR1B5OUx3d0Q5MDNOemRUbm9uUTJucWVIcWF1VGhTbkphVlVyczJUSU9ROFNpZ2M0VllRZ2xnTEhMeFFNWWFfcWE4VEtrbFFfNk9tZDI0TU5LX3FUQi1YbVRpTmR4b2NpTlZjazFBTnFEN1Uxa3B0M2J0ODBv?oc=5",
+    "source": "Frontline Magazine",
+    "fetchedAt": "2026-11-07T21:34:57.884Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=opY8ULzdHwo",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "opY8ULzdHwo",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 29.5,
+    "lng": 48.5,
+    "zoom": 5,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-israel-prepares-for-new-offensive-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Israel Prepares for New Offensive in Lebanon if Iran War Resumes – Report",
+    "description": "Via Palestine Chronicle. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOTUtwTEVPTjBZbmtmbFhzc09pN3RZRTd3T0U4bUNCNFZJeUdHb3UwVTAyS3dqZ3ZQMms3RG9xSEVOa1FMaDRkZnJjbVJrS0tTdWVWenpZeFpPdWxwblptZzRnY29fU3R1ejZFVWdOTmZyRkJBSTd4dkZtVFJDQjlNN1Q3UlZ3Z09qZ2RDWmc4ZXdZLW14cHFMQUJTdzRkdG9lQ05VMGJFMjhEXzg?oc=5",
+    "source": "Palestine Chronicle",
+    "fetchedAt": "2026-11-07T21:35:00.295Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=WyC_dTQMme8",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "WyC_dTQMme8",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 33.366,
+    "lng": 35.433,
+    "zoom": 8,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-says-military-is-stronger-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Iran Says Military Is ‘Stronger’ Than at Start of War With US, Israel",
+    "description": "Via Real Broadcasting Network. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPX3RPRS1GMlF0cnJCRTFpSzNNMkRaekRBQzcwWjYtRGs0UkN4UlZsUVlCcWZBV2Nid1E2Yi1WeGJ0UmpteFFNanpYS3VDT3A2dmN1ajBTX1F5azVvT2JhT2dnSmhld2FRUUtGcXR6YUJjeFdPSUZaNV9ZNS02RUhSMWFpZmRpeHpkSGtWekdpZjhqT3Y4alBZamJTdDhKd2pp?oc=5",
+    "source": "Real Broadcasting Network",
+    "fetchedAt": "2026-11-07T21:35:02.713Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=lYsydP23uus",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "lYsydP23uus",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-why-trump-lost-send-in-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Why Trump lost; send in the clowns",
+    "description": "Via Israel National News. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wR01jWFFmbWxnWTZMSDIxWXRWcDNwcnc3WkVVN1dnS01aNjlJWDlqRFBHT2E3UENXekxWRDA1Y0tsMmVRUHFId1I2TG9oT3pqRjhscFRqTjNaZw?oc=5",
+    "source": "Israel National News",
+    "fetchedAt": "2026-11-07T21:35:05.000Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=OCMRRYRnayI",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "OCMRRYRnayI",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 29.5,
+    "lng": 48.5,
+    "zoom": 5,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-israel-faces-growing-backlash-from-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Israel faces growing backlash from both sides in US",
+    "description": "Via Gulf News. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOU2FtNUFYM3N1cmJCcmtUVkFCeDc3Mmhmdm1oUHdPaVRYZTQ3VWREMnFuU0cyNFRJUUVFc3RPaUJyWmZ1TUNybk43X2U3TUNiV1RFbDFqUHhTSWl2SktOTjc3enBfQmZLRnRMOHUtRGVLYkJjT0VEekVZQUxkaGRPdGJxbF9MdHl6OUhWTTVtSGlMX1hnYm5Nam9sWDlBWDVt0gGzAUFVX3lxTE1hR21LQjBPUEYwcnZmWjlYNlk3dEg5dkg5M2xlaFJOb2FGeG11ZkNlWUNBZ1JWODl4cnh3WWlIeG1la3I2NGd5RVlGdzFJZ3Q4ZzhMdjVOR0dXeEE4WmRqWDIyeDVWLWlwN25pcWdOUk9pZHF6OGFPMEExb0Y4Q0d1TVllRHA1N1AxT2pMTkNFLTZ5TDlfcHo3aGdHWFRNMmNpdXJWR3dDNnQtLVhYeV9wdDFZ?oc=5",
+    "source": "Gulf News",
+    "fetchedAt": "2026-11-07T21:35:07.382Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=HDsovaTvykA",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "HDsovaTvykA",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-us-offers-17m-for-details-2026-11-07",
+    "date": "2026-11-07",
+    "title": "US offers €17m for details on Iran's nuclear programme",
+    "description": "Via RTE.ie. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9hNU5EbDNXTi15S1BmMHJTaC13NVpxUHh6UExUbTk0Tk1TbEhLNmxUTlJpeWx1QnZwSENqcWZiRnpicGJMOGVBdU5HekFWbmJOMVR6U1d6WlhPS25XTFZEdTVfcDNzNDNmdHhVOUsxX1J3bmE3TlIzWA?oc=5",
+    "source": "RTE.ie",
+    "fetchedAt": "2026-11-07T21:35:14.231Z",
+    "mediaUrls": [],
+    "videoMatch": null,
     "lat": 35.689,
     "lng": 51.389,
     "zoom": 6,
