@@ -1,411 +1,5 @@
 [
   {
-    "id": "auto-explosions-hit-irans-qeshm-island-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Explosions hit Iran’s Qeshm Island as US media report US strikes in Hormuz",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQazFFTTMzNUJ2SzhZblQxcGowTm9WbTNqa2lSYUJLckNuRkRvZmEyaVJrSlhsNkRQN1ZUbGFjZ0lFUVFtak5jOFppMFVGVHh0UUlOVFdKeWNHR2d4Tjh1ZXkyZ25iUVNJSFI0amw3cjdVOUEtMElHRnZ1UURVSDFRcTk1enNOSEk4RmE2ZUw1RVVXTXNVQmg1Rm1LMEk3UUJjRHF3bWtLUHl1UXhpVFJya1dYMkfSAboBQVVfeXFMUG52WkRoZDlGSHAxZ3BwOGhOUEp1SWJuTVNxZHJnSzBmaWEwSk55NUJqV0Y1cWplUkJtdV9OUjl6TUFqeXF2Um00RElDaVg2R2lHbjN1b2s1RFBvX3lDS1dMQlZrVVVlTk0ydno0OWZXU3M1eUlLa2dUMHMxRGRQNlBuWW9FeUdyb3c2Z2s1dXdjd2V6ajVLRGxyNDNzYWVod1p3X1prOWMzNDJqLWpDckN0S3NlbjI5QkFR?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-03T13:48:37.104Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=a0YoxmNXKwc",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "a0YoxmNXKwc",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-trump-signals-progress-on-iran-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Trump signals progress on Iran deal as Tehran pushes faster ceasefire",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWXRvLUpqbi1FNFBLbTk4Y0lENWhacExyTXdZOGNvNENlYVd1WWdUWGpLdFBRQzM3S25GNUtNTUI2SEF3QVdrZFh1ZC11eDhUNEZfWVdNemhDazlUa0oxVEY2TXk5NmlGcVRNRFFMSUZwdlZYdVNTM3R0aVdYbFZVNmRCRzRZQ0FNMmFWMVBodFlOZzNhdUg0SEJacUNHTW_SAaQBQVVfeXFMT21lMjVQYV9jeGVYWTg0Rk5nWW5pQzg3MFhSS0NVRXUtQlBuNHcxUk5EQVVNR0FNY0NKalRuaFFrckpaYWhvY2s1NW5SeVZWa2ZVbk1XbVk2QUxhV1J6UmV6OU1JOEg3bV9JNkF6bnFzc0JlZVNBZDlsbTJoOHRnbDVWbUtsREpQQ0J0TW9JUGRfYUhzOHpHd3pLc1R3SF9naVNvZUg?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-03T13:48:37.906Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=74OoDvYK-UQ",
-        "label": "Qatar remains hopeful the US and Iran can reach a deal"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "74OoDvYK-UQ",
-      "title": "Qatar remains hopeful the US and Iran can reach a deal",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-as-trumps-midterm-deadline-looms-2026-11-03",
-    "date": "2026-11-03",
-    "title": "As Trump’s Midterm Deadline Looms, Gulf Countries Brace for Possible Renewal of Iran War",
-    "description": "Via The New York Times. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPV1k5M29XbFJLXzE1cUxwMmxuOVdzS3p1RUlNcXNtdl9qX0R2bHNFT0ZSNXoxUzlMS1lxQ2h4LUlEM19NWnJ0aEFMczdmQkFtVnMySGU2WFJqT1FSQURINXBfY2ZBbklkZl9FbG5EaWpOT2hCdWNlM01aQ2dVMzBaSGstN0xoZ1VRcHhUMVFtM2VsUTQ?oc=5",
-    "source": "The New York Times",
-    "fetchedAt": "2026-11-03T13:48:39.452Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=KLfIGXr9t4Q",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "KLfIGXr9t4Q",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-qatar-says-its-still-passing-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Qatar says it's still passing ideas between US and Iran, while Tehran reportedly expects return to war",
-    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOVWI1Vl93dmxBY2MtbEFoMURKa1EwWS1oS1NBTnE4dWEwUFJxT1plRWI4ajlNYmpaQklKS1dMZjNBQ2dtQmJuQWZNUmdfMHphMlZfMHQ3VlByQnFhTmJjdUlSZjBQekxldUN2UjRyaUVybGpZTGd3bmRIZklidDgyVjNmNDE1MGx1NHRrMnJVUG00cm14MEUzb096QlBCcDFsWTJISWt4SEJTeU91aFBlN0g4Ykg4U0xkekx6S3U4ZUdsM2Vzd1BwRXJlZ1Y5dUNOVUJmU25RcVcyMG5fY3Bj?oc=5",
-    "source": "The Times of Israel",
-    "fetchedAt": "2026-11-03T13:48:40.253Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=74OoDvYK-UQ",
-        "label": "Qatar remains hopeful the US and Iran can reach a deal"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "74OoDvYK-UQ",
-      "title": "Qatar remains hopeful the US and Iran can reach a deal",
-      "confidence": "auto"
-    },
-    "lat": 25.285,
-    "lng": 51.531,
-    "zoom": 8,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-arab-states-warn-iran-of-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Arab states warn Iran of individual, collective retaliation over attacks - WSJ",
-    "description": "Via Iran International. Auto-detected by headline monitor.",
-    "category": "retaliation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE81UlZIR3d0ZzdIRlVydjlyZVRDQ09EME1OUmtWdmtHZjBZMms3R3RVS0FSNm9TbU5rR3JQdldvV3Noc3k3YzJSa1RSSEYxa2VfZnc?oc=5",
-    "source": "Iran International",
-    "fetchedAt": "2026-11-03T13:48:41.825Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=FvgOAxvmb1M",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "FvgOAxvmb1M",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-iran-war-live-tehran-warns-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Iran war live: Tehran warns of ‘crushing response’ if US attacks amid talks",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQbk92SHBjQ3VxZlRQX2ZlWVNMUHEzV3V3RXhpLW1rajNzdU90dEhrQnJiWTN5dFhmNXE2Zk5sYWg1WFBDNG9QTFpSN0RKQ2VGUnQ3UnU0b0pqLXZ6S29oTnR2Umlnc3RJLUVBYl9pOXpSU1JQdmwtTkoxTHNwYVN1b0lzQ2Z2dWc0QlpVVFJROGQ3MkQwei1KVzB5aWFhdVRIR2VOU0htR09PYkh5NkdCQjg2NFBteGFTSXhjT1Z30gHDAUFVX3lxTE5qSVpNcUtFc29tNGVRaHJqRWZ0Nk53TldzTFBKZnNFNUdPWlVWSGoyM3Y1V3diSXFUTGs4OS1BaWs1c3dJaFRGUTFSTl9fUk1EY2QyME8yRlhBT2VuVHRqOW0wSUM5LXoxWlFDMFJyaGxoMVhlUXNqLXVUQk1jcG9WSl81bUFvSUdiUG9KYVBPSEhlNmVuWmF4OW5zTm9sSzYwWnItOFhDOGR0OF9Fb3BkbFM2cWU2ejhzS1BmaVVveTViYw?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-03T23:00:05.998Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=68PHIGtkIA0",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "68PHIGtkIA0",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-israel-privately-warns-us-that-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Israel privately warns US that Iran is considering use of chemical weapons: report",
-    "description": "Via New York Post. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZXhMMktuejc4bFZ6bTZ4NlFHanp0VG1aS3A3LXFzZ2RLa1h1SXVqM3dsd0tDdWM5Sy1KaTVEZjBXcmRKbWZHM0VkUHZWRHQ0eFI2RGo0RWpwNWYyNkdYcU82a1dMcU1lU3h1SzdOb3NjVzVTNEg5cDBqc0NQZHViSXZKSHpOd1JHT1Bxek1EMWpMTk9abld5VHMxWlZfYWpQeGZvdFZOMUVmT2txcmcyQlU4OGh3QQ?oc=5",
-    "source": "New York Post",
-    "fetchedAt": "2026-11-03T23:00:07.479Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=74nHLkrMoZ0",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "74nHLkrMoZ0",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-us-launches-new-attacks-on-2026-11-03",
-    "date": "2026-11-03",
-    "title": "U.S. launches new attacks on Iranian targets days after Netanyahu pressed Trump for more strikes",
-    "description": "Via PBS. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPLTRLaEl5M0lIVGl0V3RQNExrMk1vQW5iOTRxUi1NdFRpbDkwSm1icXpsZXBQbXFpdjM4SjFWd0I0VEFIT2RDUm5mQWtzbmlaSTlFYXFpbUlHTktINVB4WDVuNmdRWGtmYUlOQW92OGhJc2NweWoyZ3RJbU9VT0ZlN3FvaHdLaU5rSDJHMXBEZi1tNHJXUjJXRF9weFJIRUlPOW5aaTM5eEFFRjkxa2QtQ3RtSkVWdGx5SU9JU2JVQ2JYT3BqSjMtVGZ30gHPAUFVX3lxTFBLelpzanoyMy01cGRURlBiNloyMmVGdF92enpCTDZBMzJQNXNObzI1bGVXa2Y3THBYbS1aRnU1RXJlV213MUo0bm9DWTVIcDUwZzdpX0llOUNnOWwtN0d2STlIZnU2ZWxVUElUMDVJcVBqM2RneFFNTU9DQ2NaVHNXUjRKQW1GR0o1OURmQk1FVEtsbDN5ZUQybTktcl9vQjQtbGFDUkxpS0dkWGxGMXFFX21tZkFObFV5dlVnYWtRV2ZCemNXSkxGQnVJSnF3bw?oc=5",
-    "source": "PBS",
-    "fetchedAt": "2026-11-03T23:00:08.280Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=AaZ9vLbZVnA",
-        "label": "US strikes Iranian island ahead of midterm elections | BBC News"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "AaZ9vLbZVnA",
-      "title": "US strikes Iranian island ahead of midterm elections | BBC News",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-israeli-claims-of-iranian-chemical-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Israeli Claims of Iranian Chemical Weapons Divide U.S. Officials",
-    "description": "Via The New York Times. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQeG5wNGg5UzgtQldwVTBiZmNCTUtKR0U2ZHRfamdTdUJFUHFxdmhDM1VQNV9DRXhQdzdjZ3J1NjlaUmFJWmhlWnBLMmF4SzMwQXZHdGxhTHhyWWdydW5NTWtiQUFLa0xoWGRWWW56LTc4OEZqOVdQeFdScHVBSXZZUUxuLWtTbXNmcGpFT3FYMmt4THlROFE?oc=5",
-    "source": "The New York Times",
-    "fetchedAt": "2026-11-03T23:00:09.803Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=2RRwzkWPCw8",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "2RRwzkWPCw8",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-live-updates-iran-plays-down-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Live Updates: Iran plays down hope for deal to end war after new U.S. strikes on eve of midterm elections",
-    "description": "Via CBS News. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbWVWWDlkaXg5ZDdDZ1c5R21YM3FiSm5xbkVDYTBFTHFQdmlLdFRCOFdBbWtNVjBBLVBmTVM3aUFQZGg2c3duOFFINjNKSkxTbkgwd2NXYXhZQ0hiM2FTYjdkTUk5V2g4ZFdiQnhGZmN1VklkQlozamlESzdYYWNmSFBZdw?oc=5",
-    "source": "CBS News",
-    "fetchedAt": "2026-11-03T23:00:10.604Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=AaZ9vLbZVnA",
-        "label": "US strikes Iranian island ahead of midterm elections | BBC News"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "AaZ9vLbZVnA",
-      "title": "US strikes Iranian island ahead of midterm elections | BBC News",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-us-still-far-apart-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Iran, US still far apart on deal to end war as Qatar pushes mediation",
-    "description": "Via Reuters. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPalRYN3p3UkoxcmdQWFZuQ2xvU1FaZG0yX25XcTJreldvQmIyeDRCdWVKNVliZ1hHaTNweHpmRXpOWUZSVHRLMVdDVmJTOFdOTHRhOGFFS29HYlU1akVQdTFIdGNydjF2WWM3LXZVLUpOam5WeWxFaW0xMWUtRWhhMXdROWlXVFFuZnExdU5RVjlsRE0yMTBxUDh2bkVkeEk0QkwwU1Jxem50WU9yU3hmUHhvSEJyZ251OWM0cEM3dmJ0TzhaNzZrb1FHc3g?oc=5",
-    "source": "Reuters",
-    "fetchedAt": "2026-11-03T23:00:12.090Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=k_Bvlg0aFWo",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "k_Bvlg0aFWo",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 25.285,
-    "lng": 51.531,
-    "zoom": 8,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-qatar-says-bridging-the-gap-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Qatar says 'bridging the gap' between US, Iran; both sides are reviewing proposals",
-    "description": "Via Khaleej Times. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNd29FcjFhZ3YwMm9EREVXTXhDUUZ6SHpxZWg5anR5Qkpsczk0bXdrbzlTMDdqTTlwQTBlc1JnaWdSbnhZWHBoQTFVRjRTQzk2YjlJZnh1YTdubjJ6ZW1BUHgwUVQwa1hfVk53LU9qTWZ2ZjVsYlp1UGowRFhwaGdIOTlHcG5SbG5VMERPeGhJYml1cWE2cGtBMHVfNVhYSW1sWTVjYjBtUzVQdw?oc=5",
-    "source": "Khaleej Times",
-    "fetchedAt": "2026-11-03T23:00:13.517Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=cR80Sz-y3a8",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "cR80Sz-y3a8",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 25.285,
-    "lng": 51.531,
-    "zoom": 8,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-israel-warns-us-that-iran-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Israel warns US that Iran may use chemical weapons, but Washington questions intelligence - report",
-    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9UOW5wbU1xdTFlcURVMzdlNUViV2RxRnhaZWdpV1JwYXBWd0VqZWZxekh3bFp1X1hUUTBIV1ZQLV9aSXl0ZUJkbExxaHFkeTRHVkZnRlpoUHF5MU94QmdvQzl6YmdXc1N1RVE?oc=5",
-    "source": "The Jerusalem Post",
-    "fetchedAt": "2026-11-03T23:00:15.695Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=F6xyqbEdPds",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "F6xyqbEdPds",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-as-americans-vote-trump-says-2026-11-03",
-    "date": "2026-11-03",
-    "title": "As Americans vote, Trump says US will stop $4 billion in aid to Israel",
-    "description": "Via Reuters. Auto-detected by headline monitor.",
-    "category": "humanitarian",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTnAzZzVDS3N1RTJJdnkxYUJPQkl1X3h4d3hZaC1MX0RwXzRHOGRybmM3QjEzR1kybkJIUmNYcnVPbkNPMkt6TFBnTEdOYWFJemJkelBhVXZsRDQ5VG4wc1lSS0Q2dlRlUmV0VHI2Y3YxNWstRWVPUV95Y2pNUVp5TUlES3pCMC1GUzNTTXVfWWlGd1JlQ3p1XzJUWmJmbzlWUmtYTFlXNDFlZw?oc=5",
-    "source": "Reuters",
-    "fetchedAt": "2026-11-03T23:00:16.495Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=KtpvDoyyvwk",
-        "label": "Americans cast verdict on Trump in midterm elections"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "KtpvDoyyvwk",
-      "title": "Americans cast verdict on Trump in midterm elections",
-      "confidence": "auto"
-    },
-    "lat": 31.768,
-    "lng": 34.851,
-    "zoom": 7,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-beijing-launches-diplomatic-flurry-amid-2026-11-03",
-    "date": "2026-11-03",
-    "title": "Beijing launches diplomatic flurry amid threat of renewed U.S. war with Iran",
-    "description": "Via The Washington Post. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOaHFDbXl2ZjRFNEF3bXNkWGo5QlNhOVI1Mkg5aG9MOUlONXBidFY2X2FXZjZVckJ6ZTA4VnBBdnFXLXpQellzdFdXVm9jUGktak5MLXhOb1Jwc09jRTg4LUpfU3B5TXA0U3M5ckNBandUWXhWMTJBb09nOENTZmdzdkZVSlJxYnN5VXltcVo0UnBMQW5NaEpaV2RqMVlwTUV3MmQ4UTMzLVJGRDllZWNrZWVxX1d5YkFFNVpfdA?oc=5",
-    "source": "The Washington Post",
-    "fetchedAt": "2026-11-03T23:00:18.830Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=poaeoxRbRK4",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "poaeoxRbRK4",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
     "id": "auto-israel-said-to-tell-skeptical-2026-11-03",
     "date": "2026-11-03",
     "title": "Israel said to tell skeptical US, Gulf countries that Iran may use chemical weapons",
@@ -5088,5 +4682,362 @@
     "zoom": 6,
     "casualties": null,
     "status": "draft"
+  },
+  {
+    "id": "auto-iran-war-live-us-moves-2026-11-08",
+    "date": "2026-11-08",
+    "title": "Iran war live: US moves to block land supply routes; UAE rescues 22 sailors",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZ2pabWZfN2E3YU9qRklmaHc0MzBjOTdPZHk2S1hhT01UUXNNV0tuRWx3eU5RNG5LenJsckVSRFZkM1VsM3FwQVR2dUFDMV9ZUG1tb1ZkMDcwNzFOMGp3Skt1eGV2YWplU0JuREhFdTl1OTJNUS11dHpsNEZ4VFdhS0U3UnlpVHJTamZjYlE0VUE1YWhwemlYelZKWUE0ZDJtMXV2Z2NhVDhXMm9SamYzZTRodTRSVVhuVkh3NlRR0gHDAUFVX3lxTE5OaGh3UU1EdDgzNloyMU51dWowWDhrby1kSXBpNFFPa1hwdFQ4Wi15X09VTTJNbThrTjBRWTdDUGFKeGMyM1NQdTllYm1RMUdXOVA2UVRzODdPTGhta2RvcmxyanEwbnd6c1VYWGFFcjZKemkzaE95RjlWc2lzaDZIRWdyb3ZPT0hTZnM1SVlRUmFsYmhpeXBka1BSVzJveUR3OXZQUXFPaWZuenRrRHoyNHlEN2l6UjR3V2hoMko0Y05UMA?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-08T04:59:50.040Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=PW0x6bWOA7o",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "PW0x6bWOA7o",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 24.454,
+    "lng": 54.377,
+    "zoom": 7,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iran-war-updates-houthis-claim-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Iran war updates: Houthis claim Riyadh attacks; US hits vessel near Hormuz",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYm1tV0FRYTVGTGJoajQ5V2l2QmNha2E2aHFyUk1VWnJseVdKUlNwaEdDWm9JSnEtbnlhRUpjR2l1ckkyR244Q3hBeUw2ZWt4RDI4UWp2a2lxaTB5SlVLSmlocmpfV1U3a1J3akp1OVpBdm9FQ2dZNXlYMXJHdWhpZFdLRWFLaUxSQkhfemJsUjFuYlVJMHNBS2tyNjNUZ0cxdEtlSlZRcW9IbExsOGZVbUEyN1lmNUVvQWRNQ9IBwgFBVV95cUxOdnpfSENoUUlXRWp0NVJkUjJYZkFmSVNXcEVGZUhtZnRtU1VWQ2VRM1J0Yk1ZeDJVOU9wRjJRX3FLZG5GdThfOW54bkVvTWRGS0tiTFVLOWV5Q1l4NE12WEI4VkdnYnJiSkxSZ0o1S3doNVMyNjNvT29iMi1uQy01TXBKUVVXMUpvd1Qzdk1oODVBMjlwTF9MRVFKMUFSeXNRMGdKN3pweF85R2hSSURGRENvc0gxb0hob3B6NjJXQUNWUQ?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-08T04:59:51.562Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=27U8CCL9KhA",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "27U8CCL9KhA",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 26.566,
+    "lng": 56.25,
+    "zoom": 8,
+    "facilityId": "strait-of-hormuz",
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-explosions-heard-in-areas-in-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Explosions heard in areas in southern Iran, Iranian media report",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObzVlZDVLRWxGVlQ1a2V1cTY5NXBjcjlJVzVqbjBKRGpRLUpnWndzNlM5bFpUYjJaUU5UeG1OS2E3c205RVVNMDJaUWxoWFN2ODc1bVhnc096VFlpOFo1N1YwR2JGS2JQYURyQ3NHZEVZaFhvQU5IaWZ1VFZHRjZNTkstbVhiOTUyTDJKTjAySmE0N3FiUzZLUGJKdDdrcGllOTNmMEdHUC1DanlqZ3V5MA?oc=5",
+    "source": "Reuters",
+    "fetchedAt": "2026-11-08T04:59:52.939Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=u-HSC220IeI",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "u-HSC220IeI",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-2026-iran-war-oil-explained-2026-11-08",
+    "date": "2026-11-08",
+    "title": "2026 Iran war | Oil, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict",
+    "description": "Via Britannica. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
+    "source": "Britannica",
+    "fetchedAt": "2026-11-08T04:59:54.415Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=d2a1TOUV974",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "d2a1TOUV974",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 26.566,
+    "lng": 56.25,
+    "zoom": 8,
+    "facilityId": "strait-of-hormuz",
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-new-halls-and-shadows-of-2026-11-07",
+    "date": "2026-11-07",
+    "title": "New Halls and Shadows of an Old War",
+    "description": "Via Al Jazeera Centre for Studies. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9UTWZTSEZnaUpDTTFkRlZ2TzhkVkNVa0RwZG5hbUxfWHB3czAzWXpGek96Q2thZFlHa2xQQjRrMloyczcwbW1NcEh2eUNDdjV0am9CVFR2ZkV3X2w0amNkYnliUWdEdEg2TXlCVE9NaloxZzNFdEVaWG1qMA?oc=5",
+    "source": "Al Jazeera Centre for Studies",
+    "fetchedAt": "2026-11-08T04:59:55.810Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=xrfDDrPOtlo",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "xrfDDrPOtlo",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 29.5,
+    "lng": 48.5,
+    "zoom": 5,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-us-offers-millions-for-information-2026-11-07",
+    "date": "2026-11-07",
+    "title": "US offers millions for information on Iran’s nuclear program despite Trump’s claims of obliteration",
+    "description": "Via Scripps News. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQdEZHWF81Z1hyOVQzLUlkQjNxVko1Qk9iMjJjZFlObWU3cWVod2hrUUhyWVJZZ242RUpMc1c3cktPMHo4VmoyNXo5YkFhakVfUzNqLXd5NUFVd2liU19FSlpPcG9CNERxZmdyaUNuaWhvb01jSXhoS2RuQ3NTTExmLXhQQkRuR1RmZUpLdWJ3VGp1cVF0LVcwQjkwWVduWUxjbWhISk1BcUNJOFFxUGgwVzA1ZTZwOUsySTV3UFhqbjI0THVxWDNmcjdoWXJ5ZzJaVDBGRmp1VllDUQ?oc=5",
+    "source": "Scripps News",
+    "fetchedAt": "2026-11-08T04:59:58.112Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=FPVYfvDg_cI",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "FPVYfvDg_cI",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-israeli-president-picks-gadi-eisenkot-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Israeli president picks Gadi Eisenkot, Netanyahu rival, to try to form government",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVHIwVVZqTlgycHFJTEhPM3g1WU5oWWtKelZsNW5aUEphdmpDRC1STjMxQmYyYjR5dkNZUVFiVFBfZ3J1Nm9HN0RmM25pOUlTMWJkWGZuVktLV3h5QkNmdEtrbUt5X2NBYXFuZC04TzhPZUJWLWVJeWJMM256ZWIxRENRczhNdEtIa2I2aF85VzJUejZMa1ZvVEFSZXZCQWJtZU1nTnBvaVl4cmNJTEhfcWpCNTFjMmotS090TzE1eXc?oc=5",
+    "source": "Reuters",
+    "fetchedAt": "2026-11-08T05:00:00.059Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=kogilWtkbZ8",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "kogilWtkbZ8",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-israels-president-picks-eisenkot-over-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Israel’s president picks Eisenkot over Netanyahu to form next government",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNjJubXg0Znh4QVI4cm5kSENUVE9LYXZWR2xJZm5Ya2NQRDRzcXZRMzNMakZzTHpPbFp6cE51WHBmNUlLWlN5T0F5X1ZoeUpRYklCOVNkOU50enRfMFlGTGVsTktVQU1qcWhfazN0eE5yZGJfd1Fmdk9SY1NZSkZta3E4M2x3cHhrb20wbDl5YU5UdkZVRlVOTWZCSFhFSkh5QU5EbnpMRkIxaFIxQWVSdEN30gG3AUFVX3lxTFB5OENqM2pFYzQzdXlrMHBiaGF1RlhPd2hDQzJxSW1FQlNqRVNMV3VlOFMwS0tLaDM1RThDcmF3ZVZSMUM0SkFXenhDZmlCMW0tWUhhQ2d6OWJYQlprd3h3SUttM2djTDlIM09HdVVWY1VJZ01hZ3REbkpTellwSDQ0WVpQcFNyTUM3MlZhenhwcWFYS3p1MjB5bDlTQ1ZYbVNRN2tQdER4N3RYaFowcVVIRjN6X1k5WQ?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-08T05:00:02.134Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=imo7fxV3_d0",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "imo7fxV3_d0",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-pakistan-accuses-israel-of-threatening-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Pakistan Accuses Israel of Threatening US-Iran Peace Efforts",
+    "description": "Via The Media Line. Auto-detected by headline monitor.",
+    "category": "diplomatic",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcElyTktYMGFLQUZXSFJUVUtSaW5tWDktTlRramJON3dnQzRVOXJoVDRDM2g2bnNLSk8xX2tYM3ZJeG1oMkRyeUVRY3R1TEpVZnpxOEtoY3NGa3ZwRkJxUU1BOWU0TVVMd2l5S0luLTZ2MjljcXZrdlV5aXkwbDJFdUNLQ0R4elhPOUg3UEhWRXRIOUJpYWZJRFg5TmM?oc=5",
+    "source": "The Media Line",
+    "fetchedAt": "2026-11-08T05:00:04.679Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=53EUmNtkPiA",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "53EUmNtkPiA",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-exmilitary-chief-gadi-eisenkot-opponent-2026-11-08",
+    "date": "2026-11-08",
+    "title": "Ex-military chief Gadi Eisenkot, opponent of Netanyahu, tapped to form government",
+    "description": "Via The Washington Post. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNkNJbUh4ZFl6NzBHZjJZVU85UGhmUnIzSnBXZUhrczJyNldvUWNHYndxc293NGFwOG1Yb2JaeEdmVW1nYWU1dmdrYVJXU2NVdFZERGN6TjZSUFk3WmhzTjdHd2RZdWx5OFZQOEx6V3lOeVY5dTlwV0pidXZ6RWN3MVlPU20xQWJmcjlPdzJtSlZWMld0QkpESFVkbEpfa3k4ZzJhc2Z1QzR2OGdEdlFfQ3VBWjZvZWtDSXhuN0taZFNFU1E4?oc=5",
+    "source": "The Washington Post",
+    "fetchedAt": "2026-11-08T05:00:06.511Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=lxBPygItg50",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "lxBPygItg50",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-desantis-criticizes-iran-war-regime-2026-11-08",
+    "date": "2026-11-08",
+    "title": "DeSantis criticizes Iran war: Regime change cannot be imposed by the US",
+    "description": "Via Israel National News. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE96VmwyYVR0UkxkWklfcjVXTTdLVzBKWGZwcE03QjRSalBYNEFpZ1ZxMUxuMzU0SE1JSWdiYlBTLXJ0WHNVWVRWRDhyeWd0ZmoteHZNTWE5dTIxQQ?oc=5",
+    "source": "Israel National News",
+    "fetchedAt": "2026-11-08T05:00:12.528Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-netanyahus-preelection-iran-operation-dropped-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Netanyahu’s pre-election Iran operation dropped after US tipped off – report",
+    "description": "Via Iran International. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1kX0hEel9EbVNQTzFTMjhqaDBlWVZkbWtaZEk2anhudWRPSE9USDlreGRkZWRweUZEaVhiQXNnaXlhbzRtc0NLLXhYRWFKS0NvaHc?oc=5",
+    "source": "Iran International",
+    "fetchedAt": "2026-11-08T05:00:18.272Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-lifts-ballistic-missile-range-2026-11-08",
+    "date": "2026-11-08",
+    "title": "Iran lifts ballistic missile range limit amid threats of war",
+    "description": "Via Israel National News. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE16TDZxdzU1WGlVWjZiQlFmVUh5N2V0aEpCT2Z5UUVURU5JUGlWYjNSR3Z6QldycHNYcUJvSkFXel9hcF85RnR5Zk9TTHhqTTd4S2R3cFV6LXkxdw?oc=5",
+    "source": "Israel National News",
+    "fetchedAt": "2026-11-08T05:00:23.861Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-netanyahus-exit-is-what-israel-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Netanyahu’s exit is what Israel needs to reset US ties after ‘blue wave’",
+    "description": "Via AFR. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPNHhsQXRnT1RFQmE3MmZWb3RqRms5aVlpYWVTcjgza3haTTAwaWxqRXlwSTVUOW5ERERQZGYyRXJRT1o3cDVoN08yS3R3dTFISlh0S1F4cWs0UlZXWEhIMlIxcXdtSjBwVFNucWdlUWJCSDhVQmFVX0xJUHNhVXVYZ0RsWC1tSHU0V0l1d2hfeU5UTHNWQ3MyOWhaRURTYjNGSmlKODdPQWJhUktHbGgwckNrdlVkVWFfa183eGFPczRLZ0t0?oc=5",
+    "source": "AFR",
+    "fetchedAt": "2026-11-08T05:00:29.132Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-us-military-says-strike-disabled-2026-11-08",
+    "date": "2026-11-08",
+    "title": "US military says strike disabled ship trying to run blockade on Iran",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "category": "diplomatic",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNU09GTWFrTFZ6UDd1SkNCNkhtYmdycC1yakxvakIwcVl2aWhpRDFsdmI4VGg5SmRWemxWZUlFbTZPa2xYZzFRY1ZENWNhM0tCN1JNYmw1YWw1bVVOZm1rNmZKaUlLOHVzY0hqVTFuemZqTkNtTWl3cDB3SnV3Qm5qUE84Y21vRXBINU5talhPNFVwRWF5cUEtQnhMRzA3dlNh0gGmAUFVX3lxTE1HSk9WeEVMeXU1Z0hacVNudkhKaXhjanhJRWdVMTZCWm1ZNU5tUDFXTk96U2txN0pORlcyOHpVMUpUREs3QjMzQjE0STNnc1M2cUg0NTVTVlVPQndxbDZXUldSWHlJMk1KOGNZU2pZcGdPTmJuZmlnaGVLQ3l1MHlkLTFncGktS0R4YkFDUmJGT0NyWTZ0b0NhV2l1bG05YmlSZkdmY1E?oc=5",
+    "source": "The Times of Israel",
+    "fetchedAt": "2026-11-08T05:00:34.728Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
   }
 ]
