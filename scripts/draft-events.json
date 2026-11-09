@@ -1,410 +1,5 @@
 [
   {
-    "id": "auto-iranian-officials-say-midterm-results-2026-11-04",
-    "date": "2026-11-04",
-    "title": "Iranian officials say midterm results show US voters have rejected Trump's war",
-    "description": "Via ABC11 News. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM094bEpfXzNtWUhNWXE4QTB4SFZxc2VVWkQtT0huQjA2NUpOLTVPbjlFc3lyaGQ0bTV2dnVSZnA5X2lYVVlQYXZxd3RGVm0zQ2ctVER1VEYwM3dPQ01FbDU5eXZDYVNKVlFDZzhnWnhrbU1jaWdfZ2t3RzZ3TEhHMVJhNTJ6Zy1mTzZJLUZSa1RaSk0tVkJmcWp6NEJ6TE9YdmR1UXR1LUhDY25LLWlLUg?oc=5",
-    "source": "ABC11 News",
-    "fetchedAt": "2026-11-04T15:27:59.870Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=9qc7-GkwKuQ",
-        "label": "Voters in US react to midterm results from across country #US #bbcnews"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "9qc7-GkwKuQ",
-      "title": "Voters in US react to midterm results from across country #US #bbcnews",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-more-iranians-call-for-nuclear-2026-11-04",
-    "date": "2026-11-04",
-    "title": "More Iranians Call for Nuclear Weapons After War With U.S.",
-    "description": "Via The New York Times. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPNk05aEdxMGZPY2dSX3NGVHRlenk0ejJTTW9ZUUMtU2U2ZXBZNlFHUGhMMmtBUldqRnc4UnFCMjBDV0dRRGZpQnR4VlJsRkpfbDFHVk9EWTBJRzY0aERoRzV0bmhwbVF5dVdEcGlrVUVfN2V6d0tkYUdlMDIteVZxNmNLRQ?oc=5",
-    "source": "The New York Times",
-    "fetchedAt": "2026-11-04T15:28:01.270Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=Vw6UAmoDeHI",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "Vw6UAmoDeHI",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-hails-us-voters-rejecting-2026-11-04",
-    "date": "2026-11-04",
-    "title": "Iran hails US voters rejecting war while Khamenei warns hostility won’t end",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWDFEXzdGZXdFVFZjVENub3Z2ZC1YaVpJcjVoVjlVbjFwYWFQd0tEVC1yNEtKN0REUG5LcUZKTjV1amFCYVMwSjU4S0xNLUFGaWdsRzZpakQzQ2xmYy1ERzVmSnF5QTg0WnBBcHYyR3RoVVBLdTJKZ1RCN2FsWGNDdTVLeVVUeWt2VVE4WnpWNXdwU2pPckVsNnpoekJTdlNSYkdjWUhkZ3NscjkzSHRoRnFEZkkxd9IBuwFBVV95cUxQTjhXQ1dyT3JQQjRHaXdWMnpvNFNqNURSQWgyT0lzRWRJb3lmdEI4a29qLVVBOVpkZU1sRlBEMVI2ODN4R2NTeUhLRUFPcUUyckpCVEZLRkxLU2cyVjk3WjIwVmJENEhmM1E1V0tzSk5WN2pnam14QU8zLVNqcG12TVFNOXQ3Zk5KRG1hSzFSaG94OWd1RjY0T196MWdmVk1Od2tzZGVPZjFDbmsteWU4b3dINGQtYkpReEhV?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-04T15:28:02.071Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=eNeVgWmOfxc",
-        "label": "Khamenei says US midterms won’t change Washington’s hostility towards Iran"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "eNeVgWmOfxc",
-      "title": "Khamenei says US midterms won’t change Washington’s hostility towards Iran",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iranian-leaders-welcome-us-midterms-2026-11-04",
-    "date": "2026-11-04",
-    "title": "Iranian leaders welcome US midterms, but Trump may still attack",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdF9kYVI3SGNySm5CRUp6OWpWc1F3TzZYN09vMnJHTmFFTnJoOUpacUdHbnJ5Ty1WSmZab21Ea0Y0R2w3MERTcjd6ajBqN1FkQ3JCaGl4XzRxU091eFROMm9yUnBzODV0Zm8xMTh3WkxBMFpUVXV6YlB2d1R0bm9SMElIdktra1FJWTdabURGN1B3UzM1TWRqT1JkME5VcndzWExPbjBn0gGrAUFVX3lxTE0tSXQyTjAyWHRXMUl5dVJ0c0ZMSFdDSTFKNGtTU3pqMlUwd3ZMMmROb0NnbS01THhRYkloXzNQOGE4Uzc3RTdHekFIS3BJYUppYTA2b2NrcWVucmZBTkNaR1VrTGRfM3FueUNzMzNSSGlZZU8xQ0pzYTFyQWpULWhtU09zalFRY0xkSkh5N1hJWi1YS0Z3cjkxOTlURzlidGlEU2htVHZBa0Nfaw?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-04T15:28:02.872Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=7RXd3VafLoA",
-        "label": "Midterms 2026 : quelle fin de mandat pour Trump ? Parlons-en avec A. Cohen, A. Hurst et A. Corpet"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "7RXd3VafLoA",
-      "title": "Midterms 2026 : quelle fin de mandat pour Trump ? Parlons-en avec A. Cohen, A. Hurst et A. Corpet",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-democrats-midterm-gains-put-trumps-2026-11-04",
-    "date": "2026-11-04",
-    "title": "Democrat's Midterm Gains Put Trump’s Iran War And US-Israel Ties Under Pressure - Analysis",
-    "description": "Via i24NEWS. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxONURNeElxaU5EMExkMEZHN3dVcW1QQ0ZVVG5ZZ3RyaVJCeDhlZ0NiVUotX2YzYUx3ZFNYVEZoMGRxNGttQTBTTFllTUFjVWROTFBObnV6VUhZdzhLb1ltaHJGNDdxV1A4ajZGdm1waV9WUlItQWxTXzFDWm9xYUQxcFZacVBtWEhGMGl4UE8zaEU1b3pJSk44dUlqbVRYckItYXFjRGtJdGd5djFTcTRrUjRsWjJUNl9sMlhGakNhbjRzMy0yUzhTTlo2d2ViR0hybFdONTc4YkJaUGp2c19PZg?oc=5",
-    "source": "i24NEWS",
-    "fetchedAt": "2026-11-04T15:28:03.673Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=tbYO-q1UzL0",
-        "label": "Trump says Democrats 'did a good job' in US midterm elections. #BBCNews"
-      }
-    ],
-    "videoMatch": {
-      "videoId": "tbYO-q1UzL0",
-      "title": "Trump says Democrats 'did a good job' in US midterm elections. #BBCNews",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-iran-war-live-tehran-lauds-2026-11-04",
-    "date": "2026-11-04",
-    "title": "Iran war live: Tehran lauds US election blowout; urges Trump to end assault",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWWFRMjRmQ0tYMms0NUtabGFWZWJWT2Q5OWtWUk9XU3lEcktHbzZSczhkM1ZhTWttb2lYRVN5TzI4NVo0VFQ3WVhIRm1iX3U2ZHA1a25NMVRvbHNyaXhoV2pCV2dEQmJucVVGVU1QbTdwOV9yLVVZX2p1TXM2bV9TRW52aDVIOVBaaW5reTZma081aXJOZUgwNUFqLVRfWlVxcmVsWVhXc1pWb1l3SV9SRUVxMC13S2ZBeFkwNDBsSdIBxAFBVV95cUxNcXlNUU11WGJ1MV9lMmZDYXlhTFY1YzVmWWFNaUxxa3l6Q0lkVG5IdUl2blB4cEs4SFhDYXFEM01XUnJ3b3NfeHF0Y3hTN1Jvd0dpcUw2Z05XNmZXVVZUZVZhbnBBWk5NQW4tMEI5MU1aX3p3c3AtcVk1SnpfTUk3clA1ZDdOUTM4SGh4ZkxVVUF0eWhnMDRDLVNwZnd0VTVYbU9MWHZIOHM5LV9BbG1tT2p1aHUyZFM2dEtxeTRkTVVfb29B?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-04T23:21:02.034Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=RJWxWjoTLts",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "RJWxWjoTLts",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-us-to-withdraw-4b-in-2026-11-04",
-    "date": "2026-11-04",
-    "title": "US to withdraw $4B in Israel aid, as Trump weighs next move in Iran war",
-    "description": "Via New York Post. Auto-detected by headline monitor.",
-    "category": "humanitarian",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQT2J3NWxHTFFzYm9vYkFfNGhTeHBwTEdYazBZN3Q5MVVLNk5GQlMxRzJva0gwVXVnRTUzTHEwRlExamQ3V1RILUNwTzFJQUhNTG1LeVBsYjJ5Zlktd2k3b3NSTjF2Nmdob0FLRG94bGNyOWxYdHhMSWhUZkpCOGNxR2MtZzg3WHZSMTJGVi00ZXZDXzdkWDhHOF9peTlmVThzRTQ1R0R3LUlJLVUy?oc=5",
-    "source": "New York Post",
-    "fetchedAt": "2026-11-04T23:21:03.477Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=G-yWv8DVKig",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "G-yWv8DVKig",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-vance-gop-lost-midterms-due-2026-11-04",
-    "date": "2026-11-04",
-    "title": "Vance: GOP lost midterms due to Iran war, voters want ‘change’ in Israel relationship",
-    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQMFhVZHNTeWdLMHliWERtUVhQS0RBeVNKVHRMRkk2c0g3b00yNldobmdJMGttdF90SXFHLUNqcGRQd3Fpcm15OEdXQ2wxMlpHcGZNN25LU0Roc2o1UTlSMlFIcHdPZktaQTAxLUloWk5yZ3RmeElQektBLS1xS2VLM3FBTkhncHdLbzI0a2lwYTllZXRvVnJ0Nnlkdl9GQkNLUUpHWmRsY095OUhGQVlQR2l30gG3AUFVX3lxTE0zSU8tRW9yZXVCWWJudnBKZWV1TlRnaXVJaFVOcUNOdklEcFV4RVhwdC1ieWNmVVRvekUwaXBDRnBaTlN0Y3hGTnlCSzVIU1lzbGVBczc2M0JrRzNmZnBBZ0d4aTlqbGhZMVctOWd0UEFIOW9xRDVDa09KWFZPWDdPblR1NC12cGNiOXZuODc3UnVhbW93amRPbTV2ZU1yUllLSGJ2alYxNUowR2o5T25LZVhMV1lBSQ?oc=5",
-    "source": "The Times of Israel",
-    "fetchedAt": "2026-11-04T23:21:04.981Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=YN550xwRQRs",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "YN550xwRQRs",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-what-trumps-midterms-setback-could-2026-11-04",
-    "date": "2026-11-04",
-    "title": "What Trump’s midterms setback could mean for Iran, Israel and Ukraine",
-    "description": "Via CNN. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNdmRtNUxIYTJJb2ZOaEtKMGMzbjRmX0hwSk5YNXpsbHdqSzluVW5udGFObGpuVnh1VGllcWVBdXlhZExtNlE0Mi1aY1V0MktvYkpCU3EwM0ZfS2d4Q0lNMGxrRG1kZzRYZEZoZkswS2Q0RGx6ZTczT3pkUXpCeV82VVZB?oc=5",
-    "source": "CNN",
-    "fetchedAt": "2026-11-04T23:21:06.593Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=iFUOMawwPI0",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "iFUOMawwPI0",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-vance-blames-war-in-iran-2026-11-04",
-    "date": "2026-11-04",
-    "title": "Vance Blames War in Iran, Israel Ties for GOP Midterm Loss",
-    "description": "Via Bloomberg.com. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNLWUzRTRpenp3RV9naTFHdTVqQlJob2tVNy1nLWR6VWxDR1NKcWRDNXZRN0diT0dDXzBINGxEVmlDd1ZNLVVsSWtvVnNwTzZfTUFXZGdiNlF4R29adWdSOENhNUtjeE95QVBEWmtpUWlHdXFkdEJhd3c5X3h6UnZrV3ZPT2tMUjVGTFNpRl9xamc2VjhLZDJ4bzVFajFlcVBnZVZkcnpDbXVRRXhVamhEMEJOLXM?oc=5",
-    "source": "Bloomberg.com",
-    "fetchedAt": "2026-11-04T23:21:08.162Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=NGLcNBF7QKM",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "NGLcNBF7QKM",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-vance-blames-election-loss-on-2026-11-04",
-    "date": "2026-11-04",
-    "title": "Vance blames election loss on Iran war, relationship with Israel",
-    "description": "Via JNS.org. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxOUnNRU091SU9lTVJNTUM1OU1JT3JUbl9XNFRJQThsak1kNUZLNlZEaDh0RUp5VldvcWtlRkloY2FfY3ZSM0pVNEM3RTg5eXJ2MklVRV8zdkFQbC1pX1A3LXJ3VWt5cTlBaGk3TWFPaUkydkZBNW9uQ0F2VkJfbHo3dTZhdU9NdXpnXzVQUmxIYjJGZ1UtaldONlozeXROdw?oc=5",
-    "source": "JNS.org",
-    "fetchedAt": "2026-11-04T23:21:10.271Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=awkCj7WV_OQ",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "awkCj7WV_OQ",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-jd-vance-blames-israel-and-2026-11-04",
-    "date": "2026-11-04",
-    "title": "JD Vance blames Israel and Iran war for GOP’s crushing defeats",
-    "description": "Via The Forward. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeGsyWkxkV3g3T3FIR1d0ZGFuRzcyZmlmaGpQOFJ0bC1xcXdtTzEzdjFseDRtYmM3R1BTcjQ1LXl3bUZOQ3QyVGY5V3VjV19KOTRyMzhJcFRVcWU3elZCUjhSbzJrMEVLT0VlZnZyUlU0NzYwWmRwX3JIUDJMZmxlWk4tdTBhcVd5RGI0LWs0OWlDNEY0WGlRek9fLWpVSlpQTjhNUQ?oc=5",
-    "source": "The Forward",
-    "fetchedAt": "2026-11-04T23:21:12.596Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=wF7nCM88B7s",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "wF7nCM88B7s",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-vance-republicans-lost-midterms-because-2026-11-04",
-    "date": "2026-11-04",
-    "title": "Vance: Republicans Lost Midterms Because of Iran War, U.S.-Israel Relations",
-    "description": "Via Haaretz. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNWlo2eGcwb21yRXhjYlBXSlNQSHZualpVdWlrOTJMNk9MZDlmN296Um5hTU1pSTQ2RnZuSHpHWXVVSkt2MFlPd0JRYk5kVXZmbUlWS0E0UTR4SF96T0hPdzg0SlNIcFZVR09fZGNGTjZMWDdIYm1nSW95QUpfYXowcHFxVW0xZHlKYXh1emtieHQ2T2NIdDkyUmhzYm9XRmxOMFNlUGF5eDI3d2NYcXU3V3FuS0lDZm14SmdSX0xHRHhTODQ5S3VFdUhfaGsyblczN2NzMk5rc2thcW5sX0ZFUUtRdTA4N3ZpTVI5QjBybEVWMVRQYXViV05Od1JxNm05ZThF?oc=5",
-    "source": "Haaretz",
-    "fetchedAt": "2026-11-04T23:21:14.619Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=YN550xwRQRs",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "YN550xwRQRs",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-vance-blames-iran-war-us-2026-11-04",
-    "date": "2026-11-04",
-    "title": "Vance blames Iran war, US ties with Israel for Republican midterm rout",
-    "description": "Via Ynetnews. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1FcWdKN1Q0TVIxendnWEo4V2NHYzJJMDBaUUJnUGhDemZCUmVLOEI0VDY2ZWVTaHZadUlLRlMxSjF0QkNmaThXdXZEdlJpbk1lVVk0ckpR?oc=5",
-    "source": "Ynetnews",
-    "fetchedAt": "2026-11-04T23:21:17.045Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=awkCj7WV_OQ",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "awkCj7WV_OQ",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-usiran-war-on-the-brink-2026-11-04",
-    "date": "2026-11-04",
-    "title": "US–Iran War on the Brink: Israel Signals New Offensive as Trump Faces a Dangerous Decision",
-    "description": "Via صوت الإمارات. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPV2NEcEZTS3NEd3VlMndtUkZwVTBXNmtUQzJHTjdmYjFuSXdJUmVPb0NRaUdObXFaaFpGdlhEVFF1TmtabjROMXY0S0lwa2hwc2VyNXY1Ty1YUExweC04ZDRqb0J4RkNuU042d0drSmx1WnJiRGI1OWkwMTFmYllVa1ZHU1ZpVzBSWUJlRU03QXdjSUF4aVlaV2NHdjhET3BIREpYSzBXQ3NzU1JvQkxFVDlpLXFhWkNTS3pmY2JfSzJTNDhHWExmZVVzQXc1X09qSEQ5R0Nsb0g3OENMSkE?oc=5",
-    "source": "صوت الإمارات",
-    "fetchedAt": "2026-11-04T23:21:19.381Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=c9nyqVakGYY",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "c9nyqVakGYY",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
     "id": "auto-beaten-at-home-trump-faces-2026-11-04",
     "date": "2026-11-04",
     "title": "Beaten at home, Trump faces stark choice on Iran: deal or escalation",
@@ -5099,5 +4694,371 @@
     "zoom": 7,
     "casualties": null,
     "status": "published"
+  },
+  {
+    "id": "auto-iran-war-live-trump-to-2026-11-09",
+    "date": "2026-11-09",
+    "title": "Iran war live: Trump to talk to Xi, Putin about Tehran, ‘denuclearisation’",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOS29zRkhhNG5BNFlmS0RkM2g4V1JrYU0xeVhNWWI2akxOdE9aTDRjSThIbUhMRmRMSjEzRDhMQzQyLTdsbVp4WTh4bEpuNXdMQjdjaGlVM0ZSZnhhSlg4WG01cU5qYkJsZTVJZUlnUHVaSEhhVXRIUzY5VVhoUXl2MlNWQnZYNlA0ZGpTMk5xR1VpbGpKdUk4ZXpFWUFlNkp5WTgtQl9LUUxJZjEwNlJ4NXRIX3hqWVBfOWJ5anhIdkLSAcYBQVVfeXFMTk5QeDgzSWFEQlV5MGt6bEhqWWFmWHVPS1doaHM4UHJsTjlIQUdiMmZiQUE4RWdPSHZ1V3J2RmtTVVRxNXlBMW9VTmtQa2dOOVZ3OXhvRGpRUHFESFdFQlZKM0xlV2VKQ1JJQ25nNS1CWGtyMjhPYlVua2JOcFdPZl92YW1JdjJKTUVVUFR5VUJQbTNhTTIybUJPOXBpaThYNTVrUEt2SkxvVjhLUWhfWGVQZWlBRTd0QzJaRUtRZUU1d2p5b3RR?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-09T05:09:03.092Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=UtWpzMxgWVA",
+        "label": "Trump says 'only kidding' about naming UFC CEO as press secretary"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "UtWpzMxgWVA",
+      "title": "Trump says 'only kidding' about naming UFC CEO as press secretary",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-trump-cites-dislike-of-israel-2026-11-09",
+    "date": "2026-11-09",
+    "title": "Trump cites dislike of Israel as key factor in GOP midterm losses alongside war with Iran",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA4T0xHTHdmU1VxTGp0ZUhfWGN3bW9jUHNsRUFiMzZpMVRlUnk2OUJWV0drdXdKa1NpSkFHcHlRZkhoT05fYThFSGdCZzNyb29Sa3pzUTM4Q1pIckhyTnVv?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-11-09T05:09:04.607Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=QYmG7Mu8gX4",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "QYmG7Mu8gX4",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-corrupt-right-trumps-brutal-grilling-2026-11-09",
+    "date": "2026-11-09",
+    "title": "‘CORRUPT, RIGHT?’: Trump’s brutal grilling in tense new interview",
+    "description": "Via News.com.au. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQcjNkeVFPak1hSkpmem1lRHFyWElPblBYaHJPOFJKWUtBNTBGMDBQTmtaWTZVWGl0eVhnYjNRMHh1c2lBS1RjYWNPelFrUFNDN2ItcWlHY0ZlWFJfR1g4RmNaMWZOQ1lxbEFYYi12MDVOV0dWc2VWX19BN3hqanNTeTRvaDZ2ZTlQSGtlQ0FvMGY5SEI1ZFJTdklCRmtiRmFUemIzWER6bXJUbGJPejJHcHYydi1Ua1E5OGZDVXZjM1JMTEV1cWd0ODZUd0pVcDRzYXhqcGxhdVJZWjFLNDVMSkhldlkyNDM4NlZzSVBRaFlMZw?oc=5",
+    "source": "News.com.au",
+    "fetchedAt": "2026-11-09T05:09:06.140Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=vaGCrimuauY",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "vaGCrimuauY",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 29.5,
+    "lng": 48.5,
+    "zoom": 5,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-israel-prepared-for-us-strike-2026-11-08",
+    "date": "2026-11-08",
+    "title": "Israel prepared for US strike on Iran, but Donald Trump held off",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5GallITURTbUFkN1FiTHJHWFpQU2wxaWg1UzNBa0ctUkxvNENtU095bTV5M0IwU0s0ZkhWenNVWlUzYXBhMXVrTWNyTVVoaVN3dlkyS1ZmdnlPZGN2anVzR0pPY1Zyb096b3c?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-11-09T05:09:07.706Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=t71paDewjBY",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "t71paDewjBY",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-election-results-cannot-untie-knots-2026-11-08",
+    "date": "2026-11-08",
+    "title": "Election results cannot untie knots of Iran war | Daily Sabah",
+    "description": "Via Daily Sabah. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONXlXaVo4NnNKdEV6elNRb0xsWWpQUEVWRXlwcHV2RjQ0bjFuWDJCbnNFdE5vUmFYOUd2Si04cFVPa2x5RUFjdDMyNFN0OUsyR1pnU0lLZUtVWVRWcjJFeFd5WWVFaVk3TERTY3JXczUtN0pTaC02RGJFT3NCaFZPTVg5MUhJNUVTRXR6anU0S3FnUdIBlwFBVV95cUxQYU91ZXRkalc2dk5BdGhEYk5rZ2t4N0EyNXBFeWUwWkE2cENqbUdCaGwwZ3FVTFNjelI5b3RKeXNsLU5hMHNCeExYT0FBb3UyM0VKUmxzcW91MmVGeUdwM2xiUGxfTkVseXowVk1UR0dyaFRzeDRmX2RJTmVQcWtoRXpxdXV3Z2NTN1ZOaXJEMmc1blFKaXdv?oc=5",
+    "source": "Daily Sabah",
+    "fetchedAt": "2026-11-09T05:09:09.248Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=8XCsokYtFac",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "8XCsokYtFac",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-trump-cites-great-dislike-for-2026-11-09",
+    "date": "2026-11-09",
+    "title": "Trump cites 'great dislike' for Israel, Iran war among reasons for Republican midterm losses",
+    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPN0lJeGUybVJOd0RaOTJWMXZMakRNMzNZNnhrdS16RG4yWDc0elRhNFgtNFRvRmpYZG1IVFlnVWZtYThSdS1OMEFNR3RmbWRKWDBaR2NMQ2xSdGRqbFRLb3BBTGFKdENHS01vWWZUb0tjYWhCWVVXMDFjRUM4TzE1dWdWcFNrOW90RkNJQTk2V3Eybnd0aHRlY0dqWXlEWUY0UFBvYkZMT00zMWhrVExLc3U3RDAycTBrY0RKaTA2WWlnMEctd0JMZWZ2RmJyT00?oc=5",
+    "source": "Anadolu Ajansı",
+    "fetchedAt": "2026-11-09T05:09:10.647Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=Dy5r0TA0neA",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "Dy5r0TA0neA",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-waiting-to-resume-talks-2026-11-08",
+    "date": "2026-11-08",
+    "title": "Iran waiting to resume talks after US midterms ‘shock’",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "diplomatic",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOa1FGaEVxVFg4ZWRJNUZvVjdqT3dzV0lVT2ptc0R3WGhKMjg5S0xUczRKdmdSRWRDLTN3RkZnTVRLZWpLNXN3UmRvbG13Smp0WHdEbkZ4dTVPMWRXVzZoQjZ0eXFXeHdubTcxOGV1V1dnd0xMQWJEbUJNUFliQkFfMzNVajZMM0lUUmhjd1F3dDVzY19MSGtRV1ZReElwWE5qVldTSm53WTl5QUtxcnZIaFctQ2ZmZnpjNGJDQ1hRbEc5QdIBxwFBVV95cUxPaVg2NUc3YXNVMUtHZWZkQ01XaHpuNVBYZjktOXl1MVB0V2FqbElVWjQ3eGp6VUZaUG5BWHo0YmhCdFV3TmgyNkVCZDUwSF9EaXp5b09NQ3FGQnp4TTI5cnQtNDUtalN6dlIyM1lmSl9HM3UyVVJ0VXlWZjdseFJjLU9jX3FTU2JpeGZXS05OWXkzR0NlRU1zTm1RZlY2aFhtN3pJU3Zpd04tazhwZ1l2Ymo0YWhWclN6OFFwMDdWcTRkZ0hudTZV?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-09T05:09:12.611Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=tTTqRuyRaHs",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "tTTqRuyRaHs",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-rubio-says-war-on-iran-2026-11-09",
+    "date": "2026-11-09",
+    "title": "Rubio says war on Iran unpopular but ‘necessary’ to stop nuclear threat",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMFlYWG5HNENyZGpLS1JGNzJvMzJqTjJReEplWTNFMnBXTjFQM0ZiblN3WVh3ZEpfcWxGbTE5aTY1MjgtajEwU19vLUlPZUNTdXk4VE9oY0dBblkybmVoOHJ4WUJ4bHhIcjk2akRPRlhYV1pVbVdBZ09hRzFKazJLZUhVSl8zbURINVFMWHZKcDZ0UWRab09ka3hWSkpDaVU4YXVlSzNrLWNMVUZkUXlJ0gG0AUFVX3lxTE11UV9jSEd6eTNyZU5EYXhJMTQyNzJRMS02eHExS0NUZi1PWXV3T0l3NHhHc0xDQ0xNLXB4eU9CUGxJaWxZZEt3REFLMHFlTGlIMUFjX3Myc3duczRGSmRIMVBMNjF4eHpIVy1nT3VRaUhKQXpKUTc1YVFpb0NOQmpVSU85eW9MWGRkQnpxcVFzem9NUmJmR3lQOExkTDNJd2wtemJJQ0dVeGd1MVFocldSdXBEVQ?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-09T05:09:14.677Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=T3pL_ZCWPz0",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "T3pL_ZCWPz0",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-trump-signals-openness-to-iran-2026-11-08",
+    "date": "2026-11-08",
+    "title": "Trump signals openness to Iran deal amid renewed Hormuz tensions",
+    "description": "Via Iran International. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1fVmh0QnhrY1pkdGFDdlo0cWZOWUNHbDJadmRtN25wb05nc2RKMjUwYmhmczFNRzdYTFRlOTNpUWU4cXIwRDdHZ3NFSnRrQ0lMYlE?oc=5",
+    "source": "Iran International",
+    "fetchedAt": "2026-11-09T05:09:16.642Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=f3-I9cvxf90",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "f3-I9cvxf90",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 26.566,
+    "lng": 56.25,
+    "zoom": 8,
+    "facilityId": "strait-of-hormuz",
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-jd-vance-wants-to-change-2026-11-08",
+    "date": "2026-11-08",
+    "title": "J.D. Vance Wants to ‘Change Our Relationship to Israel.’ Does His Boss Agree?",
+    "description": "Via The Free Press. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTE84U3dqcUNfTnprM2ozcGpZNzNVSE1tLVVJYjVSVVpjeWVQZ1FPODNKemRWWlhaMjB2R2N0UUJRT0tTdGl2R3pjOVptS0xDMk5LXzJ5VjVjcTh5dTJCQ1lNWXVDU2huZnVvWXloaC1qM2Q5dGM?oc=5",
+    "source": "The Free Press",
+    "fetchedAt": "2026-11-09T05:09:18.918Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=V_vkb_QEFi4",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "V_vkb_QEFi4",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-war-with-iran-gasoline-prices-2026-11-09",
+    "date": "2026-11-09",
+    "title": "War with Iran, gasoline prices, a 'great dislike' for Israel, Trump explains why GOP lost the elections | LIVE BLOG",
+    "description": "Via i24NEWS. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQamxXWl9rZkl6NFVmaUZtNUdRVm12b0d6dnE5ZXBKaWpxRDNyVDlLeHgxSnc0SlJUZm1mV1pXVlJ4ZzJjV1ZCc3Y3aW1NZnZ6ZTFkRHFleGdUcEdIWjFoTzNla1FsRjNvX2xDQ2RqVGMzUEp0VXpld28xeWN2MmFhcUFNVGx4TjRXclU0eEFrRWk3VDJRR0gwdkpwZnlDSFFJUXdlZ1NReVBqY0FTcE9kSUwwNDYxU1ZJdngyNXE4cWlWMUVabXdMUDZ2eTZPaHFpblVSOWpCc0diWW1ucDdZeU1rbDFHUWF0bjZIUzBrNA?oc=5",
+    "source": "i24NEWS",
+    "fetchedAt": "2026-11-09T05:09:20.960Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=7HByGt_uyfE",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "7HByGt_uyfE",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-trump-says-iran-war-hurt-2026-11-09",
+    "date": "2026-11-09",
+    "title": "Trump says Iran war hurt Republicans, notes 'great dislike' of Israel",
+    "description": "Via Haaretz. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQVlVkZk1qc0oyN1ZBSzVtd3NMN0t2LXUydU1nT1JZVXFOanFyN3A4QjhVZTZWZFZ4elJOZ3k1VktUX3ZHUTJfOXVwdWpCZmpQeW5LYU43Y3g0ZGhRaXdfa1NuQXU0YzIwWXN0VDUzWmN1cHo1MlltV2ZjNFpIX1M5dlNMSW9FekM3OTNld3BES0lSQ2dWbUplMm9WTl9Va0FHM2UwT0VQU3VEQUIwcmJsM3hjV3JwZjFoMjNPaThNLXdqQVNoSFh1Y2JDRWtIXzVaOUJWVHV2UWg5ODRJT21reWdIOGhDOEh2UWRF?oc=5",
+    "source": "Haaretz",
+    "fetchedAt": "2026-11-09T05:09:26.567Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-trump-repeats-that-he-was-2026-11-09",
+    "date": "2026-11-09",
+    "title": "Trump repeats that he was fine with Vance’s comments tying Iran war to midterms loss",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPY1NPVUlaXzBzeXoyMXZrNWJPMENxSnZvaFZJTmlGNmdoVTdKdTVKTGM1b2pyN3M1cUw2NUg0RkhqWVI0d0VQSE16bmFtNnNWSnd6ZFl3TDJXS2FLLU1hQUhQbGg0T1NLS282RnJjbTNvclZMdFVwSWpUNDdCdl9NcGRTZ0Y0cE9vQlk5Vm9FR1R0bjlwUV9DM3QwaWM1czNnSmw3dlVqV0RVb0J2XzN4b0tyX19yZWdjN09Id2lpNUVLcXI5ckI3LQ?oc=5",
+    "source": "The Times of Israel",
+    "fetchedAt": "2026-11-09T05:09:32.496Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-not-destroying-irans-missiles-drones-2026-11-07",
+    "date": "2026-11-07",
+    "title": "Not destroying Iran's missiles, drones 'most significant failure,' former CENTCOM deputy cmdr. says",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBPNUVuclllbTJmZVJnQzltbVNxNXFveXJVeGVER3NndGl2TTJrZDdsMDBtSnBNRkdvbnZwRXBsZTRmYnhVYmxadVB1SEM3SUZnbjkzdnUyMDRfQmVRUjc5eUxtam54UU1qTEE?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-11-09T05:09:38.848Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-g7-ministers-meet-on-efforts-2026-11-09",
+    "date": "2026-11-09",
+    "title": "G7 Ministers meet on efforts to end Ukraine conflict, halt new Iran war",
+    "description": "Via The Hindu. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxObURiU3JKSjFLNFhUOHlvZi1sWW1YbnhiV1J6TUoyTmNjSUljTGZ5eHFjU2dROEhSYWxUMEUxTVduNUtMcG1BRGpHYlhNSHpaNUpvREx2T09XbHFLNE8wdEhqQ0VvazI1d01nR1R2VWFFUTJLN1dhRHpycVYxdGl1Y3c2anRzMnBQTlNnNS1ZdGlaVkJiV3FGYm9rQTlYejY5SkZJVm9kQWp4MUh3OW5oeW9FMzd4MXRlX19MUGw3QTZYQ3p1R2RlQkV1QnZZWVhJMmUtUW5GeE4wN3M?oc=5",
+    "source": "The Hindu",
+    "fetchedAt": "2026-11-09T05:09:45.268Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
   }
 ]
