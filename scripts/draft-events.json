@@ -1,361 +1,5 @@
 [
   {
-    "id": "auto-saudi-coalition-intercepts-missile-fired-2026-11-05",
-    "date": "2026-11-05",
-    "title": "Saudi coalition intercepts missile fired towards Medina",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdlozTVc2c0N1andBRHJkTm9DMVh6RFBJMDZUOExPNm5SN255TWUzSHlkNGhOOWNObHdlTUhrRG5IRENNN3RWd1o4bmJuRVBlNV9RWThWYU5nNzJwb3VFc05UTVAzX0xMVWlNM0NWTTZnOHN2TVhxZ0o3bWMyMVFIWi1kVmwxODVkdl9aUTI5YnViYy1sWGdHbjNLZEPSAaIBQVVfeXFMTXF3eS1lSEdCdUlaTWV1RGNQTDZXLXN6MV95VmQtS09XWm12WnBIem4wWERWckRqR2pCVUp0SUVRT2RmcHBvQXJaS3NKSVA4VUlfSmdibDBkNG1tQklIakprQjYtUWNrRzI5MjNURzhwTnZpcTV1OG0zQVhERU91UHZidnB5T2JBczVqMU41WU5ydHhqQV85UXMtNFZZOXlmX1Zn?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-05T23:25:01.680Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 24.714,
-    "lng": 46.675,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-says-tankers-struck-in-2026-11-05",
-    "date": "2026-11-05",
-    "title": "Iran says tankers struck in Hormuz amid fears of new US attack",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSndUR0pGRi1MMEthNENuNFlReHRUcGJUVjdxMm9mbEp0bnVncHFlX0ZyMTVXUkR0Ql9CR2lLRElpcnRvQU5mUVFuT2oyakMxaEdGeHZqMnd5dTJyN3hhaFoyX1Z6NS03eUpMTmlCSFd2NktOeU43b0hhRXFKY0tqWHhKYW9FRzNibFFTVHdjSGFTVDhzMnZwak1MMGhTY1N0X3hCZkV30gGrAUFVX3lxTE5jd3JPYU1KcGFXeEJsc0VoM1FsaklHcnVnMkkwTmpZbkNNM2owMDlIOFViMmxWaTlwSzFSX0lqd2FCTWhNejlPeWE1QWxpcFEtbHZ5eklHbXJhTW0yWWlwQ05PeU04OVFLamJvcjBvUHI4ZW9INDFILXVGUHZFQmUwd3hVeW1NUFVmdVZTMGJMSUJfeEtFZS16bTI1SkhKZ3pIVzZaWWd0VG13aw?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-05T23:25:07.551Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-the-blame-game-how-the-2026-11-05",
-    "date": "2026-11-05",
-    "title": "The blame game: How the US midterm shock is shaping Israel’s race for PM",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNRGY4MzgwajJadTZ5WG95VHYtM3VydEF2UUtBUUhhblAzVjI1MUN5TmNiaDlIUGRVTUNZM25lTDQ3TGxjdjMzaHliNlhHbUFrWDl1R3hqMjljSVM4ZU13UXdmaTZEZllhWlBqcGg1aXRnRmRTSzZyNG9IYkNvX2dSal9tTHZwY2hNUkZ6bUdJcnlTMkRNYm02NF9tazY4QUpxYWF3MmlvU0hqVjZzZm1hc9IBtgFBVV95cUxNd2hkQVkxSWpXaFhic0NqdGh3UEltWk5JWkhZRVB4b01hc1EtVjVQZWRJcnJmYmxVanJOXzE3dlhJNG5fYTVkakt4STk3SnhGTEdXUDJQdlp2R1phSUVrSXo0d21FRHV3R0d5cGxQczhFalFvRE9kSXJwVHA0RGRjbmZkbkp4OWJGemFaUUR2Wk5TSGowSGFmQl9DM0ZaVXViMXlTNERhZ2pPOFpQNG1QT080THZMUQ?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-05T23:25:12.900Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 31.768,
-    "lng": 34.851,
-    "zoom": 7,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-can-us-midterm-results-save-2026-11-05",
-    "date": "2026-11-05",
-    "title": "Can US midterm results save the Gulf states from war?",
-    "description": "Via DW.com. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVEttTHpiYWxuNFFTYXBiWUxsWUphTzRxMThBSnRGdXRoRk9QXzJ2REY2d0NQeUlPRGpUMEdVQkdYSnJsdkQ2TDFPVTFlNEJPS1BLUEZGSWlLbWR4LVdTWTlhNEtNcWFfYU9reVIyQm9Fb2N3cWc1czJlR2x1Z1lUaDhwbWZtb29teWxPeUxZTzlfV2ZkSFFsT2t0WUpBUGl3a1HSAaIBQVVfeXFMTlZFRVcxZ1ZKaHVkdDZfQ3ZPNDlxazVsendlSDFJRGNSd1JNbkxPMWhncWVyV2ZOM2p0X1UyTHlUaWRYcWhVM0pqalVuOFNvdVRfenkwZ2NDQjFSU1dRSWE2dHVMWmd1YlQ3Yy16dGtabExHbGo3cHhhcUFDckVZNkZMbTBYZ3h2MU94bVdiUHlJTVBmU1pFZmlacDNOcV8wWnVB?oc=5",
-    "source": "DW.com",
-    "fetchedAt": "2026-11-05T23:25:18.810Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 29.5,
-    "lng": 48.5,
-    "zoom": 5,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-what-trumps-us-midterm-defeat-2026-11-05",
-    "date": "2026-11-05",
-    "title": "What Trump’s US midterm defeat means for the Iran war",
-    "description": "Via The New Arab. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWnJpS1BZd0otck5nNHRCYm85RlI5elJsQ3Rodkc3dkFIZl9DeWttZXRkQVYtTnpxWlFZcGROM2xObVRPVU5mZVFQRnY0T1lKTGJtWC14bmhLZE5nSk1JZ1V5bGNlVzJnVktiU3FLR0RoNWRaYUt1dVhlZHAtSGdhN21RZw?oc=5",
-    "source": "The New Arab",
-    "fetchedAt": "2026-11-05T23:25:24.350Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-iran-war-live-trump-warns-2026-11-06",
-    "date": "2026-11-06",
-    "title": "Iran war live: Trump warns US may have to ‘destroy’ rest of Iran",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZkJXckI5ckRpYjBramxSRF83dG5fOEhjTGM2NEpIeE5pVTdGTEtYZE9uREtpTkgyWWt0cDd1OEhWWEV3enRWbVJFVF9WcXAyVExmamtobWV3blc3MDBIcWZvN250YWR6QlU5SEk2Yi1rdndKRmltVGZzektZMXlVQkw2WUdUcnFoRzU0T2ZtRW5EY3NDSHo4MjhaTHdUbTIwcVBQaXVLaVUxcjdXelBxQdIBtgFBVV95cUxOQktxc3hJNjY2STVxWDJBRjB2dUh5dXdSVVFnc1NIaHdILXFiTG5LZDZEZUFrazZzblFHenhhb1ZzRXhXOElKVVhhOTZweWotT1lOOFV1eVVYT0ZpWU5UekdaRTVkeV9sYmJQMTVYR0Q0VF9lNXdySmlkUGx5RVVTSVkzUjRZTEFnamExQWU2OW51b0ZnQ2lEQjJqdG5Uemh0ZjVPbVJsTG9mRWVtOFBibmRrQm1DUQ?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-06T05:37:18.622Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=iQKCwW_PFIA",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "iQKCwW_PFIA",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-war-updates-states-aiding-2026-11-05",
-    "date": "2026-11-05",
-    "title": "Iran war updates: States aiding US attack ‘legitimate targets’, says Tehran",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWXk2MWFUSUtxMEs2eXFJVHBpcDRLV3U1UVo0ck13VTJ6ajBTTnRUSVNFV19YNS12djdVdWFKb2FoQUIwZWtwTGk4WVRGRWRNX2pxakROcTlCaWxQRWtURDZTZTFEWDFDalBNUGF3QndXNUs1cnVPLTdzalN5OWRCcWtYNkdYQjM3dGVmLU1fMFcwZmFkQV9Ldlktb1phbGVIT3JJTURCRU81clVjR1Y1dTJUZmlPUXBmRXfSAb8BQVVfeXFMUDdiVXdJcWN6elVPeFVzVHA5ZU93aDNlZ283ckk1ZTlpNTdzRWdvZjNSdFYwa3psTGEwQmluckJ6eEZxUTBYMUpwZ3J4QkRmc2dLRk5XSU9YUmlTcDdFTHFVdmV3Z1lhNjgxT3Zzd3RVZi1MU3Y1QWNSZjFCUFZQZ200ZWI4cnN3dEdVQjRpMHRxdzczeTlPd1pEQnVHaDk1Wms3aVd2YlctQW5FM0xpLVlnX0dfZkZOTVB5eFF1SWM?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-06T05:37:20.128Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=RJWxWjoTLts",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "RJWxWjoTLts",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-after-midterms-trump-is-left-2026-11-05",
-    "date": "2026-11-05",
-    "title": "After midterms, Trump is left to weigh his next move in Iran war that contributed to GOP loss",
-    "description": "Via PBS. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbnpIQndTWTgxS3RiNDhYandQeXhRMmNOUkUxUmlVdzFzWmc1TjhSNW5XamZkWXNoaUtrSVQ0eTBYNUhkQzNBS2duUEVsd3Y3Z2NjLU5RMFFNbmlnVmwtaVhFdmp3ODlpakp4U3pxQk1BRUIweDZ4amcyUWZyRUhRRXYxYmR6b2txSThCR2dTcWtwa005UHBIb0wxRll3RjBQa2xrbDdGUzl2SlJkZVh4d19ESldNVFdjWlZHTEpkVmZ1MFJhLTc3YWJB0gHPAUFVX3lxTE5DUHNBaG5aNWVIQXZVT1RQQzdnOFktSE5Gc3pVZFROOGVSYjFVR0dKZEY4RTZ0bUVVQ2FaNzBOZERGMXVSYWNVa3Nsazd1UVg4dGxCZXBBbzJyRzhiRV9Rc2ZwVGxqbGlfVFM4WEdaYjhuUVlubEVnS2FVOHFCaUQyVzdaSEZjVGZmSW5xb2wyVExob1VQb0dkdTNfOFluOGNLb241S2p1RERoNmNqaVVUMm1CMkh0c1djZ01oYmNLX2hDckR0UHprUE82RTBvNA?oc=5",
-    "source": "PBS",
-    "fetchedAt": "2026-11-06T05:37:21.774Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=pezdnIxD5tw",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "pezdnIxD5tw",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-irans-security-chief-meets-putin-2026-11-06",
-    "date": "2026-11-06",
-    "title": "Iran’s security chief meets Putin, delivers message from Khamenei",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQnVkOVN5OTNTeXZHZ0FUWE5halRMcHMySFhaS3plM2h6Ykt3WGI4NjkwRVFxSmg2aHo0MGVTb25YOXFucjJEcjFJXzYyOFlxdDV6QjJSbE5lNHNwWENhZWpDZ1VSR2RqQlRVZFRLbktJdXUyTVBGQk1vTXVnTjVkdDYyZ2FmQkhlc28tdTJmbTZJNlpXSzFzd25zWllERWVROFFoemtKONIBrAFBVV95cUxNTXpROFF4dEJtRkR5ZE5sN05admFlZEpxS3VPb3VveE5SWndjMG9ZYk1QZXdUdERYaVlyTThkZl9nQXgxRUxJZENQWEIxc3AzcXBKcWx2clkxcjlGUThrQm9LWEtRenlaeHloMmVjSC0ycDNWMDlXRGZoajlRZVZpT0N3a2lDWWsxMm1LcUIySmlXTHd3azc5S0lIUkV2c2dvZUpLaFdMSy15TEN4?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-06T05:37:23.391Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=NPNU37gbtek",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "NPNU37gbtek",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iraqs-alzaidi-talks-to-trump-2026-11-06",
-    "date": "2026-11-06",
-    "title": "Iraq’s al-Zaidi talks to Trump as Baghdad seeks to stay out of war on Iran",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMnVfME83OVozQ0xVaFhEaUU4bG9yRWZBTmNVbHNVRXJLOS1hWFZBdnM4WWpiZTc5bG9aZ3pQcVJuLW85bGx0QWJvSU45bUpZaTdQWWp4cXc0OG8wb242SGdSSEk0VlMzSHlxdjFUbldDZnAzcHpISi1RdUZyNHpPNjZCQmNIdnZJdFFwM1hzTDNLcGNxVk81a3E5SUdlREtoQnhpNU5KNDFEdVdqenVfVWNMVkHSAboBQVVfeXFMTUZFb1JmYk45YmttZGZYSG9CTmpYd19CN2tSTlhaR3ROV3h2dk53bU1Ud3lzbzFtb2FZRkJVX256VkNlam1CanZjVFk0TmVEaGk5NFYtblo1UnBNUDN0TkR6cnFxV2hmUUlJRVJkOFVqRlhiekpkTmxxdkIxVFE5b0VyOWxvZ05sM1N6c05iUEQ4VndkSm1qWXVYZk9GVDZzYzNzVVF3VmliUFgzTF9kb053c2UySHZnU2Jn?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-06T05:37:24.828Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=8b_IYuk-20A",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "8b_IYuk-20A",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 33.315,
-    "lng": 44.366,
-    "zoom": 7,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-court-documents-show-trump-administration-2026-11-05",
-    "date": "2026-11-05",
-    "title": "Court documents show Trump administration held talks with Iran on deporting Iranians amid the war",
-    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQcFZsbmsyWmxJN2QtanlOUFNIS3RlTklVek9qaS0xZ2ttTWRBV1l0TXFOV3ZEaE16UDNuUEZNTjZ2bzR1aDlIelRES2ZSNXotVGhNV1ROcTh2RzN3Qms3bElER1NGM09yZ2hGXzNrOE5WZEw1bU9mT3NqWlV2V3huSjZDTEl6SmtNbGhXLVdGRlVoX0hVV3dJQ3Z6SXlOQjBmSUtqeGpQQzVxVFRUMmJwMkhRbjhGOEgxUHNZZURBbjdRcVhpSi0wQ0tkUUJuX2dUNjZ4TS1JOWVPa0E?oc=5",
-    "source": "The Times of Israel",
-    "fetchedAt": "2026-11-06T05:37:26.781Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=zKPgdr4e7fE",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "zKPgdr4e7fE",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-israel-faces-new-era-of-2026-11-06",
-    "date": "2026-11-06",
-    "title": "Israel faces new era of sinking US support after election",
-    "description": "Via France 24. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOc1ViSV9YS2pObTFBcjR2aFdXUE5fSVprU0FIMnM4MkJvckdaQmlyc0Y4TF9jSmR3ZEJ4NUFENE5fcVZHbWFTb0ZUNVdmUjJ4OWppbU9RekxzRGJYQlBFLXZ2aTVxVjZqNWtHcGdzendhM0ptLXlVRVRSOU9DZ2R6SE1fMmkzZGVXOVpDTDdDNi1rV2lWeGxQMnJibHRaZ0VhQWF3cTk1Zw?oc=5",
-    "source": "France 24",
-    "fetchedAt": "2026-11-06T05:37:28.796Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=O73Ni4bM02E",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "O73Ni4bM02E",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 31.768,
-    "lng": 34.851,
-    "zoom": 7,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-hegseth-vows-to-keep-fighting-2026-11-05",
-    "date": "2026-11-05",
-    "title": "Hegseth vows to keep fighting from Pentagon, defends Iran war",
-    "description": "Via Al-Monitor. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxNbEpVVnQtQ1FUOXhGdHljaDhmSVF6VHM5VVE5RWZfVk4tVHFVbzFqVTFkRXBCV1U2VlFIcm1YUlRsX3RLb3J4UDBQUDI4RHlfNTJOcFRaUDRiMGVOaGRNdTl3cC1ZYmx5QnF1aE1TLW9RYmlVV01TVHNienEyd3VIS3JBWmNjNVdUbG43Q1ZLZkJFc1dpeWVoUC1RRFVjdw?oc=5",
-    "source": "Al-Monitor",
-    "fetchedAt": "2026-11-06T05:37:30.778Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=llLaAMKJnHQ",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "llLaAMKJnHQ",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-jd-vance-must-explain-his-2026-11-06",
-    "date": "2026-11-06",
-    "title": "JD Vance must explain his stance on US-Israel relations, following vauge remarks",
-    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBWM2NaLWU5eDZPS3NWcUVtM0lHNVJnaG1JRlpPY1FaM3dhZ2VDRTlPeDhxN3JaWThVWUpRUWNRNzlXNE1LbHh2cUx3LWJKdW1QRU8xZ0pEVQ?oc=5",
-    "source": "The Jerusalem Post",
-    "fetchedAt": "2026-11-06T05:37:33.031Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=e5rOIGlQDiM",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "e5rOIGlQDiM",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 31.768,
-    "lng": 34.851,
-    "zoom": 7,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-three-key-areas-of-concern-2026-11-05",
-    "date": "2026-11-05",
-    "title": "Three Key Areas of Concern Emerge for an Increasingly Isolated Israel",
-    "description": "Via Middle East Forum. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUnFKMWxJYzRiSVI1WF9pX21oMERHbk9RMGtiTEtYSTcycUM4YmZiblZVcnotb1FqUDEtejRwSDBVYWVzcEFJNjJtYzZYdnBYTjFxTWZNdTRMM0F0VXFyaXdXVWRVT0Q3dVRoRzJOWEdWb3dtN3hiaHZBdlpvRjUyNTdMU1NQdEd1czlveEUyZDFmNmVfRG1kd09RWlBCd2lkNFZUdklqWQ?oc=5",
-    "source": "Middle East Forum",
-    "fetchedAt": "2026-11-06T05:37:35.162Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=tIaBiSrNjUM",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "tIaBiSrNjUM",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 31.768,
-    "lng": 34.851,
-    "zoom": 7,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
     "id": "auto-iran-sent-nuclear-proposal-to-2026-11-05",
     "date": "2026-11-05",
     "title": "Iran Sent Nuclear Proposal to U.S. via Qatar, Senior Iranian Official Says",
@@ -5156,6 +4800,411 @@
     "lat": 29.5,
     "lng": 48.5,
     "zoom": 5,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-live-updates-rubio-says-us-2026-11-10",
+    "date": "2026-11-10",
+    "title": "Live Updates: Rubio says U.S. has \"no need\" to restart combat operations in Iran",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0zN0FDMkRwcDVyZGFpV0dvRnhidUVyU1hrc2pKQzJZMmlLZDF1bHZ0dzBtMDJLOXc5T0xNYmRuS2Q4eU1QQmFqaHJ1cVg0VGkxcWN3dEZLVlo1UlQ0ckZCaW52b0lHQzVZN2N6UElySjhIWDdXWVh5T24xcmh4Zw?oc=5",
+    "source": "CBS News",
+    "fetchedAt": "2026-11-10T22:57:26.647Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=TNGyYcqeq3c",
+        "label": "Rubio says no need for major combat operations against Iran"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "TNGyYcqeq3c",
+      "title": "Rubio says no need for major combat operations against Iran",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-usisraeliran-war-gcc-approves-military-2026-11-10",
+    "date": "2026-11-10",
+    "title": "US-Israel-Iran war: GCC approves military command headquarters in Kuwait; Qatar PM joins G7 talks on Iran; ADNOC vessel sustains damage following attack",
+    "description": "Via Gulf News. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOdWtfX0FrWXFvWnpvNXd3NURNczAydGR6YTZ1UTJsQndyUEI0eDRKTzBZM0dxUHR4OWxMbkdiZURkQktOaG00NzUzM1BPaDdzR09KUWlhTEd2Q3c1bEotdEVrTkluMWY3eXFHSE1SeDZCRFN5N1p1amRhX3RRaFE2MlN5TXRtUGFiYVZCQXRsbDhNUGRtem1ON0s1R1ZMd2JSN3VhWEVqRFJxQjJqNFhUT3FZVVJoRVRqNkFZNmVsYkhVdDlpRGFWbXJnaUhRaW9RRmtjdzhmOUpZQklFLWg4UVpyZDhBRWk3NVNQdVJabmFEeWR1RVJHWUQ3NXZwSUxmcXYtQkZfVkVEbzl6dmtlMlJhd9IBpgJBVV95cUxQdUxMTnBMd0J1eGl4NHJCTkRLam95OVdsZXllaVUxYndKaUptLThwa2RTT2h6SzhWTXp5WHZLbVNfM1BVWVNMT2JZckJCbFZRejJsQnRjQld4VWcwVHcwNDZSaFd1d0NaclBVZWFtdThVN1oxaGJha3lwN196dEdxTk5NbXJKY0JXRjl0Z21Ga1g3cFkxbXpRMjhuS1NoNFptWU91cVNLeEhJVlI2aXNNa0RVT3dpNnVfemt3aXBiR2poLXJBN1VMWnhLZFBkWGVROGlhdmNhc21TZjdib29GMW1TSG5xT1BfZ3BJWnJtNzdZN1lKS1hUZUdaRmhuQjhTX0o4UUQ4blJkeXZkaEx0U1RURmdvQmhrMkVXbEpaUHpWUDl2VEE?oc=5",
+    "source": "Gulf News",
+    "fetchedAt": "2026-11-10T22:57:27.448Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=HbzCNbOCcW4",
+        "label": "US moves military aircraft from UK airbase after reported Iran threat"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "HbzCNbOCcW4",
+      "title": "US moves military aircraft from UK airbase after reported Iran threat",
+      "confidence": "auto"
+    },
+    "lat": 25.285,
+    "lng": 51.531,
+    "zoom": 8,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-world-news-live-updates-maldives-2026-11-10",
+    "date": "2026-11-10",
+    "title": "World News Live Updates: Maldives moves to make ban on Israeli passport holders permanent",
+    "description": "Via The Indian Express. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNekgxdm0xN0ZWVlhFS0tUbHRjZlJiUERwdGFFdW9IYWhsdTQwUGx0M1NMSlVjVDgyTFVNdnh4RHJxUy1YNWdXdGFEZjhCMDNUZ0hwTVZHYUxuZl9GUXVjOWVRem9YTmhuU1FWRU91OWV1QmJFLVgzM3ZJZnVEMzZuTmZLS2U4VWhLLUZOTWYtNkZuNG9WYWRIeHhwczJaZW5wS25UZTB30gGsAUFVX3lxTE5jdkw0RXQwZGx6TzRzR29zUXB0Y25rWjdmV05pUnFMZm9tOVJCbU5nVFdxVHRXbzJOOHBiR0s2X1lfOTZWcmtjUGM1Q3g4SXI0WEtCazNwcEw4YThlamZfRlNLVFFnTk1OcFExOWRMYlE0Y3pjTkE4ZlNCNWZmaG44ZkNwQmQ3YWVuRy1hN05KZGR1WXdXeEM5RWdPVWVMWFl6Tmk2dVNja0s4MXc?oc=5",
+    "source": "The Indian Express",
+    "fetchedAt": "2026-11-10T22:57:28.884Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=OhbO9psQeZU",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "OhbO9psQeZU",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-war-live-tehrans-security-2026-11-10",
+    "date": "2026-11-10",
+    "title": "Iran war live: Tehran’s security chief says no talks with US taking place",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "diplomatic",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNb1BpVEpoUXk0dVZTcEVneEYyZVJuVHUwT2E5b1VobkVINDNGeHdwcTRsSzlaMlp6WU1MUFU0N05ucXRlQk1yclZnZGM1Z0dwOEZDcTNXOTlzdzBkQ1NCNVZyRTFNYWh0Z0ZtQXJNS1NvY2tBbFpDejBFZlVhMmlkRXM1MU1WQjJrVFp0eERuUE5mWG55dVdULW9xZ3I5SzZGeXZ5ZDhfNGRnX3ZNdjZUcU9MSmhLbXI2U3fSAb8BQVVfeXFMTUNBbmhtNUIyWFg4OXQ1U25TaXVzVGxKbWloNWoyQ2NVMDFLcHJRY1VnUTVyaTB6dHVHbEs5QTFtQ1QyYXUxRFpFTHpVMGg0Zi1TS2N1TUg0UW85Q2ZOOHk4c2I1aWo0UzNsc2hOYW8yU1lObzJaYzhpVkU0a3I4VWx2aWhxMGc4dTdQamNIZEJaM0t4ZlZzQ21pMWdHN0JiZml1RG9kd25lbktCSWxFc3prd3VmT2FZdzhJMWJPVDg?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-10T22:57:29.685Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=CTLoBRZfSCM",
+        "label": "Russia seeks security guarantees, sanctions relief in Ukraine peace talks"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "CTLoBRZfSCM",
+      "title": "Russia seeks security guarantees, sanctions relief in Ukraine peace talks",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-positive-momentum-is-the-us-2026-11-10",
+    "date": "2026-11-10",
+    "title": "‘Positive momentum’: Is the US war on Iran about to end?",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbkxDMlpGamhRLTVyZGpBdE1zQkRrOHZvLXlrb1ZSWXNMdUhVNDNmaWNzX0lKQm5ncC1ZM01VZm1yb210NW15eG5DVWlaaDBPTFhldXBDRlFJdFFmMElHZWZpekFRb3ByMExFZHNuZ21HOXQ2Tjh4X3V6WVEwLUtlV3ZWS2JQVUFKbm5ISFc2Y2VCVUpKanppczZR0gGfAUFVX3lxTE1fYjdrZmtKMkhWNnF0UnNYZVpXMTNydmRLNVA1VkxpMlVSTkxnX0pfQUxLNzFoTDlHeWhWdzJpYmFRcFcyakJNRzVraUdpT0VpTURSR0VwZ256bTNxZVhMX2k1S2FUVTRObWFlTU04X2piLVNqc0FYSG11a3FPdkhBU2R0QlBEYkhLcEVHajhBRjQxbDBtSWxqblpISHZ2OA?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-10T22:57:30.486Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=6nto54MsVaw",
+        "label": "Could Pete Hegseth be impeached over the Iran war? | Reuters World News"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "6nto54MsVaw",
+      "title": "Could Pete Hegseth be impeached over the Iran war? | Reuters World News",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iran-backs-nuclear-treaty-even-2026-11-10",
+    "date": "2026-11-10",
+    "title": "Iran backs nuclear treaty even as hardliners raise prospect of bomb",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "diplomatic",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZkRvWkJ1UFNFY1MxclBlakcyVDN1WDVaTmRyVzg5WlE3UDVDUklnRHM4elVqOHRiZ0lsNjNqRWhENFh6UF9yUkJmLU5VeDgzbzhpSlh2cmZjNUR5RUFvQUJ5eFVWWnQ4QnZWeENrQncxazJsNEU4d0RnSU96QlFrU1NSQjRhc2N4VUpjd090N2k4ems0ODlqMUJzU3JZQkxsb3o3ak1JelVUSzRieVHSAbMBQVVfeXFMUGdoYXJqdU0tX2t4UHYyR2tpY1dvMTM2OFBZQXJBNnR5My1aNW1rRzNfMXlBNUwwTWlma0FxbnI1VGlXNFl3eG1JVkMyWXI5MDhOWkNIQTRJMkpLTmg2TEZYVEdFd1Z3VjMtNEx2WWJzN0NDcUhVbkpXWkxTMFZveS02TnN3YWlTSzk3REJDWE1QNGtkRGFSTkxQSy1MTVJFb3Fhejd6Zkg3TmdOSVpreGxmd1E?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-10T22:57:31.996Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=6cNyYWZkdB4",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "6cNyYWZkdB4",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-benjamin-netanyahu-israel-will-be-2026-11-10",
+    "date": "2026-11-10",
+    "title": "Benjamin Netanyahu: Israel will be pressured to accept Iran nukes, must form unity gov't",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8yWm5CcmxpTW9iOGNJbkFMdWt2azgxT3pwMVBGX2ZnWE1rMDZ6RlNvTHFTdkNvTVZjSnllcGxZeUtocDBfSlFSeXByM0F6V2xrUkVLZmdBWEhuTWlrWEY3NGFkWHI1cHQtdTF4VmVQSzZ1R29yd2RYS3dKaw?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-11-10T22:57:33.525Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=nOqqcI9ouAg",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "nOqqcI9ouAg",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-trump-open-to-working-with-2026-11-10",
+    "date": "2026-11-10",
+    "title": "Trump open to working with either leaderFrance blames Iran for cyberattack TV7 Israel News - 10 Nov.",
+    "description": "Via TV7 Israel News. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5WcGNnUlNTaW02SDBwVnZrVnM2SnVTNXVxSHdVMjRSY2ZncnhVa29ZWEVOb1VnQlpDc0lmMldrQjRWV3plclVrdllRaXpqYWRnNWNvbmhORXNsbXlrM2NmcWtNMjZIbUhVdmVJelNNX2JuT1dkUlZ3?oc=5",
+    "source": "TV7 Israel News",
+    "fetchedAt": "2026-11-10T22:57:34.982Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=j1CJ80Y8YsI",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "j1CJ80Y8YsI",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-chinese-israel-envoy-rejects-claims-2026-11-10",
+    "date": "2026-11-10",
+    "title": "Chinese Israel envoy rejects claims Beijing provides military assistance to Iran",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "diplomatic",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1TVDVweU9lcndMQnBSU0ZFekdMc1c2WFpNV0hjN2gtV21Ha3JGVXRhUWlWQW01eTRIeC1IYTN2RnlnRGh0TkZwRnZBUVR5Njd2Rk1LZUpGQXlvS0MycUZRYnVkTUNwZ1VmT0E?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-11-10T22:57:35.781Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=HbzCNbOCcW4",
+        "label": "US moves military aircraft from UK airbase after reported Iran threat"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "HbzCNbOCcW4",
+      "title": "US moves military aircraft from UK airbase after reported Iran threat",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-lifts-2000km-limit-on-2026-11-10",
+    "date": "2026-11-10",
+    "title": "Iran lifts 2,000km limit on its ballistic missiles: What that means",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNV1JBQXh0T1UybDBQUDF1ak5UajRqVWdaUjVHY2F0YWtWYlAwLUdFNm16alI4d2dTWG9jNHhBNzVZZUxDemVzSzZKMUNqN2dnM2JVYy1uQm5FQ2dZVkNMM2dINEhFN2hCeWhFaHpaOHgyTVhBd2hvMHI3Z2JIaFh4bnBfajlzVXNKbFpxZWN2SUFYTjFQcWtnZ216OE9mOHgxN2taSGhhWjZzd1nSAbABQVVfeXFMTVRPdWIwbnlsVHJ4aHBmOTNyWFNTbzhmajNIZXFSaUZlQWNneXQ1ZUczTXlMM3NHYXRNaXg3c2E1UEVxNjJwVm9LU2o5TnNTV2pISE9EVC1WU0w5OFdwUTJBRjJXaERTOEQ2SDFVYnhtTDhvUVV0NlBraXFwM1JXeUNNTFhaRTNRTVdKTnVFUWtYVkROelVIZ3U5R2hSSm5WQUVYTFBFSUNYdHJzY3kwZnY?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-10T22:57:37.524Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=jEg2gvAgTeA",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "jEg2gvAgTeA",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-newlyelected-adam-hamawy-on-us-2026-11-10",
+    "date": "2026-11-10",
+    "title": "Newly-elected Adam Hamawy on US support for Israel, war with Iran",
+    "description": "Via CNN. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPbmxEYzZqYkk2bjVicFdXUjkwT09vOHNLNkxoTjRHX3V3ZW1Mb2ZieHd0cFQ4U3MxODhxZTJJdXpKRF95QWFYNURWbEEyTEJ6cS1FbVoyOUxRMlcxOE1OQUlPMUZSRTB4WmM4M3NRTGZqZjVCeEN2M1U4d1Q5WjdSdXR6VXFOVERFNGpKN1BmRHFiRzFOWldfRA?oc=5",
+    "source": "CNN",
+    "fetchedAt": "2026-11-10T22:57:38.324Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=6nto54MsVaw",
+        "label": "Could Pete Hegseth be impeached over the Iran war? | Reuters World News"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "6nto54MsVaw",
+      "title": "Could Pete Hegseth be impeached over the Iran war? | Reuters World News",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-newly-elected-nj-dem-rep-2026-11-10",
+    "date": "2026-11-10",
+    "title": "Newly elected NJ Dem Rep. Adam Hamawy refuses to call Iran an adversary, blames the US and Israel for war",
+    "description": "Via New York Post. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVmpuN21hcmlsc18ydG1ocl9aYmQ0N0tORVpybDZWeGNsdGc3M2g0Z3FtWVVHS1ZTbFNtZU9oenJKUTFzbGVUUjdCRzZ6dkU4Q3hIX3R5TnNaVHpYR0FMc2dXeFRaNHk3NEhVbVQ5TjdwN0tLbWo5NkRyVXJjbGxVaGpQT0x2VWRVYnEtaXBialpxTk84VzBqa2MtNTNTeDl4cVM4T0hFV1F1bmp5aGZoWkNQS0dIM0dRYkxqSXpaV25zdHl1ZUtrSEpyS3paY2dOS1BaNEVn?oc=5",
+    "source": "New York Post",
+    "fetchedAt": "2026-11-10T22:57:39.126Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=6nto54MsVaw",
+        "label": "Could Pete Hegseth be impeached over the Iran war? | Reuters World News"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "6nto54MsVaw",
+      "title": "Could Pete Hegseth be impeached over the Iran war? | Reuters World News",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-brink-or-blink-2026-11-10",
+    "date": "2026-11-10",
+    "title": "Iran : Brink or Blink",
+    "description": "Via TV7 Israel News. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9WV1pWejZ3aUVKVjJta2t6N3ZMRFd4UnhwUXl6TkM2MFNEVEZLNjRmeUUtblFfR2RMRzByS0gzZUFhdE1ySEtpRHBRWTF6bUlXYUZMOXh0S053Ny13N2g4ZHRNQ2ZiaVo3dVFkTVVsUGlOc0xqR240dlFB?oc=5",
+    "source": "TV7 Israel News",
+    "fetchedAt": "2026-11-10T22:57:41.570Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=0yn148sPs_o",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "0yn148sPs_o",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "draft"
+  },
+  {
+    "id": "auto-iran-producing-50-missiles-per-2026-11-10",
+    "date": "2026-11-10",
+    "title": "Iran Producing 50 Missiles Per Month Despite Crippled Industry",
+    "description": "Via Bloomberg.com. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQeG16Ti1xelBVR2gzWUYzYV9qQzVoVWZ3NGxOV05NSXN6blZBQWEzdXV3bjlWeXJXeVdwRHdTejJ0WmF3UFdCMDVaNl9UYjhobFB3Znl1a1RGV1JZdWhaQ2Iyc1l3YURwRDhiSmpLcWhNeVBBUDVrN3J6M0Z1Wkw1aUEtMWp3RURSdm80aDd3TFgtaHRTM2E2QzVJVlhDQUdqNXVIZVVYUnM5X0E5S3dNOU5TWQ?oc=5",
+    "source": "Bloomberg.com",
+    "fetchedAt": "2026-11-10T22:57:43.821Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=npOkDeN_SKM",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "npOkDeN_SKM",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-israeli-president-warns-against-repeat-2026-11-10",
+    "date": "2026-11-10",
+    "title": "Israeli president warns against repeat election in new Knesset session",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQ05KU3lYWWRsMzZ0dVpDa2VWVnJtWTVKbE9FTVFQN0dOdnBXNmQxeFpPamN1cTZwSHJrLTFQVm1pRVFHTEdaN29ZZTVteVctUFFEck1rbTFNRnFTWDBaQjlkQ0k1N19uOUVhZGpHUS1zSmNYTHdlbkh4b1VZQmtEU3VFLXBhdlVYQ2tEcmExdG8yZFZPWDVsNWxEcWVpX3lxM2t4WE5pZmlWV3VOUFlKejV30gG3AUFVX3lxTFBaTUpoSXhlcFhldWFqZ2haWTY5RE5Rd2ZaTXBKTU5UbldsWVlFR2NURm5KRnNqSFh6TUphdDhuSjRBYWlZdTFuX1UzNnc5TDZrYjdkOWhGRlRYN2l5V3FPY1VNRFRlSFZoYmN5ZzZOb0tfN1VlMGctNWp0clNxS2hYWGNKU284Y3BMczlwZVcydUVncHVoUlVrblBBZHRuLWI1VEM5MUprTFpGaFUxSVlSb2NRcnZGWQ?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-10T22:57:45.890Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=WVV7mYGdhXc",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "WVV7mYGdhXc",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 31.768,
+    "lng": 34.851,
+    "zoom": 7,
     "casualties": null,
     "status": "published"
   }
