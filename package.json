@@ -70,7 +70,7 @@
     "nuqs": "^2.10.2",
     "postcss": "8.5.31",
     "react": "^19.3.1",
-    "react-day-picker": "^8.10.1",
+    "react-day-picker": "^10.0.2",
     "react-dom": "^19.3.1",
     "react-hook-form": "^7.90.0",
     "recharts": "^2.15.1",
