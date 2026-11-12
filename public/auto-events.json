@@ -9268,6 +9268,23 @@
     ]
   },
   {
+    "id": "auto-indictment-sheds-light-on-alleged-2026-11-11",
+    "date": "2026-11-11",
+    "title": "Indictment sheds light on alleged Iran-backed plots across U.S. and Europe",
+    "category": "escalation",
+    "description": "Via PBS. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQS0stTGdjOGtJd1cyVXJZcG1sSkM0MUh6RzhncmRyZkU1OEs0azhxdGdsckZaVUZkQkY0d20wR0ZwUmVZODBwRWpoT1dZWk1YRElpNlNqRnc4cnUwWUM5amZybXlwTnFnMXdvUjdRMk9OUVg2eVFtR0VjWW0zZ1lmQjdaZEFWZU90SlJJYVNRYlZ6QmJKVkhTVkd1SzlHWkJZVC1tWXhjZEtmcWM?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=PXybIxK8uFI",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "auto-iran-war-live-tehran-warns-2026-11-12",
     "date": "2026-11-12",
     "title": "Iran war live: Tehran warns of wider retaliation; Israel kills in Gaza",
@@ -9281,6 +9298,108 @@
         "type": "youtube",
         "url": "https://www.youtube.com/watch?v=S8sEl5AZXoU",
         "label": "Tehran vows to strike US bases in Europe if they are used to attack Iran | BBC News"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-live-iran-says-2026-11-12",
+    "date": "2026-11-12",
+    "title": "Iran war live: Iran says reply to a US attack to be ’10 times more severe’",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNS2phdFZaNlJPanNFWWhnT3k1YUo3TEVYMGNsX0Y2RlpMc2hiSjNtZk1IamxKLV82NEN0QUwzTFBJSDJsTkhrWGR2bW8wSkFFYzYyN3hEYzFOakRxbE54TmdmaG1jV3d5LTBDNEFUeGJZTGNjVXVnek5fQWVKMzBTQ0NKeU9Rdkw1eFNiRzVIdF9aalRKYUhSRURFX3VYNHM0X3BTbzZ4QTBPV2xfdjZ0X0JyWnIzMlhKQXQw0gHAAUFVX3lxTE0tNl9ERkJVWm5peERxTmJKRGtNeFdIQlQtdFE0SWNQRFBfQm55cEJjTDFMeWV5YnNkVm1KQ0tFRjA2cGNqVGI2QTYyZ2twOUxyWldILUtpWDJ6VE5VSVlMbTdCUTRCY0pranR2NV9xVFJVRTJqcHdrajZqRUtJbFVBMTlZV29qUWJPV3JONmZia191TDk2WWVXUThCSzd1VUFsdTIyV3ltaVJGS1lvVUx1dWpTMWNGakhVWW42WmJvdA?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=S8sEl5AZXoU",
+        "label": "Tehran vows to strike US bases in Europe if they are used to attack Iran | BBC News"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-warns-of-expanded-retaliation-2026-11-12",
+    "date": "2026-11-12",
+    "title": "Iran warns of expanded retaliation as Israel reportedly readies to attack",
+    "category": "retaliation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaGV6WFJxeUNSa0ZVZFFWdC1mUGJUbEtIZldwSjJDWGQxUnFodTZ5akhnY010WTRLMXYtNjh5akpyczZkNjg1LXlUUnlQakJ5WmxORm9xQ0M4ck81WU9WWlhHU0x5WU1neXJrbTU0ZDRtd0JWa01TUTdRNjN1SDZfUkRObDg1dmJySkR3THpuaWh1TU94NVVMSHBJbEZ6VHNWUTlCNC1tTklKWFZlLXBvTHJWVkRtZ9IBuwFBVV95cUxPNmpBLWlIVTN1aUhtZ3R0amt5bWlCWGliV19MV2x5WExRRndaY2o0Nmc3cjVnZnFhX0Y3ZzVRMzBoQV9lZnctRWNiSlZ4LUtMV0JYVEVqaWpwSHo0STQ5Qzc0V0ZmMGlEZDBDNlduRVp2TUx1TjhURlRKYXdzS1N3Z1FKZ3ZJQjBTbGxyOW9tVHJaWXpDZkFqY0pEbVNEaDVkOUNmVmdoUFpQQTJTQnktZU94d3JMVm1iNFVR?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=S8sEl5AZXoU",
+        "label": "Tehran vows to strike US bases in Europe if they are used to attack Iran | BBC News"
+      }
+    ]
+  },
+  {
+    "id": "auto-can-a-new-us-congress-2026-11-12",
+    "date": "2026-11-12",
+    "title": "Can a new US Congress mean an end to the Iran war?",
+    "category": "escalation",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdmRaejBnMHp1QkhibDEzU1hQLVhZZWlaeXV2d1dGcHF5OU1CbGUzTWtVYXpLT1hFcUh5SzVJbWg2eHZpRy1oU1IxZzByY2hhQmpyTDNHTUh4U1NVVE1DWktWMlU1ZUMtNy1xZk1TN3dXVzBXY1dXVDV2aFhuNURkTWpteWpUblljY3p0QjN3?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=I0QhgWNx6k4",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-the-us-midterm-results-could-2026-11-12",
+    "date": "2026-11-12",
+    "title": "The US midterm results could have real consequences for the war in Iran. Could it end soon?",
+    "category": "escalation",
+    "description": "Via DW.com. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRGd3QWg0dm9aQlN2bVdRbFpIVmg0dklaeG1ZX1B3cUE2M2VvRVItOHpBUWlTYWhoZ3NYT3FGcjlaYkFsTkNQR2MzeUJwSmVLR1FnOWJxNE5LQ0Fwak50Q1p3NUcyYk5Tc2d3TjN0Y1ZncS1HWHhHS2JVekx6dV9oMWZETmp3alk0eDJmWlg5ONIBjwFBVV95cUxQWGRSWUFUREZZaFNzTGJqM25NUDJwSFhEcU8xaGJxUGpEdEJ6aWtyemhPMFI3VVZxc3BTa1FBZUVEdzBhSGlNaE00NWJnZE9Daks0N192NVdLczN5NmVXRm5ibGpvSWE1cktfaXN0aXBSdzJydXBwTWgwbjREWGtOQ0xMMmFLa0ZXTUdiUXFEMA?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=U20jB83cWk4",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-no-war-no-peace-can-2026-11-12",
+    "date": "2026-11-12",
+    "title": "‘No war, no peace’: Can Iran break the deadlock with the US?",
+    "category": "diplomatic",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxNYXQ5Y3BkZ2ViQ1NSQ3MtWXRteVg3ZFNBTFRWWXJ0eHhWUWY0OThCNHl4c2VJaTQ3X05UTjU5WTBRYTZJUkVld1VrZTQ3TDFSUHYyOV9YckpyN2dDOFJfSF93M0g0RHJqV1MweUkwOHdCaWlSVHJvdm9jYm95d1pxM1lCUG5Ibk5lbDduclpmUUhWZ1JjUGlrVmdxSHNBUdIBowFBVV95cUxPa0dyY3drVndxNWVSczdJdmd5T1hCY19iNVViRmZVdlllMEdXUDZxbGtzRjF5T3lySXRYTjdmR01xOUFoNks2RXZtTi12YVBlOExkSWRsLTNLSlMxVWlHUnhyRnpYbEFUUnJOMHpzak9YVm44UGQ4THduVnFqbnF4c292bEF5OHdaSVhTb1Y5NmZXREN3NjBtWlhKUmRDQnpTVHB3?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=1aw3fXeyXFY",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-irans-chief-negotiator-tells-al-2026-11-12",
+    "date": "2026-11-12",
+    "title": "Iran’s chief negotiator tells Al Jazeera ‘ball in US court’",
+    "category": "diplomatic",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNkJJZmU4TDAwQTQxdU0xMGo3OVBUVTFSelVHTUY3TjlqaHY4YXlyRmVkQUkyOWhZbTVpSEo0c21GT0hZalcyOTA2RXltcU90TTlScjI0SWdoMEJqTUxXYnFLTEhIaFQxdGVic21SNzVkX2hpNHNjTWFqT0JManJWZDduWk1NWVoybDR2d3B1ek9faTFjUmZZV2lfV0Q0UGRIWGtkTdIBqgFBVV95cUxObk15OUFZOWZnWHRaZ3lDVWhXbUJ3MWhIbmlOVE1TUFY5WFQ0cXdFNVVIakpaN2VVZnhCTnYwNUxxM1l5LS1ZX1FNcTFscElfdTBpazFEMTdLSlhiRzZrTWhGaE9pZzMzTXJrcExRQUYycG9jc1BLYVBVdTdSeS1DXzZWYTcwNG5NNTlfbkV6MDJjT1VyRkw1cEFEMXFtdWpCRHdQQWx5Z0JWUQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=FPr9mJbq2T8",
+        "label": "Robot tells Al Jazeera AI is ‘too useful to disappear’ | AJ #shorts"
       }
     ]
   }
