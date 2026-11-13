@@ -9506,6 +9506,23 @@
     ]
   },
   {
+    "id": "auto-iran-war-updates-houthis-say-2026-11-12",
+    "date": "2026-11-12",
+    "title": "Iran war updates: Houthis say attacked Saudi energy, military facilities",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 15.369,
+    "lng": 44.191,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNS2phdFZaNlJPanNFWWhnT3k1YUo3TEVYMGNsX0Y2RlpMc2hiSjNtZk1IamxKLV82NEN0QUwzTFBJSDJsTkhrWGR2bW8wSkFFYzYyN3hEYzFOakRxbE54TmdmaG1jV3d5LTBDNEFUeGJZTGNjVXVnek5fQWVKMzBTQ0NKeU9Rdkw1eFNiRzVIdF9aalRKYUhSRURFX3VYNHM0X3BTbzZ4QTBPV2xfdjZ0X0JyWnIzMlhKQXQw0gHAAUFVX3lxTE0tNl9ERkJVWm5peERxTmJKRGtNeFdIQlQtdFE0SWNQRFBfQm55cEJjTDFMeWV5YnNkVm1KQ0tFRjA2cGNqVGI2QTYyZ2twOUxyWldILUtpWDJ6VE5VSVlMbTdCUTRCY0pranR2NV9xVFJVRTJqcHdrajZqRUtJbFVBMTlZV29qUWJPV3JONmZia191TDk2WWVXUThCSzd1VUFsdTIyV3ltaVJGS1lvVUx1dWpTMWNGakhVWW42WmJvdA?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=F29ox9SWZiE",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "auto-iran-war-live-trump-says-2026-11-13",
     "date": "2026-11-13",
     "title": "Iran war live: Trump says Gulf allies urged pause in Iran strikes",
@@ -9535,6 +9552,109 @@
       {
         "type": "youtube",
         "url": "https://www.youtube.com/watch?v=FomjFxKGvRI",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-live-us-says-2026-11-13",
+    "date": "2026-11-13",
+    "title": "Iran war live: US says shot down 2 drones over Bahrain, denies radar strike",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 26.228,
+    "lng": 50.586,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNeVhIczJQNi1UUS15LTAydjVtUVdrRE1VZE9JeE9xWnA2QkQ1cEhHVDJTd1ZGOWVUOGJxcU1IVUdrSU13TlFURnhkRlNBN1R6bncwNkU5cEx5c1NpT0JUOVNvaDU2c29HTm9ZbHhYRkxEZXRVNmRudEM3djVLSW1kanFBVkFuZUUxc2x6S2RHQndVOGdKQmtCOW51dmw4dG5DaVFNUkNlcUZ3QWJCcTlMd0wyWWNFTW05c0NXb2FVRjNlUdIBxwFBVV95cUxQUU9BNk5pckJ5OXRnem1acFdCcl96QjVRMDFrb3h2V3hfdFd2QjNyNTN6VDBrZlRrcWlrZFFsUnlDR2J6Qm1mNDZVU1JfUFhTQ0NELUQwWlhXa09jbmlzS3BFNUE4a3NySHdCRER2bmctbjZUTW9leFNXMG45WjVlQzdJY050d2tsSGpaZ080ZmZIMEhqZDFzMDNwd0w1emQ2b1Rmelc1REFuLVBUM3gxU3ZiTWVnYXJDLXdROWZLRTlCdFdoblBJ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=AvKp3hrr7N4",
+        "label": "Iran targets US Asset in Bahrain: Revolutionary guard says it destroyed radar system"
+      }
+    ]
+  },
+  {
+    "id": "auto-scoop-israeli-spy-chief-in-2026-11-13",
+    "date": "2026-11-13",
+    "title": "Scoop: Israeli spy chief in D.C. as Netanyahu presses Trump to resume war",
+    "category": "escalation",
+    "description": "Via Axios. Auto-detected by headline monitor.",
+    "lat": 31.768,
+    "lng": 34.851,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPc0RsNzRSR3JhRUdIYkdjZ0VGRFdfeGJkUDd6NzRmV1FWMVRtSGtHYlFCQTZoRElpN2pBcmF6OXlQblJDaXlIeElKRjRXaXdvSkZNNGJTc21GaTdDTzRnUlJJcXVRZWx3N1pRYkhTSnZTNHVmc3VmQ19PdEttQ1FLV0t3dzd5VG1z?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=iSiFX0r5yVs",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-iranophobia-netanyahus-bid-to-transform-2026-11-13",
+    "date": "2026-11-13",
+    "title": "Iranophobia: Netanyahu’s bid to transform fear into political survival",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWWUwQ21ocVdEWHpGUlltWmpJa0Q2ZW5IWFM4bko2SkZiTlhGZEttd3V0bmpHTkZ0WDNLODJleG5RV0JHWDkxN2tvZjFxRy1US2FlUk9vNExqOVFYQVRXd2hLQnVaWWotYnBEa2JreW1pSFplQVk5LWJFekhKeTcxWkd1TjRfM0ZORklJaEliUG1wQzd5MFlabW5hS2VzU2hNVlJjazNRWWNuNEdwUHJr0gG0AUFVX3lxTFBkV29GcTRUVnFTcHE1Vi1pSVFEVllzeGNmdVNwSkJnN2Z0akMwOWFvNEMtTHVzUVlEMGdlR0ZtMkpWeTMtYTJTWTVwTG51U2FZNUZwb2xIRjRpb2RPN1dkQmQtSXU4b09laGxacVNSQ2ljZEM4RGdVVXotTUVZVHZpcklTa0c4UjdyalhtNkpUWEs4VDlFSWJxTHJpZ2VINVNTQmIxZHpVbGtHVGJCMDF3UFc1Qg?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=8SjLQzJXzQ4",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-threatens-unlimited-response-over-2026-11-13",
+    "date": "2026-11-13",
+    "title": "Iran threatens unlimited response over Strait of Hormuz after US attack",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQY09mNTcwMnZZUWxoenhybVJxLVEzSzlkbTJRLWQyR19pN2tPVXpfbGZ1RlFCMnZWaUxVY0NJY3hYR2ZIaVJMYnh1NUNMRHlINTRFUEZIOHphaktBLVM3TVhITU9IeUcwa1NRSkRlalB3T3ZYX01tdGc1Zzg5dnF0a25VVUlDa0t5NXlfei1jTUdGSkdz0gGaAUFVX3lxTE5uNmpHeTRzT1VPTkpWdGFqdV9HYmtwd3RUODczUDFMSDBrXzhPUGI2ZGFzaXlXcHYzckZwVnNCV1FzWlB3STlYT2RCUnpsNFhpVkNpV0JDOXdlQm9oZi1zZUZVU1lxUlp1YXRDUFV5cnA0VFBkazNJcGtOZ0Y0bldCTGtlTEVhb0J2NkNXcDVsQ1Jobm9DZDRBa2c?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=nz4H8Hl373M",
+        "label": "Iran threatens unlimited response over Strait of Hormuz after US attack | #AJ shorts"
+      }
+    ]
+  },
+  {
+    "id": "auto-how-israel-lost-america-2026-11-13",
+    "date": "2026-11-13",
+    "title": "How Israel lost America",
+    "category": "escalation",
+    "description": "Via Financial Times. Auto-detected by headline monitor.",
+    "lat": 31.768,
+    "lng": 34.851,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUnBVU3NLb0UyZHlmeWR1ci1YTjNqRGg5Tm5zNXJ3X0U0Y1hjcjVDRUJ0VVJad2FWNThKbjVvaGloUlgwQkFoeTFFcldDekUtSTNSY0xKQlRHYW9sbG91Wk1UOXdEWHFGYnVTMXktbUlNdHBpUHFEblFicURaUlpXcllSQU0?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=FMv00OHtwFw",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-report-centcom-denies-israeli-reports-2026-11-13",
+    "date": "2026-11-13",
+    "title": "Report: Centcom denies Israeli reports of possible renewed war on Iran",
+    "category": "escalation",
+    "description": "Via Middle East Eye. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVFlHT08wRElKRmoxTkwzdWdQZFVmMHJGNHJ3NHhiazJYSzNLSFAyYm9sTUNDWmVIUTNybm92ZmNhb2sxTUJGWHhkYzZmWTFlRnhqX0J0TVVwRFdIb1VpS0ZQcUI2ZWl0N2daSlNyZi1pQk5CM0hSVkh2LUFtZ0xDUlBKX3NqTVp3dzljTzhKVkNDQl9jN0JWUy1NVkRvQ0VQRlZqb0pQRGlLNEZ2NmxTcExJNjdaMUhqcHEzQw?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=1VKsVxze4lg",
         "label": ""
       }
     ]
