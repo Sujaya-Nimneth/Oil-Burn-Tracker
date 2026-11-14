@@ -5866,6 +5866,23 @@
     ]
   },
   {
+    "id": "auto-trump-says-war-in-iran-2026-11-01",
+    "date": "2026-11-01",
+    "title": "Trump says war in Iran will be put away very soon \"one way or the other\"",
+    "category": "escalation",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQOU84MUlJV2w4ZEtpaS1ndkJieWpObTZJUzloRl8yUV9DSE54RFkyTklLUm1RSzVwUVNzMWQtNWRMc0RpLTZJQVRieS1qbVNLRGpRbnpYa3NxLUczeDdYdzBQUEtJTVg0NUlEbHZOaGJfQ2plTHFvTmZ0d2ZkMFo2aXNGWXY4SzNVRncxYUMwWVk?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=2OtnYo9yjBI",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "auto-iran-warns-renewed-war-with-2026-11-02",
     "date": "2026-11-02",
     "title": "Iran warns renewed war with US could outlast previous conflict",
@@ -9807,5 +9824,83 @@
     "lat": 35.689,
     "lng": 51.389,
     "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQd1Zrd0tycVMwaXVNemFZOXNxNE56czc3bjFncFRmZGZpV0lGYXNEX0gzUmdxNGJSb2VVT1J6LU1sUGxOSWZkcmFFLWJSUWpCV0VCZzFIM244M2ZST2VHV2FPQjJ6MUNxWkZWMzVJa2ZCYmtwT1p3U1h6Zk5UZHBVWm9DQjg1YXpJOFk4U1huWmRxWnk5U0hJZFpSZ2ZNLTEzVlRJS1ZUMkpWMGVYMzBuc3RPWkg0Z9IBuwFBVV95cUxOR0F1VEVKdGdzaU04QUh1NlB1RE5DTlBXZjREQWhhaVl3SkVrMVVJTXdYSUI1dnFLMWxibVlHMEo3ZmdZVmZnVHItRnp2N20wb2ZlR1hoaFVWcGpIbkRmRU1acFpyaUZDN3Rjc1JTOGtyUjQwYmhVcGlGbjlfZGxjaVVnbWtES3dSaEQtekFHQktFRmEyT2Rta2JwTWllOGdJd004a3FsdC16V1dwYy11bzhXMllKQ1RwS2Y4?oc=5"
+  },
+  {
+    "id": "auto-iran-war-updates-qatar-turkiye-2026-11-13",
+    "date": "2026-11-13",
+    "title": "Iran war updates: Qatar, Turkiye ink defence deal; fighting rages in Yemen",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 15.369,
+    "lng": 44.191,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNeVhIczJQNi1UUS15LTAydjVtUVdrRE1VZE9JeE9xWnA2QkQ1cEhHVDJTd1ZGOWVUOGJxcU1IVUdrSU13TlFURnhkRlNBN1R6bncwNkU5cEx5c1NpT0JUOVNvaDU2c29HTm9ZbHhYRkxEZXRVNmRudEM3djVLSW1kanFBVkFuZUUxc2x6S2RHQndVOGdKQmtCOW51dmw4dG5DaVFNUkNlcUZ3QWJCcTlMd0wyWWNFTW05c0NXb2FVRjNlUdIBxwFBVV95cUxQUU9BNk5pckJ5OXRnem1acFdCcl96QjVRMDFrb3h2V3hfdFd2QjNyNTN6VDBrZlRrcWlrZFFsUnlDR2J6Qm1mNDZVU1JfUFhTQ0NELUQwWlhXa09jbmlzS3BFNUE4a3NySHdCRER2bmctbjZUTW9leFNXMG45WjVlQzdJY050d2tsSGpaZ080ZmZIMEhqZDFzMDNwd0w1emQ2b1Rmelc1REFuLVBUM3gxU3ZiTWVnYXJDLXdROWZLRTlCdFdoblBJ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=k_Bvlg0aFWo",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-report-zamir-alone-as-netanyahu-2026-11-13",
+    "date": "2026-11-13",
+    "title": "Report: Zamir alone as Netanyahu and his appointees all back immediate resumption of Iran war",
+    "category": "escalation",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQbVB6UmdreG80dEQ4VE5oaWlpemRTTWxYN0p3Qm55em5nSjFwUndlSzFhWjFnYXMzbThZYUtGZlRCUHhpMWR6OWN1S1ZwS0lDT1dxQjVyVEI3bjEtemlvNUlRSTVOOVYxR0RtdDFoMUl5V0xNZWR3WnZUMGN1NVpRR0pGbjIySnBqQ0tEVHE1WTljWlBMVlN4WUlKS0tEVWRjZmNobThHQ0Q2UWFydTdxNnh1SVZvQm9sVDhhMXRYZUJrQWk2NWtsRGJ0TkdjcWx4djVPTg?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=7i2fIVOroAQ",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-report-mossad-chief-in-us-2026-11-13",
+    "date": "2026-11-13",
+    "title": "Report: Mossad chief in US for talks on Iran; Netanyahu didn’t update Eisenkot on visit",
+    "category": "diplomatic",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQaV9VSkxSWUVFcEUzdC1zV19zSjZtUWRWSmdEVlN0QzBCZV81TWpmN2plUkNHbEF5VHpGcnRTOG9DMGxwbGlYaWQ4am8zVnFURzRxdkdaeTQ5d241eldNdDBzbkVYTTlmMHZlYU9RYTBfUlZRZkVudGhkb2lDUllRTW5TcEZoM3J6SU53ZWtiQ21SZjBCVjJCcXVwX1NxNlVYNm1tU1lyWWxRQWcwTVh0MU1IajdLZ9IBuwFBVV95cUxQdC1DSVBuZllWd1FuNFNpTk1TQjcyNXV5cUt3S1BmMlNMRkRDNFBrdDFRYmhDelVqNmIybUw4MkFaQUpRMVBYSGY4bnRDYTVmdXdzQ2xCQWRfdzZCTmJ6LUlwYjhLbVUzRDg5RTRVM3FRZmZEc1diVUFNWTJWVER3ZW1hdy1WOEpUNzR0TGJkdTl0OHpobVllamxidzdKZlBhQnJZeVNfZnhSNlp5T0RRazRkRHFsT2xPUHJR?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=OOzfWIL-UB0",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-will-democrats-try-to-strip-2026-11-13",
+    "date": "2026-11-13",
+    "title": "Will Democrats try to strip US-Israel initiative from Pentagon funding?",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 31.768,
+    "lng": 34.851,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOQlpudTdoUl9kSVNiTF9ITy1TUS1jLWtvMVVPN3lrQl9zY3FacExZeGhwUHZPWFpMdUlsZ1c0TW1zb1Z6NDZjWXptcWhrajNZbGxtQTY4ZzR1TkxEcUF0cHNsLW80ejhMX0dZVWl3Y1pyTzN2cHBRQlBKMlAwa3o4TkN2NmFFN3k4Vy0xNXZhQ1JsRk56V0pRQUswOUc0c2dHVTY2c1dLMjdnZlVkWkYybkV30gG3AUFVX3lxTE5adFZ4YndiWjM5NC1SV3prQVJ4b2RqX0d5Skg0amx2NUI0V2VVMXllTlo2Yzk1Qk1rNkRSaEVCb0lxMlJIend3SElJUFo2QWRZdzVaRE5lQ3ZEaVdFMUdhNUUxZ1VGbzhSaUpveTRKS3ZzSFdRcmlKQ0ZVXzF1NDhMSkNFN0pPVVJieWVxZXFVSFJwdXdoNXY1V005NnJVU3B1Wk1IR3ZJUmxzcFNhdXp1cjVpUXJvSQ?oc=5"
+  },
+  {
+    "id": "auto-iran-war-live-tehran-says-2026-11-14",
+    "date": "2026-11-14",
+    "title": "Iran war live: Tehran says tanker hit naval mine, caught fire",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTk1OSExWR3RnVjVaQTRhcmd6WDRva3IzT3NiZWd6QlpLSllUbmZSUm5VZ1dyRHJna3AyVWhBem1SU3F0S1p1UW93WjMyM19uQzlwSHFjYzd0VjBIV21GaTBWaUx6MjhXU1VGN2hMX2tEVXo1amk0YXVyRTA4cnlXbzMyOUVVNnZkNGFfYlpSRW1Ia2d3MjkzTUZKam5qUWF6eE4xcGFaU2p3V0xvVXFsSFIzSHNzMVNnbWFnZdIBwgFBVV95cUxQVXJvM011WXlEMmp6dkxhcGFjc01ZSTlZaTlVdnNOWTY2NFdiU1F0LTJ6ZUFwQ1NpdTRhemlnVmp0MU1xaXVyS2c1S3lTWHhZZ1VxTk8xc0txSlZRbXdsOV90N0JjVUVDNzd6cWlTRU5JQS1FWFNyRWk1RTNiZmpkOERNd1c5NHZSNzBtSmstNGNobDdrU2pZRHdybnhrMV9TOXN2Yld0eGRrZUkzN012Y2Y2dERuYjZVSjR4TmxzSzg0Zw?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=OUiIQXpkdHE",
+        "label": ""
+      }
+    ]
   }
 ]
