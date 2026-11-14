@@ -852,5 +852,19 @@
     "label": "Day 258 economic drag — energy & maritime war-risk premium",
     "amountBillions": 0.4,
     "source": "[OBT model: oil risk premium + shipping rerouting drag]"
+  },
+  {
+    "date": "2026-11-14",
+    "category": "weapons",
+    "label": "Day 259 ongoing operations (~$0.2B/day)",
+    "amountBillions": 0.2,
+    "source": "Pentagon / CENTCOM operational tempo estimate"
+  },
+  {
+    "date": "2026-11-14",
+    "category": "economic",
+    "label": "Day 259 economic drag — energy & maritime war-risk premium",
+    "amountBillions": 0.4,
+    "source": "[OBT model: oil risk premium + shipping rerouting drag]"
   }
 ]
