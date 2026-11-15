@@ -85,20 +85,30 @@ function InfobarProvider({
 }) {
   const isMobile = useIsMobile();
   const [openMobile, setOpenMobile] = React.useState(false);
-  const [content, setContent] = React.useState<InfobarContent | null>(null);
+  const [rawContent, setRawContent] = React.useState<InfobarContent | null>(
+    null
+  );
   const [contentPathname, setContentPathname] = React.useState<string | null>(
     null
   );
-  const [isPathnameChanging, setIsPathnameChanging] = React.useState(false);
   const pathname = usePathname();
+  const isStaleContent =
+    contentPathname !== null && contentPathname !== pathname;
+  const content = isStaleContent ? null : rawContent;
+  const isPathnameChanging = isStaleContent;
 
   // This is the internal state of the infobar.
   // We use openProp and setOpenProp for control from outside the component.
   const [_open, _setOpen] = React.useState(defaultOpen);
-  const open = openProp ?? _open;
+  const open = isStaleContent ? false : (openProp ?? _open);
   const setOpen = React.useCallback(
     (value: boolean | ((value: boolean) => boolean)) => {
       const openState = typeof value === 'function' ? value(open) : value;
+
+      if (isStaleContent) {
+        setRawContent(null);
+        setContentPathname(null);
+      }
 
       // On mobile, also update the mobile state for the Sheet component
       if (isMobile) {
@@ -115,7 +125,7 @@ function InfobarProvider({
       // This sets the cookie to keep the infobar state.
       // document.cookie = `${INFOBAR_COOKIE_NAME}=${openState}; path=/; max-age=${INFOBAR_COOKIE_MAX_AGE}`;
     },
-    [setOpenProp, open, isMobile]
+    [setOpenProp, open, isMobile, isStaleContent]
   );
 
   // Helper to toggle the infobar.
@@ -139,26 +149,10 @@ function InfobarProvider({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [toggleInfobar]);
 
-  // Clear content and close infobar when pathname changes
-  React.useEffect(() => {
-    // If we're on a different page than where content was set, clear it
-    if (contentPathname !== null && contentPathname !== pathname) {
-      setIsPathnameChanging(true);
-      setContent(null);
-      setContentPathname(null);
-      setOpen(false);
-
-      // Reset the flag after transition would complete (200ms)
-      setTimeout(() => {
-        setIsPathnameChanging(false);
-      }, 200);
-    }
-  }, [pathname, contentPathname]);
-
   // Update setContent to also track pathname
   const handleSetContent = React.useCallback(
     (newContent: InfobarContent | null) => {
-      setContent(newContent);
+      setRawContent(newContent);
       setContentPathname(newContent ? pathname : null);
     },
     [pathname]
@@ -683,10 +677,15 @@ function InfobarMenuSkeleton({
 }: React.ComponentProps<'div'> & {
   showIcon?: boolean;
 }) {
-  // Random width between 50 to 90%.
+  // Deterministic width between 50 to 89% per instance.
+  const skeletonId = React.useId();
   const width = React.useMemo(() => {
-    return `${Math.floor(Math.random() * 40) + 50}%`;
-  }, []);
+    let hash = 0;
+    for (let i = 0; i < skeletonId.length; i++) {
+      hash = (hash * 31 + skeletonId.charCodeAt(i)) >>> 0;
+    }
+    return `${(hash % 40) + 50}%`;
+  }, [skeletonId]);
 
   return (
     <div
