@@ -143,6 +143,7 @@ describe('event ids and geocoding', () => {
 describe('trusted source gate', () => {
   it('accepts major outlets by source or fallback title', () => {
     expect(isTrustedSource('Reuters', 'anything')).toBe(true);
+    expect(isTrustedSource('The Guardian', 'oil update')).toBe(true);
     expect(isTrustedSource('WSJ', 'oil update')).toBe(true);
     expect(isTrustedSource('Haaretz', 'briefing')).toBe(true);
     expect(isTrustedSource('Anadolu Ajansı', 'dispatch')).toBe(true);
@@ -151,6 +152,7 @@ describe('trusted source gate', () => {
 
   it('rejects unknown sources even if headline quotes a trusted outlet', () => {
     expect(isTrustedSource('Random Blog', 'a story')).toBe(false);
+    expect(isTrustedSource('The Sunday Guardian', 'report')).toBe(false);
     expect(isTrustedSource('Random Blog', 'Reuters reports oil spike')).toBe(
       false
     );

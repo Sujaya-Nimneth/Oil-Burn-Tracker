@@ -34,7 +34,7 @@ const SHOULD_PUBLISH =
 const PROMOTE_DRAFTS = PROMOTE_ONLY || ARGS.has('--promote-drafts');
 
 const TRUSTED_SOURCE_PATTERN =
-  /reuters|associated press|\bap\b|ap news|bbc|al jazeera|the guardian|guardian|cnn|france 24|bloomberg|cnbc|new york times|washington post|wall street journal|\bwsj\b|un news|pbs|npr|financial times|economist|times of israel|haaretz|jerusalem post|middle east eye|anadolu|le monde|al-monitor|al monitor|politico|foreign policy|axios|cbs news|abc news|nbc news|sky news|dw\.com|deutsche welle|euronews/i;
+  /reuters|associated press|\bap\b|ap news|bbc|al jazeera|\bthe guardian\b|guardian\.co\.uk|cnn|france 24|bloomberg|cnbc|new york times|washington post|wall street journal|\bwsj\b|un news|pbs|npr|financial times|economist|times of israel|haaretz|jerusalem post|middle east eye|anadolu|le monde|al-monitor|al monitor|politico|foreign policy|axios|cbs news|abc news|nbc news|sky news|dw\.com|deutsche welle|euronews/i;
 
 // ── Search queries for Google News RSS ──
 const NEWS_QUERIES = [
