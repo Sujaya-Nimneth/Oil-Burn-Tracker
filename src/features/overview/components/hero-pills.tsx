@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
+import Link from 'next/link';
 import { useFireStore } from '@/stores/fire-store';
 import { useEventsStore } from '@/stores/events-store';
 import {
@@ -89,7 +90,7 @@ export default function HeroPills() {
       <div className='h-7 w-px shrink-0 bg-gray-300 dark:bg-zinc-800' />
 
       {/* Human cost — title carries the documented/estimated split */}
-      <a
+      <Link
         href='/dashboard/lost'
         className='group flex min-w-0 items-center gap-1.5'
         title={`${casualties.documentedKilled.toLocaleString()} documented · ${casualties.estimatedKilled.toLocaleString()} estimated (OBT model)`}
@@ -98,7 +99,7 @@ export default function HeroPills() {
         <span className='text-base leading-none font-black text-red-600 tabular-nums underline decoration-red-500/60 decoration-2 underline-offset-2 transition-colors group-hover:decoration-red-400 md:text-lg dark:text-red-500'>
           {casualties.totalKilled.toLocaleString()}+ people
         </span>
-      </a>
+      </Link>
     </div>
   );
 }

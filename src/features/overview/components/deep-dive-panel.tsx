@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import Link from 'next/link';
 import { useFireStore } from '@/stores/fire-store';
 import { useEventsStore } from '@/stores/events-store';
 import {
@@ -1932,7 +1933,7 @@ export default function DeepDivePanel({
         />
 
         {/* Years of life lost — the unifying number */}
-        <a
+        <Link
           href='/dashboard/lost'
           className='block transition-opacity hover:opacity-80'
         >
@@ -1956,7 +1957,7 @@ export default function DeepDivePanel({
             {casualties.documentedKilled.toLocaleString()} documented ·{' '}
             {casualties.estimatedKilled.toLocaleString()} estimated (OBT model)
           </div>
-        </a>
+        </Link>
 
         {/* Role-based loss grid — no sides, just people */}
         <div className='mt-4 grid grid-cols-2 gap-2'>
@@ -1993,12 +1994,12 @@ export default function DeepDivePanel({
           })}
         </div>
 
-        <a
+        <Link
           href='/dashboard/lost'
           className='mt-4 flex w-full items-center justify-center gap-2 rounded-xl border border-zinc-800 bg-zinc-900 p-3 text-sm font-bold text-zinc-300 transition-colors hover:bg-zinc-800 hover:text-white'
         >
           Scroll through every one →
-        </a>
+        </Link>
       </div>
 
       {/* ── YOUR HOUSEHOLD COST ── */}
