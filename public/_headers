@@ -1,0 +1,14 @@
+/auto-events.json
+  Cache-Control: public, max-age=60, must-revalidate
+
+/auto-events-archive.json
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/auto-daily-stats.json
+  Cache-Control: public, max-age=60, must-revalidate
+
+/firms-latest.json
+  Cache-Control: public, max-age=60, must-revalidate
+
+/casualty-anchors.json
+  Cache-Control: public, max-age=300, must-revalidate

@@ -207,6 +207,17 @@ Set in **Settings → Environment variables**:
 | --------------- | ----------------------- |
 | `FIRMS_MAP_KEY` | Your NASA FIRMS API key |
 
+### GitHub Actions Auto-Deploy / Force Update (Optional)
+
+If Cloudflare's GitHub App integration is paused or disabled, [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) can build and deploy `out/` + `functions/` directly via Wrangler on pushes to `main`, after scheduled data updates, or on demand via **Actions → Deploy to Cloudflare Pages → Run workflow**.
+
+Set these two **GitHub Repository Secrets** to enable it (`Settings → Secrets and variables → Actions`):
+
+| Secret                  | Value                                           |
+| ----------------------- | ----------------------------------------------- |
+| `CLOUDFLARE_API_TOKEN`  | Cloudflare API token with Cloudflare Pages edit |
+| `CLOUDFLARE_ACCOUNT_ID` | Your Cloudflare Account ID                      |
+
 ### Common Deploy Failures
 
 | Symptom                        | Fix                                                                           |
