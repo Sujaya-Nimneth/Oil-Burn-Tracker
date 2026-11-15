@@ -1,24 +1,46 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useSyncExternalStore } from 'react';
 import { IconX } from '@tabler/icons-react';
 
 const STORAGE_KEY = 'obt-agreement-v1';
+const AGREEMENT_EVENT = 'obt-agreement-change';
+
+function subscribe(onStoreChange: () => void): () => void {
+  window.addEventListener('storage', onStoreChange);
+  window.addEventListener(AGREEMENT_EVENT, onStoreChange);
+  return () => {
+    window.removeEventListener('storage', onStoreChange);
+    window.removeEventListener(AGREEMENT_EVENT, onStoreChange);
+  };
+}
+
+function getSnapshot(): boolean {
+  try {
+    return !localStorage.getItem(STORAGE_KEY);
+  } catch {
+    return false;
+  }
+}
+
+function getServerSnapshot(): boolean {
+  return false;
+}
 
 export default function SiteAgreement() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const agreed = localStorage.getItem(STORAGE_KEY);
-    if (!agreed) setVisible(true);
-  }, []);
+  const visible = useSyncExternalStore(
+    subscribe,
+    getSnapshot,
+    getServerSnapshot
+  );
 
   if (!visible) return null;
 
   const dismiss = () => {
-    setVisible(false);
-    localStorage.setItem(STORAGE_KEY, '1');
+    try {
+      localStorage.setItem(STORAGE_KEY, '1');
+    } catch {}
+    window.dispatchEvent(new Event(AGREEMENT_EVENT));
   };
 
   return (
