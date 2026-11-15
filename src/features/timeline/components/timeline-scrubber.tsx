@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useEffect, useMemo } from 'react';
+import { useCallback, useEffect, useMemo } from 'react';
 import { CATEGORY_COLORS, type ConflictEvent } from '../data/conflict-events';
 import { useFireStore } from '@/stores/fire-store';
 import { useEventsStore } from '@/stores/events-store';
@@ -46,9 +46,7 @@ export default function TimelineScrubber() {
   const archiveLoaded = useEventsStore((s) => s.archiveLoaded);
   const loadArchive = useEventsStore((s) => s.loadArchive);
   const foundIndex = ALL_DAYS.indexOf(storedDate);
-  const [currentIndex, setCurrentIndex] = useState(
-    foundIndex >= 0 ? foundIndex : ALL_DAYS.length - 1
-  );
+  const currentIndex = foundIndex >= 0 ? foundIndex : ALL_DAYS.length - 1;
 
   const currentDate = ALL_DAYS[currentIndex];
   const dayNumber = daysSince('2023-10-07', currentDate);
@@ -66,18 +64,6 @@ export default function TimelineScrubber() {
   }, [events]);
 
   const todayEvents = eventsByDate.get(currentDate) || [];
-
-  // ── Sync timeline date to global store (and update local index when store changes externally) ──
-  useEffect(() => {
-    const idx = ALL_DAYS.indexOf(storedDate);
-    if (idx >= 0 && idx !== currentIndex) {
-      setCurrentIndex(idx);
-    }
-  }, [storedDate]);
-
-  useEffect(() => {
-    setTimelineDate(currentDate);
-  }, [currentDate, setTimelineDate]);
 
   // ── Scrubbed past the hot event window → lazily fetch the archive ──
   useEffect(() => {
@@ -98,17 +84,18 @@ export default function TimelineScrubber() {
       const ev = useEventsStore.getState().events.find((c) => c.id === eventId);
       if (!ev) return;
       const idx = ALL_DAYS.indexOf(ev.date);
-      if (idx >= 0) setCurrentIndex(idx);
+      if (idx >= 0) setTimelineDate(ALL_DAYS[idx]);
     };
     window.addEventListener('timeline-sync', handler);
     return () => window.removeEventListener('timeline-sync', handler);
-  }, []);
+  }, [setTimelineDate]);
 
   const handleSliderChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
-      setCurrentIndex(Number(e.target.value));
+      const nextDate = ALL_DAYS[Number(e.target.value)];
+      if (nextDate) setTimelineDate(nextDate);
     },
-    []
+    [setTimelineDate]
   );
 
   // Event tick positions on the slider
