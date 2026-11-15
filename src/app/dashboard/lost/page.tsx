@@ -208,6 +208,7 @@ function DataEntry({
 
 /* ── Page ── */
 export default function WhatWeLostPage() {
+  'use no memo';
   const eventsWithTelemetry = useEventsStore((s) => s.eventsWithTelemetry);
   const casualtyAnchors = useEventsStore((s) => s.casualtyAnchors);
   const casualties = useMemo(
@@ -222,12 +223,14 @@ export default function WhatWeLostPage() {
   const total = casualties.totalKilled;
   const { data: records, loading } = useMemorialData();
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [restored, setRestored] = useState(false);
+  const restoredRef = useRef(false);
 
   const featuredCount = livesLost.length;
   const datasetCount = records?.length ?? 0;
   const totalEntries = featuredCount + datasetCount;
 
+  // TanStack Virtual returns unmemoizable helpers; WhatWeLostPage opts out via 'use no memo' above.
+  // eslint-disable-next-line react-hooks/incompatible-library
   const virtualizer = useVirtualizer({
     count: totalEntries,
     getScrollElement: () => scrollRef.current,
@@ -256,15 +259,15 @@ export default function WhatWeLostPage() {
 
   // Restore scroll position on load
   useEffect(() => {
-    if (loading || restored || !records) return;
+    if (loading || restoredRef.current || !records) return;
     const saved = getSavedIndex();
     if (saved > 10) {
       setTimeout(() => {
         virtualizer.scrollToIndex(saved - 5, { align: 'start' });
       }, 100);
     }
-    setRestored(true);
-  }, [loading, restored, records, virtualizer]);
+    restoredRef.current = true;
+  }, [loading, records, virtualizer]);
 
   return (
     <div className='relative h-[calc(100dvh-64px)] w-full bg-black'>

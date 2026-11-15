@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo, useRef, useEffect, useCallback } from 'react';
+import Image from 'next/image';
 import { useFireStore } from '@/stores/fire-store';
 import { useEventsStore } from '@/stores/events-store';
 import {
@@ -37,6 +38,27 @@ const FILTER_CATEGORIES: { id: 'all' | EventCategory; label: string }[] = [
   { id: 'diplomatic', label: 'Diplomatic' },
   { id: 'humanitarian', label: 'Humanitarian' }
 ];
+
+function YouTubeThumbnail({
+  videoId,
+  title
+}: {
+  videoId: string;
+  title: string;
+}) {
+  const [useDefault, setUseDefault] = useState(false);
+
+  return (
+    <Image
+      src={`https://img.youtube.com/vi/${videoId}/${useDefault ? 'default' : 'hqdefault'}.jpg`}
+      alt={title}
+      fill
+      sizes='(max-width: 768px) 100vw, 480px'
+      className='object-cover'
+      onError={() => setUseDefault(true)}
+    />
+  );
+}
 
 function getYouTubeId(url: string): string | null {
   const m = url.match(
@@ -385,15 +407,7 @@ export default function EventFeed({
                   className='group relative block w-full bg-gray-100 dark:bg-black'
                   style={{ paddingBottom: '56.25%' }}
                 >
-                  <img
-                    src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-                    alt={event.title}
-                    className='absolute inset-0 h-full w-full object-cover'
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src =
-                        `https://img.youtube.com/vi/${videoId}/default.jpg`;
-                    }}
-                  />
+                  <YouTubeThumbnail videoId={videoId} title={event.title} />
                   {/* Play button overlay */}
                   <div className='absolute inset-0 flex items-center justify-center'>
                     <div className='flex h-12 w-12 items-center justify-center rounded-full bg-black/60 transition-colors group-hover:bg-red-600'>
