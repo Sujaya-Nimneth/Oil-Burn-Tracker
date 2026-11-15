@@ -23,13 +23,18 @@ const ARCHIVE_FILE = join(DATA_DIR, '..', 'public', 'auto-events-archive.json');
 // which the client fetches lazily when the timeline scrubber goes back
 // past the hot window. Keeps the runtime payload bounded forever.
 const HOT_WINDOW_DAYS = 120;
+const BATCH_LIMIT = 25;
+const MAX_HEADLINE_AGE_DAYS = 30;
+const MAX_SEEN_HEADLINES = 5000;
 
 const ARGS = new Set(process.argv.slice(2));
-const SHOULD_PUBLISH = ARGS.has('--publish') || !ARGS.has('--drafts-only');
-const PROMOTE_DRAFTS = ARGS.has('--promote-drafts');
+const PROMOTE_ONLY = ARGS.has('--promote-only');
+const SHOULD_PUBLISH =
+  PROMOTE_ONLY || ARGS.has('--publish') || !ARGS.has('--drafts-only');
+const PROMOTE_DRAFTS = PROMOTE_ONLY || ARGS.has('--promote-drafts');
 
 const TRUSTED_SOURCE_PATTERN =
-  /reuters|associated press|\bap\b|ap news|bbc|al jazeera|the guardian|guardian|cnn|france 24|bloomberg|cnbc|new york times|washington post|un news|pbs|npr|financial times|economist|times of israel|middle east eye|axios|cbs news|abc news|nbc news|sky news|dw\.com|deutsche welle|euronews/i;
+  /reuters|associated press|\bap\b|ap news|bbc|al jazeera|the guardian|guardian|cnn|france 24|bloomberg|cnbc|new york times|washington post|wall street journal|\bwsj\b|un news|pbs|npr|financial times|economist|times of israel|haaretz|jerusalem post|middle east eye|anadolu|le monde|al-monitor|al monitor|politico|foreign policy|axios|cbs news|abc news|nbc news|sky news|dw\.com|deutsche welle|euronews/i;
 
 // ── Search queries for Google News RSS ──
 const NEWS_QUERIES = [
@@ -326,8 +331,8 @@ function loadSeen() {
 }
 
 function saveSeen(seen) {
-  // Keep last 2000 entries to prevent unbounded growth
-  const arr = [...seen].slice(-2000);
+  // Keep recent entries to prevent unbounded growth across scheduled runs
+  const arr = [...seen].slice(-MAX_SEEN_HEADLINES);
   writeFileSync(SEEN_FILE, JSON.stringify(arr, null, 2));
 }
 
@@ -589,7 +594,67 @@ function cleanHeadlineTitle(title, source = '') {
 }
 
 function isTrustedSource(source = '', title = '') {
-  return TRUSTED_SOURCE_PATTERN.test(`${source} ${title}`);
+  const outlet = source.trim();
+  // When an explicit RSS <source> exists, judge only that outlet so aggregator
+  // titles mentioning "Reuters says..." cannot spoof trusted status.
+  return TRUSTED_SOURCE_PATTERN.test(outlet || title);
+}
+
+/**
+ * Deduplicate RSS items across queries, discard stale entries, and prioritize
+ * trusted outlets and newest timestamps without mutating seenSet.
+ */
+function selectHeadlinesBatch(
+  allItems,
+  seenSet,
+  {
+    maxItems = BATCH_LIMIT,
+    maxAgeDays = MAX_HEADLINE_AGE_DAYS,
+    nowMs = Date.now()
+  } = {}
+) {
+  const cutoffMs = nowMs - maxAgeDays * 86400000;
+  const dedupedByKey = new Map();
+
+  for (const item of allItems) {
+    if (!item?.title) continue;
+    const key = item.title.toLowerCase().trim();
+    if (!key || seenSet.has(key)) continue;
+
+    const pubMs = Date.parse(item.pubDate || '');
+    if (Number.isFinite(pubMs) && pubMs < cutoffMs) continue;
+
+    const existing = dedupedByKey.get(key);
+    if (!existing) {
+      dedupedByKey.set(key, item);
+      continue;
+    }
+
+    const existingTrusted = isTrustedSource(existing.source, existing.title);
+    const nextTrusted = isTrustedSource(item.source, item.title);
+    const existingMs = Date.parse(existing.pubDate || '') || 0;
+    const nextMs = Number.isFinite(pubMs) ? pubMs : 0;
+    if (
+      (nextTrusted && !existingTrusted) ||
+      (nextTrusted === existingTrusted && nextMs > existingMs)
+    ) {
+      dedupedByKey.set(key, item);
+    }
+  }
+
+  const candidates = [...dedupedByKey.values()].sort((a, b) => {
+    const aTrusted = isTrustedSource(a.source, a.title) ? 1 : 0;
+    const bTrusted = isTrustedSource(b.source, b.title) ? 1 : 0;
+    if (aTrusted !== bTrusted) return bTrusted - aTrusted;
+    const aMs = Date.parse(a.pubDate || '') || 0;
+    const bMs = Date.parse(b.pubDate || '') || 0;
+    return bMs - aMs;
+  });
+
+  return {
+    selected: candidates.slice(0, maxItems),
+    totalNew: candidates.length
+  };
 }
 
 function loadAutoEvents() {
@@ -715,48 +780,48 @@ async function main() {
   if (PROMOTE_DRAFTS) {
     for (const d of drafts) {
       if (isTrustedSource(d.source, d.title)) {
+        d.status = 'published';
         candidatesToPublish.push(toPublishedEvent(d));
       }
     }
   }
 
-  // 0. Build the YouTube corpus once (channel uploads RSS)
-  console.log('  Building YouTube video corpus from channel feeds...');
-  YT_CORPUS = await fetchChannelCorpus();
-  console.log(
-    `  Corpus: ${YT_CORPUS.length} recent videos across ${YT_CHANNELS.length} channels`
-  );
+  let selected = [];
+  if (!PROMOTE_ONLY) {
+    // 0. Build the YouTube corpus once (channel uploads RSS)
+    console.log('  Building YouTube video corpus from channel feeds...');
+    YT_CORPUS = await fetchChannelCorpus();
+    console.log(
+      `  Corpus: ${YT_CORPUS.length} recent videos across ${YT_CHANNELS.length} channels`
+    );
 
-  // 1. Fetch news from all queries
-  console.log('  Fetching news RSS feeds...');
-  const allItems = [];
-  for (const query of NEWS_QUERIES) {
-    const items = await fetchGoogleNewsRSS(query);
-    allItems.push(...items);
-    // Small delay to be respectful
-    await new Promise((r) => setTimeout(r, 300));
-  }
-
-  console.log(
-    `  Found ${allItems.length} total items across ${NEWS_QUERIES.length} queries`
-  );
-
-  // 2. Deduplicate and filter new ones
-  const uniqueNew = [];
-  for (const item of allItems) {
-    const key = item.title.toLowerCase().trim();
-    if (!seen.has(key)) {
-      seen.add(key);
-      uniqueNew.push(item);
+    // 1. Fetch news from all queries
+    console.log('  Fetching news RSS feeds...');
+    const allItems = [];
+    for (const query of NEWS_QUERIES) {
+      const items = await fetchGoogleNewsRSS(query);
+      allItems.push(...items);
+      // Small delay to be respectful
+      await new Promise((r) => setTimeout(r, 300));
     }
+
+    console.log(
+      `  Found ${allItems.length} total items across ${NEWS_QUERIES.length} queries`
+    );
+
+    // 2. Deduplicate, drop stale items, and prioritize trusted + newest headlines
+    const batch = selectHeadlinesBatch(allItems, seen);
+    selected = batch.selected;
+
+    console.log(
+      `  ${batch.totalNew} new recent headlines after dedup; processing top ${selected.length}`
+    );
   }
 
-  console.log(`  ${uniqueNew.length} new headlines after dedup`);
-
-  // 3. For each new headline, find a YouTube video, geocode, and create event
+  // 3. For each selected headline, find a YouTube video, geocode, and create event
   let videosMatched = 0;
-  for (const item of uniqueNew.slice(0, 15)) {
-    // Cap at 15 per run
+  for (const item of selected) {
+    seen.add(item.title.toLowerCase().trim());
     console.log(`  Processing: ${item.title.slice(0, 60)}...`);
 
     const video = await findVideoForHeadline(item.title);
@@ -801,7 +866,7 @@ async function main() {
   }
 
   // Both video paths produced nothing while headlines existed — surface it
-  if (uniqueNew.length > 0 && videosMatched === 0) {
+  if (selected.length > 0 && videosMatched === 0) {
     console.warn(
       '  WARNING: no videos matched any new headline (corpus empty and search fallback failed). ' +
         'Check YT_CHANNELS feed availability and the search fallback markup.'
@@ -829,7 +894,7 @@ async function main() {
   }
 
   // 5. Persist the corpus as the latest-videos state file
-  if (uniqueNew.length > 0 && YT_CORPUS.length > 0) {
+  if (selected.length > 0 && YT_CORPUS.length > 0) {
     const ytFile = join(DATA_DIR, 'youtube-latest.json');
     const stamped = YT_CORPUS.slice(0, 30).map((v) => ({
       ...v,
@@ -875,6 +940,7 @@ export {
   generateEventId,
   geocodeHeadline,
   isTrustedSource,
+  selectHeadlinesBatch,
   tokenize,
   matchFromCorpus
 };

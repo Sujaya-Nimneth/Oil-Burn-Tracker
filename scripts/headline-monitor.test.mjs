@@ -10,6 +10,7 @@ import {
   generateEventId,
   geocodeHeadline,
   isTrustedSource,
+  selectHeadlinesBatch,
   matchFromCorpus
 } from './headline-monitor.js';
 
@@ -140,13 +141,91 @@ describe('event ids and geocoding', () => {
 });
 
 describe('trusted source gate', () => {
-  it('accepts major outlets by source or title', () => {
+  it('accepts major outlets by source or fallback title', () => {
     expect(isTrustedSource('Reuters', 'anything')).toBe(true);
+    expect(isTrustedSource('WSJ', 'oil update')).toBe(true);
+    expect(isTrustedSource('Haaretz', 'briefing')).toBe(true);
+    expect(isTrustedSource('Anadolu Ajansı', 'dispatch')).toBe(true);
     expect(isTrustedSource('', 'report says - BBC')).toBe(true);
   });
 
-  it('rejects unknown sources', () => {
+  it('rejects unknown sources even if headline quotes a trusted outlet', () => {
     expect(isTrustedSource('Random Blog', 'a story')).toBe(false);
+    expect(isTrustedSource('Random Blog', 'Reuters reports oil spike')).toBe(
+      false
+    );
+  });
+});
+
+describe('headline batch selection', () => {
+  const nowMs = Date.parse('2026-11-15T12:00:00.000Z');
+
+  it('prioritizes trusted outlets over untrusted ones and sorts newest-first', () => {
+    const seen = new Set(['already seen headline']);
+    const items = [
+      {
+        title: 'Untrusted newer breaking headline',
+        source: 'Random Blog',
+        pubDate: '2026-11-15T11:00:00.000Z'
+      },
+      {
+        title: 'Older trusted story',
+        source: 'Reuters',
+        pubDate: '2026-11-14T10:00:00.000Z'
+      },
+      {
+        title: 'Newest trusted story',
+        source: 'Al Jazeera',
+        pubDate: '2026-11-15T10:00:00.000Z'
+      },
+      {
+        title: 'Already seen headline',
+        source: 'BBC News',
+        pubDate: '2026-11-15T11:30:00.000Z'
+      }
+    ];
+
+    const { selected, totalNew } = selectHeadlinesBatch(items, seen, {
+      maxItems: 2,
+      nowMs
+    });
+
+    expect(totalNew).toBe(3);
+    expect(selected.map((i) => i.title)).toEqual([
+      'Newest trusted story',
+      'Older trusted story'
+    ]);
+    // Does not mutate seenSet — caller marks only selected/processed items
+    expect(seen.has('untrusted newer breaking headline')).toBe(false);
+  });
+
+  it('excludes headlines older than maxAgeDays and deduplicates preferring trusted', () => {
+    const items = [
+      {
+        title: 'Stale strike report',
+        source: 'Reuters',
+        pubDate: '2026-10-01T00:00:00.000Z'
+      },
+      {
+        title: 'Hormuz tanker alert',
+        source: 'Random Blog',
+        pubDate: '2026-11-15T08:00:00.000Z'
+      },
+      {
+        title: 'Hormuz tanker alert',
+        source: 'WSJ',
+        pubDate: '2026-11-15T09:00:00.000Z'
+      }
+    ];
+
+    const { selected, totalNew } = selectHeadlinesBatch(items, new Set(), {
+      maxAgeDays: 30,
+      nowMs
+    });
+
+    expect(totalNew).toBe(1);
+    expect(selected).toHaveLength(1);
+    expect(selected[0].source).toBe('WSJ');
   });
 });
 
