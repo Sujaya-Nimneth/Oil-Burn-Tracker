@@ -36,6 +36,7 @@ import {
   getCapacityCO2Estimates
 } from '@/features/emissions/utils/emissions-model';
 import { computePerilScore, HISTORICAL_ANCHORS } from '@/lib/peril-score';
+import { formatBillions } from '@/lib/format';
 import {
   IconGasStation,
   IconShoppingCart,
@@ -62,12 +63,6 @@ import {
   IconSchool,
   IconFriends
 } from '@tabler/icons-react';
-
-function formatBillions(n: number): string {
-  if (n >= 1000) return `$${(n / 1000).toFixed(2)}T`;
-  if (n >= 100) return `$${n.toFixed(0)}B`;
-  return `$${n.toFixed(1)}B`;
-}
 
 /* ── Reusable data row with optional tooltip (click to expand) ── */
 function Row({

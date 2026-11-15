@@ -15,3 +15,16 @@ export function formatDate(
     return '';
   }
 }
+
+export function formatBillions(n: number): string {
+  if (n >= 1000) return `$${(n / 1000).toFixed(2)}T`;
+  if (n >= 100) return `$${n.toFixed(0)}B`;
+  return `$${n.toFixed(1)}B`;
+}
+
+export function getYouTubeId(url: string): string | null {
+  const m = url.match(
+    /(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|shorts\/))([a-zA-Z0-9_-]{11})/
+  );
+  return m ? m[1] : null;
+}

@@ -20,6 +20,7 @@ import { getSupplyDisruptionUpTo } from '@/features/fires/data/curated-fires';
 import { getWarCostUpTo } from '@/features/timeline/data/war-costs';
 import { getConsumerImpactUpTo } from '@/features/impact/data/consumer-impact';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { formatBillions } from '@/lib/format';
 import {
   IconSkull,
   IconBomb,
@@ -38,12 +39,6 @@ const FireMap = dynamic(() => import('@/features/map/components/fire-map'), {
     </div>
   )
 });
-
-function formatBillions(n: number): string {
-  if (n >= 1000) return `$${(n / 1000).toFixed(2)}T`;
-  if (n >= 100) return `$${n.toFixed(0)}B`;
-  return `$${n.toFixed(1)}B`;
-}
 
 // ── Floating stats for map mode (collapsible) ──
 function FloatingStats() {
