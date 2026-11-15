@@ -193,14 +193,14 @@ const LOCATION_GAZETTEER = [
     lat: 25.128,
     lng: 56.326,
     zoom: 11,
-    facilityId: 'fujairah'
+    facilityId: 'fujairah-oil-zone'
   },
   {
-    pattern: /shah gas|al hosn/i,
+    pattern: /shah gas/i,
     lat: 22.933,
     lng: 53.883,
     zoom: 10,
-    facilityId: 'shah-gas'
+    facilityId: 'shah-gas-field'
   },
   {
     pattern: /yanbu|samref/i,
@@ -214,7 +214,7 @@ const LOCATION_GAZETTEER = [
     lat: 27.011,
     lng: 49.658,
     zoom: 11,
-    facilityId: 'jubail-satorp'
+    facilityId: 'jubail-petrochem'
   },
   {
     pattern: /ghawar/i,
@@ -224,18 +224,18 @@ const LOCATION_GAZETTEER = [
     facilityId: 'ghawar'
   },
   {
-    pattern: /habshan/i,
+    pattern: /al hosn|habshan/i,
     lat: 23.867,
     lng: 53.65,
     zoom: 10,
-    facilityId: 'habshan'
+    facilityId: 'al-hosn-gas'
   },
   {
     pattern: /haifa/i,
     lat: 32.794,
     lng: 35.034,
     zoom: 11,
-    facilityId: 'haifa-bazan'
+    facilityId: 'haifa-refinery'
   },
   { pattern: /natanz/i, lat: 33.724, lng: 51.727, zoom: 11 },
   { pattern: /fordow/i, lat: 34.884, lng: 50.996, zoom: 11 },
@@ -865,6 +865,7 @@ if (isDirectRun) {
 
 // ── Exports for unit tests (scripts/headline-monitor.test.mjs) ──
 export {
+  LOCATION_GAZETTEER,
   parseRSSItems,
   extractTag,
   decodeHTMLEntities,

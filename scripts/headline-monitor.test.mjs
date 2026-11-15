@@ -1,5 +1,7 @@
 import { describe, it, expect } from 'vitest';
+import { curatedFires } from '@/features/fires/data/curated-fires';
 import {
+  LOCATION_GAZETTEER,
   parseRSSItems,
   decodeHTMLEntities,
   detectCategory,
@@ -110,6 +112,30 @@ describe('event ids and geocoding', () => {
     expect(hit.facilityId).toBe('ras-tanura');
     const fallback = geocodeHeadline('Totally unknown place event');
     expect(fallback.zoom).toBe(5);
+  });
+
+  it('maps every gazetteer facilityId to a canonical curated facility', () => {
+    const validIds = new Set(curatedFires.map((f) => f.id));
+    for (const entry of LOCATION_GAZETTEER) {
+      if (entry.facilityId) {
+        expect(validIds.has(entry.facilityId)).toBe(true);
+      }
+    }
+    expect(geocodeHeadline('Drone strike near Fujairah').facilityId).toBe(
+      'fujairah-oil-zone'
+    );
+    expect(geocodeHeadline('Fire at Shah Gas plant').facilityId).toBe(
+      'shah-gas-field'
+    );
+    expect(geocodeHeadline('Habshan complex shutdown').facilityId).toBe(
+      'al-hosn-gas'
+    );
+    expect(geocodeHeadline('Jubail petrochemical alert').facilityId).toBe(
+      'jubail-petrochem'
+    );
+    expect(geocodeHeadline('Missile hits Haifa oil refinery').facilityId).toBe(
+      'haifa-refinery'
+    );
   });
 });
 
