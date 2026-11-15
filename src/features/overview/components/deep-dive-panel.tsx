@@ -17,21 +17,24 @@ import {
 import { getWarCostUpTo } from '@/features/timeline/data/war-costs';
 import {
   getSupplyDisruptionUpTo,
-  getInfrastructureDamageByCountry
+  getInfrastructureDamageByCountry,
+  getEffectiveFacilityStatus,
+  getFacilityFireStatsMap
 } from '@/features/fires/data/curated-fires';
 import { curatedFires } from '@/features/fires/data/curated-fires';
 import type {
   CountryDamageEntry,
-  DamageClassification
+  DamageClassification,
+  FacilityFireStats,
+  FacilityStatus,
+  FacilityType
 } from '@/features/fires/data/curated-fires';
 import {
   formatCO2,
   co2Equivalents,
   FACILITY_PARAMS,
-  estimateCO2FromCapacity,
-  capacityBreakdown
+  getCapacityCO2Estimates
 } from '@/features/emissions/utils/emissions-model';
-import type { FacilityType } from '@/features/fires/data/curated-fires';
 import { computePerilScore, HISTORICAL_ANCHORS } from '@/lib/peril-score';
 import {
   IconGasStation,
@@ -402,10 +405,12 @@ function PredictionCard({
 /* ── Facility damage card ── */
 function FacilityCard({
   facility,
-  hit
+  hit,
+  status
 }: {
   facility: (typeof curatedFires)[number];
   hit: boolean;
+  status: FacilityStatus;
 }) {
   const [open, setOpen] = useState(false);
   const statusCfg: Record<
@@ -459,7 +464,7 @@ function FacilityCard({
     monitoring: 'bg-yellow-500',
     operational: 'bg-green-500'
   };
-  const st = statusCfg[facility.status] || statusCfg.operational;
+  const st = statusCfg[status] || statusCfg.operational;
   const cap = facility.gasCapacityBCFD
     ? `${facility.gasCapacityBCFD} BCF/d`
     : facility.capacityBPD >= 1_000_000
@@ -518,11 +523,7 @@ function FacilityCard({
           </div>
           <Bar
             pct={barPct}
-            color={
-              hit
-                ? 'bg-red-500'
-                : statusBarColor[facility.status] || 'bg-gray-400'
-            }
+            color={hit ? 'bg-red-500' : statusBarColor[status] || 'bg-gray-400'}
             height='h-2'
           />
           <div className='mt-0.5 text-xs text-gray-400 tabular-nums'>
@@ -660,10 +661,14 @@ const DAMAGE_BADGE: Record<
 
 function CountryCard({
   entry,
-  hitFacilityIds
+  hitFacilityIds,
+  timelineDate,
+  facilityStats
 }: {
   entry: CountryDamageEntry;
   hitFacilityIds: Set<string>;
+  timelineDate: string;
+  facilityStats: Map<string, FacilityFireStats>;
 }) {
   const [open, setOpen] = useState(false);
   const badge = DAMAGE_BADGE[entry.damageClassification];
@@ -760,6 +765,11 @@ function CountryCard({
               key={f.id}
               facility={f}
               hit={hitFacilityIds.has(f.id)}
+              status={getEffectiveFacilityStatus(
+                f,
+                timelineDate,
+                facilityStats.get(f.id)?.maxFRP ?? 0
+              )}
             />
           ))}
         </div>
@@ -777,6 +787,11 @@ export default function DeepDivePanel({
   const storeEvents = useEventsStore((s) => s.events);
   const eventsWithTelemetry = useEventsStore((s) => s.eventsWithTelemetry);
   const casualtyAnchors = useEventsStore((s) => s.casualtyAnchors);
+
+  const facilityStats = useMemo(
+    () => getFacilityFireStatsMap(fireData.features),
+    [fireData.features]
+  );
 
   const data = useMemo(() => {
     const impact = getConsumerImpactUpTo(timelineDate);
@@ -1341,7 +1356,17 @@ export default function DeepDivePanel({
           monitoring: 3,
           operational: 4
         };
-        return (o[a.status] ?? 5) - (o[b.status] ?? 5);
+        const statusA = getEffectiveFacilityStatus(
+          a,
+          timelineDate,
+          facilityStats.get(a.id)?.maxFRP ?? 0
+        );
+        const statusB = getEffectiveFacilityStatus(
+          b,
+          timelineDate,
+          facilityStats.get(b.id)?.maxFRP ?? 0
+        );
+        return (o[statusA] ?? 5) - (o[statusB] ?? 5);
       });
     const threatenedFacilityList = curatedFires
       .filter((f) => !facilityIds.has(f.id))
@@ -1430,7 +1455,13 @@ export default function DeepDivePanel({
       yearsOfLifeLost,
       roleCounts
     };
-  }, [timelineDate, storeEvents, eventsWithTelemetry, casualtyAnchors]);
+  }, [
+    timelineDate,
+    storeEvents,
+    eventsWithTelemetry,
+    casualtyAnchors,
+    facilityStats
+  ]);
 
   const {
     impact,
@@ -1453,8 +1484,9 @@ export default function DeepDivePanel({
     yearsOfLifeLost,
     roleCounts
   } = data;
-  const facilityFires = fireData.features.filter(
-    (f) => f.properties.matchedFacility
+  const facilityFires = useMemo(
+    () => fireData.features.filter((f) => f.properties.matchedFacility),
+    [fireData.features]
   );
   const satelliteCO2 = facilityFires.reduce(
     (s, f) => s + f.properties.estimatedCO2TonsDay,
@@ -1463,41 +1495,16 @@ export default function DeepDivePanel({
   const totalDetections = fireData.features.length;
   const facilityFireCount = facilityFires.length;
 
-  // IDs of facilities matched by satellite
-  const satelliteMatchedIds = useMemo(
-    () => new Set(facilityFires.map((f) => f.properties.matchedFacility!.id)),
-    [facilityFires]
-  );
-
   // Capacity-based CO2 for burning facilities WITHOUT satellite data (synced to timelineDate)
-  const capacityEstimates = useMemo(() => {
-    return curatedFires
-      .filter(
-        (f) =>
-          (f.status === 'active_fire' || f.status === 'damaged') &&
-          !satelliteMatchedIds.has(f.id) &&
-          (facilityIds.has(f.id) ||
-            (f.attackDate != null && f.attackDate <= timelineDate))
-      )
-      .map((f) => ({
-        facility: f,
-        co2: estimateCO2FromCapacity(
-          f.facilityType,
-          f.status,
-          f.capacityBPD,
-          f.gasCapacityBCFD,
-          f.storageMBBL
-        ),
-        breakdown: capacityBreakdown(
-          f.facilityType,
-          f.status,
-          f.capacityBPD,
-          f.gasCapacityBCFD,
-          f.storageMBBL
-        )
-      }))
-      .filter((e) => e.co2 > 0);
-  }, [satelliteMatchedIds, facilityIds, timelineDate]);
+  const capacityEstimates = useMemo(
+    () =>
+      getCapacityCO2Estimates(curatedFires, {
+        timelineDate,
+        hitFacilityIds: facilityIds,
+        facilityStats
+      }),
+    [facilityStats, facilityIds, timelineDate]
+  );
 
   const capacityCO2 = capacityEstimates.reduce((sum, e) => sum + e.co2, 0);
   const totalCO2 = satelliteCO2 + capacityCO2;
@@ -1561,10 +1568,15 @@ export default function DeepDivePanel({
     return lines.join('\n');
   }, [co2ByType, satelliteCO2, capacityEstimates, capacityCO2, totalCO2]);
 
-  // Count facilities confirmed burning/damaged from curated data (news-sourced)
-  const curatedBurningCount = curatedFires.filter(
-    (f) => f.status === 'active_fire' || f.status === 'damaged'
-  ).length;
+  // Count facilities confirmed burning/damaged at timelineDate
+  const curatedBurningCount = curatedFires.filter((f) => {
+    const status = getEffectiveFacilityStatus(
+      f,
+      timelineDate,
+      facilityStats.get(f.id)?.maxFRP ?? 0
+    );
+    return status === 'active_fire' || status === 'damaged';
+  }).length;
 
   const displayDate = new Date(timelineDate + 'T00:00:00');
   const dateFormatted = displayDate.toLocaleDateString('en-US', {
@@ -1872,7 +1884,16 @@ export default function DeepDivePanel({
               </div>
               <div className='mb-4 space-y-2'>
                 {hitFacilityList.map((f) => (
-                  <FacilityCard key={f.id} facility={f} hit />
+                  <FacilityCard
+                    key={f.id}
+                    facility={f}
+                    hit
+                    status={getEffectiveFacilityStatus(
+                      f,
+                      timelineDate,
+                      facilityStats.get(f.id)?.maxFRP ?? 0
+                    )}
+                  />
                 ))}
               </div>
             </>
@@ -1886,7 +1907,16 @@ export default function DeepDivePanel({
               </div>
               <div className='space-y-2'>
                 {threatenedFacilityList.map((f) => (
-                  <FacilityCard key={f.id} facility={f} hit={false} />
+                  <FacilityCard
+                    key={f.id}
+                    facility={f}
+                    hit={false}
+                    status={getEffectiveFacilityStatus(
+                      f,
+                      timelineDate,
+                      facilityStats.get(f.id)?.maxFRP ?? 0
+                    )}
+                  />
                 ))}
               </div>
             </>
@@ -2655,6 +2685,8 @@ export default function DeepDivePanel({
                 key={entry.country}
                 entry={entry}
                 hitFacilityIds={facilityIds}
+                timelineDate={timelineDate}
+                facilityStats={facilityStats}
               />
             ))}
           </div>

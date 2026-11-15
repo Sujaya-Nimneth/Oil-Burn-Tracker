@@ -1,4 +1,10 @@
-import type { FacilityType } from '@/features/fires/data/curated-fires';
+import {
+  getEffectiveFacilityStatus,
+  type CuratedFire,
+  type FacilityFireStats,
+  type FacilityStatus,
+  type FacilityType
+} from '@/features/fires/data/curated-fires';
 
 // ═══ FRP-to-CO2 METHODOLOGY ═══
 //
@@ -327,6 +333,68 @@ export function capacityBreakdown(
   }
 
   return 'No capacity data available';
+}
+
+export interface CapacityCO2Estimate {
+  facility: CuratedFire;
+  effectiveStatus: FacilityStatus;
+  co2: number;
+  breakdown: string;
+}
+
+/**
+ * Compute timeline-aware capacity-based fallback CO2 estimates for struck
+ * facilities without live satellite detections.
+ */
+export function getCapacityCO2Estimates(
+  facilities: readonly CuratedFire[],
+  options: {
+    timelineDate: string;
+    hitFacilityIds: ReadonlySet<string>;
+    facilityStats: ReadonlyMap<string, FacilityFireStats>;
+  }
+): CapacityCO2Estimate[] {
+  const estimates: CapacityCO2Estimate[] = [];
+  for (const facility of facilities) {
+    if (options.facilityStats.has(facility.id)) continue;
+    const wasStruck =
+      options.hitFacilityIds.has(facility.id) ||
+      (facility.attackDate != null &&
+        facility.attackDate <= options.timelineDate);
+    if (!wasStruck) continue;
+
+    const effectiveStatus = getEffectiveFacilityStatus(
+      facility,
+      options.timelineDate,
+      0
+    );
+    if (effectiveStatus !== 'active_fire' && effectiveStatus !== 'damaged') {
+      continue;
+    }
+
+    const co2 = estimateCO2FromCapacity(
+      facility.facilityType,
+      effectiveStatus,
+      facility.capacityBPD,
+      facility.gasCapacityBCFD,
+      facility.storageMBBL
+    );
+    if (co2 <= 0) continue;
+
+    estimates.push({
+      facility,
+      effectiveStatus,
+      co2,
+      breakdown: capacityBreakdown(
+        facility.facilityType,
+        effectiveStatus,
+        facility.capacityBPD,
+        facility.gasCapacityBCFD,
+        facility.storageMBBL
+      )
+    });
+  }
+  return estimates;
 }
 
 /**

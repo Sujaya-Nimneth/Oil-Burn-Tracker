@@ -1,8 +1,13 @@
 import { describe, it, expect } from 'vitest';
 import {
+  curatedFires,
+  type FacilityFireStats
+} from '@/features/fires/data/curated-fires';
+import {
   FACILITY_PARAMS,
   estimateCO2,
   estimateCO2FromCapacity,
+  getCapacityCO2Estimates,
   co2Equivalents,
   formatCO2
 } from './emissions-model';
@@ -64,5 +69,38 @@ describe('CO₂ equivalents and formatting', () => {
     expect(formatCO2(999)).toBe('999');
     expect(formatCO2(1500)).toBe('1.5K');
     expect(formatCO2(2_400_000)).toBe('2.4M');
+  });
+
+  it('excludes satellite-matched facilities and decays burn fraction after 21 days', () => {
+    const bapco = curatedFires.find((f) => f.id === 'bapco-sitra')!;
+    const hitIds = new Set(['bapco-sitra']);
+
+    const activeDay = getCapacityCO2Estimates([bapco], {
+      timelineDate: '2026-03-10',
+      hitFacilityIds: hitIds,
+      facilityStats: new Map()
+    });
+    expect(activeDay).toHaveLength(1);
+    expect(activeDay[0].effectiveStatus).toBe('active_fire');
+
+    const decayedDay = getCapacityCO2Estimates([bapco], {
+      timelineDate: '2026-04-15',
+      hitFacilityIds: hitIds,
+      facilityStats: new Map()
+    });
+    expect(decayedDay).toHaveLength(1);
+    expect(decayedDay[0].effectiveStatus).toBe('damaged');
+    expect(decayedDay[0].co2).toBeLessThan(activeDay[0].co2);
+
+    const withSatellite = new Map<string, FacilityFireStats>([
+      ['bapco-sitra', { fireCount: 1, maxFRP: 80, totalCO2: 6000 }]
+    ]);
+    expect(
+      getCapacityCO2Estimates([bapco], {
+        timelineDate: '2026-03-10',
+        hitFacilityIds: hitIds,
+        facilityStats: withSatellite
+      })
+    ).toHaveLength(0);
   });
 });

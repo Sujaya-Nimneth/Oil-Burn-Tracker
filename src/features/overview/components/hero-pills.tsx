@@ -10,9 +10,12 @@ import {
 import { getConsumerImpactUpTo } from '@/features/impact/data/consumer-impact';
 import {
   formatCO2,
-  estimateCO2FromCapacity
+  getCapacityCO2Estimates
 } from '@/features/emissions/utils/emissions-model';
-import { curatedFires } from '@/features/fires/data/curated-fires';
+import {
+  curatedFires,
+  getFacilityFireStatsMap
+} from '@/features/fires/data/curated-fires';
 import { IconFlame, IconReceipt, IconSkull } from '@tabler/icons-react';
 
 export default function HeroPills() {
@@ -22,41 +25,25 @@ export default function HeroPills() {
   const eventsWithTelemetry = useEventsStore((s) => s.eventsWithTelemetry);
   const casualtyAnchors = useEventsStore((s) => s.casualtyAnchors);
 
-  const facilityFires = fireData.features.filter(
-    (f) => f.properties.matchedFacility
+  const facilityStats = useMemo(
+    () => getFacilityFireStatsMap(fireData.features),
+    [fireData.features]
   );
-  const satelliteCO2 = facilityFires.reduce(
-    (s, f) => s + f.properties.estimatedCO2TonsDay,
-    0
-  );
+  const satelliteCO2 = useMemo(() => {
+    let total = 0;
+    for (const s of facilityStats.values()) total += s.totalCO2;
+    return total;
+  }, [facilityStats]);
 
   // Capacity-based fallback for burning facilities without satellite match (synced to timelineDate)
   const capacityCO2 = useMemo(() => {
-    const matchedIds = new Set(
-      facilityFires.map((f) => f.properties.matchedFacility!.id)
-    );
-    const hitIds = getVisibleFacilityIds(events, timelineDate);
-    return curatedFires
-      .filter(
-        (f) =>
-          (f.status === 'active_fire' || f.status === 'damaged') &&
-          !matchedIds.has(f.id) &&
-          (hitIds.has(f.id) ||
-            (f.attackDate != null && f.attackDate <= timelineDate))
-      )
-      .reduce(
-        (sum, f) =>
-          sum +
-          estimateCO2FromCapacity(
-            f.facilityType,
-            f.status,
-            f.capacityBPD,
-            f.gasCapacityBCFD,
-            f.storageMBBL
-          ),
-        0
-      );
-  }, [facilityFires, events, timelineDate]);
+    const hitFacilityIds = getVisibleFacilityIds(events, timelineDate);
+    return getCapacityCO2Estimates(curatedFires, {
+      timelineDate,
+      hitFacilityIds,
+      facilityStats
+    }).reduce((sum, estimate) => sum + estimate.co2, 0);
+  }, [facilityStats, events, timelineDate]);
 
   const totalCO2 = satelliteCO2 + capacityCO2;
   const casualties = getCasualtiesUpTo(
