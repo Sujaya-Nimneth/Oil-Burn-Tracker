@@ -9989,5 +9989,84 @@
         "label": ""
       }
     ]
+  },
+  {
+    "id": "auto-irans-navy-says-three-tankers-2026-11-14",
+    "date": "2026-11-14",
+    "title": "Iran's navy says three tankers on fire after hitting mines in Hormuz",
+    "category": "chokepoint",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZWt1cHFualJEVktnTTVvd21uVnljc0FqR2dRaWpaRnYwZ3luZ2t1dUlJNVUtLTVlWHJFOS1ocDBlaVZsTFNZdjRMeldFVFE1Q0Jqem9FbU9fMmp1YTBUTUhqTmYzR3FJN1Z1Y1dHY2d0Yjlzb2lBR0JvNllyT3pScjI2SEpkbkhiYzZSWW9Tb3dwemdWaVVmMjBPbXZqd0hOZzdpRDVSZlVlbzBnV1BjMQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=6TYeFf_dczM",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-updates-coalition-downs-2026-11-14",
+    "date": "2026-11-14",
+    "title": "Iran war updates: Coalition downs 2 Houthi drones; 7 ships hit mines",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 15.369,
+    "lng": 44.191,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTk1OSExWR3RnVjVaQTRhcmd6WDRva3IzT3NiZWd6QlpLSllUbmZSUm5VZ1dyRHJna3AyVWhBem1SU3F0S1p1UW93WjMyM19uQzlwSHFjYzd0VjBIV21GaTBWaUx6MjhXU1VGN2hMX2tEVXo1amk0YXVyRTA4cnlXbzMyOUVVNnZkNGFfYlpSRW1Ia2d3MjkzTUZKam5qUWF6eE4xcGFaU2p3V0xvVXFsSFIzSHNzMVNnbWFnZdIBwgFBVV95cUxQVXJvM011WXlEMmp6dkxhcGFjc01ZSTlZaTlVdnNOWTY2NFdiU1F0LTJ6ZUFwQ1NpdTRhemlnVmp0MU1xaXVyS2c1S3lTWHhZZ1VxTk8xc0txSlZRbXdsOV90N0JjVUVDNzd6cWlTRU5JQS1FWFNyRWk1RTNiZmpkOERNd1c5NHZSNzBtSmstNGNobDdrU2pZRHdybnhrMV9TOXN2Yld0eGRrZUkzN012Y2Y2dERuYjZVSjR4TmxzSzg0Zw?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=NVZSwgnEYHE",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-live-saudiled-coalition-2026-11-15",
+    "date": "2026-11-15",
+    "title": "Iran war live: Saudi-led coalition strikes down 3 drones",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 24.714,
+    "lng": 46.675,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQWNHaDFxOWY3NnRZZm4zTHZQandnM2NFaTYyY2pyallRb3poSURScEpTeDlweFhLcHRLRGdjSDZab1ZlUU5JOU1jUTJvNlQ2X1AzaHZRN1J0bDIzU1VmVTVlUzhaM0NicGE2ZmE4bEZsOVFRc0dqVXdjRF9EZEJZZkpKdVdVMFByUDhFRW5LRWlZSkJuWUQtd1NEbEhhM0dkN054ZzJJN1A3WXgtZjJER2NLdnRTNkNnTk1uUm9LbWjSAcYBQVVfeXFMTTlyNmYxSlo0T0QzX0c5NlNZQWFZdWF2N2dSVFNjXy1XX2c5R29xR1kzakNhR29xM2Y0aFlqNUlnWWJDeDdUR0NJQzZ5R2dhQ3B4WmtGNzZKYkxvYS1vMzMwQ09ldnZHdF9ld2dMTnJqRVhsTnI5ajRFVkpxZGt4VS1FelVFdE9ONEpRb1ZtbVJvQW9xYThqT2dWWjNSS2FWTEFvX195ejRNTDh6SjJ1TnQxT2xVeFJ5aVJfNmhSREpGdHhTWWhB?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=kMEJfUvSsVA",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-how-does-iran-view-trump-2026-11-15",
+    "date": "2026-11-15",
+    "title": "How does Iran view Trump sidelining Vance from talks?",
+    "category": "diplomatic",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNU25YOEt2azhyMVliR1pCWFgyOEFLWW5wTmVwUEpxR2M1MVBNNUc3X2ROUjduSTBIOTVZelBtX0wxM2dnQ0dpb2hPbzlVc2lhV19KVm4wUDlMMk1EODlTb1VpM1ZyZnZzemtaQ2thZV9ZaFBnd3NROUZKS2dSRzNBeWQ3TnVZQmJLM3FERUxGN3dQQWdmckVMblhTYUZHSXNMQWY5c0RQMUJXQdIBrwFBVV95cUxQUlFndzRxWmxLRUxGT041VHg4R0ZfakRCU20wZUs3WXV3NW5obmYxVVFfNk1LZ1lSSE5QeElIVFhYQ3hmbWFJVXB2OG1ERHB4aDV0UzUyQm5PMmctNl9kVW5aMVRNa0xuMWNNdFRIQ0lmV0w4NzRsSEhOVDZ6alRQSkxvNWZNMmRGeHBiYVdLN0cyN2tWQTd0a2tMSHktc0ZJakZ0elNJZUJUaDdxdzhn?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=0RYnVE2d1V0",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-israeli-air-strike-kills-senior-2026-11-15",
+    "date": "2026-11-15",
+    "title": "Israeli air strike kills senior Hamas commander in Gaza",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQmdDLWFKempfNHV5cGpqdWU0ampmWS1iVXNKSTFkQnhxZmtlOENuV1Vfbm80VVBpNVNEZ0l4VGZYdGF0NkU1eDFsbUVmVXNEOFZCMF9Bd04xUUZVd0J1bmtvRHhBbmVad1NJMkZybFhpYVQyTGtFOEdPeGJPT1JCaERyR0RiQ2YwSDlvZ2VKQVhqZnF4ekFXRmJ4OGpZQdIBowFBVV95cUxONk9IY0QxMlRKTzVKaXJ0Rk9RMnJrczJSMUtjS3cxeGQ5cDhET0VkRDJ3eEtfWFZaOE96dGVJbllJb0duNVMyODVRcUpfMVRBWnlIQkZOVUc5OVBWalpiR1p3dGNvc0RrWUphbjVnQ29RZ0tHZ1dVRFAtMmsxQm1uN05mektmVGtpS3FMSHZ0QWdFdmppRTVVSzcwaDFBbVdhRkFV?oc=5"
   }
 ]
