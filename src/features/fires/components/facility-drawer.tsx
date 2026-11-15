@@ -1,7 +1,10 @@
 'use client';
 
+import { useMemo } from 'react';
 import { useFireStore } from '@/stores/fire-store';
 import {
+  getEffectiveFacilityStatus,
+  getFacilityFireStatsMap,
   type FacilityStatus,
   type ThreatLevel
 } from '@/features/fires/data/curated-fires';
@@ -29,12 +32,12 @@ import {
   IconGasStation
 } from '@tabler/icons-react';
 
-const STATUS_CONFIG: Record<
+export const FACILITY_STATUS_CONFIG: Record<
   FacilityStatus,
   {
     label: string;
     variant: 'destructive' | 'default' | 'secondary' | 'outline';
-    icon: React.ComponentType<any>;
+    icon: React.ComponentType<{ className?: string }>;
   }
 > = {
   active_fire: {
@@ -88,10 +91,22 @@ function formatCapacity(f: {
 export default function FacilityDrawer() {
   const selectedFacility = useFireStore((s) => s.selectedFacility);
   const setSelectedFacility = useFireStore((s) => s.setSelectedFacility);
+  const fireData = useFireStore((s) => s.fireData);
+  const timelineDate = useFireStore((s) => s.timelineDate);
+
+  const facilityStats = useMemo(
+    () => getFacilityFireStatsMap(fireData.features),
+    [fireData.features]
+  );
 
   if (!selectedFacility) return null;
 
-  const config = STATUS_CONFIG[selectedFacility.status];
+  const effectiveStatus = getEffectiveFacilityStatus(
+    selectedFacility,
+    timelineDate,
+    facilityStats.get(selectedFacility.id)?.maxFRP ?? 0
+  );
+  const config = FACILITY_STATUS_CONFIG[effectiveStatus];
   const StatusIcon = config.icon;
   const threat = THREAT_CONFIG[selectedFacility.threatLevel];
   const capacityParts = formatCapacity(selectedFacility);

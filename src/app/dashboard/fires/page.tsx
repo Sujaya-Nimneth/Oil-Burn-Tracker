@@ -1,11 +1,16 @@
 'use client';
 
+import { useMemo } from 'react';
 import { useFireData } from '@/features/map/hooks/use-fire-data';
 import {
   curatedFires,
   getEffectiveFacilityStatus,
+  getFacilityFireStatsMap,
   type FacilityStatus
 } from '@/features/fires/data/curated-fires';
+import FacilityDrawer, {
+  FACILITY_STATUS_CONFIG
+} from '@/features/fires/components/facility-drawer';
 import { useFireStore } from '@/stores/fire-store';
 import { formatCO2 } from '@/features/emissions/utils/emissions-model';
 import PageContainer from '@/components/layout/page-container';
@@ -18,39 +23,12 @@ import {
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import {
-  IconFlame,
-  IconAlertTriangle,
-  IconEye,
-  IconCircleCheck,
-  IconCircleOff,
   IconExternalLink,
   IconMapPin,
-  IconCalendar
+  IconCalendar,
+  IconInfoCircle
 } from '@tabler/icons-react';
 import Link from 'next/link';
-
-const STATUS_CONFIG: Record<
-  FacilityStatus,
-  {
-    label: string;
-    variant: 'destructive' | 'default' | 'secondary' | 'outline';
-    icon: React.ComponentType<any>;
-  }
-> = {
-  active_fire: {
-    label: 'Active Fire',
-    variant: 'destructive',
-    icon: IconFlame
-  },
-  damaged: { label: 'Damaged', variant: 'default', icon: IconAlertTriangle },
-  monitoring: { label: 'Monitoring', variant: 'secondary', icon: IconEye },
-  offline: { label: 'Offline', variant: 'outline', icon: IconCircleOff },
-  operational: {
-    label: 'Operational',
-    variant: 'outline',
-    icon: IconCircleCheck
-  }
-};
 
 export default function FiresPage() {
   useFireData();
@@ -60,43 +38,45 @@ export default function FiresPage() {
   const setMapZoom = useFireStore((s) => s.setMapZoom);
   const setSelectedFacility = useFireStore((s) => s.setSelectedFacility);
 
-  const facilityData = curatedFires
-    .map((facility) => {
-      const nearby = fireData.features.filter(
-        (f) => f.properties.matchedFacility?.id === facility.id
-      );
-      const maxFRP = nearby.reduce(
-        (max, f) => Math.max(max, f.properties.frp),
-        0
-      );
-      const totalCO2 = nearby.reduce(
-        (sum, f) => sum + f.properties.estimatedCO2TonsDay,
-        0
-      );
-      const liveStatus = getEffectiveFacilityStatus(
-        facility,
-        timelineDate,
-        maxFRP
-      );
+  const facilityStats = useMemo(
+    () => getFacilityFireStatsMap(fireData.features),
+    [fireData.features]
+  );
 
-      return {
-        ...facility,
-        liveStatus,
-        fireCount: nearby.length,
-        maxFRP,
-        totalCO2
-      };
-    })
-    .sort((a, b) => {
-      const order: Record<FacilityStatus, number> = {
-        active_fire: 0,
-        damaged: 1,
-        monitoring: 2,
-        offline: 3,
-        operational: 4
-      };
-      return (order[a.liveStatus] || 4) - (order[b.liveStatus] || 4);
-    });
+  const facilityData = useMemo(
+    () =>
+      curatedFires
+        .map((facility) => {
+          const stats = facilityStats.get(facility.id);
+          const fireCount = stats?.fireCount ?? 0;
+          const maxFRP = stats?.maxFRP ?? 0;
+          const totalCO2 = stats?.totalCO2 ?? 0;
+          const liveStatus = getEffectiveFacilityStatus(
+            facility,
+            timelineDate,
+            maxFRP
+          );
+
+          return {
+            ...facility,
+            liveStatus,
+            fireCount,
+            maxFRP,
+            totalCO2
+          };
+        })
+        .sort((a, b) => {
+          const order: Record<FacilityStatus, number> = {
+            active_fire: 0,
+            damaged: 1,
+            monitoring: 2,
+            offline: 3,
+            operational: 4
+          };
+          return (order[a.liveStatus] || 4) - (order[b.liveStatus] || 4);
+        }),
+    [facilityStats, timelineDate]
+  );
 
   return (
     <PageContainer>
@@ -112,7 +92,7 @@ export default function FiresPage() {
         </div>
         <div className='grid gap-3 sm:grid-cols-2 lg:grid-cols-3'>
           {facilityData.map((f) => {
-            const config = STATUS_CONFIG[f.liveStatus];
+            const config = FACILITY_STATUS_CONFIG[f.liveStatus];
             const StatusIcon = config.icon;
             return (
               <Card key={f.id} className='flex flex-col'>
@@ -194,6 +174,14 @@ export default function FiresPage() {
                         })()}
                       </a>
                     )}
+                    <button
+                      type='button'
+                      onClick={() => setSelectedFacility(f)}
+                      className='bg-muted/60 hover:bg-accent inline-flex cursor-pointer items-center gap-1 rounded-full px-2.5 py-1 text-[10px] font-medium transition-colors'
+                    >
+                      <IconInfoCircle className='h-3 w-3 text-orange-400' />
+                      Details
+                    </button>
                     <Link
                       href='/dashboard/overview'
                       onClick={() => {
@@ -216,6 +204,7 @@ export default function FiresPage() {
           })}
         </div>
       </div>
+      <FacilityDrawer />
     </PageContainer>
   );
 }
