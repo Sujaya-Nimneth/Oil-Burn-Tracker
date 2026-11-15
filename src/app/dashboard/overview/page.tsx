@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useState, useEffect } from 'react';
+import { useCallback, useState } from 'react';
 import dynamic from 'next/dynamic';
 import MapControls from '@/features/map/components/map-controls';
 import FacilityDrawer from '@/features/fires/components/facility-drawer';
@@ -151,20 +151,12 @@ function FloatingStats() {
 }
 
 export default function OverviewPage() {
-  const [mapMode, setMapMode] = useState(false);
+  const mapMode = useFireStore((s) => s.mapMode);
+  const setMapMode = useFireStore((s) => s.setMapMode);
   const isMobile = useIsMobile();
   const setMapCenter = useFireStore((s) => s.setMapCenter);
   const setMapZoom = useFireStore((s) => s.setMapZoom);
   useFireData();
-
-  useEffect(() => {
-    try {
-      if (sessionStorage.getItem('obt-open-map') === '1') {
-        sessionStorage.removeItem('obt-open-map');
-        setMapMode(true);
-      }
-    } catch {}
-  }, []);
 
   const handleFlyTo = useCallback(
     (lat: number, lng: number, zoom?: number) => {
@@ -180,7 +172,7 @@ export default function OverviewPage() {
         );
       }, 50);
     },
-    [setMapCenter, setMapZoom]
+    [setMapCenter, setMapZoom, setMapMode]
   );
 
   // ── MAP MODE ──

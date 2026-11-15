@@ -37,6 +37,7 @@ export default function FiresPage() {
   const setMapCenter = useFireStore((s) => s.setMapCenter);
   const setMapZoom = useFireStore((s) => s.setMapZoom);
   const setSelectedFacility = useFireStore((s) => s.setSelectedFacility);
+  const setMapMode = useFireStore((s) => s.setMapMode);
 
   const facilityStats = useMemo(
     () => getFacilityFireStatsMap(fireData.features),
@@ -188,9 +189,7 @@ export default function FiresPage() {
                         setMapCenter([f.lng, f.lat]);
                         setMapZoom(11);
                         setSelectedFacility(f);
-                        try {
-                          sessionStorage.setItem('obt-open-map', '1');
-                        } catch {}
+                        setMapMode(true);
                       }}
                       className='bg-muted/60 hover:bg-accent inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[10px] font-medium transition-colors'
                     >
