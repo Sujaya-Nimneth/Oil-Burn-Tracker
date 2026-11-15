@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useCallback } from 'react';
+import { useEffect, useMemo, useRef, useCallback } from 'react';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import {
@@ -10,10 +10,13 @@ import {
 } from '@/stores/fire-store';
 import {
   curatedFires,
+  getEffectiveFacilityStatus,
+  getFacilityFireStatsMap,
+  type FacilityFireStats,
   type FacilityStatus
 } from '@/features/fires/data/curated-fires';
 import {
-  conflictEvents,
+  getEventsUpTo,
   CATEGORY_COLORS,
   type ConflictEvent
 } from '@/features/timeline/data/conflict-events';
@@ -116,30 +119,43 @@ function impactScale(pct: number): number {
   return 1; // Small facilities
 }
 
-function buildFacilitiesGeoJSON() {
+function buildFacilitiesGeoJSON(
+  timelineDate: string,
+  facilityStats: Map<string, FacilityFireStats>
+) {
   return {
     type: 'FeatureCollection' as const,
-    features: curatedFires.map((f) => ({
-      type: 'Feature' as const,
-      geometry: {
-        type: 'Point' as const,
-        coordinates: [f.lng, f.lat] as [number, number]
-      },
-      properties: {
-        id: f.id,
-        name: f.name,
-        capacityText: capacityLabel(f),
-        labelText: f.name.length > 22 ? f.name.slice(0, 20) + '...' : f.name,
-        facilityType: f.facilityType,
-        status: f.status,
-        country: f.country,
-        percentGlobalCapacity: f.percentGlobalCapacity,
-        color: STATUS_COLORS[f.status],
-        impactScale: impactScale(f.percentGlobalCapacity),
-        isActive: f.status === 'active_fire' || f.status === 'damaged' ? 1 : 0,
-        threatLevel: f.threatLevel
-      }
-    }))
+    features: curatedFires.map((f) => {
+      const effectiveStatus = getEffectiveFacilityStatus(
+        f,
+        timelineDate,
+        facilityStats.get(f.id)?.maxFRP ?? 0
+      );
+      return {
+        type: 'Feature' as const,
+        geometry: {
+          type: 'Point' as const,
+          coordinates: [f.lng, f.lat] as [number, number]
+        },
+        properties: {
+          id: f.id,
+          name: f.name,
+          capacityText: capacityLabel(f),
+          labelText: f.name.length > 22 ? f.name.slice(0, 20) + '...' : f.name,
+          facilityType: f.facilityType,
+          status: effectiveStatus,
+          country: f.country,
+          percentGlobalCapacity: f.percentGlobalCapacity,
+          color: STATUS_COLORS[effectiveStatus],
+          impactScale: impactScale(f.percentGlobalCapacity),
+          isActive:
+            effectiveStatus === 'active_fire' || effectiveStatus === 'damaged'
+              ? 1
+              : 0,
+          threatLevel: f.threatLevel
+        }
+      };
+    })
   };
 }
 
@@ -186,11 +202,16 @@ export default function FireMap() {
 
   const fireData = useFireStore((s) => s.fireData);
   const layers = useFireStore((s) => s.layers);
+  const timelineDate = useFireStore((s) => s.timelineDate);
   const setSelectedFire = useFireStore((s) => s.setSelectedFire);
   const isMuted = useFireStore((s) => s.isMuted);
   const isMutedRef = useRef(isMuted);
-  const mapState = useFireStore((s) => s.mapState);
   const events = useEventsStore((s) => s.events);
+
+  const facilityStats = useMemo(
+    () => getFacilityFireStatsMap(fireData.features),
+    [fireData.features]
+  );
 
   // The 'load' handler runs once with a first-render closure; without a ref it
   // would seed the fires source with stale (empty) data when the fetch
@@ -199,23 +220,28 @@ export default function FireMap() {
   const fireDataRef = useRef(fireData);
   const eventsRef = useRef(events);
   const layersRef = useRef(layers);
+  const timelineDateRef = useRef(timelineDate);
+  const facilityStatsRef = useRef(facilityStats);
   useEffect(() => {
     isMutedRef.current = isMuted;
     fireDataRef.current = fireData;
     eventsRef.current = events;
     layersRef.current = layers;
+    timelineDateRef.current = timelineDate;
+    facilityStatsRef.current = facilityStats;
     // Fires layer toggled → start/stop the pulse animation accordingly
     animSyncRef.current?.();
-  }, [isMuted, fireData, events, layers]);
+  }, [isMuted, fireData, events, layers, timelineDate, facilityStats]);
 
   const initMap = useCallback(() => {
     if (!mapContainer.current || map.current) return;
 
+    const { center, zoom } = useFireStore.getState().mapState;
     map.current = new maplibregl.Map({
       container: mapContainer.current,
       style: SATELLITE_STYLE,
-      center: mapState.center,
-      zoom: mapState.zoom,
+      center,
+      zoom,
       pitch: 45,
       bearing: -10,
       maxPitch: 85,
@@ -494,7 +520,10 @@ export default function FireMap() {
       // ── Curated facility markers (scaled by impact) ──
       m.addSource('facilities', {
         type: 'geojson',
-        data: buildFacilitiesGeoJSON()
+        data: buildFacilitiesGeoJSON(
+          timelineDateRef.current,
+          facilityStatsRef.current
+        )
       });
 
       // Layer 1: Outer impact glow — large, faded, shows area of effect
@@ -644,7 +673,9 @@ export default function FireMap() {
       // ── Conflict event pins (synced to timeline) ──
       m.addSource('conflict-events', {
         type: 'geojson',
-        data: buildEventsGeoJSON(eventsRef.current)
+        data: buildEventsGeoJSON(
+          getEventsUpTo(eventsRef.current, timelineDateRef.current)
+        )
       });
 
       // Outer glow ring for event pins
@@ -766,8 +797,13 @@ export default function FireMap() {
       // Click event pin → popup with video + summary
       m.on('click', 'event-pin-core', (e) => {
         if (!e.features || e.features.length === 0) return;
-        const props = e.features[0].properties;
-        const coords = (e.features[0].geometry as any).coordinates.slice();
+        const feature = e.features[0];
+        if (feature.geometry.type !== 'Point') return;
+        const props = feature.properties;
+        const coords: [number, number] = [
+          feature.geometry.coordinates[0],
+          feature.geometry.coordinates[1]
+        ];
 
         if (popup.current) popup.current.remove();
 
@@ -811,16 +847,28 @@ export default function FireMap() {
       // Click facility → popup (same style as event pins)
       m.on('click', 'facility-core', (e) => {
         if (!e.features || e.features.length === 0) return;
-        const props = e.features[0].properties;
-        const coords = (e.features[0].geometry as any).coordinates.slice();
+        const feature = e.features[0];
+        if (feature.geometry.type !== 'Point') return;
+        const props = feature.properties;
+        const coords: [number, number] = [
+          feature.geometry.coordinates[0],
+          feature.geometry.coordinates[1]
+        ];
         const facility = curatedFires.find((f) => f.id === props?.id);
         if (!facility) return;
 
         if (popup.current) popup.current.remove();
 
-        // Find linked conflict event for this facility (for video)
-        const linkedEvent = conflictEvents.find(
-          (ev) => ev.facilityId === facility.id
+        const effectiveStatus = getEffectiveFacilityStatus(
+          facility,
+          timelineDateRef.current,
+          facilityStatsRef.current.get(facility.id)?.maxFRP ?? 0
+        );
+
+        // Find linked conflict event up to the active timeline date (for video)
+        const linkedEvent = eventsRef.current.find(
+          (ev) =>
+            ev.facilityId === facility.id && ev.date <= timelineDateRef.current
         );
         const ytMedia = linkedEvent?.mediaUrls?.find(
           (media) => media.type === 'youtube'
@@ -832,7 +880,7 @@ export default function FireMap() {
             name: facility.name,
             country: facility.country,
             facilityType: facility.facilityType,
-            status: facility.status,
+            status: effectiveStatus,
             attackDate: facility.attackDate,
             capacityBPD: facility.capacityBPD,
             gasCapacityBCFD: facility.gasCapacityBCFD,
@@ -867,6 +915,11 @@ export default function FireMap() {
       m.on('click', 'fires-points', (e) => {
         if (!e.features || e.features.length === 0) return;
         const feature = e.features[0];
+        if (feature.geometry.type !== 'Point') return;
+        const coords: [number, number] = [
+          feature.geometry.coordinates[0],
+          feature.geometry.coordinates[1]
+        ];
         const props = feature.properties;
 
         let matchedFacility = null;
@@ -881,7 +934,10 @@ export default function FireMap() {
 
         const fireFeature: FireFeature = {
           type: 'Feature',
-          geometry: feature.geometry as any,
+          geometry: {
+            type: 'Point',
+            coordinates: coords
+          },
           properties: {
             latitude: props?.latitude ? Number(props.latitude) : 0,
             longitude: props?.longitude ? Number(props.longitude) : 0,
@@ -902,7 +958,6 @@ export default function FireMap() {
 
         setSelectedFire(fireFeature);
 
-        const coords = (feature.geometry as any).coordinates.slice();
         if (popup.current) popup.current.remove();
 
         popup.current = new maplibregl.Popup({
@@ -939,7 +994,7 @@ export default function FireMap() {
         });
       }
     });
-  }, []);
+  }, [setSelectedFire]);
 
   // Initialize map
   useEffect(() => {
@@ -972,17 +1027,25 @@ export default function FireMap() {
     }
   }, [fireData]);
 
-  // Update event pins when the runtime-fetched events hydrate
-  // (all pins stay visible — no date filtering)
+  // Update facility status/colors when timeline date or live satellite FRP changes
   useEffect(() => {
     if (!map.current) return;
-    const source = map.current.getSource(
-      'conflict-events'
-    ) as maplibregl.GeoJSONSource;
+    const source = map.current.getSource('facilities') as
+      maplibregl.GeoJSONSource | undefined;
     if (source) {
-      source.setData(buildEventsGeoJSON(events));
+      source.setData(buildFacilitiesGeoJSON(timelineDate, facilityStats));
     }
-  }, [events]);
+  }, [timelineDate, facilityStats]);
+
+  // Update event pins when runtime events hydrate or timeline date changes
+  useEffect(() => {
+    if (!map.current) return;
+    const source = map.current.getSource('conflict-events') as
+      maplibregl.GeoJSONSource | undefined;
+    if (source) {
+      source.setData(buildEventsGeoJSON(getEventsUpTo(events, timelineDate)));
+    }
+  }, [events, timelineDate]);
 
   // Toggle layers
   useEffect(() => {
