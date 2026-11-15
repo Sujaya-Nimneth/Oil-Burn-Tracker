@@ -48,12 +48,12 @@ jobs:
           FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
         run: node scripts/fetch-firms-snapshot.js
 
-      - name: Validate TypeScript types before committing
-        run: npm run typecheck
+      - name: Validate TypeScript types & tests before committing
+        run: npm run typecheck && npm run test
 
       # Data ships as a pull request from an unprotected branch, so the
-      # require-PR ruleset on main is satisfied by design — no PAT, no
-      # bypass, and the data commit passes the full CI gate before landing.
+      # require-PR ruleset on main is satisfied by design (requires repo setting:
+      # Actions -> Workflow permissions -> Allow GitHub Actions to create PRs).
       - name: Ship data update via auto-merged PR
         env:
           GH_TOKEN: ${{ github.token }}
@@ -83,22 +83,28 @@ jobs:
           git checkout -B "$BRANCH"
           git push --force origin "$BRANCH"
 
-          # Create the PR via the REST API so any failure surfaces verbatim
-          API="https://api.github.com/repos/Sujaya-Nimneth/Oil-Burn-Tracker"
-          CREATE=$(curl -s -X POST \
+          # Create the PR via the REST API using jq-escaped JSON so failures surface verbatim
+          API="https://api.github.com/repos/${GITHUB_REPOSITORY}"
+          PAYLOAD=$(jq -n \
+            --arg title "data(auto): conflict, market, and satellite update ($TODAY)" \
+            --arg head "$BRANCH" \
+            --arg base "main" \
+            --arg body "Automated data-pipeline update. Merges automatically once checks pass." \
+            '{title: $title, head: $head, base: $base, body: $body}')
+          CREATE=$(curl -sS -X POST \
             -H "Authorization: Bearer $GH_TOKEN" \
             -H "Accept: application/vnd.github+json" \
             "$API/pulls" \
-            -d "{\"title\":\"data(auto): conflict, market, and satellite update ($TODAY)\",\"head\":\"$BRANCH\",\"base\":\"main\",\"body\":\"Automated data-pipeline update. Merges automatically once checks pass.\"}")
-          PR_URL=$(echo "$CREATE" | grep -o '"html_url": *"[^"]*/pull/[0-9]*"' | head -1 | cut -d'"' -f4)
+            -d "$PAYLOAD")
+          PR_URL=$(printf '%s' "$CREATE" | jq -r '.html_url // empty')
           if [ -z "$PR_URL" ]; then
             # An open PR for this branch may already exist — find it
-            PR_URL=$(curl -s -H "Authorization: Bearer $GH_TOKEN" \
-              "$API/pulls?head=Sujaya-Nimneth:$BRANCH&state=open" \
-              | grep -o '"html_url": *"[^"]*/pull/[0-9]*"' | head -1 | cut -d'"' -f4)
+            PR_URL=$(curl -sS -H "Authorization: Bearer $GH_TOKEN" \
+              "$API/pulls?head=${GITHUB_REPOSITORY_OWNER}:$BRANCH&state=open" \
+              | jq -r '.[0].html_url // empty')
           fi
           if [ -z "$PR_URL" ]; then
-            echo "::error::Data PR creation failed: $(echo "$CREATE" | tr -d '\n' | head -c 800)"
+            echo "::error::Data PR creation failed: $(printf '%s' "$CREATE" | tr '\n' ' ' | head -c 800)"
             exit 1
           fi
           echo "Data PR: $PR_URL"
@@ -107,9 +113,9 @@ jobs:
           # Prefer auto-merge (waits for required checks once any are configured);
           # fall back to immediate merge while no checks are required
           MERGE_ERR=""
-          if ! MERGE_ERR=$(gh pr merge "$PR_NUM" --squash --auto 2>&1); then
-            if ! MERGE_ERR=$(gh pr merge "$PR_NUM" --squash 2>&1); then
-              echo "::error::Data PR merge failed: ${MERGE_ERR:0:600} — $PR_URL"
+          if ! MERGE_ERR=$(gh pr merge "$PR_NUM" --squash --delete-branch --auto 2>&1); then
+            if ! MERGE_ERR=$(gh pr merge "$PR_NUM" --squash --delete-branch 2>&1); then
+              echo "::error::Data PR merge failed: $(printf '%s' "$MERGE_ERR" | tr '\n' ' ' | head -c 600) — $PR_URL"
               exit 1
             fi
           fi
