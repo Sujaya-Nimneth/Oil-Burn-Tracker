@@ -279,6 +279,7 @@ export const curatedFires: CuratedFire[] = [
     capacityBPD: 400000,
     storageMBBL: 12,
     status: 'damaged',
+    attackDate: '2026-03-19',
     newsSourceUrl:
       'https://www.pbs.org/newshour/world/iran-intensifies-attacks-on-gulf-energy-sites-after-israel-struck-its-key-gas-field',
     description:
@@ -327,6 +328,7 @@ export const curatedFires: CuratedFire[] = [
     capacityBPD: 0,
     gasCapacityBCFD: 1.45,
     status: 'offline',
+    attackDate: '2026-03-19',
     newsSourceUrl:
       'https://www.cnbc.com/2026/03/17/iran-war-uae-energy-gas-field-oil-fujairah-strait-of-hormuz.html',
     description:
@@ -442,6 +444,7 @@ export const curatedFires: CuratedFire[] = [
     capacityBPD: 197000,
     storageMBBL: 2.8,
     status: 'damaged',
+    attackDate: '2026-03-19',
     newsSourceUrl:
       'https://www.aljazeera.com/news/2026/3/19/israel-says-oil-refinery-hit-in-iranian-missile-attack-no-major-damage',
     description:
@@ -858,6 +861,51 @@ const THREAT_SEVERITY: Record<ThreatLevel, number> = {
   moderate: 1,
   low: 0
 };
+
+/**
+ * Per-facility aggregation of live satellite fire detections.
+ */
+export interface FacilityFireStats {
+  fireCount: number;
+  maxFRP: number;
+  totalCO2: number;
+}
+
+export interface FireTelemetryFeatureLike {
+  properties: {
+    matchedFacility?: { id: string } | null;
+    frp: number;
+    estimatedCO2TonsDay: number;
+  };
+}
+
+/**
+ * Aggregate live FIRMS fire features by matched facility ID.
+ */
+export function getFacilityFireStatsMap(
+  features: readonly FireTelemetryFeatureLike[]
+): Map<string, FacilityFireStats> {
+  const statsMap = new Map<string, FacilityFireStats>();
+  for (const feature of features) {
+    const facilityId = feature.properties.matchedFacility?.id;
+    if (!facilityId) continue;
+    const existing = statsMap.get(facilityId);
+    if (existing) {
+      existing.fireCount += 1;
+      if (feature.properties.frp > existing.maxFRP) {
+        existing.maxFRP = feature.properties.frp;
+      }
+      existing.totalCO2 += feature.properties.estimatedCO2TonsDay;
+    } else {
+      statsMap.set(facilityId, {
+        fireCount: 1,
+        maxFRP: feature.properties.frp,
+        totalCO2: feature.properties.estimatedCO2TonsDay
+      });
+    }
+  }
+  return statsMap;
+}
 
 /**
  * Resolves a facility's effective status at a given timelineDate and optional live satellite FRP.
