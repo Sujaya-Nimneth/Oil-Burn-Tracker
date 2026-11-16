@@ -2350,6 +2350,16 @@
     ]
   },
   {
+    "id": "auto-us-and-israel-draw-up-2026-10-21-2026-10-21-2",
+    "date": "2026-10-21",
+    "title": "U.S. and Israel Draw Up Plans for Renewed Strikes on Iran After Midterm Elections",
+    "category": "military_strike",
+    "description": "Via The New York Times. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOaFNybFlkMEkyWkpGZUhTNHUyd2V2Y0JGQkNUNzdJVFhaNlpMWU1FQXh6NG9PWWU0ZlBSdDBCUXUwcEc0c1lJaXRFMzdNajVFdjN5Mm43Y2dBdmNST2lYY1JsWjA5dlVzZkZFcGVaY1RlUEMwS3pOblF0RlVzRGtlYm40TWh2NEp3UGc?oc=5"
+  },
+  {
     "id": "auto-iran-war-live-irgc-threatens-2026-10-22",
     "date": "2026-10-22",
     "title": "Iran war live: IRGC threatens US bases if tankers continue ‘illegal’ routes",
@@ -10376,6 +10386,16 @@
     ]
   },
   {
+    "id": "auto-analysis-how-far-will-netanyahu-2026-11-13",
+    "date": "2026-11-13",
+    "title": "Analysis • How far will Netanyahu go to stay in power?",
+    "category": "escalation",
+    "description": "Via Haaretz. Auto-detected by headline monitor.",
+    "lat": 31.768,
+    "lng": 34.851,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQVTlBTmtCT2loX0RmV1M2TTR3cU5JdDRXNnhHbmVjc1prQzB3Um5vLWt0YXZaZXlWUlp3b2tkd2ZiazBQSi1uTkdsYU41aFdFWWRlMmlvY2EySDRZWk95d3E3cWhSUGY2SVg3elgwYW5SWFMzaDVFTXpmS1VfcGFaZU1tRHZDVXRpc1Npc2FMMlBwTzJ2Vm90VEFscUx4NHc4S0VwdnNLM2FyTkdmUGg0RVg0UkZCOW9vUklxU2JNMWF6TW1GdU4tOFlldkpjQWJMR3BVTGVFUDJZazRrUnNWT2Noa0FuV2JSeVd3MVZDb1lQTndYNHZkcUUtRlg1bTRMcXpWakRzZTFGd3RsejNZbVNqbGpKQQ?oc=5"
+  },
+  {
     "id": "auto-iran-war-live-tehran-says-2026-11-14",
     "date": "2026-11-14",
     "title": "Iran war live: Tehran says tanker hit naval mine, caught fire",
@@ -10642,6 +10662,16 @@
         "label": "What caused the US nationwide ground stop and what happens now? #US #BBCNews"
       }
     ]
+  },
+  {
+    "id": "auto-netanyahu-says-only-a-unity-2026-11-14",
+    "date": "2026-11-14",
+    "title": "Netanyahu says only a unity government can guarantee Israel’s security",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 31.768,
+    "lng": 34.851,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQU3RqZl9HSGl4emgtQlBGWWFvTkxwT2NMT3JGWWd3Y2NMT2FTMDdRa2VEbFNyRjVhb3NrY2FuMFBLUnJHYnRKV0JCaFp4RldXN2h5Mkl5VEVYenF4Mllyc0RpazNaTTEyQTFlS1Y2NFIzSTZudUtEeTQ4UVp6U0F3YVBGdFZhRURSSmNHUFhQdXhCZ2Nmc0U0SEo4ODNOcU1YMFNaZzNoRlF0X3FvOFpET9IBtgFBVV95cUxPc2dVNk9OUzZHSmFhVndvOW5NME9ZdHhHQU01WkJXWXBTTkV1UjYzdnI1VDctZzNYbl9tZ2J6WTZ1cUNrSU0xYTh1UUFzSENnckZqLUpkX1hrTEY4NW5aZXdlbG4tQlRBWmw2R2dKdVVDYzZkc1hLbmVQRVpES0xETlFRdGVxSHRaWUVVcE85ZGtxV0twQkJYT2ZCME1vLWFLSXpEampnMEFHRmZiUGZmMmhqbEdBZw?oc=5"
   },
   {
     "id": "auto-iran-war-live-saudiled-coalition-2026-11-15",
@@ -11264,6 +11294,208 @@
       {
         "type": "youtube",
         "url": "https://www.youtube.com/watch?v=ayekU5sO7Kw",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-irans-navy-says-oil-tanker-2026-11-15",
+    "date": "2026-11-15",
+    "title": "Iran’s navy says oil tanker struck mine and caught fire east of Strait of Hormuz",
+    "category": "chokepoint",
+    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUDFKN2JUNU01WE5FUC1pd2FzTU1DbVV4VnNJWnA3el9feTlJRTM1LS1FNnZaakdaeGNNUEJkMmRLbHdGYlZwNHFzQ0FWRHdZNW10Z25BeUlqcjk3ZTRTak9mNEhyVWRmOHkwN2pTQ1FmdXIzVmRQaHlkMXlNamlIbEFBVWVsYW01R0g0UTBRTERrVHNDOV82SjlnRVBTWnUyMEozekJUcHg4UVNXVWVqLUVuOFdFRUFSQ1hZZ1l3Y3duWlU?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=m2VSd-sthAY",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-israeli-drone-filmed-flying-low-2026-11-15",
+    "date": "2026-11-15",
+    "title": "Israeli drone filmed flying low outside homes in southern Lebanon",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 33.366,
+    "lng": 35.433,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPY3BGU0wxT3U4aGVVOU9PZjRsbkZYbFc4ZVItQlFBRVJJMDFqYXN1Q1JpSkhzekJZYkJPNnJ5bmQtNWE5UFl1Y2NkTWZpanRCYmN2Qm41aWFxRzlNNUNqZjR6ZGt5NE1DNExOLVU2ZW8wckkyMjgzd3Z6WXJYYjltbFFVUVB1SFBOenpEb0szTElscml4WHlJeFRsdGU0RDVtbTVjaFpfVFUzSVM1NU5pQUlIMi1ZQTBL0gG-AUFVX3lxTE8xQU1oeFVRQVd5YnNfNEE2bFRDZ29KY1hxVTZfbS1SNTNzdzFHd3pHZXI3cXZHR3gwWTNkVU1tTm1yYWNfVVVUeS1FWFZwTXBqeHFjaEVBVncyYURhNG1xRk9zSVZSa1IzZmZJQzBBUjRORnkwOEIyOS1SQWRLXzdSODhtcWNsNWh3eVFTaHBkaEJhbTF0WloyN3ZsYzJUVmpld1VQZVkteXBsQnRwNEhvYmRWVXdMczdDTXkzMnc?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=aqF8fmwDjUw",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-mossad-chief-returns-to-israel-2026-11-15",
+    "date": "2026-11-15",
+    "title": "Mossad chief returns to Israel after US talks on Iran, set to brief Netanyahu: Report",
+    "category": "diplomatic",
+    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeFhJVkhNM25VajlTeS1sSVhCaHF3MS1YWDRFR2pma1F5NjRPbzhFbzl1UjdtM0xaLUNYZjNyRTdSaEg3TjlURFZUeU1RNVFhejROUk1xOWFmQkNMWHh0RHhVcUtHblktdzg2a3M0am5ta2lmNENuRW91QW9icmdydHlqUWpjdzNpSGo0eXhZdVJOQkdlcklZQmpuYVdpeEsxVnJEUWNubGt3SS1rVWtTOWRUNEYxTGtJZ1RmSFhLZTFCQXVHUVU4?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=OOzfWIL-UB0",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-launches-drone-attacks-against-2026-11-15",
+    "date": "2026-11-15",
+    "title": "Iran launches drone attacks against US military base in Bahrain",
+    "category": "military_strike",
+    "description": "Via The Guardian. Auto-detected by headline monitor.",
+    "lat": 26.228,
+    "lng": 50.586,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPS0RnUlBTa1J0QTBzR0RHcldQd0twTEtaUWwzV2xlSzJOSURDRW9hcHVqaUNtUVp3YU9uMGZ1N2djRU1xeGdsTzlBLU9Jdm1iSTQ5RDlzc1VPb293V2xkNk1Ddms0VHZvMVJ3VklsXy1KUGtkTW03RnY1VUZ5VU1jaTFTNDlUYU9UVEw4MVlEVkdPNnNWX3hQejRueUotWmxEal9lTnJhaloyNTBCTFE?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=0TXrn4WKuF0",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-saudi-arabia-qatar-jordan-egypt-2026-11-15",
+    "date": "2026-11-15",
+    "title": "Saudi Arabia, Qatar, Jordan, Egypt condemn Iranian attack on Bahrain - as it happened",
+    "category": "military_strike",
+    "description": "Via The Guardian. Auto-detected by headline monitor.",
+    "lat": 24.714,
+    "lng": 46.675,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZEl6dTh3bjNqcldTOVhOZEVsTVFxVDF3eE5kS0N5YTY0bGpHZTR0THVVRUZhZUh1QWZYcjJwVUdGUUxBOGVyMERUQ2tCMlBhMWtyMi1ZR1Q3b0xja1d1VkYxLXFhQm9mYzVvaVlBY3daM0tSQlFPS190TU16U1JJa09SV21UdzlXdWFrajctLTBkd2txdHl0MENwOHZBVzBTa2g5OHRHRlJFUnRzQXpHXzN0ejJKSEJRRFRqT2lBTU5XU0hhUVhGQzVfMVN5ZGlRZnNz?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=BgXjSsSZPKs",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-yair-golan-rules-out-unity-2026-11-15",
+    "date": "2026-11-15",
+    "title": "Yair Golan rules out unity with Benjamin Netanyahu, warns of Iran war for his survival",
+    "category": "escalation",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBxLXUwN1Y2Vy1JcS1aNWE2RGRKbkUwYWdhSlByNVdOWEFpcEVwS21TYXhVeVVXa3dOcENtbHRBN1lnN2trSHY5TXZMVE9RejFOVGdFczl3SnMydnMtcFg5MDJnNG9wUVI5eURiQ2hNbmVjODB5NW02ckVSWQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=xpVz1nfVqxU",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-updates-yemens-army-2026-11-15",
+    "date": "2026-11-15",
+    "title": "Iran war updates: Yemen’s army says ‘repositioning’ troops from Red Sea",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 12.583,
+    "lng": 43.333,
+    "facilityId": "bab-el-mandeb",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQWNHaDFxOWY3NnRZZm4zTHZQandnM2NFaTYyY2pyallRb3poSURScEpTeDlweFhLcHRLRGdjSDZab1ZlUU5JOU1jUTJvNlQ2X1AzaHZRN1J0bDIzU1VmVTVlUzhaM0NicGE2ZmE4bEZsOVFRc0dqVXdjRF9EZEJZZkpKdVdVMFByUDhFRW5LRWlZSkJuWUQtd1NEbEhhM0dkN054ZzJJN1A3WXgtZjJER2NLdnRTNkNnTk1uUm9LbWjSAcYBQVVfeXFMTTlyNmYxSlo0T0QzX0c5NlNZQWFZdWF2N2dSVFNjXy1XX2c5R29xR1kzakNhR29xM2Y0aFlqNUlnWWJDeDdUR0NJQzZ5R2dhQ3B4WmtGNzZKYkxvYS1vMzMwQ09ldnZHdF9ld2dMTnJqRVhsTnI5ajRFVkpxZGt4VS1FelVFdE9ONEpRb1ZtbVJvQW9xYThqT2dWWjNSS2FWTEFvX195ejRNTDh6SjJ1TnQxT2xVeFJ5aVJfNmhSREpGdHhTWWhB?oc=5"
+  },
+  {
+    "id": "auto-iran-war-live-third-us-2026-11-16",
+    "date": "2026-11-16",
+    "title": "Iran war live: Third US carrier arrives, Iran warns it could strike first",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNzh6c3o5bEFNTllEY21FaVJJTkk3SzBhWWtBV1hjQkxETmNSTXdQemp5TXBqbTUxTHVlVzNKbzEzYjFidWtMNld5OFFFY1ZIYmkwd2ZuUEdBZ2Fabmc1YjR5ZUJUbzdfLVFRT1pPNlRBdGgxSHNxQWlBbmlWSXhWOS1HRHBjdUU3YkRhTmltSEhpa3FsNTFDUUF0Mm9PTmFDU2wtZXpReDkwWG81XzJqZFMycE53MVdFZlY4SE1pZ9IBxAFBVV95cUxOOG9VVnFZTngzajNEOWVjZk9SbV8td3JQOUk2MnpQYVBrd1Z0VEFGd29xTVdFRlhRR3daUi11LVQxNDlVaE91cUYtMVZxelVrejhnVlVmQU14RDZTZEtndTNjdGJfeU5DZ1Fwc0wxM2RzME5lQnJKNm1veEZLRVk4V2ptY1hqQk93Qmh3YmFqOGJ4dVJlVjI2ck8zNXNpem1BYnRKa2FTTWVnMEtyT29wa2h3QnFwMDJaNkNiWVNGYmJWUmFJ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=9Rktw7hOQ3M",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-irgc-says-two-oil-tankers-2026-11-16",
+    "date": "2026-11-16",
+    "title": "IRGC says two oil tankers hit mines in the Hormuz Strait",
+    "category": "chokepoint",
+    "description": "Via Middle East Eye. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc0loVFEtUGVYLXVsZmlTRUlYM3pBeUNXb0VGQXEyRkpSMDAxcEt1eHR3OXJUd3BwaE9BMFBnNXdLNFpPY1pLTXBMWDY1QmlRdnB3WkxUQzhuZ0Vvb3hjNWhydFBpSXNlOFNERDR6TU5nb2dhSGdWX0ZVODk2U1RHazQtazJXaDBIRHd6anBmM1NhX0tkX25NU2FUclR2RmFRTEZ0dWY4U25yQQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=C1mhkzfAq1Q",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-two-oil-tankers-hit-mines-2026-11-16",
+    "date": "2026-11-16",
+    "title": "Two oil tankers hit mines in the Strait of Hormuz, IRGC says",
+    "category": "chokepoint",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5MQXJxTFVOa05BVEtjbTNLMzN5X2J0VnZyMXpGbjJvRFdPMmc4WjhTb0hOQnM3dmhqd3V1eHpwbTkwYkx2WnJwNDVNWjZjbkIya0RZYmYxV3hmRWhs?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=C1mhkzfAq1Q",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-two-tankers-hit-mines-in-2026-11-16",
+    "date": "2026-11-16",
+    "title": "Two tankers hit mines in Hormuz, IRGC says",
+    "category": "chokepoint",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPM3p4eVRGZDIxQzhoMXZuajFNeHBIZ2NLSWx4ekplTXdwaDFLR0J1b1ByNEJYWUMyXzdMazZGQTRDa1p3eHFyWmU1VWFuLVdLdy1kczFfSENjdDNqWlI5ZTJfMjA5ZUhpWlFQLTZfRFNDbE1xZVdudjAwWTZQa0NZeTM2R0kyWmUwWUVxRUJNcjY?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=tqZ7MCjeXB4",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-oil-prices-fall-on-expectations-2026-11-16",
+    "date": "2026-11-16",
+    "title": "Oil prices fall on expectations of coming supply surplus",
+    "category": "escalation",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "lat": 29.5,
+    "lng": 48.5,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSXlabl9ocWtiOEZLcnc2SGNVSEh2bjltWURkWU1RSDVTejZWMEtNYTR4QW9sT19DQy05SVhHVmphTEtIQXdtVzlUS25Vdk1oS0hjdWZ0MHpUb01NQUp4dzlBcE55anIwR0hKVmhCUDRsT3V3ek9jTURVYkcySDNBM1B0RmJ3emdUaHpPVWpENENfZ2JGRHB3MlJuekVfUWlFa2lfUQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=CANF6rZ9O34",
         "label": ""
       }
     ]
