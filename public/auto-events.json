@@ -11413,6 +11413,70 @@
     "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQWNHaDFxOWY3NnRZZm4zTHZQandnM2NFaTYyY2pyallRb3poSURScEpTeDlweFhLcHRLRGdjSDZab1ZlUU5JOU1jUTJvNlQ2X1AzaHZRN1J0bDIzU1VmVTVlUzhaM0NicGE2ZmE4bEZsOVFRc0dqVXdjRF9EZEJZZkpKdVdVMFByUDhFRW5LRWlZSkJuWUQtd1NEbEhhM0dkN054ZzJJN1A3WXgtZjJER2NLdnRTNkNnTk1uUm9LbWjSAcYBQVVfeXFMTTlyNmYxSlo0T0QzX0c5NlNZQWFZdWF2N2dSVFNjXy1XX2c5R29xR1kzakNhR29xM2Y0aFlqNUlnWWJDeDdUR0NJQzZ5R2dhQ3B4WmtGNzZKYkxvYS1vMzMwQ09ldnZHdF9ld2dMTnJqRVhsTnI5ajRFVkpxZGt4VS1FelVFdE9ONEpRb1ZtbVJvQW9xYThqT2dWWjNSS2FWTEFvX195ejRNTDh6SjJ1TnQxT2xVeFJ5aVJfNmhSREpGdHhTWWhB?oc=5"
   },
   {
+    "id": "auto-iran-is-functioning-without-a-2026-11-15",
+    "date": "2026-11-15",
+    "title": "Iran is functioning without a supreme leader",
+    "category": "escalation",
+    "description": "Via The Economist. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOc29YelRiQ092dnhMREpZdTk1U0VNVzh2cmpmQTQtSkQzMUdrMjh2Zm1mYWpUS1VFaVQ1cldDU1ZZLWJ0RUxwMDJwVzlTQUJOanZNVE5kcTFKcDdDZG9mNmVWdDRkVW5KQnZHNVBPckpxTk1lamNVTHdUV0Z0OUExSlBRcmZ0SHI2MkpERlpnR3BrLS0wbnBlS0RnMzY5X1pwSWFreXlhRQ?oc=5"
+  },
+  {
+    "id": "auto-israel-kills-senior-member-of-2026-11-15",
+    "date": "2026-11-15",
+    "title": "Israel kills senior member of Hamas's military wing in Gaza strike",
+    "category": "military_strike",
+    "description": "Via France 24. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdnRjM1hYY2RLTVhHZW5vbU43UDB0QlljR2Z6N1dzTTByOWw4X1o1X2ZpSEZYc1pLUWoyVE9tQzVFV19zU09YamlqVlhHM2RTeWFhSnN6UjFiME5RSmtkOExhbGI3NWpQMHBDZjNnSnFmOVY4ZGVkSlhjREwzcENQdjNZX3g2V19fN2p1RHZIanJYN3MtandNS0FIalVMUEltelhheXY2OUZFZ2dackRsUGh5akx5UQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=j6XO4-u7CXM",
+        "label": "Why Israel is being urged to let more aid into Gaza by Trump's Board of Peace | Global News Podcast"
+      }
+    ]
+  },
+  {
+    "id": "auto-idf-says-it-demolished-hezbollah-2026-11-15",
+    "date": "2026-11-15",
+    "title": "IDF says it demolished Hezbollah tunnel in southern Lebanon",
+    "category": "escalation",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "lat": 33.366,
+    "lng": 35.433,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQa0tWb2RpZjEwTWFUODUxS1EtOWxEbmVBdXJlQ1NVdDdVVlhvRW1lc2NLOTJNbnROc2ctUHBfNnBVSDhlN3FGb3VXSkNkZHE5NnVXZEN3NEY2WWpBM2c3UkZlVUl0aXRXeHBIa0ZwTVJNTk91dkVwVnpzcW1VWndwQlVqOHJoQVhINlNCWnBPM1JHeEEza3NKMUlyMUF5d0JIX0pnbjdCN04?oc=5"
+  },
+  {
+    "id": "auto-film-tracking-journalists-in-gaza-2026-11-15",
+    "date": "2026-11-15",
+    "title": "Film tracking journalists in Gaza during war wins best documentary at Montreal fest",
+    "category": "escalation",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNOTFjSEdSRDk3cHppTjVOakktcXRBX3JreldibTV5QnNnX2M5ekttNXFhdl9TSjVTTjRBMVhfeUpYS0tlYVJwRXM2VHl2cVdjWTJVVW55dVVTSFl0RXNfVjhmMHJiTXFXWUNpQ2JjTThseXItVmwzYVlCRTRFQkNxSzV1ODNhZ3IwOHp2bklsLTA5RHYwd2QzSmNiM21CNEMycW53YVgxeTdDY3h4SHJuM1gxRjLSAboBQVVfeXFMTkJJVWhpc2xWRmJCdUY0S1VCWVNZX21sNjRadDh4OU0wbnVDb3FwY0hVY2dCQ3BkLXZLaDBPQmNJbHRiUUFPZXY0ZUxZT2I1WVlOQmVrVDdWUFp4SVlaWkdwQkRVTFVjT0ctVWZjS0dGX2JuOFhpM3Exczh5S3hUWUFhWVd6Y0xETzE4eDljZFV3TUZHcFdZNU9LRnNvT09ITzVoWWprZm4zNURlZ3ZiOEJ4UWdRanZtclRn?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=j6XO4-u7CXM",
+        "label": "Why Israel is being urged to let more aid into Gaza by Trump's Board of Peace | Global News Podcast"
+      }
+    ]
+  },
+  {
+    "id": "auto-golan-rules-out-unity-government-2026-11-15",
+    "date": "2026-11-15",
+    "title": "Golan rules out unity government with Netanyahu, warns of new Iran war by caretaker government",
+    "category": "escalation",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBxLXUwN1Y2Vy1JcS1aNWE2RGRKbkUwYWdhSlByNVdOWEFpcEVwS21TYXhVeVVXa3dOcENtbHRBN1lnN2trSHY5TXZMVE9RejFOVGdFczl3SnMydnMtcFg5MDJnNG9wUVI5eURiQ2hNbmVjODB5NW02ckVSWQ?oc=5"
+  },
+  {
     "id": "auto-iran-war-live-third-us-2026-11-16",
     "date": "2026-11-16",
     "title": "Iran war live: Third US carrier arrives, Iran warns it could strike first",
@@ -11929,5 +11993,202 @@
         "label": ""
       }
     ]
+  },
+  {
+    "id": "auto-us-condemns-iranian-strikes-in-2026-11-16",
+    "date": "2026-11-16",
+    "title": "US condemns Iranian strikes in Bahrain as Rubio holds call with Bahraini counterpart",
+    "category": "military_strike",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "lat": 26.228,
+    "lng": 50.586,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQUI4WnRjazloVU5KUTR5MndXU19SVjNiQzRib2JHSC1ZOTFFVE5kdUlweUZjNkJrZzNheVc0bUlJY3UzRGtoanF1NDV4eGdTUnZIOEh4QUZ1MEF1NWt5M2Y3UmtZdnVRN3QwZzg1NTlGQWxsMlFjNzE4c0t6VnVTaUNPTFRZUWxnMVRMUHRZV18tMWttdm80V21kSFgzVUhxdEpUYk9MZElPZXJyTVN3LWVBM2VJTXpmdzlINTFZcTVER1pXV0ZnMHFsWEI?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=g1TQPfeNyFU",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-israel-strikes-deep-inside-lebanon-2026-11-16",
+    "date": "2026-11-16",
+    "title": "Israel strikes deep inside Lebanon after prolonged restraint at U.S. request",
+    "category": "military_strike",
+    "description": "Via Haaretz. Auto-detected by headline monitor.",
+    "lat": 33.366,
+    "lng": 35.433,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQNUdzYVIycndKMjRzMTNqZjF0LWFVdTY2eTdndkVQak1iaTdPMGhZcXJPVFV5R0tOQm9CWEZOUWtieWtQd0YzVjVxenF0YjJIWVhHS3NPenBfa2REMUxyRGs3TTZCcUxBVmZZeDc5dVE3ZTJ3VlcxckVNa1FQdVBFTlQwUGJkOFh0WmxiclVpb2hVSk9lelE1akNIaTl1MlhvcExUZXI4aDVaRzF5YmdVcEZKMjVpdVZIQkxSaV90UmRjeUt3YVhUZDdDRmdHZ296azhhUWw0d1ZCNDk1SGFFZFpUQkJ5WlhvbUYtLU5pYm9QYWdLVzJ3LWRfVURTUGhYYkNhRXdSQkdBRUtBZE02SVVDTzNKcGZ6Si1MUnpZcFozdw?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=LwdSfdEkXPA",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-three-aircraft-carriers-53000-troops-2026-11-16",
+    "date": "2026-11-16",
+    "title": "Three aircraft carriers, 53,000 troops in Middle East as US, Israel prepare for possible Iran war",
+    "category": "escalation",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBsTUVkTl9zazMyUGVMbjctb2lDWV9JRTY2aUZFaFljc1JyZHFOd3VmMmFnbTBsUno1UjFyTG5ROTd2ZHc4bjhJN19SUEMxa3lKRkNhUFo1dXkzNUww?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=CZCGz1sR5_4",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-air-defenses-activated-in-isfahan-2026-11-16",
+    "date": "2026-11-16",
+    "title": "Air defenses activated in Isfahan, Iran: Report",
+    "category": "escalation",
+    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
+    "lat": 32.655,
+    "lng": 51.667,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPaDdrMThtU0tzM1JQOHR2UzhfVzg0QzBJMEYyOXNrbU56OGVfVV8zb2dxX3U5MXJyYmtITlNtLVRrZnM3TmlLeGYydnVOQV9tcklta3JoMWVzTUlLX0x0WjRwQ0ZLRFBjblBETXFRNVlwbmwwWWJ4cndkWTZKcWlqYnM2a19yMXdLMm83MFpwSQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=j_MrxRE4pFU",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-braces-for-natural-gas-2026-11-16",
+    "date": "2026-11-16",
+    "title": "Iran braces for natural gas shortages during winter energy imbalance",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxON0dpX0xPOTVZeWlMZFZTX2VnWXpheHVpSWFyWDk1Z2ZzajItUnJFODBubHdxSE8tTzdEQzVuUURvbVR1MUt3VXJGUUdrYktndXdhd2VyNFZOSUtNWmFiYmcwekxReDc5SnJsckxaVHU3ZXFBc3QyTHI1MnNsbWJxTDBnUmhRdE54Y1VDY1ZJZXZMTVV2RjdDTDhTMm04SEY5SWd1N01kTzBXZTVlWFdF0gG0AUFVX3lxTFBuZERWUU1qM1dMcDJlUWQxZ3pBT014TjZpUlZma0ZLZk90NDRxUnUzT3RSaWQwbUcxNkdKVUVKa01kRHpoUnJIT1hOM3hfM0xQeFZSSXM3WUhrRUVlWnlRM2EzVHNuS0tXd3J4SU9KdXFFSmNkbWxVSWs4VzFuXzNLYlZwb3E0Y0wycEdabDlRdVNBT1dpUWZfWE1VWmk5RXI1R2lfdFRCanZqX0FxNGI5YVl0UQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=0iMdSJPM6Y8",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-idf-thwarts-hezbollah-weapons-transfer-2026-11-16",
+    "date": "2026-11-16",
+    "title": "IDF thwarts Hezbollah weapons transfer, arrests two Lebanese Resistance Brigade terrorists",
+    "category": "escalation",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "lat": 33.366,
+    "lng": 35.433,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9GMXBnNmVQblFUa3c4SkFPZG9HNlYyazN3SWl4czJBZWVxTjYxUFZIY0ptbkJ4MmVMUWtHaEZzNmkzRGtMYlo4ZFgtYlpSYUJfLU1VODd2OExHTnlEeFJHblZ5b05OZ0ZFdjU5M0N3?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=lC_tUQlANQE",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-mike-waltz-in-lebanon-presses-2026-11-16",
+    "date": "2026-11-16",
+    "title": "Mike Waltz in Lebanon, presses Hezbollah disarmament as UNIFIL withdrawal looms",
+    "category": "escalation",
+    "description": "Via Al-Monitor. Auto-detected by headline monitor.",
+    "lat": 33.366,
+    "lng": 35.433,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUEdsZHhKMFE3SVZsWGlKOUMzcHR6NGpCQXVOaHZjTXRldlBCMlVBcEVBd1U5c2ZxQk5FMEVGMmczLWpyOHNwVGpINWJVSFR1aVFuYmhZR01lX01MSXdoaUxxUldsdS1kQnVBOUFaOWVSQXZkVDBOMDNqanVvLXpkaGYxVFBxT08wYXhHenFxWmdnS1RBMm9YeGF4emVHWmtZcU5MVnI0UXA2cmJxZ3djTWpoamR0ZXhu?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=5Guqr-HaXGw",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-houthis-accuse-saudi-arabia-of-2026-11-16",
+    "date": "2026-11-16",
+    "title": "Houthis accuse Saudi Arabia of strikes that killed 3 including a child, and other Mideast news",
+    "category": "chokepoint",
+    "description": "Via PBS. Auto-detected by headline monitor.",
+    "lat": 15.369,
+    "lng": 44.191,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQUgwRUxaX2xHbVlybWJPWEtzb3NKdHdiY3FsSDhIeF8tQnBqZEdUdUlCZlVrWkloNGFDYVh4eU5fU3ZhUWZRVlM0cGJVTzlPY1pMTXJUSVhMcEY5bzNteUhpU01ISzlWU0VlblVzRll2TEdILU9rNnptXy1rMzVDb2E1QlhlNEFHYklBOWNDYndpLTcwTUlaVnp1YTJwNFp3eUlfdl90RWhlZC1wZktYNTd2anRuZFEwT09zZmU4X1RIMWktTFJB0gHMAUFVX3lxTFBOVk1kay1tdjlNdVB4NlhGd3EwX1pZcmppZWxESUJTeEZkUE1jdVZzRkZqWWN2RVM5SVZyNld5RjNIS3gtOF9ZcVhQZm9Ecm5sMFhHTHQxWjlqalpoTFpKb2tzZ1c5V1lJaUxVVWxmQVA0WERESHcwWEkzVk0xMG4wNlBRNjU5U3ZYLUx0Vk1MNGFMWnR0NGhjd1l0ZGFqTkRxc2V5OWdJcDIwclp1MzI1ZXlEUXBxTGNkRXZPeW9idGRSYVBYd2lEY1VRbg?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=rd6_uAQyCSM",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-can-hezbollah-salvage-syrian-networks-2026-11-16",
+    "date": "2026-11-16",
+    "title": "Can Hezbollah salvage Syrian networks without clashing with Damascus?",
+    "category": "escalation",
+    "description": "Via Middle East Eye. Auto-detected by headline monitor.",
+    "lat": 33.366,
+    "lng": 35.433,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxPQkY3ejA0TlFYeXV2dE9wdEF3T1B6ampRYzRNMEl0am95T1lzRWRFRkh4Wnc4NDBjbm82RkEtWU05S1Vsa3liSUxKS1FKaG9Bdkhra2tCcDZ3Vkp6V3BXdk9pSDFFbmpsYzdFNnNLbUFrd2llMDZYSjk2SDBwOGI0TDVjanhvUE5YeUtpV19SRThOdHd4MmE2WDdISmxfdw?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=FxkiZZU6fzI",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-updates-yemens-houthis-edge-closer-2026-11-16",
+    "date": "2026-11-16",
+    "title": "Updates: Yemen’s Houthis edge closer to Aden; Iran, Pakistan hold talks",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 15.369,
+    "lng": 44.191,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNzh6c3o5bEFNTllEY21FaVJJTkk3SzBhWWtBV1hjQkxETmNSTXdQemp5TXBqbTUxTHVlVzNKbzEzYjFidWtMNld5OFFFY1ZIYmkwd2ZuUEdBZ2Fabmc1YjR5ZUJUbzdfLVFRT1pPNlRBdGgxSHNxQWlBbmlWSXhWOS1HRHBjdUU3YkRhTmltSEhpa3FsNTFDUUF0Mm9PTmFDU2wtZXpReDkwWG81XzJqZFMycE53MVdFZlY4SE1pZ9IBxAFBVV95cUxOOG9VVnFZTngzajNEOWVjZk9SbV8td3JQOUk2MnpQYVBrd1Z0VEFGd29xTVdFRlhRR3daUi11LVQxNDlVaE91cUYtMVZxelVrejhnVlVmQU14RDZTZEtndTNjdGJfeU5DZ1Fwc0wxM2RzME5lQnJKNm1veEZLRVk4V2ptY1hqQk93Qmh3YmFqOGJ4dVJlVjI2ck8zNXNpem1BYnRKa2FTTWVnMEtyT29wa2h3QnFwMDJaNkNiWVNGYmJWUmFJ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=BNeju9F1n-A",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-israel-targets-arms-shipment-in-2026-11-16",
+    "date": "2026-11-16",
+    "title": "Israel targets arms shipment in rare strike in Lebanon’s eastern Beqaa Valley",
+    "category": "military_strike",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "lat": 33.366,
+    "lng": 35.433,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdlJuZ3J6c3VIdGVQcmpRS2g3bzAtclU2UjFZbzhVU0NPbzRnVUhZdW9RUUtlYUxnbXlyWHBaWEZMUWhyYXVDZmpLZnEyaDc0MEVDeHlrZlhKVWNWU3NnQkFFUEVIQ09wMUdUWTEteFF0MlhFZmppSVlDSUZvQXRoRGJWUS1yc2ZCQmY3SW1MYzVjTUFyMmxmRnNmY2dkbHIwYVRBblgzVUY5YlnSAbABQVVfeXFMTVpocWxtdEU0ek1Rbi0tOUM2RUx0STFuOGllZ09rTDhmYVJFM1pORktHdjhtdkdjdjJkeUVvMEM0RzlSTVNlSUNjOWhXemRpc3dlRXV0Z05mSHJDZVd5dlFnRHpiYk1UZ1hKM2VUT3RxVmMzUVJxbkhkYzNEUXQzZG9kUDdUZ3NGSjNLZXF3eWRxaU4yejc4Vmp2WXBjN2pFTjNoZ09uWUZ5bURGd3Y3Ynk?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=yDBw059uGwI",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "auto-yemeni-forces-retreat-to-defend-2026-11-16",
+    "date": "2026-11-16",
+    "title": "Yemeni forces retreat to defend port city from Houthis",
+    "category": "chokepoint",
+    "description": "Via BBC. Auto-detected by headline monitor.",
+    "lat": 15.369,
+    "lng": 44.191,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1qTkNnRFZrMXp4T0RaZE5iNHpsMkZqVU9XNGRVSWpDWEItZVd1Q1Q5Q2RUU1JVQzAyWDJfQ1M0TnhCVVNMNDl4MVU3SklvT2JMdjJlY1VrdXFEOTFaN1E?oc=5"
   }
 ]
