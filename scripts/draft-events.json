@@ -1,550 +1,5 @@
 [
   {
-    "id": "auto-iran-war-live-third-us-2026-11-16",
-    "date": "2026-11-16",
-    "title": "Iran war live: Third US carrier arrives, Iran warns it could strike first",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNzh6c3o5bEFNTllEY21FaVJJTkk3SzBhWWtBV1hjQkxETmNSTXdQemp5TXBqbTUxTHVlVzNKbzEzYjFidWtMNld5OFFFY1ZIYmkwd2ZuUEdBZ2Fabmc1YjR5ZUJUbzdfLVFRT1pPNlRBdGgxSHNxQWlBbmlWSXhWOS1HRHBjdUU3YkRhTmltSEhpa3FsNTFDUUF0Mm9PTmFDU2wtZXpReDkwWG81XzJqZFMycE53MVdFZlY4SE1pZ9IBxAFBVV95cUxOOG9VVnFZTngzajNEOWVjZk9SbV8td3JQOUk2MnpQYVBrd1Z0VEFGd29xTVdFRlhRR3daUi11LVQxNDlVaE91cUYtMVZxelVrejhnVlVmQU14RDZTZEtndTNjdGJfeU5DZ1Fwc0wxM2RzME5lQnJKNm1veEZLRVk4V2ptY1hqQk93Qmh3YmFqOGJ4dVJlVjI2ck8zNXNpem1BYnRKa2FTTWVnMEtyT29wa2h3QnFwMDJaNkNiWVNGYmJWUmFJ?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-16T05:22:33.446Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=9Rktw7hOQ3M",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "9Rktw7hOQ3M",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-irgc-says-two-oil-tankers-2026-11-16",
-    "date": "2026-11-16",
-    "title": "IRGC says two oil tankers hit mines in the Hormuz Strait",
-    "description": "Via Middle East Eye. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc0loVFEtUGVYLXVsZmlTRUlYM3pBeUNXb0VGQXEyRkpSMDAxcEt1eHR3OXJUd3BwaE9BMFBnNXdLNFpPY1pLTXBMWDY1QmlRdnB3WkxUQzhuZ0Vvb3hjNWhydFBpSXNlOFNERDR6TU5nb2dhSGdWX0ZVODk2U1RHazQtazJXaDBIRHd6anBmM1NhX0tkX25NU2FUclR2RmFRTEZ0dWY4U25yQQ?oc=5",
-    "source": "Middle East Eye",
-    "fetchedAt": "2026-11-16T05:22:34.924Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=C1mhkzfAq1Q",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "C1mhkzfAq1Q",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-two-oil-tankers-hit-mines-2026-11-16",
-    "date": "2026-11-16",
-    "title": "Two oil tankers hit mines in the Strait of Hormuz, IRGC says",
-    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5MQXJxTFVOa05BVEtjbTNLMzN5X2J0VnZyMXpGbjJvRFdPMmc4WjhTb0hOQnM3dmhqd3V1eHpwbTkwYkx2WnJwNDVNWjZjbkIya0RZYmYxV3hmRWhs?oc=5",
-    "source": "The Jerusalem Post",
-    "fetchedAt": "2026-11-16T05:22:36.330Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=C1mhkzfAq1Q",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "C1mhkzfAq1Q",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-two-tankers-hit-mines-in-2026-11-16",
-    "date": "2026-11-16",
-    "title": "Two tankers hit mines in Hormuz, IRGC says",
-    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPM3p4eVRGZDIxQzhoMXZuajFNeHBIZ2NLSWx4ekplTXdwaDFLR0J1b1ByNEJYWUMyXzdMazZGQTRDa1p3eHFyWmU1VWFuLVdLdy1kczFfSENjdDNqWlI5ZTJfMjA5ZUhpWlFQLTZfRFNDbE1xZVdudjAwWTZQa0NZeTM2R0kyWmUwWUVxRUJNcjY?oc=5",
-    "source": "The Times of Israel",
-    "fetchedAt": "2026-11-16T05:22:37.753Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=tqZ7MCjeXB4",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "tqZ7MCjeXB4",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-oil-prices-fall-on-expectations-2026-11-16",
-    "date": "2026-11-16",
-    "title": "Oil prices fall on expectations of coming supply surplus",
-    "description": "Via Reuters. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSXlabl9ocWtiOEZLcnc2SGNVSEh2bjltWURkWU1RSDVTejZWMEtNYTR4QW9sT19DQy05SVhHVmphTEtIQXdtVzlUS25Vdk1oS0hjdWZ0MHpUb01NQUp4dzlBcE55anIwR0hKVmhCUDRsT3V3ek9jTURVYkcySDNBM1B0RmJ3emdUaHpPVWpENENfZ2JGRHB3MlJuekVfUWlFa2lfUQ?oc=5",
-    "source": "Reuters",
-    "fetchedAt": "2026-11-16T05:22:39.232Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=CANF6rZ9O34",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "CANF6rZ9O34",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 29.5,
-    "lng": 48.5,
-    "zoom": 5,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-irans-navy-says-oil-tanker-2026-11-15",
-    "date": "2026-11-15",
-    "title": "Iran’s navy says oil tanker struck mine and caught fire east of Strait of Hormuz",
-    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUDFKN2JUNU01WE5FUC1pd2FzTU1DbVV4VnNJWnA3el9feTlJRTM1LS1FNnZaakdaeGNNUEJkMmRLbHdGYlZwNHFzQ0FWRHdZNW10Z25BeUlqcjk3ZTRTak9mNEhyVWRmOHkwN2pTQ1FmdXIzVmRQaHlkMXlNamlIbEFBVWVsYW01R0g0UTBRTERrVHNDOV82SjlnRVBTWnUyMEozekJUcHg4UVNXVWVqLUVuOFdFRUFSQ1hZZ1l3Y3duWlU?oc=5",
-    "source": "Anadolu Ajansı",
-    "fetchedAt": "2026-11-16T05:22:41.645Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=m2VSd-sthAY",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "m2VSd-sthAY",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-israeli-drone-filmed-flying-low-2026-11-15",
-    "date": "2026-11-15",
-    "title": "Israeli drone filmed flying low outside homes in southern Lebanon",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPY3BGU0wxT3U4aGVVOU9PZjRsbkZYbFc4ZVItQlFBRVJJMDFqYXN1Q1JpSkhzekJZYkJPNnJ5bmQtNWE5UFl1Y2NkTWZpanRCYmN2Qm41aWFxRzlNNUNqZjR6ZGt5NE1DNExOLVU2ZW8wckkyMjgzd3Z6WXJYYjltbFFVUVB1SFBOenpEb0szTElscml4WHlJeFRsdGU0RDVtbTVjaFpfVFUzSVM1NU5pQUlIMi1ZQTBL0gG-AUFVX3lxTE8xQU1oeFVRQVd5YnNfNEE2bFRDZ29KY1hxVTZfbS1SNTNzdzFHd3pHZXI3cXZHR3gwWTNkVU1tTm1yYWNfVVVUeS1FWFZwTXBqeHFjaEVBVncyYURhNG1xRk9zSVZSa1IzZmZJQzBBUjRORnkwOEIyOS1SQWRLXzdSODhtcWNsNWh3eVFTaHBkaEJhbTF0WloyN3ZsYzJUVmpld1VQZVkteXBsQnRwNEhvYmRWVXdMczdDTXkzMnc?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-16T05:22:43.758Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=aqF8fmwDjUw",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "aqF8fmwDjUw",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 33.366,
-    "lng": 35.433,
-    "zoom": 8,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-mossad-chief-returns-to-israel-2026-11-15",
-    "date": "2026-11-15",
-    "title": "Mossad chief returns to Israel after US talks on Iran, set to brief Netanyahu: Report",
-    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOeFhJVkhNM25VajlTeS1sSVhCaHF3MS1YWDRFR2pma1F5NjRPbzhFbzl1UjdtM0xaLUNYZjNyRTdSaEg3TjlURFZUeU1RNVFhejROUk1xOWFmQkNMWHh0RHhVcUtHblktdzg2a3M0am5ta2lmNENuRW91QW9icmdydHlqUWpjdzNpSGo0eXhZdVJOQkdlcklZQmpuYVdpeEsxVnJEUWNubGt3SS1rVWtTOWRUNEYxTGtJZ1RmSFhLZTFCQXVHUVU4?oc=5",
-    "source": "Anadolu Ajansı",
-    "fetchedAt": "2026-11-16T05:22:46.161Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=OOzfWIL-UB0",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "OOzfWIL-UB0",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-launches-drone-attacks-against-2026-11-15",
-    "date": "2026-11-15",
-    "title": "Iran launches drone attacks against US military base in Bahrain",
-    "description": "Via The Guardian. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPS0RnUlBTa1J0QTBzR0RHcldQd0twTEtaUWwzV2xlSzJOSURDRW9hcHVqaUNtUVp3YU9uMGZ1N2djRU1xeGdsTzlBLU9Jdm1iSTQ5RDlzc1VPb293V2xkNk1Ddms0VHZvMVJ3VklsXy1KUGtkTW03RnY1VUZ5VU1jaTFTNDlUYU9UVEw4MVlEVkdPNnNWX3hQejRueUotWmxEal9lTnJhaloyNTBCTFE?oc=5",
-    "source": "The Guardian",
-    "fetchedAt": "2026-11-16T05:22:48.179Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=0TXrn4WKuF0",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "0TXrn4WKuF0",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 26.228,
-    "lng": 50.586,
-    "zoom": 9,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-saudi-arabia-qatar-jordan-egypt-2026-11-15",
-    "date": "2026-11-15",
-    "title": "Saudi Arabia, Qatar, Jordan, Egypt condemn Iranian attack on Bahrain - as it happened",
-    "description": "Via The Guardian. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZEl6dTh3bjNqcldTOVhOZEVsTVFxVDF3eE5kS0N5YTY0bGpHZTR0THVVRUZhZUh1QWZYcjJwVUdGUUxBOGVyMERUQ2tCMlBhMWtyMi1ZR1Q3b0xja1d1VkYxLXFhQm9mYzVvaVlBY3daM0tSQlFPS190TU16U1JJa09SV21UdzlXdWFrajctLTBkd2txdHl0MENwOHZBVzBTa2g5OHRHRlJFUnRzQXpHXzN0ejJKSEJRRFRqT2lBTU5XU0hhUVhGQzVfMVN5ZGlRZnNz?oc=5",
-    "source": "The Guardian",
-    "fetchedAt": "2026-11-16T05:22:50.484Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=BgXjSsSZPKs",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "BgXjSsSZPKs",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 24.714,
-    "lng": 46.675,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-yair-golan-rules-out-unity-2026-11-15",
-    "date": "2026-11-15",
-    "title": "Yair Golan rules out unity with Benjamin Netanyahu, warns of Iran war for his survival",
-    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBxLXUwN1Y2Vy1JcS1aNWE2RGRKbkUwYWdhSlByNVdOWEFpcEVwS21TYXhVeVVXa3dOcENtbHRBN1lnN2trSHY5TXZMVE9RejFOVGdFczl3SnMydnMtcFg5MDJnNG9wUVI5eURiQ2hNbmVjODB5NW02ckVSWQ?oc=5",
-    "source": "The Jerusalem Post",
-    "fetchedAt": "2026-11-16T05:22:53.013Z",
-    "mediaUrls": [
-      {
-        "type": "youtube",
-        "url": "https://www.youtube.com/watch?v=xpVz1nfVqxU",
-        "label": ""
-      }
-    ],
-    "videoMatch": {
-      "videoId": "xpVz1nfVqxU",
-      "title": "",
-      "confidence": "auto"
-    },
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-iran-war-updates-yemens-army-2026-11-15",
-    "date": "2026-11-15",
-    "title": "Iran war updates: Yemen’s army says ‘repositioning’ troops from Red Sea",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQWNHaDFxOWY3NnRZZm4zTHZQandnM2NFaTYyY2pyallRb3poSURScEpTeDlweFhLcHRLRGdjSDZab1ZlUU5JOU1jUTJvNlQ2X1AzaHZRN1J0bDIzU1VmVTVlUzhaM0NicGE2ZmE4bEZsOVFRc0dqVXdjRF9EZEJZZkpKdVdVMFByUDhFRW5LRWlZSkJuWUQtd1NEbEhhM0dkN054ZzJJN1A3WXgtZjJER2NLdnRTNkNnTk1uUm9LbWjSAcYBQVVfeXFMTTlyNmYxSlo0T0QzX0c5NlNZQWFZdWF2N2dSVFNjXy1XX2c5R29xR1kzakNhR29xM2Y0aFlqNUlnWWJDeDdUR0NJQzZ5R2dhQ3B4WmtGNzZKYkxvYS1vMzMwQ09ldnZHdF9ld2dMTnJqRVhsTnI5ajRFVkpxZGt4VS1FelVFdE9ONEpRb1ZtbVJvQW9xYThqT2dWWjNSS2FWTEFvX195ejRNTDh6SjJ1TnQxT2xVeFJ5aVJfNmhSREpGdHhTWWhB?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-16T05:22:58.761Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 12.583,
-    "lng": 43.333,
-    "zoom": 7,
-    "facilityId": "bab-el-mandeb",
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-netanyahu-says-only-a-unity-2026-11-14",
-    "date": "2026-11-14",
-    "title": "Netanyahu says only a unity government can guarantee Israel’s security",
-    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQU3RqZl9HSGl4emgtQlBGWWFvTkxwT2NMT3JGWWd3Y2NMT2FTMDdRa2VEbFNyRjVhb3NrY2FuMFBLUnJHYnRKV0JCaFp4RldXN2h5Mkl5VEVYenF4Mllyc0RpazNaTTEyQTFlS1Y2NFIzSTZudUtEeTQ4UVp6U0F3YVBGdFZhRURSSmNHUFhQdXhCZ2Nmc0U0SEo4ODNOcU1YMFNaZzNoRlF0X3FvOFpET9IBtgFBVV95cUxPc2dVNk9OUzZHSmFhVndvOW5NME9ZdHhHQU01WkJXWXBTTkV1UjYzdnI1VDctZzNYbl9tZ2J6WTZ1cUNrSU0xYTh1UUFzSENnckZqLUpkX1hrTEY4NW5aZXdlbG4tQlRBWmw2R2dKdVVDYzZkc1hLbmVQRVpES0xETlFRdGVxSHRaWUVVcE85ZGtxV0twQkJYT2ZCME1vLWFLSXpEampnMEFHRmZiUGZmMmhqbEdBZw?oc=5",
-    "source": "Al Jazeera",
-    "fetchedAt": "2026-11-16T05:23:04.839Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 31.768,
-    "lng": 34.851,
-    "zoom": 7,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-analysis-how-far-will-netanyahu-2026-11-13",
-    "date": "2026-11-13",
-    "title": "Analysis • How far will Netanyahu go to stay in power?",
-    "description": "Via Haaretz. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQVTlBTmtCT2loX0RmV1M2TTR3cU5JdDRXNnhHbmVjc1prQzB3Um5vLWt0YXZaZXlWUlp3b2tkd2ZiazBQSi1uTkdsYU41aFdFWWRlMmlvY2EySDRZWk95d3E3cWhSUGY2SVg3elgwYW5SWFMzaDVFTXpmS1VfcGFaZU1tRHZDVXRpc1Npc2FMMlBwTzJ2Vm90VEFscUx4NHc4S0VwdnNLM2FyTkdmUGg0RVg0UkZCOW9vUklxU2JNMWF6TW1GdU4tOFlldkpjQWJMR3BVTGVFUDJZazRrUnNWT2Noa0FuV2JSeVd3MVZDb1lQTndYNHZkcUUtRlg1bTRMcXpWakRzZTFGd3RsejNZbVNqbGpKQQ?oc=5",
-    "source": "Haaretz",
-    "fetchedAt": "2026-11-16T05:23:10.554Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 31.768,
-    "lng": 34.851,
-    "zoom": 7,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-us-and-israel-draw-up-2026-10-21",
-    "date": "2026-10-21",
-    "title": "U.S. and Israel Draw Up Plans for Renewed Strikes on Iran After Midterm Elections",
-    "description": "Via The New York Times. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOaFNybFlkMEkyWkpGZUhTNHUyd2V2Y0JGQkNUNzdJVFhaNlpMWU1FQXh6NG9PWWU0ZlBSdDBCUXUwcEc0c1lJaXRFMzdNajVFdjN5Mm43Y2dBdmNST2lYY1JsWjA5dlVzZkZFcGVaY1RlUEMwS3pOblF0RlVzRGtlYm40TWh2NEp3UGc?oc=5",
-    "source": "The New York Times",
-    "fetchedAt": "2026-11-16T05:23:16.707Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 35.689,
-    "lng": 51.389,
-    "zoom": 6,
-    "casualties": null,
-    "status": "published"
-  },
-  {
-    "id": "auto-could-it-be-satan-no-2026-11-16",
-    "date": "2026-11-16",
-    "title": "Could it be satan? No, Huckabee, just the Americans you work for",
-    "description": "Via Responsible Statecraft. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE5nMnpfTU1IaHdUYm9abkhjU3hVUjFQY3lvUWdYdlM3MzFmT2M3czJjWi11MEc0Z05JdUV1TktLcUFia05PcTlWUXNxUFZxaFRJYnpzWWlTSEZDdVRCV1RRWTRqdkV4WU1Ya0NCNi14Vkw2dw?oc=5",
-    "source": "Responsible Statecraft",
-    "fetchedAt": "2026-11-16T05:23:22.465Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 29.5,
-    "lng": 48.5,
-    "zoom": 5,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-gaza-death-toll-since-october-2026-11-16",
-    "date": "2026-11-16",
-    "title": "Gaza death toll since October 2025 ceasefire rises to 1,647",
-    "description": "Via ABNA English. Auto-detected by headline monitor.",
-    "category": "diplomatic",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxON1Bpb0Q2TFFwdkVJbThBdm8xNUR0SS1WU20xU25IWGZLcjlaVnc3ZTBlM0h5RnozVXhRRkNUZ3pSUWo0WG03Nk82R0xiWWpITlBHWlkzTDdSUXV3M0gtSVZYdkNwOVlSMzVlRWhqSWtESzBBd1VGTDFQenJTU3JXeXBLcE5LeXJnWnc4LTRkZ3BuT1I1NEJldndB?oc=5",
-    "source": "ABNA English",
-    "fetchedAt": "2026-11-16T05:23:28.621Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 31.501,
-    "lng": 34.467,
-    "zoom": 10,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-idf-destroys-hezbollah-terror-tunnel-2026-11-16",
-    "date": "2026-11-16",
-    "title": "IDF destroys Hezbollah terror tunnel in Southern Lebanon",
-    "description": "Via JNS.org. Auto-detected by headline monitor.",
-    "category": "escalation",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNjdpQmhGTDJRX0pXVzRDYVlZU2ktd3k4QlV3TGNvX2RnTzBwdW9DOUxFbjAyczEtVFpEY0tOdzZVZDB4WmtnWVRTdnhITnRCQnBpb0Vsd2NhdXVkSUNCWmVzblZoRFZjd0ljMFhPSjgyZC0wUWtJWWlYT2tHcXpZLTJOVTh5bXoyc01tTEZqVThnXzNKWEZUTQ?oc=5",
-    "source": "JNS.org",
-    "fetchedAt": "2026-11-16T05:23:34.356Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 33.366,
-    "lng": 35.433,
-    "zoom": 8,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-two-more-oil-tankers-hit-2026-11-16",
-    "date": "2026-11-16",
-    "title": "Two more oil tankers hit naval mines in Strait of Hormuz",
-    "description": "Via Mehr News Agency. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOcWg3Yk5rYm8wNWlsZElvX1hRRDR4ak9YM0NkMENtd1VWWHNuZ3VsZ1pyZU9OTnFyUnFwZHUyZjJsY3BBaG9FSHhNczR4NTZpcTJNNFZ6Y0dFTVRUTFVRbGJHRVlYaTJCMEZWa2EyY0dQZzJ1Z3RLSUtjeVphLWN2X2dSYTEya2puZXdhTGdGalVXZ1RlT3Fv?oc=5",
-    "source": "Mehr News Agency",
-    "fetchedAt": "2026-11-16T05:23:40.564Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-risks-in-lebanon-rise-amid-2026-11-16",
-    "date": "2026-11-16",
-    "title": "Risks in Lebanon Rise Amid Stalled Hezbollah Disarmament and Israeli Strikes",
-    "description": "Via RANE Worldview. Auto-detected by headline monitor.",
-    "category": "military_strike",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNVjVRUjJJLUt2Vkp1TVFDUDRUb0tweHk4T2FEeEtBUHh6X013TXlvb2I4dHRjcndWbFFGc1RWMzhfSTdhWkV5UzZFWkpXajNOY1FJOWI5bGlIM3RVb3MtakJRbUgxSl9NSHRsZGpDTm9Mdk5qTTROb2VrYndfLThzUkJKLWxKRlUtTzUtVWxZQVZfRkJxUDFNTGRiNFl3Z0lFZEhzWFdsLUQ2UXJYS3c0azV6elhESGJONG5NY3J3STVFM0JzNjQxUUdVeFo1NXhBdFJwa3RiSzU5RGFMeWYwMm9IRElsTHM4QTd3?oc=5",
-    "source": "RANE Worldview",
-    "fetchedAt": "2026-11-16T05:23:46.552Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 33.366,
-    "lng": 35.433,
-    "zoom": 8,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-irgc-navy-reports-explosions-fires-2026-11-16",
-    "date": "2026-11-16",
-    "title": "IRGC Navy Reports Explosions, Fires on Two More Oil Tankers in Strait of Hormuz",
-    "description": "Via WANA News Agency. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMDlzVWhfSEJlWWVmY3QyMG9MTzV0T3VIR2xvQU1SRjFlMXotSWZNZnRPc3FyaV92XzV0dU0zeEotQ3lLdTVPWmpTRnVCcFFaQmNfVjViRGdRTWlaUUtNejAzUVpsZnk3ZXl5Q1cxZmg4SWYyMHpGSjd0WUowWFJtb013VVN5QjN4Q1VDbkctNlhGRlRTYl9Xa29iV1JEY00?oc=5",
-    "source": "WANA News Agency",
-    "fetchedAt": "2026-11-16T05:23:52.205Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-two-oil-tankers-hit-mines-2026-11-16",
-    "date": "2026-11-16",
-    "title": "Two oil tankers hit mines in the Strait of Hormuz, IRGC says",
-    "description": "Via Arab News. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaTR5QkNGNFZWT3Vvd2EwcUxmRHhSQ2VrSjNsZVQ0WjJwejBWUmJUYUpnT0M4eUx4NHprUDUtZFAyUXVCWmZZdVQzMnFDejRMZzQyUWM1LTZyeUVtT0NZQUs3Zlp3d2diY0JiYXFHQldpRXFlck41cWZmNFMxX01yejlEV0Fad2NPaERKM2t0OVcxUDY4azRRY3cydkE1TU5xOThJQnI3Zw?oc=5",
-    "source": "Arab News",
-    "fetchedAt": "2026-11-16T05:23:57.648Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-iran-says-1-tanker-on-2026-11-16",
-    "date": "2026-11-16",
-    "title": "Iran says 1 tanker on fire after hitting mine east of Hormuz",
-    "description": "Via 巴士的報. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbFQxek8tOXpyWENZWHN0RUlCNmRrUmJ0Q2U3aFlVTE9ZZFZRend3aUxBQm1RdXpVYnRQNmlndlotNG9FVU9iSVRqbnJDN2UtUDRaUnJYdnZ0N1llb2p4MVdPX25DbTNpUTEzVlFRZDI2NjNjT3E3QzlERXdBMFhaSEFvQUFyb2ZHNUtDemJkcUtQWHVGVmpXQ19IUHdQSE9qUlNyOUhQaVd3QVdvd0tjWExB?oc=5",
-    "source": "巴士的報",
-    "fetchedAt": "2026-11-16T05:24:03.846Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-iran-confirms-reaching-deal-with-2026-11-16",
-    "date": "2026-11-16",
-    "title": "Iran confirms reaching deal with 2 coastal states on Hormuz shipping lanes",
-    "description": "Via 巴士的報. Auto-detected by headline monitor.",
-    "category": "chokepoint",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOemZWZ3dkX3hPdUdEZFhTblVITlRNMENQSmJ3ZTJvRmZzcktLWFpOR0pNbkU2Y1NtNVhWbnIya2Jia0dLX2V4X0RqSkRJZ3VISDJfcHk1ei1PSE9rUVZlbnRSNTNydl9XVG15a1lvMC1jYnNaYmdnd0VYZnMxLVJJd0tER05USWVuTkRoMXE5MWlxYnRWdzFVWXUxWElKeFljSlB5b0lpYVlMQ2xmdzZrVHlRamdlU25JcVBQeE9BN0JmdVE4?oc=5",
-    "source": "巴士的報",
-    "fetchedAt": "2026-11-16T05:24:09.573Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 26.566,
-    "lng": 56.25,
-    "zoom": 8,
-    "facilityId": "strait-of-hormuz",
-    "casualties": null,
-    "status": "draft"
-  },
-  {
-    "id": "auto-as-israel-focuses-on-iran-2026-11-16",
-    "date": "2026-11-16",
-    "title": "As Israel focuses on Iran, Hamas works to restore tunnels, hospital military compounds in Gaza",
-    "description": "Via Ynetnews. Auto-detected by headline monitor.",
-    "category": "humanitarian",
-    "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBENmFwR25COVVWYW1WOXdzVm5yLThLbThfOTg5SHQyRjlkWmsxMGxoMHJ6NkNZeWZoMENOOTZyR1hqTFl1bFFfVGo2RkxZblNNUnhFVDBoMA?oc=5",
-    "source": "Ynetnews",
-    "fetchedAt": "2026-11-16T05:24:15.497Z",
-    "mediaUrls": [],
-    "videoMatch": null,
-    "lat": 31.501,
-    "lng": 34.467,
-    "zoom": 10,
-    "casualties": null,
-    "status": "draft"
-  },
-  {
     "id": "auto-turkey-says-hezbollah-wont-disarm-2026-11-16",
     "date": "2026-11-16",
     "title": "Turkey says Hezbollah won’t disarm while Israel occupies Lebanese territory",
@@ -5127,6 +4582,556 @@
     "lat": 31.501,
     "lng": 34.467,
     "zoom": 10,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-save-the-children-gazas-children-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Save the Children: Gaza’s children face ‘unmatched dangers’",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWmd1Tk5uNDdNT1JWNm9BQjlsSlFmcFliYU83OUJIbW9kbmM4UzFlNkg4S0k0VmJwa2lQNzQ3eUdSQkU1bDNTanRlblk4Z2JjQjZBSm5CcWU2VmU4UFRURHFIemR4VkdfVDd1QWt3eWdXR19TRjExaFJ0NWNZX2JzZnJGMEFPQWVpcmJYc1ExUWthRFo4eXYxeXJDQmJsQdIBowFBVV95cUxQMDREVkRCVmJOdkNoTDN1Q0FyRDIxWlBwNUo3VU4zamdVbWxZTVNnNTh3bmw4R0RWY25STU1mTTE5U25ZRTFfX2pCVFZIQkdjbEdpMTZ4RzhGQ09laUQ3bVhBZFRDMDQwdlo3cGtFbEhyQ1NHbTRuZld2OWVrY0V3MlRRZzdGRHRvSWk3WFU1LW1rWHlBTVpia2tEQkxZR2l3UkVR?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-19T20:08:15.615Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=M8hANEpRXQI",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "M8hANEpRXQI",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 31.501,
+    "lng": 34.467,
+    "zoom": 10,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-air-force-bombs-entrances-to-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Air Force bombs entrances to underground Hezbollah missile site in east Lebanon — IDF",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMEgyRjR6Z0dZWTgzT0pneDE5TGhpNkp1RnRiejlVTXFtQjF1bDl4azNfZE5EcExycWVtWVdITlp5OWdTRTFaRFp6QU5fWUxhYWcyY2gxM2VnZV81R1FrQldTVWtWVk1LamgxNGJXN0hxSHYwMGtLU0l0OE1ILXl6UlZVZTVXWUl0cHNQODAzcmFacGl3S0ZEUTVZRUotMlI1aWlPRVprcUZMc21kaVRLdnFiN3DSAboBQVVfeXFMUEpTbXdqN1Q0OVRiWFkyb0Nnai1VVzdMakU4aHNJeWJNeWhfME9MSnBfUENmRkRkb0h5S2FETDdCQ3dSVEplVEJCdk9WTWZfZk9pWmFTM0FtRnZOUnlwemFTSFZMWktDMm5lUmRydzFrWWVzekFzRFBaMDk4YjdlWHlpS3d0UDNoLVFIbmNSUmxRZThJNGlTenVGWDdQRHQtZloyaXFxTFBvd19hVHFvWlBjM29BelpQeDVn?oc=5",
+    "source": "The Times of Israel",
+    "fetchedAt": "2026-11-19T20:08:16.986Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=CmCxyiYJdXc",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "CmCxyiYJdXc",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 33.366,
+    "lng": 35.433,
+    "zoom": 8,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-netanyahu-said-to-have-asked-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Netanyahu said to have asked Mossad chief to plan covert Iran op — without telling IDF",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "category": "humanitarian",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTHNzMWpXU2ZnTjlaSFA3WHNwdUxZcGhRQU1KaUNmYng3S3NUQ3FDMkctdXlzdE1XTmpSWkZqT3JDYnhDNFJPYjJNWUg4YnF6MzcyS3R5QU5kd1pRbUVEazViS09EYWJKdno0eXBPTFNLVk9pb1lUUnBEVEg4OG4zOWxlOFhFZV95ck1WM2EtSUNadVFjTW9MVDg5WFNQeWlmcE44bmZUQjEzdlhvRmlhazhIMzRZUdIBuwFBVV95cUxQR2JwMFBHNjhXeVJoMkZmMGVBa2JLOC1NbkFDOHlMRkFCU3pfRENHSDcxcy1sdW5CeUhYc2pKWmJHY1NSTlNsRy13U0g0Rm5DXy1zVXRIRlRiWkVhdDAyWHU1SllHYlh0WXdDWEllT2w5ZmVhRHhXOVdORmZTMDBjUy1VbmY3TW1zUDNiOHdWYkNpYnFjZ3UzUVVsWUlqVzJXTXdQOWIydDNKU0RQZmxVM1pIMWlxOXlKN3Fv?oc=5",
+    "source": "The Times of Israel",
+    "fetchedAt": "2026-11-19T20:08:18.532Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=RdDACHlMtYQ",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "RdDACHlMtYQ",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iran-grows-more-aggressive-in-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Iran grows more aggressive in Strait of Hormuz despite surge in oil traffic",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA4U3VmZTQ5bWUzbVN3LXJCM2FVR0JrNjRWMkFqd25NeWtqNm9wcGI2MG5XMTFwRWU0VTFBdlBTQ1hJRU1GODZseWxkVmh3Tm1XTElySDN6LXhkRUdsM2JmbGdkVnhnQ0g3TXc?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-11-19T20:08:20.022Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=KvNvpv3Is2Q",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "KvNvpv3Is2Q",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 26.566,
+    "lng": 56.25,
+    "zoom": 8,
+    "facilityId": "strait-of-hormuz",
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-west-presses-iran-at-iaea-2026-11-19",
+    "date": "2026-11-19",
+    "title": "West presses Iran at IAEA to let inspections resume at bombed nuclear sites",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNX1BENXJsTm9KVlRxVjk0SENfVmszM1ZXVFpjQzJZcVRneVFiR210MTNseE0yUlJqWmRObE9ndjlKQkZUVFJqd0Joc3hFLWNhcW5KQ0ZKZWdBWDZ5Q1BCNWFQcDdBN1N5MDllSGNNYjdOUG1IaG5BNjB2S3hPMHRTSGpDM2phXzkzSUF6TkJtMktQRWpodkdiRVVSM0FJZ0lDOVRLZk5Dby1SdXV1elBEaW5GM0k?oc=5",
+    "source": "Reuters",
+    "fetchedAt": "2026-11-19T20:08:21.446Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=tT7j-EyQAMQ",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "tT7j-EyQAMQ",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-trump-says-us-will-see-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Trump says US will 'see what happens' in conflict with Iran after January 1",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQkkzQVk3M3pnOXRWVlFCMmVzUEN0alhCS0gzQUhYNkhCMDhCOUM0N0tmMFpZNVNKcnVNbktaYXV5MV9ERm13WHoxTEVtUGRMUkZwT3dJZmlRZ2pyRE1WMGoyZW1VcXVWdTVRTmxZV1RISHNXWE9YY1BUUC1EWlJWRWRsYzlGTXo0WmhjaUxiUnAyMDl2OU9mWmliYndLd0htWGVLYWFUUldMOUIzLV9TSnBB?oc=5",
+    "source": "Reuters",
+    "fetchedAt": "2026-11-19T20:08:23.614Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=8Ikjec4AEy0",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "8Ikjec4AEy0",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-netanyahu-reportedly-tells-aides-renewed-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Netanyahu reportedly tells aides renewed war with Iran ‘unavoidable’ as Trump weighs options",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "category": "humanitarian",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdks1U2laNVhiRmlqQ2xZTjN6R1NCY0RidmNhVUhtcGEyMWdLUTVuRTF6b0NVWTcwSUUtME52WC0zQ0g1VnVQSzBMLV9RN2F3bkZ4R1F0dTVxZWpqWmlyWmRyUWpScjJIZTNjamgzNTNybVVOQzNLNXlHdXpJdTlKY0ZLOUNLVkFaeTVyS0JrRzBib0NCa3JmWU1kT2gzUjBBcmpJUUtPVFRyS2IxU3ktb1gtY09LenJpVFVHTnFn0gHDAUFVX3lxTFBGVmM4RVBOSVo5MVFjT2Z3QWs3Y29TSzBmZnRSV2J5NXEzNnJxN2hrZTlkclN5dFd1V2kzV0dfZDUycjg0WlFnWnFpcUcwNlliQjVacU11WlRmSzZTdDNEQnkzdV9LdDlCZmdNYnRZeVZ1RkNldTg5VU5aQ1J0VGZHcTVicjFrNXMtUngtUS0yenVocWRRTl9sZlBsM2hHZ0FBMnZ5alBjTjJUcnlpVE1HWUJZMG5rVUpWMGJUcWRUVWIwWQ?oc=5",
+    "source": "The Times of Israel",
+    "fetchedAt": "2026-11-19T20:08:25.823Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=pJyO-3Y8iMs",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "pJyO-3Y8iMs",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-netanyahu-asked-mossad-head-about-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Netanyahu asked Mossad head about covert op. against Iran without notifying IDF chief Zamir",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE42VXZUWURoaDJ4OV9Ka1l6YXRXOERvVVpzd0RLU3B1YkRoQzA4WlkyTWk3RWFqNmNtaE1WRWlKbVJuQkNzWXl2cDV4UVUzZjNIRG1xajVoOHQ3c0hIVEkwNjE5Vkh1c25Gc3JZRzl3?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-11-19T20:08:27.788Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=NCsRyef4Z9o",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "NCsRyef4Z9o",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-trump-to-axios-im-not-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Trump to Axios: I'm \"not rushing into a decision\" on Iran",
+    "description": "Via Axios. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBUQ3JETnMxanJVS0VoTV9QamhmVjROY05FNGpONW1lcXUxSGRFWld5c2JhMWdaa180WUdWWFpKWGFiSmIzNzZseUw4MGJTczRVOGFLaVRVNUxmTXRSLW03MF8yUUZDQnJzdGp5VElXMVhrNC1SNGc?oc=5",
+    "source": "Axios",
+    "fetchedAt": "2026-11-19T20:08:30.147Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=daA22MxJhi0",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "daA22MxJhi0",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iran-war-has-cost-us-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Iran war has cost US more than $48 billion, Pentagon official says",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOeXVlVGhLZ1N1cE5XU0xkZWZqRWsxelEyck1UT1ppWk5RaE53cFFyOGxoZUNSbmg2ekMwWk81MVZMOWRsSjZSMi1VS29Xckh5NWloMzgwVUxaQVJQdVdtcUhfMnd5Ty1OYVJCc3pnTjZhVDBuZW50YlJTUmdrSFRLYUpocm1pVFhIQmFQRFRyakgxcU1vTGx1SGVnM2k2cmNaZTluWVB3am53WmQ3UkdN?oc=5",
+    "source": "The Times of Israel",
+    "fetchedAt": "2026-11-19T20:08:32.313Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=GlKKGLDzmAs",
+        "label": ""
+      }
+    ],
+    "videoMatch": {
+      "videoId": "GlKKGLDzmAs",
+      "title": "",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-idf-says-it-targeted-hezbollah-2026-11-19",
+    "date": "2026-11-19",
+    "title": "IDF says it targeted Hezbollah missile site in Lebanon strikes",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeUFnTlFvemVwVno0eU5NcHhyM2YyRzRmbTJSQ3N6X1pzV2g2UmhtWmd1WXFqN18wVnZOSi1tRjZieU9hT016cGZkaWtwOGpFZzRCTFVxVjNOc2xnMjlGYndjYW1QdW9mNjJ3eVpTdndwakJ5OG9RQUdYTzhLVTU1RFkzdHZTcnlMN0cxa1lLdVMtb0xMcDg1dzdrQWx5cURGc250SGFEZEFnM2hL?oc=5",
+    "source": "The Times of Israel",
+    "fetchedAt": "2026-11-19T20:08:37.960Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 33.366,
+    "lng": 35.433,
+    "zoom": 8,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-israel-strikes-hezbollah-stronghold-deep-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Israel Strikes Hezbollah Stronghold Deep in Lebanon",
+    "description": "Via Haaretz. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijwJBVV95cUxPbFBfcTAwUXlTMGFQM3BmTVRCTXM2cjBUaElJSTRSU2k5aGpEZlg2U1R1X0pHSUNQekdpWE9JZmpCUl9VcmN6a2x2MFJfNWpVSzNyakU3cWRLUXFhMHU2cHpFMHRnOF8tTVpUTlE4MWdIc2REWDA2UEJLVDF4UzNmcEpobmRZd3dWdk50Zm1PQzUxRHlpcjB2bzJxWHFobnRNQmU1SkhzU3lwSk9SQU84Tzg1NnlCRGxRUnhWVUJnaGFTU19ad2Q0NjgyaU1zZTFTTmI4Y0VyTFFCbm8wRWhVQkRNb1ZfRi1KYm4tRWI3TDVQUW5kc3pxaWxVbkR6OVo2RTFrQXA3NkhhV2dVSEdR?oc=5",
+    "source": "Haaretz",
+    "fetchedAt": "2026-11-19T20:08:43.879Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 33.366,
+    "lng": 35.433,
+    "zoom": 8,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iran-war-updates-trump-says-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Iran War Updates: Trump says Tehran may be working on chemical or biological weapons as tension mounts",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNczRzemtDSHlJLXZIOHl1WHVMYUZkLTFMd1Z4TDJHNWhDa2E3djdWWnM4MXlwbXpnYjNyUU9TcXR6YjhsOWRVS29ub25Dd0pLVWNZRFZWR25CdnNxeTQ4VDRYX2g1dlFqZmQ1N1o1WWowQk5XRTJvSnhwWENzaXlBSF83RW5kbE5FelFKa0J2dnlhQVJJTkE?oc=5",
+    "source": "CBS News",
+    "fetchedAt": "2026-11-19T20:08:50.197Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-idf-strikes-hezbollah-missile-production-2026-11-19",
+    "date": "2026-11-19",
+    "title": "IDF strikes Hezbollah missile production site in Lebanon's Bekaa Valley",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB0SVMyRTFpM09wUlF3WFV2VExjWDltZnRHSkdHa0JkYnoybjhFR3R3cmxBUW8zYXBUSEdCekh4cHRvUEM3VUdETU03Ulh4TFB6cElJdE9yNno5WkZadDRyeHhTRjUxejBlTXp2RXZR?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-11-19T20:08:56.645Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 33.366,
+    "lng": 35.433,
+    "zoom": 8,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-only-one-road-to-palestine-2026-11-19",
+    "date": "2026-11-19",
+    "title": "'Only one road to Palestine': IDF confiscates anti-Israel Hezbollah-produced children's magazine",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9QS1ZtOUx1VUV2bTg3ZzdEdDVnSDVHak9aMzFseU1lSk93dnc5WHEtaEM5X0thRk0wMEp1Q0hVYmZqTDdxZnJOdzVTZnNVc1o2M3ZGU2JQYS1SS09OcGc0TVNrZXJnazVUaHJEWktR?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-11-19T20:09:02.570Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 33.366,
+    "lng": 35.433,
+    "zoom": 8,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iran-conflict-sparks-historic-energy-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Iran conflict sparks historic energy security threat, IEA warns",
+    "description": "Via Euronews.com. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMGt5NlJvTjVCMVNzOFgtakU1Q1BYY0VKRUIzVGdfSE9JNkRhc1VqWHhzeWRkWS1RNGR5M3JoN285S0VFRjRTUXM1cGI1Q2pkME92bktpMHVucEFaMmFTTEJlWjdvSVF5cmZkb0hxRkRwZFh6clRUVnVyZ1ZFS1lHd3pLUElrdTF1QWRTYU90cDFaOWQ3ZC15bUJBSloxalJFb3BVV2RFendOM1VZX2JqUFMwTGZpQktsVmNaN3hlSU44UQ?oc=5",
+    "source": "Euronews.com",
+    "fetchedAt": "2026-11-19T20:09:08.674Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-irans-irgc-says-tankers-with-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Iran’s IRGC says tankers with 4M barrels of oil hit Hormuz mines: What to know",
+    "description": "Via Al-Monitor. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOR2xUd1ppVEhOWXhVbnNrU2I1UTl1NkprQUxlOGRaTGlpR0k2QTVNdEdzSmhXZlgwOU9uTXdsQVViVmZ4cHRWbUs3VVI1N2dlcG9TeGhjTzdYRUJwMHZab0hsTkwyM0ZMRGQ5NktWQlBybmllOVNMSWl5Z25kTnV3LUczcnNBaVd1WUQwcFpDRzM1YzVDXzBIYXV3ckZYR3ZWVmFZOXVvTDBnLTVqTW1N?oc=5",
+    "source": "Al-Monitor",
+    "fetchedAt": "2026-11-19T20:09:15.198Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 26.566,
+    "lng": 56.25,
+    "zoom": 8,
+    "facilityId": "strait-of-hormuz",
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-irans-military-defeat-has-not-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Iran's military defeat has not eliminated its threat to the US",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBwdW8zM1ZRemQ5Y1l0amg3bk44NFd1VWx4X0pueDNyc2NUcGpUUWdhNjhjVC1wMTdwNTRoQlUxeUJWQmFDNGthOWtFYnZuQXlwbktLV0Rkaw?oc=5",
+    "source": "The Jerusalem Post",
+    "fetchedAt": "2026-11-19T20:09:21.018Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-daily-briefing-nov-19-trump-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Daily Briefing Nov. 19: Trump again weighing new strikes on Iran – is this time different?",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQREZfWlVyNnR4RnAwQ0ZyaV80UV91UFpMTUdpbExCLWQtTWNKRGNvM2xPMUF5Sl9wREJEYUF3dHdwRVB0OFpDaEhRWGltb2cyTnZqWU9CQm5CTmpTWmFoYjViYWxRZUlCYUVMTXM1R1JkV0FjRUtDZ3Y0Q0lQQjBSWmh1SExYbm9PbU8xRmpvMzhUdVFiczU3ZzZCQ3g2aG5tX1k1ZVI3YWJvTTBvUk9tZWdfOGFTR0nSAbwBQVVfeXFMT1NzSVN5Y3ZpcWs5YWVTLTA1emlvZmYwWF82ZkVrTl92czFWM0hXUk5YbWRWejBWTDFETWxmaEV5VENaSWxBTzNiUlpMMmxQdGVrTGw0eUdOZGhlLTRvdDdjeDlIbmhXRVNRRkdUXzBRYTRSNDUySU9VaFR2U2h0UGRjU0F2ak1nRVBnZjFiUm84Z01ON3l2SE5NU18wMjBaTEhqSXJnWEh5YlNET3JSVjlGRkRBQm1ZdkdMd1c?oc=5",
+    "source": "The Times of Israel",
+    "fetchedAt": "2026-11-19T20:09:26.910Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iran-keeps-up-unrelenting-attacks-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Iran Keeps Up Unrelenting Attacks on Ships in the Strait of Hormuz",
+    "description": "Via The New York Times. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNczJXN3dIbXJITGpRV1BQQzdMRlp4QVl0ZE5jZnM2Vk9SNm5tZ2ZJV1NlbXA4em01SGZxM3p3b0FQemFMS0dTNGhhdzdPZzhCdXZDVzJTRXYtRThDWHRQa3dZQzRTOGdPZWxuQThVTGo5RGVzUHluWnNVaWRmNE5XQ2VpSS1aMVZUT3IyOA?oc=5",
+    "source": "The New York Times",
+    "fetchedAt": "2026-11-19T20:09:32.927Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 26.566,
+    "lng": 56.25,
+    "zoom": 8,
+    "facilityId": "strait-of-hormuz",
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-3-palestinians-killed-others-injured-2026-11-19",
+    "date": "2026-11-19",
+    "title": "3 Palestinians killed, others injured in Israeli attacks across Gaza despite truce",
+    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
+    "category": "military_strike",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMkJWM0hfaE5IVklrak1QTFBmYXVKbm1WQXRjWkN6LTNJSjB6Rzg4Uzc5NmF2UE9NaVlvbnlrdEh1NE5mY0FoLXFzUW54MUV4VnVpYnBMem82aTZGS3N3c2J4bFBNb0N6cGxFU2FkR2YzMHkyc3ZWbXF2T25PdU9FdkhBQzVhcjZPLTRtejlKYWxqUTJ1WURDYkpDQlVvQURVbmJWNlBxYkt5bG96V1JITVRDR2xXQ2pTYlVBc2xkN2lLb1lt?oc=5",
+    "source": "Anadolu Ajansı",
+    "fetchedAt": "2026-11-19T20:09:33.729Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=rqjH63K5gKE",
+        "label": "Thousands of Palestinians forced to flee central Gaza"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "rqjH63K5gKE",
+      "title": "Thousands of Palestinians forced to flee central Gaza",
+      "confidence": "auto"
+    },
+    "lat": 31.501,
+    "lng": 34.467,
+    "zoom": 10,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-us-uk-france-and-germany-2026-11-19",
+    "date": "2026-11-19",
+    "title": "US, UK, France and Germany urge Iran to allow nuclear inspections, accuse Tehran of stonewalling",
+    "description": "Via CNBC TV18. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOSmJwZUlUSVZza1JiTk1xQUctZmRaOTdqV0Q3OVg2WGJrd2JCMlF2LXJrbDByMFJScHlocHBZaGFlSnBteHNXcGFRYldiVTlzeUFJWlFXRjVFSE4tcDNjRVFWZklRdWZlM3o1c3V2M29hODNCb3pSamo2NXhsSzlUdFpHYzNQQWx1VW5tZzVyc085Mm1fcWtSdUpUSWVDVDFfNlJHbTN4U1hmODV4bG5HOTJIcEJUVHN3NGx1ZXFQMFZUYmV3b1h5UEFQZms4S2FtVnJz0gHYAUFVX3lxTFA4SG1tZUlLRGpKbzFFcm05TkpjZk5JaWpOcGdwVVdyeHhtNkh4cWpQWkJma0YySUE1NXZ4aVlicmxKc2U3MWVZYTU3RnE4c0M1eHBid3B4Ukc1WlIwNlVZWUNQdEtyTE15YWJJWDBTZmM5QlV1NHIxR0pZMDRybFRwR2NwZlA1bkJPdEItQnJIbFNZLV9SNHNjY2VyWFAzVlMtMEZMQTY3MGdkcGRYd3lMeFkzSDN1U1IwcGhmUXVDWWI5YnBMR1lOcndDZ3BGbkMxYXcwdVlsRg?oc=5",
+    "source": "CNBC TV18",
+    "fetchedAt": "2026-11-19T20:09:34.529Z",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=RdYakjTCnfU",
+        "label": "Jad Zahab : la France n'est \"plus une nation libre car nous sommes endettés\" • FRANCE 24"
+      }
+    ],
+    "videoMatch": {
+      "videoId": "RdYakjTCnfU",
+      "title": "Jad Zahab : la France n'est \"plus une nation libre car nous sommes endettés\" • FRANCE 24",
+      "confidence": "auto"
+    },
+    "lat": 35.689,
+    "lng": 51.389,
+    "zoom": 6,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-gulf-railway-project-aims-to-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Gulf Railway Project aims to link 6 nations, reduce Strait of Hormuz reliance",
+    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOR2luOHQtdHVaWVF0bEs4dnV4WDV4ZG1aNVVhcFloT2hFWl9WODdDSXdoRE83YmlZWXV5cWNRMFlzZENINHh4dzRielFmMzFxbUdxenoyT0dEYUFSQ19ZZnhlV0lkZ29JTzZFdV9KMVU4LVg0b1U0S0FVNUUxcmNsRmRCb0ExYTBFWXY5ZUdDQWQ1QUJxRnB6dzFMOFlPOXgtYVZONV9yak5XZC1IM3ZsWkNiajhnWnVJRFlkQURB?oc=5",
+    "source": "Anadolu Ajansı",
+    "fetchedAt": "2026-11-19T20:09:40.862Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 26.566,
+    "lng": 56.25,
+    "zoom": 8,
+    "facilityId": "strait-of-hormuz",
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-gaza-syndrome-israels-soldiers-haunted-2026-11-19",
+    "date": "2026-11-19",
+    "title": "‘Gaza Syndrome’: Israel’s Soldiers Haunted by Genocide – Cost of War",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "category": "escalation",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNenlva2tDMXZQcE0zVUV0REFQdlR6SERKRGh1U1VCTnhJY1dTWXpCNG4xWWp5MDg2VHNZQnY5aDdIZmZWdkRKcTFJM2t2cExETVBlaWNHTU1SNmR4clMybTZTWVlKcFJPeFo2NTVqNk8wRjVBWWdwd3ZGRWRlMk5WcklCQTVIWDBYeC1yUlF1UWw3M1ZVNGw1MmVLRXdLaTVodWowUkVJT1JNQnpRNVExVnpITV9HRjE2YXBETkdjZ1lLX29N0gHKAUFVX3lxTE10QXg1SWoxS3M4U1dCUlU3VHVZejRZeEk2cUNpdklaTURBLVlTWUhwV0ttWS15UTBCUlV2ZEVteUZFTXpfdExfWnNCTXVHWjlUNkY3TUR2VFVhenNLZFpncE5fWUFuZjlLWmI3b3VxWllrNTljdElmaHBxS296YktNaElnZ2dvYkxrcWEzZ3ZaS05jdE1yUVEwci1kNldKSkQ4c05zY3kzU1Rjb2NJeUVvQmdlVGNCcEhWTHMyd3lRMUxsQjJDNzVqZlE?oc=5",
+    "source": "Al Jazeera",
+    "fetchedAt": "2026-11-19T20:09:46.969Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 31.501,
+    "lng": 34.467,
+    "zoom": 10,
+    "casualties": null,
+    "status": "published"
+  },
+  {
+    "id": "auto-iran-intensifies-hormuz-tanker-attacks-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Iran Intensifies Hormuz Tanker Attacks Just as Oil Prices Slide",
+    "description": "Via Bloomberg.com. Auto-detected by headline monitor.",
+    "category": "chokepoint",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQV0xLbmVSbGZvbm5GVkFJaGNGUzFDLXc3Rkh6b0RwR1BWVHRvV0taRVJIV2Z2NWROX3djNTl0LUdGXzliWm96bXA1VFRfT2ZMNUNPRElqRXp5eF9ObHZZeVFvOVROY3NwSlNBUV8xUzM2U091bnY5d1J0LUlSUmZlMjhTU05fTzFjQmg1eVg2SjBIV0tkQzRVSGVjX3BrSVJlYXJVMlZFTXkyZUFHQWZKa3NPQUM?oc=5",
+    "source": "Bloomberg.com",
+    "fetchedAt": "2026-11-19T20:09:53.431Z",
+    "mediaUrls": [],
+    "videoMatch": null,
+    "lat": 26.566,
+    "lng": 56.25,
+    "zoom": 8,
+    "facilityId": "strait-of-hormuz",
     "casualties": null,
     "status": "published"
   }
