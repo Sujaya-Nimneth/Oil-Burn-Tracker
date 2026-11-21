@@ -8,31 +8,48 @@ type BreadcrumbItem = {
   link: string;
 };
 
-// This allows to add custom title as well
-const routeMapping: Record<string, BreadcrumbItem[]> = {
-  '/dashboard': [{ title: 'Dashboard', link: '/dashboard' }],
-  '/dashboard/employee': [
-    { title: 'Dashboard', link: '/dashboard' },
-    { title: 'Employee', link: '/dashboard/employee' }
+const ROUTE_MAPPING: Record<string, BreadcrumbItem[]> = {
+  '/dashboard': [{ title: 'OilBurnTracker', link: '/dashboard/overview' }],
+  '/dashboard/overview': [
+    { title: 'OilBurnTracker', link: '/dashboard/overview' },
+    { title: 'Live Map & Feed', link: '/dashboard/overview' }
   ],
-  '/dashboard/product': [
-    { title: 'Dashboard', link: '/dashboard' },
-    { title: 'Product', link: '/dashboard/product' }
+  '/dashboard/fires': [
+    { title: 'OilBurnTracker', link: '/dashboard/overview' },
+    { title: 'Fire & Facility List', link: '/dashboard/fires' }
+  ],
+  '/dashboard/impact': [
+    { title: 'OilBurnTracker', link: '/dashboard/overview' },
+    { title: 'Consumer Impact', link: '/dashboard/impact' }
+  ],
+  '/dashboard/timeline': [
+    { title: 'OilBurnTracker', link: '/dashboard/overview' },
+    { title: 'Emissions', link: '/dashboard/timeline' }
+  ],
+  '/dashboard/lost': [
+    { title: 'OilBurnTracker', link: '/dashboard/overview' },
+    { title: 'What We Lost', link: '/dashboard/lost' }
+  ],
+  '/dashboard/about': [
+    { title: 'OilBurnTracker', link: '/dashboard/overview' },
+    { title: 'About', link: '/dashboard/about' }
   ]
-  // Add more custom mappings as needed
 };
 
 export function useBreadcrumbs() {
   const pathname = usePathname();
 
-  const breadcrumbs = useMemo(() => {
-    // Check if we have a custom mapping for this exact path
-    if (routeMapping[pathname]) {
-      return routeMapping[pathname];
+  return useMemo(() => {
+    const normalized =
+      pathname.length > 1 && pathname.endsWith('/')
+        ? pathname.slice(0, -1)
+        : pathname;
+
+    if (ROUTE_MAPPING[normalized]) {
+      return ROUTE_MAPPING[normalized];
     }
 
-    // If no exact match, fall back to generating breadcrumbs from the path
-    const segments = pathname.split('/').filter(Boolean);
+    const segments = normalized.split('/').filter(Boolean);
     return segments.map((segment, index) => {
       const path = `/${segments.slice(0, index + 1).join('/')}`;
       return {
@@ -41,6 +58,4 @@ export function useBreadcrumbs() {
       };
     });
   }, [pathname]);
-
-  return breadcrumbs;
 }

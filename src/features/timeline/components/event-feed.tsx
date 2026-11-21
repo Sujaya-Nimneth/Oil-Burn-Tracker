@@ -387,7 +387,7 @@ export default function EventFeed({
         </div>
       </div>
 
-      <div ref={scrollRef} className='flex-1 overflow-y-auto px-3 pt-3 pb-28'>
+      <div ref={scrollRef} className='flex-1 overflow-y-auto px-3 pt-3 pb-4'>
         {events.length === 0 ? (
           <div className='py-8 text-center text-xs text-gray-500 dark:text-zinc-500'>
             No matching events found.

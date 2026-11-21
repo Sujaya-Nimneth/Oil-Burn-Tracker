@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import dynamic from 'next/dynamic';
 import MapControls from '@/features/map/components/map-controls';
 import FacilityDrawer from '@/features/fires/components/facility-drawer';
@@ -40,6 +40,14 @@ const FireMap = dynamic(() => import('@/features/map/components/fire-map'), {
   )
 });
 
+const DISRUPTION_COLORS: Record<string, string> = {
+  normal: 'text-green-600 dark:text-green-400',
+  mild: 'text-yellow-600 dark:text-yellow-400',
+  severe: 'text-orange-600 dark:text-orange-400',
+  crisis: 'text-red-600 dark:text-red-400',
+  catastrophe: 'text-red-700 dark:text-red-500'
+};
+
 // ── Floating stats for map mode (collapsible) ──
 function FloatingStats() {
   const timelineDate = useFireStore((s) => s.timelineDate);
@@ -48,38 +56,37 @@ function FloatingStats() {
   const casualtyAnchors = useEventsStore((s) => s.casualtyAnchors);
   const [collapsed, setCollapsed] = useState(false);
 
-  const visibleFacilityIds = getVisibleFacilityIds(events, timelineDate);
-  const supply = getSupplyDisruptionUpTo(visibleFacilityIds, timelineDate);
-  const casualties = getCasualtiesUpTo(
-    eventsWithTelemetry,
-    casualtyAnchors,
-    timelineDate
-  );
-  const cost = getWarCostUpTo(timelineDate);
-  const impact = getConsumerImpactUpTo(timelineDate);
+  const summary = useMemo(() => {
+    const visibleFacilityIds = getVisibleFacilityIds(events, timelineDate);
+    const supply = getSupplyDisruptionUpTo(visibleFacilityIds, timelineDate);
+    const casualties = getCasualtiesUpTo(
+      eventsWithTelemetry,
+      casualtyAnchors,
+      timelineDate
+    );
+    const cost = getWarCostUpTo(timelineDate);
+    const impact = getConsumerImpactUpTo(timelineDate);
+    return { supply, casualties, cost, impact };
+  }, [events, eventsWithTelemetry, casualtyAnchors, timelineDate]);
 
-  const disruptionColors: Record<string, string> = {
-    normal: 'text-green-600 dark:text-green-400',
-    mild: 'text-yellow-600 dark:text-yellow-400',
-    severe: 'text-orange-600 dark:text-orange-400',
-    crisis: 'text-red-600 dark:text-red-400',
-    catastrophe: 'text-red-700 dark:text-red-500'
-  };
+  const { supply, casualties, cost, impact } = summary;
   const disruptionColor =
-    disruptionColors[supply.level] || disruptionColors.normal;
+    DISRUPTION_COLORS[supply.level] || DISRUPTION_COLORS.normal;
 
   if (collapsed) {
     return (
       <button
+        type='button'
         onClick={() => setCollapsed(false)}
-        className='absolute top-3 right-3 z-10 w-[200px] cursor-pointer rounded-xl border border-gray-300 bg-white/80 px-3 py-2 shadow-2xl backdrop-blur-md dark:border-zinc-700/80 dark:bg-black/70'
+        aria-label='Expand deep dive stats panel'
+        className='absolute top-3 right-3 z-10 w-[200px] cursor-pointer rounded-xl border border-gray-300 bg-white/80 px-3 py-2 text-left shadow-2xl backdrop-blur-md dark:border-zinc-700/80 dark:bg-black/70'
       >
         <div className='mb-1 flex items-center gap-2'>
           <IconSkull className='h-4 w-4 text-red-600 dark:text-red-500' />
           <span className='text-base font-black text-red-600 tabular-nums dark:text-red-500'>
             {casualties.totalKilled.toLocaleString()}+
           </span>
-          <span className='text-[10px] text-gray-500 dark:text-zinc-500'>
+          <span className='text-[10px] text-gray-500 dark:text-zinc-400'>
             killed
           </span>
         </div>
@@ -88,7 +95,7 @@ function FloatingStats() {
           <span className='text-sm font-black text-gray-900 tabular-nums dark:text-white'>
             {formatBillions(cost.totalBillions)}
           </span>
-          <span className='text-[10px] text-gray-500 dark:text-zinc-500'>
+          <span className='text-[10px] text-gray-500 dark:text-zinc-400'>
             war cost
           </span>
         </div>
@@ -99,7 +106,7 @@ function FloatingStats() {
           >
             {supply.productionPct.toFixed(1)}%
           </span>
-          <span className='text-[10px] text-gray-500 dark:text-zinc-500'>
+          <span className='text-[10px] text-gray-500 dark:text-zinc-400'>
             offline
           </span>
         </div>
@@ -108,7 +115,7 @@ function FloatingStats() {
           <span className='text-sm font-black text-orange-600 tabular-nums dark:text-orange-400'>
             +${impact.totalMonthlyExtra}
           </span>
-          <span className='text-[10px] text-gray-500 dark:text-zinc-500'>
+          <span className='text-[10px] text-gray-500 dark:text-zinc-400'>
             /mo
           </span>
         </div>
@@ -118,7 +125,7 @@ function FloatingStats() {
 
   return (
     <div
-      className='absolute top-3 right-3 z-10 flex max-h-[calc(100dvh-140px)] w-[340px] flex-col overflow-hidden rounded-xl border border-gray-300 bg-white/75 shadow-2xl backdrop-blur-md dark:border-zinc-700/80 dark:bg-black/70'
+      className='absolute top-3 right-3 z-10 flex max-h-[calc(100%-140px)] w-[340px] flex-col overflow-hidden rounded-xl border border-gray-300 bg-white/75 shadow-2xl backdrop-blur-md dark:border-zinc-700/80 dark:bg-black/70'
       onClick={(e) => {
         const target = e.target as HTMLElement;
         if (target.closest('a') || target.closest('button[data-collapse]')) {
@@ -127,8 +134,10 @@ function FloatingStats() {
       }}
     >
       <button
+        type='button'
         onClick={() => setCollapsed(true)}
-        className='absolute top-1.5 right-1.5 z-20 cursor-pointer rounded-full p-0.5 text-gray-400 transition-colors hover:bg-gray-100 hover:text-gray-700 dark:text-zinc-600 dark:hover:bg-zinc-800 dark:hover:text-zinc-300'
+        aria-label='Collapse stats panel'
+        className='absolute top-1.5 right-1.5 z-20 cursor-pointer rounded-full p-1 text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-800 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-200'
       >
         <IconX className='h-3.5 w-3.5' />
       </button>
@@ -136,8 +145,10 @@ function FloatingStats() {
         <DeepDivePanel />
       </div>
       <button
+        type='button'
         onClick={() => setCollapsed(true)}
-        className='flex w-full cursor-pointer items-center justify-center gap-1 border-t border-gray-200 px-3 py-1 text-[11px] text-gray-400 transition-colors hover:text-gray-700 dark:border-zinc-800 dark:text-zinc-600 dark:hover:text-zinc-300'
+        aria-label='Minimize stats panel'
+        className='flex w-full cursor-pointer items-center justify-center gap-1 border-t border-gray-200 px-3 py-1 text-[11px] text-gray-500 transition-colors hover:text-gray-800 dark:border-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200'
       >
         <IconChevronUp className='h-3.5 w-3.5' />
       </button>
@@ -151,6 +162,7 @@ export default function OverviewPage() {
   const isMobile = useIsMobile();
   const setMapCenter = useFireStore((s) => s.setMapCenter);
   const setMapZoom = useFireStore((s) => s.setMapZoom);
+  const setPendingFlyTo = useFireStore((s) => s.setPendingFlyTo);
   useFireData();
 
   const handleFlyTo = useCallback(
@@ -158,34 +170,33 @@ export default function OverviewPage() {
       const targetZoom = zoom || 10;
       setMapCenter([lng, lat]);
       setMapZoom(targetZoom);
+      setPendingFlyTo({ lat, lng, zoom: targetZoom });
       setMapMode(true);
-      setTimeout(() => {
-        window.dispatchEvent(
-          new CustomEvent('map-flyto', {
-            detail: { lng, lat, zoom: targetZoom }
-          })
-        );
-      }, 50);
     },
-    [setMapCenter, setMapZoom, setMapMode]
+    [setMapCenter, setMapZoom, setPendingFlyTo, setMapMode]
   );
 
   // ── MAP MODE ──
   if (mapMode) {
     return (
-      <div className='relative h-[calc(100dvh-64px)] w-full'>
-        <FireMap />
-        <button
-          onClick={() => setMapMode(false)}
-          className='absolute top-3 left-14 z-10 flex cursor-pointer items-center gap-2 rounded-xl border border-gray-300 bg-white/95 px-3 py-2 shadow-2xl backdrop-blur-md transition-colors hover:bg-gray-50 dark:border-zinc-700/80 dark:bg-black/90 dark:hover:bg-zinc-900'
-        >
-          <span className='text-xs font-bold text-gray-700 dark:text-zinc-300'>
-            ← Feed
-          </span>
-        </button>
-        <FloatingStats />
-        <MapControls onFlyTo={handleFlyTo} />
-        <TimelineScrubber />
+      <div className='relative flex min-h-0 w-full flex-1 flex-col'>
+        <div className='relative min-h-0 flex-1'>
+          <FireMap />
+          <button
+            type='button'
+            onClick={() => setMapMode(false)}
+            className='absolute top-3 left-14 z-10 flex cursor-pointer items-center gap-2 rounded-xl border border-gray-300 bg-white/95 px-3 py-2 shadow-2xl backdrop-blur-md transition-colors hover:bg-gray-50 dark:border-zinc-700/80 dark:bg-black/90 dark:hover:bg-zinc-900'
+          >
+            <span className='text-xs font-bold text-gray-700 dark:text-zinc-300'>
+              ← Feed
+            </span>
+          </button>
+          <FloatingStats />
+          <MapControls onFlyTo={handleFlyTo} />
+        </div>
+        <div className='z-20 shrink-0'>
+          <TimelineScrubber />
+        </div>
         <FacilityDrawer />
       </div>
     );
@@ -193,20 +204,21 @@ export default function OverviewPage() {
 
   // ── FEED MODE (default) ──
   return (
-    <div className='relative flex h-[calc(100dvh-64px)] w-full flex-col bg-gray-50 dark:bg-zinc-950'>
+    <div className='relative flex min-h-0 w-full flex-1 flex-col bg-gray-50 dark:bg-zinc-950'>
       {/* Hero row: three pillars + map button */}
       <div className='z-10 flex shrink-0 items-center border-b border-gray-200 bg-white px-3 py-1.5 md:py-2 dark:border-zinc-800 dark:bg-zinc-950'>
         <HeroPills />
         <button
+          type='button'
           onClick={() => setMapMode(true)}
-          className='ml-2 flex hidden shrink-0 cursor-pointer items-center gap-1 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 text-[11px] font-bold text-gray-500 transition-colors hover:bg-gray-200 md:flex dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800'
+          className='ml-2 hidden shrink-0 cursor-pointer items-center gap-1 rounded-md border border-gray-300 bg-gray-100 px-2 py-1 text-[11px] font-bold text-gray-600 transition-colors hover:bg-gray-200 md:flex dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800'
         >
           <IconMap className='h-3 w-3' />
           Map
         </button>
       </div>
 
-      {/* Render only active viewport layout to avoid double-mounting 1,300+ event cards */}
+      {/* Render only active viewport layout to avoid double-mounting event feed */}
       {isMobile ? (
         <div className='flex min-h-0 flex-1 flex-col'>
           <MobileTabs
@@ -225,8 +237,8 @@ export default function OverviewPage() {
         </div>
       )}
 
-      {/* Timeline scrubber — fixed to bottom */}
-      <div className='fixed right-0 bottom-0 left-0 z-20 border-t border-gray-200 bg-white dark:border-zinc-800 dark:bg-zinc-950'>
+      {/* Timeline scrubber — clean flex footer (never overlaps feed or panel) */}
+      <div className='z-20 shrink-0'>
         <TimelineScrubber />
       </div>
     </div>

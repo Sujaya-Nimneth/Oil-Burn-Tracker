@@ -6,7 +6,10 @@ import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'OilBurnTracker — Real-time Conflict Fire & Emissions Tracker',
+  title: {
+    default: 'OilBurnTracker — Real-time Conflict Fire & Emissions Tracker',
+    template: '%s | OilBurnTracker'
+  },
   description:
     'Satellite fire detection, facility identification, and emissions estimates for conflict-affected oil & gas infrastructure',
   robots: {
@@ -24,7 +27,7 @@ export default function DashboardLayout({
     <SidebarProvider defaultOpen={false}>
       <TimelineDataLoader />
       <AppSidebar />
-      <SidebarInset>
+      <SidebarInset className='h-dvh overflow-hidden'>
         <Header />
         {children}
       </SidebarInset>

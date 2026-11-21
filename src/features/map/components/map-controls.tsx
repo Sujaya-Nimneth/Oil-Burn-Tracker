@@ -33,8 +33,10 @@ export default function MapControls({ onFlyTo }: MapControlsProps) {
     return (
       <div className='absolute top-3 left-3 z-10'>
         <Button
+          type='button'
           size='icon'
           variant='outline'
+          aria-label='Open map layers and zoom controls'
           className='bg-background/80 h-9 w-9 shadow-lg backdrop-blur-md'
           onClick={() => setOpen(true)}
         >
@@ -52,8 +54,10 @@ export default function MapControls({ onFlyTo }: MapControlsProps) {
             Layers
           </p>
           <button
+            type='button'
             onClick={() => setOpen(false)}
-            className='text-muted-foreground hover:text-foreground'
+            aria-label='Close map controls'
+            className='text-muted-foreground hover:text-foreground cursor-pointer'
           >
             <IconX className='h-3.5 w-3.5' />
           </button>

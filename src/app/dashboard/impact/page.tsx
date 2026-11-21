@@ -71,9 +71,9 @@ export default function ImpactPage() {
   const barPct = Math.min(100, (impact.totalMonthlyExtra / 800) * 100);
 
   return (
-    <div className='relative h-[calc(100dvh-64px)] w-full'>
-      <ScrollArea className='h-full'>
-        <div className='space-y-4 p-4 pb-[220px] md:px-6'>
+    <div className='flex min-h-0 w-full flex-1 flex-col'>
+      <ScrollArea className='min-h-0 flex-1'>
+        <div className='space-y-4 p-4 pb-8 md:px-6'>
           {/* Header */}
           <div>
             <h1 className='text-2xl font-bold tracking-tight'>

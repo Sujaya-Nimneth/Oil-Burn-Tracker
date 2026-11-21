@@ -1,7 +1,7 @@
 'use client';
 
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-
 import { Button } from '@/components/ui/button';
 
 export default function NotFound() {
@@ -12,10 +12,10 @@ export default function NotFound() {
       <span className='from-foreground bg-linear-to-b to-transparent bg-clip-text text-[10rem] leading-none font-extrabold text-transparent'>
         404
       </span>
-      <h2 className='font-heading my-2 text-2xl font-bold'>
+      <h1 className='font-heading my-2 text-2xl font-bold'>
         Something&apos;s missing
-      </h2>
-      <p>
+      </h1>
+      <p className='text-muted-foreground'>
         Sorry, the page you are looking for doesn&apos;t exist or has been
         moved.
       </p>
@@ -23,12 +23,8 @@ export default function NotFound() {
         <Button onClick={() => router.back()} variant='default' size='lg'>
           Go back
         </Button>
-        <Button
-          onClick={() => router.push('/dashboard')}
-          variant='ghost'
-          size='lg'
-        >
-          Back to Home
+        <Button asChild variant='ghost' size='lg'>
+          <Link href='/dashboard/overview'>Back to Dashboard</Link>
         </Button>
       </div>
     </div>

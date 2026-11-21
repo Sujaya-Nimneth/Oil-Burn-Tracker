@@ -8,6 +8,7 @@ export default function CtaGithub() {
         href='https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker'
         rel='noopener noreferrer'
         target='_blank'
+        aria-label='OilBurnTracker on GitHub'
         className='dark:text-foreground transition-colors duration-300 hover:text-[#24292e] dark:hover:text-yellow-400'
       >
         <IconBrandGithub className='transition-transform duration-300 group-hover:animate-bounce' />

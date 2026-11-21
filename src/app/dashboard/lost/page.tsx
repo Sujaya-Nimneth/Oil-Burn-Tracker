@@ -324,7 +324,7 @@ export default function WhatWeLostPage() {
   }, [loading, records, totalEntries, virtualizer]);
 
   return (
-    <div className='relative h-[calc(100dvh-64px)] w-full bg-black'>
+    <div className='relative min-h-0 w-full flex-1 bg-black'>
       <div className='h-full overflow-y-auto' ref={scrollRef}>
         {/* ── Sticky counter ── */}
         <div className='sticky top-0 z-10 border-b border-zinc-900/50 bg-black/90 backdrop-blur-sm'>

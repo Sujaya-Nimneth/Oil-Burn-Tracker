@@ -91,6 +91,59 @@
   }
 }
 
+/* Timeline scrubber range input styling (class-based .dark only so explicit light mode stays blue) */
+.timeline-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+.timeline-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2563eb;
+  border: 2px solid white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  cursor: grab;
+  position: relative;
+  z-index: 10;
+}
+.timeline-slider::-webkit-slider-thumb:active {
+  cursor: grabbing;
+  transform: scale(1.15);
+  background: #1d4ed8;
+}
+.timeline-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2563eb;
+  border: 2px solid white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  cursor: grab;
+}
+.timeline-slider::-moz-range-thumb:active {
+  cursor: grabbing;
+  transform: scale(1.15);
+  background: #1d4ed8;
+}
+.dark .timeline-slider::-webkit-slider-thumb {
+  background: #f97316;
+  border-color: #27272a;
+}
+.dark .timeline-slider::-webkit-slider-thumb:active {
+  background: #ea580c;
+}
+.dark .timeline-slider::-moz-range-thumb {
+  background: #f97316;
+  border-color: #27272a;
+}
+.dark .timeline-slider::-moz-range-thumb:active {
+  background: #ea580c;
+}
+
 /* Respect prefers-reduced-motion: kill decorative animation globally.
    (The map's rAF pulse loop is gated separately in fire-map.tsx.) */
 @media (prefers-reduced-motion: reduce) {
