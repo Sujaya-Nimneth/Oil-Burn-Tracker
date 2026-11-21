@@ -124,17 +124,15 @@ describe('corsHeaders & onRequestPost', () => {
   });
 
   it('ignores legacy contactEmail field and does not publish it to GitHub', async () => {
-    const fetchMock = vi
-      .spyOn(globalThis, 'fetch')
-      .mockResolvedValueOnce(
-        new Response(
-          JSON.stringify({
-            number: 99,
-            html_url: 'https://github.com/test/99'
-          }),
-          { status: 201 }
-        )
-      );
+    const fetchMock = vi.spyOn(globalThis, 'fetch').mockResolvedValueOnce(
+      new Response(
+        JSON.stringify({
+          number: 99,
+          html_url: 'https://github.com/test/99'
+        }),
+        { status: 201 }
+      )
+    );
 
     const res = await onRequestPost({
       request: new Request(
