@@ -160,11 +160,20 @@ export default function AboutPage() {
             </p>
             <ul className='list-disc space-y-1.5 pl-5'>
               <li>No cookies, no tracking pixels, no analytics scripts.</li>
-              <li>No account creation or login required.</li>
-              <li>No data is stored about your visit on our servers.</li>
               <li>
-                The FIRMS API proxy passes your request to NASA servers —
-                NASA&apos;s own privacy policy applies to that data.
+                UI preferences (theme, sidebar state, timeline date, and
+                memorial scroll progress) stay in your browser&apos;s local
+                storage and are never sent to our servers.
+              </li>
+              <li>No account creation or login required.</li>
+              <li>
+                Optional memorial submissions (&ldquo;Remember someone&rdquo;)
+                collect no email address or personal contact info and create a
+                public GitHub issue for community review.
+              </li>
+              <li>
+                The FIRMS API proxy forwards regional fire queries to NASA
+                servers — NASA&apos;s own privacy policy applies to that data.
               </li>
               <li>
                 Embedded YouTube videos are loaded from YouTube&apos;s
@@ -178,7 +187,7 @@ export default function AboutPage() {
               </li>
             </ul>
             <p className='text-muted-foreground/70 mt-2 text-xs'>
-              Last updated: March 2026
+              Last updated: November 2026
             </p>
           </CardContent>
         </Card>
