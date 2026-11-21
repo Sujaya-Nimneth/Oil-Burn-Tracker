@@ -20,6 +20,12 @@ import random
 import urllib.request
 from datetime import datetime, timezone
 
+FETCH_TIMEOUT_SECS = 30
+MIN_GAZA_RECORDS = 50000
+MIN_WEST_BANK_RECORDS = 500
+MIN_TOTAL_RECORDS = 60000
+MAX_DROP_RATIO = 0.10
+
 OUT_PATH = os.path.join(os.path.dirname(__file__), '..', 'public', 'memorial-data.json')
 # Tiny sidecar consumed by the client casualty ledger (src/features/timeline/
 # data/conflict-events.ts): per-region cumulative totals + coverage date.
@@ -57,24 +63,57 @@ REGIONS = ['Gaza', 'West Bank', 'Lebanon', 'Israel']
 
 def fetch_csv(url):
     req = urllib.request.Request(url, headers={'User-Agent': 'OilBurnTracker/1.0'})
-    with urllib.request.urlopen(req) as resp:
+    with urllib.request.urlopen(req, timeout=FETCH_TIMEOUT_SECS) as resp:
         return resp.read().decode('utf-8')
 
 def fetch_json(url):
     req = urllib.request.Request(url, headers={'User-Agent': 'OilBurnTracker/1.0'})
-    with urllib.request.urlopen(req) as resp:
+    with urllib.request.urlopen(req, timeout=FETCH_TIMEOUT_SECS) as resp:
         return json.loads(resp.read())
 
+def parse_age(raw):
+    if raw is None:
+        return -1
+    text = str(raw).strip()
+    if not text:
+        return -1
+    try:
+        val = int(float(text))
+        return val if 0 <= val <= 130 else -1
+    except (ValueError, TypeError):
+        return -1
+
+def validate_record_counts(gaza_count, west_bank_count, total_count, existing_count=None):
+    if gaza_count < MIN_GAZA_RECORDS:
+        raise RuntimeError(
+            f'Integrity check failed: Gaza count ({gaza_count}) below floor ({MIN_GAZA_RECORDS})'
+        )
+    if west_bank_count < MIN_WEST_BANK_RECORDS:
+        raise RuntimeError(
+            f'Integrity check failed: West Bank count ({west_bank_count}) below floor ({MIN_WEST_BANK_RECORDS})'
+        )
+    if total_count < MIN_TOTAL_RECORDS:
+        raise RuntimeError(
+            f'Integrity check failed: total count ({total_count}) below floor ({MIN_TOTAL_RECORDS})'
+        )
+    if existing_count and existing_count > 0:
+        min_allowed = int(existing_count * (1.0 - MAX_DROP_RATIO))
+        if total_count < min_allowed:
+            raise RuntimeError(
+                f'Integrity check failed: total count dropped from {existing_count} to {total_count} '
+                f'(below {min_allowed} allowed floor)'
+            )
+
 def build_gaza():
-    """60K individual records with age, sex, approximate date."""
+    """60K+ individual records with age, sex, approximate date."""
     print('Fetching Gaza killed-in-gaza CSV...')
     text = fetch_csv('https://data.techforpalestine.org/api/v3/killed-in-gaza.csv')
     records = []
     reader = csv.DictReader(text.strip().split('\n'))
     for row in reader:
-        age = int(row['age']) if row['age'] else -1
-        sex = 1 if row['sex'] == 'f' else 0
-        update = row.get('update', '')
+        age = parse_age(row.get('age'))
+        sex = 1 if (row.get('sex') or '').strip().lower() == 'f' else 0
+        update = (row.get('update') or '').strip()
         date = UPDATE_TO_DATE.get(update, '')
         records.append([age, sex, 0, date])  # 0 = Gaza
     print(f'  Gaza: {len(records)} records')
@@ -222,6 +261,16 @@ def main():
     # Combine all records
     all_records = gaza + west_bank + lebanon + israel
 
+    existing_count = None
+    if os.path.exists(OUT_PATH):
+        try:
+            with open(OUT_PATH, 'r', encoding='utf-8') as f:
+                existing_count = json.load(f).get('count')
+        except Exception:
+            existing_count = None
+
+    validate_record_counts(len(gaza), len(west_bank), len(all_records), existing_count)
+
     # Sort by date (entries with dates first, then by date)
     all_records.sort(key=lambda r: (r[3] if r[3] else 'zzzz', r[0] if r[0] >= 0 else 999))
 
@@ -238,8 +287,10 @@ def main():
     }
 
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
-    with open(OUT_PATH, 'w') as f:
+    tmp_out = OUT_PATH + '.tmp'
+    with open(tmp_out, 'w', encoding='utf-8') as f:
         json.dump(output, f, separators=(',', ':'))
+    os.replace(tmp_out, OUT_PATH)
 
     # ── Casualty anchors sidecar ──
     # Per region: documented cumulative killed + the date that figure covers
@@ -261,9 +312,11 @@ def main():
         },
         'sources': output['sources'],
     }
-    with open(ANCHORS_PATH, 'w') as f:
+    tmp_anchors = ANCHORS_PATH + '.tmp'
+    with open(tmp_anchors, 'w', encoding='utf-8') as f:
         json.dump(anchors, f, indent=2)
         f.write('\n')
+    os.replace(tmp_anchors, ANCHORS_PATH)
     print(f'Anchors written to {ANCHORS_PATH}')
 
     size_kb = os.path.getsize(OUT_PATH) / 1024

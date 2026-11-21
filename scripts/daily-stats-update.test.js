@@ -1,8 +1,15 @@
 import { describe, it, expect } from 'vitest';
 import lib from './daily-stats-update.js';
 
-const { dateHash, seededRandom, getPhaseTargets, daysSince, generateDays } =
-  lib;
+const {
+  dateHash,
+  seededRandom,
+  getPhaseTargets,
+  blendLivePrices,
+  generateConsumerImpact,
+  daysSince,
+  generateDays
+} = lib;
 
 describe('deterministic randomness', () => {
   it('hashes the same date to the same value', () => {
@@ -50,5 +57,48 @@ describe('date helpers', () => {
   it('generates every day after the baseline through today', () => {
     const days = generateDays('2026-03-27', '2026-03-30');
     expect(days).toEqual(['2026-03-28', '2026-03-29', '2026-03-30']);
+  });
+});
+
+describe('live commodity smoothing', () => {
+  it('returns empty overrides outside the trailing 14-day window or before phase 3', () => {
+    expect(
+      blendLivePrices('2026-10-01', '2026-11-21', { brent: 112, natGas: 6.2 })
+    ).toEqual({});
+    expect(
+      blendLivePrices('2026-07-31', '2026-08-05', { brent: 112, natGas: 6.2 })
+    ).toEqual({});
+  });
+
+  it('ramps smoothly from static baseline to live quote on today', () => {
+    const today = '2026-11-21';
+    const weekAgo = blendLivePrices('2026-11-14', today, {
+      brent: 116,
+      natGas: 6.5
+    });
+    const onToday = blendLivePrices(today, today, {
+      brent: 116,
+      natGas: 6.5
+    });
+    expect(weekAgo.brent).toBeCloseTo(102, 1); // midpoint between 88 and 116
+    expect(weekAgo.natGas).toBeCloseTo(5.5, 1); // midpoint between 4.5 and 6.5
+    expect(onToday.brent).toBe(116);
+    expect(onToday.natGas).toBe(6.5);
+  });
+
+  it('converges consumer impact oil price smoothly without a single-day cliff', () => {
+    const today = '2026-11-21';
+    const days = generateDays('2026-03-27', today);
+    const liveSeries = generateConsumerImpact(days, today, {
+      brent: 115,
+      natGas: 6.2
+    });
+    const last = liveSeries[liveSeries.length - 1];
+    const prev = liveSeries[liveSeries.length - 2];
+    expect(Math.abs(last.oilPriceBbl - prev.oilPriceBbl)).toBeLessThanOrEqual(
+      10
+    );
+    expect(last.oilPriceBbl).toBeGreaterThan(100);
+    expect(last.source).toContain('Live market feed');
   });
 });
