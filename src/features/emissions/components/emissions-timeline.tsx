@@ -1,5 +1,6 @@
 'use client';
 
+import { useMemo } from 'react';
 import { useFireStore } from '@/stores/fire-store';
 import {
   AreaChart,
@@ -27,36 +28,38 @@ export default function EmissionsTimeline() {
   const fireData = useFireStore((s) => s.fireData);
   const loading = useFireStore((s) => s.loading);
 
-  // Group fires by date and facility type
-  const dateMap = new Map<string, Record<string, number>>();
+  const { data, allTypes } = useMemo(() => {
+    const dateMap = new Map<string, Record<string, number>>();
+    const typeSet = new Set<string>();
 
-  fireData.features.forEach((f) => {
-    const date = f.properties.acq_date;
-    if (!date) return;
+    for (const f of fireData.features) {
+      const date = f.properties.acq_date;
+      if (!date) continue;
 
-    const type = f.properties.matchedFacility?.facilityType || 'unknown';
-    const co2 = f.properties.estimatedCO2TonsDay || 0;
+      const type = f.properties.matchedFacility?.facilityType || 'unknown';
+      const co2 = f.properties.estimatedCO2TonsDay || 0;
 
-    if (!dateMap.has(date)) {
-      dateMap.set(date, {});
+      let entry = dateMap.get(date);
+      if (!entry) {
+        entry = {};
+        dateMap.set(date, entry);
+      }
+      entry[type] = (entry[type] || 0) + co2;
+      typeSet.add(type);
     }
-    const entry = dateMap.get(date)!;
-    entry[type] = (entry[type] || 0) + co2;
-  });
 
-  const data = Array.from(dateMap.entries())
-    .map(([date, types]) => ({
-      date,
-      ...types
-    }))
-    .sort((a, b) => a.date.localeCompare(b.date));
+    const sortedData = Array.from(dateMap.entries())
+      .map(([date, types]) => ({
+        date,
+        ...types
+      }))
+      .sort((a, b) => a.date.localeCompare(b.date));
 
-  const allTypes = new Set<string>();
-  data.forEach((d) => {
-    Object.keys(d).forEach((k) => {
-      if (k !== 'date') allTypes.add(k);
-    });
-  });
+    return {
+      data: sortedData,
+      allTypes: Array.from(typeSet)
+    };
+  }, [fireData.features]);
 
   if (data.length === 0) {
     return (
@@ -74,30 +77,48 @@ export default function EmissionsTimeline() {
     <ResponsiveContainer width='100%' height={400}>
       <AreaChart
         data={data}
-        margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+        margin={{ top: 10, right: 30, left: 10, bottom: 0 }}
       >
-        <CartesianGrid strokeDasharray='3 3' stroke='#333' />
-        <XAxis dataKey='date' stroke='#888' fontSize={12} />
+        <CartesianGrid
+          strokeDasharray='3 3'
+          stroke='var(--border)'
+          opacity={0.7}
+        />
+        <XAxis
+          dataKey='date'
+          stroke='var(--muted-foreground)'
+          tick={{ fill: 'var(--muted-foreground)', fontSize: 12 }}
+        />
         <YAxis
-          stroke='#888'
-          fontSize={12}
+          stroke='var(--muted-foreground)'
+          tick={{ fill: 'var(--muted-foreground)', fontSize: 12 }}
+          tickFormatter={(v: number) =>
+            v >= 1000 ? `${(v / 1000).toFixed(0)}k` : String(Math.round(v))
+          }
           label={{
             value: 'CO₂ (tons/day)',
             angle: -90,
             position: 'insideLeft',
-            style: { fill: '#888' }
+            style: { fill: 'var(--muted-foreground)', fontSize: 12 }
           }}
         />
         <Tooltip
           contentStyle={{
-            backgroundColor: '#1a1a1a',
-            border: '1px solid #333',
+            backgroundColor: 'var(--popover)',
+            color: 'var(--popover-foreground)',
+            border: '1px solid var(--border)',
             borderRadius: '8px'
           }}
-          labelStyle={{ color: '#fff' }}
+          labelStyle={{ color: 'var(--popover-foreground)', fontWeight: 600 }}
+          formatter={(value) => {
+            const num = typeof value === 'number' ? value : Number(value);
+            return Number.isFinite(num)
+              ? `${Math.round(num).toLocaleString()} t/day`
+              : String(value ?? '');
+          }}
         />
         <Legend />
-        {Array.from(allTypes).map((type) => (
+        {allTypes.map((type) => (
           <Area
             key={type}
             type='monotone'
@@ -105,7 +126,7 @@ export default function EmissionsTimeline() {
             stackId='1'
             stroke={FACILITY_COLORS[type] || '#6b7280'}
             fill={FACILITY_COLORS[type] || '#6b7280'}
-            fillOpacity={0.5}
+            fillOpacity={0.45}
             name={type.replace('_', ' ')}
           />
         ))}
