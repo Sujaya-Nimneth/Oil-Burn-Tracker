@@ -22,6 +22,12 @@ export function formatBillions(n: number): string {
   return `$${n.toFixed(1)}B`;
 }
 
+export function formatBPD(bpd: number): string {
+  if (bpd >= 1_000_000) return `${(bpd / 1_000_000).toFixed(1)}M BPD`;
+  if (bpd > 0) return `${(bpd / 1_000).toFixed(0)}K BPD`;
+  return '';
+}
+
 export function getYouTubeId(url: string): string | null {
   const m = url.match(
     /(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|shorts\/))([a-zA-Z0-9_-]{11})/
