@@ -1,5 +1,12 @@
+import type { Metadata } from 'next';
 import PageContainer from '@/components/layout/page-container';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+
+export const metadata: Metadata = {
+  title: 'About & Methodology',
+  description:
+    'Data sources, FRP-to-CO₂ emissions methodology, casualty accounting policy, terms of use, and privacy policy for OilBurnTracker.'
+};
 
 export default function AboutPage() {
   return (

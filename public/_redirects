@@ -1,0 +1,3 @@
+# Fallback redirects when static entrypoints aren't matched directly
+/           /dashboard/overview 302
+/dashboard  /dashboard/overview 302
