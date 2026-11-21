@@ -6,10 +6,6 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
-    ignore:
-      # Major bump with breaking API changes until shadcn chart wrapper is removed
-      - dependency-name: recharts
-        update-types: ['version-update:semver-major']
     groups:
       # Minor/patch updates are batched into one PR to keep the queue small;
       # majors stay separate because they need real review.
