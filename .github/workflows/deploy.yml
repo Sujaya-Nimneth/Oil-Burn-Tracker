@@ -6,13 +6,17 @@ on:
   workflow_run:
     workflows:
       - Auto Update Conflict & Satellite Data
-      - Update Memorial Registry
+      - Weekly Memorial Dataset Update
     types: [completed]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pull-requests: read
+
 concurrency:
   group: cloudflare-pages-deploy
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -40,30 +44,73 @@ jobs:
             echo "ready=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Checkout repository
+      - name: Wait for auto-merged data PR and skip no-op workflow_run deploys
+        id: gate
         if: steps.check.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT_NAME: ${{ github.event_name }}
+          WORKFLOW_NAME: ${{ github.event.workflow_run.name }}
+          TRIGGER_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          if [ "$EVENT_NAME" != "workflow_run" ]; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          DATA_BRANCH=""
+          if [ "$WORKFLOW_NAME" = "Auto Update Conflict & Satellite Data" ]; then
+            DATA_BRANCH="data/auto-update"
+          elif [ "$WORKFLOW_NAME" = "Weekly Memorial Dataset Update" ]; then
+            DATA_BRANCH="data/memorial-update"
+          fi
+
+          # If the data workflow enabled auto-merge and CI is still running on the PR,
+          # wait briefly (up to 6 minutes) for the PR to land on main before building.
+          if [ -n "$DATA_BRANCH" ]; then
+            for i in $(seq 1 24); do
+              OPEN_PR=$(gh pr list --repo "$GITHUB_REPOSITORY" --base main --head "$DATA_BRANCH" --state open --json number --jq '.[0].number // empty')
+              if [ -z "$OPEN_PR" ]; then
+                break
+              fi
+              echo "Waiting for auto-update PR #$OPEN_PR ($DATA_BRANCH) to merge ($i/24)..."
+              sleep 15
+            done
+          fi
+
+          MAIN_SHA=$(gh api "repos/${GITHUB_REPOSITORY}/commits/main" --jq '.sha')
+          if [ -n "$TRIGGER_SHA" ] && [ "$MAIN_SHA" = "$TRIGGER_SHA" ]; then
+            echo "::notice::main is still at ${MAIN_SHA:0:7} (no data PR merged) — skipping redundant deploy."
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "main advanced (${TRIGGER_SHA:0:7} -> ${MAIN_SHA:0:7}) — proceeding with deploy."
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout repository
+        if: steps.gate.outputs.deploy == 'true'
         uses: actions/checkout@v7
         with:
           ref: main
 
       - name: Setup Node.js
-        if: steps.check.outputs.ready == 'true'
+        if: steps.gate.outputs.deploy == 'true'
         uses: actions/setup-node@v7
         with:
           node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies
-        if: steps.check.outputs.ready == 'true'
+        if: steps.gate.outputs.deploy == 'true'
         run: npm ci
 
       - name: Build static export
-        if: steps.check.outputs.ready == 'true'
+        if: steps.gate.outputs.deploy == 'true'
         run: npm run build
 
       - name: Deploy to Cloudflare Pages
-        if: steps.check.outputs.ready == 'true'
+        if: steps.gate.outputs.deploy == 'true'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: npx --yes wrangler@4 pages deploy out --project-name=oilburntracker --branch=main
+        run: npx --yes wrangler@4 pages deploy out --project-name=monitor-the-war --branch=main

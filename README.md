@@ -127,7 +127,7 @@ Next.js
   ├── /dashboard/fires     →  Facility cards with status
   ├── /dashboard/timeline  →  Emissions timeline chart
   ├── /dashboard/about     →  Methodology + sources
-  └── /api/firms           →  FIRMS CSV → GeoJSON (30min ISR cache)
+  └── /api/firms           →  Cloudflare Pages Function: FIRMS CSV → GeoJSON (30min edge cache)
                                   ↓
                             NASA FIRMS API (satellite data)
                                   +
@@ -190,7 +190,7 @@ Static export — no SSR, no wrangler deploy, just serve the `out/` folder.
 
 ### Cloudflare Pages Settings
 
-Go to **dash.cloudflare.com → Workers & Pages → oilburntracker → Settings → Build & Deployments → Edit**:
+Go to **dash.cloudflare.com → Workers & Pages → monitor-the-war → Settings → Build & Deployments → Edit**:
 
 | Setting                    | Value                             |
 | -------------------------- | --------------------------------- |
