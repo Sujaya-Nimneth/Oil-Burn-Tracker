@@ -430,7 +430,7 @@ export default function EventFeed({
                   <div className='overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-black/60'>
                     {/* Impact pills — cumulative damage at this date */}
                     {stats && (
-                      <div className='flex items-center gap-2 overflow-x-auto border-b border-gray-100 bg-gray-50 px-3 py-1.5 dark:border-zinc-800/50 dark:bg-zinc-900/60'>
+                      <div className='flex flex-wrap items-center gap-x-2 gap-y-1 border-b border-gray-100 bg-gray-50 px-3 py-1.5 dark:border-zinc-800/50 dark:bg-zinc-900/60'>
                         <span className='flex items-center gap-1 text-[10px] font-bold whitespace-nowrap text-red-600 tabular-nums dark:text-red-400'>
                           <IconSkull className='h-3 w-3' />
                           {stats.casualties.totalKilled.toLocaleString()}

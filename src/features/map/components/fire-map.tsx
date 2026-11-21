@@ -6,10 +6,18 @@ import {
   NavigationControl,
   AttributionControl,
   Popup,
+  setWorkerUrl,
   type StyleSpecification,
   type GeoJSONSource
 } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
+
+// MapLibre v6 resolves its module worker relative to import.meta.url, which breaks
+// when Next.js Turbopack bundles maplibre-gl into /_next/static/chunks/*.js.
+// Point explicitly at the version-synced static worker copied by scripts/sync-maplibre-worker.js.
+if (typeof window !== 'undefined') {
+  setWorkerUrl('/maplibre-gl-worker.js');
+}
 import { useFireStore, type FireGeoJSON } from '@/stores/fire-store';
 import {
   curatedFires,
@@ -57,13 +65,10 @@ const SATELLITE_STYLE: StyleSpecification = {
     labels: {
       type: 'raster',
       tiles: [
-        'https://a.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}@2x.png',
-        'https://b.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}@2x.png',
-        'https://c.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}@2x.png',
-        'https://d.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}@2x.png'
+        'https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}'
       ],
       tileSize: 256,
-      maxzoom: 18
+      maxzoom: 19
     }
   },
   glyphs: 'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf',

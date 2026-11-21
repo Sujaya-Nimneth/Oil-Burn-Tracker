@@ -48,13 +48,15 @@ const DISRUPTION_COLORS: Record<string, string> = {
   catastrophe: 'text-red-700 dark:text-red-500'
 };
 
-// ── Floating stats for map mode (collapsible) ──
-function FloatingStats() {
+// ── Floating stats for map mode (collapsible; defaults collapsed on mobile) ──
+function FloatingStats({ isMobile }: { isMobile: boolean }) {
   const timelineDate = useFireStore((s) => s.timelineDate);
   const events = useEventsStore((s) => s.events);
   const eventsWithTelemetry = useEventsStore((s) => s.eventsWithTelemetry);
   const casualtyAnchors = useEventsStore((s) => s.casualtyAnchors);
-  const [collapsed, setCollapsed] = useState(false);
+  const [userCollapsed, setUserCollapsed] = useState<boolean | null>(null);
+  const collapsed = userCollapsed ?? isMobile;
+  const setCollapsed = (next: boolean) => setUserCollapsed(next);
 
   const summary = useMemo(() => {
     const visibleFacilityIds = getVisibleFacilityIds(events, timelineDate);
@@ -125,7 +127,7 @@ function FloatingStats() {
 
   return (
     <div
-      className='absolute top-3 right-3 z-10 flex max-h-[calc(100%-140px)] w-[340px] flex-col overflow-hidden rounded-xl border border-gray-300 bg-white/75 shadow-2xl backdrop-blur-md dark:border-zinc-700/80 dark:bg-black/70'
+      className='absolute top-14 right-3 left-3 z-10 flex max-h-[calc(100%-72px)] flex-col overflow-hidden rounded-xl border border-gray-300 bg-white/75 shadow-2xl backdrop-blur-md md:top-3 md:left-auto md:max-h-[calc(100%-140px)] md:w-[340px] dark:border-zinc-700/80 dark:bg-black/70'
       onClick={(e) => {
         const target = e.target as HTMLElement;
         if (target.closest('a') || target.closest('button[data-collapse]')) {
@@ -191,7 +193,7 @@ export default function OverviewPage() {
               ← Feed
             </span>
           </button>
-          <FloatingStats />
+          <FloatingStats isMobile={isMobile} />
           <MapControls onFlyTo={handleFlyTo} />
         </div>
         <div className='z-20 shrink-0'>

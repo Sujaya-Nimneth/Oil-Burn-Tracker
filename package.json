@@ -7,7 +7,9 @@
     "url": "https://github.com/Sujaya-Nimneth/Oil-Burn-Tracker"
   },
   "scripts": {
+    "predev": "node scripts/sync-maplibre-worker.js",
     "dev": "next dev",
+    "prebuild": "node scripts/sync-maplibre-worker.js",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
