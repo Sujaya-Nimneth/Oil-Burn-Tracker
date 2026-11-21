@@ -21,3 +21,6 @@
 
 /memorial-data.json
   Cache-Control: public, max-age=3600, must-revalidate
+
+/maplibre-gl-worker.js
+  Cache-Control: public, max-age=3600, must-revalidate

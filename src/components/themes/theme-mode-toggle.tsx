@@ -13,6 +13,13 @@ export function ThemeModeToggle() {
     (e?: React.MouseEvent) => {
       const newMode = resolvedTheme === 'dark' ? 'light' : 'dark';
       const root = document.documentElement;
+      const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+      if (metaThemeColor) {
+        metaThemeColor.setAttribute(
+          'content',
+          newMode === 'dark' ? '#09090b' : '#ffffff'
+        );
+      }
 
       if (!document.startViewTransition) {
         setTheme(newMode);
