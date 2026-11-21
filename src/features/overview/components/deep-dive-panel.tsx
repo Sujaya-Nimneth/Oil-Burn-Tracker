@@ -1607,7 +1607,7 @@ export default function DeepDivePanel({
   };
 
   return (
-    <div className='h-full overflow-y-auto bg-gray-50 pb-20 dark:bg-zinc-950'>
+    <div className='h-full overflow-y-auto bg-gray-50 pb-8 dark:bg-zinc-950'>
       {/* ── DATE HEADER ── */}
       <div className='border-b border-gray-200 bg-white px-4 pt-4 pb-3 dark:border-zinc-700 dark:bg-zinc-900/80'>
         <div className='text-2xl leading-tight font-black text-gray-900 dark:text-white'>

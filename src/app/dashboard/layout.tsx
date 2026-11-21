@@ -24,7 +24,7 @@ export default function DashboardLayout({
     <SidebarProvider defaultOpen={false}>
       <TimelineDataLoader />
       <AppSidebar />
-      <SidebarInset>
+      <SidebarInset className='h-dvh overflow-hidden'>
         <Header />
         {children}
       </SidebarInset>
