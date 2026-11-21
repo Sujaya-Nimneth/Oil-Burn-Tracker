@@ -1,7 +1,14 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useCallback } from 'react';
-import maplibregl from 'maplibre-gl';
+import {
+  Map as MapLibreMap,
+  NavigationControl,
+  AttributionControl,
+  Popup,
+  type StyleSpecification,
+  type GeoJSONSource
+} from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import {
   useFireStore,
@@ -29,7 +36,7 @@ import {
 } from '@/features/map/utils/popup-html';
 
 // Free satellite tiles — no API key needed
-const SATELLITE_STYLE: maplibregl.StyleSpecification = {
+const SATELLITE_STYLE: StyleSpecification = {
   version: 8,
   name: 'Satellite + Terrain',
   sources: {
@@ -194,8 +201,8 @@ function buildEventsGeoJSON(events: ConflictEvent[]) {
 
 export default function FireMap() {
   const mapContainer = useRef<HTMLDivElement>(null);
-  const map = useRef<maplibregl.Map | null>(null);
-  const popup = useRef<maplibregl.Popup | null>(null);
+  const map = useRef<MapLibreMap | null>(null);
+  const popup = useRef<Popup | null>(null);
   const animFrameRef = useRef<number | null>(null);
   const animSyncRef = useRef<(() => void) | null>(null);
   const animCleanupRef = useRef<(() => void) | null>(null);
@@ -237,7 +244,7 @@ export default function FireMap() {
     if (!mapContainer.current || map.current) return;
 
     const { center, zoom } = useFireStore.getState().mapState;
-    map.current = new maplibregl.Map({
+    map.current = new MapLibreMap({
       container: mapContainer.current,
       style: SATELLITE_STYLE,
       center,
@@ -249,11 +256,11 @@ export default function FireMap() {
     });
 
     map.current.addControl(
-      new maplibregl.NavigationControl({ visualizePitch: true }),
+      new NavigationControl({ visualizePitch: true }),
       'bottom-right'
     );
     map.current.addControl(
-      new maplibregl.AttributionControl({ compact: true }),
+      new AttributionControl({ compact: true }),
       'bottom-left'
     );
 
@@ -822,7 +829,7 @@ export default function FireMap() {
           isMutedRef.current
         );
 
-        popup.current = new maplibregl.Popup({
+        popup.current = new Popup({
           closeButton: true,
           maxWidth: 'calc(100vw - 40px)',
           className: 'event-popup',
@@ -895,7 +902,7 @@ export default function FireMap() {
           isMutedRef.current
         );
 
-        popup.current = new maplibregl.Popup({
+        popup.current = new Popup({
           closeButton: true,
           maxWidth: 'calc(100vw - 40px)',
           className: 'event-popup',
@@ -960,7 +967,7 @@ export default function FireMap() {
 
         if (popup.current) popup.current.remove();
 
-        popup.current = new maplibregl.Popup({
+        popup.current = new Popup({
           closeButton: true,
           maxWidth: '260px',
           offset: 15
@@ -1017,7 +1024,7 @@ export default function FireMap() {
   // Update fire data on map (only facility-matched fires)
   useEffect(() => {
     if (!map.current) return;
-    const source = map.current.getSource('fires') as maplibregl.GeoJSONSource;
+    const source = map.current.getSource('fires') as GeoJSONSource;
     if (source) {
       const facilityFires: FireGeoJSON = {
         type: 'FeatureCollection',
@@ -1031,7 +1038,7 @@ export default function FireMap() {
   useEffect(() => {
     if (!map.current) return;
     const source = map.current.getSource('facilities') as
-      maplibregl.GeoJSONSource | undefined;
+      GeoJSONSource | undefined;
     if (source) {
       source.setData(buildFacilitiesGeoJSON(timelineDate, facilityStats));
     }
@@ -1041,7 +1048,7 @@ export default function FireMap() {
   useEffect(() => {
     if (!map.current) return;
     const source = map.current.getSource('conflict-events') as
-      maplibregl.GeoJSONSource | undefined;
+      GeoJSONSource | undefined;
     if (source) {
       source.setData(buildEventsGeoJSON(getEventsUpTo(events, timelineDate)));
     }
@@ -1133,7 +1140,7 @@ export default function FireMap() {
         isMutedRef.current
       );
 
-      popup.current = new maplibregl.Popup({
+      popup.current = new Popup({
         closeButton: true,
         maxWidth: 'calc(100vw - 40px)',
         className: 'event-popup',
