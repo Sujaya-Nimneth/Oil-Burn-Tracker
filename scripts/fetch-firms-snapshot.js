@@ -3,15 +3,17 @@
  * NASA FIRMS Snapshot Updater
  *
  * Fetches the latest VIIRS satellite thermal detections for the Middle East
- * bounding box (10,30,40,65) when FIRMS_MAP_KEY is available, or generates
- * a calibrated baseline thermal snapshot for Persian Gulf energy corridors
- * so local development (`npm run dev`) and static exports always have
- * a valid `/firms-latest.json` fallback.
+ * bounding box (30,10,65,40 in west,south,east,north order) when FIRMS_MAP_KEY
+ * is available, or generates a calibrated baseline thermal snapshot for
+ * Persian Gulf energy corridors so local development (`npm run dev`) and
+ * static exports always have a valid `/firms-latest.json` fallback.
  *
  * Fallback rules (a failed/missing-key fetch must never destroy real data):
- *   - If the existing snapshot holds live satellite data, it is kept as-is.
- *   - A baseline is only written when no snapshot exists, or the existing
- *     one is itself a baseline that is more than 3 days old.
+ *   - If the existing snapshot holds live satellite data for the current bbox,
+ *     it is kept as-is.
+ *   - A baseline is only written when no snapshot exists, the existing live
+ *     snapshot was fetched for an outdated bbox, or the existing one is itself
+ *     a baseline that is more than 3 days old.
  *   - Pass --force-baseline to regenerate the baseline unconditionally.
  */
 
@@ -21,7 +23,8 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const OUT_FILE = path.join(ROOT, 'public', 'firms-latest.json');
 const FIRMS_BASE_URL = 'https://firms.modaps.eosdis.nasa.gov/api/area/csv';
-const MIDDLE_EAST_BBOX = '10,30,40,65';
+// NASA FIRMS Area API format: west_lon,south_lat,east_lon,north_lat
+const MIDDLE_EAST_BBOX = '30,10,65,40';
 
 function classifyIntensity(frp) {
   if (frp < 10) return 'low';
@@ -299,7 +302,13 @@ async function main() {
       const res = await fetch(url, { signal: AbortSignal.timeout(15000) });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const csv = await res.text();
-      if (!csv || csv.trim().length === 0 || csv.includes('Invalid')) {
+      const firstLine = csv.trim().split('\n', 1)[0]?.toLowerCase() || '';
+      if (
+        !firstLine ||
+        firstLine.startsWith('invalid') ||
+        !firstLine.includes('latitude') ||
+        !firstLine.includes('longitude')
+      ) {
         throw new Error('Empty or invalid CSV from FIRMS');
       }
       const geojson = csvToGeoJSON(csv);
@@ -329,14 +338,15 @@ async function main() {
     console.log('  --force-baseline specified.');
   }
 
-  // Fallback path: never overwrite real satellite data with a fabricated
-  // baseline — keep the last good live snapshot instead.
+  // Fallback path: never overwrite valid live satellite data for the current
+  // bbox with a fabricated baseline — keep the last good live snapshot instead.
   const existing = readExistingSnapshot();
   if (
     !forceBaseline &&
     existing &&
     existing.metadata &&
-    !existing.metadata.fallback
+    !existing.metadata.fallback &&
+    existing.metadata.bbox === MIDDLE_EAST_BBOX
   ) {
     console.log(
       `  Keeping existing live snapshot (${existing.features.length} detections, fetched ${existing.metadata.fetchedAt || 'unknown'}) instead of writing baseline data.`
