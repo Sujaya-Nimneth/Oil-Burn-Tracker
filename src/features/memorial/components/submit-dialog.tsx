@@ -35,19 +35,25 @@ export default function SubmitDialog({
   const [relationship, setRelationship] = useState('');
   const [age, setAge] = useState('');
   const [region, setRegion] = useState('');
-  const [email, setEmail] = useState('');
   const [photoUrl, setPhotoUrl] = useState('');
   const [submitting, setSubmitting] = useState(false);
 
-  const canSubmit =
-    humanity.length >= 10 &&
-    humanity.length <= 280 &&
-    relationship &&
-    region &&
-    email;
+  const trimmedHumanity = humanity.trim();
+  const parsedAge = age.trim() === '' ? null : Number(age);
+  const ageValid =
+    parsedAge === null ||
+    (Number.isInteger(parsedAge) && parsedAge >= 0 && parsedAge <= 120);
 
-  async function handleSubmit() {
-    if (!canSubmit) return;
+  const canSubmit =
+    trimmedHumanity.length >= 10 &&
+    trimmedHumanity.length <= 280 &&
+    Boolean(relationship) &&
+    Boolean(region) &&
+    ageValid;
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (!canSubmit || submitting) return;
     setSubmitting(true);
 
     try {
@@ -55,13 +61,12 @@ export default function SubmitDialog({
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          entryNumber: entryNumber || null,
-          humanity,
+          entryNumber: entryNumber ?? null,
+          humanity: trimmedHumanity,
           relationship,
-          age: age ? parseInt(age, 10) : null,
+          age: parsedAge,
           region,
-          contactEmail: email,
-          photoUrl: photoUrl || null
+          photoUrl: photoUrl.trim() || null
         })
       });
 
@@ -76,7 +81,6 @@ export default function SubmitDialog({
       setRelationship('');
       setAge('');
       setRegion('');
-      setEmail('');
       setPhotoUrl('');
     } catch (err) {
       toast.error(
@@ -98,35 +102,47 @@ export default function SubmitDialog({
             {entryNumber ? ` (#${entryNumber.toLocaleString()})` : ''}
           </DialogTitle>
           <DialogDescription className='text-zinc-400'>
-            Tell us who they were. Submissions are reviewed before appearing.
+            Tell us who they were. Submissions open a public review issue on
+            GitHub — please do not include private contact details.
           </DialogDescription>
         </DialogHeader>
 
-        <div className='space-y-4'>
+        <form onSubmit={handleSubmit} className='space-y-4'>
           {/* Who were they */}
           <div>
-            <label className='mb-1 block text-sm text-zinc-400'>
+            <label
+              htmlFor='memorial-humanity'
+              className='mb-1 block text-sm text-zinc-300'
+            >
               Who were they? <span className='text-red-500'>*</span>
             </label>
             <Textarea
+              id='memorial-humanity'
               value={humanity}
               onChange={(e) => setHumanity(e.target.value)}
               placeholder='A mother of three who sang while she cooked'
               maxLength={280}
-              className='min-h-20 border-zinc-700 bg-zinc-900 text-white placeholder:text-zinc-600'
+              required
+              className='min-h-20 border-zinc-700 bg-zinc-900 text-white placeholder:text-zinc-500'
             />
-            <span className='mt-1 block text-xs text-zinc-600'>
-              {humanity.length}/280
+            <span className='mt-1 block text-xs text-zinc-400'>
+              {trimmedHumanity.length}/280 (minimum 10 characters)
             </span>
           </div>
 
           {/* Relationship */}
           <div>
-            <label className='mb-1 block text-sm text-zinc-400'>
+            <label
+              htmlFor='memorial-relationship'
+              className='mb-1 block text-sm text-zinc-300'
+            >
               Your relationship <span className='text-red-500'>*</span>
             </label>
             <Select value={relationship} onValueChange={setRelationship}>
-              <SelectTrigger className='w-full border-zinc-700 bg-zinc-900 text-white'>
+              <SelectTrigger
+                id='memorial-relationship'
+                className='w-full border-zinc-700 bg-zinc-900 text-white'
+              >
                 <SelectValue placeholder='Select...' />
               </SelectTrigger>
               <SelectContent className='border-zinc-700 bg-zinc-900'>
@@ -142,8 +158,14 @@ export default function SubmitDialog({
           {/* Age + Region row */}
           <div className='flex gap-3'>
             <div className='w-24'>
-              <label className='mb-1 block text-sm text-zinc-400'>Age</label>
+              <label
+                htmlFor='memorial-age'
+                className='mb-1 block text-sm text-zinc-300'
+              >
+                Age
+              </label>
               <Input
+                id='memorial-age'
                 type='number'
                 value={age}
                 onChange={(e) => setAge(e.target.value)}
@@ -154,11 +176,17 @@ export default function SubmitDialog({
               />
             </div>
             <div className='flex-1'>
-              <label className='mb-1 block text-sm text-zinc-400'>
+              <label
+                htmlFor='memorial-region'
+                className='mb-1 block text-sm text-zinc-300'
+              >
                 Region <span className='text-red-500'>*</span>
               </label>
               <Select value={region} onValueChange={setRegion}>
-                <SelectTrigger className='w-full border-zinc-700 bg-zinc-900 text-white'>
+                <SelectTrigger
+                  id='memorial-region'
+                  className='w-full border-zinc-700 bg-zinc-900 text-white'
+                >
                   <SelectValue placeholder='Select...' />
                 </SelectTrigger>
                 <SelectContent className='border-zinc-700 bg-zinc-900'>
@@ -166,51 +194,42 @@ export default function SubmitDialog({
                   <SelectItem value='West Bank'>West Bank</SelectItem>
                   <SelectItem value='Lebanon'>Lebanon</SelectItem>
                   <SelectItem value='Israel'>Israel</SelectItem>
+                  <SelectItem value='Iran'>Iran</SelectItem>
                 </SelectContent>
               </Select>
             </div>
           </div>
 
-          {/* Email */}
-          <div>
-            <label className='mb-1 block text-sm text-zinc-400'>
-              Your email <span className='text-red-500'>*</span>
-            </label>
-            <Input
-              type='email'
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder='For follow-up only, never displayed'
-              className='border-zinc-700 bg-zinc-900 text-white placeholder:text-zinc-600'
-            />
-          </div>
-
           {/* Photo URL */}
           <div>
-            <label className='mb-1 block text-sm text-zinc-400'>
+            <label
+              htmlFor='memorial-photo'
+              className='mb-1 block text-sm text-zinc-300'
+            >
               Photo link
             </label>
             <Input
+              id='memorial-photo'
               type='url'
               value={photoUrl}
               onChange={(e) => setPhotoUrl(e.target.value)}
               placeholder='https://...'
-              className='border-zinc-700 bg-zinc-900 text-white placeholder:text-zinc-600'
+              className='border-zinc-700 bg-zinc-900 text-white placeholder:text-zinc-500'
             />
-            <span className='mt-1 block text-xs text-zinc-600'>
+            <span className='mt-1 block text-xs text-zinc-400'>
               Optional — link to a hosted photo
             </span>
           </div>
 
           {/* Submit */}
           <Button
-            onClick={handleSubmit}
+            type='submit'
             disabled={!canSubmit || submitting}
             className='w-full bg-white text-black hover:bg-zinc-200 disabled:opacity-40'
           >
             {submitting ? 'Submitting...' : 'Submit memory'}
           </Button>
-        </div>
+        </form>
       </DialogContent>
     </Dialog>
   );
