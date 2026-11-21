@@ -84,7 +84,7 @@ export default function TimelineScrubber() {
       const ev = useEventsStore.getState().events.find((c) => c.id === eventId);
       if (!ev) return;
       const idx = ALL_DAYS.indexOf(ev.date);
-      if (idx >= 0) setTimelineDate(ALL_DAYS[idx]);
+      if (idx >= 0) setTimelineDate(ALL_DAYS[idx], 'map');
     };
     window.addEventListener('timeline-sync', handler);
     return () => window.removeEventListener('timeline-sync', handler);
@@ -93,7 +93,7 @@ export default function TimelineScrubber() {
   const handleSliderChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
       const nextDate = ALL_DAYS[Number(e.target.value)];
-      if (nextDate) setTimelineDate(nextDate);
+      if (nextDate) setTimelineDate(nextDate, 'scrubber');
     },
     [setTimelineDate]
   );

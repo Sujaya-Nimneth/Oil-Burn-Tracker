@@ -128,4 +128,10 @@ describe('casualty ledger', () => {
     // registries document the theater even when curated events don't
     expect(r.anchoredTheaters).toContain('west_bank');
   });
+
+  it('attributes auto-daily telemetry to multi-theater model rather than Iran coalition', () => {
+    const r = getCasualtiesUpTo(events, ANCHORS, '2026-10-02');
+    expect(r.byParty['Estimated (Multi-Theater Model)']?.killed).toBe(60);
+    expect(r.byParty['Israeli / US Coalition — Iran']?.killed).toBe(40);
+  });
 });

@@ -329,6 +329,9 @@ const allConsumerData: ConsumerImpact[] = [
   )
 ].sort((a, b) => a.date.localeCompare(b.date));
 
+export const LATEST_CONSUMER_IMPACT_DATE =
+  allConsumerData[allConsumerData.length - 1]?.date ?? '2026-03-27';
+
 /**
  * Returns the latest consumer impact entry on or before the given date.
  * Falls back to the first entry if the date is before all entries.

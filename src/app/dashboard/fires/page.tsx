@@ -4,16 +4,16 @@ import { useMemo } from 'react';
 import { useFireData } from '@/features/map/hooks/use-fire-data';
 import {
   curatedFires,
+  FACILITY_STATUS_ORDER,
   getEffectiveFacilityStatus,
-  getFacilityFireStatsMap,
-  type FacilityStatus
+  getFacilityFireStatsMap
 } from '@/features/fires/data/curated-fires';
 import FacilityDrawer, {
   FACILITY_STATUS_CONFIG
 } from '@/features/fires/components/facility-drawer';
 import { useFireStore } from '@/stores/fire-store';
 import { formatCO2 } from '@/features/emissions/utils/emissions-model';
-import { sanitizeUrl } from '@/lib/format';
+import { formatBPD, sanitizeUrl } from '@/lib/format';
 import PageContainer from '@/components/layout/page-container';
 import {
   Card,
@@ -41,8 +41,8 @@ export default function FiresPage() {
   const setMapMode = useFireStore((s) => s.setMapMode);
 
   const facilityStats = useMemo(
-    () => getFacilityFireStatsMap(fireData.features),
-    [fireData.features]
+    () => getFacilityFireStatsMap(fireData.features, timelineDate),
+    [fireData.features, timelineDate]
   );
 
   const facilityData = useMemo(
@@ -67,16 +67,11 @@ export default function FiresPage() {
             totalCO2
           };
         })
-        .sort((a, b) => {
-          const order: Record<FacilityStatus, number> = {
-            active_fire: 0,
-            damaged: 1,
-            monitoring: 2,
-            offline: 3,
-            operational: 4
-          };
-          return (order[a.liveStatus] || 4) - (order[b.liveStatus] || 4);
-        }),
+        .sort(
+          (a, b) =>
+            (FACILITY_STATUS_ORDER[a.liveStatus] ?? 4) -
+            (FACILITY_STATUS_ORDER[b.liveStatus] ?? 4)
+        ),
     [facilityStats, timelineDate]
   );
 
@@ -139,9 +134,13 @@ export default function FiresPage() {
                   </p>
 
                   <div className='flex flex-wrap gap-x-4 gap-y-1 pt-1 text-xs'>
-                    <span>
-                      Capacity: {(f.capacityBPD / 1000).toFixed(0)}K BPD
-                    </span>
+                    {f.capacityBPD > 0 ? (
+                      <span>Capacity: {formatBPD(f.capacityBPD)}</span>
+                    ) : f.gasCapacityBCFD ? (
+                      <span>Capacity: {f.gasCapacityBCFD} BCF/d</span>
+                    ) : f.storageMBBL ? (
+                      <span>Storage: {f.storageMBBL}M bbl</span>
+                    ) : null}
                     <span>Global: {f.percentGlobalCapacity}%</span>
                     {f.fireCount > 0 && (
                       <>

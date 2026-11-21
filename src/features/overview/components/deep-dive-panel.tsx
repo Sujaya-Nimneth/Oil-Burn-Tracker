@@ -20,7 +20,8 @@ import {
   getSupplyDisruptionUpTo,
   getInfrastructureDamageByCountry,
   getEffectiveFacilityStatus,
-  getFacilityFireStatsMap
+  getFacilityFireStatsMap,
+  isChokepoint
 } from '@/features/fires/data/curated-fires';
 import { curatedFires } from '@/features/fires/data/curated-fires';
 import type {
@@ -785,8 +786,8 @@ export default function DeepDivePanel({
   const casualtyAnchors = useEventsStore((s) => s.casualtyAnchors);
 
   const facilityStats = useMemo(
-    () => getFacilityFireStatsMap(fireData.features),
-    [fireData.features]
+    () => getFacilityFireStatsMap(fireData.features, timelineDate),
+    [fireData.features, timelineDate]
   );
 
   const data = useMemo(() => {
@@ -827,7 +828,10 @@ export default function DeepDivePanel({
     // Recession probability — composite from oil price spike, supply disruption, inflation, war cost
     // Calibrated to Goldman Sachs ~25% at current levels ($101 oil, 5% grocery, 65% shipping surcharge)
     // Full Hormuz closure / $200 oil → 80-90%. Pre-crisis baseline → ~5%.
-    const oilSpikePct = Math.min(100, ((impact.oilPriceBbl - 75) / 75) * 100); // 100% at $150/bbl
+    const oilSpikePct = Math.max(
+      0,
+      Math.min(100, ((impact.oilPriceBbl - 75) / 75) * 100)
+    ); // 100% at $150/bbl
     const supplyRisk = Math.min(100, supply.productionPct * 5); // 100% at 20% offline
     const inflationPressure = Math.min(
       100,
@@ -1481,8 +1485,12 @@ export default function DeepDivePanel({
     roleCounts
   } = data;
   const facilityFires = useMemo(
-    () => fireData.features.filter((f) => f.properties.matchedFacility),
-    [fireData.features]
+    () =>
+      fireData.features.filter((f) => {
+        const id = f.properties.matchedFacility?.id;
+        return Boolean(id && facilityStats.has(id));
+      }),
+    [fireData.features, facilityStats]
   );
   const satelliteCO2 = facilityFires.reduce(
     (s, f) => s + f.properties.estimatedCO2TonsDay,
@@ -1790,35 +1798,38 @@ export default function DeepDivePanel({
           )}
         </div>
 
-        {/* Map button */}
-        <div className='mt-3 border-t border-gray-200 pt-2 dark:border-zinc-800/50'>
-          <button
-            onClick={onMapMode}
-            className='flex w-full cursor-pointer items-center justify-between rounded-xl border border-gray-200 bg-white p-3 shadow-sm transition-shadow hover:shadow-md dark:border-zinc-700/50 dark:bg-zinc-800/40'
-          >
-            <div className='flex items-center gap-4 text-sm'>
-              <span className='flex items-center gap-1.5 text-orange-600'>
-                <IconFlame className='h-4 w-4' />
-                <span className='font-bold tabular-nums'>
-                  {loading
-                    ? '...'
-                    : facilityFireCount > 0
-                      ? `${facilityFireCount} facility fires`
-                      : `${totalDetections} detections`}
+        {/* Map button — only shown when caller provides map toggle */}
+        {onMapMode && (
+          <div className='mt-3 border-t border-gray-200 pt-2 dark:border-zinc-800/50'>
+            <button
+              type='button'
+              onClick={onMapMode}
+              className='flex w-full cursor-pointer items-center justify-between rounded-xl border border-gray-200 bg-white p-3 shadow-sm transition-shadow hover:shadow-md dark:border-zinc-700/50 dark:bg-zinc-800/40'
+            >
+              <div className='flex items-center gap-4 text-sm'>
+                <span className='flex items-center gap-1.5 text-orange-600'>
+                  <IconFlame className='h-4 w-4' />
+                  <span className='font-bold tabular-nums'>
+                    {loading
+                      ? '...'
+                      : facilityFireCount > 0
+                        ? `${facilityFireCount} facility fires`
+                        : `${totalDetections} detections`}
+                  </span>
                 </span>
-              </span>
-              <span className='flex items-center gap-1.5 text-teal-600 dark:text-teal-400'>
-                <IconWorld className='h-4 w-4' />
-                <span className='font-bold tabular-nums'>
-                  {curatedFires.length} tracked
+                <span className='flex items-center gap-1.5 text-teal-600 dark:text-teal-400'>
+                  <IconWorld className='h-4 w-4' />
+                  <span className='font-bold tabular-nums'>
+                    {curatedFires.length} tracked
+                  </span>
                 </span>
+              </div>
+              <span className='text-sm font-bold text-blue-600 dark:text-blue-400'>
+                View map →
               </span>
-            </div>
-            <span className='text-sm font-bold text-blue-600 dark:text-blue-400'>
-              View map →
-            </span>
-          </button>
-        </div>
+            </button>
+          </div>
+        )}
 
         {/* Sources — collapsible dropdown */}
         <SourcesDropdown />
@@ -1840,16 +1851,17 @@ export default function DeepDivePanel({
             threatened · {curatedFires.length} total tracked
           </div>
 
-          {/* Total damage summary bar */}
+          {/* Total production capacity damaged/offline (excludes transit chokepoints) */}
           <StatCard>
             <div className='mb-1.5 flex items-center justify-between'>
               <span className='text-base font-bold text-gray-800 dark:text-zinc-200'>
-                Total capacity damaged/offline
+                Total production damaged/offline
               </span>
               <span className='text-xl font-black text-red-600 tabular-nums'>
                 {(
-                  hitFacilityList.reduce((s, f) => s + f.capacityBPD, 0) /
-                  1_000_000
+                  hitFacilityList
+                    .filter((f) => !isChokepoint(f.id))
+                    .reduce((s, f) => s + f.capacityBPD, 0) / 1_000_000
                 ).toFixed(1)}
                 M BPD
               </span>
@@ -1857,18 +1869,18 @@ export default function DeepDivePanel({
             <Bar
               pct={Math.min(
                 100,
-                hitFacilityList.reduce(
-                  (s, f) => s + f.percentGlobalCapacity,
-                  0
-                ) * 4
+                hitFacilityList
+                  .filter((f) => !isChokepoint(f.id))
+                  .reduce((s, f) => s + f.percentGlobalCapacity, 0) * 4
               )}
               color='bg-red-500'
             />
             <div className='mt-1 text-sm text-gray-500'>
               {hitFacilityList
+                .filter((f) => !isChokepoint(f.id))
                 .reduce((s, f) => s + f.percentGlobalCapacity, 0)
                 .toFixed(1)}
-              % of global capacity affected
+              % of global production affected (excl. transit chokepoints)
             </div>
           </StatCard>
 
@@ -1948,9 +1960,9 @@ export default function DeepDivePanel({
           </div>
           <div className='mt-0.5 text-sm text-gray-400 tabular-nums dark:text-zinc-500'>
             {casualties.totalKilled.toLocaleString()}+ killed ·{' '}
-            {casualties.totalInjured.toLocaleString()}+ injured ·{' '}
+            {casualties.totalInjured.toLocaleString()}+ injured
             {casualties.totalDisplaced > 0
-              ? `${(casualties.totalDisplaced / 1_000_000).toFixed(1)}M displaced`
+              ? ` · ${(casualties.totalDisplaced / 1_000_000).toFixed(1)}M displaced`
               : ''}
           </div>
           <div className='mt-1 text-xs text-gray-400/80 tabular-nums dark:text-zinc-600'>
@@ -2136,7 +2148,10 @@ export default function DeepDivePanel({
               Before: ${BASELINE.oilPriceBbl}/bbl
             </span>
             <span className='font-bold text-green-700 dark:text-green-400'>
-              +${oilDelta > 0 ? oilDelta.toFixed(0) : '0'}/barrel
+              {oilDelta >= 0
+                ? `+$${oilDelta.toFixed(0)}`
+                : `-$${Math.abs(oilDelta).toFixed(0)}`}
+              /barrel
             </span>
           </div>
         </StatCard>
@@ -2277,8 +2292,8 @@ export default function DeepDivePanel({
 
         <InfoBox>
           {cost.totalBillions >= 1000
-            ? `$${(cost.totalBillions / 1000).toFixed(1)} trillion — that's more than the entire US education budget. About $${Math.round((cost.totalBillions * 1e9) / 365 / 1_000_000).toLocaleString()}M every single day.`
-            : `$${cost.totalBillions.toFixed(0)}B and climbing. About $1 billion per day. That could pay 50,000 teachers instead.`}
+            ? `$${(cost.totalBillions / 1000).toFixed(1)} trillion — that's more than the entire US education budget. About $${Math.round((cost.totalBillions * 1e9) / warDays / 1_000_000).toLocaleString()}M per day across ${warDays.toLocaleString()} days.`
+            : `$${cost.totalBillions.toFixed(0)}B and climbing (~$${Math.round((cost.totalBillions * 1e9) / warDays / 1_000_000).toLocaleString()}M/day).`}
         </InfoBox>
       </div>
 
@@ -2293,12 +2308,12 @@ export default function DeepDivePanel({
           <div className='space-y-1'>
             <Row
               label='Facilities targeted'
-              value={`${nuclear.facilitiesTargeted} of 6`}
-              tip='Natanz, Fordow, Isfahan, Arak, Bushehr, Tehran Research Reactor'
+              value={`${nuclear.facilitiesTargeted} sites`}
+              tip='Natanz, Fordow, Isfahan, Arak, Yazd/Ardakan, Bushehr vicinity, and associated nuclear fuel-cycle sites'
             />
             <Row
               label='Facilities destroyed'
-              value={`${nuclear.facilitiesDestroyed} of 6`}
+              value={`${nuclear.facilitiesDestroyed} destroyed`}
               valueColor='text-orange-700 dark:text-orange-400'
             />
             <Row
@@ -2364,7 +2379,14 @@ export default function DeepDivePanel({
               {
                 label: 'RIGHT NOW',
                 score: peril.nuclearScore,
-                color: 'bg-green-500'
+                color:
+                  peril.nuclearScore >= 70
+                    ? 'bg-red-600'
+                    : peril.nuclearScore >= 50
+                      ? 'bg-orange-500'
+                      : peril.nuclearScore >= 25
+                        ? 'bg-yellow-500'
+                        : 'bg-green-500'
               }
             ].map((h) => (
               <div key={h.label}>

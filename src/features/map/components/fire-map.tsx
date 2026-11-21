@@ -10,11 +10,7 @@ import {
   type GeoJSONSource
 } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import {
-  useFireStore,
-  type FireFeature,
-  type FireGeoJSON
-} from '@/stores/fire-store';
+import { useFireStore, type FireGeoJSON } from '@/stores/fire-store';
 import {
   curatedFires,
   getEffectiveFacilityStatus,
@@ -236,14 +232,13 @@ export default function FireMap() {
   const fireData = useFireStore((s) => s.fireData);
   const layers = useFireStore((s) => s.layers);
   const timelineDate = useFireStore((s) => s.timelineDate);
-  const setSelectedFire = useFireStore((s) => s.setSelectedFire);
   const isMuted = useFireStore((s) => s.isMuted);
   const isMutedRef = useRef(isMuted);
   const events = useEventsStore((s) => s.events);
 
   const facilityStats = useMemo(
-    () => getFacilityFireStatsMap(fireData.features),
-    [fireData.features]
+    () => getFacilityFireStatsMap(fireData.features, timelineDate),
+    [fireData.features, timelineDate]
   );
 
   // The 'load' handler runs once with a first-render closure; without a ref it
@@ -293,12 +288,13 @@ export default function FireMap() {
     map.current.on('load', () => {
       const m = map.current!;
 
-      // ── FIRMS fire data source (only fires near oil facilities) ──
+      // ── FIRMS fire data source (only fires near oil facilities active at timelineDate) ──
       const facilityFires: FireGeoJSON = {
         type: 'FeatureCollection',
-        features: fireDataRef.current.features.filter(
-          (f) => f.properties.matchedFacility
-        )
+        features: fireDataRef.current.features.filter((f) => {
+          const id = f.properties.matchedFacility?.id;
+          return Boolean(id && facilityStatsRef.current.has(id));
+        })
       };
       m.addSource('fires', {
         type: 'geojson',
@@ -957,42 +953,6 @@ export default function FireMap() {
         ];
         const props = feature.properties;
 
-        let matchedFacility = null;
-        if (props?.matchedFacility && props.matchedFacility !== 'null') {
-          try {
-            matchedFacility =
-              typeof props.matchedFacility === 'string'
-                ? JSON.parse(props.matchedFacility)
-                : props.matchedFacility;
-          } catch {}
-        }
-
-        const fireFeature: FireFeature = {
-          type: 'Feature',
-          geometry: {
-            type: 'Point',
-            coordinates: coords
-          },
-          properties: {
-            latitude: props?.latitude ? Number(props.latitude) : 0,
-            longitude: props?.longitude ? Number(props.longitude) : 0,
-            bright_ti4: props?.bright_ti4 ? Number(props.bright_ti4) : 0,
-            frp: props?.frp ? Number(props.frp) : 0,
-            estimatedCO2TonsDay: props?.estimatedCO2TonsDay
-              ? Number(props.estimatedCO2TonsDay)
-              : 0,
-            confidence: props?.confidence || 'nominal',
-            acq_date: props?.acq_date || '',
-            acq_time: props?.acq_time || '',
-            satellite: props?.satellite || '',
-            daynight: props?.daynight || '',
-            intensity: props?.intensity || 'low',
-            matchedFacility
-          }
-        };
-
-        setSelectedFire(fireFeature);
-
         if (popup.current) popup.current.remove();
 
         popup.current = new Popup({
@@ -1029,7 +989,7 @@ export default function FireMap() {
         });
       }
     });
-  }, [setSelectedFire]);
+  }, []);
 
   // Initialize map
   useEffect(() => {
@@ -1049,18 +1009,21 @@ export default function FireMap() {
     };
   }, [initMap]);
 
-  // Update fire data on map (only facility-matched fires)
+  // Update fire data on map (only facility-matched fires active at timelineDate)
   useEffect(() => {
     if (!map.current) return;
-    const source = map.current.getSource('fires') as GeoJSONSource;
+    const source = map.current.getSource('fires') as GeoJSONSource | undefined;
     if (source) {
       const facilityFires: FireGeoJSON = {
         type: 'FeatureCollection',
-        features: fireData.features.filter((f) => f.properties.matchedFacility)
+        features: fireData.features.filter((f) => {
+          const id = f.properties.matchedFacility?.id;
+          return Boolean(id && facilityStats.has(id));
+        })
       };
       source.setData(facilityFires);
     }
-  }, [fireData]);
+  }, [fireData, facilityStats]);
 
   // Update facility status/colors when timeline date or live satellite FRP changes
   useEffect(() => {

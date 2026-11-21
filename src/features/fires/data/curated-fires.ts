@@ -209,7 +209,7 @@ export const curatedFires: CuratedFire[] = [
     newsSourceUrl:
       'https://www.businesstoday.in/world/story/kuwait-reports-second-refinery-fire-after-drone-attack-at-mina-al-ahmadi-521391-2026-03-19',
     description:
-      "Iran drone strike Mar 19 (today). Second refinery fire. Kuwait's largest refinery. Fire contained, no injuries.",
+      "Iran drone strike Mar 19. Second refinery fire. Kuwait's largest refinery. Fire contained, no injuries.",
     percentGlobalCapacity: 0.47,
     threatLevel: 'high',
     whyItMatters:
@@ -575,7 +575,19 @@ export function getCurrentDisruptionLevel() {
  * Global oil production baseline: ~100M BPD (IEA 2025).
  */
 const GLOBAL_OIL_BPD = 100_000_000;
-const CHOKEPOINT_IDS = new Set(['strait-of-hormuz', 'bab-el-mandeb']);
+export const CHOKEPOINT_IDS = new Set(['strait-of-hormuz', 'bab-el-mandeb']);
+
+export function isChokepoint(facilityId: string): boolean {
+  return CHOKEPOINT_IDS.has(facilityId);
+}
+
+export const FACILITY_STATUS_ORDER: Record<FacilityStatus, number> = {
+  active_fire: 0,
+  damaged: 1,
+  monitoring: 2,
+  offline: 3,
+  operational: 4
+};
 
 /**
  * Progressive chokepoint disruption — actual % of traffic blocked over time.
@@ -876,19 +888,44 @@ export interface FireTelemetryFeatureLike {
     matchedFacility?: { id: string } | null;
     frp: number;
     estimatedCO2TonsDay: number;
+    acq_date?: string;
   };
 }
 
 /**
  * Aggregate live FIRMS fire features by matched facility ID.
+ * When timelineDate is provided and features carry acq_date, only detections
+ * within 7 days on or before timelineDate are counted so scrubbing back to
+ * historical years does not overlay today's live satellite hotspots.
  */
 export function getFacilityFireStatsMap(
-  features: readonly FireTelemetryFeatureLike[]
+  features: readonly FireTelemetryFeatureLike[],
+  timelineDate?: string
 ): Map<string, FacilityFireStats> {
   const statsMap = new Map<string, FacilityFireStats>();
+  const targetMs = timelineDate
+    ? new Date(timelineDate + 'T00:00:00Z').getTime()
+    : NaN;
+
   for (const feature of features) {
     const facilityId = feature.properties.matchedFacility?.id;
     if (!facilityId) continue;
+
+    if (
+      timelineDate &&
+      Number.isFinite(targetMs) &&
+      feature.properties.acq_date
+    ) {
+      const acqMs = new Date(
+        feature.properties.acq_date + 'T00:00:00Z'
+      ).getTime();
+      if (Number.isFinite(acqMs)) {
+        const diffDays = (targetMs - acqMs) / 86400000;
+        // Allow 1-day UTC timezone grace ahead and 7-day freshness window behind
+        if (diffDays < -1 || diffDays > 7) continue;
+      }
+    }
+
     const existing = statsMap.get(facilityId);
     if (existing) {
       existing.fireCount += 1;
