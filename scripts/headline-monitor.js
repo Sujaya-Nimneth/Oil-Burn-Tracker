@@ -304,6 +304,21 @@ const LOCATION_GAZETTEER = [
   { pattern: /israel|idf|netanyahu/i, lat: 31.768, lng: 34.851, zoom: 7 }
 ];
 
+const FACILITY_IMPACT_CATEGORIES = new Set([
+  'facility_damage',
+  'chokepoint',
+  'military_strike',
+  'retaliation'
+]);
+
+const FACILITY_IMPACT_PATTERN =
+  /\b(strike|strikes|struck|hit|hits|bomb|bombed|bombing|attack|attacked|attacks|missile|missiles|drone|drones|fire|fires|ablaze|blaze|inferno|explod\w*|explosion|explosions|blast|blasts|damage|damaged|destroy\w*|shutdown|shut\s+down|halt|halted|offline|suspend|suspended|blockade|closed|closure|mine|mines|seize|seized|sabotage|shelling|raid|airstrike|airstrikes|burn|burning|projectile|sunk|disabled)\b/i;
+
+function shouldAttachFacilityId(title, description = '', category = '') {
+  if (!FACILITY_IMPACT_CATEGORIES.has(category)) return false;
+  return FACILITY_IMPACT_PATTERN.test(`${title} ${description}`);
+}
+
 function geocodeHeadline(title, description = '') {
   const text = `${title} ${description}`;
   for (const loc of LOCATION_GAZETTEER) {
@@ -367,6 +382,12 @@ async function fetchGoogleNewsRSS(query) {
   }
 }
 
+function safeParsePubDate(pubDate, fallbackIso = new Date().toISOString()) {
+  if (!pubDate) return fallbackIso;
+  const parsed = new Date(pubDate);
+  return Number.isNaN(parsed.getTime()) ? fallbackIso : parsed.toISOString();
+}
+
 function parseRSSItems(xml) {
   const items = [];
   const itemRegex = /<item>([\s\S]*?)<\/item>/g;
@@ -381,9 +402,7 @@ function parseRSSItems(xml) {
       items.push({
         title: decodeHTMLEntities(title),
         link,
-        pubDate: pubDate
-          ? new Date(pubDate).toISOString()
-          : new Date().toISOString(),
+        pubDate: safeParsePubDate(pubDate),
         source: source ? decodeHTMLEntities(source) : ''
       });
     }
@@ -405,16 +424,48 @@ function extractTag(xml, tag) {
   return m ? m[1].trim() : '';
 }
 
+const NAMED_HTML_ENTITIES = {
+  lt: '<',
+  gt: '>',
+  quot: '"',
+  apos: "'",
+  nbsp: ' ',
+  lsquo: "'",
+  rsquo: "'",
+  ldquo: '"',
+  rdquo: '"',
+  ndash: '–',
+  mdash: '—',
+  hellip: '…'
+};
+
+function decodeCodePoint(codePoint, fallback) {
+  if (!Number.isInteger(codePoint) || codePoint < 0 || codePoint > 0x10ffff) {
+    return fallback;
+  }
+  // Normalize smart quotes to straight ASCII to keep titles/dedup keys consistent
+  if (codePoint === 0x2018 || codePoint === 0x2019) return "'";
+  if (codePoint === 0x201c || codePoint === 0x201d) return '"';
+  if (codePoint === 0x00a0) return ' ';
+  return String.fromCodePoint(codePoint);
+}
+
 function decodeHTMLEntities(text) {
   return text
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&#8217;/g, "'")
-    .replace(/&#8220;/g, '"')
-    .replace(/&#8221;/g, '"');
+    .replace(/&#x([0-9a-fA-F]+);/g, (match, hex) =>
+      decodeCodePoint(parseInt(hex, 16), match)
+    )
+    .replace(/&#(\d+);/g, (match, dec) =>
+      decodeCodePoint(parseInt(dec, 10), match)
+    )
+    .replace(/&([a-zA-Z]+);/g, (match, name) => {
+      const lower = name.toLowerCase();
+      if (lower === 'amp') return match;
+      return Object.prototype.hasOwnProperty.call(NAMED_HTML_ENTITIES, lower)
+        ? NAMED_HTML_ENTITIES[lower]
+        : match;
+    })
+    .replace(/&amp;/gi, '&');
 }
 
 // ── YouTube corpus: fetch uploads RSS for each curated channel ──
@@ -549,10 +600,16 @@ async function searchYouTube(query) {
 // ── Find best YouTube match for a headline ──
 let YT_CORPUS = [];
 
-async function findVideoForHeadline(headline) {
-  // Prefer the RSS corpus (verified channels, durable endpoint)
-  const corpusMatch = matchFromCorpus(headline, YT_CORPUS);
-  if (corpusMatch) return corpusMatch;
+async function findVideoForHeadline(
+  headline,
+  corpus = YT_CORPUS,
+  fallbackSearch = searchYouTube
+) {
+  // Prefer the RSS corpus (verified channels, durable endpoint).
+  // Only fall back to legacy HTML scraping when the entire RSS corpus failed to load.
+  if (corpus.length > 0) {
+    return matchFromCorpus(headline, corpus);
+  }
 
   // Fallback: simplify headline into a search query
   const searchQuery = headline
@@ -566,7 +623,7 @@ async function findVideoForHeadline(headline) {
     .slice(0, 6)
     .join(' ');
 
-  const results = await searchYouTube(searchQuery);
+  const results = await fallbackSearch(searchQuery);
   if (results.length > 0) return results[0];
   return null;
 }
@@ -666,6 +723,15 @@ function loadAutoEvents() {
   }
 }
 
+function loadArchiveEvents() {
+  if (!existsSync(ARCHIVE_FILE)) return [];
+  try {
+    return JSON.parse(readFileSync(ARCHIVE_FILE, 'utf-8'));
+  } catch {
+    return [];
+  }
+}
+
 function saveAutoEvents(events) {
   writeFileSync(AUTO_EVENTS_FILE, JSON.stringify(events, null, 2) + '\n');
 }
@@ -682,14 +748,7 @@ function capAndArchive(events) {
   const agedOut = events.filter((e) => e.date < cutoff);
   if (agedOut.length === 0) return { hot, archived: 0 };
 
-  let archive = [];
-  if (existsSync(ARCHIVE_FILE)) {
-    try {
-      archive = JSON.parse(readFileSync(ARCHIVE_FILE, 'utf-8'));
-    } catch {
-      archive = [];
-    }
-  }
+  const archive = loadArchiveEvents();
   const ids = new Set(archive.map((e) => e.id));
   for (const e of agedOut) {
     if (!ids.has(e.id)) {
@@ -718,6 +777,9 @@ function toPublishedEvent(draft) {
     cleanTitle,
     draft.description
   );
+  const attachFacility =
+    geo.facilityId &&
+    shouldAttachFacilityId(cleanTitle, draft.description || '', category);
 
   const event = {
     id: draft.id.startsWith('auto-') ? draft.id : `auto-${draft.id}`,
@@ -729,7 +791,7 @@ function toPublishedEvent(draft) {
       `Via ${draft.source || 'news'}. Auto-detected by headline monitor.`,
     lat: geo.lat,
     lng: geo.lng,
-    ...(geo.facilityId ? { facilityId: geo.facilityId } : {}),
+    ...(attachFacility ? { facilityId: geo.facilityId } : {}),
     ...(draft.sourceUrl ? { sourceUrl: draft.sourceUrl } : {}),
     ...(Array.isArray(draft.mediaUrls) && draft.mediaUrls.length > 0
       ? { mediaUrls: draft.mediaUrls }
@@ -738,11 +800,16 @@ function toPublishedEvent(draft) {
   return event;
 }
 
-function mergeIntoAutoEvents(existingAuto, candidateEvents) {
+function mergeIntoAutoEvents(
+  existingAuto,
+  candidateEvents,
+  archivedEvents = []
+) {
+  const allKnown = [...existingAuto, ...archivedEvents];
   const seenKeys = new Set(
-    existingAuto.map((e) => `${e.date}|${e.title.trim().toLowerCase()}`)
+    allKnown.map((e) => `${e.date}|${e.title.trim().toLowerCase()}`)
   );
-  const usedIds = new Set(existingAuto.map((e) => e.id));
+  const usedIds = new Set(allKnown.map((e) => e.id));
   let added = 0;
 
   for (const candidate of candidateEvents) {
@@ -831,6 +898,9 @@ async function main() {
     const geo = geocodeHeadline(cleanTitle);
     const dateStr = item.pubDate.slice(0, 10);
 
+    const attachFacility =
+      geo.facilityId && shouldAttachFacilityId(cleanTitle, '', category);
+
     const draft = {
       id: generateEventId(cleanTitle, dateStr),
       date: dateStr,
@@ -849,7 +919,7 @@ async function main() {
       lat: geo.lat,
       lng: geo.lng,
       zoom: geo.zoom || 7,
-      ...(geo.facilityId ? { facilityId: geo.facilityId } : {}),
+      ...(attachFacility ? { facilityId: geo.facilityId } : {}),
       casualties: null,
       status: isTrustedSource(item.source, item.title) ? 'published' : 'draft'
     };
@@ -861,8 +931,10 @@ async function main() {
       candidatesToPublish.push(toPublishedEvent(draft));
     }
 
-    // Rate limit YouTube requests (only needed by the search fallback)
-    await new Promise((r) => setTimeout(r, 800));
+    // Rate limit YouTube requests only when using the legacy HTML search fallback
+    if (YT_CORPUS.length === 0) {
+      await new Promise((r) => setTimeout(r, 800));
+    }
   }
 
   // Both video paths produced nothing while headlines existed — surface it
@@ -877,19 +949,25 @@ async function main() {
   saveSeen(seen);
   saveDrafts(drafts);
 
-  if (SHOULD_PUBLISH && candidatesToPublish.length > 0) {
-    const publishedCount = mergeIntoAutoEvents(autoEvents, candidatesToPublish);
-    if (publishedCount > 0) {
-      const { hot, archived } = capAndArchive(autoEvents);
+  if (SHOULD_PUBLISH) {
+    const archivedEvents = loadArchiveEvents();
+    const publishedCount =
+      candidatesToPublish.length > 0
+        ? mergeIntoAutoEvents(autoEvents, candidatesToPublish, archivedEvents)
+        : 0;
+    const { hot, archived } = capAndArchive(autoEvents);
+    if (publishedCount > 0 || archived > 0) {
       saveAutoEvents(hot);
       if (archived > 0) {
         console.log(
           `  Archived ${archived} event(s) older than ${HOT_WINDOW_DAYS} days to auto-events-archive.json (${hot.length} hot remaining)`
         );
       }
-      console.log(
-        `  Published ${publishedCount} verified event(s); auto-events.json now holds ${hot.length} event(s)`
-      );
+      if (publishedCount > 0) {
+        console.log(
+          `  Published ${publishedCount} verified event(s); auto-events.json now holds ${hot.length} event(s)`
+        );
+      }
     }
   }
 
@@ -931,6 +1009,7 @@ if (isDirectRun) {
 // ── Exports for unit tests (scripts/headline-monitor.test.mjs) ──
 export {
   LOCATION_GAZETTEER,
+  safeParsePubDate,
   parseRSSItems,
   extractTag,
   decodeHTMLEntities,
@@ -939,8 +1018,12 @@ export {
   cleanHeadlineTitle,
   generateEventId,
   geocodeHeadline,
+  shouldAttachFacilityId,
+  toPublishedEvent,
+  mergeIntoAutoEvents,
   isTrustedSource,
   selectHeadlinesBatch,
   tokenize,
-  matchFromCorpus
+  matchFromCorpus,
+  findVideoForHeadline
 };

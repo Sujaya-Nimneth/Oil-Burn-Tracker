@@ -175,7 +175,46 @@ function shouldEmitCheckpoint(date, today) {
 // ═══ CONSUMER IMPACT GENERATOR ═══
 // Mean-reverting random walk from last curated data point.
 
-function generateConsumerImpact(days, today, livePrices) {
+const LIVE_BLEND_WINDOW_DAYS = 14;
+const PHASE3_STATIC_OIL = 88;
+const PHASE3_STATIC_NATGAS = 4.5;
+
+/**
+ * Smoothly blend live commodity quotes across the trailing window ending on
+ * `today` so Phase 3 transitions smoothly toward live prices instead of
+ * creating a single-day sawtooth spike on `today`.
+ */
+function blendLivePrices(date, today, livePrices = {}) {
+  if (!livePrices || (!livePrices.brent && !livePrices.natGas)) return {};
+  if (date <= '2026-07-31') return {};
+  const daysToToday = daysSince(date, today);
+  if (daysToToday < 0 || daysToToday >= LIVE_BLEND_WINDOW_DAYS) return {};
+
+  const weight = 1 - daysToToday / LIVE_BLEND_WINDOW_DAYS;
+  return {
+    ...(typeof livePrices.brent === 'number' && livePrices.brent > 0
+      ? {
+          brent:
+            Math.round(
+              (PHASE3_STATIC_OIL * (1 - weight) + livePrices.brent * weight) *
+                100
+            ) / 100
+        }
+      : {}),
+    ...(typeof livePrices.natGas === 'number' && livePrices.natGas > 0
+      ? {
+          natGas:
+            Math.round(
+              (PHASE3_STATIC_NATGAS * (1 - weight) +
+                livePrices.natGas * weight) *
+                100
+            ) / 100
+        }
+      : {})
+  };
+}
+
+function generateConsumerImpact(days, today, livePrices = {}) {
   const b = CONSUMER_BASELINE;
   let oil = b.oilPriceBbl;
   let gas = b.gasPriceGallon;
@@ -187,13 +226,16 @@ function generateConsumerImpact(days, today, livePrices) {
   const results = [];
 
   for (const date of days) {
-    const t = getPhaseTargets(date, date === today ? livePrices : {});
+    const blendedLive = blendLivePrices(date, today, livePrices);
+    const hasBlendedLive = Boolean(blendedLive.brent || blendedLive.natGas);
+    const t = getPhaseTargets(date, blendedLive);
     const r1 = seededRandom(dateHash(date));
     const r2 = seededRandom(dateHash(date) + 1);
     const r3 = seededRandom(dateHash(date) + 2);
 
-    // Oil: mean-reverting with daily volatility ±$2.5
-    oil += (t.oilTarget - oil) * 0.12 + (r1 - 0.5) * 5;
+    // Oil: mean-reverting with daily volatility ±$2.5 (faster pull when tracking live feed)
+    const oilPull = hasBlendedLive ? 0.25 : 0.12;
+    oil += (t.oilTarget - oil) * oilPull + (r1 - 0.5) * 5;
     oil = Math.max(75, Math.min(140, Math.round(oil)));
 
     // Gas: tracks oil with 3-5 day lag
@@ -206,7 +248,8 @@ function generateConsumerImpact(days, today, livePrices) {
     grocery = Math.max(3, Math.min(10, Math.round(grocery * 10) / 10));
 
     // Natural gas: mean-reverting
-    natGas += (t.natGasTarget - natGas) * 0.1 + (r1 - 0.5) * 0.35;
+    const natGasPull = blendedLive.natGas ? 0.22 : 0.1;
+    natGas += (t.natGasTarget - natGas) * natGasPull + (r1 - 0.5) * 0.35;
     natGas = Math.max(2.8, Math.min(15, Math.round(natGas * 10) / 10));
 
     // Shipping surcharge
@@ -429,6 +472,8 @@ module.exports = {
   dateHash,
   seededRandom,
   getPhaseTargets,
+  blendLivePrices,
+  generateConsumerImpact,
   shouldEmitCheckpoint,
   daysSince,
   generateDays
