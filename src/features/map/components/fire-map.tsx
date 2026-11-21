@@ -57,13 +57,16 @@ const SATELLITE_STYLE: StyleSpecification = {
     labels: {
       type: 'raster',
       tiles: [
-        'https://a.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}@2x.png'
+        'https://a.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}@2x.png',
+        'https://b.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}@2x.png',
+        'https://c.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}@2x.png',
+        'https://d.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}@2x.png'
       ],
       tileSize: 256,
       maxzoom: 18
     }
   },
-  glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
+  glyphs: 'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf',
   layers: [
     {
       id: 'satellite-layer',
@@ -221,10 +224,34 @@ function attachPopupMuteHandler(popupInstance: Popup) {
   });
 }
 
+function applyLayerVisibility(
+  m: MapLibreMap,
+  layers: { heatmap: boolean; markers: boolean; facilities: boolean }
+) {
+  try {
+    m.setLayoutProperty(
+      'fires-heat',
+      'visibility',
+      layers.heatmap ? 'visible' : 'none'
+    );
+    const mv = layers.markers ? 'visible' : 'none';
+    m.setLayoutProperty('fires-glow', 'visibility', mv);
+    m.setLayoutProperty('fires-smoke', 'visibility', mv);
+    m.setLayoutProperty('fires-points', 'visibility', mv);
+    const fv = layers.facilities ? 'visible' : 'none';
+    m.setLayoutProperty('facility-impact-glow', 'visibility', fv);
+    m.setLayoutProperty('facility-mid-ring', 'visibility', fv);
+    m.setLayoutProperty('facility-core', 'visibility', fv);
+    m.setLayoutProperty('facility-labels', 'visibility', fv);
+    m.setLayoutProperty('facility-status', 'visibility', fv);
+  } catch {}
+}
+
 export default function FireMap() {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibreMap | null>(null);
   const popup = useRef<Popup | null>(null);
+  const mapLoadedRef = useRef(false);
   const animFrameRef = useRef<number | null>(null);
   const animSyncRef = useRef<(() => void) | null>(null);
   const animCleanupRef = useRef<(() => void) | null>(null);
@@ -232,6 +259,10 @@ export default function FireMap() {
   const fireData = useFireStore((s) => s.fireData);
   const layers = useFireStore((s) => s.layers);
   const timelineDate = useFireStore((s) => s.timelineDate);
+  const pendingFlyTo = useFireStore((s) => s.pendingFlyTo);
+  const setPendingFlyTo = useFireStore((s) => s.setPendingFlyTo);
+  const setMapCenter = useFireStore((s) => s.setMapCenter);
+  const setMapZoom = useFireStore((s) => s.setMapZoom);
   const isMuted = useFireStore((s) => s.isMuted);
   const isMutedRef = useRef(isMuted);
   const events = useEventsStore((s) => s.events);
@@ -257,7 +288,7 @@ export default function FireMap() {
     layersRef.current = layers;
     timelineDateRef.current = timelineDate;
     facilityStatsRef.current = facilityStats;
-    // Fires layer toggled → start/stop the pulse animation accordingly
+    // Fires layer or active fire count changed → start/stop pulse animation
     animSyncRef.current?.();
   }, [isMuted, fireData, events, layers, timelineDate, facilityStats]);
 
@@ -286,7 +317,9 @@ export default function FireMap() {
     );
 
     map.current.on('load', () => {
-      const m = map.current!;
+      if (!map.current) return;
+      const m = map.current;
+      mapLoadedRef.current = true;
 
       // ── FIRMS fire data source (only fires near oil facilities active at timelineDate) ──
       const facilityFires: FireGeoJSON = {
@@ -657,7 +690,7 @@ export default function FireMap() {
           ],
           'text-offset': [0, 2.2] as [number, number],
           'text-anchor': 'top',
-          'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+          'text-font': ['Noto Sans Bold'],
           'text-allow-overlap': false,
           'text-optional': true,
           'text-max-width': 14,
@@ -689,7 +722,7 @@ export default function FireMap() {
           'text-size': ['interpolate', ['linear'], ['zoom'], 4, 8, 8, 10],
           'text-offset': [0, -2.2] as [number, number],
           'text-anchor': 'bottom',
-          'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+          'text-font': ['Noto Sans Bold'],
           'text-allow-overlap': true
         },
         paint: {
@@ -764,32 +797,58 @@ export default function FireMap() {
           'text-size': ['interpolate', ['linear'], ['zoom'], 3, 10, 8, 16],
           'text-allow-overlap': true,
           'text-ignore-placement': true,
-          'text-font': ['Open Sans Bold']
+          'text-font': ['Noto Sans Bold']
         },
         paint: {
           'text-color': '#ffffff'
         }
       });
 
+      // Apply persisted layer visibility toggles on initial load
+      applyLayerVisibility(m, layersRef.current);
+
+      // Persist camera position so Feed <-> Map transitions keep viewport
+      m.on('moveend', () => {
+        if (!map.current) return;
+        const c = m.getCenter();
+        setMapCenter([c.lng, c.lat]);
+        setMapZoom(m.getZoom());
+      });
+
+      // Execute any fly-to requested while the map was dynamically mounting
+      const queuedFlyTo = useFireStore.getState().pendingFlyTo;
+      if (queuedFlyTo) {
+        setPendingFlyTo(null);
+        m.flyTo({
+          center: [queuedFlyTo.lng, queuedFlyTo.lat],
+          zoom: queuedFlyTo.zoom || 10,
+          pitch: 50,
+          duration: 1600
+        });
+      }
+
       // ── Fire pulse + smoke drift animation ──
-      // Runs only while the fires layer is visible, the tab is foregrounded,
-      // and the user hasn't asked for reduced motion.
+      // Runs only while facility fires exist, the fires layer is visible,
+      // the tab is foregrounded, and reduced motion is not requested.
+      // Throttled to every 3rd frame (~20fps) to cut WebGL paint overhead.
       let animFrame = 0;
       const animateFires = () => {
         if (!map.current) return;
         animFrame++;
-        const t = animFrame * 0.03;
-        const pulse = 1 + 0.15 * Math.sin(t * 2); // glow breathes
-        const smokeY = -3 - 2 * Math.sin(t * 0.7); // smoke drifts up/down
-        const smokeOp = 0.12 + 0.06 * Math.sin(t * 1.3); // smoke fades in/out
-        try {
-          m.setPaintProperty('fires-glow', 'circle-opacity', 0.25 * pulse);
-          m.setPaintProperty('fires-smoke', 'circle-translate', [
-            Math.sin(t * 0.5) * 2,
-            smokeY
-          ]);
-          m.setPaintProperty('fires-smoke', 'circle-opacity', smokeOp);
-        } catch {}
+        if (animFrame % 3 === 0) {
+          const t = animFrame * 0.03;
+          const pulse = 1 + 0.15 * Math.sin(t * 2); // glow breathes
+          const smokeY = -3 - 2 * Math.sin(t * 0.7); // smoke drifts up/down
+          const smokeOp = 0.12 + 0.06 * Math.sin(t * 1.3); // smoke fades in/out
+          try {
+            m.setPaintProperty('fires-glow', 'circle-opacity', 0.25 * pulse);
+            m.setPaintProperty('fires-smoke', 'circle-translate', [
+              Math.sin(t * 0.5) * 2,
+              smokeY
+            ]);
+            m.setPaintProperty('fires-smoke', 'circle-opacity', smokeOp);
+          } catch {}
+        }
         animFrameRef.current = requestAnimationFrame(animateFires);
       };
       const startAnim = () => {
@@ -805,7 +864,10 @@ export default function FireMap() {
       };
       const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
       const shouldAnimate = () =>
-        layersRef.current.markers && !document.hidden && !motionQuery.matches;
+        layersRef.current.markers &&
+        facilityStatsRef.current.size > 0 &&
+        !document.hidden &&
+        !motionQuery.matches;
       const syncAnim = () => {
         if (shouldAnimate()) startAnim();
         else stopAnim();
@@ -821,158 +883,165 @@ export default function FireMap() {
       };
       syncAnim();
 
-      // ── Click handlers ──
-
-      // Click event pin → popup with video + summary
-      m.on('click', 'event-pin-core', (e) => {
-        if (!e.features || e.features.length === 0) return;
-        const feature = e.features[0];
-        if (feature.geometry.type !== 'Point') return;
-        const props = feature.properties;
-        const coords: [number, number] = [
-          feature.geometry.coordinates[0],
-          feature.geometry.coordinates[1]
-        ];
-
-        if (popup.current) popup.current.remove();
-
-        const html = buildEventPopupHtml(
-          {
-            category: props?.category || '',
-            color: props?.color || '#999',
-            date: props?.date,
-            title: props?.title || '',
-            description: props?.description || '',
-            killed: props?.killed ? Number(props.killed) : 0,
-            displaced: props?.displaced ? Number(props.displaced) : 0,
-            videoId: props?.videoId || null,
-            sourceUrl: props?.sourceUrl || ''
-          },
-          isMutedRef.current
-        );
-
-        popup.current = new Popup({
-          closeButton: true,
-          maxWidth: 'calc(100vw - 40px)',
-          className: 'event-popup',
-          offset: 15
-        })
-          .setLngLat(coords)
-          .setHTML(html)
-          .addTo(m);
-        attachPopupMuteHandler(popup.current);
-        m.easeTo({
-          center: coords,
-          offset: [0, Math.min(-60, -window.innerHeight * 0.12)],
-          duration: 400
+      // ── Single prioritized click handler (prevents stacked popups on overlapping pins) ──
+      m.on('click', (e) => {
+        const hitFeatures = m.queryRenderedFeatures(e.point, {
+          layers: ['event-pin-core', 'facility-core', 'fires-points']
         });
-        // Sync scrubber to this event's date so skip fwd/back works from here
-        if (props?.id) {
-          window.dispatchEvent(
-            new CustomEvent('timeline-sync', { detail: { eventId: props.id } })
+        if (hitFeatures.length === 0) return;
+
+        // Priority: conflict event pin > curated facility > raw FIRMS fire dot
+        const eventFeature = hitFeatures.find(
+          (f) => f.layer.id === 'event-pin-core'
+        );
+        if (eventFeature && eventFeature.geometry.type === 'Point') {
+          const props = eventFeature.properties;
+          const coords: [number, number] = [
+            eventFeature.geometry.coordinates[0],
+            eventFeature.geometry.coordinates[1]
+          ];
+
+          if (popup.current) popup.current.remove();
+
+          const html = buildEventPopupHtml(
+            {
+              category: props?.category || '',
+              color: props?.color || '#999',
+              date: props?.date,
+              title: props?.title || '',
+              description: props?.description || '',
+              killed: props?.killed ? Number(props.killed) : 0,
+              displaced: props?.displaced ? Number(props.displaced) : 0,
+              videoId: props?.videoId || null,
+              sourceUrl: props?.sourceUrl || ''
+            },
+            isMutedRef.current
           );
+
+          popup.current = new Popup({
+            closeButton: true,
+            maxWidth: 'calc(100vw - 40px)',
+            className: 'event-popup',
+            offset: 15
+          })
+            .setLngLat(coords)
+            .setHTML(html)
+            .addTo(m);
+          attachPopupMuteHandler(popup.current);
+          m.easeTo({
+            center: coords,
+            offset: [0, Math.min(-60, -window.innerHeight * 0.12)],
+            duration: 400
+          });
+          if (props?.id) {
+            window.dispatchEvent(
+              new CustomEvent('timeline-sync', {
+                detail: { eventId: props.id }
+              })
+            );
+          }
+          return;
         }
-      });
 
-      // Click facility → popup (same style as event pins)
-      m.on('click', 'facility-core', (e) => {
-        if (!e.features || e.features.length === 0) return;
-        const feature = e.features[0];
-        if (feature.geometry.type !== 'Point') return;
-        const props = feature.properties;
-        const coords: [number, number] = [
-          feature.geometry.coordinates[0],
-          feature.geometry.coordinates[1]
-        ];
-        const facility = curatedFires.find((f) => f.id === props?.id);
-        if (!facility) return;
-
-        if (popup.current) popup.current.remove();
-
-        const effectiveStatus = getEffectiveFacilityStatus(
-          facility,
-          timelineDateRef.current,
-          facilityStatsRef.current.get(facility.id)?.maxFRP ?? 0
+        const facilityFeature = hitFeatures.find(
+          (f) => f.layer.id === 'facility-core'
         );
+        if (facilityFeature && facilityFeature.geometry.type === 'Point') {
+          const props = facilityFeature.properties;
+          const coords: [number, number] = [
+            facilityFeature.geometry.coordinates[0],
+            facilityFeature.geometry.coordinates[1]
+          ];
+          const facility = curatedFires.find((f) => f.id === props?.id);
+          if (!facility) return;
 
-        // Find linked conflict event up to the active timeline date (for video)
-        const linkedEvent = eventsRef.current.find(
-          (ev) =>
-            ev.facilityId === facility.id && ev.date <= timelineDateRef.current
+          if (popup.current) popup.current.remove();
+
+          const effectiveStatus = getEffectiveFacilityStatus(
+            facility,
+            timelineDateRef.current,
+            facilityStatsRef.current.get(facility.id)?.maxFRP ?? 0
+          );
+
+          const linkedEvent = eventsRef.current.find(
+            (ev) =>
+              ev.facilityId === facility.id &&
+              ev.date <= timelineDateRef.current
+          );
+          const ytMedia = linkedEvent?.mediaUrls?.find(
+            (media) => media.type === 'youtube'
+          );
+          const videoId = ytMedia ? getYouTubeId(ytMedia.url) : null;
+
+          const html = buildFacilityPopupHtml(
+            {
+              name: facility.name,
+              country: facility.country,
+              facilityType: facility.facilityType,
+              status: effectiveStatus,
+              attackDate: facility.attackDate,
+              capacityBPD: facility.capacityBPD,
+              gasCapacityBCFD: facility.gasCapacityBCFD,
+              lngMTPA: facility.lngMTPA,
+              storageMBBL: facility.storageMBBL,
+              percentGlobalCapacity: facility.percentGlobalCapacity,
+              whyItMatters: facility.whyItMatters,
+              ifDestroyed: facility.ifDestroyed,
+              newsSourceUrl: facility.newsSourceUrl,
+              videoId
+            },
+            isMutedRef.current
+          );
+
+          popup.current = new Popup({
+            closeButton: true,
+            maxWidth: 'calc(100vw - 40px)',
+            className: 'event-popup',
+            offset: 15
+          })
+            .setLngLat(coords)
+            .setHTML(html)
+            .addTo(m);
+          attachPopupMuteHandler(popup.current);
+          m.easeTo({
+            center: coords,
+            offset: [0, Math.min(-60, -window.innerHeight * 0.12)],
+            duration: 400
+          });
+          return;
+        }
+
+        const fireFeature = hitFeatures.find(
+          (f) => f.layer.id === 'fires-points'
         );
-        const ytMedia = linkedEvent?.mediaUrls?.find(
-          (media) => media.type === 'youtube'
-        );
-        const videoId = ytMedia ? getYouTubeId(ytMedia.url) : null;
+        if (fireFeature && fireFeature.geometry.type === 'Point') {
+          const coords: [number, number] = [
+            fireFeature.geometry.coordinates[0],
+            fireFeature.geometry.coordinates[1]
+          ];
+          const props = fireFeature.properties;
 
-        const html = buildFacilityPopupHtml(
-          {
-            name: facility.name,
-            country: facility.country,
-            facilityType: facility.facilityType,
-            status: effectiveStatus,
-            attackDate: facility.attackDate,
-            capacityBPD: facility.capacityBPD,
-            gasCapacityBCFD: facility.gasCapacityBCFD,
-            lngMTPA: facility.lngMTPA,
-            storageMBBL: facility.storageMBBL,
-            percentGlobalCapacity: facility.percentGlobalCapacity,
-            whyItMatters: facility.whyItMatters,
-            ifDestroyed: facility.ifDestroyed,
-            newsSourceUrl: facility.newsSourceUrl,
-            videoId
-          },
-          isMutedRef.current
-        );
+          if (popup.current) popup.current.remove();
 
-        popup.current = new Popup({
-          closeButton: true,
-          maxWidth: 'calc(100vw - 40px)',
-          className: 'event-popup',
-          offset: 15
-        })
-          .setLngLat(coords)
-          .setHTML(html)
-          .addTo(m);
-        attachPopupMuteHandler(popup.current);
-        m.easeTo({
-          center: coords,
-          offset: [0, Math.min(-60, -window.innerHeight * 0.12)],
-          duration: 400
-        });
-      });
-
-      // Click FIRMS fire point → popup
-      m.on('click', 'fires-points', (e) => {
-        if (!e.features || e.features.length === 0) return;
-        const feature = e.features[0];
-        if (feature.geometry.type !== 'Point') return;
-        const coords: [number, number] = [
-          feature.geometry.coordinates[0],
-          feature.geometry.coordinates[1]
-        ];
-        const props = feature.properties;
-
-        if (popup.current) popup.current.remove();
-
-        popup.current = new Popup({
-          closeButton: true,
-          maxWidth: '260px',
-          offset: 15
-        })
-          .setLngLat(coords)
-          .setHTML(
-            buildFirePopupHtml({
-              frp: props?.frp ? Number(props.frp) : 0,
-              estimatedCO2TonsDay: props?.estimatedCO2TonsDay
-                ? Number(props.estimatedCO2TonsDay)
-                : 0,
-              satellite: props?.satellite || '',
-              acqDate: props?.acq_date || '',
-              acqTime: props?.acq_time || ''
-            })
-          )
-          .addTo(m);
+          popup.current = new Popup({
+            closeButton: true,
+            maxWidth: '260px',
+            offset: 15
+          })
+            .setLngLat(coords)
+            .setHTML(
+              buildFirePopupHtml({
+                frp: props?.frp ? Number(props.frp) : 0,
+                estimatedCO2TonsDay: props?.estimatedCO2TonsDay
+                  ? Number(props.estimatedCO2TonsDay)
+                  : 0,
+                satellite: props?.satellite || '',
+                acqDate: props?.acq_date || '',
+                acqTime: props?.acq_time || ''
+              })
+            )
+            .addTo(m);
+        }
       });
 
       // Cursors
@@ -989,12 +1058,13 @@ export default function FireMap() {
         });
       }
     });
-  }, []);
+  }, [setMapCenter, setMapZoom, setPendingFlyTo]);
 
   // Initialize map
   useEffect(() => {
     initMap();
     return () => {
+      mapLoadedRef.current = false;
       if (animFrameRef.current !== null) {
         cancelAnimationFrame(animFrameRef.current);
         animFrameRef.current = null;
@@ -1048,53 +1118,21 @@ export default function FireMap() {
   // Toggle layers
   useEffect(() => {
     if (!map.current || !map.current.isStyleLoaded()) return;
-    const m = map.current;
-    try {
-      m.setLayoutProperty(
-        'fires-heat',
-        'visibility',
-        layers.heatmap ? 'visible' : 'none'
-      );
-      m.setLayoutProperty(
-        'fires-glow',
-        'visibility',
-        layers.markers ? 'visible' : 'none'
-      );
-      m.setLayoutProperty(
-        'fires-smoke',
-        'visibility',
-        layers.markers ? 'visible' : 'none'
-      );
-      m.setLayoutProperty(
-        'fires-points',
-        'visibility',
-        layers.markers ? 'visible' : 'none'
-      );
-      const fv = layers.facilities ? 'visible' : 'none';
-      m.setLayoutProperty('facility-impact-glow', 'visibility', fv);
-      m.setLayoutProperty('facility-mid-ring', 'visibility', fv);
-      m.setLayoutProperty('facility-core', 'visibility', fv);
-      m.setLayoutProperty('facility-labels', 'visibility', fv);
-      m.setLayoutProperty('facility-status', 'visibility', fv);
-    } catch {}
+    applyLayerVisibility(map.current, layers);
   }, [layers]);
 
-  // Listen for flyTo events
+  // Execute store-driven fly-to targets once the map is loaded
   useEffect(() => {
-    const handler = (e: Event) => {
-      const { lng, lat, zoom } = (e as CustomEvent).detail;
-      if (map.current) {
-        map.current.flyTo({
-          center: [lng, lat],
-          zoom: zoom || 10,
-          pitch: 50,
-          duration: 2000
-        });
-      }
-    };
-    window.addEventListener('map-flyto', handler);
-    return () => window.removeEventListener('map-flyto', handler);
-  }, []);
+    if (!pendingFlyTo || !map.current || !mapLoadedRef.current) return;
+    const target = pendingFlyTo;
+    setPendingFlyTo(null);
+    map.current.flyTo({
+      center: [target.lng, target.lat],
+      zoom: target.zoom || 10,
+      pitch: 50,
+      duration: 1600
+    });
+  }, [pendingFlyTo, setPendingFlyTo]);
 
   // Listen for show-event events (auto-playback opens pin popups)
   useEffect(() => {
