@@ -199,6 +199,32 @@ function buildEventsGeoJSON(events: ConflictEvent[]) {
   };
 }
 
+function attachPopupMuteHandler(popupInstance: Popup) {
+  const el = popupInstance.getElement();
+  const btn = el?.querySelector<HTMLButtonElement>('.obt-yt-mute-toggle');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    const iframeId = btn.dataset.ytIframe;
+    if (!iframeId) return;
+    const iframe = el.querySelector<HTMLIFrameElement>(
+      `iframe[id="${CSS.escape(iframeId)}"]`
+    );
+    if (!iframe?.contentWindow) return;
+    const wasMuted = btn.dataset.muted !== 'false';
+    const cmd = wasMuted ? 'unMute' : 'mute';
+    iframe.contentWindow.postMessage(
+      JSON.stringify({ event: 'command', func: cmd, args: '' }),
+      'https://www.youtube-nocookie.com'
+    );
+    const nextMuted = !wasMuted;
+    btn.dataset.muted = String(nextMuted);
+    btn.textContent = nextMuted
+      ? '\ud83d\udd07 Muted'
+      : '\ud83d\udd0a Sound On';
+    useFireStore.getState().setIsMuted(nextMuted);
+  });
+}
+
 export default function FireMap() {
   const mapContainer = useRef<HTMLDivElement>(null);
   const map = useRef<MapLibreMap | null>(null);
@@ -838,6 +864,7 @@ export default function FireMap() {
           .setLngLat(coords)
           .setHTML(html)
           .addTo(m);
+        attachPopupMuteHandler(popup.current);
         m.easeTo({
           center: coords,
           offset: [0, Math.min(-60, -window.innerHeight * 0.12)],
@@ -911,6 +938,7 @@ export default function FireMap() {
           .setLngLat(coords)
           .setHTML(html)
           .addTo(m);
+        attachPopupMuteHandler(popup.current);
         m.easeTo({
           center: coords,
           offset: [0, Math.min(-60, -window.innerHeight * 0.12)],
@@ -1149,6 +1177,7 @@ export default function FireMap() {
         .setLngLat([ev.lng!, ev.lat!])
         .setHTML(html)
         .addTo(m);
+      attachPopupMuteHandler(popup.current);
       m.easeTo({
         center: [ev.lng!, ev.lat!],
         offset: [0, Math.min(-60, -window.innerHeight * 0.12)],

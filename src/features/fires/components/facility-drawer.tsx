@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
+import { sanitizeUrl } from '@/lib/format';
 import { useFireStore } from '@/stores/fire-store';
 import {
   getEffectiveFacilityStatus,
@@ -247,9 +248,9 @@ export default function FacilityDrawer() {
             </p>
 
             {/* News source link */}
-            {selectedFacility.newsSourceUrl && (
+            {sanitizeUrl(selectedFacility.newsSourceUrl) && (
               <a
-                href={selectedFacility.newsSourceUrl}
+                href={sanitizeUrl(selectedFacility.newsSourceUrl)}
                 target='_blank'
                 rel='noopener noreferrer'
                 className='text-primary hover:bg-accent flex items-center gap-2 rounded-lg border p-3 text-sm transition-colors'

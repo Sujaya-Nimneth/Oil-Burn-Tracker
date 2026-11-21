@@ -28,3 +28,18 @@ export function getYouTubeId(url: string): string | null {
   );
   return m ? m[1] : null;
 }
+
+/**
+ * Allows only http(s) URLs — blocks javascript:, data:, vbscript:, etc.
+ */
+export function sanitizeUrl(url: string | null | undefined): string {
+  if (!url) return '';
+  try {
+    const parsed = new URL(url);
+    return parsed.protocol === 'http:' || parsed.protocol === 'https:'
+      ? parsed.href
+      : '';
+  } catch {
+    return '';
+  }
+}
