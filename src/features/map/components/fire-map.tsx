@@ -10,11 +10,7 @@ import {
   type GeoJSONSource
 } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import {
-  useFireStore,
-  type FireFeature,
-  type FireGeoJSON
-} from '@/stores/fire-store';
+import { useFireStore, type FireGeoJSON } from '@/stores/fire-store';
 import {
   curatedFires,
   getEffectiveFacilityStatus,
@@ -236,7 +232,6 @@ export default function FireMap() {
   const fireData = useFireStore((s) => s.fireData);
   const layers = useFireStore((s) => s.layers);
   const timelineDate = useFireStore((s) => s.timelineDate);
-  const setSelectedFire = useFireStore((s) => s.setSelectedFire);
   const isMuted = useFireStore((s) => s.isMuted);
   const isMutedRef = useRef(isMuted);
   const events = useEventsStore((s) => s.events);
@@ -957,42 +952,6 @@ export default function FireMap() {
         ];
         const props = feature.properties;
 
-        let matchedFacility = null;
-        if (props?.matchedFacility && props.matchedFacility !== 'null') {
-          try {
-            matchedFacility =
-              typeof props.matchedFacility === 'string'
-                ? JSON.parse(props.matchedFacility)
-                : props.matchedFacility;
-          } catch {}
-        }
-
-        const fireFeature: FireFeature = {
-          type: 'Feature',
-          geometry: {
-            type: 'Point',
-            coordinates: coords
-          },
-          properties: {
-            latitude: props?.latitude ? Number(props.latitude) : 0,
-            longitude: props?.longitude ? Number(props.longitude) : 0,
-            bright_ti4: props?.bright_ti4 ? Number(props.bright_ti4) : 0,
-            frp: props?.frp ? Number(props.frp) : 0,
-            estimatedCO2TonsDay: props?.estimatedCO2TonsDay
-              ? Number(props.estimatedCO2TonsDay)
-              : 0,
-            confidence: props?.confidence || 'nominal',
-            acq_date: props?.acq_date || '',
-            acq_time: props?.acq_time || '',
-            satellite: props?.satellite || '',
-            daynight: props?.daynight || '',
-            intensity: props?.intensity || 'low',
-            matchedFacility
-          }
-        };
-
-        setSelectedFire(fireFeature);
-
         if (popup.current) popup.current.remove();
 
         popup.current = new Popup({
@@ -1029,7 +988,7 @@ export default function FireMap() {
         });
       }
     });
-  }, [setSelectedFire]);
+  }, []);
 
   // Initialize map
   useEffect(() => {

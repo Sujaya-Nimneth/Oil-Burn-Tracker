@@ -33,6 +33,7 @@ interface EventsStore {
   archiveStartDate: string | null;
   archiveLoaded: boolean;
   archiveLoading: boolean;
+  archiveError: string | null;
   status: 'idle' | 'loading' | 'ready' | 'error';
   error: string | null;
   beginLoad: () => void;
@@ -55,6 +56,26 @@ function oldestDate(events: ConflictEvent[]): string | null {
   return min;
 }
 
+// Module-level singleton promise so React StrictMode's unmount/remount cycle
+// shares the same in-flight fetch instead of cancelling it and stranding
+// `status === 'loading'` forever.
+let initialLoadPromise: Promise<void> | null = null;
+
+export function resetTimelineLoadForTest() {
+  initialLoadPromise = null;
+  useEventsStore.setState({
+    events: CURATED_ONLY,
+    eventsWithTelemetry: CURATED_ONLY,
+    casualtyAnchors: null,
+    archiveStartDate: null,
+    archiveLoaded: false,
+    archiveLoading: false,
+    archiveError: null,
+    status: 'idle',
+    error: null
+  });
+}
+
 export const useEventsStore = create<EventsStore>((set, get) => ({
   events: CURATED_ONLY,
   eventsWithTelemetry: CURATED_ONLY,
@@ -62,11 +83,18 @@ export const useEventsStore = create<EventsStore>((set, get) => ({
   archiveStartDate: null,
   archiveLoaded: false,
   archiveLoading: false,
+  archiveError: null,
   status: 'idle',
   error: null,
-  beginLoad: () => set({ status: 'loading' }),
+  beginLoad: () => set({ status: 'loading', error: null }),
   hydrate: (autoEvents, dailyStats, anchors) => {
-    const events = buildUniqueAllEvents([...conflictEvents, ...autoEvents]);
+    // Preserve any archive events that finished loading before hydrate()
+    const current = get();
+    const events = buildUniqueAllEvents([
+      ...current.events,
+      ...conflictEvents,
+      ...autoEvents
+    ]);
     set({
       events,
       eventsWithTelemetry: [...events, ...dailyStats],
@@ -78,107 +106,125 @@ export const useEventsStore = create<EventsStore>((set, get) => ({
   },
   fail: (error) => set({ status: 'error', error }),
   loadArchive: async () => {
-    const { archiveLoaded, archiveLoading, events, eventsWithTelemetry } =
-      get();
-    if (archiveLoaded || archiveLoading) return;
-    set({ archiveLoading: true });
+    const initial = get();
+    if (initial.archiveLoaded || initial.archiveLoading) return;
+    set({ archiveLoading: true, archiveError: null });
     try {
       const res = await fetch('/auto-events-archive.json');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const archived: ConflictEvent[] = await res.json();
+      const archived: unknown = await res.json();
       if (!Array.isArray(archived)) throw new Error('Invalid archive payload');
 
-      // Keep daily telemetry entries out of the merged event list
+      // Re-read fresh state AFTER the await so we never clobber a concurrent hydrate()
+      const { events, eventsWithTelemetry } = get();
       const dailyStats = eventsWithTelemetry.filter((e) =>
         e.id.startsWith('auto-daily-')
       );
       const ids = new Set(events.map((e) => e.id));
-      const extras = archived.filter((e) => !ids.has(e.id));
+      const extras = (archived as ConflictEvent[]).filter(
+        (e) => !ids.has(e.id)
+      );
       const merged = buildUniqueAllEvents([...events, ...extras]);
       set({
         events: merged,
         eventsWithTelemetry: [...merged, ...dailyStats],
         archiveLoaded: true,
-        archiveLoading: false
+        archiveLoading: false,
+        archiveError: null
       });
-    } catch {
-      // Curated events still cover the deep timeline — degrade quietly
-      set({ archiveLoaded: true, archiveLoading: false });
+    } catch (err) {
+      // Leave archiveLoaded=false so the user can retry on a later scrub
+      set({
+        archiveLoaded: false,
+        archiveLoading: false,
+        archiveError:
+          err instanceof Error ? err.message : 'Failed to load event archive'
+      });
     }
   }
 }));
 
+async function fetchJsonArray(url: string): Promise<ConflictEvent[]> {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`${url} returned HTTP ${res.status}`);
+  const parsed: unknown = await res.json();
+  if (!Array.isArray(parsed)) throw new Error(`${url} returned invalid JSON`);
+  return parsed as ConflictEvent[];
+}
+
+async function fetchAnchors(): Promise<CasualtyAnchors | null> {
+  const res = await fetch('/casualty-anchors.json');
+  if (!res.ok) return null;
+  const parsed: unknown = await res.json();
+  if (
+    parsed &&
+    typeof parsed === 'object' &&
+    'regions' in parsed &&
+    parsed.regions &&
+    typeof parsed.regions === 'object'
+  ) {
+    return parsed as CasualtyAnchors;
+  }
+  return null;
+}
+
+export function loadTimelineDataOnce(): Promise<void> {
+  const store = useEventsStore.getState();
+  if (store.status === 'ready') return Promise.resolve();
+  if (initialLoadPromise) return initialLoadPromise;
+
+  store.beginLoad();
+  initialLoadPromise = (async () => {
+    try {
+      const [eventsResult, statsResult, anchorsResult] =
+        await Promise.allSettled([
+          fetchJsonArray('/auto-events.json'),
+          fetchJsonArray('/auto-daily-stats.json'),
+          fetchAnchors()
+        ]);
+
+      const autoEvents =
+        eventsResult.status === 'fulfilled' ? eventsResult.value : null;
+      const dailyStats =
+        statsResult.status === 'fulfilled' ? statsResult.value : null;
+      const anchors =
+        anchorsResult.status === 'fulfilled' ? anchorsResult.value : null;
+
+      if (!autoEvents && !dailyStats) {
+        const firstErr =
+          eventsResult.status === 'rejected'
+            ? eventsResult.reason
+            : statsResult.status === 'rejected'
+              ? statsResult.reason
+              : new Error('Failed to load timeline data');
+        throw firstErr instanceof Error
+          ? firstErr
+          : new Error(String(firstErr));
+      }
+
+      useEventsStore
+        .getState()
+        .hydrate(autoEvents ?? [], dailyStats ?? [], anchors);
+    } catch (err) {
+      initialLoadPromise = null;
+      useEventsStore
+        .getState()
+        .fail(
+          err instanceof Error ? err.message : 'Failed to load timeline data'
+        );
+    }
+  })();
+
+  return initialLoadPromise;
+}
+
 /**
  * Fetches the auto timeline datasets once per session and hydrates the
- * store. On failure the site keeps rendering the curated events — the
- * timeline degrades gracefully instead of breaking.
+ * store. Safe under React StrictMode and degrades gracefully if one dataset
+ * fails while keeping curated events available synchronously.
  */
 export function useTimelineData() {
   useEffect(() => {
-    // Read status from the store, not a reactive dep: beginLoad() flips the
-    // status to 'loading' mid-effect, and with status in the dependency
-    // array React would tear the effect down and cancel the in-flight fetch.
-    if (useEventsStore.getState().status !== 'idle') return;
-    const store = useEventsStore.getState();
-    store.beginLoad();
-    let cancelled = false;
-
-    (async () => {
-      try {
-        const [eventsRes, statsRes, anchorsRes] = await Promise.all([
-          fetch('/auto-events.json'),
-          fetch('/auto-daily-stats.json'),
-          // Registry anchors are optional — the ledger degrades to
-          // curated-event sums when unavailable
-          fetch('/casualty-anchors.json').catch(() => null)
-        ]);
-        if (!eventsRes.ok) {
-          throw new Error(`auto-events.json returned HTTP ${eventsRes.status}`);
-        }
-        if (!statsRes.ok) {
-          throw new Error(
-            `auto-daily-stats.json returned HTTP ${statsRes.status}`
-          );
-        }
-        const [autoEvents, dailyStats] = await Promise.all([
-          eventsRes.json(),
-          statsRes.json()
-        ]);
-        if (cancelled) return;
-        if (!Array.isArray(autoEvents) || !Array.isArray(dailyStats)) {
-          throw new Error('Invalid timeline data payload');
-        }
-
-        let anchors: CasualtyAnchors | null = null;
-        if (anchorsRes && anchorsRes.ok) {
-          try {
-            const parsed = await anchorsRes.json();
-            if (
-              parsed &&
-              typeof parsed === 'object' &&
-              parsed.regions &&
-              typeof parsed.regions === 'object'
-            ) {
-              anchors = parsed as CasualtyAnchors;
-            }
-          } catch {
-            // Malformed anchors — proceed without the registry floor
-          }
-        }
-        if (cancelled) return;
-
-        store.hydrate(autoEvents, dailyStats, anchors);
-      } catch (err) {
-        if (!cancelled) {
-          store.fail(
-            err instanceof Error ? err.message : 'Failed to load timeline data'
-          );
-        }
-      }
-    })();
-
-    return () => {
-      cancelled = true;
-    };
+    void loadTimelineDataOnce();
   }, []);
 }
