@@ -649,6 +649,39 @@ export function generateEntry(
   let humanity: string;
   let lost: string;
 
+  // Unknown age (-1) — never fall into the infant/child buckets
+  if (age < 0) {
+    if (region === 3) {
+      humanity = pick(
+        isFemale ? ISRAEL_OCT7_HUMANITY_F : ISRAEL_OCT7_HUMANITY_M,
+        s
+      );
+      lost = pick(ISRAEL_LOST, s);
+    } else if (region === 2) {
+      humanity = pick(isFemale ? LEBANON_HUMANITY_F : LEBANON_HUMANITY_M, s);
+      lost = pick(LEBANON_LOST, s);
+    } else if (region === 1) {
+      humanity = pick(isFemale ? WESTBANK_HUMANITY_F : WESTBANK_HUMANITY_M, s);
+      lost = pick(WESTBANK_LOST, s);
+    } else if (region === 4) {
+      humanity = pick(
+        isFemale ? IRAN_AIRSTRIKE_HUMANITY_F : IRAN_AIRSTRIKE_HUMANITY_M,
+        s
+      );
+      lost = pick(IRAN_AIRSTRIKE_LOST, s);
+    } else {
+      humanity = pick(isFemale ? ADULT_HUMANITY_F : ADULT_HUMANITY_M, s);
+      lost = pick(ADULT_LOST, s);
+    }
+    return {
+      humanity,
+      lost,
+      age,
+      sex: isFemale ? 'f' : 'm',
+      region: regionName
+    };
+  }
+
   // Region-specific templates for adults
   if (region === 3 && age >= 18) {
     // Israel
