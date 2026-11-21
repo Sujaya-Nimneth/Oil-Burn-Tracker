@@ -4704,7 +4704,9 @@ export function getCasualtiesUpTo(
     // Attribute casualties to responsible military force
     let party = 'Other Forces';
 
-    if (HAMAS_ATTACK_IDS.has(event.id)) {
+    if (isTelemetry) {
+      party = 'Estimated (Multi-Theater Model)';
+    } else if (HAMAS_ATTACK_IDS.has(event.id)) {
       party = 'Hamas — Oct 7 Attack';
     } else if (IRAN_REGIME_IDS.has(event.id)) {
       party = 'Iranian Regime — Protest Massacre';

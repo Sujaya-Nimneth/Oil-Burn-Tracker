@@ -27,8 +27,8 @@ export default function HeroPills() {
   const casualtyAnchors = useEventsStore((s) => s.casualtyAnchors);
 
   const facilityStats = useMemo(
-    () => getFacilityFireStatsMap(fireData.features),
-    [fireData.features]
+    () => getFacilityFireStatsMap(fireData.features, timelineDate),
+    [fireData.features, timelineDate]
   );
   const satelliteCO2 = useMemo(() => {
     let total = 0;
@@ -47,12 +47,14 @@ export default function HeroPills() {
   }, [facilityStats, events, timelineDate]);
 
   const totalCO2 = satelliteCO2 + capacityCO2;
-  const casualties = getCasualtiesUpTo(
-    eventsWithTelemetry,
-    casualtyAnchors,
-    timelineDate
+  const casualties = useMemo(
+    () => getCasualtiesUpTo(eventsWithTelemetry, casualtyAnchors, timelineDate),
+    [eventsWithTelemetry, casualtyAnchors, timelineDate]
   );
-  const impact = getConsumerImpactUpTo(timelineDate);
+  const impact = useMemo(
+    () => getConsumerImpactUpTo(timelineDate),
+    [timelineDate]
+  );
 
   const co2Label =
     capacityCO2 > 0 && satelliteCO2 === 0 ? 't/day CO₂ (est.)' : 't/day CO₂';
