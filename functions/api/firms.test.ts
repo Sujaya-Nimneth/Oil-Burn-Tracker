@@ -1,5 +1,13 @@
-import { describe, it, expect } from 'vitest';
-import { classifyIntensity, csvToGeoJSON } from './firms';
+import { describe, it, expect, vi, afterEach } from 'vitest';
+import {
+  MIDDLE_EAST_BBOX,
+  classifyIntensity,
+  csvToGeoJSON,
+  isValidFirmsCsv,
+  parseFirmsParams,
+  redactSecret,
+  onRequestGet
+} from './firms';
 
 // Mirrors the header NASA FIRMS returns for VIIRS area CSV downloads.
 const SAMPLE_CSV = [
@@ -51,5 +59,122 @@ describe('csvToGeoJSON', () => {
       type: 'FeatureCollection',
       features: []
     });
+  });
+});
+
+describe('MIDDLE_EAST_BBOX & parseFirmsParams', () => {
+  it('uses west,south,east,north order covering Persian Gulf and Red Sea', () => {
+    const [west, south, east, north] = MIDDLE_EAST_BBOX.split(',').map(Number);
+    expect(west).toBe(30);
+    expect(south).toBe(10);
+    expect(east).toBe(65);
+    expect(north).toBe(40);
+    // Ras Tanura (lat 26.64, lng 50.15) and Bab el-Mandeb (lat 12.58, lng 43.33)
+    expect(50.15).toBeGreaterThanOrEqual(west);
+    expect(50.15).toBeLessThanOrEqual(east);
+    expect(26.64).toBeGreaterThanOrEqual(south);
+    expect(26.64).toBeLessThanOrEqual(north);
+    expect(12.58).toBeGreaterThanOrEqual(south);
+  });
+
+  it('defaults to VIIRS_SNPP_NRT, MIDDLE_EAST_BBOX, and 2 days', () => {
+    const res = parseFirmsParams(new URLSearchParams());
+    expect(res).toEqual({
+      ok: true,
+      params: {
+        source: 'VIIRS_SNPP_NRT',
+        bbox: MIDDLE_EAST_BBOX,
+        days: 2
+      }
+    });
+  });
+
+  it('handles NaN days and clamps valid days to 1..5', () => {
+    expect(parseFirmsParams(new URLSearchParams('days=abc'))).toMatchObject({
+      ok: true,
+      params: { days: 2 }
+    });
+    expect(parseFirmsParams(new URLSearchParams('days=0'))).toMatchObject({
+      ok: true,
+      params: { days: 1 }
+    });
+    expect(parseFirmsParams(new URLSearchParams('days=99'))).toMatchObject({
+      ok: true,
+      params: { days: 5 }
+    });
+  });
+
+  it('rejects unsupported sources and path traversal attempts', () => {
+    expect(
+      parseFirmsParams(new URLSearchParams('source=../../etc/passwd')).ok
+    ).toBe(false);
+    expect(parseFirmsParams(new URLSearchParams('source=UNKNOWN')).ok).toBe(
+      false
+    );
+  });
+
+  it('rejects global or malformed bounding boxes', () => {
+    expect(
+      parseFirmsParams(new URLSearchParams('bbox=-180,-90,180,90')).ok
+    ).toBe(false);
+    expect(parseFirmsParams(new URLSearchParams('bbox=50,20,40,30')).ok).toBe(
+      false
+    );
+    expect(parseFirmsParams(new URLSearchParams('bbox=30,10,65')).ok).toBe(
+      false
+    );
+    expect(parseFirmsParams(new URLSearchParams('bbox=35,20,55,35')).ok).toBe(
+      true
+    );
+  });
+});
+
+describe('isValidFirmsCsv & redactSecret', () => {
+  it('validates FIRMS CSV headers and rejects API error text', () => {
+    expect(isValidFirmsCsv(SAMPLE_CSV)).toBe(true);
+    expect(isValidFirmsCsv('')).toBe(false);
+    expect(isValidFirmsCsv('Invalid MAP_KEY')).toBe(false);
+  });
+
+  it('redacts secrets from log messages', () => {
+    expect(
+      redactSecret(
+        'fetch failed for https://firms/SECRET123/VIIRS',
+        'SECRET123'
+      )
+    ).toBe('fetch failed for https://firms/[REDACTED]/VIIRS');
+  });
+});
+
+describe('onRequestGet', () => {
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
+  it('returns 400 for invalid source parameter', async () => {
+    const res = await onRequestGet({
+      request: new Request('https://example.com/api/firms?source=BAD'),
+      env: { FIRMS_MAP_KEY: 'test-key' }
+    } as Parameters<typeof onRequestGet>[0]);
+    expect(res.status).toBe(400);
+  });
+
+  it('never leaks FIRMS_MAP_KEY in error responses', async () => {
+    vi.spyOn(console, 'error').mockImplementation(() => {});
+    vi.spyOn(globalThis, 'fetch').mockRejectedValueOnce(
+      new Error('network error for https://firms/TOP_SECRET_KEY/VIIRS')
+    );
+
+    const res = await onRequestGet({
+      request: new Request('https://example.com/api/firms?days=2'),
+      env: { FIRMS_MAP_KEY: 'TOP_SECRET_KEY' }
+    } as Parameters<typeof onRequestGet>[0]);
+
+    const body = (await res.json()) as { metadata?: { error?: string } };
+    expect(res.status).toBe(200);
+    expect(JSON.stringify(body)).not.toContain('TOP_SECRET_KEY');
+    expect(body.metadata?.error).toBe(
+      'Failed to fetch live FIRMS satellite data'
+    );
   });
 });

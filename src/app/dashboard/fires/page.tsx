@@ -13,6 +13,7 @@ import FacilityDrawer, {
 } from '@/features/fires/components/facility-drawer';
 import { useFireStore } from '@/stores/fire-store';
 import { formatCO2 } from '@/features/emissions/utils/emissions-model';
+import { sanitizeUrl } from '@/lib/format';
 import PageContainer from '@/components/layout/page-container';
 import {
   Card,
@@ -95,6 +96,7 @@ export default function FiresPage() {
           {facilityData.map((f) => {
             const config = FACILITY_STATUS_CONFIG[f.liveStatus];
             const StatusIcon = config.icon;
+            const safeNewsUrl = sanitizeUrl(f.newsSourceUrl);
             return (
               <Card key={f.id} className='flex flex-col'>
                 <CardHeader className='pb-2'>
@@ -155,9 +157,9 @@ export default function FiresPage() {
 
                   {/* Action links */}
                   <div className='flex flex-wrap gap-2 border-t pt-2'>
-                    {f.newsSourceUrl && (
+                    {safeNewsUrl && (
                       <a
-                        href={f.newsSourceUrl}
+                        href={safeNewsUrl}
                         target='_blank'
                         rel='noopener noreferrer'
                         className='bg-muted/60 hover:bg-accent inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-[10px] font-medium transition-colors'
@@ -165,7 +167,7 @@ export default function FiresPage() {
                         <IconExternalLink className='h-3 w-3 text-blue-400' />
                         {(() => {
                           try {
-                            return new URL(f.newsSourceUrl).hostname.replace(
+                            return new URL(safeNewsUrl).hostname.replace(
                               'www.',
                               ''
                             );

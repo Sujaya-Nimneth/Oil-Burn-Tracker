@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useRef, useEffect, useCallback } from 'react';
 import Image from 'next/image';
-import { getYouTubeId } from '@/lib/format';
+import { getYouTubeId, sanitizeUrl } from '@/lib/format';
 import { useFireStore } from '@/stores/fire-store';
 import { useEventsStore } from '@/stores/events-store';
 import {
@@ -315,6 +315,8 @@ export default function EventFeed({
         {events.map((event) => {
           const ytMedia = event.mediaUrls?.find((m) => m.type === 'youtube');
           const videoId = ytMedia ? getYouTubeId(ytMedia.url) : null;
+          const safeYtUrl = ytMedia ? sanitizeUrl(ytMedia.url) : '';
+          const safeSourceUrl = sanitizeUrl(event.sourceUrl);
           const catColor = CATEGORY_COLORS[event.category];
           const stats = impactByDate.get(event.date);
 
@@ -393,9 +395,9 @@ export default function EventFeed({
               </div>
 
               {/* YouTube thumbnail — always visible, click to watch */}
-              {videoId && (
+              {videoId && safeYtUrl && (
                 <a
-                  href={ytMedia!.url}
+                  href={safeYtUrl}
                   target='_blank'
                   rel='noopener noreferrer'
                   className='group relative block w-full bg-gray-100 dark:bg-black'
@@ -453,9 +455,9 @@ export default function EventFeed({
                 {/* Action row */}
                 <div className='flex items-center justify-between border-t border-gray-200 pt-1 dark:border-zinc-800/50'>
                   <div className='flex flex-wrap gap-2'>
-                    {event.sourceUrl && (
+                    {safeSourceUrl && (
                       <a
-                        href={event.sourceUrl}
+                        href={safeSourceUrl}
                         target='_blank'
                         rel='noopener noreferrer'
                         className='inline-flex items-center gap-1 rounded-md px-2 py-1 text-[10px] font-medium text-blue-600 transition-colors hover:bg-gray-100 hover:text-blue-500 dark:text-blue-400 dark:hover:bg-zinc-800/50 dark:hover:text-blue-300'
@@ -466,18 +468,22 @@ export default function EventFeed({
                     )}
                     {event.mediaUrls
                       ?.filter((m) => m.type !== 'youtube')
-                      .map((media, i) => (
-                        <a
-                          key={i}
-                          href={media.url}
-                          target='_blank'
-                          rel='noopener noreferrer'
-                          className='inline-flex items-center gap-1 rounded-md px-2 py-1 text-[10px] font-medium text-blue-600 transition-colors hover:bg-gray-100 hover:text-blue-500 dark:text-blue-400 dark:hover:bg-zinc-800/50 dark:hover:text-blue-300'
-                        >
-                          <IconExternalLink className='h-3 w-3' />
-                          {media.label || media.type}
-                        </a>
-                      ))}
+                      .map((media, i) => {
+                        const safeMediaUrl = sanitizeUrl(media.url);
+                        if (!safeMediaUrl) return null;
+                        return (
+                          <a
+                            key={i}
+                            href={safeMediaUrl}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='inline-flex items-center gap-1 rounded-md px-2 py-1 text-[10px] font-medium text-blue-600 transition-colors hover:bg-gray-100 hover:text-blue-500 dark:text-blue-400 dark:hover:bg-zinc-800/50 dark:hover:text-blue-300'
+                          >
+                            <IconExternalLink className='h-3 w-3' />
+                            {media.label || media.type}
+                          </a>
+                        );
+                      })}
                   </div>
                   {event.lat && event.lng && (
                     <button

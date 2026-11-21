@@ -1,3 +1,7 @@
+import { getYouTubeId, sanitizeUrl } from '@/lib/format';
+
+export { getYouTubeId, sanitizeUrl };
+
 // Shared HTML builders for MapLibre popups.
 //
 // Popups are injected via Popup#setHTML, so every piece of external data
@@ -13,21 +17,14 @@ export function escapeHtml(text: unknown): string {
     .replace(/'/g, '&#39;');
 }
 
-// Only http(s) links are allowed — blocks javascript:/data: URLs from
-// ever being rendered as clickable links.
-export function sanitizeUrl(url: string | null | undefined): string {
-  if (!url) return '';
-  try {
-    const parsed = new URL(url);
-    return parsed.protocol === 'http:' || parsed.protocol === 'https:'
-      ? parsed.href
-      : '';
-  } catch {
-    return '';
-  }
+// Only safe hex colors are allowed in inline CSS style attributes.
+export function sanitizeColor(
+  color: string | null | undefined,
+  fallback = '#999999'
+): string {
+  if (!color) return fallback;
+  return /^#[0-9a-fA-F]{3,8}$/.test(color) ? color : fallback;
 }
-
-export { getYouTubeId } from '@/lib/format';
 
 function formatEventDate(date?: string): string {
   if (!date) return '';
@@ -39,7 +36,8 @@ function formatEventDate(date?: string): string {
 }
 
 // YouTube embed + sound toggle. videoId is constrained to [a-zA-Z0-9_-]{11}
-// by getYouTubeId, so it is safe to interpolate directly.
+// by getYouTubeId, so it is safe to interpolate directly. Click handling is
+// attached via DOM listener in FireMap (no inline onclick attribute).
 function embedYouTube(
   videoId: string,
   iframePrefix: string,
@@ -51,8 +49,8 @@ function embedYouTube(
   html += `style="position:absolute;top:0;left:0;width:100%;height:100%;border:none" `;
   html += `allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>`;
   html += `</div>`;
-  html += `<button id="${iframePrefix}-vol-toggle" onclick="(function(){var f=document.getElementById('${iframeId}');var b=document.getElementById('${iframePrefix}-vol-toggle');if(!f)return;var m=b.dataset.muted!=='false';var cmd=m?'unMute':'mute';f.contentWindow.postMessage(JSON.stringify({event:'command',func:cmd,args:''}),'*');b.dataset.muted=m?'false':'true';b.textContent=m?'\ud83d\udd0a Sound On':'\ud83d\udd07 Muted'})()" `;
-  html += `data-muted="${isMuted}" style="display:block;width:100%;padding:6px;margin-bottom:6px;border:1px solid rgba(255,255,255,0.15);border-radius:6px;background:rgba(255,255,255,0.05);color:#e0e0e0;font-size:12px;font-weight:600;cursor:pointer;text-align:center">${isMuted ? '\ud83d\udd07 Muted \u2014 Tap to unmute' : '\ud83d\udd0a Sound On'}</button>`;
+  html += `<button type="button" class="obt-yt-mute-toggle" data-yt-iframe="${iframeId}" data-muted="${isMuted}" `;
+  html += `style="display:block;width:100%;padding:6px;margin-bottom:6px;border:1px solid rgba(255,255,255,0.15);border-radius:6px;background:rgba(255,255,255,0.05);color:#e0e0e0;font-size:12px;font-weight:600;cursor:pointer;text-align:center">${isMuted ? '\ud83d\udd07 Muted \u2014 Tap to unmute' : '\ud83d\udd0a Sound On'}</button>`;
   return html;
 }
 
@@ -76,7 +74,8 @@ export function buildEventPopupHtml(
   data: EventPopupData,
   isMuted: boolean
 ): string {
-  let inner = `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><span style="font-size:11px;color:${data.color};font-weight:700;text-transform:uppercase">${escapeHtml(data.category.replace('_', ' '))}</span><span style="font-size:11px;color:#999;font-weight:600">${escapeHtml(formatEventDate(data.date))}</span></div>`;
+  const safeColor = sanitizeColor(data.color);
+  let inner = `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><span style="font-size:11px;color:${safeColor};font-weight:700;text-transform:uppercase">${escapeHtml(data.category.replace('_', ' '))}</span><span style="font-size:11px;color:#999;font-weight:600">${escapeHtml(formatEventDate(data.date))}</span></div>`;
   inner += `<div style="font-size:13px;font-weight:800;line-height:1.3;margin-bottom:4px">${escapeHtml(data.title)}</div>`;
   inner += `<div style="font-size:11px;opacity:0.75;line-height:1.4;margin-bottom:6px">${escapeHtml(data.description.slice(0, 200))}...</div>`;
 

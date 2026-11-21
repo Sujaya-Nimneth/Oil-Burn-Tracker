@@ -107,8 +107,9 @@ export default function SiteAgreement() {
             Made by{' '}
             <span className='font-semibold text-zinc-300'>Sujaya Nimneth</span>
           </p>
-          <p className='mt-1 text-xs text-zinc-700'>
-            No accounts. No tracking. No cookies except to remember this.
+          <p className='mt-1 text-xs text-zinc-500'>
+            No accounts. No tracking. No cookies — preferences stay in local
+            storage.
           </p>
         </div>
 

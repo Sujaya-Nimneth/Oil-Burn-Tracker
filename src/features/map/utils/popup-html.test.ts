@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import {
   escapeHtml,
   sanitizeUrl,
+  sanitizeColor,
   getYouTubeId,
   buildEventPopupHtml,
   buildFacilityPopupHtml
@@ -97,5 +98,28 @@ describe('popup builders escape external content', () => {
     expect(html).not.toContain('<iframe');
     expect(html).not.toContain('<svg');
     expect(html).not.toContain('<b>');
+  });
+
+  it('rejects unsafe CSS colors and avoids inline onclick handlers in video embeds', () => {
+    expect(sanitizeColor('#ef4444')).toBe('#ef4444');
+    expect(sanitizeColor('red;background:url(javascript:alert(1))')).toBe(
+      '#999999'
+    );
+
+    const html = buildEventPopupHtml(
+      {
+        category: 'escalation',
+        color: 'red;position:fixed',
+        date: '2026-03-01',
+        title: 'Video event',
+        description: 'Desc',
+        videoId: 'dQw4w9WgXcQ'
+      },
+      true
+    );
+    expect(html).not.toContain('position:fixed');
+    expect(html).not.toContain('onclick=');
+    expect(html).toContain('class="obt-yt-mute-toggle"');
+    expect(html).toContain('data-yt-iframe="pin-yt-dQw4w9WgXcQ"');
   });
 });

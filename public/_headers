@@ -1,3 +1,9 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+
 /auto-events.json
   Cache-Control: public, max-age=60, must-revalidate
 
@@ -12,3 +18,6 @@
 
 /casualty-anchors.json
   Cache-Control: public, max-age=300, must-revalidate
+
+/memorial-data.json
+  Cache-Control: public, max-age=3600, must-revalidate

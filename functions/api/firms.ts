@@ -6,19 +6,104 @@ interface Env {
 }
 
 const FIRMS_BASE_URL = 'https://firms.modaps.eosdis.nasa.gov/api/area/csv';
-// FIRMS format: south_lat,west_lon,north_lat,east_lon
-const MIDDLE_EAST_BBOX = '10,30,40,65';
+// NASA FIRMS Area API format: west_lon,south_lat,east_lon,north_lat
+export const MIDDLE_EAST_BBOX = '30,10,65,40';
 const CACHE_SECONDS = 1800; // 30 min
+const FETCH_TIMEOUT_MS = 10_000;
+
+export const ALLOWED_SOURCES = new Set([
+  'VIIRS_SNPP_NRT',
+  'VIIRS_NOAA20_NRT',
+  'VIIRS_NOAA21_NRT',
+  'MODIS_NRT'
+]);
+
+const BBOX_BOUNDS = {
+  minLon: 25,
+  maxLon: 70,
+  minLat: 5,
+  maxLat: 45
+} as const;
+
+export interface FirmsQueryParams {
+  bbox: string;
+  days: number;
+  source: string;
+}
+
+export function parseFirmsParams(
+  searchParams: URLSearchParams
+): { ok: true; params: FirmsQueryParams } | { ok: false; error: string } {
+  const source = searchParams.get('source') || 'VIIRS_SNPP_NRT';
+  if (!ALLOWED_SOURCES.has(source)) {
+    return { ok: false, error: 'Unsupported FIRMS satellite source' };
+  }
+
+  const bbox = searchParams.get('bbox') || MIDDLE_EAST_BBOX;
+  const parts = bbox.split(',');
+  if (parts.length !== 4 || parts.some((p) => !/^-?\d+(?:\.\d+)?$/.test(p))) {
+    return { ok: false, error: 'Invalid bbox format' };
+  }
+  const [west, south, east, north] = parts.map(Number);
+  if (
+    !Number.isFinite(west) ||
+    !Number.isFinite(south) ||
+    !Number.isFinite(east) ||
+    !Number.isFinite(north) ||
+    west >= east ||
+    south >= north ||
+    west < BBOX_BOUNDS.minLon ||
+    east > BBOX_BOUNDS.maxLon ||
+    south < BBOX_BOUNDS.minLat ||
+    north > BBOX_BOUNDS.maxLat
+  ) {
+    return { ok: false, error: 'bbox out of supported regional bounds' };
+  }
+
+  const rawDays = searchParams.get('days');
+  const parsedDays = rawDays !== null ? Number.parseInt(rawDays, 10) : 2;
+  const days = Number.isFinite(parsedDays)
+    ? Math.min(Math.max(parsedDays, 1), 5)
+    : 2;
+
+  return {
+    ok: true,
+    params: {
+      bbox: `${west},${south},${east},${north}`,
+      days,
+      source
+    }
+  };
+}
+
+export function isValidFirmsCsv(csv: string): boolean {
+  const trimmed = csv.trim();
+  if (!trimmed) return false;
+  const firstLine = trimmed.split('\n', 1)[0].toLowerCase();
+  if (firstLine.startsWith('invalid')) return false;
+  return firstLine.includes('latitude') && firstLine.includes('longitude');
+}
+
+export function redactSecret(message: string, secret?: string): string {
+  if (!secret) return message;
+  return message.split(secret).join('[REDACTED]');
+}
 
 export const onRequestGet: PagesFunction<Env> = async (context) => {
   const url = new URL(context.request.url);
-  const bbox = url.searchParams.get('bbox') || MIDDLE_EAST_BBOX;
-  const days = Math.min(
-    Math.max(parseInt(url.searchParams.get('days') || '2'), 1),
-    5
-  );
-  const source = url.searchParams.get('source') || 'VIIRS_SNPP_NRT';
+  const parsed = parseFirmsParams(url.searchParams);
+  if (!parsed.ok) {
+    return Response.json(
+      {
+        type: 'FeatureCollection',
+        features: [],
+        metadata: { error: parsed.error, count: 0 }
+      },
+      { status: 400, headers: corsHeaders() }
+    );
+  }
 
+  const { bbox, days, source } = parsed.params;
   const mapKey = context.env.FIRMS_MAP_KEY;
 
   if (!mapKey) {
@@ -33,16 +118,22 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
   }
 
   try {
-    const firmsUrl = `${FIRMS_BASE_URL}/${mapKey}/${source}/${bbox}/${days}`;
-    const res = await fetch(firmsUrl);
+    const firmsUrl = `${FIRMS_BASE_URL}/${encodeURIComponent(mapKey)}/${source}/${bbox}/${days}`;
+    const res = await fetch(firmsUrl, {
+      signal: AbortSignal.timeout(FETCH_TIMEOUT_MS),
+      cf: {
+        cacheTtl: CACHE_SECONDS,
+        cacheEverything: true
+      }
+    });
 
     if (!res.ok) {
       throw new Error(`FIRMS API returned ${res.status}`);
     }
 
     const csv = await res.text();
-    if (!csv || csv.trim().length === 0 || csv.includes('Invalid')) {
-      throw new Error('FIRMS returned empty or invalid data');
+    if (!isValidFirmsCsv(csv)) {
+      throw new Error('FIRMS returned empty or invalid CSV');
     }
 
     const geojson = csvToGeoJSON(csv);
@@ -61,17 +152,18 @@ export const onRequestGet: PagesFunction<Env> = async (context) => {
       {
         headers: {
           ...corsHeaders(),
-          'Cache-Control': `public, max-age=${CACHE_SECONDS}`
+          'Cache-Control': `public, max-age=${CACHE_SECONDS}, s-maxage=${CACHE_SECONDS}`
         }
       }
     );
   } catch (error) {
+    console.error('FIRMS fetch error:', redactSecret(String(error), mapKey));
     return Response.json(
       {
         type: 'FeatureCollection',
         features: [],
         metadata: {
-          error: String(error),
+          error: 'Failed to fetch live FIRMS satellite data',
           fetchedAt: new Date().toISOString(),
           count: 0
         }
