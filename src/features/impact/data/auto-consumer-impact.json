@@ -873,11 +873,11 @@
     "gasPriceGallon": 3.59,
     "groceryInflationPct": 5.2,
     "monthlyGroceryExtra": 52,
-    "natGasMMBtu": 4.1,
-    "monthlyUtilityExtra": 21,
+    "natGasMMBtu": 4,
+    "monthlyUtilityExtra": 19,
     "shippingSurchargePct": 37,
     "deliveryDelayDays": 10,
-    "totalMonthlyExtra": 95,
+    "totalMonthlyExtra": 93,
     "headline": "Oil ~$91/bbl, gas ~$3.59/gal — Sustained maritime war-risk premium & regional attrition.",
     "source": "Live market feed (Brent/Henry Hub) + OBT household impact model"
   }
