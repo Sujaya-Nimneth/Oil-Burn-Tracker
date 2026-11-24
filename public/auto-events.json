@@ -17754,6 +17754,40 @@
     "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbWR0bkU2OVhEblItVlJfdGlxNUZlQnBvWVVWNHJjSnJPMnRUME5MVXY5YzdhNExQUlZHUVBwd3BOV2hkVGpQcWtnMk5INXpQY1h2cExKbFp3ZkZzdDdzcUtjS2VscW9nT2xYTDZQVFFna0hGVS03TFl5TjhzeEM3OXprQVhSY3RkdGNtbU8yYXpfbEFwdDc0b3Y0cVZXSVQtZ01kUnByN0UtbzRDNEIyZzRQTlJ2WDRwa1NzR3FjZEd2QdIBxwFBVV95cUxQNHRSVHZFNHItUDVzcEpweTlRMUREajZzbk1tYVZCQ24zLW9ldk1ETEx1VFdaWXNRTHBqdTJTdzJySElXYzdIUnN1dUVUbUtyYVZ4azhNb3VoWFhjeTdvVnpZZHQ5SWNnb0todUtKUV9HSVBpOW9QMVRaNmZJTno5RUZuTHotRlZjZFNzRFo1NVJ5YUp1c3FOcXVjWERSZFRhZGtlQmgxb0ZCQW1xb3JBZnVycUVOZ2FSS3hDMzhFZDBmZi0tVXFJ?oc=5"
   },
   {
+    "id": "auto-briton-swims-length-of-strait-2026-11-23",
+    "date": "2026-11-23",
+    "title": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
+    "category": "chokepoint",
+    "description": "Via The Guardian. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbEhGa045V054T0pYTUNZTHMyZFFuYmkxM2w5V0dYOFFYZHVlbzcyel96TGc0Yzh4c3hUMnhtOC04QkotYVhpV2pzOW8xZEFnbTR1dHh6cmtFS3dHcFhFaEQ5aVVhQlplR2YwRTREREYtcjR5Rk85dFFVVEdjN2EzZUNRdHZnSFJmbmxZTFhKTkM1MVUxZmNqWW5ZNk1vQk9RaEx3Zw?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=X9eaXmz1sOE",
+        "label": "British endurance swimmer passes burning ships in Strait of Hormuz"
+      }
+    ]
+  },
+  {
+    "id": "auto-israeli-strikes-kill-at-least-2026-11-23",
+    "date": "2026-11-23",
+    "title": "Israeli strikes kill at least three, including UNRWA worker, in Gaza",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbVhQRXhoM1MxOGc4bnZiY08wYjByc3Z3c1JhNWhLTEtsODYtLXVmamZ3Q0VkRl82Rnh6b2t4X0xaSDlLVldTVGFvOE9nLUtfT3NpWC04endQMVlmWkFNY19pNm1ZY1RzXzRLR1lxcWVWS3ZNRGkwWkRwREpzZGlUQ1FkdV9vc2pFQlVHRFZzYnVCbkXSAZgBQVVfeXFMT3NaS0tWMXNadHFKa29ScHFwZy1CQTQ2QVpRbF81Rms1eHFxRlBnVkJDaTRYaEZ6SDFJVEI2WHQ5MUpiZWpzTTlNaTVUQ2dEUFNkNnNmN25qUGxSbTVpbmxyVXg1dDlKdjNpZFVwMk0tNGV0bWtsS1k4UjFqZTBVUWVZQ0FtSHRzNGFadWUzcGZWZnJsWkhzRzE?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=5odrOW_XiaA",
+        "label": "Israeli strikes kill 7 in Gaza despite ceasefire"
+      }
+    ]
+  },
+  {
     "id": "auto-iran-live-updates-us-land-2026-11-24",
     "date": "2026-11-24",
     "title": "Iran live updates: US land blockade of Iran 'impossible,' Araghchi says",
@@ -17836,6 +17870,336 @@
     "description": "Via Reuters. Auto-detected by headline monitor.",
     "lat": 26.566,
     "lng": 56.25,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMDQ4RU9qMFd6TWl0WkFDUGVsdk5Gb3Q1dURMcjcwbGxUV3ItdjhZUGdQUTBZOVUyZEZlRzdmSEtjM3EwQTNUam1nRVZNdXFRbmNfeHhpUnNVQjNPbjNyOGtSZHVnNEZmbnpJdC1VdVA5X25rWndhMnZqemNGVWdVU1Y5OE8ybExyT2xLelF6dnZsNkM0OU55b1dKc1NuNF9sWkVGSGZJaUNxLXc4eEdGZTl3LUtFTDFuUUE?oc=5"
+  },
+  {
+    "id": "auto-oil-prices-rebound-as-shipping-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Oil Prices Rebound as Shipping Risks Persist",
+    "category": "chokepoint",
+    "description": "Via WSJ. Auto-detected by headline monitor.",
+    "lat": 29.5,
+    "lng": 48.5,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMkpRNmtac0F4dkZ2QTRqVEhSc2piS0Vpd1JNaHVScnZZYmRfdzBEbWZXOUFjb0dhR29XZURYZnRUcTVkQW41Y3pOT1plS0ZDOU5NTm1Qel9OUWRMNU53Y2ZoUjBWU045YUczZFRfZGswa0UtY2hVMVJMS2g0b29qUmw3YjN4VHF0aGVTYjVZdl94WjcwdXkxZ3diaVNXSWZwcE9tM2V3b3JLcTRTU0o0aw?oc=5"
+  },
+  {
+    "id": "auto-athlete-swims-strait-of-hormuz-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Athlete swims Strait of Hormuz to highlight Iran war's toll on wildlife",
+    "category": "chokepoint",
+    "description": "Via ABC News - Breaking News, Latest News and Videos. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFB6dDVwNGI3NndkRUdocGNnVTREZTA3NGhyVkIwN2xKMVI4ZFJ0Y3hVNFBEaXQ5SVIwSnc0M0RvbmxVai1GcWpvbmw1NEE?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=X9eaXmz1sOE",
+        "label": "British endurance swimmer passes burning ships in Strait of Hormuz"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-guards-say-container-ship-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Iran Guards say container ship hits mine on ‘unauthorized’ route near Strait of Hormuz",
+    "category": "chokepoint",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOUkpKRmV1dFdGcVVTZFN5M1dDZWFXOHpRWHJ1TFNkenRPX2VIYWNfdnRuMWZzNmZNS25zd29KZ1hJZ3g0SGxPVGlkQVFyZ25nVUtOM3hyYlBkQXRtblhtcVp3QXFwclVyNC1KZmszMGNMNjh6M1JOQnlTOGRvRUN0S1VQN1NsNldJV053dlViNUN4Yjg0VC1KRlgwa3k1V0R3aktrenhpVFlwc2Q2SnpFcnpDdzdXRm1zTTZFenN0QWlxN0MtNVNlZm93?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=X9eaXmz1sOE",
+        "label": "British endurance swimmer passes burning ships in Strait of Hormuz"
+      }
+    ]
+  },
+  {
+    "id": "auto-galatasaray-say-israel-government-reported-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Galatasaray say Israel government reported Turkish club to UEFA over Palestinian support banners",
+    "category": "escalation",
+    "description": "Via The New York Times. Auto-detected by headline monitor.",
+    "lat": 31.768,
+    "lng": 34.851,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOY1BSLURWNlhDVWlwM3ktTVBtbFBPUzQ1TXA5ZFhvR0lET0ZxbXBnbGlvNGhoVFVFaU5OaTZwWHpuaWlweHpLVDBWb2dQU2ZMd1FiXzJWNnFTMV9FVHJYZnVnT1ZCZVF3X01mVjlVc0p1dnpRTDVDRll4d2RWRHhadWlGM0JNMHlrU0NQODdRV0s0d29jODBkQm15UnA?oc=5"
+  },
+  {
+    "id": "auto-iran-says-offending-vessel-targeted-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Iran says 'offending vessel' targeted in southern Strait of Hormuz",
+    "category": "chokepoint",
+    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOVJfMF9IcjZsUmRhTER3YjFsSlRaOGZkWDJaVWxlNXR2S1FrVWlSUjdacktMZTdyOWl2VzFSdXh5UUdMN2hOektJamxEenFTa3JLNU15WUUwQzNJV1JNSTI5WmNidEp5ckRUN0xpMW5hN1haeGNPWjFnTWtDNTZ2ek4xT00zc1lNS3V3bVRodWx1Vi1KRkIxZEtJZDdDdmdTeFhybmVkeEdRcVZwbXc?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=X9eaXmz1sOE",
+        "label": "British endurance swimmer passes burning ships in Strait of Hormuz"
+      }
+    ]
+  },
+  {
+    "id": "auto-irgc-says-it-attacked-container-2026-11-24",
+    "date": "2026-11-24",
+    "title": "IRGC says it attacked container ship in Strait of Hormuz",
+    "category": "chokepoint",
+    "description": "Via Middle East Eye. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNUFPV2pONENWNXR6bEQ4ZHBZT0xfV3k5N2tuMXZfVlJVWWZ1Z0lGM0RndXhSSFZMTF9lcnBybDgwNXVqZ0J1VjdRVHo0SEpBbjRSTE5URDhxV0I1Tzc3ejJBRWFUcFhqZnNWMnZ6Q0NqTGtEdEhHcDZHZEhpVnJiY204dm1oR3lOSjhDSm5XY0pvR2s0T09mTFY4ckp4MXZrdVE?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=X9eaXmz1sOE",
+        "label": "British endurance swimmer passes burning ships in Strait of Hormuz"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-updates-iran-developing-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Iran War Updates: Iran developing chemical weapons, Israeli defense minister says",
+    "category": "escalation",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORUlsRWg2Szd1Z3JjWkRCcFVMdTh1cDhrT0lxUEZ0UXRHVjZ5QWJaSWRFVmxfT2Nlcnp5UjZPOG9MaFE0SmZ5UndIejdacWRYT3hGVHZiNVQ1a1lOa0tUZVdjRm1rVDZkMWRPTWd2R0JLamZfYm1lcEREbE12ajRCNTZSdERlMFpObDVFSkowV2h3THRkdlFoMUxR?oc=5"
+  },
+  {
+    "id": "auto-israeli-air-strike-kills-senior-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Israeli air strike kills senior Hamas security official in Gaza",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPU0NNLUVXTEdiZkdkb2VjX3RaZzNkdUNVbUlkbEVmOWE2QU5tRmRad0ZyeElhdDRGRjR0a2RBX0tVaFlNZlpGT0k2VExkTmthT000YWY1c2dFQzliVjZiWFJvX2djd1AwZk1BQk1SMjZaMzhGejU0SnF3ZGtXZHpRTVVTcXpaQ3NEbjlGbVgyeXpWT0FFcTlVUVF1Smx5ZEREc2VGNjQ1OVTSAa4BQVVfeXFMTThCTWx1bnk2WXlVeWtzQk56ZUJVVVNlNkFrWkF5cnNUaE9RdW54TzBVZ25JZkc1TXJVRzhBUGo1T081MGdheWdwajh1YlNQZE1mT0NsYUo2SGFpOWhlTnluYmxhRlVDdEE0dlg4MEZaS3V0cWx1aWdYbE1fOG0xX19JTlY1Z1NudW1oYjhnVXBkWGRQTjZ5VmRaVEhMM3BfT1VTSEstaHJ4ZnBnMFZn?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=RvpmYkfF0lA",
+        "label": "Senior Hamas security official killed in Israeli drone strikes"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-adds-tugboats-to-hormuz-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Iran Adds Tugboats to Hormuz Blacklist as Pressure on Shipping Grows",
+    "category": "chokepoint",
+    "description": "Via Bloomberg.com. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTDNSNndVNkJ1ZmxnQVNJUUhiYi1PRnEwU0gtY3hpM2dVcjJkaElablVWTVB3RTRjNTRjUnU2NnF4U2JkSTlwbTV4MkNhdUJ4a3g3akVhcWxEQm1XSjFhRURJTU5kU2FRUk1wOXVSWUhnSVJQTmUtdVN6SzJIemRsbGRQZjNoc0pMYXVodW5TRjktaUQyWUt2SExZV3Bfc1FBZURBNzNheGx6eHVxRGtuaXFCYklHUQ?oc=5"
+  },
+  {
+    "id": "auto-iran-blacklists-26-tugboats-operating-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Iran blacklists 26 tugboats operating in Strait of Hormuz",
+    "category": "chokepoint",
+    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUGlFZEVDX0ZqZGRwM1ZjRG9JVkRQcVFtX09hQW9sa1kxSXRKYzRIcHFna0JtOE0wa25MZDBOMkdkekwtYldaUV9ZMTVWZU5tZUVibnhWQ2xyZ3ZRQ2RXUElHQ1R4a0VFUDgwUlJlUHd2MExFdXV6djhkcVY4aWhlTGtRWXQtNHRiNjdDdUJmdUFuX0p0bnJORUZ2UGFYbE0?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=X9eaXmz1sOE",
+        "label": "British endurance swimmer passes burning ships in Strait of Hormuz"
+      }
+    ]
+  },
+  {
+    "id": "auto-us-sanctions-on-lebanons-hezbollahaffiliates-2026-11-24",
+    "date": "2026-11-24",
+    "title": "US sanctions on Lebanon’s Hezbollah-affiliates may have limited impact",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 33.366,
+    "lng": 35.433,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPS2tROWdMd1FVXzdpNlVjQmdnSmd5WVd3ZkREb29ObGY1TTZmVVA3bFc3OWt6X2FUMDc0akhPTG1PN0lua2I3NWc0aUE4dVhyOHJvZEZWSTVQVnNhT2ItWVJ3RUtLWnN4WjVxRmdMeGRpdkVUbFJna3pZWnZ1UDJkRFNaU1paZ3p0T2dlb2kzX3lLZGh0Vlp5eDg2cWZuMG8zWWNBVzg5Szl5aHQwdU1wctIBtgFBVV95cUxNeE1fcVBGcHktVGNpcmNLdm9jekhQVk5EdnV1Rk5JNlpUMGZoclIzbzJXQW1fZzRJeXZrVWZDaEJxcm56T21PVEsycHJwMTBzSU40SzdCc015a0l6Rmp6VmYzN2pyUlNKUkhNUXlOVlRobmZxSE10M3FnSnBGQ3JlY0pycnZfcU1yVE5WWktoaUdYM3MwY0xFMjJRWEZlYnJNMjVxZ2JJdlhVclZGNUxkTHJ5aGtvQQ?oc=5"
+  },
+  {
+    "id": "auto-iran-insists-on-7-demands-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Iran insists on 7 demands as Hormuz crisis deepens, IRGC targets tankers",
+    "category": "chokepoint",
+    "description": "Via Al-Monitor. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQek9DWWZxblNxTnNiOVU0MHV1dzZiMmtqYmozWjNFQlNjQTR2eE1KdEVobUhEbjNSTzlKbXpSdTRtMy1vZXZBcTZBb3F4TjRCMVhpa1BIdEViREsyM0FBbTRldS11YzNtclBPdzFCa1N5RUp1MzBRb0NPUWlvZmxfR01zcGFIYVNjdlp6bVg0UDAyeGpSMXpueEh2QndhNEVZUmRlRmtRU3N4cHVYVWI4?oc=5"
+  },
+  {
+    "id": "auto-hormuz-oil-traffic-is-down-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Hormuz oil traffic is down 40 percent: Are Iran’s tanker attacks working?",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeWtaYWl0aXk3bE1SVS1CWDdMUy1NSmNQTUxHbTFRbFlFemVOS0FkZDE4TjVZWDNUODUycDJHTXpfaGp6SWwya2gxWVhJUlk1bWUxTmpjSk5UZm5wME5ZYWc5SkJsM1I2Vmx2c2paS3owWTdPX0pDN0ZXUUtQck11OHFfSVhwd18yakNEM3NBaTBPbmtTRjVNSnNISklHTUE3ZkJLclh4LXQzbUNZOGx3dC1n0gG3AUFVX3lxTE9yaW03aWdDZFBjTUh0YXhVMk5hdy0ybmpGQXZ5UVkwN3N3M0NrQkRTTVVwQkpEY3BBQ3ZxS0c2cmdyMUlNSlZrbmNWUzQzc05SN29ZS2h4dXJuVzdyWVFOcGVmbEFfaWxPNlpTT1JVdDJqdHRkaTE4QTZMZkFqNFl5RURUOHB6SWR5WmFTSldZcWhSa25SSVBjYkJhT09Od2Jvb2gzQzktYjZJWUxObGFoaW1kbjN1cw?oc=5"
+  },
+  {
+    "id": "auto-maritime-agency-3-vessels-struck-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Maritime agency: 3 vessels struck by projectiles in Strait of Hormuz yesterday, all crew accounted for",
+    "category": "chokepoint",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNdVR5ZWJ0ZzZ0azJnOFNodG4zeXJrbjhHb1RUOER5RDJXU2Jvb1l3ZWlacmJCOEwzQ1VpVjNBSjIwRTU0aVlTdjlhYktxN2cydDNHS3F6QU5MWU1GdGwxbXU3VEU3X081QzU4bHdMLWpiS0dfYnB2M1J2bVVwcmo3TnFwUHBuVlk5N0ZBS1R4NnVhNlNUZVF2S0JZUlpPS0NDekhHQlJBYUdtTng2eFU3R29PUkkybUJFMlFsTUs5VUhzdkw0Nm9OOTU4WUVnelJPcjN3RDBUdEpYRXl5emhr?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=X9eaXmz1sOE",
+        "label": "British endurance swimmer passes burning ships in Strait of Hormuz"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-says-fourth-tanker-hits-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Iran says fourth tanker hits mine in Strait of Hormuz",
+    "category": "chokepoint",
+    "description": "Via Middle East Eye. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNU05JZ1VUWGN5N2txU2NtR1hqelZfejhlQVlDSTVTblV4ZnFkdHVvMnQyRldIYVp5YnRzZHlNWVFEa2paUTVPSzJ1RUVwRzBLcVpQYnhHdTVnZlUxLTNvNVRmeFBqMWdvM0tkTnFiYW5yZDhfTHp5VXVtaWFIZjlhWktkeEN6bWRQVnhSMTF3bF9DaWFZSmk5WUt0Ujh4OU1IX09NSnJ2SQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=X9eaXmz1sOE",
+        "label": "British endurance swimmer passes burning ships in Strait of Hormuz"
+      }
+    ]
+  },
+  {
+    "id": "auto-projectiles-strike-three-vessels-in-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Projectiles strike three vessels in Strait of Hormuz on Monday, UKMTO says",
+    "category": "chokepoint",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5TV3hQbVNQd2lTQmdmS2ppdXZwa1c3UE13LUx4R2dKeWphdGMyVTNLNWR4dkhYQzc1Und5aEJtcTVIRzdlbzRRSjVzWmt0SEE0V2hEM0s3dktEQjMy?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=X9eaXmz1sOE",
+        "label": "British endurance swimmer passes burning ships in Strait of Hormuz"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-live-irgc-targets-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Iran war live: IRGC targets tanker in Hormuz; Houthis attack Riyadh tower",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZ2VLZ21qM3Z5ajRWcGFjUDQzd2o2UzZSekRtckRvS21LTWlaZEUxamJjUzRkaDNhZWhRQzQ3QWltSFBNdzhEUEZGb1hPZkJYUndJM2RwZXJjYW5YSjJkQS1pejR3UHUwUzNIbFJwc0E3Yy1BNV9LQlE2Q2tVakpmRkhWYmdMdWJGY00wcTctbGZtdmhiRGNJeVV5Y19YMDh2QVR3WHQ1b0QzOGxRWlNXMnhHMEFkX2lUbnFuRmswdFRlQdIBxwFBVV95cUxNVUZPQXI4U2hVN2N4TVJiSkNtTUJiWGxCVjFpUHJQSXcyV0gzdWpTWjR2dDhJSVpBNWFOODNZMWdGb2U5QTJxMlN3WDFyd19TYzN1VERuc0FOOTgzLXVRY0x3UFpTM1o1SEY5dDFQaXhiS0RXcEhwSUg0U2tWeEFQaVU4YkVTbXd0c2xaZ0ZvRUl5ZHJHU3p3RFBadXg1U1JCVVBEbGluMHlLaFdIMUR5c09yc1RZc3hmcm13Y3JSUzBockgyTVRN?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=AEqOQ88hbhg",
+        "label": "From war zones to the White House: Alan Fisher’s 20 years at Al Jazeera"
+      }
+    ]
+  },
+  {
+    "id": "auto-israeli-air-strikes-in-gaza-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Israeli air strikes in Gaza kill 7 as doctors warn of meningitis outbreak",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQeTQ1NF9jeUk1SS00N2xBNUpqdjlVeHE3Uk9hbTFUNHVPZUZ3M3JNc2NtSTBERHUwSVl4eHR6UTN3ak1yVldULXpaazJiQk80Rnl3MllsaHRLSVJtUnFzcXh2WjBlMGNneFJOcnI3YWhJeHhJNzRsMmVFMmI4eG1ycHNhU2QwenNKZVZqRklNZjF0SG1wTVd3RWp0RmFGTFljTGNCa2drTFFMQk9pRmpJREx6T3lBQdIBuwFBVV95cUxQTFc1WlFSY2dET3dJOEhfUUZwSHhiZ1k2M2FULXhCRHM0NEFZY3dZRkdERS1TS3E1VlgxaGdNYnJ2aDMybFNTdUY4YUJMM3FmMGlKMjc2QWFuRXZCZGF1b3daSDB6dE9DWloyalJxazRYYW5TSDFUWWtrQmlHSzdqQXJmOWQzcWpaV2t1LXVKRUZjX2JTd1NjNnJLSFNzTmVyaE5wNXV3UkZ1M1o3WEtPOFZGTnRYRHpXd3RZ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=5odrOW_XiaA",
+        "label": "Israeli strikes kill 7 in Gaza despite ceasefire"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-orders-hormuz-shut-further-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Iran orders Hormuz shut 'further' as Qatar seeks to revive peace talks",
+    "category": "chokepoint",
+    "description": "Via Euronews.com. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPN3ljTzNTZTlBc1VpcGZrb2ZGVmtfZW9GYXJPLXAxZGtLdTZUVGM4ZWtWWERMTGxSZnZYN0NZbUYtdHd6MDJMT0h0QmNJcHptblRTeU50Wkw3eHJZZFVfUU1FOW9Sc21lekZhX2tIUDNKZ1IxVXVuLW1mSGtpNFg1dGNRTXd1bUR6VkQyeUhzWmlmOFVYOHVEMkNrd0N1ZnlQckZnTDhLcFRQVUNaVFRqVlhMMGZLQnZo?oc=5"
+  },
+  {
+    "id": "auto-oil-slicks-in-the-strait-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Oil slicks in the Strait of Hormuz are harming the environment",
+    "category": "chokepoint",
+    "description": "Via NPR. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY2Y2b3pIYWRFTkMtQ29Lb0wxQ1ZtTUR6ZXBzcVRSQkd6Qm5ZOUdmTy1JNXZsclcyX2FMZlNqdjA3Q3A2eEdlR1FVQnhWSDZOOXRCRVNPZVljOXM4cXBMS1EwMGRhVzFidGpMLTRPUGNNYW56YldWQ2Z6RUdQZjJnS0VzUWg4WFBZeWhoXzZ6dUFMbE5VYTBhbExUUU85THRNNUg1X2lZY2ZiYUk?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=X9eaXmz1sOE",
+        "label": "British endurance swimmer passes burning ships in Strait of Hormuz"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-says-2-oil-tankers-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Iran says 2 oil tankers hit naval mines, catch fire in Strait of Hormuz",
+    "category": "chokepoint",
+    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcVJsMkNBLXY2RlhkLUwtNWsyUUNQc21QaE9JU3BVbzZ4RUFUeUdBS090TXJTRk9KTFgzb3ctMHhuMnkyZFY4VFhWUkJ3MmpSWTdJOWZNRmZMb3RYUkZIOUtZZ3Q3Ym12R3ZRaWFjOC1uX055ZGx5dGpWdXlWZzZyVWx5NEY3ZGI5SlY2UXpnRFIxXzRYZlBQYTVEV1RXMFZ2ci1TNUI1cjQyRkVHWnJTMA?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=X9eaXmz1sOE",
+        "label": "British endurance swimmer passes burning ships in Strait of Hormuz"
+      }
+    ]
+  },
+  {
+    "id": "auto-us-writers-launch-alternative-to-2026-11-24",
+    "date": "2026-11-24",
+    "title": "US writers launch alternative to PEN America amid divisions over Gaza war, Israel boycotts",
+    "category": "escalation",
+    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOQVgxZGVWdl96MUxHUUFoNHd5eEQyclY3SEpKNi13YXBHYWE4UXlYeFlJUjNqcHljSzJ3M2FzN2NFVEMxck02S3FZMnh2WU1icUR1eFJnYndlXzJ5aWZ0SmlyMk0tRHNhenFUTUJYeFdjVXBnalp1elJMMU0wZmtvbDZHNy02eHVzVHo2T0pFa3FoV0tibFh0OUlURmFnbVRGb256eTlFTGdwRERoZW02UkpocTZseEN2aUQwVl9keEtia0k5T3p5TFkwOA?oc=5"
+  },
+  {
+    "id": "auto-oil-settles-up-2-as-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Oil settles up $2 as traders weigh continued Hormuz ship attacks",
+    "category": "chokepoint",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
     "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMDQ4RU9qMFd6TWl0WkFDUGVsdk5Gb3Q1dURMcjcwbGxUV3ItdjhZUGdQUTBZOVUyZEZlRzdmSEtjM3EwQTNUam1nRVZNdXFRbmNfeHhpUnNVQjNPbjNyOGtSZHVnNEZmbnpJdC1VdVA5X25rWndhMnZqemNGVWdVU1Y5OE8ybExyT2xLelF6dnZsNkM0OU55b1dKc1NuNF9sWkVGSGZJaUNxLXc4eEdGZTl3LUtFTDFuUUE?oc=5"
   }
 ]
