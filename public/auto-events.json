@@ -8362,6 +8362,16 @@
     ]
   },
   {
+    "id": "auto-iran-war-updates-drone-hits-2026-11-08",
+    "date": "2026-11-08",
+    "title": "Iran war updates: Drone hits northern Iraq; US blamed for Qeshm strikes",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 33.315,
+    "lng": 44.366,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZ2pabWZfN2E3YU9qRklmaHc0MzBjOTdPZHk2S1hhT01UUXNNV0tuRWx3eU5RNG5LenJsckVSRFZkM1VsM3FwQVR2dUFDMV9ZUG1tb1ZkMDcwNzFOMGp3Skt1eGV2YWplU0JuREhFdTl1OTJNUS11dHpsNEZ4VFdhS0U3UnlpVHJTamZjYlE0VUE1YWhwemlYelZKWUE0ZDJtMXV2Z2NhVDhXMm9SamYzZTRodTRSVVhuVkh3NlRR0gHDAUFVX3lxTE5OaGh3UU1EdDgzNloyMU51dWowWDhrby1kSXBpNFFPa1hwdFQ4Wi15X09VTTJNbThrTjBRWTdDUGFKeGMyM1NQdTllYm1RMUdXOVA2UVRzODdPTGhta2RvcmxyanEwbnd6c1VYWGFFcjZKemkzaE95RjlWc2lzaDZIRWdyb3ZPT0hTZnM1SVlRUmFsYmhpeXBka1BSVzJveUR3OXZQUXFPaWZuenRrRHoyNHlEN2l6UjR3V2hoMko0Y05UMA?oc=5"
+  },
+  {
     "id": "auto-iran-war-live-trump-to-2026-11-09",
     "date": "2026-11-09",
     "title": "Iran war live: Trump to talk to Xi, Putin about Tehran, ‘denuclearisation’",
@@ -9976,6 +9986,16 @@
         "label": ""
       }
     ]
+  },
+  {
+    "id": "auto-us-iran-and-israel-agree-2026-11-12",
+    "date": "2026-11-12",
+    "title": "U.S., Iran and Israel Agree to Cease-Fire",
+    "category": "escalation",
+    "description": "Via The New York Times. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA4NjZQcHJQaDBaRTlzNEZ5dDJTR1UyWUJibWxBWFhFUjdfd1NFdzZpeGF3YUpObHc2OU5sZjNwa2o5dHZXVEViUV9sUTNzR1JCYzI3VWZqUGxaMGxFUDN3VVpVWjdCWjBCV2hzSXI5SzFGVU0?oc=5"
   },
   {
     "id": "auto-iran-war-live-trump-says-2026-11-13",
@@ -12243,6 +12263,23 @@
     "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1qTkNnRFZrMXp4T0RaZE5iNHpsMkZqVU9XNGRVSWpDWEItZVd1Q1Q5Q2RUU1JVQzAyWDJfQ1M0TnhCVVNMNDl4MVU3SklvT2JMdjJlY1VrdXFEOTFaN1E?oc=5"
   },
   {
+    "id": "auto-houthi-rebel-advance-in-yemen-2026-11-16",
+    "date": "2026-11-16",
+    "title": "Houthi rebel advance in Yemen may further destabilise global economy",
+    "category": "chokepoint",
+    "description": "Via BBC. Auto-detected by headline monitor.",
+    "lat": 15.369,
+    "lng": 44.191,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1GeDBBRFlLQUp6OXNQVFdENGYzSGFrTUR3d01KTV91VlJVVXJURjl2Y0tfV2ZpcTlnTm55YWNMazI3WnFHZ29kS0pyUEdWbExQZGY3MGdiWUU2SU0?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=wPCnTXo4gAk",
+        "label": "Why the Ukraine war is going global, as Russian ship sinks off Libya | Global News Podcast"
+      }
+    ]
+  },
+  {
     "id": "auto-live-updates-iran-claims-new-2026-11-17",
     "date": "2026-11-17",
     "title": "Live Updates: Iran claims new attack on U.S. radar system in Bahrain and says tanker hit near Strait of Hormuz",
@@ -13098,6 +13135,16 @@
     "lng": 56.25,
     "facilityId": "strait-of-hormuz",
     "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbEJURjBQYXVkNTJSWEMyUlRrbFJ3NjJETGptNjYxX1JSS3lob1NOekp3WkZYcDdWVUtEaFRHYlpzUGg5d1FlNDE0QWdhMmtoUzBJb2piaWZFZWF3OFBaNjY1dTJMMldkdTVtNE1lWFJadlhpRFdFeWZYam5zN3RwWmFiSUw?oc=5"
+  },
+  {
+    "id": "auto-iran-war-updates-us-hits-2026-11-17",
+    "date": "2026-11-17",
+    "title": "Iran war updates: US hits Qeshm Island, Houthis claim hit on Saudi pipeline",
+    "category": "facility_damage",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 15.369,
+    "lng": 44.191,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNLW8wZ0U1T0hHZ0VoRXlUU3hJYVdoX0VrSjF2VWs3d1pTZGtvMUN3SFRDd2QtV2c1eUFuUVBPN3dTWHloeC00WlRfVXU4UWpDeDkydllvdm5BWDU1MkhhemxtWHpNRFBraHVvWkFtSmhTQzcweWt4MU53S191MW4yNDlJazFXSEN4YVFfeXNEYnRyVWZReVhRR05kQnhEa1hYQXQ0VTIzRlF0WWcyRzd4bEpZdTdKYW9SNXBQOGJvWlNKVHfSAcgBQVVfeXFMT19iRE4wbDlMWllvUktMbFZKOS1kQTUwb3Q0cEJHTGFFTHZYOWFHSjlqWkk2S1BpNTh0VF92RGZTRHBhUXI1MWNFcFJJNDBQeVhzdEJ0Y3pFWk92VVkwbXBzUUQ5M1Bjd2FEMUpUeUhjQkJYZGFTZnJzM1k2SjYyTVF6b2Y3WEltcHZ1cUV6WURFYnNxMTVRNGFSUmNTQnNJdUxoSHBScmQxaTlrcmZtcWl5YXNIaTdQYXBHSmNXa3FBc1cwYVdKUkk?oc=5"
   },
   {
     "id": "auto-iran-war-updates-gulf-states-2026-11-18",
@@ -15182,6 +15229,43 @@
     "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQM3I5ejVJZHBWWmpKTXBpZTg5SG5zZHhnZGtlSkhLZjBscmxyMnBBNkNEcEQ2dXJRbUJpS1ZtMmJaTkV5T2QxZWJLclZtbzRrV2JRTmFSRG9JMTJQVDhpMXZkcEk5ZFluZm8wNE9WLTNwcWpBT2t3R2Y2TGZUYXVEX0JyUXNUTndTV1BHSkZUOHVoMWhGdkd5VC1xUTVueUpjRWFJd2RWVTkzSTQ4VzlYWkgzWdIBuAFBVV95cUxNSU1xOE53WFhKZzUwN2R4QjN5M0poeGg0QU5waDlzWTZzcTJ2Y0FpNlhwTlUwWWFjS1YzaHZac1FOSEdDX25sVGF4LWJ5OGs4UnlaNmpaYzNDZWJ0djB1RTA2UnRZWHNpT05UQ2Noa3ZVM0UtNnhXczNxTGVseHNUc1I2NTNRT3FORVFIeWwwMHpGRXR5UEtheUZBZkdnV2VKQV9tdUdPOWZULTdtLXRMc1FlQVpNYkQ4?oc=5"
   },
   {
+    "id": "auto-iran-war-updates-riyadh-tower-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Iran war updates: Riyadh tower hit by Houthi attack, Saudi authorities say",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 15.369,
+    "lng": 44.191,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNX3hoU3p6VWJpUkhrbEFfRUFuRzVhRGRtTkxWNGpQTTNialpfMGQweVA3UmlMbm85SjNiamZLLXprQlVMTGhtUmFfdFNmVVVhbERCSGZyb3h5dnptMER2WjVzeGlpNHJ1amtMOWtiSXZYSURqdGs5MWtiWnAtSER3UDJESEZ1a2NrZjBIYXNZb1RQQzl0X2tPTmpnbVd1LUEzRXdOeUJyOHd3Z0J2N3Z1Z0dfTGpjZDBFQ25BUmh0WdIBxAFBVV95cUxNeWVFLUZJMlkxRGZGNHRWNkZidXAwNk1jTElnX3o5d3pHRC03dENuSG4wdjhWY1A1ejhIMnk1MTBLRlg5LW9CQ0xqV0hZdWxNcTRMVkRnSm1aaFpsbTV2WmNUZzRrNTM2OVNpckhXX2VKNDh2MWV6R3RFeDNtc2dTTFR4bFhjbUJlbldiUHJYbjA3T1liWWpVa19qV2N3OHZZWXFTVjF0eGdyVWs5bUNFckRxM19GSk92SUZaT1RpYkYxR1NY?oc=5"
+  },
+  {
+    "id": "auto-mideast-nations-ramp-up-efforts-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Mideast nations ramp up efforts to avert all-out war as Israel urges Iran strikes, officials say",
+    "category": "military_strike",
+    "description": "Via AP News. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVkpMQk5Ha1FZNG45Vmt6WWxWeUtMS3lSU0hON0F0b0ItSHlWY0NnUHFyQ1JTWFBPSWViZTFVZHpKNWI3V3R1TjM0b25HWTNEZGZ2Q1ItZG5hdXNGcG03M3FjZlJKNmE5SC1lYTJERmRETERvdGJOUGlsMG9pQjVVU2dEWkJxOEY2eXJYd1RtVmNlN2pIcGlLcHJlaw?oc=5"
+  },
+  {
+    "id": "auto-trump-said-weighing-another-iran-2026-11-19",
+    "date": "2026-11-19",
+    "title": "Trump said weighing another Iran offensive as Netanyahu pushes 4- to 7-day campaign",
+    "category": "humanitarian",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdmhCUDF4d0ZvVkhmU1daNWIydEVKODlsUkhLaE9UekVMZnFYVkFLNkdTSThSazdFNi1VVjhQM2l4VEt0UHNhQzhHYi1wNW9UV1NCZ0RIWjZ4WFg1RDBTMFNOZVlCdWtQcXJJS3N4Q0VMOEV3SDAzbG9IQ201S3BNc2JjVWw4Q3pmQWNrX1pUeTI0NWI1OUh5aU5qb3BHaWlfQ2tYaGxQa2R2ZUZGN3Ria9IBtgFBVV95cUxOSnFfMWlyWXVqbXVUWVpvMlFLN2t0U1E2eG15YV9XdENMb0F4Tl92YjMtTXIySElGMmRxRUZudS1xdEJTNGh3V3Axak1ucl96bzhwZU8yLXBreGl4UVhpYTNybG9nLXZCSE00YkVNelRpMi1aaXBIcjFWTmR5X24zeGZrYWViUjk2Umd6S1EtMXE4eHh2RDBVZUoxdi0wZE1MRy1yLW1GdWMxdWg0dU9CMmRfNl91UQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=lbB9nyfTZ8o",
+        "label": "First Lady Melania Trump welcomes this year's White House Christmas Tree. #Melania #Trump #BBCNews"
+      }
+    ]
+  },
+  {
     "id": "auto-iran-war-has-worsened-us-2026-11-20",
     "date": "2026-11-20",
     "title": "Iran war has worsened U.S. munitions shortage, government watchdog finds",
@@ -17143,6 +17227,44 @@
     "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbFE2R3RRMVNwZGd3U1dxdnV4eTNLQ1gwaGZtbHZoQ3ZKMHQ2UkNEX2p4bEI5VXhoRGNWTURpeVBjRFpKdTlpTlZCeVdFVGNhR25zaEhJU2V4MDBZZjRVZ0tFbWRJRHZBX1FtOG1ObDVUTVBvWm5yc3FVbmVXQXJzRGlNWGRRbGhLYndqSC1QTmsxSlhWM2Fn?oc=5"
   },
   {
+    "id": "auto-endurance-athlete-swims-strait-of-2026-11-22",
+    "date": "2026-11-22",
+    "title": "Endurance athlete swims Strait of Hormuz",
+    "category": "chokepoint",
+    "description": "Via ABC News - Breaking News, Latest News and Videos. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1DR1k1NlVjY051NWY5cTZuY29sZXZiN3lqZmhPZzBHTGkxLWlxSVNYZmhYSHdxWFJBbjV6TXpOcE8ta19QZmVwYS1FYXk?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=LpCq6WhGyLo",
+        "label": "British endurance athlete Lewis Pugh swims across the Strait of Hormuz. #StraitOfHormuz #BBCNews"
+      }
+    ]
+  },
+  {
+    "id": "auto-irgc-says-bahrain-attacks-targeted-2026-11-22",
+    "date": "2026-11-22",
+    "title": "IRGC says Bahrain attacks targeted US Patriot sites",
+    "category": "military_strike",
+    "description": "Via ABC News - Breaking News, Latest News and Videos. Auto-detected by headline monitor.",
+    "lat": 26.228,
+    "lng": 50.586,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNS3V1VW00MDA5bHloakZKSy1tTXFqWXVkR09sV1ppd01Pb2JmMlRWR3lTd2dLNzBzekVFTllIeDlKMHp1RFZNMHU0cGp0V2YzYjE3MU9vc0VTU0MzN2hZTHF6aG1TdUdwbmNTckpjcWdXdGRPbk9HVDlmWDBWRUVZZDNJQ1VWUXA5XzNIZEluX19BMlVGcktNV1lGSUZub2NUVUNHY25zT0c0ei1MVWROQ2ZUdXg?oc=5"
+  },
+  {
+    "id": "auto-iran-war-updates-navy-says-2026-11-22",
+    "date": "2026-11-22",
+    "title": "Iran war updates: Navy says tankers ablaze near Hormuz after hitting mines",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONUdmdEJGUnZfMzVyUjZSNGF6VjBWNkd3d1NWM1d2SEZUNTV6aVRjLVR4X1pKbmtMRHp2R1NjQ1JzOGRTVVdBQ2ZHcmJ5bHZvczR6OC1wV3luZEFpSVlJZ2FUcERvaGQzRUswb1lkRFpMcFlzTW85MmVvQkxhNldua3dKWmZBcXk2Nk15QkZPWENhNzNDUjNBMkEtcUxXZVNZWWRwMlE2T3JyZE12ZmowcXgxZ1JKeGhfcVBGdEtBUlI5Z9IBxwFBVV95cUxOTTdmYm1DcmxqeU9HQ1I4UWZnNzAyeFpZdWU4ejZEbFJNcHhWcXpRS2gwVW1oU1lGaDBCVzE1ZUV2M0pHY2ppY2ktVTF5MzI3WG9PVDZDR05XTUY3MURoZFQwenRZTm1wZ2ZScHZFNmh1NUJUWVVoeDltbGtoWkdQSDB4RjVFRHItWDJEOW1HM3dsZnFpdVZsR3NvVW1WMVNUWExtYVEycEtianlfTWItLU9KSF96R3pCSXhhNmgzbjRSMHZhcVJZ?oc=5"
+  },
+  {
     "id": "auto-iranian-attacks-in-hormuz-persian-2026-11-23",
     "date": "2026-11-23",
     "title": "Iranian attacks in Hormuz, Persian Gulf, Gulf of Oman highest since war's start",
@@ -17545,5 +17667,175 @@
         "label": "Iran says three oil tankers hit by naval mines in Strait of Hormuz"
       }
     ]
+  },
+  {
+    "id": "auto-oil-prices-fall-as-traders-2026-11-23",
+    "date": "2026-11-23",
+    "title": "Oil Prices Fall as Traders Weigh Supply Surplus, Gulf Attacks",
+    "category": "military_strike",
+    "description": "Via WSJ. Auto-detected by headline monitor.",
+    "lat": 29.5,
+    "lng": 48.5,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVkRJdUt0LVhZdzVhR0RpSnN6RWh6cDdGQVhOUU9vNENLN0hnSXB1YXJFU01rMzZBaXhuelM3ODlra1hKdnRxcnYweGNRSmFmSEpnMzJSQWxkOXZqZVM3NjBrZ2UwQS1PQS12di1uaHFUQWJRZHE2aHhxMnlLcVJ5Z3owcXd2WTV4NFJQSUM0SWplUVA5bW80ZU9fdDYzV1Z5QnFvcW1kdlhPMW8xc2JRQnVJc19mZw?oc=5"
+  },
+  {
+    "id": "auto-gaza-war-has-undone-77-2026-11-23",
+    "date": "2026-11-23",
+    "title": "Gaza war has undone 77 years of human development, UN warns",
+    "category": "diplomatic",
+    "description": "Via UN News. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE42di1XS05IQklCbFVUR01VeFI1a0tTQTktVmp1ZGZZUzJmVm1CdlhwMmVPcFFHMXN3UGxteDVWTjhxTTRQdHUzTEliVGpuTlBsUWtpWDhlQQ?oc=5"
+  },
+  {
+    "id": "auto-israels-destruction-of-gaza-has-2026-11-23",
+    "date": "2026-11-23",
+    "title": "Israel’s destruction of Gaza has created a ‘toxic wasteland’, experts find",
+    "category": "escalation",
+    "description": "Via The Guardian. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdHhuX2FjNjlDYmQtdG1TT0hPSkptRTBNcC0wd3lwekxoRkdSaDNFVWhhOWpEanZQVkNDa0JaLTNjQmFXWTNOQzU2OTUzY1c1RWoxRHpkQmtVNklZZGowSEMxZmRvRVRFa2JJY290b1hNSXZVUWNVdDVvV0RsRHhjNzcyeFZyYTVVNGRBNWVtdVVDVUhfTnNiU2lMWE1lYVRHczNmTjM2azliQQ?oc=5"
+  },
+  {
+    "id": "auto-israel-unlikely-to-strike-iran-2026-11-23",
+    "date": "2026-11-23",
+    "title": "Israel unlikely to strike Iran without US backing, despite fears Netanyahu may act alone - report",
+    "category": "military_strike",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9GYW5tek41cmt3bGg5LXlpRWZBY2xlYmFhbDJUY0R4bmY3ZUZHZUxVdHZsejNvUEtXZGNMWkRvSkRKZF9jTXItM1BrNHpEQm16OXVOWmZqc2dzenQ5b0xaY2hscjdDVzFMV2c?oc=5"
+  },
+  {
+    "id": "auto-trump-says-he-wants-permanent-2026-11-23",
+    "date": "2026-11-23",
+    "title": "Trump says he wants \"permanent\" deal with Iran; says next move may not come until 2027",
+    "category": "escalation",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNTGgwZTZaQWNtSzNpRDhQajRHRHFFTDhiVXczZmUtaFJiMVdTMFcwN1dWV053c1lGY2hiUnJrNnc3X1JoREFHLWNYTG52bVk5cXhMSDlCU2NkcDVCeWhQamZsX3JXdVBYdzJSdWQ1NDlKaTE4ZzIxc3U1SE1lcnhjdm45TmtHVzBMTmI4?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=lbB9nyfTZ8o",
+        "label": "First Lady Melania Trump welcomes this year's White House Christmas Tree. #Melania #Trump #BBCNews"
+      }
+    ]
+  },
+  {
+    "id": "auto-analysis-netanyahu-wants-war-eisenkot-2026-11-23",
+    "date": "2026-11-23",
+    "title": "Analysis • Netanyahu wants war, Eisenkot wants power. Trump hasn't made up his mind",
+    "category": "escalation",
+    "description": "Via Haaretz. Auto-detected by headline monitor.",
+    "lat": 31.768,
+    "lng": 34.851,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPR1BXX082dVRzaHRKWk9CR2JpZ2FUeTZKaFlBNW84cjNXRDJHSzlaTnNyZHpiUDhyVXJLYUVQcjIyWG5iR1pocHoyVDlSQTVaZy1OT0h2TWxQU0loWlFzczNGdm80QVRSdWZrcllPQ0xKLWtsTTRFb1dzc0pkakI5QlJJaEJvZHN0amtpSklWWERDUl9TaEdmeFFEdHpXSUZCYWFEcFlmWkRSZEFsN1c2VVhKRVhfekJYam5aZmZISDNPVFNJQzh4ZjYzOG5qeEhoQkphNHJmaHFkUnliSS02dlE4YlFIcnRsY1JwdjdKckh3ejliT2tNUFozMV9kN0xuZTRzSFIybDQzRnRTbElBNA?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=lbB9nyfTZ8o",
+        "label": "First Lady Melania Trump welcomes this year's White House Christmas Tree. #Melania #Trump #BBCNews"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-updates-tehran-says-2026-11-23",
+    "date": "2026-11-23",
+    "title": "Iran war updates: Tehran says US drone downed near Hormuz",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbWR0bkU2OVhEblItVlJfdGlxNUZlQnBvWVVWNHJjSnJPMnRUME5MVXY5YzdhNExQUlZHUVBwd3BOV2hkVGpQcWtnMk5INXpQY1h2cExKbFp3ZkZzdDdzcUtjS2VscW9nT2xYTDZQVFFna0hGVS03TFl5TjhzeEM3OXprQVhSY3RkdGNtbU8yYXpfbEFwdDc0b3Y0cVZXSVQtZ01kUnByN0UtbzRDNEIyZzRQTlJ2WDRwa1NzR3FjZEd2QdIBxwFBVV95cUxQNHRSVHZFNHItUDVzcEpweTlRMUREajZzbk1tYVZCQ24zLW9ldk1ETEx1VFdaWXNRTHBqdTJTdzJySElXYzdIUnN1dUVUbUtyYVZ4azhNb3VoWFhjeTdvVnpZZHQ5SWNnb0todUtKUV9HSVBpOW9QMVRaNmZJTno5RUZuTHotRlZjZFNzRFo1NVJ5YUp1c3FOcXVjWERSZFRhZGtlQmgxb0ZCQW1xb3JBZnVycUVOZ2FSS3hDMzhFZDBmZi0tVXFJ?oc=5"
+  },
+  {
+    "id": "auto-iran-live-updates-us-land-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Iran live updates: US land blockade of Iran 'impossible,' Araghchi says",
+    "category": "escalation",
+    "description": "Via ABC News - Breaking News, Latest News and Videos. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPU1BGOERUU2w0SW1pM2JId3A4aGZCcEhnMHg2TU5mOXpPa3MycFl3VU1SSlkxSmRnbUJxaF9HaElhaFdoUmVzNjJnc3lxc083OEF4WHUya3JNTlB2ek5CellXdUp4VUlOVjRqY0xzMGVWOERrOThXTko0WEtHdVR4OXNIWHN0VC1pT0RYeHhNNHJzRjI0cE1tMDhzcGpqTS00UkpoQjM1SlJKUzFFRGpTWFVB?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=3i4eI7l0BFE",
+        "label": "Iran says it won't tolerate US blockade and sanctions | BBC News"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-live-tehran-demands-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Iran war live: Tehran demands 7 conditions be met before any talks with US",
+    "category": "diplomatic",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZ2VLZ21qM3Z5ajRWcGFjUDQzd2o2UzZSekRtckRvS21LTWlaZEUxamJjUzRkaDNhZWhRQzQ3QWltSFBNdzhEUEZGb1hPZkJYUndJM2RwZXJjYW5YSjJkQS1pejR3UHUwUzNIbFJwc0E3Yy1BNV9LQlE2Q2tVakpmRkhWYmdMdWJGY00wcTctbGZtdmhiRGNJeVV5Y19YMDh2QVR3WHQ1b0QzOGxRWlNXMnhHMEFkX2lUbnFuRmswdFRlQdIBxwFBVV95cUxNVUZPQXI4U2hVN2N4TVJiSkNtTUJiWGxCVjFpUHJQSXcyV0gzdWpTWjR2dDhJSVpBNWFOODNZMWdGb2U5QTJxMlN3WDFyd19TYzN1VERuc0FOOTgzLXVRY0x3UFpTM1o1SEY5dDFQaXhiS0RXcEhwSUg0U2tWeEFQaVU4YkVTbXd0c2xaZ0ZvRUl5ZHJHU3p3RFBadXg1U1JCVVBEbGluMHlLaFdIMUR5c09yc1RZc3hmcm13Y3JSUzBockgyTVRN?oc=5"
+  },
+  {
+    "id": "auto-3-palestinians-killed-in-israeli-2026-11-24",
+    "date": "2026-11-24",
+    "title": "3 Palestinians killed in Israeli strike in Gaza amid repeated ceasefire violations",
+    "category": "diplomatic",
+    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOY3ZRYzJSZVY3RWt3RE43OGdmNXNQaGVnTFRHSGltUlV1VnpsaU91QUxQZ19BUFQzR3dpZnJESEcxM0ZHV1h0dlNjTjhoaFEyUEhtX3QtUmxuVHc0NTZ1czN2S296TmhBRTh0VGk2SzIxR0ViOTgxSXRzRGdLd053c0RYVlAyRmUwQjJRbmtCc29mdzEwOWM2NEx4RnYwS0xqSjd1emMwaWZQNDR3UHRJUzlmVlNuTkJZRkxUS3FMaVA?oc=5"
+  },
+  {
+    "id": "auto-iran-says-three-tankers-hit-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Iran says three tankers hit mines in Hormuz despite U.S. escort, as Treasury widens sanctions",
+    "category": "chokepoint",
+    "description": "Via CNBC. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9aSnVNOTQ5Ml81YUdQSkxzbkI0bVF5OUV4RndqcjVrWkM1SGw4V0tZOVJEbGRmTGgybGxfTUwzRVNISTRFUmxkX0cydWlPcVRCN2dIWFFfaklmbk40ZnptNVMxUURLdWFoRUtUNkNR0gFzQVVfeXFMTVY0aG5JUVJlODBXb0tvdmJTRjJoV2R2Uk9TMVpKcFdpLVpTUThDU3MzcGw3RnVmanBjQ1VNRFlkRi1JZUMxMDRNcWFXLVJoNlo4dVB6VU91V2tYRnpDU1oyekUxaWQwdlBXbGJoZ1ZlSGNKcw?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=3i4eI7l0BFE",
+        "label": "Iran says it won't tolerate US blockade and sanctions | BBC News"
+      }
+    ]
+  },
+  {
+    "id": "auto-the-world-is-underpricing-the-2026-11-24",
+    "date": "2026-11-24",
+    "title": "The World Is Underpricing the Risk of More War in Iran",
+    "category": "escalation",
+    "description": "Via Bloomberg.com. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTDlDRW0teFE3cHprZUY1clo0bjRCck5QZUJNY3hERFpsS1ZBWEJhRnV5ZWUxb1NYQzhVcWtDalBuV0ZzVDRvM193MG80bkRWUG1SWmVnRGVaQ1pCeGtUT2JkMWtram03WGhoWlQwRlBjbXNIa2JMTTE5YVdNUTRTWnRRbG0tZ0RqTDRWOFpyWnYtTmVZUTQ5Z1pkOGg?oc=5"
+  },
+  {
+    "id": "auto-oil-holds-near-threemonth-low-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Oil holds near three-month low as rising supply offsets Hormuz threat",
+    "category": "chokepoint",
+    "description": "Via CNBC. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE9RbFJmLVhQblBkeXRGZWhFNUp1QnktVTktWUREMTVVdGltRUtadnZSWHc4bUNzQ1pmM0hUWTMyZjA3elJoUHJhdlpWd2IyZjhfRmJ0QVh2R3NGT2lLMmlrYnlRMVJiYnEyWmIxa09uQkwwUdIBd0FVX3lxTE04V3NOeElMTnNta3I4Y0preS1IQ2FOeUZfdFNnZngwYTJaWnpOSXBKUUU3bl9aWkNKWi1iZFZRQzlCODI1Tm5CYl9BNHhlVC1pbExhb0J2UnVRTHVDVWRsQWlPZGVFTEp6QU9lUXQxWl9fWW1oT1Yw?oc=5"
+  },
+  {
+    "id": "auto-oil-prices-near-threemonth-lows-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Oil prices near three-month lows as rising supply offsets Hormuz threat",
+    "category": "chokepoint",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMDQ4RU9qMFd6TWl0WkFDUGVsdk5Gb3Q1dURMcjcwbGxUV3ItdjhZUGdQUTBZOVUyZEZlRzdmSEtjM3EwQTNUam1nRVZNdXFRbmNfeHhpUnNVQjNPbjNyOGtSZHVnNEZmbnpJdC1VdVA5X25rWndhMnZqemNGVWdVU1Y5OE8ybExyT2xLelF6dnZsNkM0OU55b1dKc1NuNF9sWkVGSGZJaUNxLXc4eEdGZTl3LUtFTDFuUUE?oc=5"
   }
 ]
