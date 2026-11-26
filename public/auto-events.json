@@ -18368,6 +18368,84 @@
     "sourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZVVCYzZGZ0dSYTY3c2NCclRXLVIxOExhMEFqN1ZMbDU5Rl9rSU5TX2owRmJGb0pwR2dhRkNUTW52TVJvWGVwT1g3SWpoa1lLWWJXeVZjWWx2NXpiSkdIOHYwVGw0dUpzX0F3Y0RfQkVHeWhQaWRWZGliQmgwY1ZibEpyMUM2dVlKRmU0QTlTd0VLRzhyS254ZWFyU1VpbjJ3ZWJKMjR3SkxqZkZ2M21WZ1NrTHVKd03SAbwBQVVfeXFMTXpPc2VpWkZaZUJHeVB0MHMtamxqOG44QktsQ2tNSGhKaTMtMl9CbHM4TUlWSElSRDFzTlNpY04wRFlsM3h6elFXRVJvdGZVMHlxY29YV3pPajMtQlVsYndDZlZHdUVkRk1Sbks2dmFkN1d2bnBiSDdIQThYbkpmdE5JN0ZzMUlUYTRKNHVYV2REYmNkQzN4VjE1YUw4b1lDTU5IU1pDcUlRSmNMNmJtY3RmRFNUVks3NzBQSXo?oc=5"
   },
   {
+    "id": "auto-british-man-swims-across-strait-2026-11-24",
+    "date": "2026-11-24",
+    "title": "British man swims across Strait of Hormuz, passing burning ships",
+    "category": "chokepoint",
+    "description": "Via The Washington Post. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQeENIdEZKcmpzcU1SdzNtTU00QzVUVWRzbVkyTzV0cEZxaEhfaVJxMFBEZ3d5LUpuQS1JZzByM1Fodk5VWkl3R2QzVkpadUc4akJ2c0lfaE9IWGl1VGkwUG1jTllCNjdBLVgyM1BMNk90VWliWGdFSkttcTVUdVdaUUJWcVN5akJoMkRlbGJYUjdyd05CM2F3ZXpJSlhUREFYMEVPOFVVRGJRNlJXNGxpNldJRGVpRXlQREJMRmxfaXI5WG1RX09MOXB4OFRaOW1IOG8xQTAyMFM1eDZ0dUF0dFh2MW1yb0xqLUVGQmR3eV9IcHlKRWk3dQ?oc=5"
+  },
+  {
+    "id": "auto-no-withdrawal-no-rebuilding-in-2026-11-24",
+    "date": "2026-11-24",
+    "title": "No withdrawal, no rebuilding in Hamas-controlled Gaza sectors, Katz says in opposition to BoP",
+    "category": "escalation",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4tdnpPdkZYTzN6a3BIcFl5UU5adkpUNlNZRXE3cTNxWm53Z2tOU2JHMGhEQ2NIbjNNaC1acEtPakNuZWNBVzFVZlREQ3RZd1A5VDFwMjZ4RG1CMDJMdFNFTXpfNEJ4UkxQOXRvZ2VB?oc=5"
+  },
+  {
+    "id": "auto-the-eighth-front-why-israels-2026-11-24",
+    "date": "2026-11-24",
+    "title": "The ‘eighth front’: Why Israel’s influence war in the US is failing",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 31.768,
+    "lng": 34.851,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVEhVQnRkbmtLRFFmMGVLdTFxbjRRQ08zcXdnRnpSUzVNVTR3cVJUYXpVNF91c3B6ZXJpZnEyT0s1WndYbWlhMENQMEVJcXhnQWdQQ2pnUkczYmRRRE5VQVRpeF80eTh6TjJud1FrVTloRzVzTXBIdFRXMDZjcTJpZkh2QzF2amRkT0hQejlOdDI2UWZzYXlkQ3NKSDVHWU5RVkJPM0JGaE7SAa4BQVVfeXFMTzVPN3JNRm5fSVlDaEp5WkxWZWIyQXgtb01LeTZtV001OFFwWkx0dGJDV0tsby1zVUpucWxNc3c0YkhmdVBPVGNZMFhrcDVoUWdFdVI3Y0FHcEFtSHdiUHdFbkpnT0FXLVc2Z2dRNWo3UUJBdVJVMENScVlWYWRJdER4TXQ4X0dLT1RzX3d4TUctNk80VGdIdTZZeXV5dTE4YlEwdGt1TDh0MDRQUVdR?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=tb861nLnjcE",
+        "label": "Tariffs, war and winter: Why global energy prices are about to get worse | BBC News"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-updates-saudiled-coalition-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Iran war updates: Saudi-led coalition orders evacuation of Hodeidah Port",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 15.369,
+    "lng": 44.191,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZ2VLZ21qM3Z5ajRWcGFjUDQzd2o2UzZSekRtckRvS21LTWlaZEUxamJjUzRkaDNhZWhRQzQ3QWltSFBNdzhEUEZGb1hPZkJYUndJM2RwZXJjYW5YSjJkQS1pejR3UHUwUzNIbFJwc0E3Yy1BNV9LQlE2Q2tVakpmRkhWYmdMdWJGY00wcTctbGZtdmhiRGNJeVV5Y19YMDh2QVR3WHQ1b0QzOGxRWlNXMnhHMEFkX2lUbnFuRmswdFRlQdIBxwFBVV95cUxNVUZPQXI4U2hVN2N4TVJiSkNtTUJiWGxCVjFpUHJQSXcyV0gzdWpTWjR2dDhJSVpBNWFOODNZMWdGb2U5QTJxMlN3WDFyd19TYzN1VERuc0FOOTgzLXVRY0x3UFpTM1o1SEY5dDFQaXhiS0RXcEhwSUg0U2tWeEFQaVU4YkVTbXd0c2xaZ0ZvRUl5ZHJHU3p3RFBadXg1U1JCVVBEbGluMHlLaFdIMUR5c09yc1RZc3hmcm13Y3JSUzBockgyTVRN?oc=5"
+  },
+  {
+    "id": "auto-watch-houthi-advance-toward-aden-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Watch: Houthi advance toward Aden threatens maritime security, increases pressure on Saudi Arabia",
+    "category": "chokepoint",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "lat": 15.369,
+    "lng": 44.191,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fWjBub3c3REU3MmhsN3h1RTRyM1Q3M05PSnRUaG0yM2dzQ0NwalBYYWNBeXJSTWtLWGo3WlFReXpIMXZQY3hlX1hBWU9hLXFKa0tlVExEM1cwLUk3?oc=5"
+  },
+  {
+    "id": "auto-board-of-peace-says-hamas-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Board of Peace says Hamas agrees to disarm amid int'l efforts to establish gov't",
+    "category": "diplomatic",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "lat": 29.5,
+    "lng": 48.5,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1jU1ZOTU5taUFHMUJaMGhoWkd5OV9aQlNSTHVZNE4tWkdJTXlvcktMMXVrNDVUOEd1a1RuTjZxTzVlaUhZa0ZIV1BBZTFNUDF5d2tCOGN6NHQ0NDZ1?oc=5"
+  },
+  {
+    "id": "auto-6-palestinians-killed-in-israeli-2026-11-24",
+    "date": "2026-11-24",
+    "title": "6 Palestinians killed in Israeli strikes in Gaza amid repeated ceasefire violations",
+    "category": "diplomatic",
+    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNEw3bE1nWlNsWWFNRG82SFBWU0hJUjBNeGY5NDJFanZqLVIyTHRpZVZIMHVMZHd6VVZxQ3RyUUxQVDlrMFZjM1MyWUlfbFdXYlRTRVFHNV9iSWtSYno5ZllvV1IwdDJzS1ozcHE1b3B6Z1BqdnZHNzIzajJya1U1TEQ2V0F4ZDNuV2R1UEFsTUZrZ2Y0V2FKNkxudGRmM0VOYjlla0dGUjRabGF3aDBINWVfbkhTNzBIZzV3cU5Qb3NfUURSWmhF?oc=5"
+  },
+  {
     "id": "auto-where-is-the-usisraeliran-war-2026-11-25",
     "date": "2026-11-25",
     "title": "Where is the US/Israel-Iran war heading?",
@@ -18762,5 +18840,207 @@
     "lat": 35.689,
     "lng": 51.389,
     "sourceUrl": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdk52RC04R2NiU2JhVmhoTWN0aUdFSHdPOWFmMXI3NXJHeU1JZ2gxbk9EVmxJc3BHZDV2UTkxUmdfLW1QUWFickwxSUtfRWlxYm43cl8yQjlybFZCOEt5RWtQcXgxUF9JY0M2a3hDbk1MTVBhTjdsSUduWGFQT21Fdm1jLXQ2OXEyLTBYSjJ5WldDVVN2cTU4dDRySHowVmZGcE9GcG1vVmRBV2hqNFhz0gG0AUFVX3lxTE5SdDgwNUlTeVJpVnJiTkNLSjRESGtoaUtzSG1VelpNVkppODFudHNmNHZDaUQzYmM2VFNoajVFNDljRm5qNW10dXh3OGJPWXBIakl5QkFfTHRONHVDNXFNZFA2bTBPWXhFclZmUWczUzhpdlhZMS1LUjhpSHA1NjJ1OC1qY0FrX09sbXVtMTJBS3BFZ2tJbkxOdF9MWXhoMkh6X1U5Wl80ZmtnZmw4WFBSWGk0eQ?oc=5"
+  },
+  {
+    "id": "auto-palestinian-journalist-killed-by-israel-2026-11-25",
+    "date": "2026-11-25",
+    "title": "Palestinian journalist killed by Israel in Gaza wins Rory Peck prize",
+    "category": "escalation",
+    "description": "Via The Guardian. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSVhtOHdMNUI4RjdQR0NOS3lfcENGWTFwMUxlYVhDODVkR1dsN1JaYlNSZ1JrQnJxMUpBLWRlb3JEZ2tobGI3bU0zeFVGMlJvS1pLUnp3am0xcllnOEpYYVZGS1dyZmgweDJuNUdoTmN1V09INEJxRWJrWkd4TG1KTUk1TndDVU15azgxM3FfVEJBN3BPOFZTV3ZmTElFUjdmNEpRUmJPRzlqcHhFRnlsajJrSEk?oc=5"
+  },
+  {
+    "id": "auto-satellite-imagery-reveals-fast-construction-2026-11-25",
+    "date": "2026-11-25",
+    "title": "Satellite imagery reveals fast construction of new underground facility in Iran, purpose unclear",
+    "category": "escalation",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBTbHdsMHUwMk94aFdMX2ozZ0hsMk1yTFhoZk1nd0t1Ym9TVjJBT1hSeUN2YzNFb3dEbTVkRnd1MHJmOFJCZ1lMYUVXNFpDdC1XM29rbHpLWXZrZFc4TGotenZYY0dXMktqbUE?oc=5"
+  },
+  {
+    "id": "auto-israeli-strike-in-gaza-kills-2026-11-25",
+    "date": "2026-11-25",
+    "title": "Israeli strike in Gaza kills senior Hamas official, his wife and children",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcjhScXl6TmVkaUZxMzJLaW1XOTN1dEpRY1d2b3llSkdpSU14VWlNekt3dFlac2c2TDUxdngzdy1Mek5xWjdZaWJEZ3BCanhQS2lZT2VjajRibmxkYk5LOHVvV1JMX3NpVEpWOXZRUV9mT1piZWotanZlaUYxSTdiQllJdnZ6cm5XRGtHWGRSV1QtZ1JieS1PYzlXQUVZOG4y0gGmAUFVX3lxTE41SFVvaGJDZThRdmdkWTluZFdUVC1lX19tUldWTW52Z0ZncUZJRnA5akdXbnpvbGJGTW5CR21GM09BUUJTaW5GY0NFZEhsMmJtME1jZ18wNnpMSlhQRGp4WjBZWkdtYlNDUHpRYXVHaXB5UFdFRzFWbDdhaGRfSG1GT1FlVDFENUdkWFZueFFjRkNvanFFcWJRNy1BVjFPNkxnSFU5R2c?oc=5"
+  },
+  {
+    "id": "auto-israel-opposes-french-troops-in-2026-11-25",
+    "date": "2026-11-25",
+    "title": "Israel opposes French troops in Lebanon after UN peacekeepers leave, envoy says - interview",
+    "category": "diplomatic",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "lat": 33.366,
+    "lng": 35.433,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1NeUN2c1h0dFExcW1HSTdtaW9SeFVWUk9hNVpnSG5VVW42YUdQZzM3OEpQcXhDMzY3SWxKbk9jbG1kZkppa2dmcDV2NUFaYWtfcmk0emI4TEZkY2Y1?oc=5"
+  },
+  {
+    "id": "auto-lebanon-judge-issues-arrest-warrants-2026-11-25",
+    "date": "2026-11-25",
+    "title": "Lebanon judge issues arrest warrants for 5 detained Hezbollah members",
+    "category": "escalation",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "lat": 33.366,
+    "lng": 35.433,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeThlTVV4QXRia3VmWHBpZTRlNWRBTTFJRW9KaDk2RklGVmFtTXRYbi1aajNpUmx1NXpncU1TTmNfNVFyNm1WQzNybWttQ1JfM1NKaFVRelp6M1FsWmZ6TUtrOWdRM3JwV04xc1o0YXd6R3pqUXRjbHhQdzVYRUFzQ3NST2NpWDJORGQ0X0YzU0lWN1NrbC1KOFFsRWFEUWRqZmfSAacBQVVfeXFMT1ptcG9OcTBDa2NJc2lCMkNJTHYtSWNlSGw1U3poS2M5Y0k1dW1nMTlFeHpaa1NHUnZlcVF6cHNwY2NiSTdZRVU0SkdTMlZDcl9yNXYzOHNuSzNmUFUwcGcyanBKNVdUMVBwTDZMTGQ2N29RRzlPdG1malhxVU8yUGpJSV9DWm9nTDFONEtVOE1Kb1ZDVEF4ZkVTcTZlbFJFeDZlZ3U0YWc?oc=5"
+  },
+  {
+    "id": "auto-rubio-says-us-struck-iran-2026-11-25",
+    "date": "2026-11-25",
+    "title": "Rubio says US struck Iran fearing it would retaliate for Israeli attack",
+    "category": "retaliation",
+    "description": "Via ABC News - Breaking News, Latest News and Videos. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbzJ1MnM3VFIyRWxoVEM5c25DbEVtYXlEajY3XzlqWjZIbVFCOXNlZC1lc1lxVnpxbkY5YmtUWE5jTUJnUjhzV2hyNlhNeU5JaVRFYW01VVZvVmJxNjZjUFQtZW1MRGtJc2lHdEtpOTNYYmM0WFRfWk9XYTA0NDdhR19zWktTT1h4ME91dWx1SFZacmVBMEZCLUdfNHltam5jcVlv0gGoAUFVX3lxTFBxUkduQU9kUjVvSnJ5b0ZlWVVBa0JkTjk5cGF5TTlFSzZaMXh1dEE3c1pvOVdDZU0xYmg1SFZEVU5HckVTUURnRmJKdi1NV29KdTlJSXNpYUVwbk8yMDJkU2RuM1VhUGY3Wi1ZSkI5VVRIcVdzcmtyWDdXYlhURGJJenZfLWdLOTNoZTFzZV9HWEE0cHUydHppM0s5Z05EdkRuUkRNZzFBdA?oc=5"
+  },
+  {
+    "id": "auto-knesset-advances-bill-establishing-state-2026-11-25",
+    "date": "2026-11-25",
+    "title": "Knesset advances bill establishing state commission of inquiry into October 7 failures",
+    "category": "escalation",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "lat": 29.5,
+    "lng": 48.5,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPQXlqVk12Y2RyNWlhN25fX0RVVDVUaFMxdjE5SExlcUJSaU1LTzNRSUl4ankyVGVrUHhJXzUwU3IwdGVoNWt5dlRMY1ktS1hwZ1Fjalc1cEZYSE5hcjJ0OUM3U0ZJYkEydC0tM19Dc1dvTThLQjdQTnp0U1hodmM1STd3anNrMEFtQmltemFLcW4yTmlhS1NSV0FSNmREX2xwb20yakVDQkJWSjlxT3JCSU9YMFFnTGNXdUFEUDlWemt5bzZkUTNFVENIVzg?oc=5"
+  },
+  {
+    "id": "auto-iran-war-updates-another-tanker-2026-11-25",
+    "date": "2026-11-25",
+    "title": "Iran war updates: Another tanker ‘on fire’ after hitting mine in Hormuz",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVTdVVzk0Mm1WUVZsbG40MGM3bGNpak9OMG5GZ05lRHdaT2wyajBla0pxckk0VTkwbDNHYnJSWF9iUl9CcUlXc1RpTHRqTElvRlJkWWVZVFgtUjdqMkFuamRTNndJWlQwQlJnd1ZkUGhZSUxDYjFnbmpjeUpNcmdyZGFCaFZFUmk4LVpoZjNUT01rRFljR0tvTHlVYjFvQURhTnZzYllXUmRBa21FQmhMaEJ2UXowRTRJUmxQNmFJbG1Sd9IBxwFBVV95cUxQWkFuZzJxdC1jMmtReDZjZURsbFlUNV9TVXNFajZKWGxEVUZqSmp6eUhOUFJJajRhclBibjdUY3JIYWItRkxsSmhFRWZLU2ZJUFRfT2MxamJVSHhieXQwZ0c3cDNyX0RfcUY2YVNHampybkU4LURUaDFyWng3M0x2Y0J4ZFNrWkx3cHV1V3U5SXE1R3drc3hPS21HbHIwX1pMVWphdUdURmZVN3NPbUMtSzdXbUNQenJVNFV0RXV1dGxnNjYxSG1v?oc=5"
+  },
+  {
+    "id": "auto-iran-says-it-is-prepared-2026-11-25",
+    "date": "2026-11-25",
+    "title": "Iran says it is prepared to withstand US blockade, seeks to curb price rises",
+    "category": "escalation",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQUtreFI1ZkdfaWRTMFJZWElnOFJtM2E1ZlZ6OVhiSDlVTnFOLVQtZTExQWZjbWRvRjR0SFJ3ZUotcEV5Z3RFaE5Wb1RsUEFSdUVoVUhvaXU1bFFNckhHcHdDZjdkRTNMUVlzR0ZVcUx1VWRLeV9DSnFtQjJrOUU1NjJSM1VyTEc3QUltV2p6bFpvSGVLd3dKMXRkaXpnVEJrUWcycHI5UVBNOTAwWTIzTTloYlZSeXpiUjJIcS1HOWQ?oc=5"
+  },
+  {
+    "id": "auto-lieberman-says-no-justification-for-2026-11-25",
+    "date": "2026-11-25",
+    "title": "Lieberman Says No Justification for Immediate Israeli Strike on Iran",
+    "category": "military_strike",
+    "description": "Via Haaretz. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPTlJaZ2ZmR0FsM2hZX0NNMUMwb05CQmJsRU8zaXEzb0J0SG5VdTljd2dWSTQ2Y3g0dlZYdEp3c09relZTVnFyZXFQNVNzVEE1UWZYQVlNdVZuZXplcnZQU3lEQjY2bUlkamgyNVdfdjNuSmhpckoxY3ZjQUk0MEFuVkFBMDNXcXNrTUpMbXA3QXVTc2dHR1FLTU53cmhmd2w3WkNyNHJIN0NIOWZUVks0cjAtaVU2a1Jia1NEcWhSeDZaNmlqSVFtUmpXaVh4ZlRUcEFiQm90Z0hnM01NZThmc0dIdkNFZ2E4R192a1k2WHk2N3doOUxNRThubDZJOHlRVVE?oc=5"
+  },
+  {
+    "id": "auto-sentences-served-but-gaza-prisoners-2026-11-25",
+    "date": "2026-11-25",
+    "title": "Sentences served, but Gaza prisoners remain behind Israeli bars",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOb3VOSHI1Nk01T1BuSXpael84UEN0YnVROTg4SGZWWmFDeEl6SFozU1phS0dqSnB3RXdBazVCdlVqU05iWlA5VDNhUGVDdHFQSDNVLXFWY3k5U2s2T0p6dVh4dVpxYkpkRTdhRFU3WlFDdXJRRTRFUWVhWGJ1dnV5UHl0bHF6SFlJWGlmUlF5RHhKUXA0Y2FiNi1aWHp0Vm5XSmR1UGhXY9IBrAFBVV95cUxQbTZUaGNtTWYwUmZ1aUdDQThraWoyOFRIdy1WZE1GRVI5VGpwd3RSdVhPMUNqZjNTR1RYV0Fyc1FWYUstWkVMT0pQb0ZEemlhbV9qYWx1djl0YmJTaVdidno4ZU41a1FiNkEtb1dXM2VXa0s5bmdBbU1nbV8xX0lpUE1XUDVPV2RYMUdZSE44amRCNnFHbm8tWUJhTlh3dFZBeG9iR0w3bzZ6bWRo?oc=5"
+  },
+  {
+    "id": "auto-phone-spying-to-missiles-why-2026-11-25",
+    "date": "2026-11-25",
+    "title": "Phone spying to missiles: Why India-Israel strategic ties go beyond Modi",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 31.768,
+    "lng": 34.851,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcHFibkwxUzhQcTVJYjFVTl9SS3lnT1dFdlFOcGhNMnhRdnRiZ284UnhHSkhsS01jRDQ4ZnJZbEstRjAwVFFqUXN1NXY2cWpOaFNxWHEtSkpSeFVKZ0xsT0FEMnhnMGZhcVRxenlEQ0w0YVpaM2hiOFpvNHNTQ2VxLTVvVTZBYThzbXhLOHdzWXNBR3Y4MFNySGRxZjltZ0EzT0VLVEo1Yk1LYlpYZ1NUcUVSRdIBuAFBVV95cUxNVWFKTmNEcXByb0I3NXAxbFZORG5walcwRGlMcm1UcFZVUk5iOUhvSjltOVRENGFfdTZSQWxIM2F2RFppRUlqOFlVREpsbWROdHVFa3BTWHlUMTRqNlNVVFFjZWkwQUJob3lRckVVWGZ1WEFfR0I0TXhBZ2E1a2xXVHVRZmdmTkRGZ0dvdG56X1VkMFJSMmZGamtBQWdOMHZxYzdmbUxSYTYxUzdIMWkwWFNkQWpFcFlh?oc=5"
+  },
+  {
+    "id": "auto-oil-prices-rise-after-houthis-2026-11-25",
+    "date": "2026-11-25",
+    "title": "Oil prices rise after Houthis say they attacked Saudi refinery",
+    "category": "facility_damage",
+    "description": "Via CNBC. Auto-detected by headline monitor.",
+    "lat": 15.369,
+    "lng": 44.191,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5sRU8tcFZoX2s0ckhDanczdzFPYndhQW9yeWdHdm51MlI2TElhR1MwM1I2MElSeGhmbzhiRk1Bamh0MGdBbE1FSkpnSjRNMXJseEVSZnZpMUhBUFRIY0JxNXIzUmtZSmptQmlQMGhreFRXdENfZ1d6UdIBfkFVX3lxTE5sVkRYS2FOQ1VncmwyVlgxNEpDWEtzaS15SlVVUTR1bThrMlRqT053QTAtTnlLYk1mRTdhWWtlbXFLZmZqa1pFc2xTdGwwcjlvc1RGRk9HVFpVaHQxVktfSXFfbTIyRWVTWWowOUhiNGN0WUg1WVNXSkx0MU8xUQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=_ppHYGbMCkQ",
+        "label": "Yemen's Houthis attack Saudi Arabia's largest oil refinery | BBC News"
+      }
+    ]
+  },
+  {
+    "id": "auto-oil-prices-rise-after-houthis-2026-11-25-2026-11-25-2",
+    "date": "2026-11-25",
+    "title": "Oil prices rise after Houthis claim attack on Saudi refinery",
+    "category": "facility_damage",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "lat": 15.369,
+    "lng": 44.191,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVGl4Nzdfc01ReTB5TnAxUkVLTXlaRVFvbGM5aTZDOEtVUXlrVDQtMHJwcWh2WldoMnVyb0QxU1pEQUoyN09sNU1SZXR3NVUzdTZXeWpkdGNTZW95MUtmdjV3dWFxTEZsRW5WUlF1djVTTWZxUGVxcHhPNEptMnBEcmZ0MURhX0JxTDFqc19HblpWd2hLSEs5SXRYTXB6bzFwNzZqOUFTc1ZOM3ItVDFZWmM2a0R5YkxsdnlsMTZWQ1ZEUQ?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=_ppHYGbMCkQ",
+        "label": "Yemen's Houthis attack Saudi Arabia's largest oil refinery | BBC News"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-war-live-explosion-rocks-2026-11-26",
+    "date": "2026-11-26",
+    "title": "Iran war live: Explosion rocks Sanaa; missiles intercepted over Riyadh",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 15.369,
+    "lng": 44.191,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUHBLNS01bDVwTEVEWk1ZZktDNEZCc0l6SnJzZklteEZsV1NaLWV2NGFBQUFxT1kyTHJZSXhrMzIySDFySnZOSTZueDJuTElIYWRIOTFCWlZrc2RiYUdPNDNla1FwNWpZb2JkbDlFNVJadEtCa1B6VFZVdmdaS3hiTmJHS2dQWElXQTJWTnp2RmFFcTQ5dTR6MXBDYXlRM0dfVWtTYm9OTy0wZ3JxNUdISWV6cFJTdWlUNmVF0gHAAUFVX3lxTFBzd0RmSHRJLXFKcks2dndWNFlPdWRvdmVQc0ZWQVhmR0FXZ0h1NHJRcHdUZDFKQ3hwWHZyYngwZHNPU2Q0MDNJVFJmdDM3R2t6Y2g2ZjBOblJUWTh6d2cyTVV2YW1NRGZLejRxaUxtZGZjOXNuTVNKYlNwbFdaVVBsVzNSM1hzcUM5dkJvNXFEQjVvUVprRnB3SEE1RVRnR19hOVFVZ3RoMUVGQk43Z19xYk5CVTFscDYxRi1GNXNUdA?oc=5"
+  },
+  {
+    "id": "auto-how-silicon-valley-became-central-2026-11-26",
+    "date": "2026-11-26",
+    "title": "How Silicon Valley became central to Israel’s war on Palestinians",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 31.768,
+    "lng": 34.851,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPM2RsUEN1V1RwM21nY2ppVzZLajhYT25pZXM0VEFtU1NfRmVoalZLVW0xeFJ0OHRWM1pPVTNaRzB1LUtzbTB3dEkzZUh4SXJUb0RPWkRhVmM5TDhMc091Z2FHUk9jM2ZGNFd5LV85OWhVUHd4SlFNMndvWHp3NkxFOTNjdURUNEtIU0JSUkpIV3VNWmFjNXNZ0gGcAUFVX3lxTE9RQ1FaVXlMblA0TGc1Tkd1RkdjYmZXLTNYanJLdzB1WXp3ZHRJUEg0by1XbDVBR3N1Zy1nVVg5VmkxTWRTR05sV3FUZG9HeDFnZkduYjF5M1JpN2NmbnFsZlhjQ25HdjJwZVlsU2FSci11UVdRel9lbnVqUldrQUJqci02c0xZMmtPSmU4dGhxdVFfSHp4cVNkZHE4Xw?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=oPQbS88kuGI",
+        "label": "How many Russians have been killed in the Ukraine war?"
+      }
+    ]
+  },
+  {
+    "id": "auto-gaza-meningitis-cases-surge-as-2026-11-26",
+    "date": "2026-11-26",
+    "title": "Gaza meningitis cases surge as collapsing infrastructure fuels health fears",
+    "category": "escalation",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTW5YSzVOYS1jQm9rMGF1aTBtXzVaeDE3ZWZvRV9rbzRpR2ZzcDBjd2IxRjBRQ1lIclQxeHhDblh6ekJ4SWgwOFBjQTU5U041eGFaaG1fWU9GblgtSWF2a1JSRkVPSTROV3BVS1RJblRMaVIzakNoOFlTWWF0ejZDb2FJZnFGR2tQNXgxQmxsaEprNVFFRk9oaktRanRRVEsxZE5adWRFYXVfM1hKQnhUbEZXVHB3dWpQ0gG-AUFVX3lxTE1jd1Znb0ZfUmdJcnhtU214TEozd3hjUi1lNS1EMTd0b19maHdfdmxTMEUwbXpuTnFPcWcxTVNPd2NjYXZ1SWVCak1vWXNTOW5HOG5uSlZXeTZmRGFEcmJNcXNwcjI0cW5rT013MlREQkR5cklFaDF5SmhaUXN2MGNRX19NNWEwNngzRm9yaS1jOHpaZzQ5Yld2VzN5YmN6cUdRdi1sMkgzcTd3SUNEZGR6MWJRaklzZzUzY2Q2anc?oc=5"
+  },
+  {
+    "id": "auto-palestinian-journalist-killed-by-israel-2026-11-26",
+    "date": "2026-11-26",
+    "title": "Palestinian journalist killed by Israel in Gaza wins prestigious Rory Peck prize",
+    "category": "escalation",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT2FnemVMN3FmVDFBQWRaYkV1VjJpMkhKQ3lZc3N3aVB2UFdtZmVDeWx0Q0JWVFVXcVp5bkFfb09EOVNSQS1QQTBDOWw5MVFhOWZsaTJ0Nm54SmdjLVB4dkV6cGtHX1lPbEk2d2xxb0RMdXBnczRBcURWQlh5NnRULUtHVVA2ZktCN0RldFBTSW1XWEE2Vi1RYlZ0UzY1d1V3RE9ZdHRTVmpIbkk4YkRpQdIBtgFBVV95cUxQT2xkVUZHbFFjX3VlcWZZWHBoOVA5LTBacGNINGFsVUVPTmVPbjVGeHM4YXJINUxIR3hGTzdmMEFHQmxQS1BrbjUwaXV2ZVNWcjBXZGExUmE2bkdkdUhuNHhIb3A1czVWY0ViSmxSVmNtSHhxQ3NUTkhpNGQtYWJzN2hLMlFXQi01b2Y1VE1RZzFkOWY3Z0ZrQmNzU1E0NEJHMG9jMFJtTGxITE1Ic2J6U3dKYjlzQQ?oc=5"
   }
 ]
