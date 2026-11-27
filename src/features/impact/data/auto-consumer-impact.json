@@ -672,20 +672,6 @@
     "source": "[OBT phase-calibrated trend model]"
   },
   {
-    "date": "2026-11-12",
-    "oilPriceBbl": 85,
-    "gasPriceGallon": 3.41,
-    "groceryInflationPct": 5.2,
-    "monthlyGroceryExtra": 52,
-    "natGasMMBtu": 4.3,
-    "monthlyUtilityExtra": 24,
-    "shippingSurchargePct": 36,
-    "deliveryDelayDays": 10,
-    "totalMonthlyExtra": 89,
-    "headline": "Oil ~$85/bbl, gas ~$3.41/gal — Sustained maritime war-risk premium & regional attrition.",
-    "source": "[OBT phase-calibrated trend model]"
-  },
-  {
     "date": "2026-11-13",
     "oilPriceBbl": 87,
     "gasPriceGallon": 3.41,
@@ -855,7 +841,7 @@
   },
   {
     "date": "2026-11-25",
-    "oilPriceBbl": 91,
+    "oilPriceBbl": 92,
     "gasPriceGallon": 3.63,
     "groceryInflationPct": 5.2,
     "monthlyGroceryExtra": 52,
@@ -864,13 +850,13 @@
     "shippingSurchargePct": 38,
     "deliveryDelayDays": 10,
     "totalMonthlyExtra": 94,
-    "headline": "Oil ~$91/bbl, gas ~$3.63/gal — Sustained maritime war-risk premium & regional attrition.",
+    "headline": "Oil ~$92/bbl, gas ~$3.63/gal — Sustained maritime war-risk premium & regional attrition.",
     "source": "[OBT phase-calibrated trend model]"
   },
   {
     "date": "2026-11-26",
-    "oilPriceBbl": 93,
-    "gasPriceGallon": 3.62,
+    "oilPriceBbl": 94,
+    "gasPriceGallon": 3.63,
     "groceryInflationPct": 5.2,
     "monthlyGroceryExtra": 52,
     "natGasMMBtu": 4.1,
@@ -878,7 +864,21 @@
     "shippingSurchargePct": 37,
     "deliveryDelayDays": 10,
     "totalMonthlyExtra": 96,
-    "headline": "Oil ~$93/bbl, gas ~$3.62/gal — Sustained maritime war-risk premium & regional attrition.",
+    "headline": "Oil ~$94/bbl, gas ~$3.63/gal — Sustained maritime war-risk premium & regional attrition.",
+    "source": "[OBT phase-calibrated trend model]"
+  },
+  {
+    "date": "2026-11-27",
+    "oilPriceBbl": 92,
+    "gasPriceGallon": 3.65,
+    "groceryInflationPct": 5.2,
+    "monthlyGroceryExtra": 52,
+    "natGasMMBtu": 3.8,
+    "monthlyUtilityExtra": 16,
+    "shippingSurchargePct": 38,
+    "deliveryDelayDays": 10,
+    "totalMonthlyExtra": 92,
+    "headline": "Oil ~$92/bbl, gas ~$3.65/gal — Sustained maritime war-risk premium & regional attrition.",
     "source": "Live market feed (Brent/Henry Hub) + OBT household impact model"
   }
 ]
