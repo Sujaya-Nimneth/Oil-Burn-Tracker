@@ -5940,6 +5940,26 @@
     ]
   },
   {
+    "id": "auto-israeli-strikes-in-gaza-kill-2026-11-01",
+    "date": "2026-11-01",
+    "title": "Israeli strikes in Gaza kill eight including child, hospitals say",
+    "category": "military_strike",
+    "description": "Via BBC. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1oYUlQV0d4S2pyYTVTV3N2dVdONWJaUlpmUmktdGYyUHAyakZFeS1MUF92Mm92LV9hRi1VYnFKTHVycDhDaF9WTjFoRUN0Zml3LVlhUVlET01IejA?oc=5"
+  },
+  {
+    "id": "auto-gulf-states-fear-fiercer-iran-2026-11-01",
+    "date": "2026-11-01",
+    "title": "Gulf States Fear Fiercer Iran Retaliation If US Strikes",
+    "category": "retaliation",
+    "description": "Via Bloomberg.com. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQLUJ2eUx2ekxlenJCallsY0ZFQi1OeW51dERMMWxCODlpREdmTWk5MzllOTVUSE5KYzI2bW9Jd3FhMG9wMnVWTmZycmZGdEd5TEtWamdmMF9wbEZHWDljdTJkX3I5dk5xQU91bVBNZHhRSE4tQ0pYdXJ6MmZQazlIQ0dBejlXbnMyd0tKbWNabmlTZk9hRVhpWEkwTUxLWkJoSnRvWDEwQkxteE81bVF2QXJn?oc=5"
+  },
+  {
     "id": "auto-iran-warns-renewed-war-with-2026-11-02",
     "date": "2026-11-02",
     "title": "Iran warns renewed war with US could outlast previous conflict",
@@ -8821,6 +8841,16 @@
         "label": ""
       }
     ]
+  },
+  {
+    "id": "auto-iran-hardens-line-against-nuclear-2026-11-09",
+    "date": "2026-11-09",
+    "title": "Iran Hardens Line Against Nuclear Monitoring in Report to IAEA",
+    "category": "escalation",
+    "description": "Via Bloomberg.com. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRlIxcWdxY05nc1E2VF9GdlhUcTQyWGpVd2d5aGNFdWYxVC1OV0tJWUlEc0VlS0VXeW1XVTl3XzV2dkRaM3BpR1JYVGF5d2VIZE9heEQ3UnJXa3lxZFhIVDFWVjJicUx3dzN3OGpXTGlfTHA3dkt1dVJhNUZrQmRQM0dQVm1nVC1RUG5EeVBKR1NLQ2JaVExKYVZ6MzdURXBhd0hEenc0S3BaVFpaaTI4NTR2UVA?oc=5"
   },
   {
     "id": "auto-iran-war-live-trump-says-2026-11-10",
@@ -18573,6 +18603,16 @@
     "sourceUrl": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNEw3bE1nWlNsWWFNRG82SFBWU0hJUjBNeGY5NDJFanZqLVIyTHRpZVZIMHVMZHd6VVZxQ3RyUUxQVDlrMFZjM1MyWUlfbFdXYlRTRVFHNV9iSWtSYno5ZllvV1IwdDJzS1ozcHE1b3B6Z1BqdnZHNzIzajJya1U1TEQ2V0F4ZDNuV2R1UEFsTUZrZ2Y0V2FKNkxudGRmM0VOYjlla0dGUjRabGF3aDBINWVfbkhTNzBIZzV3cU5Qb3NfUURSWmhF?oc=5"
   },
   {
+    "id": "auto-watch-the-film-how-not-2026-11-24",
+    "date": "2026-11-24",
+    "title": "Watch the Film | 'How Not to Cover Gaza': Documentary Explores the Israeli Media's Wartime Failure",
+    "category": "escalation",
+    "description": "Via Haaretz. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNOER3bG5BaVFNYUU2VUNWRHlHOWVCck1fY250bmM3UzhDeGIxQnlreEUySVdsR0p4aDBVSVpDOTAzcDBHaXllV2tKTERvSDJHUk95RkxhNEZVdGRLODlFckk2RkRCQW5FQUpIN0RidXpCUGhETTlwQ1NKVTFEZVNEc0NDR0hvWnlsSjh6NkxfdHVhNnVXRk1mdGVRS19LWXRGZlVEYjFHQ2c4cktNX29xNUxqbzU1djFJVHNkUHpEczNHN2ZQTURLOUVkREtKX2I2WnptZURYVllVTmFaTXotNTZhbWkwUUc2T0RTdzNjcnVPTmxfYnd2cFptMUxjS00zR0tHQ080T29KZw?oc=5"
+  },
+  {
     "id": "auto-where-is-the-usisraeliran-war-2026-11-25",
     "date": "2026-11-25",
     "title": "Where is the US/Israel-Iran war heading?",
@@ -19546,6 +19586,33 @@
     "sourceUrl": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQMGtIbkRlUzUwNEhhWGhVeDZ4dE96UnpCTUN1T2lldVFBS1h4V3VTNjZKRFFsdlVnemFXZHV5aVQ0bFJwWGRvZE5XWW1WdmNHNHQxT3dTUHJoV3NOVS1HblRzMzNHRW94bkd1ZlBlek8xMENvcTNxSlNVdDNWVU90MFA5QVdTd1ZBM29ac1NEdmtjT09RZ2NuSjZHbGRxOURwcXRlZVU3WjZ4V2lYT1JjOU5pR1o3NF9xREtIUklMUTZtUnZwZTJsNUkxdzBhbXJOSnJlOW1WMzVBVElBdXBTVVZvNEd4TjJSdmN2R183UzVuMi0tcjBoYzhOUUdzN2FoVVY0bm9IaDNBbEc2U2Z4QmZaYV9RVXQ1enFJ?oc=5"
   },
   {
+    "id": "auto-palestinian-journalist-killed-by-israel-2026-11-26-2026-11-26-2",
+    "date": "2026-11-26",
+    "title": "Palestinian journalist killed by Israel in Gaza wins Rory Peck prize | War reporting",
+    "category": "escalation",
+    "description": "Via The Guardian. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSVhtOHdMNUI4RjdQR0NOS3lfcENGWTFwMUxlYVhDODVkR1dsN1JaYlNSZ1JrQnJxMUpBLWRlb3JEZ2tobGI3bU0zeFVGMlJvS1pLUnp3am0xcllnOEpYYVZGS1dyZmgweDJuNUdoTmN1V09INEJxRWJrWkd4TG1KTUk1TndDVU15azgxM3FfVEJBN3BPOFZTV3ZmTElFUjdmNEpRUmJPRzlqcHhFRnlsajJrSEk?oc=5"
+  },
+  {
+    "id": "auto-the-usisraeli-war-on-iran-2026-11-26",
+    "date": "2026-11-26",
+    "title": "The US-Israeli War on Iran and Its Impacts on Energy Security and Import Dependency in Sub-Saharan Africa",
+    "category": "escalation",
+    "description": "Via Al Jazeera Centre for Studies. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNOEU2YnZnWnpyWGQtTHpMNGxFVW9McnIwajl4VE5BcVZUbXF0eTdQRmFocDhsZm5xNFVPWDdlZ01oejJiSEtQZ3g1TzVyejZGZ1MwUlYxb2YyNWd1NFpxLVFuWTZuRng5ZDNBTTdlWDFaLWtjMWU3aDEtdXVQSERmbm4xWnplOGYwejVpa1ZwY3BIWjBTTzZrVm1ZdEQ0RUJRemdHZjZ5ODUwX25RYW90YlQxaFRZRmF6bU9UNWxyR2piRkNGMUE?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=5MX21Y0IMTU",
+        "label": "How Trump's war with Iran and the Houthi conflict could change Saudi Arabia | Global News Podcast"
+      }
+    ]
+  },
+  {
     "id": "auto-iran-war-live-irans-araghchi-2026-11-27",
     "date": "2026-11-27",
     "title": "Iran war live: Iran’s Araghchi calls deadly Kuwait attack ‘suspicious’",
@@ -19899,5 +19966,169 @@
     "lat": 29.5,
     "lng": 48.5,
     "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTzVQVzE5aGdzbGVhNEUtVl94M0V3RjN5Rks4UDU0U0plazFDcjFnUTBMMHBvdk9BRzFaVHljSXk1ZFdzSjlRTVRXNGZ0cnRyUWRRbFJaRjBsVWNFbDZqSnQ0cHo0TW5fRDlwMWlKWDI3V2ROcnlXczVET1RqSXR6UGtZSTZ0OTQtY1YwaG1yYTRwQnZ6TW43azNGNTFqMmpkNFhtbVJwRnVkVERhR1NnSlFIMzExZw?oc=5"
+  },
+  {
+    "id": "auto-idf-interrogations-reveal-hezbollah-terrorists-2026-11-27",
+    "date": "2026-11-27",
+    "title": "IDF interrogations reveal Hezbollah terrorists using civilian fishing boats to spy on naval forces",
+    "category": "escalation",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "lat": 33.366,
+    "lng": 35.433,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBLS0NwRV9JdW9yLUwtM3JxVmd0UzVJb3R1TVFfSjMyMTVxbnNjYkdnN0FJYWtVZ2lQWWl5V0t5ZlhJUzdGVk00RTlmMGlyVVpEMmZJbVBnbmpKdDFpN1dsTTJlTU5mTS1fVmY1bUVn?oc=5"
+  },
+  {
+    "id": "auto-senior-irgc-officials-vow-to-2026-11-27",
+    "date": "2026-11-27",
+    "title": "Senior IRGC officials vow to break US blockade on Strait of Hormuz, claim Iran's ports are 'open'",
+    "category": "chokepoint",
+    "description": "Via The Jerusalem Post. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAxLU1CUTdXdndZZllNbjFmYUJIbjI5dTkxYnVUeTZpSVEwQ0JQVkNDQ3FJdzh4N0JtbnJ1aWI0Q3RFcDdDTkUtN05wclJSNFBVZlRnSmZGNHh1TTVFa3MwOEEyMURzdkdHY1E?oc=5"
+  },
+  {
+    "id": "auto-lebanese-prime-minister-says-proposal-2026-11-27",
+    "date": "2026-11-27",
+    "title": "Lebanese Prime Minister Says Proposal Underway to Have UN Peacekeepers Stay On",
+    "category": "diplomatic",
+    "description": "Via Haaretz. Auto-detected by headline monitor.",
+    "lat": 29.5,
+    "lng": 48.5,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMimgJBVV95cUxOMXNYX1kwMTR5OUg4NkRKQTlJSXU2YzBfZGZDbWIxWnNlZGhnSkpVcjVwYWJCWTJSdEZSSmRSeHItV19ZY2w0Y3hRM216SVFNMUs0anVGTTM5Ul9NVXBpY2tESGNZemE2ekJsUmRLcW9JMU9lQTZUQ1Z3ekhFd2lmUmhoZ1l3ZGxUdDlvWldEbkY0T3daYWxrRTZmaHVvYmJnN2hOOW9GdkI1RGExTTZ4cjhBRGNhTHFLcUN6U085cC11ZTYzalg4X1lKT1g2LW9PaW96VHVXTU1jOGMxZXFQVTNpSzU2SWR4VkJXdmxqOWZQV1F0OUhMMXVtY3JZQ2tuOFdOWDgwenRiYVA4djFRTFZMaldMa1VrVHc?oc=5"
+  },
+  {
+    "id": "auto-israel-kills-four-in-gaza-2026-11-27",
+    "date": "2026-11-27",
+    "title": "Israel kills four in Gaza as Hamas chief al-Hayya’s son survives strike",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 31.501,
+    "lng": 34.467,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRWRzVF9tUlQ1SlI5aGUwZ2FlbzEwOVpPQTlOMFdXaXFmTExVeEg4MEloXzY2cUxnQV9BRnAzWEJWUE9JSzhuZk8weWFlUkE0bmR2eHJ2ZWljZndSejBXaWFJaDNGMmQ0RndMOUNJRmY2SFJUTl9zYUUyTnhmYmktWGZFd3RmWW92b0t1bWJJcExjRGtDeDJOWmVFYmduWVhiMjM4NDRCQmdYU2xjYm9vZ0pn0gG3AUFVX3lxTE13eFhONFhWVVFPZ3RiSnp0N2ZmaURhR25tQW9oaHJ1MHZGSXhocndNa0FfSjl4Mzg2Y0tBXzRqekh2RXNCS1hGRktqM2M5OHpsYW9CS0FpTHprVkFta1hWclI5X0dxbWRXZ3lrZmNqYWNYZE1WZ1NpVjZoNnBYU3hIdm5peUdtVkxDaUg0MmVLVkZwZmcxemF2bmNJbUg2aF9OeW9xZ3gwVEN5bU5nYlVVSnNUaDYxRQ?oc=5"
+  },
+  {
+    "id": "auto-analysis-netanyahus-iran-stance-remarkably-2026-11-27",
+    "date": "2026-11-27",
+    "title": "Analysis • Netanyahu's Iran stance remarkably jibes with his interests. Enter the IDF chief",
+    "category": "escalation",
+    "description": "Via Haaretz. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNclBsM2owN3d2MXVmYmRnSDFxN3dfYXp5MnI0MEI0Yi0tVDc2MjlIdmU2U0FCNThJMWhyTFUtazBaay0teHMtekZsdGY2S2R5LUlTSWFYN2p5YTZlam5QNnpDUG1pLWNMTElJQlR0SnJfNF82cGNfckhiSDlmOE9FSDFVdktKbk9xY25mSFc2ZnE3VmJrN21jZmlGNTZQdnVKNER2MVRjcmh3VTBUNzFkOTE2cnlPYjNuN0xscnEydW5QNjBUeWpnSTZjMWh0eFdGUndXVWtlbngxVDRQTXJ1ZkliVWxzYmJrcFd2Q2NMRUNQODNPeHc2cDZTVUdDM19JVEg1TDJXWmhGVkN3b1VuRTNpNW1TZ09xSmQ1U283MVpNV2pHdG9tVUo0dF9sUE1O?oc=5"
+  },
+  {
+    "id": "auto-iran-war-updates-irgc-says-2026-11-27",
+    "date": "2026-11-27",
+    "title": "Iran war updates: IRGC says tanker hit in Hormuz, drone downed in southeast",
+    "category": "chokepoint",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZ2RxcE5iYnBZYlRaUVlCWlItc3RheVVQaUxibTBva203bG9lVVhCbTFEOFI1bHhrUzBTalBNX1R1QW01ai1IWFBTQkdKa0dGVTgwaTVaRDR5ZWVHOWlKWkdxN21qa3JzclhuTlJUUjA3NnhwN1pDQXVOLUh4Q203dmhVaFR1VzVHTGNmaVFUSDN1UUNrem5ITzFlbTg5ekpsTjlBYk1kckFOSkJQdS00YllVTnNPbWU20gG-AUFVX3lxTE5EdzdTTDR0WkNDT0hEeDZHenktRk9fWjIzVl91WFo1RUxCWFZHUHVtS3F4SkVRWU8tTE9EeHFlZ3VLdHg3MnlNSlVrVktUV0FwTy1WOV9TY1JWaDUwRF9aQThHbTZZS0o0RlljdTJuV05DOHhSSkZaTDNJZEl1WEpvMWVDdFlnSnBPb2JTOXFpb2lvR0hfMFV0M1VmeFFmZl80UEotdWhzSHh6TWtwU2FxeE1BZENfRndsdlFhQ2c?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=5MX21Y0IMTU",
+        "label": "How Trump's war with Iran and the Houthi conflict could change Saudi Arabia | Global News Podcast"
+      }
+    ]
+  },
+  {
+    "id": "auto-iran-claims-it-recovered-2-2026-11-27",
+    "date": "2026-11-27",
+    "title": "Iran claims it recovered 2 oil tankers seized by US military",
+    "category": "chokepoint",
+    "description": "Via Anadolu Ajansı. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPXzdfRTdZcUN2UDZyZTFPVTgwWmZSa2lQb0NKbGE2MTRGZzBqbzE2b252WDlDSVFwX2lxOVRHeElXSXMtZEhBN0dSSDZQZ1k2SkJJTWh5Sm0zTnhjWE1jcWZOWWsyNlY3S2dMRXAzRVdkSmlhZ05fWnEtTFpCNGxhRHJsZnZxNVpjVlR2bWxLT0RwX1J1aVRlS2lOWUw3b3NzQk5EZlFPQ0g?oc=5"
+  },
+  {
+    "id": "auto-brent-oil-posts-weekly-gain-2026-11-27",
+    "date": "2026-11-27",
+    "title": "Brent oil posts weekly gain on Middle East supply fears",
+    "category": "escalation",
+    "description": "Via CNBC. Auto-detected by headline monitor.",
+    "lat": 29.5,
+    "lng": 48.5,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5kTXJCQkh3RDcyMTRTOVNxdUFGSmZvbVFSRzVFaE0wUkFVVTRPWG9meW11b2pENGhMQzZxa19qcW9nb0FkLUs4N2ZldWptV2ZfcWpEZzFXZTdNWnVQTV9odHFaZW0zRzU4Vm9yMTAzejhLS09SRnAxctIBfkFVX3lxTFBzMEYwNlZnVHRQWjdYX1YxYlVuNTFUYXV6SlJTb0lialVTb1hXbElvMnR6dkFuRjNiVXNpUXRrMTZ2NFpBYUhwUHpRMF9zNnVRODhEZk9JaUZrUF9fNmtKRDl1b3E2M0NzWTFYdVlKN29uUHBncUROcFNONjRmdw?oc=5"
+  },
+  {
+    "id": "auto-oil-notches-first-weekly-gain-2026-11-27",
+    "date": "2026-11-27",
+    "title": "Oil notches first weekly gain in November on supply fears",
+    "category": "escalation",
+    "description": "Via Reuters. Auto-detected by headline monitor.",
+    "lat": 29.5,
+    "lng": 48.5,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTzVQVzE5aGdzbGVhNEUtVl94M0V3RjN5Rks4UDU0U0plazFDcjFnUTBMMHBvdk9BRzFaVHljSXk1ZFdzSjlRTVRXNGZ0cnRyUWRRbFJaRjBsVWNFbDZqSnQ0cHo0TW5fRDlwMWlKWDI3V2ROcnlXczVET1RqSXR6UGtZSTZ0OTQtY1YwaG1yYTRwQnZ6TW43azNGNTFqMmpkNFhtbVJwRnVkVERhR1NnSlFIMzExZw?oc=5"
+  },
+  {
+    "id": "auto-iran-war-live-italy-says-2026-11-28",
+    "date": "2026-11-28",
+    "title": "Iran war live: Italy says drone in deadly Kuwait attack was made in Iran",
+    "category": "military_strike",
+    "description": "Via Al Jazeera. Auto-detected by headline monitor.",
+    "lat": 29.376,
+    "lng": 47.977,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQYzBBRkZMZURBWnVObzlNUWJSQ2RMMmRtSUdWN1QwMVpaZExyRVNwOFBHRXRnTDhvaG1mR3dITTdJSUdVclFUcEwtQkx3RDYtVjA1LXpjZkFJcDdaTVR3RUQxZWZWTzRmSUdYRUNyWHNoc1dnM0JhQVhnM0NOaHNRa0hJLWQtSUJzalFCVUNRNWxDaVhYemRoYjV5MnZGSUw1ODY2ZE5NNkU5dHBSTFdFcGdhaUZjcFB5YXIyZ3dzc9IBxAFBVV95cUxPX0I3SFpIUU1YREVJdEV3MjFZd2VtcjRlQmFTd3lBYUxub295Qk5WX25vbEdMNlQ3clhNZmdRUjZOUGJab0Z3b1IwTlRuSEM4NmRyajJteUFWQnBQWTZrbWRPOW8wU2Eyb0Fxc0ZFNVVkV0Iwd3RXbkxtWEZjdGZRcEZUR1BveHg4RkF1MjNIMnE2Mkg2Si1vVnBaUTVqWkdFaUtJUUhXMmRSUFhMMTZjZllDQTRHa1ZSTE44WVJJMUZnX05F?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=5MX21Y0IMTU",
+        "label": "How Trump's war with Iran and the Houthi conflict could change Saudi Arabia | Global News Podcast"
+      }
+    ]
+  },
+  {
+    "id": "auto-centcom-rejects-irans-claims-on-2026-11-28",
+    "date": "2026-11-28",
+    "title": "Centcom rejects Iran's claims on warship attack, Hormuz shipping charges",
+    "category": "chokepoint",
+    "description": "Via Middle East Eye. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "facilityId": "strait-of-hormuz",
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMUxCRVFPWDl6UmtyMTZldkZxS0VBRExHLVRTOFhWdXhCTl82UjczVDNZa1VGNjlLWVJwamczeUJCdHdFSHFRSXhOVXRyMk9lZVpxekJBY1AyOEdJVENaMVhwVktPak5zQ0tRUVVLNV9VdnhlZ1BCb0NVcnlXaS1JaVpJeGtFemZiUDZ6QW0wUzcySkUyc29qTndSSTBoajVtY3dZeFhKQ0dYUnFNNXpWekNxQ0pzS05GMDkxRS1Ud1BkZw?oc=5"
+  },
+  {
+    "id": "auto-iran-hitting-same-ships-twice-2026-11-28",
+    "date": "2026-11-28",
+    "title": "Iran hitting same ships twice to deter traffic from Strait of Hormuz",
+    "category": "chokepoint",
+    "description": "Via Financial Times. Auto-detected by headline monitor.",
+    "lat": 26.566,
+    "lng": 56.25,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNYzRHNFloazhBaUFycDBsWGVGbVhKQ3h2S1FEaG9MNDlLZUNnbzY4aHloeFI4RjlwOGFwQUowZHJ4aUtIcjZhOHZDd2FfMHN1aHBWSEpSYzBodXlOT3B4SWZBOUVCUzhaeTVSckxrVFBpVlQ5NnFwRDhYaUw3c3FKUDU0QUc?oc=5"
+  },
+  {
+    "id": "auto-hebrewlabeled-kinder-chocolates-in-lebanon-2026-11-28",
+    "date": "2026-11-28",
+    "title": "Hebrew-labeled Kinder chocolates in Lebanon prompt Israeli export questions",
+    "category": "escalation",
+    "description": "Via The Times of Israel. Auto-detected by headline monitor.",
+    "lat": 33.366,
+    "lng": 35.433,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbzdJMTc4bGp0d2VBOGFZUkEtNnJmbHZHb3o3bWJNMmJ2dDhieDBIM0hwUVVYRW1XaURBY1g2T0lobVpSN2I2Q1JrVjFMd0p3b0xsZU81Z19VcHhDa281dDl2bnFmUEJPVVBnV2cxemtjWjNhdXB0cUkwXzhOYlJqR2VMdHJnX05TTDYtejdqMjR0ck8tZ1RfOUxsc1dFb3Q3OWhBYUVKamlmZ9IBrwFBVV95cUxPdjRCNzQ4WjBDb0YtOFN3RjVQYmlCVXBTQ0UtRE5pSWRQbVRYWEo4Qm1vdmNMaVpMV1JpVGx6US1vUmhaVVFhbWJuZmhpQTNZdUZvRERCN01hSXFMcWV1M0FnM1Z6YWlabnlhWGtDZVFYRmVQM1ZHWjdNcnQ4dnFrZS01NzdhSkNhMERZc0VxZUdfOFBrdXktdFdQSFpUb1d1V0V6Nkdya0EwUWdHak5N?oc=5"
+  },
+  {
+    "id": "auto-iran-war-updates-us-forces-2026-11-28",
+    "date": "2026-11-28",
+    "title": "Iran War Updates: U.S. forces disable commercial ship that allegedly tried to breach blockade on Iranian ports",
+    "category": "escalation",
+    "description": "Via CBS News. Auto-detected by headline monitor.",
+    "lat": 35.689,
+    "lng": 51.389,
+    "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPa0lGZ2x0YXZLeTRTdE1zN09yX3E5enVIX0ZnUmhUVDVfMlVNeVpqUmlxN3ZLZFM1X2hfZGl0MVZmV1ZQZTFoUkpFNDVMM3E5bVhpZTRWdWZ5SVQtTEx6UFBGRWRkNjM0b0hvbnRpNzJscmVLMG95Mk1vUGt0YW1DQmxxbTZzUEVVOFJWdTVGNThiLU9G?oc=5",
+    "mediaUrls": [
+      {
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=5MX21Y0IMTU",
+        "label": "How Trump's war with Iran and the Houthi conflict could change Saudi Arabia | Global News Podcast"
+      }
+    ]
   }
 ]
